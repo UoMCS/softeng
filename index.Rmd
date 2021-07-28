@@ -101,8 +101,9 @@ The following is an outline of the topics covered in COMP23111.
 * Working with open source software systems
 
 ## Using the lab manual {#usingit}
-We expect that the web-based version of this manual will be the one you'll use most. You can search, browse and link to anything in the manual. If you'd prefer, the manual is also available as a single pdf file and single epub as well.
+We expect that the web-based version published at of this manual will be the one you'll use most at [software-eng.netlify.app](https://software-eng.netlify.app/). You can search, browse and link to anything in the manual.
 
+However, if you'd prefer, the manual is also available as a single pdf file [softeng.pdf](https://software-eng.netlify.app/softeng.pdf) and an epub as well [softeng.epub](https://software-eng.netlify.app/softeng.epub). Having said that, the content is optimised for viewing in a web browser, so while the pdf and epub are OK, the web version is the best.
 
 ## Contributing to this manual {#contributing}
 If you'd like to contribute this laboratory manual, we welcome constructive feedback. Once you're familiar with git and markdown you can [github.com/join](https://github.com/join) and:
