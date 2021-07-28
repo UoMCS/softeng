@@ -1,0 +1,3 @@
+# Team Coursework 1 {#dealing}
+
+Team coursework exercise 1: Dealing with Small Scale Code Changes

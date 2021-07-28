@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Chapter 21 Continuous integration | Software engineering</title>
+<meta name="author" content="Suzanne Embury and team">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.2"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.9/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.2.5.1/tabs.js"></script><script src="libs/bs3compat-0.2.5.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/mark.min.js"></script><!-- CSS --><link rel="stylesheet" href="libs/custom/duncan.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Software engineering</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">Welcome</a></li>
+<li><a class="" href="timetabling.html">Weekly timetable</a></li>
+<li class="book-part">Weekly Workshops</li>
+<li><a class="" href="building.html"><span class="header-section-number">1</span> Marauroa</a></li>
+<li><a class="" href="understanding.html"><span class="header-section-number">2</span> Understanding large systems</a></li>
+<li><a class="" href="debugging.html"><span class="header-section-number">3</span> Debugging a Codebase</a></li>
+<li><a class="" href="estimating.html"><span class="header-section-number">4</span> Cost estimation</a></li>
+<li><a class="" href="testing.html"><span class="header-section-number">5</span> Test first development</a></li>
+<li><a class="" href="flowing.html"><span class="header-section-number">6</span> Git workflows</a></li>
+<li><a class="" href="refactoring.html"><span class="header-section-number">7</span> Software Refactoring</a></li>
+<li><a class="" href="designing.html"><span class="header-section-number">8</span> Design for Testability</a></li>
+<li><a class="" href="patterning.html"><span class="header-section-number">9</span> Software design patterns</a></li>
+<li><a class="" href="risking.html"><span class="header-section-number">10</span> Risk management</a></li>
+<li><a class="" href="opening.html"><span class="header-section-number">11</span> Open source challenge</a></li>
+<li class="book-part">Team study materials</li>
+<li><a class="" href="starting.html"><span class="header-section-number">12</span> Stendhalgame.org</a></li>
+<li><a class="" href="mentoring.html"><span class="header-section-number">13</span> Industrial mentoring</a></li>
+<li><a class="" href="syncing.html"><span class="header-section-number">14</span> Synchronising</a></li>
+<li class="book-part">Coursework</li>
+<li><a class="" href="gitting.html"><span class="header-section-number">15</span> Individual Coursework 1</a></li>
+<li><a class="" href="conflicting.html"><span class="header-section-number">16</span> Individual Coursework 2</a></li>
+<li><a class="" href="dealing.html"><span class="header-section-number">17</span> Team Coursework 1</a></li>
+<li><a class="" href="working.html"><span class="header-section-number">18</span> Team Coursework 2</a></li>
+<li class="book-part">Self study materials</li>
+<li><a class="" href="guiding.html"><span class="header-section-number">19</span> Testing Stendhal</a></li>
+<li><a class="" href="committing.html"><span class="header-section-number">20</span> Integrating commits</a></li>
+<li><a class="active" href="integrating.html"><span class="header-section-number">21</span> Continuous integration</a></li>
+<li><a class="" href="reviewing.html"><span class="header-section-number">22</span> Code review</a></li>
+<li><a class="" href="automating.html"><span class="header-section-number">23</span> Unit testing</a></li>
+<li><a class="" href="reading.html"><span class="header-section-number">24</span> References</a></li>
+</ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/dullhunk/softeng">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="integrating" class="section level1" number="21">
+<h1>
+<span class="header-section-number">21</span> Continuous integration<a class="anchor" aria-label="anchor" href="#integrating"><i class="fas fa-link"></i></a>
+</h1>
+<p>Continuous integration (CI) is the practice of automating the integration of code changes from multiple contributors into a single software project.</p>
+<div id="ici" class="section level2" number="21.1">
+<h2>
+<span class="header-section-number">21.1</span> Introduction to Continuous Integration<a class="anchor" aria-label="anchor" href="#ici"><i class="fas fa-link"></i></a>
+</h2>
+<p>In COMP23311 so far, you have begun to use a number of modern software development tools that help us keep our code quality high, even when multiple developers are working on the same code base. We’re now going to introduce another class of tool: the <em>continuous integration server</em>.</p>
+<p>As the name indicates, these tools have the job of continually putting a software system through the processes that lead to releasable software. A typical continuous integration server will:</p>
+<ul>
+<li>Integrate the various components of the system.</li>
+<li>Compile the code and create an executable version of the system.</li>
+<li>Run the unit tests, integration tests and acceptance tests.</li>
+<li>Generate reports on the quality of the system (for example, test coverage reports).</li>
+<li>Inform the development team when some part of the above process fails.</li>
+</ul>
+<p>These steps will be undertaken at regular intervals, usually based on some automated trigger. Developers do not need to remember to request that it happens; the CI server takes care of it for us.</p>
+<p>The aim of repeatedly going through this process is to discover problems early, well before the release deadline, so that there is plenty of time to correct them.</p>
+<p>Before such tools came into common use, developers concentrated on their own parts of the system, building and testing them in isolation, until the release deadline approached. Only then would the whole system be compiled and integrated, and the tests run on the full code base. Inevitably, some of the tests would fail or, in the worst cases, some of the code would fail even to compile. With the deadline looming, the panicked team would have to find and fix the problems under pressure, often leading to more bugs being introduced and poor decisions being taken that could have been avoided if only the team had thought to integrate, build and test their code as they went along instead of at the last minute.</p>
+<p>There is a lot to be said for building and testing code frequently. When we go through this process after just a few small changes have been made to the code base, it’s a fairly safe bet that the cause of any failing tests will be one of the changes we’ve just made. Even if our changes did not cause the error, something we have done has caused the error to become visible. In most cases, we’ll only need to examine these changes to be able to track down the root cause of the error. The problem can then be fixed fairly quickly, before other code changes in that area of the code start to happen and before other developers have made use of the same buggy code.</p>
+<p>Contrast this with having to fix multiple interacting bugs at the same time, with the deadline looming, while the code gets messier and messier and we all get more and more frustrated and tired.</p>
+<p>So, building and testing the whole system frequently, from the beginning of the project, is a good idea. The problem is that most programmers (being only human) don’t remember to do it. We build and test our own local version of the system easily enough: our IDE will continually check for compile errors, as we type, and it is fairly easy to get into the habit of building and running unit tests locally as we code. But how many of us will be willing to break off our chain of thought on a piece of code in order to integrate our work with that of other developers and to wait while lengthy acceptance test suites are run? Instead, the CI server takes on this task for us, only interrupting us when something has gone wrong.</p>
+<p>Continuous integration servers typically run on separate shared machines that are set up to build and test the code as frequently as we like. We can set a timed schedule (e.g., to build every morning before our developers come in to start work) or we can ask for the build and test process to be carried out every time someone on the team pushes changes to the shared repository. This latter option is good if we can manage it, because if we have pushed code that breaks some aspect of the build and test pipeline, then we’ll get an almost immediate warning of that from our continuous integration server. We’ll receive an e-mail from the server, or else the server might be set up to push a notification to our team’s chat channel on Slack or Discord or MS-Teams, or to some other communication system.</p>
+<p>That is what the CI server is doing for us on COMP23311. One of the best practices we try to follow in this course unit is that of maintaining clean releases. (We obviously don’t want to deploy code to the customer that has known faults.) The CI server helps with that by telling you about the problems with the code you push to GitLab within minutes of it appearing there. That means you can fix problems while they are still on your feature branches, and you can make sure that only clean code makes it through to the development branch or (most importantly) to the release tags.</p>
+<p>For this course unit, we will use Jenkins (<a href="https://www.jenkins.io/">jenkins.io</a>), a well-established CI server. We have set up a number of build jobs for you, that will show you the health of your team’s submission for the coursework exercises so far. This brief guide will show you how to use Jenkins to access information about the build health of your team, and how to interpret the reports it provides.</p>
+</div>
+<div id="logging" class="section level2" number="21.2">
+<h2>
+<span class="header-section-number">21.2</span> Logging onto Jenkins CI Server:<a class="anchor" aria-label="anchor" href="#logging"><i class="fas fa-link"></i></a>
+</h2>
+<p>You can login to the Departments Jenkins continuous integration (CI) server at <a href="https://ci.cs.manchester.ac.uk/jenkins/login">ci.cs.manchester.ac.uk/jenkins</a>. This will take you to a login screen. Enter your University username and password into the form and press <code>Sign in</code>.</p>
+<p>You should now be taken to the main Jenkins “dashboard,” showing the folder we have created to contain your build jobs for the COMP23311 team coursework this semester, which should look something like figure <a href="integrating.html#fig:dashboard-fig">21.1</a></p>
+<div class="figure" style="text-align: center">
+<span id="fig:dashboard-fig"></span>
+<img src="images/dashboard.png" alt="The main Jenkins dashboard" width="100%"><p class="caption">
+Figure 21.1: The main Jenkins dashboard
+</p>
+</div>
+<p>There are various features to note about this screen. On the left is a menu of basic commands, and below this is some information about what builds Jenkins is currently running. We have set the Jenkins server up so it can run a number of builds in parallel (exactly how many varies from year to year, with the resources we have available). If more build jobs than this are requested at any time, some of the jobs will be show in the Build Queue, waiting for a build executor to become available. You will only be able to see build information for your own team’s jobs, and often Jenkins will be occupied building jobs from other teams, so at busy times (for example, in the days before a coursework deadline) your team’s build jobs may be stuck in the queue for anything from a few minutes up to several hours.</p>
+<p>On the right of the dashboard, you can see a list of the top-level jobs and folders you have access to. At the moment, the only thing you can see is the folder for your work on COMP23311. The grey folder icon indicates that this is a folder and not a build job. Next to it, you can see an icon indicating the “weather” for this set of builds. That is, it shows the status of the builds within the folder over recent builds. A stormy weather icon indicates that the builds in this folder are failing, and have been for some time. In contrast, a sun icon would indicate that the builds in the folder are all succeeding. Figure <a href="integrating.html#fig:weather-montage-fig">21.2</a> shows some of the build health icons, and their meanings.</p>
+<!--%%% TODO: add missing build weather icons
+% Problem: when trying to "open image in new tab" on icons of the new theme, those of the old theme appear: I can't download the right icon by just knowing the names
+https://ci.cs.manchester.ac.uk/jenkins/static/7d74f0f2/images/build-status/weather-sprite.svg#weather-sunny
+https://ci.cs.manchester.ac.uk/jenkins/static/7d74f0f2/images/build-status/weather-sprite.svg#weather-puring
+https://ci.cs.manchester.ac.uk/jenkins/static/7d74f0f2/images/build-status/weather-sprite.svg#weather-cloudy
+https://ci.cs.manchester.ac.uk/jenkins/static/7d74f0f2/images/build-status/weather-sprite.svg#weather-partly-cloudy
+https://ci.cs.manchester.ac.uk/jenkins/static/7d74f0f2/images/build-status/weather-sprite.svg
+-->
+<div class="figure" style="text-align: center">
+<span id="fig:weather-montage-fig"></span>
+<img src="images/weather-montage.png" alt="A range of icons indicate the health of a build. From left to right: A rain icon is used to indicate that between 20% to 39% of builds were successful. A cloud icon: 40% to 59%. An overcast icon: 60% and 79% of builds were successful. A sun icon indicates that greater than 80% of builds were successful." width="100%"><p class="caption">
+Figure 21.2: A range of icons indicate the health of a build. From left to right: A rain icon is used to indicate that between 20% to 39% of builds were successful. A cloud icon: 40% to 59%. An overcast icon: 60% and 79% of builds were successful. A sun icon indicates that greater than 80% of builds were successful.
+</p>
+</div>
+
+<p>You can get more information about the health of an item by hovering over the weather icon in Jenkins shown in figure <a href="integrating.html#fig:toolTipWeatherExercise1-fig">21.3</a>.</p>
+<div class="figure" style="text-align: center">
+<span id="fig:toolTipWeatherExercise1-fig"></span>
+<img src="images/toolTipWeatherExercise1.png" alt="Hovering over an icon will display a tool tip that gives more information about what the icon means in terms of the build." width="100%"><p class="caption">
+Figure 21.3: Hovering over an icon will display a tool tip that gives more information about what the icon means in terms of the build.
+</p>
+</div>
+<p>As you can see, the tool tip gives more information about the build health, and also indicates the worst performing build within the folder. This is really useful for diagnosing problems, and finding branches that need extra attention.</p>
+<p>Team 47 doesn’t have a great build health at the moment, but they still have time to improve their build “weather” before the coursework deadline. Take a look at the weather status of your own team’s build folder. As you complete the coursework and your builds move from red to green, your build health icon should become sunnier.</p>
+</div>
+<div id="cbuilds" class="section level2" number="21.3">
+<h2>
+<span class="header-section-number">21.3</span> Accessing your Coursework Builds<a class="anchor" aria-label="anchor" href="#cbuilds"><i class="fas fa-link"></i></a>
+</h2>
+<p>Next, we’re going to look at the builds that have been set up for your exercise 1 coursework.</p>
+<p>Click on the link for your team’s COMP23311 folder. This will show you a list of the builds and folders that have been created for your team for this course unit shown in figure <a href="integrating.html#fig:sem1-build-jobs-fig">21.4</a>.</p>
+<div class="figure" style="text-align: center">
+<span id="fig:sem1-build-jobs-fig"></span>
+<img src="images/sem1-build-jobs.png" alt="An example of how a teams coursework builds look in Jenkins" width="100%"><p class="caption">
+Figure 21.4: An example of how a teams coursework builds look in Jenkins
+</p>
+</div>
+<p>At this stage in the course unit, only builds for exercise 1 have been set up. Later, more folders and jobs will appear here, as the coursework progresses.</p>
+<div class="rmdnote">
+<p>This year, you will see an additional project in your team’s folder. This job creates and stores the reports on your work created by the RoboTA automated feedback and marking system. To see how your team is doing on the coursework so far, click on this job and then selected the <em>Team Marks and Feedback</em> report.</p>
+</div>
+<p>We’ll now take you through the builds we have set up for your team for team coursework exercise 1. Click on the <em>Exercise 1 Builds</em> folder link. This will take you to a Web page showing the following builds as in figure <a href="integrating.html#fig:contentsOfExercise1FolderOnJenkins-fig">21.5</a></p>
+<div class="figure" style="text-align: center">
+<span id="fig:contentsOfExercise1FolderOnJenkins-fig"></span>
+<img src="images/contentsOfExercise1FolderOnJenkins.png" alt="An example of the contents of the Exercise 1 Builds folder displayed in Jenkins." width="100%"><p class="caption">
+Figure 21.5: An example of the contents of the Exercise 1 Builds folder displayed in Jenkins.
+</p>
+</div>
+<p>On this page, you can see the summaries of some actual builds, instead of just folders. We have set up Jenkins projects to build the important code versions for this coursework: the development branch (<code>master</code>) and the release tag (<code>VERSION_01_RELEASE_27_UOM</code>) for the team in this screenshot—your team will use a different release tag).</p>
+<p>Your team will also have an additional build, not shown in this screen shot, for a tag called <code>COMP23311_EX1_STARTING_POINT</code>. This shows you the build health at the start of the coursework.</p>
+<!---infobox Jenkins Project Names
+%
+%You may have noticed that the Jenkins project for coursework starting point tag uses underscores instead of slashes in its name.  This is because slashes aren't allowed in Jenkins project names, so the code that configures Jenkins for this course unit replaces slashes with underscores in branch and tag names to create legal project names.  The branches and tags built by the projects still contain slashes.-->
+<p>Instead of a folder icon, build jobs have coloured icons indicating whether the most recent build was successful or not. The red exclamation mark beside the release branch project shows that the latest build for this tag was unsuccessful. Some error occurred during the build process that meant that executable code could not be produced. This could be caused by a compilation error in the code, but it could also mean that the tag or branch to be built doesn’t yet exist in the team’s GitLab repository. Builds of this kind are called <em>failed</em> builds.</p>
+<p>The yellow icon beside the development branch build in the figure shows that the build process itself succeeded but that some of the unit tests failed. A build like this, where executable code was created and could be run, but some other later check failed, is called an <em>unstable</em> build.</p>
+<p>In total, there are four build status icons that you might see in Jenkins, shown in figure <a href="integrating.html#fig:build-status-montage-fig">21.6</a>. The goal for most of our builds is to get a green build icon beside them. This indicates a successful build: there were no compilation errors, the Ant build file was executed successfully and the unit tests all passed. This kind of build is called a <em>stable</em> build.</p>
+<p>The final type of build icon is grey, and this simply indicates either that no builds have yet been attempted for a particular job or that the last build was aborted before it could complete. If no one in your team has pushed code to your repository since the Jenkins builds were created, then all your exercise 1 builds will be grey. This will change as soon as some code changes are pushed.</p>
+<div class="figure" style="text-align: center">
+<span id="fig:build-status-montage-fig"></span>
+<img src="images/build-status-montage.png" alt="Four build status icons you might see. From left to right: 1. Grey no entry sign (Not built) build not yet attempted or build aborted. 2. Red exclamation mark (Failed build) the build process could not be completed. 3. Amber exclamation mark (Unstable) build succeeded but some tests failed. 4. Green tick (Stable build) build process succeeded and all tests passed." width="100%"><p class="caption">
+Figure 21.6: Four build status icons you might see. From left to right: 1. Grey no entry sign (<strong>Not built</strong>) build not yet attempted or build aborted. 2. Red exclamation mark (<strong>Failed build</strong>) the build process could not be completed. 3. Amber exclamation mark (<strong>Unstable</strong>) build succeeded but some tests failed. 4. Green tick (<strong>Stable build</strong>) build process succeeded and all tests passed.
+</p>
+</div>
+
+<p>To the right of the build job names, Jenkins gives some information about the previous builds. It tells us how long ago the most recent successful build was (either stable or unstable) and how long ago the most recent failed build was. It also gives a link to information about that build. Here, five builds have been carried out for the development branch, so the link to the most recent successful build is to build <code>#5</code>, while the most recent unsuccessful build was build <code>#2</code>.</p>
+<p>Jenkins also gives the duration of the last build. This is important on real systems, as if builds are taking too long then it could indicate a problem with the system. In addition, the length of a typical build affects how long programmers need to wait to get feedback on their pushes. Experience has shown that programmers will wait for a few minutes for information on the status of their build, but if they have to wait much longer than 10 minutes, then they will change their focus to another task, and lose the context needed to efficiently fix problems that may be revealed by the build. So it is important that build times are kept under control.</p>
+<div class="rmdnote">
+<p><strong>Manually Requesting a Build</strong></p>
+<p>The buttons in the final column allow you to manually request that a build of the job be scheduled (as opposed to waiting until someone pushes new code to your GitLab repository). Try pressing the button next to any of the build jobs now. You should see the text <code>Build Scheduled</code> appear over the button, and (shortly) the job will appear on one of the Build Executors (or in the queue, if you request the build at a busy period).</p>
+<p>When the build completes, the summary of builds for this job should be updated. You may need to refresh your browser window to see the new information.</p>
+</div>
+</div>
+<div id="drilling" class="section level2" number="21.4">
+<h2>
+<span class="header-section-number">21.4</span> Drilling Down on the Development Branch Build<a class="anchor" aria-label="anchor" href="#drilling"><i class="fas fa-link"></i></a>
+</h2>
+<p>Next, we’re going to drill down into the information Jenkins provides about individual build jobs. We’ll look at the development branch build first, and will come back to look at the contents of the <code>Feature Branch Builds</code> folder later.</p>
+<p>Click on the build job link for the <code>master</code> branch. You should be taken to a page that looks similar to figure <a href="integrating.html#fig:master-branch-fig">21.7</a>.</p>
+<div class="figure" style="text-align: center">
+<span id="fig:master-branch-fig"></span>
+<img src="images/master-branch.png" alt="Jenkins view of the master branch" width="100%"><p class="caption">
+Figure 21.7: Jenkins view of the master branch
+</p>
+</div>
+<p>Figure <a href="integrating.html#fig:master-branch-fig">21.7</a> is the main page for the build job we have set up for the development branch of your team’s repository. It gives a summary of the most recent build status for the job, and also information about the build history. Let’s take a look at the information and options provided by it.</p>
+<p>At the top, below the purple Jenkins banner, you can see some breadcrumbs showing the parent folders for this particular job. The names are all clickable links.</p>
+<p>Just below this, on the left, there is a menu showing the things you can do with your build job. Some of the buttons are links to further information about the build, and some are commands that you can issue. Note, for example, the presence of the <code>Build Now</code> option, which gives another way to manually request that a build of this job be scheduled.</p>
+<p>On the bottom left, you will see a table showing the build history for the job. Each row summarises a past build attempt. The status of the build is shown (by the coloured ball icon), followed by a link to the detailed build report and then the date and time at which the build took place. Finally, all non-stable builds should end with a light bulb icon, indicating that the cause of the build failure has been analysed, and information about it has been added to the build report. Hovering your mouse over the light bulb will give an indication of what went wrong.</p>
+<p>On the remainder of the page is information about the status of the most recent build, including links to various reports produced during the build. The first is a link to the workspace (i.e., filespace) used for the most recent build, and the second to information about the code changes that triggered the build.</p>
+<p>Under the section headed <code>Identified Problems</code> (with the light bulb icon 💡) you will see a description of what caused the build to fail or to become unstable. In this case, the code was able to compile successfully. The problem is that some of the test cases have failed.</p>
+<p>Next comes a link to a build report (indicated by the grey clipboard icon). In this case, it is a report produced by JUnit when the build was last run. The summary tells us how many tests failed in the build and (importantly) gives information about the change in test failures that occurred in the most recent build. In this case, the summary <code>5 Failures / +5</code> indicates that five tests are failing in total, and that all five failures appeared in this recent build (this build added five failures). This is useful information as test failures that appeared in a build are likely to be caused by the changes that were pushed to the GitLab repository and that triggered the build. Test failures that first appeared in older builds will not have been caused by anything we have just done to the code.</p>
+<p>You can click on the <code>Latest test result</code> link for information about which tests failed and why.</p>
+<p>Two other build reports are shown on this page: the two graphs on the right hand side of the page. The one at the top shows the test results trend over the course of recent builds. The blue line shows the number of tests that pass, the yellow line shows the number of tests that have been skipped (using the <code>@Ignore</code> annotation) and the red line (the important one) shows how many tests have been failing. We can just see a slight increase in the number of failing tests for the latest build (plus a corresponding decrease in the number of passing tests).</p>
+<p>The graph below shows the code coverage trend, produced from the JaCoCo coverage reports from recent builds. Coverage for this team has been fairly stable, with a slight drop in coverage in the most recent build, caused by the failing tests. (It is normal for coverage to drop a little when tests fail, since not all the test assertions will be executed and therefore some lines will not be covered. A significant decrease, however, could indicate that your tests are too bulky, and should be separated out into a larger number of smaller, more independent unit tests.)</p>
+<p>You can click on any of these build reports to get more detailed information about the results of the most recent build. You can also click on individual builds in the Build History, and see copies of the reports as created at the time of the build. You can even see a copy of the console output that was produced when the build was run.</p>
+</div>
+<div id="happens" class="section level2" number="21.5">
+<h2>
+<span class="header-section-number">21.5</span> What Happens When Jenkins Builds a Job<a class="anchor" aria-label="anchor" href="#happens"><i class="fas fa-link"></i></a>
+</h2>
+<p>It is all very well to have all this information at our fingertips, but it is only useful if we understand where it comes from. So, now we are going to look at what happens when Jenkins performs a build of some job.</p>
+<div id="triggers" class="section level3" number="21.5.1">
+<h3>
+<span class="header-section-number">21.5.1</span> What Triggers the Build?<a class="anchor" aria-label="anchor" href="#triggers"><i class="fas fa-link"></i></a>
+</h3>
+<p>The first question to answer is what causes Jenkins to start to perform a build for some job. We have already seen that we can manually schedule a build, using the <em>Build Now</em> command or button. But that relies on us, the developers, remembering to request that a build be done. As we saw at the beginning of this exercise, the whole point of continuous integration servers is that we don’t have to remember to request a build. It should be done automatically, whether we remember or not.</p>
+<p>Jenkins builds can be triggered automatically in a number of ways. For example, we can put a schedule in place that causes the job to be built every hour, or every 6 hours, or every 15 minutes, as best suits our needs at the time.</p>
+<p>But probably the most popular way of triggering a build is to set up a web hook that causes Jenkins to build a job whenever someone pushes new code (or changed code) to the team repository. This is how we have set up your team repository. Whenever you push code changes to your repository, GitLab sends a notification to Jenkins about the change. Jenkins then uses this information to trigger any jobs that use the repository that was changed.</p>
+<p>Keep an eye out for this the next time you or anyone on your team pushes code changes to your team repository. As soon as the push is made, take a look at the Jenkins dashboard and wait to see if a build is triggered.</p>
+<div class="rmdnote">
+<p><strong>Triggering Builds Without a Code Change</strong></p>
+<p>Jenkins can be set up to trigger on all kinds of GitLab actions, including commenting on an issue and creating a tag. However, when Jenkins detects that one of the triggering events has happened, the first thing it does is to check that something has changed in the code base. If there are no changes to the code, there cannot be a different build outcome, so Jenkins saves time by ignoring the triggering event.</p>
+<p>This is sensible behaviour most of the time, but is sometimes a bit of a nuisance. For example, if we have a build job set up for a tag, we might expect Jenkins to notice when the tag is created and to rebuild the job. Jenkins can indeed notice the tag appearing, but since such a change involves no new commits, it will not trigger a rebuild. In these cases, it will be necessary to request a build manually.</p>
+<p>You’ll encounter this issue with the builds for your release tags. When you’ve prepared your team’s release, you’ll add the required release tag to the commit. But Jenkins won’t build your release tag project at this stage. You’ll need to manually request the build to check whether your release build has good health.</p>
+</div>
+</div>
+<div id="workspace" class="section level3" number="21.5.2">
+<h3>
+<span class="header-section-number">21.5.2</span> The Jenkins Workspace<a class="anchor" aria-label="anchor" href="#workspace"><i class="fas fa-link"></i></a>
+</h3>
+<p>When a job is triggered (and code changes have occurred), Jenkins uses a GitLab plugin to connect to your team’s repository and to create a clone of the whole repository in the workspace set aside for the job.</p>
+<p>It then checks out the branch that has been specified to be the focus of the build.</p>
+<p>At this point, Jenkins has created a directory folder in its own internal space, with a copy of your team’s code base that mirrors the one you have on your machine. (It obviously doesn’t have any files or changes that you have not yet pushed to your team’s repository.)</p>
+</div>
+<div id="antbuild" class="section level3" number="21.5.3">
+<h3>
+<span class="header-section-number">21.5.3</span> Jenkins Runs the Ant Build<a class="anchor" aria-label="anchor" href="#antbuild"><i class="fas fa-link"></i></a>
+</h3>
+<p>Once we have a copy of the code in the workspace, Jenkins attempts to build an executable from it. It does this in exactly the same way we have practised in the workshops: it calls Ant and invokes the <em>dist</em> target in the <code>build.xml</code> file within the workspace.</p>
+<p>This is done within a shell. Jenkins records all the outputs from running the build script in the shell, and stores this with each build, for later diagnostic purposes.</p>
+<p>We have also set the Jenkins jobs up to run the unit tests. Once the build is complete, Jenkins will invoke the <em>test</em> Ant target, in order to cause the unit tests to be run, and the coverage information to be gathered — in exactly the same way that these things happen when you run the Ant script from within your IDE.</p>
+<div class="rmdnote">
+<p><strong>Digression (Not Examinable)</strong></p>
+<p>There is one difference in the way Jenkins runs the unit tests. The machine on which Jenkins is running is a headless server. There is no graphics console attached to it. It sits in a machine room, rather on someone’s desk and is operated remotely through the terminal rather than through a graphical interface with a mouse or a trackpad. This means that any test cases that exercise the GUI of the Stendhal game system will fail, because no graphical display is configured for the machine. We get round this by running Xvfb, the X Virtual Framebuffer, before running the unit tests. This creates a virtual graphical display — or just enough of one — to allow the unit tests that exercise GUI elements to function as they would on a normal desktop machine.</p>
+</div>
+</div>
+<div id="results" class="section level3" number="21.5.4">
+<h3>
+<span class="header-section-number">21.5.4</span> The Results are Published<a class="anchor" aria-label="anchor" href="#results"><i class="fas fa-link"></i></a>
+</h3>
+<p>The final step in the Jenkins build process is to publish any reports created during the build process so that they can be accessed from the build web pages. This happens for the JUnit test results and the JaCoCo coverage results. If we had not configured your builds with publishing steps for both of these, then the graphs and web page test results would not appear on the build web page.</p>
+</div>
+</div>
+<div id="fbuilds" class="section level2" number="21.6">
+<h2>
+<span class="header-section-number">21.6</span> A Look at Feature Branch Builds<a class="anchor" aria-label="anchor" href="#fbuilds"><i class="fas fa-link"></i></a>
+</h2>
+<p>This almost concludes our tour around the Jenkins builds we have created for you to use with your work in exercise 1. We’ll finish with a look at the contents of the <code>Feature Branch Builds</code> and the <code>Issue Revealing Builds</code> folders.</p>
+<p>In your browser, click on the breadcrumb for the Exercise 1 Builds. Then click on the link for the <code>Feature Branch Builds</code> folder.</p>
+<p>You should be taken to a web page containing something like figure <a href="integrating.html#fig:FeatureBranchBuilds-fig">21.8</a>.</p>
+<div class="figure" style="text-align: center">
+<span id="fig:FeatureBranchBuilds-fig"></span>
+<img src="images/FeatureBranchBuilds.png" alt="Jenkins view of the feature branch builds" width="100%"><p class="caption">
+Figure 21.8: Jenkins view of the feature branch builds
+</p>
+</div>
+<p>As you can probably work out for yourself by now, this folder contains a whole collection of different builds. Team 47 is working on a different set of issues from your team, and therefore is working with different branch names from the ones in your team’s builds. But the overall organisation should be similar for your own team. There should be one build job set up for each of the feature branches we have asked you to create. The feature branch builds should be stable because they should compile and (since by the deadline they need to contain code that fixes the bug) they should pass all the tests.</p>
+<p>You can drill down into any of these builds to get more information about the build, and information about what caused any failed or unstable builds.</p>
+<p>The second set of builds are in the <em>Issue Revealing Builds</em> folder. If you navigate down into that folder, you will see a set of builds looking something as in figure <a href="integrating.html#fig:IssueRevealingBuilds-fig">21.9</a>.</p>
+<div class="figure" style="text-align: center">
+<span id="fig:IssueRevealingBuilds-fig"></span>
+<img src="images/IssueRevealingBuilds.png" alt="The Issue Revealing Builds folder in Jenkins" width="100%"><p class="caption">
+Figure 21.9: The Issue Revealing Builds folder in Jenkins
+</p>
+</div>
+<p>These builds are a little unusual. Their job is to run the tests on a code base consisting of the production code from the start of the exercise (i.e., the code that does not contain your fixes) <em>and</em> the test code from your feature branch tip (i.e., the code that contains the tests you wrote to reveal the issue). This means that we expect these builds to be unstable. We want to see the tests failing, so that we can see that the issue is properly exposed by them. To be fully sure you have revealed the issue correctly, you’ll need to drill down into the build and take a look at the tests that are failing. Ideally, these should just be the tests you have written to reveal the issue. If some other test cases are failing as well (or, worse, instead of) your new test cases, then your final mark will be reduced.</p>
+<p>Builds of this kind would not normally be created for a real software team. We have provided them to help you track your own progress towards the goals of the coursework, and to help us in marking your tests fairly and accurately.</p>
+<p>Note that all the builds in these two folders should be either stable or unstable by the deadline. There is only one case in which a failed (red) build will be acceptable in the released repository: when you have fewer people in your team than the number of bugs assigned. Each team is expected to fix one issue per person. For example, a 5 person team will be expected to fix only 5 of the issues provided. In that case, the builds for any issue left unfixed can fail without any marks penalty (since they will fail because the required branch and tag will not be present in your team’s repository).</p>
+</div>
+<div id="confused" class="section level2" number="21.7">
+<h2>
+<span class="header-section-number">21.7</span> Confused? Stuck? Need Help?<a class="anchor" aria-label="anchor" href="#confused"><i class="fas fa-link"></i></a>
+</h2>
+<p>If any aspect of the Jenkins builds we have created for you are unclear, please come and get help from a TA or a member of staff during the team study sessions. If you meet the workshop attendance requirements, you are also free to e-mail Suzanne with questions outside the team study sessions.</p>
+<p>The School’s CI server is administered by Chris Page. Technical faults and outages should be reported to him through <a href="https://support.cs.manchester.ac.uk">support.cs.manchester.ac.uk</a>.</p>
+<p>Bugs or feature requests for the RoboTA system should be reported through the project issue tracker at <a href="https://gitlab.cs.man.ac.uk/institute-of-coding/robota-issue-tracker">gitlab.cs.man.ac.uk/institute-of-coding/robota-issue-tracker</a></p>
+
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="committing.html"><span class="header-section-number">20</span> Integrating commits</a></div>
+<div class="next"><a href="reviewing.html"><span class="header-section-number">22</span> Code review</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#integrating"><span class="header-section-number">21</span> Continuous integration</a></li>
+<li><a class="nav-link" href="#ici"><span class="header-section-number">21.1</span> Introduction to Continuous Integration</a></li>
+<li><a class="nav-link" href="#logging"><span class="header-section-number">21.2</span> Logging onto Jenkins CI Server:</a></li>
+<li><a class="nav-link" href="#cbuilds"><span class="header-section-number">21.3</span> Accessing your Coursework Builds</a></li>
+<li><a class="nav-link" href="#drilling"><span class="header-section-number">21.4</span> Drilling Down on the Development Branch Build</a></li>
+<li>
+<a class="nav-link" href="#happens"><span class="header-section-number">21.5</span> What Happens When Jenkins Builds a Job</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#triggers"><span class="header-section-number">21.5.1</span> What Triggers the Build?</a></li>
+<li><a class="nav-link" href="#workspace"><span class="header-section-number">21.5.2</span> The Jenkins Workspace</a></li>
+<li><a class="nav-link" href="#antbuild"><span class="header-section-number">21.5.3</span> Jenkins Runs the Ant Build</a></li>
+<li><a class="nav-link" href="#results"><span class="header-section-number">21.5.4</span> The Results are Published</a></li>
+</ul>
+</li>
+<li><a class="nav-link" href="#fbuilds"><span class="header-section-number">21.6</span> A Look at Feature Branch Builds</a></li>
+<li><a class="nav-link" href="#confused"><span class="header-section-number">21.7</span> Confused? Stuck? Need Help?</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/dullhunk/softeng/blob/master/21-integrating.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/dullhunk/softeng/edit/master/21-integrating.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Software engineering</strong>" was written by Suzanne Embury and team. </p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer>
+</body>
+</html>

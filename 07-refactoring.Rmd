@@ -1,0 +1,189 @@
+# Software Refactoring {#refactoring}
+
+Software refactoring and migration
+
+## Preparing for the workshop {#gitprep}
+
+Welcome to the (ref:coursecode) workshop on *software refactoring and migration*.
+
+Today, after a short lecture introducing the core concepts, we'll be working through a number of activities in which you will be undertaking some refactoring and migration tasks.  Before the workshop begins, please follow the instructions below to prepare your machine for the activities we will do in the workshop today.
+
+
+### Prepare your IDE {#prepide}
+
+We are going to use the Stendhal Playground code base in today's workshop. so you can make changes without putting your coursework at risk.  To prepare for the workshop, please run your IDE and load this project.
+
+If you did not attend the earlier workshops where we used the Stendhal Playground code base, you'll need to look at the workshop instructions for week 3, to see how to acquire it.
+
+
+### Run the Regression Test Suite {#testsuite}
+
+You can't do effective refactoring without running the regression test suite frequently.  Make sure you can run the test suite in this project, using the run configuration that comes with the Stendhal Playground project.
+
+If your run configuration does not work, and you can't find and fix the problems yourself, get the help of a TA promptly, so you can get on with the activity.
+
+## Activity: Literals and Magic Numbers {#magic}
+
+First, we're going to look at a very basic code smell: the presence of literals in production code.  Literal values in production code are problematic because they tend to be duplicated throughout code, and when they need to be changed it can be difficult and time consuming to identify all the places in the code that need to be updated.  Literal values can also make code harder to read, as we have to guess at the special meaning of the literal.
+
+Of course, test code is different.  Literal values are expected in test code (though we should still take steps to avoid duplication of literals in test code).
+
+To see an example of this code smell in action, search for and open the following file:
+
+````md
+src/games/stendhal/server/maps/quests/revivalweeks/FoundGirl.java
+````
+
+Look at the literal values in this class.  There are many, and several are repeated in a number of places.  
+
+Choose one literal (repeated or not) that you think would benefit from being represented as a constant, rather than being repeated throughout the file.
+
+Double click on one example of your selected constant (so that the whole literal is highlighted).
+
+Right click on the highlighted constant and select `Refactor` > `Extract Constant` from the menu that appears.
+
+A dialogue box will pop up, asking you what name the new constant should have.  The convention in Java is that constants have names in upper case, with underscores to separate words.  Like this:
+
+````java
+A_CONSTANT_IN_JAVA
+````
+
+Type your name for the constant in that form in the dialogue box.  You also need to specify the access modifier (private will be fine for now), but you can accept the other defaults.
+
+You should now see that the literal you had selected has been removed from this code, and replaced with a constant, defined towards the top of the class definition.
+
+Use the undo option in your IDE and run the refactoring again, this time requesting that duplicate literals all be replaced by the new constant.
+
+Hopefully, you can see how this refactoring has improved the design of the code, and so removed some technical debt (if you chose your literal well).  Can you see how making this change could mean that some future changes will be easier because of it?
+
+**Don't forget to run the test suite after making the change, to make sure you haven't caused more problems than you have fixed by it.**
+
+
+A variant on this smell is the "magic number".  This is a number that has a meaning that is important for the code, which which is hard to infer just by looking at the number itself.  You can find several examples of the magic number code smell in the following class:
+
+````java
+tests/games/stendhal/client/sound/system/ToneGeneratorTest.java
+````
+
+On the other hand, this next class has an example of a magic number that has been neatly turned into a constant, greatly improving the readability of the code it is involved in.  Can you find the magic number:
+
+````java
+src/games/stendhal/client/sound/system/processors/ToneGenerator.java
+````
+
+Can you find any other magic numbers in the Stendhal code?  Or magic strings?
+
+
+## Activity: Long Methods {#longmethods}
+
+This code smell is based around a simple but surprisingly powerful idea: short methods are easier to understand than long ones.  Take a look at the following classes to see this point in action.
+
+First, look at:
+
+````java
+src/games/stendhal/server/actions/pet/OwnAction.java
+````
+
+See if you can figure out what the methods here do. By contrast, look at:
+
+````java
+src/games/stendhal/server/actions/pet/NameAction.java
+````
+
+How did the experience of trying to figure out what the `NameAction.onAction()` method does compare with the experience of reading the much shorter methods in `OwnAction`?
+
+A good rule of thumb is that your method bodies should be no longer than a single screen's worth of text.  If you can keep your methods that short, then you should be able to easily digest them.  It is also a good discipline for the developer, as it forces us to think in terms of small, self-contained chunks of logic, rather than long rambling sequences of code.
+
+So how can we shorten the `NameAction.onAction()` method?  We can't take any of the functionality out.  It is all needed.  So what are our options?
+
+Once all unnecessary and duplicated code has been removed, the most useful tool we have is the refactoring called `Extract Method`.  We can use this to take some of the lines of code out of this method, and put them into a smaller method.  This simple change can have a dramatic effect on readability.
+
+An opportunity in `NameAction.onAction()` is on lines 62--65.  We could wrap these lines up in a method called `removeQuotes()` (or something similar).  We could do the work of converting these lines into a method, but our IDE can do this job for us almost automatically, including working out what the parameters are and what the result type should be.  Let's try it.
+
+Select lines 62-65 (from beginning to end) and right click on the highlighted code.  Select `Refactor` > `Extract Method` from the menu that appears.  In the dialogue box, give the name you want the extracted method to have.  The name `removeQuotes` seems okay to me.  We can always rename it later, if we need to.  We will make a private method, and will accept all the default parameters the dialogue gives us.  So we can select `OK`.
+
+Look at the code of the class after the refactoring.  The IDE has created a new method, at the bottom of the class, with the name we specified.  It has worked out that we need to pass the name to be processed as a parameter, and has declared the method with the appropriate signature.  The ` onAction()` method is now slightly shorter, and the name of the method tells the code reader exactly what the intent of the code we have extracted into it is.  This makes for a double readability improvement in one simple step.
+
+::: {.rmdnote}
+**Helper Methods**
+
+Methods like this one (private methods, called perhaps just once within a class) are sometimes referred to as *helper methods*.  They are there to help us write readable clear code.  In the early days of computing, it would have been considered ridiculous to define a function or method that was called just once.  Methods, by definition, were used to group together code statements that would be called many times.  With older compilers, method calls incurred a performance overhead: the variables of the calling scope had to be put onto the heap, to be preserved while the method was called, and restored afterwards.
+
+Modern compilers, however, cope easily with methods that are called in just one place.  We no longer have to worry about the performance aspects of creating new methods, and can make as many as we need to create readable clear code.
+:::
+
+The next essential task is to run the tests.  If we have broken something, we want to find out now, while the refactoring is still in our IDE's undo buffer and while the changes we have made are still fresh in our mind.
+
+Can you see any more opportunities to shorten this method by extracting shorter helper methods?  Experiment with the `Extract Method` refactoring and see if you can reduce the size of this method even further.
+
+A hint is given is commented out `<!-- hint -->` below, if you get stuck you can `view the source`: either the `*.html` or `*.Rmd` to see the hint.
+
+<!--Lines 76 to 85 seem to be telling the player that a name change has occurred.-->
+
+
+`Extract Method` is a really powerful tool, and it is worth learning the keyboard short cuts for it, along with the short cuts for *Rename*, so you can apply it quickly and easily when opportunities for code improvements present themselves.  Often, when we extract a method, a useful domain concept is showing itself that the developers had not identified before.   The private helper methods we create with this refactoring can sometimes prove so useful that they become public methods, or even get grouped to form their own class (using the *Extract Class* refactoring).
+
+
+
+## Activity: Excessive Comments {#excessive}
+
+Another code quality issue that can be effectively dealt with by `Extract Method` is the smell of excessive comments.  While a few judicious comments, well placed, can be extremely useful in helping developers to read code accurately and quickly, anything more than this is now viewed as an indication that the code itself may not be of the highest quality.  Rather than fixing the quality problems, and making the code self-documenting, the developer has felt it necessary to include lots of explanatory comments.  This is a quicker solution for the developer in the short term, but leads to technical debt in the long term, as the comments age and grow out of step with the changing code.
+
+You can see an example of this code smell in the `execute()` method of the following class:
+
+````java
+src/games/stendhal/server/actions/equip/EquipAction.java
+````
+
+
+There are comments spread throughout this method, and they don't always seem to add very much value.  Some of them seem to be duplicated by the calls to the logger.  Others seem like they could be conveyed more effectively through extracted methods (which would also deal with the fact that this method is too long).
+
+Can you see any chances to extract methods from this class?
+
+The comments here help us see where we might add in helper methods, but the situation is complication by the structure of the code.  We have a number of if statements, which look like they could make good methods, but they have a ``return`` statement in their body, which only makes sense when executed in the current method.  We can't pull that statement into a helper method, and expect it to work.
+
+In this case, you need to do a little manual refactoring first.  Can you see how to move the return statement outside the body of the if-statement, but still have its execution dependent on the value of the condition in the if-statement?
+
+A hint is given is commented out `<!-- hint -->` below, if you get stuck you can `view the source`: either the `*.html` or `*.Rmd` to see the hint.
+
+<!--
+Create a local boolean variable which will store the result of evaluating the condition.  You can use a second if-statement, on this new variable, to execute the return value outside of the original if-statement, freeing it up to be turned into an extracted helper method.
+-->
+
+Once you've refactored the return statements out of the if-statements, can you see any opportunities for removing the need for comments by extracting code into well-named helper methods?  The goal is to produce code that reads as clearly as natural language, and that explains what the code is doing in as plain and obvious a way as possible.
+
+
+When you reach this point, if you want help, let the lecturer know.  She or he will demonstrate this technique on the screen share.
+
+
+## Activity: Applying the Refactorings Together {#refactorings}
+
+If you finish all the other activities before we move on to the topic of migration, you can have a try at this last activity.
+
+In this activity, you are asked to refactor some test code.  People who are learning to refactor often forget to apply it to their test code as well as their production code.  But readability and ease of modification are just as important for test code as for production code - maybe even more important, because the test code is an essential tool that guides us in changing the production code.  We don't have that safety net for the test code, so it is vitally important that it is clear and simple and can be seen to be correct.
+
+Take a look at the code that tests the Ice Cream for Annie test:
+
+````java
+tests/games/stendhal/server/maps/quests/IcecreamForAnnieTest.java
+````
+
+You should see a couple of the code smells we have been looking at in this code.  And should hopefully have some idea of the refactorings you can use to help you improve it.
+
+By way of contrast, take a look at this test code:
+
+````java
+/stendhal/tests/games/stendhal/server/maps/quests/FindRatChildrenTest.java
+````
+
+This shows the kind of organisation we want to get the `IceCreamForAnnie` tests to follow.  In the `RatChildren` test, each part of the quest is tested in a separate test case method.  This means that if one fails, the other tests will still be run, and we'll get to see which parts of the whole quest are working and which are not.
+
+In the `IceCreamForAnnie` test, on the other hand, everything is written in one long test case.  JUnit will stop at the first failing assertion in each test case, so if an assertion fails in this test somewhere near the beginning, the rest of the assertions won't get run, and we won't get the diagnostic information we need from them.
+
+See if you can use the three refactorings we have used in this workshop to improve the diagnostic capabilities of the `IceCreamForAnnie` test, without changing its meaning.
+
+::: {.rmdnote}
+**Question** if we refactor test code, what tells us when we have made a mistake and changed the behaviour of the system?
+:::
+
+Good luck!

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Chapter 14 Synchronising | Software engineering</title>
+<meta name="author" content="Suzanne Embury and team">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.2"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.9/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.2.5.1/tabs.js"></script><script src="libs/bs3compat-0.2.5.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/mark.min.js"></script><!-- CSS --><link rel="stylesheet" href="libs/custom/duncan.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Software engineering</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">Welcome</a></li>
+<li><a class="" href="timetabling.html">Weekly timetable</a></li>
+<li class="book-part">Weekly Workshops</li>
+<li><a class="" href="building.html"><span class="header-section-number">1</span> Marauroa</a></li>
+<li><a class="" href="understanding.html"><span class="header-section-number">2</span> Understanding large systems</a></li>
+<li><a class="" href="debugging.html"><span class="header-section-number">3</span> Debugging a Codebase</a></li>
+<li><a class="" href="estimating.html"><span class="header-section-number">4</span> Cost estimation</a></li>
+<li><a class="" href="testing.html"><span class="header-section-number">5</span> Test first development</a></li>
+<li><a class="" href="flowing.html"><span class="header-section-number">6</span> Git workflows</a></li>
+<li><a class="" href="refactoring.html"><span class="header-section-number">7</span> Software Refactoring</a></li>
+<li><a class="" href="designing.html"><span class="header-section-number">8</span> Design for Testability</a></li>
+<li><a class="" href="patterning.html"><span class="header-section-number">9</span> Software design patterns</a></li>
+<li><a class="" href="risking.html"><span class="header-section-number">10</span> Risk management</a></li>
+<li><a class="" href="opening.html"><span class="header-section-number">11</span> Open source challenge</a></li>
+<li class="book-part">Team study materials</li>
+<li><a class="" href="starting.html"><span class="header-section-number">12</span> Stendhalgame.org</a></li>
+<li><a class="" href="mentoring.html"><span class="header-section-number">13</span> Industrial mentoring</a></li>
+<li><a class="active" href="syncing.html"><span class="header-section-number">14</span> Synchronising</a></li>
+<li class="book-part">Coursework</li>
+<li><a class="" href="gitting.html"><span class="header-section-number">15</span> Individual Coursework 1</a></li>
+<li><a class="" href="conflicting.html"><span class="header-section-number">16</span> Individual Coursework 2</a></li>
+<li><a class="" href="dealing.html"><span class="header-section-number">17</span> Team Coursework 1</a></li>
+<li><a class="" href="working.html"><span class="header-section-number">18</span> Team Coursework 2</a></li>
+<li class="book-part">Self study materials</li>
+<li><a class="" href="guiding.html"><span class="header-section-number">19</span> Testing Stendhal</a></li>
+<li><a class="" href="committing.html"><span class="header-section-number">20</span> Integrating commits</a></li>
+<li><a class="" href="integrating.html"><span class="header-section-number">21</span> Continuous integration</a></li>
+<li><a class="" href="reviewing.html"><span class="header-section-number">22</span> Code review</a></li>
+<li><a class="" href="automating.html"><span class="header-section-number">23</span> Unit testing</a></li>
+<li><a class="" href="reading.html"><span class="header-section-number">24</span> References</a></li>
+</ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/dullhunk/softeng">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="syncing" class="section level1" number="14">
+<h1>
+<span class="header-section-number">14</span> Synchronising<a class="anchor" aria-label="anchor" href="#syncing"><i class="fas fa-link"></i></a>
+</h1>
+<p>When you’re working in a team, you need to synchronise with your team repository.</p>
+<div id="syncintro" class="section level2" number="14.1">
+<h2>
+<span class="header-section-number">14.1</span> Introduction<a class="anchor" aria-label="anchor" href="#syncintro"><i class="fas fa-link"></i></a>
+</h2>
+<p>In this activity, we’ll take you through the process of synchronising your local Git repositories when your fellow team members have pushed new commits to your remote. This is a team activity, which you should work through together in the team study session.
+<!--You don't all need to be in the same location to carry it out, but you do need to be in communication so you can coordinate the various stages.  Obviously, that will be easier if you are all close by.--></p>
+<p>In the activity:</p>
+<ul>
+<li>One team member will make a commit to their local repository.</li>
+<li>That team member will push the commit to the team repository.</li>
+<li>Everyone else will fetch the commit down into their own local repository.</li>
+<li>Everyone else will synchronise their local branches with the remote tracking branches.</li>
+</ul>
+<p>This document will guide you through the steps needed to achieve all of these goals, explaining some of the core Git concepts as we go.</p>
+<div class="rmdnote">
+<p>These instructions assume that no one has yet pushed any commits to your team repository. If that’s not the case for your team, you’ll need to carry out steps 3 and 4 before getting started on these instructions. Check the <code>Commits</code> page for your GitLab project to find out if any commits have been made since your repository was created.</p>
+</div>
+</div>
+<div id="locommit" class="section level2" number="14.2">
+<h2>
+<span class="header-section-number">14.2</span> Making a Local Commit<a class="anchor" aria-label="anchor" href="#locommit"><i class="fas fa-link"></i></a>
+</h2>
+<p>Choose one team member who will make and push the commit. That person will share their screen with their team members, who will observe and make notes of the process, giving feedback and suggestions where needed.</p>
+<p>We’re going to make a change to the following file:</p>
+<div class="sourceCode" id="cb45"><pre class="sourceCode md"><code class="sourceCode markdown"><span id="cb45-1"><a href="syncing.html#cb45-1" aria-hidden="true" tabindex="-1"></a>/data/conf/admins.txt</span></code></pre></div>
+<p>This file is empty at present, but it has an important function for us as developers of the code base. If the username of a Stendhal player is added to this file, that player becomes an administrator for the game, with access to lots of capabilities that ordinary players don’t have. These capabilities will be very important for replicating issues and testing the changes you need to make to the game, without having to actually play the game for long periods.</p>
+<p>The capabilities available to admin level players are described on the Stendhal wiki at <a href="https://stendhalgame.org/wiki/Stendhal:Administration">stendhalgame.org/wiki/Stendhal:Administration</a></p>
+<p>You should familiarise yourself with the main ones, so you can use them in testing your code changes in game.</p>
+<p>The first step when making any change to a code base under version control is to decide where the commit should be made. The commit we are going to make is a small self-contained change that is needed by everyone in the team. So, we are going to make the commit directly onto the main development branch. Obviously, if the change had been more complicated or affected more files, we would want to first make the change on a feature branch. But the simple Git workflow the Stendhal team use allows for commits to the development branch, and the commit is small and simple. Most importantly, the change is not to the program code of the system; we can’t introduce compile errors with this change and it seems unlikely that it would cause any existing tests to fail. It is therefore probably safe to make directly onto the development branch, provided we check the effects of the change carefully before committing and pushing.</p>
+<p>We begin by checking out the correct branch: the <code>master</code> branch. If you have done this correctly, you should see the name of this branch next to your project name in the <code>Package Explorer</code> view.</p>
+<!--%screen{packageExplorerViewShowingMasterBranchCheckedOut}-->
+<p>Our commit will set up the admin level players that your team wants, by editing the <code>admins.txt</code> file. In the <code>Git Staging View</code><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content="&lt;p&gt;Use menu option &lt;code&gt;Window&lt;/code&gt; &amp;gt; &lt;code&gt;Open View&lt;/code&gt; &amp;gt; &lt;code&gt;Other&lt;/code&gt; &amp;gt; &lt;code&gt;Git&lt;/code&gt; &amp;gt; &lt;code&gt;Git Staging View&lt;/code&gt; to open this view.&lt;/p&gt;"><sup>2</sup></a>, enter a description of the commit we are about to make as the commit message:</p>
+<div class="sourceCode" id="cb46"><pre class="sourceCode md"><code class="sourceCode markdown"><span id="cb46-1"><a href="syncing.html#cb46-1" aria-hidden="true" tabindex="-1"></a>Set up admin player for manual testing by dev team</span></code></pre></div>
+<p>Now we’ll prepare the code change that will become the commit.</p>
+<p>Every team member will need access to an admin level player on their own test server, but you will all need to use the same <code>admins.txt</code> file that is checked into your team repository. So you need to decide your strategy for this now. You can do one of the following:</p>
+<ul>
+<li>Add one user name to the <code>admins.txt</code> file (such as ‘testplayer’). Everyone must create a player with this username in their local server for their own testing. Or,</li>
+<li>Everyone tells the person making the commit their preferred admin user name, and all those names are added to the <code>admins.txt</code> file now. The file should be formatting with one name on each line, and no punctuation surrounding them. Everyone creates a player with one of these names in their local game server for their own testing.</li>
+</ul>
+<p>When you have created an <code>admins.txt</code> file that fits your team’s requirements, save it.</p>
+<p>The next step is to run the test suite, and the build process, to check that the change has not broken something unexpected. If all tests pass (or, at least, no new failing tests have appeared) you can go ahead and make the commit.</p>
+<p>The <code>admins.txt</code> file should now appear as an “unstaged change” in your <code>Git Staging View</code>. Drag it into the “staged changes” box (taking care to leave any other files you may have changed in the “unstaged changes” — they are not related to this commit, and we don’t want them to be included in it). Make the commit (but <em>do not push</em> at this stage).</p>
+<div class="figure" style="text-align: center">
+<span id="fig:fileStagedForCommit-fig"></span>
+<img src="images/fileStagedForCommit.png" alt="Your main eclipse window should look something like this" width="100%"><p class="caption">
+Figure 14.1: Your main eclipse window should look something like this
+</p>
+</div>
+<div class="rmdnote">
+<p><strong>WARNING</strong>
+Don’t forget to check that the code compiles and the tests all pass before committing the code changes. We haven’t made any changes to Java source code in this commit, but we have made changes to configuration information that could potentially cause some part of the build process or some tests to fail. So, it is still important to run through the build and test check before making the commit.</p>
+<p>Remember that if you commit broken code to your team repository, all your team members will fetch the errors into their local repository, and their own build and test process will be affected for that branch too. If this is the development branch, that can cause a lot of extra work for your whole team, and if done at the last minute before a release may even break the code that the customer sees (or, in our case, affect your team mark). So, it is a good idea to get into the habit of checking the build and test results regularly, and <em>always</em> before making a commit.</p>
+</div>
+</div>
+<div id="pushing" class="section level2" number="14.3">
+<h2>
+<span class="header-section-number">14.3</span> Step 2: Pushing the Commit to the Team Repository<a class="anchor" aria-label="anchor" href="#pushing"><i class="fas fa-link"></i></a>
+</h2>
+<p>The next step is to check that the commit looks okay when viewed in the context of your project history. Right click on the Stendhal project name in the <code>Package Explorer</code> view and select <code>Team</code> &gt; <code>Show in History</code>. You should see something like figure <a href="syncing.html#fig:localCommitGraphBeforePushNoHistory-fig">14.2</a></p>
+<div class="figure" style="text-align: center">
+<span id="fig:localCommitGraphBeforePushNoHistory-fig"></span>
+<img src="images/localCommitGraphBeforePushNoHistory.png" alt="Your setup should look something like this" width="100%"><p class="caption">
+Figure 14.2: Your setup should look something like this
+</p>
+</div>
+<p>Click on the commit you just created and check that the right files and changes have been included. We should see a small commit on the <code>master</code> branch that changes only the <code>admins.txt</code> file.</p>
+<p>Let’s compare the state of this repository with that of the team’s remote repository on GitLab at this stage. In your web browser, view your team’s GitLab project. Use the <code>Repository</code> &gt; <code>Graph</code> option from the menu on the left hand side to see the commit graph. It should look something like figure <a href="syncing.html#fig:commitGraphInGitLabBeforePushNoHistory-fig">14.3</a></p>
+<div class="figure" style="text-align: center">
+<span id="fig:commitGraphInGitLabBeforePushNoHistory-fig"></span>
+<img src="images/commitGraphInGitLabBeforePushNoHistory.png" alt="Your gitlab repository (gitlab.cs.man.ac.uk) should look something like this." width="100%"><p class="caption">
+Figure 14.3: Your gitlab repository (<a href="https://gitlab.cs.man.ac.uk">gitlab.cs.man.ac.uk</a>) should look something like this.
+</p>
+</div>
+
+<p>You can see that the team’s project is now lagging behind the state of the local repository where the commit was made. It doesn’t yet have the new commit. This is reflected in the <code>History</code> view in Eclipse, where the position of the <code>master</code> branch in the remote repository <code>origin/master</code> is shown as being at the parent commit of the one we have just made.</p>
+<div class="rmdnote">
+<p><strong>Remote Tracking Branches</strong></p>
+<p>The <code>origin/master</code> branch is a special kind of branch called a “remote tracking branch.” It is not a normal branch that we would use for development. Instead, its role is to remember the positions of branches in the remote repository. We have two <code>master</code> branches in play here: the <code>master</code> branch in the developer’s local repository and the <code>master</code> branch in the remote repository. Some of the time these branches will point to the same commit, but a lot of the time they will be pointing to different commits. So we can’t use one branch to represent them both; we need one branch for the local repository position and another to track the position of the branch in the remote repository. Hence the name: remote tracking branch.</p>
+<p>Remote tracking branches are easily identified in commit graphs because they have the name of the remote repository prepended to them. In this case, our remote uses the default name <code>origin</code>, so the remote tracking branch for the <code>master</code> branch in our team repository is <code>origin/master</code>.</p>
+<p>Eclipse colours these branches grey in the <code>History</code> view, to indicate that they are present for information but are not for us to actively work on. If you check out a remote-tracking branch, you’ll see that it is treated as a <em>Detached Head</em> checkout: you won’t be able to move the position of the branch forward by making commits on it.</p>
+</div>
+<p>When you are happy that the commit contents and location in the commit graph are correct, you can go ahead and push your code to the team remote repository. Right click on your project name and select <code>Team</code> &gt; <code>Push Branch 'master'...</code> from the menu. Use the <code>Preview</code> to check that Git is going to do what you expect (push the one commit we just made), and then make the <code>Push</code>. Eclipse will confirm the results of the operation, then you can <code>Close</code> the window.</p>
+<p>If no commits have been made to your team repository since it was created, then this push should succeed.</p>
+<p>It is a good habit to check that your changes have reached the team repository, and look as you expect. Refresh the commit graph page of your team project in GitLab. It should now look the same as the graph in the <code>History</code> view, shown in figure <a href="syncing.html#fig:commitGraphInGitLabAfterPushNoHistory-fig">14.4</a></p>
+<div class="figure" style="text-align: center">
+<span id="fig:commitGraphInGitLabAfterPushNoHistory-fig"></span>
+<img src="images/commitGraphInGitLabAfterPushNoHistory.png" alt="Your commit graph should look something like this" width="100%"><p class="caption">
+Figure 14.4: Your commit graph should look something like this
+</p>
+</div>
+<p>You can also check the <code>History</code> view in Eclipse, where you should see that the remote-tracking branch for <code>master</code> has now moved forward to match the position of your local <code>master</code> branch. The tag that marks the starting point of the coursework (shown in yellow in the Eclipse History view) is unaffected by any of the changes we have made and remains at its original location.</p>
+</div>
+<div id="fetching" class="section level2" number="14.4">
+<h2>
+<span class="header-section-number">14.4</span> Step 3: Fetching the New Commit from the Team Repository<a class="anchor" aria-label="anchor" href="#fetching"><i class="fas fa-link"></i></a>
+</h2>
+<!--% Redo screen shots with contents of admins.txt file showing.-->
+<p>The remaining steps are to be carried out by all other team members. The person who made the commit that changed the <code>admins.txt</code> file should just observe from this point. Perhaps one team member who is carrying out the steps could share their screen for this part of the activity.</p>
+<p>At this stage, the commit exists in the team repository and in the local repository of the person who made the commit, but it is does not yet exist in the local repositories of the other team members. We need to synchronise these local repositories with the team repository, so you can see and build on the work of other team members.</p>
+<p>Synchronising your repository with a remote repository requires two basic steps:</p>
+<ol style="list-style-type: decimal">
+<li>First, we bring any commits and branches that have appeared or changed in the remote since we last synchronised with our local repository.</li>
+<li>Then we integrate the work you have on your local repository with the work of your colleagues that you’ve just fetched down into your repository.</li>
+</ol>
+<p>We’ll carry out the first of these steps now.</p>
+<p>Bring up the <code>History</code> view of your project in your IDE, and open the commit graph view of your project in GitLab. (The GitLab commit graph should look the same as in the screenshot at the end of the instructions for Step 2.) If you compare the two commit graphs, you should see that there is an additional commit in GitLab that you don’t have in your repository — the commit that adds the admin players. You will see that your <code>master</code> branch is “behind” the position of the <code>master</code> branch on the remote repository shown in figure <a href="syncing.html#fig:teamMatesLocalCommitGraphBeforeFetchNoHistory-fig">14.5</a>.</p>
+<div class="figure" style="text-align: center">
+<span id="fig:teamMatesLocalCommitGraphBeforeFetchNoHistory-fig"></span>
+<img src="images/teamMatesLocalCommitGraphBeforeFetchNoHistory.png" alt="Your commit graph should look something like this" width="100%"><p class="caption">
+Figure 14.5: Your commit graph should look something like this
+</p>
+</div>
+<p>In the <code>Package Explorer</code> view, find and open the <code>data/conf/admins.txt</code> file. It should be empty. The changes made by your team mate are not yet visible to you.</p>
+<p>Now we’re going to “fetch” any new commits and branch/tags down from the remote repository. Start by checking out your <code>master</code> branch. Then, right click on the Stendhal project name in the <code>Package Explorer</code> view, and select <code>Team</code> &gt; <code>Fetch from origin</code>. You should see a dialogue box summarising the commits that have been brought into your repository and confirming that the fetch operation succeeded like the one shown in figure <a href="syncing.html#fig:fetchSucceededNoHistory-fig">14.6</a></p>
+<div class="figure" style="text-align: center">
+<span id="fig:fetchSucceededNoHistory-fig"></span>
+<img src="images/fetchSucceededNoHistory.png" alt="The fetch results dialog box" width="100%"><p class="caption">
+Figure 14.6: The fetch results dialog box
+</p>
+</div>
+<p>Your <code>History</code> view should also have updated to show the results of the fetch operation. It should now look something like figure <a href="syncing.html#fig:teamMatesLocalCommitGraphAfterFetchNoHistory-fig">14.7</a>.</p>
+<div class="figure" style="text-align: center">
+<span id="fig:teamMatesLocalCommitGraphAfterFetchNoHistory-fig"></span>
+<img src="images/teamMatesLocalCommitGraphAfterFetchNoHistory.png" alt="An updated History view showing the results of the fetch operation" width="100%"><p class="caption">
+Figure 14.7: An updated History view showing the results of the fetch operation
+</p>
+</div>
+<p>If you don’t see this same commit graph, make sure you have selected the option to “Show all branches and tags”<a class="footnote-ref" tabindex="0" data-toggle="popover" data-content="&lt;p&gt;It is the button to the right of the green “compare mode” button in the toolbar for the &lt;code&gt;History&lt;/code&gt; view. Its tool tip text begins “Change which commits to show.”&lt;/p&gt;"><sup>3</sup></a>. If you don’t select this option, you’ll only see the history that is visible from your currently checked out branch (in this case, your <code>master</code> branch) and not any commits that happened after that.</p>
+<p>Notice that the new commit is now present in your local commit graph. But, your <code>master</code> branch has not moved to include it. Instead, the remote tracking branch called <code>origin/master</code> has moved to point to the new commit, whereas previously it was at the same commit as your <code>master</code> branch. The fetch operation gave Git the chance to update the position of the remote tracking branch, to match its current position in the remote repository.</p>
+<div class="rmdnote">
+<p>Note that the remote tracking branch only tracks the position of the branch in the remote repository at the time we last asked about the state of the remote: that is, at the time of the last fetch or push operation. Remote tracking branches are not magic — they don’t always follow the position of the branch in the remote whenever any changes are made to it. But whenever we synchronise our repository state with the remote, the remote tracking branch will be updated.</p>
+<p>You should never try to check out and make changes to the position of a remote tracking branch. When we make commits on a local branch, the position of the branch moves forward to point to the new commits without us having to ask. But the position of a remote tracking branch should only move when changes have been made in the remote repository. Similarly, you should not try to reset the position of a remote tracking branch, or to merge commits from other branches into it. Leave Git to keep its position updated, and concentrate on controlling the position of your local branches. They are the ones that record the state of work you are doing.</p>
+</div>
+</div>
+<div id="inc" class="section level2" number="14.5">
+<h2>
+<span class="header-section-number">14.5</span> Step 4: Incorporating the Commit into Your Local Branch<a class="anchor" aria-label="anchor" href="#inc"><i class="fas fa-link"></i></a>
+</h2>
+<p>Now we need to integrate the changes we have just brought from the remote into our own local branches, so that we can build on top of the work of our team mates with our own code changes.</p>
+<p>In this case, this means we need to get our local <code>master</code> branch to point to the same commit as the remote tracking branch, so that we can see the new commit and make our own changes on a code base that includes the change it makes (the specification of the new admin player).</p>
+<p>Because we haven’t yet added any commits ourself to the <code>master</code> branch, this process is easy<a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;It is a little trickier if you have made your own commits onto &lt;code&gt;master&lt;/code&gt;. In this case, you’re advised to use rebase rather than merge. See chapter &lt;a href="committing.html#committing"&gt;20&lt;/a&gt; “Integrating Your Commits with your Team’s Commits” for an explanation of how to do that.&lt;/p&gt;'><sup>4</sup></a>. We can just use a merge operation. Git merge is used to bring changes from one branch into another. It always changes the branch that we have checked out. We have the <code>master</code> branch checked out<a class="footnote-ref" tabindex="0" data-toggle="popover" data-content="&lt;p&gt;Checked out branches are shown in bold on the &lt;code&gt;History&lt;/code&gt; view, and also have the symbolic branch &lt;code&gt;HEAD&lt;/code&gt; next to it. &lt;code&gt;HEAD&lt;/code&gt; is not a real branch — it is just some syntactic sugar that Git supports to give a really quick way to refer to the currently checked out branch.&lt;/p&gt;"><sup>5</sup></a> so that’s the branch that will change its position as a result of the merge.</p>
+<p>Next we need to work out which branch contains the code changes (commits) that we want to include in the checked out branch. In this case, we want to bring the changes from the <code>origin/master</code> branch into the local <code>master</code> branch. So, we right click on the commit labelled with <code>origin/master</code> and select the <code>Merge</code> operation.</p>
+<div class="rmdnote">
+<p>If this sounds like a contradiction with our earlier instructions regarding merges and remote tracking branches, then it is worth noting that Git merge operations involve two branches, but <em>only one of the branches is changed by the merge</em>. Here, we have the local <code>master</code> branch checked out, so this is the branch that will change. The other branch involved in the merge is left unchanged by it.</p>
+<p>So, suggesting that we merge a remote tracking branch <em>into</em> a local branch is completely consistent with our earlier advice not to try to change the position of remote tracking branches. Only merges that change the position of a remote tracking branch are problematic.</p>
+</div>
+<p>In this case, the merge operation is a simple one: Git just has to move the <code>master</code> branch forward along the chain of commits until it reaches the same place as the <code>origin/master</code>. This kind of merge is called a “fast forward merge,” because it is very quick for Git to do (it just changes the commit the <code>master</code> branch points to, rather than doing any actual mucking about with creating new versions of the code base) and because it involves moving the branch forward along the chain of commits.</p>
+<p>Your <code>History</code> view should now look something like figure <a href="syncing.html#fig:teamMatesLocalCommitGraphAfterFFMergeNoHistory-fig">14.8</a>.</p>
+<div class="figure" style="text-align: center">
+<span id="fig:teamMatesLocalCommitGraphAfterFFMergeNoHistory-fig"></span>
+<img src="images/teamMatesLocalCommitGraphAfterFFMergeNoHistory.png" alt="Your commit graph should look something like this" width="100%"><p class="caption">
+Figure 14.8: Your commit graph should look something like this
+</p>
+</div>
+<p>Notice how the two versions of the <code>master</code> branch are now at the same commit, which is also the checked out commit. If you look again at the contents of the <code>data/conf/admins.txt</code> file, you should see that the changes made by your team mate are now included. When you start work from this commit, you’ll be building on top of the changes made by your colleague.</p>
+<div class="rmdnote">
+<p>At this point, before beginning to make changes yourself, you should check that the code can be built and that the tests all run. If you find a problem, track down the author of the commit that introduced the error and work with them to correct it. You’ll need to run this whole process again, so that the fix can get copied into everyone’s local repository.</p>
+</div>
+</div>
+<div id="finalword" class="section level2" number="14.6">
+<h2>
+<span class="header-section-number">14.6</span> A Final Word<a class="anchor" aria-label="anchor" href="#finalword"><i class="fas fa-link"></i></a>
+</h2>
+<p>This illustrates the basic workflow we will use in the project, except that you will be making most of your changes on feature branches rather than on the <code>master</code> branch. The basic steps are the same. Only the branch names change.</p>
+<p>You will find the whole process of collaborative coding using Git goes more smoothly if you get into the habit of synchronising your code base with the team remote on a regular basis. That means carrying out steps 3 and 4 described in this document. You should synchronise your code base whenever you start work on the code for the day, whenever you are about to create a new feature branch, whenever you are about to push work to the remote and (most importantly) whenever you are about to integrate work on a feature branch into the development branch.</p>
+<p>Of course, in this activity, we covered only a very simple synchronisation scenario. As your team begins to push more code to your remote, you’ll quickly encounter scenarios where the simple approach described in this document doesn’t work. These more involved scenarios (and how to handle them) are described chapter <a href="committing.html#committing">20</a> on “Integrating Your Commits with your Team’s Commits.”</p>
+<p>Good luck!</p>
+
+</div>
+</div>
+
+
+
+
+  <div class="chapter-nav">
+<div class="prev"><a href="mentoring.html"><span class="header-section-number">13</span> Industrial mentoring</a></div>
+<div class="next"><a href="gitting.html"><span class="header-section-number">15</span> Individual Coursework 1</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#syncing"><span class="header-section-number">14</span> Synchronising</a></li>
+<li><a class="nav-link" href="#syncintro"><span class="header-section-number">14.1</span> Introduction</a></li>
+<li><a class="nav-link" href="#locommit"><span class="header-section-number">14.2</span> Making a Local Commit</a></li>
+<li><a class="nav-link" href="#pushing"><span class="header-section-number">14.3</span> Step 2: Pushing the Commit to the Team Repository</a></li>
+<li><a class="nav-link" href="#fetching"><span class="header-section-number">14.4</span> Step 3: Fetching the New Commit from the Team Repository</a></li>
+<li><a class="nav-link" href="#inc"><span class="header-section-number">14.5</span> Step 4: Incorporating the Commit into Your Local Branch</a></li>
+<li><a class="nav-link" href="#finalword"><span class="header-section-number">14.6</span> A Final Word</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/dullhunk/softeng/blob/master/14-synchronising.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/dullhunk/softeng/edit/master/14-synchronising.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Software engineering</strong>" was written by Suzanne Embury and team. </p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer>
+</body>
+</html>

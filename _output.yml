@@ -1,0 +1,20 @@
+# WEB version at on netlify.app
+bookdown::bs4_book:
+  includes:
+  theme:
+    primary: "#637238"
+  repo: https://github.com/dullhunk/softeng
+  css: "libs/custom/duncan.css"
+
+# PDF version
+bookdown::pdf_book:
+  latex_engine: "xelatex"
+  citation_package: natbib
+  keep_tex: true
+  # keep_tex: yes doesn't work
+
+# EPUB version at
+bookdown::epub_book: default
+
+# Pagination is horrible but good for editing sometimes
+# bookdown::word_document2: default

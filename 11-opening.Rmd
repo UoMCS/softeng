@@ -1,0 +1,64 @@
+# Open source challenge  {#opening}
+
+## Introduction
+
+Contributing to open source software is a great way to get experience, it looks great on your CV (so will improve your chances of being invited to job interviews) and also helps you to develop your skills and knowledge. [@experiencing; @spinellis]
+
+In this workshop, you can work alone, in pairs or in small groups to put everything you have learnt this semester into practice, aiming to fix an issue (and create a pull request) for an open source system of your choice.
+
+The workshop builds on all the techniques given in previous workshops for working with large and/or unfamiliar codebases.
+Hopefully any pull request you put together today will be the [first of many](http://firstpr.me) ...
+
+
+
+## The challenge {#challenge}
+
+Working alone, in pairs, or in small groups... **find and fix an issue for an open source system of your choice**.
+You may work on a project in any programming language you feel comfortable coding in.
+
+## Identify an appropriate project {#projecti}
+
+Make sure you have a project that:
+
+* accepts new contributions
+* has a license / contribution policy that you're happy with.
+    + Do you need to complete a contributors agreement?
+    + Is there a specific programming style you need to stick to?
+* you can easily download, build and run
+* you can run relevant tests for
+* is in a programming language you're familiar with
+* uses a toolchain that you're (mostly) familiar with
+* has an issue tracker with open issues
+
+Some Java projects that might work for you:
+
+* [jitsi.org](https://jitsi.org}) - A Java audio/video/chat client. Uses Ant and JUnit, hosted at [github.com/jitsi/jitsi](https://github.com/jitsi/jitsi). As of July 2021 there are [46 open issues tagged with help-wanted](https://github.com/jitsi/jitsi/labels/help-wanted).
+* [junit.org](http://junit.org/junit5) - The next generation of JUnit (Java testing). Hosted at [github.com/junit-team/junit5](https://github.com/junit-team/junit5), as of July 2021  there are [14 open issues tagged with up-for-grabs](https://github.com/junit-team/junit5/labels/up-for-grabs).
+
+You'll also find Java projects listed on [up-for-grabs.net](http://up-for-grabs.net). You may also find ideas on at [twitter.com/yourfirstpr](https://twitter.com/yourfirstpr). Some more suggestions for open source projects, including many in Python and other langauges see *Coding Your Future*. [@experiencing]
+
+### Find an interesting issue to work on {#findanissue}
+You'll need to identify an issue for your group to tackle. You should check that:
+
+* Your issue is one that you can replicate (i.e. you should be able demonstrate to yourselves that there really is a problem).
+* Your issue is one that the project team are open to contributions for.
+    + Some issues may have been addressed but not released yet
+    + Other issues may already be in progress
+    + Some may be issues that the project team are choosing not to address (e.g. for backward compatibility reasons, or because they consider the issue to be a feature, not a bug).
+
+* Your group agree that your chosen issue is something that you have the skills to address.
+
+### Fork and clone the repository {#forklone}
+You'll need a copy of the codebase to work on. Exactly how to achieve this may vary based on how the project is hosted.
+
+For GitHub hosted projects you'll usually fork a repository, and then clone your forked version.
+
+See [help.github.com/articles/fork-a-repo](https://help.github.com/articles/fork-a-repo/)
+
+### Branch, change and push {#bcp}
+Work on the issue as a team. Once you're happy that you've addressed the issue, run any relevant tests again. If all the tests pass and you're confident that you've met all the requirements for contributors, then now's the time to push changes up to your forked repository.
+
+### Notify the repository creator (make a pull request) {#pullrequest}
+Once everything is complete, you'll want to feed your work back to the original codebase.
+
+For Github-hosted projects you do this by making a pull request: [help.github.com/articles/creating-a-pull-request](https://help.github.com/articles/creating-a-pull-request). You may also want to: post to relevant mailing lists/forums, contact the project owner on twitter.

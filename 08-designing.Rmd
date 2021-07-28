@@ -1,0 +1,215 @@
+# Design for Testability {#designing}
+
+Software refactoring and migration
+
+## Preparing for the Workshop
+
+Welcome to the (ref:coursecode) workshop on *design for testability*.
+
+Today, after a short lecture introducing the core concepts, we'll be working through a number of activities in which you will be using the Stendhal code base to learn some basic design for testability concepts.
+
+We are going to use the Stendhal Playground code base in today's workshop. so you can make changes without putting your coursework at risk.  To prepare for the workshop, please run your IDE and load this project.
+
+If you did not attend the earlier workshops where we used the Stendhal Playground code base, you'll need to look at the workshop instructions for week 3, to see how to acquire it.
+
+
+
+## Understanding Test Doubles: Dummies {#dummies}
+
+The simplest kind of test double is a *dummy*.
+
+We use a dummy when the code under test is required to pass an object to some part of the fixture, but we know that the object itself will not be used during test execution.  In this case, we just need a test double object that has the same interface as the required fixture object.  We don't care what the dummy does, because it will never be used.
+
+This is easiest to see by looking at some examples.
+
+
+#### Example Dummy No. 1 {#dummy1}
+
+In your IDE, find the code for the following method:
+
+````java
+games.stendhal.server.core.config.zone.NoTeleportInTest.testConfigureZone()}
+````
+
+The test class and method name and the comments make it clear that this test case is checking that whole zones can be correctly configured to disallow teleporting in.  The test checks that teleporting in is not allowed at two locations in the zone (top left and bottom right edge squares) but that teleporting out is still allowed.
+
+The fixture for this test is a zone that is configured to disallow inwards teleports.  We don't care about the other attributes of the zone.  But the signature of the method for adding a configuration to a zone requires two arguments: the zone to be configured *and* a map containing attributes to be used in guiding the configuration.  (Hover over the call to the `configureZone()` method to see it's JavaDoc.)  The `NoTeleportIn` configuration does not need any special attributes to be set, but the method signature is inherited and the attributes must be provided whether they are needed or not.
+
+There's no point wasting time and resources (and lines of code) setting up some fake attributes for this configuration if the test isn't going to use them.  So, the coder of this test has sensibly chosen the simplest possible object compatible with the method signature: a `null` value.
+
+In Java, as in many object oriented languages, `null` is an instance of the class `Object`, the class which is at the root of the object inheritance hierarchy and which all other classes are a sub-class of.  An instance of `Object` can be used anywhere an instance of any other class is needed.  This means that `null` is a match for the required data type (`Map<String, String>`) and can be given as the simplest possible attribute map to satisfy Java's strong typing requirements.
+
+
+### Example Dummy No. 2 {#dummy2}
+
+Let's look at another example, this time in the client code.  Search for the method:
+
+````java
+games.stendhal.client.gui.ItemPanelTest.testCursors()
+````
+
+The very first line of this method contains an example of a `null` value being used as a dummy.  The `itemPanel()` constructor takes two arguments: a slot name and a placeholder sprite.  We don't care much about either value in this test, but need the `ItemPanel` instance as part of the fixture.  The name is easy enough, we can give any value.  (Note the carefully chosen value used in the test, which clearly indicates to the reader of the code that the name is not important.)  But we also don't care about the sprite.  So the coder has used the simplest possible `Sprite` instance to fulfil the fixture requirements: a `null` value.
+
+
+### Example Dummy No. 3 {#dummy3}
+
+Staying with the `testCursors()` test case from the previous example, can you see another dummy being used in this test---one that is not just a `null` value this time?
+
+See if you can find it, then check your answer with a staff member or a graduate teaching assistant (GTA).  Remember that a dummy is a test double that represents the simplest possible, most vanilla object that can allow the necessary fixture to be found.
+
+
+
+## Understanding Test Doubles: Stubs {#stubs}
+
+What do we do when our fixture needs to be more complex than the simple dummy objects we have looked at so far?  Most test doubles need to behave more like the production objects that they mimic, and have real behaviour that is invoked in the test.
+
+Sometimes, we need to be able to control the values returned from method calls.  When we can hard code a simple return value into the object, then we call the test double a `stub` object.
+
+A stub is a version of the desired fixture class that has the same interface as that class, but returns simple, hard-coded values from its methods, rather than doing any actual game processing.  This removes randomness and unpredictability from our fixture, while also giving the results we need for the test.
+
+In older languages, stub classes have to be defined in full, just as ordinary production classes are, and we need to include some mechanism in the code to say when to use the stub class (when testing) and when to use the production class (when in production use).  But OO languages, with sub-classing and inheritance, give us a more convenient way of defining stubs, right inside the test code itself.
+
+
+### Example Stub No. 1 {#stubby1}
+
+Look at the test case methods in:
+
+````java
+games.stendhal.client.entity.EntityTest
+````
+
+The methods create an instance of a class called `MockEntity`.  But if you look for this class in the code base, you will not find it, and no import pulls a class with this name into the class we are defining.
+
+Instead, this class is defined at the end of the `EntityTest` class, as a private class (lines 156--176).
+
+This new class inherits from the `Entity` class, and so has all the same behaviour as this production code class, apart from where the behaviour is overridden and added to in this definition.  The changes define the extra control we need over `Entity` instances in order to write this test effectively.
+
+In this case, the changes are:
+
+* Adding a new private field called `count`.
+* Overriding the superclass constructor behaviour to create a Marauroa RPObject instance and give it a type.
+* stubbing the method that returns the area of the entity so that all `MockEntity` instances will return a null `RectangularArea` (an example of a dummy used inside a stub).
+* Overriding the `onPosition()` method so that as well as doing everything the production superclass does when this method is called, we also increment the `count` variable.
+
+For each of these, look at the test methods on this test class, and see if you can work out roughly why the stub class is designed to have these behaviours.
+
+Notice that this stub class both controls the state (returning a hard-coded value when the area of an entity is requested) *and* adds special control behaviour needed by the test code but not the production code (counts the number of times the `onPosition()` method is called).
+
+
+### Example Stub No. 2 {#stubby2}
+
+Another useful Java mechanism for creating stub classes is the anonymous sub-class.  This is used widely throughout the Stendhal test suite for creating test doubles, and is a popular technique in general for getting code under test.
+
+To see an example of this in the Stendhal code base, find the method:
+
+````java
+games.stendhal.server.actions.admin.SummonActionTest.setUP()
+````
+
+
+Make sure you find the server version of this test class.  There is another class with the same name in the client code, which does not contain an obvious stub.
+
+Take a look at this simple method and see if you can work out what it does.  (Anonymous sub-classes are a feature of Java that you were not taught in our first year programming course units.  You can either ask a member of staff or a GTA to explain, or you can research for yourself how this Java feature works.  But don't leave the workshop without understanding this language construct and how it can be used to create test doubles.)
+
+The `SummonActionTest.setUP()` method creates an anonymous sub-class of the `StendhalRPZone` class, and overrides one of the methods on that class: the `collides()` method that we have met in previous workshops.  Instead of using the collision layer to decide whether the player or objects can be placed at the location given, this over-ridden version of the method just always returns `false`.  It does not matter which location in this zone you give as parameters, this method will always say there is no collision at that point, and the object can be placed there.
+
+Hopefully, you can see that this is a much quicker and more elegant way of ensuring we have no collisions in our zone than having to setup and configure an actual collision layer for our test zone.  The stub object is created at the time the test is run, and has exactly the same behaviour as the `StendhalRPZone` class, except that it will never report any collisions for any zone created with it.
+
+Take a look at how the `zone` instance created from the anonymous sub-class is used, and how this stub test double allows us to write the test more simply.
+
+
+
+## Test Doubles Scavenger Hunt {#scavenger}
+
+Work in pairs or small groups to find more examples of the different types of test double in Stendhal.  Some guidance on how to do this is given below. Can you find at least:
+
+* One additional example of a dummy
+* One additional example of a stub
+
+Write the name of the class, and the line where the test double occurs, on a sheet of paper or in a file.
+
+When you have found an example of each type of test double (or given up) check your answers with staff or a TA, and share examples with neighbouring students.
+
+
+### Finding Dummies {#findum}
+
+To find some candidate code to examine, you can use File Search in your IDE to search for the string `null` in test code.  (A good shorthand way to search through only the test classes is to use the regular expression `*Test.java` in the file name section of the search dialogue box.)
+
+You are looking for places in the fixture setup part of a test case where a null is passed as a parameter when preparing the class under test for test execution, or when preparing a dependent object.
+
+For other dummies, look for the use of no argument constructors, where simple instances are created and passed as parameters to the class under test, or when setting up a dependent class.
+
+
+A good sign that you have found a dummy is that you could replace it with another more complex object, and the test behaviour would not change.
+
+
+
+### Finding Stubs {#findstubs}
+
+Stubs will also normally be found in test classes.  Look for anonymous subclasses created during the set-up stages of a test case, where literal values are used to specify return values from methods.
+
+Stubs can also be implemented as named private classes.  This normally happens when we need to create several instances of the same stub, for use across multiple test cases, perhaps.  If we only need one instance of the stub, we don't need to refer to it in other parts of the code, and it is fine for it to be anonymous.
+
+Sometimes stubs need to be used by several classes under test.  In this case, they can't be declared as private classes, and must be declared in their own file.  Look for such classes wherever test classes are declared, but also in places where test helper code is located.
+
+Can you find the packages containing test helper code in Stendhal?
+
+
+Look at the names used for the non-anonymous stubs you find.  Have the authors of the code made the role of these classes as test doubles clear from the name?
+
+
+
+## Understanding Test Doubles: First Experiments with Mock Objects {#mockobjects}
+
+For this short activity, you are asked to look through the test code for the HandToHand class:
+
+````java
+games.stendhal.server.entity.creature.impl.attack.HandToHandTest.java
+````
+
+Below is a list of the names of each of the test case methods in this class.  Take a sheet of paper and draw a line down the middle.  On one side, write the names of the methods that are using mocks, and on the other side write the names of the test methods not using the mock objects framework.
+
+
+* `testAttack()`
+* `testCanAttackNow()`
+* `testCanAttackNowBigCreature()`
+* `testFindNewTarget()`
+* `testHasValidTarget()`
+* `testHasValidTargetDifferentZones()`
+* `testHasValidTargetInvisibleVictim()`
+* `testHasValidTargetNonAttacker()`
+* `testHasValidTargetvisibleVictim()`
+* `testNotAttackTurnAttack()`
+
+What do the methods that use mocks have in common, compared with the methods that don't use mocks?
+
+Next, we're going to look at what happens when tests using mock objects fail.
+
+Starting from the first test method, testAttack(), use your IDE's navigation facilities to jump to the definition for the method that that test case is checking.  (Hint: double click on the method name and press Function key 3 (F3) in Eclipse, or right click on the method name and select `Open Declaration`.)
+
+Comment out line 26, like this:
+
+````java
+public void attack(final Creature creature) {
+    if (creature.isAttackTurn(SingletonRepository.getRuleProcessor().getTurn())){
+        //creature.attack();
+    }
+}
+````
+
+Now run the tests.
+
+Take a look at the error message you get.  Can you tell what it means?
+
+
+## All Finished and Nowhere to Go? {#next}
+
+If you have finished the other activities, you can try this more challenging exercise.
+
+The Daily Item Quest contains an annoying bug.  This quest asks you to find an item set for you by the Mayor of Ados.  If you can't find the item, after a week, the Mayor will allow you to request a different item.  But, the bug in the code allows the quest class the possibility of giving you the same impossible-to-find item again.
+
+Work in pairs or small groups to make the Daily Item Quest functionality testable, using the test double techniques we have covered in the class, so that this bug can be made visible.
+
+You do not have to create a complete implementation.  Just sketch out the changes you would make, in sufficient detail to understand the costs and benefits.
+
+There is no single right answer to this.  Several approaches could work.  If you are unsure, just try one and see how it looks when it is sketched out.  Discuss your answer with staff if unsure.

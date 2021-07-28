@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Chapter 8 Design for Testability | Software engineering</title>
+<meta name="author" content="Suzanne Embury and team">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.2"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.9/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.2.5.1/tabs.js"></script><script src="libs/bs3compat-0.2.5.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/mark.min.js"></script><!-- CSS --><link rel="stylesheet" href="libs/custom/duncan.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Software engineering</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">Welcome</a></li>
+<li><a class="" href="timetabling.html">Weekly timetable</a></li>
+<li class="book-part">Weekly Workshops</li>
+<li><a class="" href="building.html"><span class="header-section-number">1</span> Marauroa</a></li>
+<li><a class="" href="understanding.html"><span class="header-section-number">2</span> Understanding large systems</a></li>
+<li><a class="" href="debugging.html"><span class="header-section-number">3</span> Debugging a Codebase</a></li>
+<li><a class="" href="estimating.html"><span class="header-section-number">4</span> Cost estimation</a></li>
+<li><a class="" href="testing.html"><span class="header-section-number">5</span> Test first development</a></li>
+<li><a class="" href="flowing.html"><span class="header-section-number">6</span> Git workflows</a></li>
+<li><a class="" href="refactoring.html"><span class="header-section-number">7</span> Software Refactoring</a></li>
+<li><a class="active" href="designing.html"><span class="header-section-number">8</span> Design for Testability</a></li>
+<li><a class="" href="patterning.html"><span class="header-section-number">9</span> Software design patterns</a></li>
+<li><a class="" href="risking.html"><span class="header-section-number">10</span> Risk management</a></li>
+<li><a class="" href="opening.html"><span class="header-section-number">11</span> Open source challenge</a></li>
+<li class="book-part">Team study materials</li>
+<li><a class="" href="starting.html"><span class="header-section-number">12</span> Stendhalgame.org</a></li>
+<li><a class="" href="mentoring.html"><span class="header-section-number">13</span> Industrial mentoring</a></li>
+<li><a class="" href="syncing.html"><span class="header-section-number">14</span> Synchronising</a></li>
+<li class="book-part">Coursework</li>
+<li><a class="" href="gitting.html"><span class="header-section-number">15</span> Individual Coursework 1</a></li>
+<li><a class="" href="conflicting.html"><span class="header-section-number">16</span> Individual Coursework 2</a></li>
+<li><a class="" href="dealing.html"><span class="header-section-number">17</span> Team Coursework 1</a></li>
+<li><a class="" href="working.html"><span class="header-section-number">18</span> Team Coursework 2</a></li>
+<li class="book-part">Self study materials</li>
+<li><a class="" href="guiding.html"><span class="header-section-number">19</span> Testing Stendhal</a></li>
+<li><a class="" href="committing.html"><span class="header-section-number">20</span> Integrating commits</a></li>
+<li><a class="" href="integrating.html"><span class="header-section-number">21</span> Continuous integration</a></li>
+<li><a class="" href="reviewing.html"><span class="header-section-number">22</span> Code review</a></li>
+<li><a class="" href="automating.html"><span class="header-section-number">23</span> Unit testing</a></li>
+<li><a class="" href="reading.html"><span class="header-section-number">24</span> References</a></li>
+</ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/dullhunk/softeng">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="designing" class="section level1" number="8">
+<h1>
+<span class="header-section-number">8</span> Design for Testability<a class="anchor" aria-label="anchor" href="#designing"><i class="fas fa-link"></i></a>
+</h1>
+<p>Software refactoring and migration</p>
+<div id="preparing-for-the-workshop-1" class="section level2" number="8.1">
+<h2>
+<span class="header-section-number">8.1</span> Preparing for the Workshop<a class="anchor" aria-label="anchor" href="#preparing-for-the-workshop-1"><i class="fas fa-link"></i></a>
+</h2>
+<p>Welcome to the COMP23311 workshop on <em>design for testability</em>.</p>
+<p>Today, after a short lecture introducing the core concepts, we’ll be working through a number of activities in which you will be using the Stendhal code base to learn some basic design for testability concepts.</p>
+<p>We are going to use the Stendhal Playground code base in today’s workshop. so you can make changes without putting your coursework at risk. To prepare for the workshop, please run your IDE and load this project.</p>
+<p>If you did not attend the earlier workshops where we used the Stendhal Playground code base, you’ll need to look at the workshop instructions for week 3, to see how to acquire it.</p>
+</div>
+<div id="dummies" class="section level2" number="8.2">
+<h2>
+<span class="header-section-number">8.2</span> Understanding Test Doubles: Dummies<a class="anchor" aria-label="anchor" href="#dummies"><i class="fas fa-link"></i></a>
+</h2>
+<p>The simplest kind of test double is a <em>dummy</em>.</p>
+<p>We use a dummy when the code under test is required to pass an object to some part of the fixture, but we know that the object itself will not be used during test execution. In this case, we just need a test double object that has the same interface as the required fixture object. We don’t care what the dummy does, because it will never be used.</p>
+<p>This is easiest to see by looking at some examples.</p>
+<div id="dummy1" class="section level4" number="8.2.0.1">
+<h4>
+<span class="header-section-number">8.2.0.1</span> Example Dummy No. 1<a class="anchor" aria-label="anchor" href="#dummy1"><i class="fas fa-link"></i></a>
+</h4>
+<p>In your IDE, find the code for the following method:</p>
+<div class="sourceCode" id="cb39"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb39-1"><a href="designing.html#cb39-1" aria-hidden="true" tabindex="-1"></a>games.<span class="fu">stendhal</span>.<span class="fu">server</span>.<span class="fu">core</span>.<span class="fu">config</span>.<span class="fu">zone</span>.<span class="fu">NoTeleportInTest</span>.<span class="fu">testConfigureZone</span>()}</span></code></pre></div>
+<p>The test class and method name and the comments make it clear that this test case is checking that whole zones can be correctly configured to disallow teleporting in. The test checks that teleporting in is not allowed at two locations in the zone (top left and bottom right edge squares) but that teleporting out is still allowed.</p>
+<p>The fixture for this test is a zone that is configured to disallow inwards teleports. We don’t care about the other attributes of the zone. But the signature of the method for adding a configuration to a zone requires two arguments: the zone to be configured <em>and</em> a map containing attributes to be used in guiding the configuration. (Hover over the call to the <code>configureZone()</code> method to see it’s JavaDoc.) The <code>NoTeleportIn</code> configuration does not need any special attributes to be set, but the method signature is inherited and the attributes must be provided whether they are needed or not.</p>
+<p>There’s no point wasting time and resources (and lines of code) setting up some fake attributes for this configuration if the test isn’t going to use them. So, the coder of this test has sensibly chosen the simplest possible object compatible with the method signature: a <code>null</code> value.</p>
+<p>In Java, as in many object oriented languages, <code>null</code> is an instance of the class <code>Object</code>, the class which is at the root of the object inheritance hierarchy and which all other classes are a sub-class of. An instance of <code>Object</code> can be used anywhere an instance of any other class is needed. This means that <code>null</code> is a match for the required data type (<code>Map&lt;String, String&gt;</code>) and can be given as the simplest possible attribute map to satisfy Java’s strong typing requirements.</p>
+</div>
+<div id="dummy2" class="section level3" number="8.2.1">
+<h3>
+<span class="header-section-number">8.2.1</span> Example Dummy No. 2<a class="anchor" aria-label="anchor" href="#dummy2"><i class="fas fa-link"></i></a>
+</h3>
+<p>Let’s look at another example, this time in the client code. Search for the method:</p>
+<div class="sourceCode" id="cb40"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb40-1"><a href="designing.html#cb40-1" aria-hidden="true" tabindex="-1"></a>games.<span class="fu">stendhal</span>.<span class="fu">client</span>.<span class="fu">gui</span>.<span class="fu">ItemPanelTest</span>.<span class="fu">testCursors</span>()</span></code></pre></div>
+<p>The very first line of this method contains an example of a <code>null</code> value being used as a dummy. The <code>itemPanel()</code> constructor takes two arguments: a slot name and a placeholder sprite. We don’t care much about either value in this test, but need the <code>ItemPanel</code> instance as part of the fixture. The name is easy enough, we can give any value. (Note the carefully chosen value used in the test, which clearly indicates to the reader of the code that the name is not important.) But we also don’t care about the sprite. So the coder has used the simplest possible <code>Sprite</code> instance to fulfil the fixture requirements: a <code>null</code> value.</p>
+</div>
+<div id="dummy3" class="section level3" number="8.2.2">
+<h3>
+<span class="header-section-number">8.2.2</span> Example Dummy No. 3<a class="anchor" aria-label="anchor" href="#dummy3"><i class="fas fa-link"></i></a>
+</h3>
+<p>Staying with the <code>testCursors()</code> test case from the previous example, can you see another dummy being used in this test—one that is not just a <code>null</code> value this time?</p>
+<p>See if you can find it, then check your answer with a staff member or a graduate teaching assistant (GTA). Remember that a dummy is a test double that represents the simplest possible, most vanilla object that can allow the necessary fixture to be found.</p>
+</div>
+</div>
+<div id="stubs" class="section level2" number="8.3">
+<h2>
+<span class="header-section-number">8.3</span> Understanding Test Doubles: Stubs<a class="anchor" aria-label="anchor" href="#stubs"><i class="fas fa-link"></i></a>
+</h2>
+<p>What do we do when our fixture needs to be more complex than the simple dummy objects we have looked at so far? Most test doubles need to behave more like the production objects that they mimic, and have real behaviour that is invoked in the test.</p>
+<p>Sometimes, we need to be able to control the values returned from method calls. When we can hard code a simple return value into the object, then we call the test double a <code>stub</code> object.</p>
+<p>A stub is a version of the desired fixture class that has the same interface as that class, but returns simple, hard-coded values from its methods, rather than doing any actual game processing. This removes randomness and unpredictability from our fixture, while also giving the results we need for the test.</p>
+<p>In older languages, stub classes have to be defined in full, just as ordinary production classes are, and we need to include some mechanism in the code to say when to use the stub class (when testing) and when to use the production class (when in production use). But OO languages, with sub-classing and inheritance, give us a more convenient way of defining stubs, right inside the test code itself.</p>
+<div id="stubby1" class="section level3" number="8.3.1">
+<h3>
+<span class="header-section-number">8.3.1</span> Example Stub No. 1<a class="anchor" aria-label="anchor" href="#stubby1"><i class="fas fa-link"></i></a>
+</h3>
+<p>Look at the test case methods in:</p>
+<div class="sourceCode" id="cb41"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb41-1"><a href="designing.html#cb41-1" aria-hidden="true" tabindex="-1"></a>games.<span class="fu">stendhal</span>.<span class="fu">client</span>.<span class="fu">entity</span>.<span class="fu">EntityTest</span></span></code></pre></div>
+<p>The methods create an instance of a class called <code>MockEntity</code>. But if you look for this class in the code base, you will not find it, and no import pulls a class with this name into the class we are defining.</p>
+<p>Instead, this class is defined at the end of the <code>EntityTest</code> class, as a private class (lines 156–176).</p>
+<p>This new class inherits from the <code>Entity</code> class, and so has all the same behaviour as this production code class, apart from where the behaviour is overridden and added to in this definition. The changes define the extra control we need over <code>Entity</code> instances in order to write this test effectively.</p>
+<p>In this case, the changes are:</p>
+<ul>
+<li>Adding a new private field called <code>count</code>.</li>
+<li>Overriding the superclass constructor behaviour to create a Marauroa RPObject instance and give it a type.</li>
+<li>stubbing the method that returns the area of the entity so that all <code>MockEntity</code> instances will return a null <code>RectangularArea</code> (an example of a dummy used inside a stub).</li>
+<li>Overriding the <code>onPosition()</code> method so that as well as doing everything the production superclass does when this method is called, we also increment the <code>count</code> variable.</li>
+</ul>
+<p>For each of these, look at the test methods on this test class, and see if you can work out roughly why the stub class is designed to have these behaviours.</p>
+<p>Notice that this stub class both controls the state (returning a hard-coded value when the area of an entity is requested) <em>and</em> adds special control behaviour needed by the test code but not the production code (counts the number of times the <code>onPosition()</code> method is called).</p>
+</div>
+<div id="stubby2" class="section level3" number="8.3.2">
+<h3>
+<span class="header-section-number">8.3.2</span> Example Stub No. 2<a class="anchor" aria-label="anchor" href="#stubby2"><i class="fas fa-link"></i></a>
+</h3>
+<p>Another useful Java mechanism for creating stub classes is the anonymous sub-class. This is used widely throughout the Stendhal test suite for creating test doubles, and is a popular technique in general for getting code under test.</p>
+<p>To see an example of this in the Stendhal code base, find the method:</p>
+<div class="sourceCode" id="cb42"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb42-1"><a href="designing.html#cb42-1" aria-hidden="true" tabindex="-1"></a>games.<span class="fu">stendhal</span>.<span class="fu">server</span>.<span class="fu">actions</span>.<span class="fu">admin</span>.<span class="fu">SummonActionTest</span>.<span class="fu">setUP</span>()</span></code></pre></div>
+<p>Make sure you find the server version of this test class. There is another class with the same name in the client code, which does not contain an obvious stub.</p>
+<p>Take a look at this simple method and see if you can work out what it does. (Anonymous sub-classes are a feature of Java that you were not taught in our first year programming course units. You can either ask a member of staff or a GTA to explain, or you can research for yourself how this Java feature works. But don’t leave the workshop without understanding this language construct and how it can be used to create test doubles.)</p>
+<p>The <code>SummonActionTest.setUP()</code> method creates an anonymous sub-class of the <code>StendhalRPZone</code> class, and overrides one of the methods on that class: the <code>collides()</code> method that we have met in previous workshops. Instead of using the collision layer to decide whether the player or objects can be placed at the location given, this over-ridden version of the method just always returns <code>false</code>. It does not matter which location in this zone you give as parameters, this method will always say there is no collision at that point, and the object can be placed there.</p>
+<p>Hopefully, you can see that this is a much quicker and more elegant way of ensuring we have no collisions in our zone than having to setup and configure an actual collision layer for our test zone. The stub object is created at the time the test is run, and has exactly the same behaviour as the <code>StendhalRPZone</code> class, except that it will never report any collisions for any zone created with it.</p>
+<p>Take a look at how the <code>zone</code> instance created from the anonymous sub-class is used, and how this stub test double allows us to write the test more simply.</p>
+</div>
+</div>
+<div id="scavenger" class="section level2" number="8.4">
+<h2>
+<span class="header-section-number">8.4</span> Test Doubles Scavenger Hunt<a class="anchor" aria-label="anchor" href="#scavenger"><i class="fas fa-link"></i></a>
+</h2>
+<p>Work in pairs or small groups to find more examples of the different types of test double in Stendhal. Some guidance on how to do this is given below. Can you find at least:</p>
+<ul>
+<li>One additional example of a dummy</li>
+<li>One additional example of a stub</li>
+</ul>
+<p>Write the name of the class, and the line where the test double occurs, on a sheet of paper or in a file.</p>
+<p>When you have found an example of each type of test double (or given up) check your answers with staff or a TA, and share examples with neighbouring students.</p>
+<div id="findum" class="section level3" number="8.4.1">
+<h3>
+<span class="header-section-number">8.4.1</span> Finding Dummies<a class="anchor" aria-label="anchor" href="#findum"><i class="fas fa-link"></i></a>
+</h3>
+<p>To find some candidate code to examine, you can use File Search in your IDE to search for the string <code>null</code> in test code. (A good shorthand way to search through only the test classes is to use the regular expression <code>*Test.java</code> in the file name section of the search dialogue box.)</p>
+<p>You are looking for places in the fixture setup part of a test case where a null is passed as a parameter when preparing the class under test for test execution, or when preparing a dependent object.</p>
+<p>For other dummies, look for the use of no argument constructors, where simple instances are created and passed as parameters to the class under test, or when setting up a dependent class.</p>
+<p>A good sign that you have found a dummy is that you could replace it with another more complex object, and the test behaviour would not change.</p>
+</div>
+<div id="findstubs" class="section level3" number="8.4.2">
+<h3>
+<span class="header-section-number">8.4.2</span> Finding Stubs<a class="anchor" aria-label="anchor" href="#findstubs"><i class="fas fa-link"></i></a>
+</h3>
+<p>Stubs will also normally be found in test classes. Look for anonymous subclasses created during the set-up stages of a test case, where literal values are used to specify return values from methods.</p>
+<p>Stubs can also be implemented as named private classes. This normally happens when we need to create several instances of the same stub, for use across multiple test cases, perhaps. If we only need one instance of the stub, we don’t need to refer to it in other parts of the code, and it is fine for it to be anonymous.</p>
+<p>Sometimes stubs need to be used by several classes under test. In this case, they can’t be declared as private classes, and must be declared in their own file. Look for such classes wherever test classes are declared, but also in places where test helper code is located.</p>
+<p>Can you find the packages containing test helper code in Stendhal?</p>
+<p>Look at the names used for the non-anonymous stubs you find. Have the authors of the code made the role of these classes as test doubles clear from the name?</p>
+</div>
+</div>
+<div id="mockobjects" class="section level2" number="8.5">
+<h2>
+<span class="header-section-number">8.5</span> Understanding Test Doubles: First Experiments with Mock Objects<a class="anchor" aria-label="anchor" href="#mockobjects"><i class="fas fa-link"></i></a>
+</h2>
+<p>For this short activity, you are asked to look through the test code for the HandToHand class:</p>
+<div class="sourceCode" id="cb43"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb43-1"><a href="designing.html#cb43-1" aria-hidden="true" tabindex="-1"></a>games.<span class="fu">stendhal</span>.<span class="fu">server</span>.<span class="fu">entity</span>.<span class="fu">creature</span>.<span class="fu">impl</span>.<span class="fu">attack</span>.<span class="fu">HandToHandTest</span>.<span class="fu">java</span></span></code></pre></div>
+<p>Below is a list of the names of each of the test case methods in this class. Take a sheet of paper and draw a line down the middle. On one side, write the names of the methods that are using mocks, and on the other side write the names of the test methods not using the mock objects framework.</p>
+<ul>
+<li><code>testAttack()</code></li>
+<li><code>testCanAttackNow()</code></li>
+<li><code>testCanAttackNowBigCreature()</code></li>
+<li><code>testFindNewTarget()</code></li>
+<li><code>testHasValidTarget()</code></li>
+<li><code>testHasValidTargetDifferentZones()</code></li>
+<li><code>testHasValidTargetInvisibleVictim()</code></li>
+<li><code>testHasValidTargetNonAttacker()</code></li>
+<li><code>testHasValidTargetvisibleVictim()</code></li>
+<li><code>testNotAttackTurnAttack()</code></li>
+</ul>
+<p>What do the methods that use mocks have in common, compared with the methods that don’t use mocks?</p>
+<p>Next, we’re going to look at what happens when tests using mock objects fail.</p>
+<p>Starting from the first test method, testAttack(), use your IDE’s navigation facilities to jump to the definition for the method that that test case is checking. (Hint: double click on the method name and press Function key 3 (F3) in Eclipse, or right click on the method name and select <code>Open Declaration</code>.)</p>
+<p>Comment out line 26, like this:</p>
+<div class="sourceCode" id="cb44"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb44-1"><a href="designing.html#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="dt">void</span> <span class="fu">attack</span>(<span class="dt">final</span> Creature creature) {</span>
+<span id="cb44-2"><a href="designing.html#cb44-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">if</span> (creature.<span class="fu">isAttackTurn</span>(SingletonRepository.<span class="fu">getRuleProcessor</span>().<span class="fu">getTurn</span>())){</span>
+<span id="cb44-3"><a href="designing.html#cb44-3" aria-hidden="true" tabindex="-1"></a>        <span class="co">//creature.attack();</span></span>
+<span id="cb44-4"><a href="designing.html#cb44-4" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb44-5"><a href="designing.html#cb44-5" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p>Now run the tests.</p>
+<p>Take a look at the error message you get. Can you tell what it means?</p>
+</div>
+<div id="next" class="section level2" number="8.6">
+<h2>
+<span class="header-section-number">8.6</span> All Finished and Nowhere to Go?<a class="anchor" aria-label="anchor" href="#next"><i class="fas fa-link"></i></a>
+</h2>
+<p>If you have finished the other activities, you can try this more challenging exercise.</p>
+<p>The Daily Item Quest contains an annoying bug. This quest asks you to find an item set for you by the Mayor of Ados. If you can’t find the item, after a week, the Mayor will allow you to request a different item. But, the bug in the code allows the quest class the possibility of giving you the same impossible-to-find item again.</p>
+<p>Work in pairs or small groups to make the Daily Item Quest functionality testable, using the test double techniques we have covered in the class, so that this bug can be made visible.</p>
+<p>You do not have to create a complete implementation. Just sketch out the changes you would make, in sufficient detail to understand the costs and benefits.</p>
+<p>There is no single right answer to this. Several approaches could work. If you are unsure, just try one and see how it looks when it is sketched out. Discuss your answer with staff if unsure.</p>
+
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="refactoring.html"><span class="header-section-number">7</span> Software Refactoring</a></div>
+<div class="next"><a href="patterning.html"><span class="header-section-number">9</span> Software design patterns</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#designing"><span class="header-section-number">8</span> Design for Testability</a></li>
+<li><a class="nav-link" href="#preparing-for-the-workshop-1"><span class="header-section-number">8.1</span> Preparing for the Workshop</a></li>
+<li>
+<a class="nav-link" href="#dummies"><span class="header-section-number">8.2</span> Understanding Test Doubles: Dummies</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#dummy2"><span class="header-section-number">8.2.1</span> Example Dummy No. 2</a></li>
+<li><a class="nav-link" href="#dummy3"><span class="header-section-number">8.2.2</span> Example Dummy No. 3</a></li>
+</ul>
+</li>
+<li>
+<a class="nav-link" href="#stubs"><span class="header-section-number">8.3</span> Understanding Test Doubles: Stubs</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#stubby1"><span class="header-section-number">8.3.1</span> Example Stub No. 1</a></li>
+<li><a class="nav-link" href="#stubby2"><span class="header-section-number">8.3.2</span> Example Stub No. 2</a></li>
+</ul>
+</li>
+<li>
+<a class="nav-link" href="#scavenger"><span class="header-section-number">8.4</span> Test Doubles Scavenger Hunt</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#findum"><span class="header-section-number">8.4.1</span> Finding Dummies</a></li>
+<li><a class="nav-link" href="#findstubs"><span class="header-section-number">8.4.2</span> Finding Stubs</a></li>
+</ul>
+</li>
+<li><a class="nav-link" href="#mockobjects"><span class="header-section-number">8.5</span> Understanding Test Doubles: First Experiments with Mock Objects</a></li>
+<li><a class="nav-link" href="#next"><span class="header-section-number">8.6</span> All Finished and Nowhere to Go?</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/dullhunk/softeng/blob/master/08-designing.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/dullhunk/softeng/edit/master/08-designing.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Software engineering</strong>" was written by Suzanne Embury and team. </p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer>
+</body>
+</html>

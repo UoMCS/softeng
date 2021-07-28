@@ -1,0 +1,378 @@
+# Understanding large systems {#understanding}
+
+After you leave University or during an internship or placement, many of the systems you'll work will be large so its crucial to be able to understand large systems. You need to develop strategies for understanding unfamiliar systems.
+
+## Purposes of the workshop  {.unnumbered #purposes}
+In this workshop, we will look at strategies to better comprehend unfamiliar large codebases. These strategies are supported by code reading techniques and the functionalities offered by the Integrated Development Environment (IDE). We'll be assuming that, after this workshop, you will be capable of carrying out the following tasks for yourself, without needing much guidance:
+
+* Navigate large codebases using the most effective strategy for comprehending the code.
+* Use the views and functionalities provided by the Eclipse IDE to acquire a better understanding of the code.   
+* Read and write unit tests to understand the codebase.
+
+In this workshop, you will:
+
+* Use Eclipse to explore the codebase of Marauroa.
+* Use the functionalities of Eclipse to carry out top-down reading strategies.
+* Build a simple calculator to remove the fear to unit testing.
+* Write unit tests to understand different components of Marauroa.
+
+
+## Learning Large Codebases
+
+<!--This part of the workshops will be interactive. The slides for this workshop already provide the guidance for how to proceed.-->
+
+### What activity takes most of a maintenance programmer's time? {#timesink}
+
+Having to work with a large unfamiliar codebase is a very common challenge that you will have to face at some points during your career. Hence, developing the required skills to deal with this challenge is imperative. In this course unit so far, you have already faced this challenge (twice!).
+
+Large codebases keep changing all the time. Normally, there are a handful of people working on the same project at the same time. Hence, it's very difficult for anyone to claim that they have full knowledge of all parts of the codebase. What really matters is to learn how to *build a mental model of the large codebase that helps you navigate* and find your way around the large codebase you are trying to work with whenever you need.
+
+```{r marauroa-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap = "marauroa is a large codbase, how can you find your way around it?"}
+knitr::include_graphics("images/marauroa.png")
+```
+
+#### Tips for learning large codebases {#tips}
+
+It can be challenging finding your way around a large codebase that you are new to. Here are some strategies you can apply:
+
+##### Tip 1: Develop general knowledge
+
+Develop your general programming knowledge. Most of the large codebases follow similar well-known design patterns. The more you know about these, the easier things will be for you. Does the codebase you are trying to debug use an MVC pattern for instance? if you already know the MVC pattern, your life will be much easier dealing with that codebase.
+
+##### Tip 2: Develop domain knowledge
+
+Develop you application domain knowledge. The more you know and understand about the application domain, the better your understanding of the codebase will be.
+
+##### Tip 3: Be systematic
+
+Packages and classes are hierarchical! Use systematic reading strategies such as top-down and bottom-up strategies. In top-down, you use the context of the application together with some previous assumptions in order to gain an overall understanding of the codebase. In the bottom-up strategy, you start with individual statements and build up picture incrementally.
+
+##### Tip 4: use your IDE
+
+Use the functionalities of the IDE. Different IDEs (such as Eclipse) offer different options that can be very helpful in learning large codebases. On your Eclipse IDE, select an attribute, function or object and with a right mouse click, explore the options you have on the resulting menu.
+
+
+##### Tip 5
+
+Always assume that previous coders were sensible and honest. Every part of the code was written to serve a purpose and it was written in a very logical and methodical way. If you do not understand something, don't just dismiss it. Of course, there is always the chance that someone made a mistake, but do not rely on that.
+
+##### Tip 6: read the tests
+
+Read the Tests! Every large codebase comes with a large test suite that contains hundreds or even thousands of tests. These tests are usually organised in a structure that mimics the source code. These tests are typically a very important resource for learning what various parts of the code are meant to do. Reading through the tests gives you a very good opportunity to understand the expected behaviour of a specific part of the source code, and then try to match that  with what the actual code. Even better, if you go ahead and modify some of the tests or even write your own! This will dramatically increase your understanding of the codebase.
+
+
+##### Tip 7: Take your time
+
+Take your time, and don't hesitate to ask. As we discussed above, large codebases keep changing all the time. Even the most experienced software engineers can't claim they have detailed knowledge of every single part of the codebase all the time. So, take your time and don't put a lot of pressure on yourself. Take a breath and work in a logical and a methodical manner. If you ever get stuck, always feel free to ask a more experienced member of your team.
+
+
+#### Comprehending Marauroa {#comprehension}
+
+```{r marauroa2-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap = "A screenshot from marauroa"}
+knitr::include_graphics("images/marauroa2.png")
+```
+
+Now, using the tips outlined in section \@ref(tips), try to apply them to improve your understanding of the Marauroa codebase.
+
+Let's start with the application domain. What do you know about Marauroa's application domain? By this point you should already know that it is a game engine that is used to develop Massive Multiplayer Online Role-Playing Videogames [MMORPGs](https://en.wikipedia.org/wiki/Massively_multiplayer_online_role-playing_game). How does/did this piece of information helped your understanding of the codebase?
+
+Secondly, in the IDE, follow the gradual expansion of the hierarchy and read package and class names shown in figure \@ref(fig:marauroa-fig). This gives you a bird's eye view of the general structure of the codebase. Do you think the names are meaningful? Did that contribute to your understanding of the codebase?
+
+Now try to identify the classes that play a central role. Once you identify a few of those, try to do more digging. Open these classes and skim through them. Check the import clause to see their dependencies. Do you notice anything in common? (Use the Outline view of Eclipse). For instance, check the class ``marauroad.java`` within the ``marauroa.server`` package. How do you think this approach helps you improve your understanding of the codebase?
+
+
+Classes can also be read gradually using a top-down strategy. Look at the icons provided by the environment. Do you know what each icon means? Skim through the comments inside the class – use Javadoc. Do you think the comments were useful? Or are they just adding more chaos?
+
+Skim the attributes and methods of the class. You don’t need to understand every word to understand overall meaning. Can you establish any hypotheses about the "marauroad.java" class? which one of the following statements do you agree with:
+
+* It’s a daemon running on the server side.
+* It’s a thread that throws 12 threads.
+* It follows a singleton pattern.
+
+## Unit Testing Overview
+
+### Definition
+
+A unit test is an automated test that quickly verifies a small piece (unit) of code in an isolated manner.
+
+*  What is **a small piece of code**? The convention is that the piece of code under test should be a single class, or a single method inside that class. A common beginner’s mistake is to try to test more than one class at once. In general, you should always strive to keep the guideline of unit testing one class at a time.
+* **Quickly** refers to any amount of time that is acceptable within a given domain (but normally, it should only be fractions of a second). However, as long as the execution time of your complete test suite is good enough for you, it means that your tests are quick enough.
+* **Isolated manner** refers to the fact that unit tests should be written such that they can be run in isolation from each other. This way, unit tests are not dependant on each other, and they can be run in any order at any time.
+
+
+
+### The AAA pattern: Arrange-Act-Assert {#aaa}
+
+The AAA pattern is a simple and intuitive approach that provides an elegant structure for unit tests. It helps reading and writing unit tests that are easily understandable and maintainable.
+
+
+* **Arrange**: in this section, we set up the objects to be tested (these are usually referred to as the `System Under Test` – or `SUT`). The `SUT` is configured to take a specific state, along with any other variables that are required for the test.
+* **Act**: this is where you invoke the code (unit) you would like to test. The SUT that has been prepared in the previous section is used to call one of its methods. The output of the method is captured and saved.
+* **Assert**: this is where the output of the action is verified. Based on the arrangement in the first section, the action that was invoked in the second section is expected to produce a specific result or manipulate the state of the SUT in a specific way. In this section, you assert that the result(s) of the action meet the expectation(s).
+
+### A simple example
+Assume that we have a class called `StringUtils` which includes a method called `reverse` that return the reverse of an input string. For instance, if this method receives a string `xyz`, it should return a string `zyx`. Now, without knowing the exact implementation of that method, we can write the following unit test using the AAA pattern:
+
+```` Java
+@Test
+public void testReverse () {
+	// Arrange
+	String input = "abc";
+	StringUtils sut = new StringUtils(); // sut = system under test
+
+	// Act
+	String result = sut.reverse(input);
+
+	// Assert
+	assertEquals("cba", result);
+
+}
+````
+
+It is important to note that you do not need to know the implementation of the method being tested in order to write the required unit tests. As in the example above, all you need to know is the signature (inputs and outputs) of the method and what it is expected to do. In fact, it is encouraged that you write unit tests for methods before you implement them. This way, your tests will not be written for a specific implementation, but rather they will be written based on what the method is supposed to do. This is a common practice referred to as Test-Driven-Development (TDD). [@unittesting]
+
+###  Tips and tricks {#tricks}
+
+Some tips and tricks for test-driven development.
+
+#### Tip 1: Arrange section is largest
+
+The `Arrange` section should always be the largest of the 3. In this section, all the required variables and objects are created and given the desired state required for the test. Sometimes multiple tests require the same `Arrange` section. Hence, it’s a common practice to extract the arrange section into a private method(s) inside the test class and then simply call these methods from the arrange section of any test that require them.
+
+````Java
+String input;
+StringUtils sut; // sut = system under test
+
+// this method will be used in the arrange section of the tests
+private void initialize(){
+	input = "abc";
+	sut = new StringUtils();
+
+}
+
+@Test
+public void testReverse () {
+
+	// Arrange
+	initialize(); // everything we need is arranged using this single line
+
+	// Act
+	String result = sut.reverse(input);
+
+	// Assert
+	assertEquals("cba", result);
+
+}
+````
+
+#### Tip 2: Act is usually a single line {#singleline}
+
+The Act section should normally be a single line of code that invokes the method being tested. In most cases, if the Act section is more than one line of code, you should immediately think about refactoring the unit test (breaking it down into smaller unit tests). The main reason for this is that, if the test fails, it is usually difficult to tell which part of the act section is responsible for the failure of the test.
+
+#### Tip 3: Order is important {#ordering}
+
+When using the AAA pattern, you do not have to start writing your test code at the beginning: the 3A sections should always come in that order; `Arrange` > `Act` > `Assert`. However, you do not have to start writing them in that order. Sometimes, it makes more sense to start either from the act or the assert section, based on the system and unit you are testing and the way you understand it.
+
+#### Tip 4: Avoid multiple AAA {#multipleaaa}
+
+Avoid multiple Arrange-Act-Assert sections in a single test. In some cases you find a test that repeats each section more than one time. It could look something like this:
+
+`Arrange` > `Act` > `Assert` > `ActAgain` > `AssertSomethingElse` > `ArrangeAgain` > `ActOnceMore` > `Assert`
+
+If you are struggling to understand the previous line, imagine trying to understand the code in the test that actually follows that pattern! If a test contains more than one Act sections mixed with multiple `Assert` and/or `Arrange` sections, it means that the test is trying to verify more than one unit of code. This indicates that the test is no longer a unit test, but rather an integration test, since it tries to verify the interaction of more than one units of code.
+
+If you ever come across a test that contains multiple `Act-Assert` sections, it is always a good idea to think about refactoring it by breaking it into more than one test, each with one Act and Assert sections.
+
+#### Tip 5: Avoid if statements in tests {#avoidif}
+
+Avoid using `if` statements in unit tests. Unit test with conditional statements are difficult to read and understand. A unit test is supposed to be a simple sequence of instructions that contains no branching. if statements in unit tests should also make you think about refactoring, i.e breaking the test into more than one test each of which verifies the outcomes of one of the branches in the original test.
+
+#### Tip 6:  Annotate {#annotate}
+
+It’s a common practice to annotate each section with it’s name as a comment, as shown in the example above. Annotated tests are much easier to read and maintain.
+
+
+### Building a simple application with simple tests {#simples}
+
+Let's put the knowledge you have gained so far into practice. you will build a class with two methods and then write some unit tests to check that all is working as expected. Follow these steps:
+
+1. Create a new project: `File` > `New` > `Java Project`
+1. The `src` source folder has been created by default. Create another source folder by right-clicking on the root element of the hierarchy:  `New` > `Source Folder`.
+1. One of the folders will contain the code under test, while the other one while have the tests.
+1. On the code under test folder, create a class `New` > `Class` with two methods: one that returns the sum of two integers and another one that :
+	+ One of them returns the sum of two integers. `IN: 5,3; OUT: 8`
+	+ The other one, gets two strings and returns a string that which is the product of linking them. `IN: aab, bbc; OUT: aabbbc`
+1. Create the Test case by *right clicking* on the project, `New` and then select `JUnit Test Case`.
+1. Now we are going to fill out some fields of the *New JUnit Test Case* dialogue menu.
+    + **Name**. As a convention for naming test classes, you have to append *Test* to the code under test class name, see figure \@ref(fig:junit-name-fig)
+    + **Class under test**. You can specify which is the class under test in the last field of the dialogue menu. Click `Browse...` see figure \@ref(fig:junit-classundertest-fig)
+    + A dialogue will ask about whether you want to include the JUnit libraries. Say `Yes` to this.
+    + Click on *Finish*.
+1. You could test many things:
+    + On the sum method, check whether the output is `8` when the inputs are `3` and `5`
+    + On the string concatenation method, check the output is `aabbbc` when the inputs are `aab` and `bbc`
+    + On the string concatenation method, check the output is `35` when the inputs are `3` and `5`
+    + etc.
+1. Some hints to create the tests:
+    +  Use `@Test` to indicate a method is a test
+    + `assertEquals(String message, expected, actual)` tests if two values are equal.
+
+
+```{r junit-name-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap = "JUnit Test Case, with Test appended to the Acme class"}
+knitr::include_graphics("images/junit-name.png")
+```
+
+```{r junit-classundertest-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap = "The Class Under Test in this example is Acme"}
+knitr::include_graphics("images/junit-classundertest.png")
+```
+
+
+::: {.rmdnote}
+A possible solution to the above exercise will be discussed during the workshop and it will be published in Blackboard by the end of week 2.
+:::
+
+
+
+## Unit Testing Reading and Writing in Marauroa and Stendhal {#unittestingr}
+Here are four exercises to understand Marauroa better through the use of tests. Worlds, zones and objects are fundamental concepts in many videogames. Therefore, Marauroa provides some classes to facilitate the development of such concepts. The classes we are going to deal with can be found in:
+
+* Object:	`Java marauroa.common.game.RPObject`
+* Zone: `marauroa.server.game.rp.MarauroaRPZone`
+* World: `marauroa.server.game.rp.RPWorld`
+
+We will create a new JUnit Test Case for the following four exercises. Based on what we discussed today think about what would be its best location under the `tests` package.
+
+###  Exercise 1: There is only one instance of World
+The strategy here should be to:
+
+*  Get two instances of the `World` class
+* Use a JUnit a statement to compare whether the two variables refer to the same object.
+
+
+### Exercise 2: Zones are actually added to Worlds
+
+* Get an instance of the `World`
+* Create a new `Zone`
+* Add the new `Zone` to the `World`
+* Use a method from the `World` class to check if our `Zone` belongs to the `World`
+* Use a JUnit a statement to check the above
+
+### Exercise 3: Objects are actually added to Zones
+
+
+* Create a `Zone` and create and `Object`
+* Set an identifier to the `Object`. Tip: the `Zones` class has a method for that.
+* Add the object to `Zone`
+* Use a method from the `Zone` class to check if our `Object` belongs to the `Zone`.
+* Use a JUnit a statement to check the above\
+
+### Exercise 4: Objects are destroyed when removed from Zones
+*  Same as in Exercise until step 5.
+* Remove object from zone
+* Use a method from the `Zone` class to check if our `Object` belongs to the `Zone`. Use a JUnit statement.
+
+
+### Exercise 5: Reading and refactoring Stendhal tests
+Note: this task is not part of your team coursework and you are not expected to commit or push the results of this task as part of your current coursework.
+
+1. In Stendhal codebase, use the tips from the previous section to find tests for Quests.
+1. Skim the tests to identify those that follow the AAA pattern and and those that do not.
+1. Find and skim the largest test method in this class. What do you think of the approach used to write this test. How many act sections are there in this test.
+1. Try to refactor this test to make it more readable and understandable?
+
+::: {.rmdnote}
+Solutions to the above exercises will be discussed during the workshop and will be published on Blackboard by the end of week 2.
+:::
+
+
+
+
+## JUnit Cheatsheet
+A cheatsheet for JUnit:
+
+### JUnit annotations
+
+```java
+@Test
+````
+
+Identifies a method as a test method.
+
+````java
+@Test(expected = Exception.class)
+````
+Fails if the method does not throw the named exception.
+
+````java
+@Test(timeout=100)
+````
+Fails if the method takes longer than 100 milliseconds.
+
+````java
+@Before
+````
+This method is executed before each test. It is used to prepare the test environment (e.g., read input data, initialize the class).
+
+````java
+@After
+````
+This method is executed after each test. It is used to cleanup the test environment (e.g., delete temporary data, restore defaults). It can also save memory by cleaning up expensive memory structures.
+
+````java
+@BeforeClass
+````
+This method is executed once, before all tests start. It is used to perform time intensive activities, for example, to connect to a database.
+
+````java
+@AfterClass
+````
+This method is executed once, after all tests have finished. It is used to perform clean-up activities, for example, to disconnect from a database.
+
+### JUnit statements
+
+
+````java
+fail(String message)
+````
+Let the method fail. Might be used to check that a certain part of the code is not reached or to have a failing test before the test code is implemented.
+
+````java
+assertTrue(String message, boolean condition)
+````
+Checks that the boolean condition is true.
+
+````java
+assertFalse(String message, boolean condition)
+````
+Checks that the boolean condition is false.
+
+````java
+assertEquals(String message, expected, actual)
+````
+Tests that two values are the same. Note: for arrays the reference is checked not the content of the arrays.
+
+````java
+assertEquals(String message, expected, actual, tolerance)
+````
+Test that float or double values match. The tolerance is the number of decimals that must be the same.
+
+
+````java
+assertNull(String message, object)
+````
+Checks that the object is null.
+
+````java
+assertNotNull(String message, object)
+````
+Checks that the object is not null.
+
+````java
+assertSame(String message, expected, actual)
+````
+Checks that both variables refer to the same object.
+
+````java
+assertNotSame(String message, expected, actual)
+````
+Checks that both variables refer to different objects.

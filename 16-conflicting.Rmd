@@ -1,0 +1,3 @@
+# Individual Coursework 2 {#conflicting}
+
+Exercise 2: conflicts in git

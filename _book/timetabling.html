@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Weekly timetable | Software engineering</title>
+<meta name="author" content="Suzanne Embury and team">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.2"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.9/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.2.5.1/tabs.js"></script><script src="libs/bs3compat-0.2.5.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/mark.min.js"></script><!-- CSS --><link rel="stylesheet" href="libs/custom/duncan.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Software engineering</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">Welcome</a></li>
+<li><a class="active" href="timetabling.html">Weekly timetable</a></li>
+<li class="book-part">Weekly Workshops</li>
+<li><a class="" href="building.html"><span class="header-section-number">1</span> Marauroa</a></li>
+<li><a class="" href="understanding.html"><span class="header-section-number">2</span> Understanding large systems</a></li>
+<li><a class="" href="debugging.html"><span class="header-section-number">3</span> Debugging a Codebase</a></li>
+<li><a class="" href="estimating.html"><span class="header-section-number">4</span> Cost estimation</a></li>
+<li><a class="" href="testing.html"><span class="header-section-number">5</span> Test first development</a></li>
+<li><a class="" href="flowing.html"><span class="header-section-number">6</span> Git workflows</a></li>
+<li><a class="" href="refactoring.html"><span class="header-section-number">7</span> Software Refactoring</a></li>
+<li><a class="" href="designing.html"><span class="header-section-number">8</span> Design for Testability</a></li>
+<li><a class="" href="patterning.html"><span class="header-section-number">9</span> Software design patterns</a></li>
+<li><a class="" href="risking.html"><span class="header-section-number">10</span> Risk management</a></li>
+<li><a class="" href="opening.html"><span class="header-section-number">11</span> Open source challenge</a></li>
+<li class="book-part">Team study materials</li>
+<li><a class="" href="starting.html"><span class="header-section-number">12</span> Stendhalgame.org</a></li>
+<li><a class="" href="mentoring.html"><span class="header-section-number">13</span> Industrial mentoring</a></li>
+<li><a class="" href="syncing.html"><span class="header-section-number">14</span> Synchronising</a></li>
+<li class="book-part">Coursework</li>
+<li><a class="" href="gitting.html"><span class="header-section-number">15</span> Individual Coursework 1</a></li>
+<li><a class="" href="conflicting.html"><span class="header-section-number">16</span> Individual Coursework 2</a></li>
+<li><a class="" href="dealing.html"><span class="header-section-number">17</span> Team Coursework 1</a></li>
+<li><a class="" href="working.html"><span class="header-section-number">18</span> Team Coursework 2</a></li>
+<li class="book-part">Self study materials</li>
+<li><a class="" href="guiding.html"><span class="header-section-number">19</span> Testing Stendhal</a></li>
+<li><a class="" href="committing.html"><span class="header-section-number">20</span> Integrating commits</a></li>
+<li><a class="" href="integrating.html"><span class="header-section-number">21</span> Continuous integration</a></li>
+<li><a class="" href="reviewing.html"><span class="header-section-number">22</span> Code review</a></li>
+<li><a class="" href="automating.html"><span class="header-section-number">23</span> Unit testing</a></li>
+<li><a class="" href="reading.html"><span class="header-section-number">24</span> References</a></li>
+</ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/dullhunk/softeng">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="timetabling" class="section level1 unnumbered">
+<h1>Weekly timetable<a class="anchor" aria-label="anchor" href="#timetabling"><i class="fas fa-link"></i></a>
+</h1>
+<p>The weekly schedule for autumn 2021 is shown in table <a href="timetabling.html#tab:schedtable">0.1</a>, see also:</p>
+<ul>
+<li>
+<a href="https://studentnet.cs.manchester.ac.uk/ugt/timetable">studentnet.cs.manchester.ac.uk/ugt/timetable</a> full timetable</li>
+<li>
+<a href="https://www.manchester.ac.uk/discover/key-dates/">manchester.ac.uk/discover/key-dates</a> key dates</li>
+</ul>
+<div class="inline-table"><table class="table table-sm">
+<caption>
+<span id="tab:schedtable">Table 0.1: </span>The weekly schedule for this twelve week course</caption>
+<thead><tr class="header">
+<th align="left">Week no. starting</th>
+<th align="left">Workshop</th>
+<th align="left">Activities</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td align="left">
+<strong>0</strong>: 20th Sept</td>
+<td align="left">Welcome week</td>
+<td align="left">details tbc</td>
+</tr>
+<tr class="even">
+<td align="left">
+<strong>1</strong>: 27th Sept</td>
+<td align="left">Automated build and test</td>
+<td align="left">details tbc</td>
+</tr>
+<tr class="odd">
+<td align="left">
+<strong>2</strong>: 4th Oct</td>
+<td align="left">Reading large codebases</td>
+<td align="left">details tbc</td>
+</tr>
+<tr class="even">
+<td align="left">
+<strong>3</strong>: 11th Oct</td>
+<td align="left">Cost estimation, see chapter <a href="estimating.html#estimating">4</a>
+</td>
+<td align="left">details tbc</td>
+</tr>
+<tr class="odd">
+<td align="left">
+<strong>4</strong>: 18th Oct</td>
+<td align="left">Test first development</td>
+<td align="left">details tbc</td>
+</tr>
+<tr class="even">
+<td align="left">
+<strong>5</strong>: 25th Oct</td>
+<td align="left">Git workflows</td>
+<td align="left">details tbc</td>
+</tr>
+<tr class="odd">
+<td align="left">
+<strong>6</strong>: 1st Nov</td>
+<td align="left">Software refactoring</td>
+<td align="left">details tbc</td>
+</tr>
+<tr class="even">
+<td align="left">
+<strong>7</strong>: 8th Nov</td>
+<td align="left">Design for testability</td>
+<td align="left">details tbc</td>
+</tr>
+<tr class="odd">
+<td align="left">
+<strong>8</strong>: 15th Nov</td>
+<td align="left">Design patterns</td>
+<td align="left">details tbc</td>
+</tr>
+<tr class="even">
+<td align="left">
+<strong>9</strong>: 22nd Nov</td>
+<td align="left">Risk management and practice exam</td>
+<td align="left">details tbc</td>
+</tr>
+<tr class="odd">
+<td align="left">
+<strong>10</strong>: 29th Nov</td>
+<td align="left">Open source challenge</td>
+<td align="left">details tbc</td>
+</tr>
+<tr class="even">
+<td align="left">
+<strong>11</strong>: 6th Dec</td>
+<td align="left">confirm when reading week is</td>
+<td align="left">details tbc</td>
+</tr>
+<tr class="odd">
+<td align="left">
+<strong>12</strong>: 13th Dec</td>
+<td align="left">tbc</td>
+<td align="left">details tbc</td>
+</tr>
+</tbody>
+</table></div>
+<div id="tooling" class="section level2" number="0.8">
+<h2>
+<span class="header-section-number">0.8</span> Tools<a class="anchor" aria-label="anchor" href="#tooling"><i class="fas fa-link"></i></a>
+</h2>
+<p>We’ll be using the following tools:</p>
+<ul>
+<li>Team study sessions take place on Microsoft Teams, login using your <code>@student.manchester.ac.uk</code> email address at <a href="https://teams.microsoft.com/">teams.microsoft.com</a> or <a href="https://www.microsoft.com/en-gb/microsoft-teams/download-app">download a native teams client</a>
+</li>
+<li>Other course materials (coursework submission, slides and videos) can be found on blackboard <a href="https://online.manchester.ac.uk/">online.manchester.ac.uk</a>
+</li>
+</ul>
+<!--hacky way to get chapter references in tables-->
+</div>
+</div>
+
+
+
+  <div class="chapter-nav">
+<div class="prev"><a href="index.html">Welcome</a></div>
+<div class="next"><a href="building.html"><span class="header-section-number">1</span> Marauroa</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#timetabling">Weekly timetable</a></li>
+<li><a class="nav-link" href="#tooling"><span class="header-section-number">0.8</span> Tools</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/dullhunk/softeng/blob/master/00-timetabling.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/dullhunk/softeng/edit/master/00-timetabling.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Software engineering</strong>" was written by Suzanne Embury and team. </p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer>
+</body>
+</html>

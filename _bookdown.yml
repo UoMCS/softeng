@@ -1,0 +1,6 @@
+book_filename: "softeng"
+delete_merged_file: true
+language:
+  ui:
+    chapter_name: "Chapter "
+    appendix_name: "Appendix "
