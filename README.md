@@ -1,1 +1,1 @@
-This is the source for Coding Your Future: a Guidebook for Students, see http://www.cdyf.me
+This is the source for software engineering at the University of Manchester https://software-eng.netlify.app
