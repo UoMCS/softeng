@@ -8,7 +8,7 @@ bibliography: [software-engineering.bib]
 biblio-style: apalike
 link-citations: yes
 description: "Second year software engineering course at the University of Manchester"
-url: 'https\://softeng.netlify.app/'
+url: 'https\://software-eng.netlify.app/'
 github-repo: dullhunk/softeng
 twitter-handle: csmcr
 # added via R4DS
