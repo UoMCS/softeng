@@ -280,7 +280,7 @@ If you'd like to contribute this laboratory manual, we welcome constructive feed
 \item
   Raise new issues at \href{https://github.com/dullhunk/softeng/issues/new}{github.com/dullhunk/softeng/issues/new}
 \item
-  Click on the \texttt{Edit\ this\ page} link, which appears on the bottom right hand side of every page published at \href{https://softeng.netlify.app}{softeng.netlify.app} when viewed with a reasonably large screen (not a phone)
+  Click on the \texttt{Edit\ this\ page} link, which appears on the bottom right hand side of every page published at \href{https://software-eng.netlify.app}{software-eng.netlify.app} when viewed with a reasonably large screen (not a phone)
 \item
   Contribute at \href{https://github.com/dullhunk/softeng/contribute}{github.com/dullhunk/softeng/contribute} and help with existing issues at \href{https://github.com/dullhunk/softeng/issues}{github.com/dullhunk/softeng/issues}
 \item
@@ -302,7 +302,7 @@ Most of the guidebook is generated from \href{https://en.wikipedia.org/wiki/Mark
 
 This course has been designed, built and written by \href{http://www.cs.man.ac.uk/~embury/}{Suzanne Embury} at the University of Manchester with support from a team of academics, industry club members, support staff, graduate teaching assistants (GTAs) and summer students including (in alphabetical order):
 
-Muideen Ajagbe, Mohammed Alhamadi, Mercedes Argüello Casteleiro, Gerard Capes, Martina Catizone, Sarah Clinch, Peter Crowther, Anas Elhag, Sukru Eraslan, Gareth Henshall, Duncan Hull, Nikolaos Konstantinou, Kamilla Kopec-Harding, Kaspar Matas, Chris Page, Dario Panada, Liam Pringle, Julio Cesar Cortes Rios, Sara Padilla Romero, Viktor Schlegel, Stefan Strat, Jake Saunders, Federico Tavella, Mokanarangan Thayaparan, David Toluhi and Markel Vigo.
+Muideen Ajagbe, Mohammed Alhamadi, Aitor Apaolaza, Mercedes Argüello Casteleiro, Gerard Capes, Martina Catizone, Sarah Clinch, Peter Crowther, Anas Elhag, Sukru Eraslan, Gareth Henshall, Duncan Hull, Nikolaos Konstantinou, Kamilla Kopec-Harding, Kaspar Matas, Chris Page, Dario Panada, Liam Pringle, Julio Cesar Cortes Rios, Sara Padilla Romero, Viktor Schlegel, Stefan Strat, Jake Saunders, Federico Tavella, Mokanarangan Thayaparan, David Toluhi and Markel Vigo.
 
 We'd also like to thank students who have done the course since its first iteration.
 
@@ -1210,13 +1210,12 @@ Do not hesitate to ask if you are stuck!
 \hypertarget{understanding}{%
 \chapter{Large systems}\label{understanding}}
 
-During your summer internship, year-long placementAfter or after you leave University, chances are you will work on large software systems. So it is crucial to be able to understand and manage large systems. You need to develop strategies for working with unfamiliar and large codebases.
+During your summer internship, year-long placement or after you leave University, chances are you will work on LARGE software systems. So it is crucial to be able to understand large software systems. You need to develop strategies for working with unfamiliar and large codebases.
 
 \hypertarget{purposes}{%
-\section*{Purposes of the workshop}\label{purposes}}
-\addcontentsline{toc}{section}{Purposes of the workshop}
+\section{Purposes of the workshop}\label{purposes}}
 
-In this workshop, we will look at strategies to better comprehend unfamiliar large codebases. These strategies are supported by code reading techniques and the functionalities offered by your Integrated Development Environment (IDE). We'll be assuming that, after this workshop, you will be capable of carrying out the following tasks for yourself, without needing much guidance:
+In this workshop, we will look at strategies to better comprehend unfamiliar large codebases. These strategies are supported by code reading techniques \citep{codereading} and the functionalities offered by your Integrated Development Environment (IDE). We'll be assuming that, after this workshop, you will be capable of carrying out the following tasks for yourself, without needing much guidance:
 
 \begin{itemize}
 \tightlist
@@ -1242,8 +1241,8 @@ In this workshop, you will:
   Write unit tests to understand different components of Marauroa.
 \end{itemize}
 
-\hypertarget{learning-large-codebases}{%
-\section{Learning Large Codebases}\label{learning-large-codebases}}
+\hypertarget{largecode}{%
+\section{Learning Large Codebases}\label{largecode}}
 
 \hypertarget{timesink}{%
 \subsection{What activity takes most of a maintenance programmer's time?}\label{timesink}}
@@ -1266,38 +1265,38 @@ Large codebases keep changing all the time. Normally, there are a handful of peo
 
 It can be challenging finding your way around a large codebase that you are new to. Here are some strategies you can apply:
 
-\hypertarget{tip-1-develop-general-knowledge}{%
-\paragraph{Tip 1: Develop general knowledge}\label{tip-1-develop-general-knowledge}}
+\hypertarget{tip1}{%
+\paragraph{Tip 1: Develop general knowledge}\label{tip1}}
 
 Develop your general programming knowledge. Most of the large codebases follow similar well-known design patterns. The more you know about these, the easier things will be for you. Does the codebase you are trying to debug use an MVC pattern for instance? if you already know the MVC pattern, your life will be much easier dealing with that codebase.
 
-\hypertarget{tip-2-develop-domain-knowledge}{%
-\paragraph{Tip 2: Develop domain knowledge}\label{tip-2-develop-domain-knowledge}}
+\hypertarget{tip2}{%
+\paragraph{Tip 2: Develop domain knowledge}\label{tip2}}
 
 Develop you application domain knowledge. The more you know and understand about the application domain, the better your understanding of the codebase will be.
 
-\hypertarget{tip-3-be-systematic}{%
-\paragraph{Tip 3: Be systematic}\label{tip-3-be-systematic}}
+\hypertarget{tip3}{%
+\paragraph{Tip 3: Be systematic}\label{tip3}}
 
 Packages and classes are hierarchical! Use systematic reading strategies such as top-down and bottom-up strategies. In top-down, you use the context of the application together with some previous assumptions in order to gain an overall understanding of the codebase. In the bottom-up strategy, you start with individual statements and build up picture incrementally.
 
-\hypertarget{tip-4-use-your-ide}{%
-\paragraph{Tip 4: use your IDE}\label{tip-4-use-your-ide}}
+\hypertarget{tip4}{%
+\paragraph{Tip 4: use your IDE}\label{tip4}}
 
 Use the functionalities of the IDE. Different IDEs (such as Eclipse) offer different options that can be very helpful in learning large codebases. On your Eclipse IDE, select an attribute, function or object and with a right mouse click, explore the options you have on the resulting menu.
 
-\hypertarget{tip-5}{%
-\paragraph{Tip 5}\label{tip-5}}
+\hypertarget{tip5}{%
+\paragraph{Tip 5}\label{tip5}}
 
 Always assume that previous coders were sensible and honest. Every part of the code was written to serve a purpose and it was written in a very logical and methodical way. If you do not understand something, don't just dismiss it. Of course, there is always the chance that someone made a mistake, but do not rely on that.
 
-\hypertarget{tip-6-read-the-tests}{%
-\paragraph{Tip 6: read the tests}\label{tip-6-read-the-tests}}
+\hypertarget{tip6}{%
+\paragraph{Tip 6: read the tests}\label{tip6}}
 
 Read the Tests! Every large codebase comes with a large test suite that contains hundreds or even thousands of tests. These tests are usually organised in a structure that mimics the source code. These tests are typically a very important resource for learning what various parts of the code are meant to do. Reading through the tests gives you a very good opportunity to understand the expected behaviour of a specific part of the source code, and then try to match that with what the actual code. Even better, if you go ahead and modify some of the tests or even write your own! This will dramatically increase your understanding of the codebase.
 
-\hypertarget{tip-7-take-your-time}{%
-\paragraph{Tip 7: Take your time}\label{tip-7-take-your-time}}
+\hypertarget{tip7}{%
+\paragraph{Tip 7: Take your time}\label{tip7}}
 
 Take your time, and don't hesitate to ask. As we discussed above, large codebases keep changing all the time. Even the most experienced software engineers can't claim they have detailed knowledge of every single part of the codebase all the time. So, take your time and don't put a lot of pressure on yourself. Take a breath and work in a logical and a methodical manner. If you ever get stuck, always feel free to ask a more experienced member of your team.
 
@@ -2928,7 +2927,7 @@ Some Java projects that might work for you:
   \href{http://junit.org/junit5}{junit.org} - The next generation of JUnit (Java testing). Hosted at \href{https://github.com/junit-team/junit5}{github.com/junit-team/junit5}, as of July 2021 there are \href{https://github.com/junit-team/junit5/labels/up-for-grabs}{14 open issues tagged with up-for-grabs}.
 \end{itemize}
 
-You'll also find Java projects listed on \href{http://up-for-grabs.net}{up-for-grabs.net}. You may also find ideas on at \href{https://twitter.com/yourfirstpr}{twitter.com/yourfirstpr}. Some \href{https://www.cdyf.me/experiencing.html\#opensource}{more suggestions for open source projects}, including many in Python and other langauges see \emph{Coding Your Future}. \citep{experiencing}
+You'll also find Java projects listed on \href{http://up-for-grabs.net}{up-for-grabs.net}. You may also find ideas on at \href{https://twitter.com/yourfirstpr}{twitter.com/yourfirstpr}. Some \href{https://www.cdyf.me/experiencing.html\#opensource}{more suggestions for open source projects}, including many in Python and other languages see \emph{Coding Your Future}. \citep{experiencing}
 
 \hypertarget{findanissue}{%
 \subsection{Find an interesting issue to work on}\label{findanissue}}

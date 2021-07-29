@@ -1,9 +1,9 @@
 # Large systems {#understanding}
 
-During your summer internship, year-long placementAfter or after you leave University, chances are you will work on large software systems. So it is crucial to be able to understand and manage large systems. You need to develop strategies for working with unfamiliar and large codebases.
+During your summer internship, year-long placement or after you leave University, chances are you will work on LARGE software systems. So it is crucial to be able to understand large software systems. You need to develop strategies for working with unfamiliar and large codebases.
 
-## Purposes of the workshop  {.unnumbered #purposes}
-In this workshop, we will look at strategies to better comprehend unfamiliar large codebases. These strategies are supported by code reading techniques and the functionalities offered by your Integrated Development Environment (IDE). We'll be assuming that, after this workshop, you will be capable of carrying out the following tasks for yourself, without needing much guidance:
+## Purposes of the workshop  {#purposes}
+In this workshop, we will look at strategies to better comprehend unfamiliar large codebases. These strategies are supported by code reading techniques [@codereading] and the functionalities offered by your Integrated Development Environment (IDE). We'll be assuming that, after this workshop, you will be capable of carrying out the following tasks for yourself, without needing much guidance:
 
 * Navigate large codebases using the most effective strategy for comprehending the code.
 * Use the views and functionalities provided by the Eclipse IDE to acquire a better understanding of the code.   
@@ -17,7 +17,7 @@ In this workshop, you will:
 * Write unit tests to understand different components of Marauroa.
 
 
-## Learning Large Codebases
+## Learning Large Codebases {#largecode}
 
 <!--This part of the workshops will be interactive. The slides for this workshop already provide the guidance for how to proceed.-->
 
@@ -35,33 +35,33 @@ knitr::include_graphics("images/marauroa.png")
 
 It can be challenging finding your way around a large codebase that you are new to. Here are some strategies you can apply:
 
-##### Tip 1: Develop general knowledge
+##### Tip 1: Develop general knowledge {#tip1}
 
 Develop your general programming knowledge. Most of the large codebases follow similar well-known design patterns. The more you know about these, the easier things will be for you. Does the codebase you are trying to debug use an MVC pattern for instance? if you already know the MVC pattern, your life will be much easier dealing with that codebase.
 
-##### Tip 2: Develop domain knowledge
+##### Tip 2: Develop domain knowledge {#tip2}
 
 Develop you application domain knowledge. The more you know and understand about the application domain, the better your understanding of the codebase will be.
 
-##### Tip 3: Be systematic
+##### Tip 3: Be systematic {#tip3}
 
 Packages and classes are hierarchical! Use systematic reading strategies such as top-down and bottom-up strategies. In top-down, you use the context of the application together with some previous assumptions in order to gain an overall understanding of the codebase. In the bottom-up strategy, you start with individual statements and build up picture incrementally.
 
-##### Tip 4: use your IDE
+##### Tip 4: use your IDE {#tip4}
 
 Use the functionalities of the IDE. Different IDEs (such as Eclipse) offer different options that can be very helpful in learning large codebases. On your Eclipse IDE, select an attribute, function or object and with a right mouse click, explore the options you have on the resulting menu.
 
 
-##### Tip 5
+##### Tip 5 {#tip5}
 
 Always assume that previous coders were sensible and honest. Every part of the code was written to serve a purpose and it was written in a very logical and methodical way. If you do not understand something, don't just dismiss it. Of course, there is always the chance that someone made a mistake, but do not rely on that.
 
-##### Tip 6: read the tests
+##### Tip 6: read the tests {#tip6}
 
 Read the Tests! Every large codebase comes with a large test suite that contains hundreds or even thousands of tests. These tests are usually organised in a structure that mimics the source code. These tests are typically a very important resource for learning what various parts of the code are meant to do. Reading through the tests gives you a very good opportunity to understand the expected behaviour of a specific part of the source code, and then try to match that  with what the actual code. Even better, if you go ahead and modify some of the tests or even write your own! This will dramatically increase your understanding of the codebase.
 
 
-##### Tip 7: Take your time
+##### Tip 7: Take your time {#tip7}
 
 Take your time, and don't hesitate to ask. As we discussed above, large codebases keep changing all the time. Even the most experienced software engineers can't claim they have detailed knowledge of every single part of the codebase all the time. So, take your time and don't put a lot of pressure on yourself. Take a breath and work in a logical and a methodical manner. If you ever get stuck, always feel free to ask a more experienced member of your team.
 

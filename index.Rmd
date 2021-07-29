@@ -109,7 +109,7 @@ However, if you'd prefer, the manual is also available as a single pdf file [sof
 If you'd like to contribute this laboratory manual, we welcome constructive feedback. Once you're familiar with git and markdown you can [github.com/join](https://github.com/join) and:
 
 * Raise new issues at [github.com/dullhunk/softeng/issues/new](https://github.com/dullhunk/softeng/issues/new)
-* Click on the `Edit this page` link, which appears on the bottom right hand side of every page published at [softeng.netlify.app](https://softeng.netlify.app) when viewed with a reasonably large screen (not a phone)
+* Click on the `Edit this page` link, which appears on the bottom right hand side of every page published at [software-eng.netlify.app](https://software-eng.netlify.app) when viewed with a reasonably large screen (not a phone)
 * Contribute at [github.com/dullhunk/softeng/contribute](https://github.com/dullhunk/softeng/contribute) and help with existing issues at [github.com/dullhunk/softeng/issues](https://github.com/dullhunk/softeng/issues)
 * Fork the repository, make changes and submit a pull request [github.com/dullhunk/softeng/pulls](https://github.com/dullhunk/softeng/pulls). If you need to brush-up on your pulling skills see [makeapullrequest.com](http://makeapullrequest.com/)
 * From the command line, clone the repository and submit pull requests from your own setup:
@@ -121,7 +121,7 @@ Most of the guidebook is generated from [RMarkdown](https://en.wikipedia.org/wik
 ## Acknowledgements {#teambury}
 This course has been designed, built and written by [Suzanne Embury](http://www.cs.man.ac.uk/~embury/) at the University of Manchester with support from a team of academics, industry club members, support staff, graduate teaching assistants (GTAs) and summer students including (in alphabetical order):
 
-Muideen Ajagbe, Mohammed Alhamadi, Mercedes Argüello Casteleiro, Gerard Capes, Martina Catizone, Sarah Clinch, Peter Crowther, Anas Elhag, Sukru Eraslan, Gareth Henshall, Duncan Hull, Nikolaos Konstantinou, Kamilla Kopec-Harding, Kaspar Matas, Chris Page, Dario Panada, Liam Pringle, Julio Cesar Cortes Rios, Sara Padilla Romero, Viktor Schlegel, Stefan Strat, Jake Saunders, Federico Tavella, Mokanarangan Thayaparan, David Toluhi and Markel Vigo.
+Muideen Ajagbe, Mohammed Alhamadi, Aitor Apaolaza, Mercedes Argüello Casteleiro, Gerard Capes, Martina Catizone, Sarah Clinch, Peter Crowther, Anas Elhag, Sukru Eraslan, Gareth Henshall, Duncan Hull, Nikolaos Konstantinou, Kamilla Kopec-Harding, Kaspar Matas, Chris Page, Dario Panada, Liam Pringle, Julio Cesar Cortes Rios, Sara Padilla Romero, Viktor Schlegel, Stefan Strat, Jake Saunders, Federico Tavella, Mokanarangan Thayaparan, David Toluhi and Markel Vigo.
 
 We'd also like to thank students who have done the course since its first iteration.
 
