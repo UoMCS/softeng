@@ -35,7 +35,7 @@ Some Java projects that might work for you:
 * [jitsi.org](https://jitsi.org}) - A Java audio/video/chat client. Uses Ant and JUnit, hosted at [github.com/jitsi/jitsi](https://github.com/jitsi/jitsi). As of July 2021 there are [46 open issues tagged with help-wanted](https://github.com/jitsi/jitsi/labels/help-wanted).
 * [junit.org](http://junit.org/junit5) - The next generation of JUnit (Java testing). Hosted at [github.com/junit-team/junit5](https://github.com/junit-team/junit5), as of July 2021  there are [14 open issues tagged with up-for-grabs](https://github.com/junit-team/junit5/labels/up-for-grabs).
 
-You'll also find Java projects listed on [up-for-grabs.net](http://up-for-grabs.net). You may also find ideas on at [twitter.com/yourfirstpr](https://twitter.com/yourfirstpr). Some more suggestions for open source projects, including many in Python and other langauges see *Coding Your Future*. [@experiencing]
+You'll also find Java projects listed on [up-for-grabs.net](http://up-for-grabs.net). You may also find ideas on at [twitter.com/yourfirstpr](https://twitter.com/yourfirstpr). Some [more suggestions for open source projects](https://www.cdyf.me/experiencing.html#opensource), including many in Python and other languages see *Coding Your Future*. [@experiencing]
 
 ### Find an interesting issue to work on {#findanissue}
 You'll need to identify an issue for your group to tackle. You should check that:
