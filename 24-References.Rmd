@@ -1,6 +1,6 @@
 # References {#reading}
 
-As well as the recommended reading from section \@ref(recread), this section lists everything we've cited. Links to `librarysearch.manchester.ac.uk` take you to electronic copies (login required).
+As well as the recommended reading from section \@ref(recread), this section lists everything we've cited. Links to `librarysearch.manchester.ac.uk` take you to electronic copies (login required) at the University of Manchester, the pages take a few seconds to render but they do appear (eventually).
 
 `r if (knitr::is_latex_output())'
 Since you are reading the pdf version, all the references can be found in the bibliography section following this page.

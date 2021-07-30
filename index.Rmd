@@ -30,7 +30,7 @@ The development of software systems is a challenging process. Customers expect r
 knitr::include_graphics("images/course-overview.png")
 ```
 
-(ref:openingcaption) Course unit roadmap. This twelve week course will take your from small scale code changes (shown in grey), through to working with features (shown in orange) and on to larger-scale change (shown in yellow). We finish with an open source challenge in chapter \@ref(opening). These skills are fundamental to modern software engineering.
+(ref:openingcaption) Course unit roadmap. This twelve week course will take you from small scale code changes (shown in grey), through to working with features (shown in orange) and on to larger-scale change (shown in yellow). We finish with an open source challenge in chapter \@ref(opening). The skills you will develop on this course are fundamental to modern software engineering.
 
 Experience over the last few decades has taught us that software development failures are rarely caused by small scale coding problems. Instead, failures result from the difficulties of writing software that customers actually need, of keeping up with constantly changing requirements, of coping with the scale of large developments, of getting many different people with very different skill sets to work together, and of working with large bodies of existing code that no one on your team may fully understand. Being a good coder is an important part of being a good software engineer, but there are many other skills - including soft skills - that are needed too.
 

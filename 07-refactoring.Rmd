@@ -13,7 +13,7 @@ Today, after a short lecture introducing the core concepts, we'll be working thr
 
 We are going to use the Stendhal Playground code base in today's workshop. so you can make changes without putting your coursework at risk.  To prepare for the workshop, please run your IDE and load this project.
 
-If you did not attend the earlier workshops where we used the Stendhal Playground code base, you'll need to look at the workshop instructions for week 3, to see how to acquire it.
+If you did not attend the earlier workshops where we used the Stendhal Playground codebase, you'll need to look at the workshop instructions in chapter \@ref(refactoring), to see how to acquire it.
 
 
 ### Run the Regression Test Suite {#testsuite}
