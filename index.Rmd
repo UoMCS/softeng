@@ -61,7 +61,7 @@ On successful completion of this unit, a student will be able to:
 
 ## Recommended reading {#recread}
 
-The following books are recommended course texts, they are all available from the University of Manchester library if you clickthrough to the references listed in chapter \@ref(reading).
+The following books are recommended course texts, they are all available from the University of Manchester library if you clickthrough to the references:
 
 1. [Pro Git](https://git-scm.com/book/en/v2) [@progit]
 1. The pragmatic programmer : from journeyman to master [@pragmatic]
