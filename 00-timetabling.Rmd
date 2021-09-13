@@ -1,9 +1,6 @@
 # Weekly timetable {.unnumbered #timetabling}
 
-The weekly schedule for autumn 2021 is shown in table \@ref(tab:schedtable), see also:
-
-* [studentnet.cs.manchester.ac.uk/ugt/timetable](https://studentnet.cs.manchester.ac.uk/ugt/timetable) full timetable
-* [manchester.ac.uk/discover/key-dates](https://www.manchester.ac.uk/discover/key-dates/) key dates
+The weekly schedule for autumn 2021 is shown in table \@ref(tab:schedtable), see also [manchester.ac.uk/discover/key-dates](https://www.manchester.ac.uk/discover/key-dates/) key dates
 
 ```{r schedtable, echo = FALSE}
 io_table <- tibble::tribble(
@@ -14,16 +11,16 @@ io_table <- tibble::tribble(
   "**4**: 11th Oct"             , "Cost estimation, see (ref:estimating)",      "details tbc",
   "**5**: 18th Oct"             , "Test first development",      "details tbc",
   "**6**: 25th Oct"             , "Git workflows",      "details tbc",
-  "**7**: 1st Nov"              , "Software refactoring",      "details tbc",
-  "**8**: 8th Nov"              , "Design for testability",      "details tbc",
-  "**9**: 15th Nov"             , "Design patterns",      "details tbc",
-  "**10**: 22nd Nov"             , "Risk management and practice exam",      "details tbc",
+  "**7**: 1st Nov"              , "Reading week",      "details tbc",
+  "**8**: 8th Nov"              , "Software refactoring",      "details tbc",
+  "**9**: 15th Nov"             , "Design for testability",      "details tbc",
+  "**10**: 22nd Nov"            , "Design patterns",      "details tbc",
   "**11**: 29th Nov"            , "Open source challenge",      "details tbc",
-  "**12**: 6th Dec"             , "confirm when reading week is",      "details tbc",
+  "**12**: 6th Dec"             , "Risk management and practice exam",      "details tbc",
   "**13**: 13th Dec"            , "tbc",      "details tbc",
 
 )
-knitr::kable(io_table, caption = "The weekly schedule for this twelve week course, please note we are using the week numbering from the [my.manchester.ac.uk timetables](https://my.manchester.ac.uk/Timetable/2021_22/4614/) where week 1 is welcome week (rather than week 0)", booktabs = TRUE)
+knitr::kable(io_table, caption = "The weekly schedule for this twelve week course, please note we are using the week numbering from the [my.manchester.ac.uk timetables](https://my.manchester.ac.uk/Timetable/2021_22/4614/) where week one is welcome week (rather than week zero)", booktabs = TRUE)
 ```
 
 ## Tools {#tooling}
