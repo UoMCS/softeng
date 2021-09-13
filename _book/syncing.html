@@ -6,10 +6,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Chapter 14 Synchronising | Software engineering</title>
 <meta name="author" content="Suzanne Embury and team">
-<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.2"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.9/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="When you’re working in a team, you need to synchronise with your team repository.  14.1 Introduction In this activity, we’ll take you through the process of synchronising your local Git...">
+<meta name="generator" content="bookdown 0.24 with bs4_book()">
+<meta property="og:title" content="Chapter 14 Synchronising | Software engineering">
+<meta property="og:type" content="book">
+<meta property="og:url" content="https://software-eng.netlify.app/syncing.html">
+<meta property="og:description" content="When you’re working in a team, you need to synchronise with your team repository.  14.1 Introduction In this activity, we’ll take you through the process of synchronising your local Git...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chapter 14 Synchronising | Software engineering">
+<meta name="twitter:site" content="@csmcr">
+<meta name="twitter:description" content="When you’re working in a team, you need to synchronise with your team repository.  14.1 Introduction In this activity, we’ll take you through the process of synchronising your local Git...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.10/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
-<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.2.5.1/tabs.js"></script><script src="libs/bs3compat-0.2.5.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
-<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/mark.min.js"></script><!-- CSS --><link rel="stylesheet" href="libs/custom/duncan.css">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.0/transition.js"></script><script src="libs/bs3compat-0.3.0/tabs.js"></script><script src="libs/bs3compat-0.3.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><link rel="stylesheet" href="libs/custom/duncan.css">
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -116,7 +126,7 @@
 <p>The next step is to run the test suite, and the build process, to check that the change has not broken something unexpected. If all tests pass (or, at least, no new failing tests have appeared) you can go ahead and make the commit.</p>
 <p>The <code>admins.txt</code> file should now appear as an “unstaged change” in your <code>Git Staging View</code>. Drag it into the “staged changes” box (taking care to leave any other files you may have changed in the “unstaged changes” — they are not related to this commit, and we don’t want them to be included in it). Make the commit (but <em>do not push</em> at this stage).</p>
 <div class="figure" style="text-align: center">
-<span id="fig:fileStagedForCommit-fig"></span>
+<span style="display:block;" id="fig:fileStagedForCommit-fig"></span>
 <img src="images/fileStagedForCommit.png" alt="Your main eclipse window should look something like this" width="100%"><p class="caption">
 Figure 14.1: Your main eclipse window should look something like this
 </p>
@@ -133,7 +143,7 @@ Don’t forget to check that the code compiles and the tests all pass before com
 </h2>
 <p>The next step is to check that the commit looks okay when viewed in the context of your project history. Right click on the Stendhal project name in the <code>Package Explorer</code> view and select <code>Team</code> &gt; <code>Show in History</code>. You should see something like figure <a href="syncing.html#fig:localCommitGraphBeforePushNoHistory-fig">14.2</a></p>
 <div class="figure" style="text-align: center">
-<span id="fig:localCommitGraphBeforePushNoHistory-fig"></span>
+<span style="display:block;" id="fig:localCommitGraphBeforePushNoHistory-fig"></span>
 <img src="images/localCommitGraphBeforePushNoHistory.png" alt="Your setup should look something like this" width="100%"><p class="caption">
 Figure 14.2: Your setup should look something like this
 </p>
@@ -141,7 +151,7 @@ Figure 14.2: Your setup should look something like this
 <p>Click on the commit you just created and check that the right files and changes have been included. We should see a small commit on the <code>master</code> branch that changes only the <code>admins.txt</code> file.</p>
 <p>Let’s compare the state of this repository with that of the team’s remote repository on GitLab at this stage. In your web browser, view your team’s GitLab project. Use the <code>Repository</code> &gt; <code>Graph</code> option from the menu on the left hand side to see the commit graph. It should look something like figure <a href="syncing.html#fig:commitGraphInGitLabBeforePushNoHistory-fig">14.3</a></p>
 <div class="figure" style="text-align: center">
-<span id="fig:commitGraphInGitLabBeforePushNoHistory-fig"></span>
+<span style="display:block;" id="fig:commitGraphInGitLabBeforePushNoHistory-fig"></span>
 <img src="images/commitGraphInGitLabBeforePushNoHistory.png" alt="Your gitlab repository (gitlab.cs.man.ac.uk) should look something like this." width="100%"><p class="caption">
 Figure 14.3: Your gitlab repository (<a href="https://gitlab.cs.man.ac.uk">gitlab.cs.man.ac.uk</a>) should look something like this.
 </p>
@@ -158,7 +168,7 @@ Figure 14.3: Your gitlab repository (<a href="https://gitlab.cs.man.ac.uk">gitla
 <p>If no commits have been made to your team repository since it was created, then this push should succeed.</p>
 <p>It is a good habit to check that your changes have reached the team repository, and look as you expect. Refresh the commit graph page of your team project in GitLab. It should now look the same as the graph in the <code>History</code> view, shown in figure <a href="syncing.html#fig:commitGraphInGitLabAfterPushNoHistory-fig">14.4</a></p>
 <div class="figure" style="text-align: center">
-<span id="fig:commitGraphInGitLabAfterPushNoHistory-fig"></span>
+<span style="display:block;" id="fig:commitGraphInGitLabAfterPushNoHistory-fig"></span>
 <img src="images/commitGraphInGitLabAfterPushNoHistory.png" alt="Your commit graph should look something like this" width="100%"><p class="caption">
 Figure 14.4: Your commit graph should look something like this
 </p>
@@ -180,7 +190,7 @@ Figure 14.4: Your commit graph should look something like this
 <p>We’ll carry out the first of these steps now.</p>
 <p>Bring up the <code>History</code> view of your project in your IDE, and open the commit graph view of your project in GitLab. (The GitLab commit graph should look the same as in the screenshot at the end of the instructions for Step 2.) If you compare the two commit graphs, you should see that there is an additional commit in GitLab that you don’t have in your repository — the commit that adds the admin players. You will see that your <code>master</code> branch is “behind” the position of the <code>master</code> branch on the remote repository shown in figure <a href="syncing.html#fig:teamMatesLocalCommitGraphBeforeFetchNoHistory-fig">14.5</a>.</p>
 <div class="figure" style="text-align: center">
-<span id="fig:teamMatesLocalCommitGraphBeforeFetchNoHistory-fig"></span>
+<span style="display:block;" id="fig:teamMatesLocalCommitGraphBeforeFetchNoHistory-fig"></span>
 <img src="images/teamMatesLocalCommitGraphBeforeFetchNoHistory.png" alt="Your commit graph should look something like this" width="100%"><p class="caption">
 Figure 14.5: Your commit graph should look something like this
 </p>
@@ -188,14 +198,14 @@ Figure 14.5: Your commit graph should look something like this
 <p>In the <code>Package Explorer</code> view, find and open the <code>data/conf/admins.txt</code> file. It should be empty. The changes made by your team mate are not yet visible to you.</p>
 <p>Now we’re going to “fetch” any new commits and branch/tags down from the remote repository. Start by checking out your <code>master</code> branch. Then, right click on the Stendhal project name in the <code>Package Explorer</code> view, and select <code>Team</code> &gt; <code>Fetch from origin</code>. You should see a dialogue box summarising the commits that have been brought into your repository and confirming that the fetch operation succeeded like the one shown in figure <a href="syncing.html#fig:fetchSucceededNoHistory-fig">14.6</a></p>
 <div class="figure" style="text-align: center">
-<span id="fig:fetchSucceededNoHistory-fig"></span>
+<span style="display:block;" id="fig:fetchSucceededNoHistory-fig"></span>
 <img src="images/fetchSucceededNoHistory.png" alt="The fetch results dialog box" width="100%"><p class="caption">
 Figure 14.6: The fetch results dialog box
 </p>
 </div>
 <p>Your <code>History</code> view should also have updated to show the results of the fetch operation. It should now look something like figure <a href="syncing.html#fig:teamMatesLocalCommitGraphAfterFetchNoHistory-fig">14.7</a>.</p>
 <div class="figure" style="text-align: center">
-<span id="fig:teamMatesLocalCommitGraphAfterFetchNoHistory-fig"></span>
+<span style="display:block;" id="fig:teamMatesLocalCommitGraphAfterFetchNoHistory-fig"></span>
 <img src="images/teamMatesLocalCommitGraphAfterFetchNoHistory.png" alt="An updated History view showing the results of the fetch operation" width="100%"><p class="caption">
 Figure 14.7: An updated History view showing the results of the fetch operation
 </p>
@@ -222,7 +232,7 @@ Figure 14.7: An updated History view showing the results of the fetch operation
 <p>In this case, the merge operation is a simple one: Git just has to move the <code>master</code> branch forward along the chain of commits until it reaches the same place as the <code>origin/master</code>. This kind of merge is called a “fast forward merge,” because it is very quick for Git to do (it just changes the commit the <code>master</code> branch points to, rather than doing any actual mucking about with creating new versions of the code base) and because it involves moving the branch forward along the chain of commits.</p>
 <p>Your <code>History</code> view should now look something like figure <a href="syncing.html#fig:teamMatesLocalCommitGraphAfterFFMergeNoHistory-fig">14.8</a>.</p>
 <div class="figure" style="text-align: center">
-<span id="fig:teamMatesLocalCommitGraphAfterFFMergeNoHistory-fig"></span>
+<span style="display:block;" id="fig:teamMatesLocalCommitGraphAfterFFMergeNoHistory-fig"></span>
 <img src="images/teamMatesLocalCommitGraphAfterFFMergeNoHistory.png" alt="Your commit graph should look something like this" width="100%"><p class="caption">
 Figure 14.8: Your commit graph should look something like this
 </p>

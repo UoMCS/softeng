@@ -6,10 +6,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Chapter 1 Marauroa | Software engineering</title>
 <meta name="author" content="Suzanne Embury and team">
-<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.2"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.9/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Marauroa is an open source framework and engine to develop games. It provides a simple way of creating games on a portable and robust server architecture. Marauroa manages the client server...">
+<meta name="generator" content="bookdown 0.24 with bs4_book()">
+<meta property="og:title" content="Chapter 1 Marauroa | Software engineering">
+<meta property="og:type" content="book">
+<meta property="og:url" content="https://software-eng.netlify.app/building.html">
+<meta property="og:description" content="Marauroa is an open source framework and engine to develop games. It provides a simple way of creating games on a portable and robust server architecture. Marauroa manages the client server...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chapter 1 Marauroa | Software engineering">
+<meta name="twitter:site" content="@csmcr">
+<meta name="twitter:description" content="Marauroa is an open source framework and engine to develop games. It provides a simple way of creating games on a portable and robust server architecture. Marauroa manages the client server...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.10/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
-<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.2.5.1/tabs.js"></script><script src="libs/bs3compat-0.2.5.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
-<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/mark.min.js"></script><!-- CSS --><link rel="stylesheet" href="libs/custom/duncan.css">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.0/transition.js"></script><script src="libs/bs3compat-0.3.0/tabs.js"></script><script src="libs/bs3compat-0.3.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><link rel="stylesheet" href="libs/custom/duncan.css">
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -125,7 +135,7 @@ In this workshop, we will build on that activity to carry out these basic skills
 </h3>
 <p>You’ll need to organise your main Eclipse workspace window and you should now see a window that looks something like figure <a href="building.html#fig:firstview-fig">1.1</a>.</p>
 <div class="figure" style="text-align: center">
-<span id="fig:firstview-fig"></span>
+<span style="display:block;" id="fig:firstview-fig"></span>
 <img src="images/1.3.2firstView.jpg" alt="Your main eclipse window should look something like this" width="100%"><p class="caption">
 Figure 1.1: Your main eclipse window should look something like this
 </p>
@@ -143,7 +153,7 @@ Figure 1.1: Your main eclipse window should look something like this
 <p>The first step is to ask Eclipse to import the Marauroa project for us, from a public Git repository.</p>
 <p>Select the <code>File</code> &gt; <code>Import</code> menu option. Then choose <code>Git</code> &gt; <code>ImportFromGit</code> shown in figure <a href="building.html#fig:eclipseImportProjectFromGit-fig">1.2</a></p>
 <div class="figure" style="text-align: center">
-<span id="fig:eclipseImportProjectFromGit-fig"></span>
+<span style="display:block;" id="fig:eclipseImportProjectFromGit-fig"></span>
 <img src="images/1.4.eclipseImportProjectFromGit.png" alt="Your main eclipse window should look something like this" width="100%"><p class="caption">
 Figure 1.2: Your main eclipse window should look something like this
 </p>
@@ -151,7 +161,7 @@ Figure 1.2: Your main eclipse window should look something like this
 <p>You can either double-click on <code>Projects from Git</code>, or single-click on it and press <code>Next</code>.</p>
 <p>A dialogue box appears showing the two ways in which you can import a project from Git. We’re going to <strong>clone a project from a URI</strong>, so select that option shown in figure <a href="building.html#fig:eclipseCloneFromURI-fig">1.3</a></p>
 <div class="figure" style="text-align: center">
-<span id="fig:eclipseCloneFromURI-fig"></span>
+<span style="display:block;" id="fig:eclipseCloneFromURI-fig"></span>
 <img src="images/1.4.eclipseCloneFromURI.png" alt="Your main eclipse window should look something like this" width="100%"><p class="caption">
 Figure 1.3: Your main eclipse window should look something like this
 </p>
@@ -160,7 +170,7 @@ Figure 1.3: Your main eclipse window should look something like this
 <div class="sourceCode" id="cb3"><pre class="sourceCode md"><code class="sourceCode markdown"><span id="cb3-1"><a href="building.html#cb3-1" aria-hidden="true" tabindex="-1"></a>git://git.code.sf.net/p/arianne/marauroa</span></code></pre></div>
 <p>Eclipse <strong>Should fill in the rest of the fields automatically</strong>. If it doesn’t, it’s likely that something went wrong when copying the link from this PDF: try typing it instead. Check that your dialogue looks like figure <a href="building.html#fig:enterMarauroaURI-fig">1.4</a> before proceeding.</p>
 <div class="figure" style="text-align: center">
-<span id="fig:enterMarauroaURI-fig"></span>
+<span style="display:block;" id="fig:enterMarauroaURI-fig"></span>
 <img src="images/1.4enterMarauroaURI.png" alt="Your Import Projects from Git dialogue box should look like this" width="100%"><p class="caption">
 Figure 1.4: Your Import Projects from Git dialogue box should look like this
 </p>
@@ -174,7 +184,7 @@ Figure 1.4: Your Import Projects from Git dialogue box should look like this
 <p>Eclipse will now communicate with the remote Git repository specified in the URI. It will ask us which branches we want to work with locally, that is, which branches we want to create local remote tracking branches for. Note that this is not the same as asking us which commits we want to include in our clone. A standard Git clone will always include all the commits in the cloned repository, regardless of which branches we select here. And it is not asking us which remote branches we want to have in the repository. Again, a standard Git clone will include all the remote branches by default. The question Eclipse is asking here applies only to the question of which tracking branches should be created in the clone.</p>
 <p>We’re not going to be making any serious changes to the Marauroa code base in this workshop, so we will just ask for a remote tracking branch to be created for the <code>master</code> branch of the repository, see figure <a href="building.html#fig:selectMarauroaBranches-fig">1.5</a>.</p>
 <div class="figure" style="text-align: center">
-<span id="fig:selectMarauroaBranches-fig"></span>
+<span style="display:block;" id="fig:selectMarauroaBranches-fig"></span>
 <img src="images/1.4selectMarauroaBranches.png" alt="Take a look at the list of branches contained in the project, by scrolling up and down the list. You'll see that the Marauroa project uses separate branches to describe specific releases, as well as other development branches. Another common approach is to have a single release branch and to use tags to distinguish specific releases on that branch." width="100%"><p class="caption">
 Figure 1.5: Take a look at the list of branches contained in the project, by scrolling up and down the list. You’ll see that the Marauroa project uses separate branches to describe specific releases, as well as other development branches. Another common approach is to have a single release branch and to use tags to distinguish specific releases on that branch.
 </p>
@@ -182,7 +192,7 @@ Figure 1.5: Take a look at the list of branches contained in the project, by scr
 <p>Make sure that the <code>master</code> branch is selected, and press <code>Next</code>.</p>
 <p>As in the GitLab Access Check activity, we need to tell Eclipse where we want the cloned repository to be stored before it can issue the Git command to create it see figure <a href="building.html#fig:configureLocalStorageMarauroa-fig">1.6</a></p>
 <div class="figure" style="text-align: center">
-<span id="fig:configureLocalStorageMarauroa-fig"></span>
+<span style="display:block;" id="fig:configureLocalStorageMarauroa-fig"></span>
 <img src="images/1.4configureLocalStorageMarauroa.png" alt="Cloning from git dialog box" width="100%"><p class="caption">
 Figure 1.6: Cloning from git dialog box
 </p>
@@ -198,7 +208,7 @@ Figure 1.6: Cloning from git dialog box
 </div>
 <p>As in the GitLab Access Check activity, we have to tell Eclipse which wizard to use to import the project for us. Since the Marauroa team uses Eclipse, we can use the wizard that looks for existing Eclipse projects in the repository, see figure <a href="building.html#fig:wizardImport-fig">1.7</a> If we were loading a project built in another IDE, we would need to use one of the other wizards.</p>
 <div class="figure" style="text-align: center">
-<span id="fig:wizardImport-fig"></span>
+<span style="display:block;" id="fig:wizardImport-fig"></span>
 <img src="images/1.4wizardImport.png" alt="Cloning from git dialog box" width="100%"><p class="caption">
 Figure 1.7: Cloning from git dialog box
 </p>
@@ -206,7 +216,7 @@ Figure 1.7: Cloning from git dialog box
 <p>Click on <code>Next</code> when the correct wizard has been chosen.</p>
 <p>Eclipse will now scan the local Git repository looking for anything that it recognises as an Eclipse project. It looks through all the folders, searching for the metadata files that Eclipse creates and stores in the root directory of a project. In this case, it finds just one (called <code>newmarauroa</code>) see figure <a href="building.html#fig:eclipseSelectProjectsToImport-fig">1.8</a></p>
 <div class="figure" style="text-align: center">
-<span id="fig:eclipseSelectProjectsToImport-fig"></span>
+<span style="display:block;" id="fig:eclipseSelectProjectsToImport-fig"></span>
 <img src="images/1.4eclipseSelectProjectsToImport.png" alt="Import projects from a git repository and the newmarauroa project" width="100%"><p class="caption">
 Figure 1.8: Import projects from a git repository and the newmarauroa project
 </p>
@@ -214,7 +224,7 @@ Figure 1.8: Import projects from a git repository and the newmarauroa project
 <p>Since there is just one project in the repository, we have an easy decision here. Click on the <code>newmarauroa</code> project to select it, and then click on <code>Finish</code> (finally!).</p>
 <p>Eclipse can now import the project into your workspace. When that is done, you’ll be taken back to the main Eclipse work screen (strictly speaking, we’re taken back to what Eclipse calls the ‘Java Perspective’). You should see that a project has appeared in the Package Explorer view, and that the Problems view has now been populated with information see figure <a href="building.html#fig:finallyImportedProject-fig">1.9</a></p>
 <div class="figure" style="text-align: center">
-<span id="fig:finallyImportedProject-fig"></span>
+<span style="display:block;" id="fig:finallyImportedProject-fig"></span>
 <img src="images/1.4finallyImportedProject.png" alt="Import projects from a git repository and the newmarauroa project" width="100%"><p class="caption">
 Figure 1.9: Import projects from a git repository and the newmarauroa project
 </p>
@@ -228,7 +238,7 @@ Figure 1.9: Import projects from a git repository and the newmarauroa project
 <p>For this activity, we are going to work with the commit with the short SHA of <code>f30e098</code>.</p>
 <p>The easiest way to check out a commit, branch or tag from within Eclipse is to use the History View. To open it, right click on the <code>newmarauroa</code> project name in the Package Explorer view. Select <code>Team</code> &gt; <code>Show in History</code> from the menu that appears. The History View shown in figure <a href="building.html#fig:historyTab-fig">1.10</a>, should now be visible in the bottom panel of your Eclipse window. You may wish to double click on the view tab to expand it, so that the contents are more easily seen.</p>
 <div class="figure" style="text-align: center">
-<span id="fig:historyTab-fig"></span>
+<span style="display:block;" id="fig:historyTab-fig"></span>
 <img src="images/1.4historyTab.PNG" alt="In this view, you should now see the most recent part of the network of the Marauroa project repository. You can scroll down to see the full commit log. As you can see, the history is significantly more complex than the simple repository we looked at in the GitLab Access Check. Marauroa has been under development since 2003, and its history reflects its age.  Note that your view of the repository may be a little different than that shown in the screen shot.  We are working with a live repository, and new commits are being made on a regular basis." width="100%"><p class="caption">
 Figure 1.10: In this view, you should now see the most recent part of the network of the Marauroa project repository. You can scroll down to see the full commit log. As you can see, the history is significantly more complex than the simple repository we looked at in the GitLab Access Check. Marauroa has been under development since 2003, and its history reflects its age. Note that your view of the repository may be a little different than that shown in the screen shot. We are working with a live repository, and new commits are being made on a regular basis.
 </p>
@@ -236,7 +246,7 @@ Figure 1.10: In this view, you should now see the most recent part of the networ
 <p>Look for the commit with SHA <code>f30e098</code>. It should have the (not terribly helpful) commit message <code>code cleanup</code>. Right click on it, and select <code>Checkout</code> from the menu that appears.</p>
 <p>At this point, Eclipse will warn you that you are in a <code>detached HEAD</code> state shown in figure <a href="building.html#fig:detachedHEAD-fig">1.11</a></p>
 <div class="figure" style="text-align: center">
-<span id="fig:detachedHEAD-fig"></span>
+<span style="display:block;" id="fig:detachedHEAD-fig"></span>
 <img src="images/1.4historyTab.PNG" alt="A warning of the detached HEAD state which reads: “You are in the detached HEAD state. This means you don’t have a local branch checked out. You can look around but it’s not recommended to commit changes. The reason is that these commits would not be on any branch and would not be visible after checking out another branch.”" width="100%"><p class="caption">
 Figure 1.11: A warning of the detached HEAD state which reads: “You are in the <code>detached HEAD</code> state. This means you don’t have a local branch checked out. You can look around but it’s not recommended to commit changes. The reason is that these commits would not be on any branch and would not be visible after checking out another branch.”
 </p>
@@ -279,7 +289,7 @@ Figure 1.11: A warning of the detached HEAD state which reads: “You are in the
 </h3>
 <p>Open up the <code>newmarauroa</code> project in the Package Explorer (if you have not already done so), and scroll down until you see a file called <code>build.xml</code>. This is the default name for Ant build scripts. Double click on it, to get Eclipse to load the file into an Editor view, so that we can see its contents shown in figure <a href="building.html#fig:buildfile-fig">1.12</a></p>
 <div class="figure" style="text-align: center">
-<span id="fig:buildfile-fig"></span>
+<span style="display:block;" id="fig:buildfile-fig"></span>
 <img src="images/2.1buildFile.png" alt="An XML build file" width="100%"><p class="caption">
 Figure 1.12: An XML build file
 </p>
@@ -289,14 +299,14 @@ Figure 1.12: An XML build file
 <p>We can use the Outline view to run Ant builds, by right clicking on the XML tags that represent descriptions of how to build things. But an even more useful view is the <strong>Ant View</strong>. This is a view that has been created with knowledge of how the Ant build tool works, and added in to Eclipse as a plugin. Open it by selecting <code>Window</code> &gt; <code>Show View</code> &gt; <code>Ant</code> from the top level menus.</p>
 <p>Now open <code>build.xml</code> from the view by clicking on the <code>Add Buildfiles</code> icon in the view toolbar. It looks like an ant with a green plus on its left shown in figure <a href="building.html#fig:antAddBuildfile-fig">1.13</a></p>
 <div class="figure" style="text-align: center">
-<span id="fig:antAddBuildfile-fig"></span>
+<span style="display:block;" id="fig:antAddBuildfile-fig"></span>
 <img src="images/2.1antAddBuildfile.png" alt="An XML build file" width="100%"><p class="caption">
 Figure 1.13: An XML build file
 </p>
 </div>
 <p>This will open a new dialogue that allows you to select a Buildfile. Select <code>build.xml</code> and click <code>OK</code> shown in figure <a href="building.html#fig:selectBuildfile-fig">1.14</a></p>
 <div class="figure" style="text-align: center">
-<span id="fig:selectBuildfile-fig"></span>
+<span style="display:block;" id="fig:selectBuildfile-fig"></span>
 <img src="images/2.1selectBuildfile.png" alt="Buildfile Selection" width="100%"><p class="caption">
 Figure 1.14: Buildfile Selection
 </p>
@@ -306,7 +316,7 @@ Figure 1.14: Buildfile Selection
 <p>Let’s take a look at the definitions of some of the targets. Right click on the name of any of the targets, and select <code>Open In</code> &gt; <code>Ant Editor</code> from the context menu that appears. You will see that the contents of the <code>build.xml</code> editor window are changed, so that the definition of the target we have clicked on is displayed. For example, in figure <a href="building.html#fig:jarallTarget-fig">1.15</a>, we’ve clicked look at the <code>jar-all</code> target and take a look.</p>
 <!--Redo in Ant View-->
 <div class="figure" style="text-align: center">
-<span id="fig:jarallTarget-fig"></span>
+<span style="display:block;" id="fig:jarallTarget-fig"></span>
 <img src="images/2.1jarallTarget.png" alt="The jar-all target" width="100%"><p class="caption">
 Figure 1.15: The jar-all target
 </p>
@@ -334,7 +344,7 @@ Figure 1.15: The jar-all target
 <p>Select the first of the two Ant Build options. The second takes you to a wizard, but we don’t need that at this stage.</p>
 <p>A Console tab will appear (figure <a href="building.html#fig:consoleOut-fig">1.16</a>) in the bottom section of the Eclipse window, showing the output that Ant is sending to the standard output and standard error streams while it works. Double click on the tab of the Console view, and take a look at what Ant is doing.</p>
 <div class="figure" style="text-align: center">
-<span id="fig:consoleOut-fig"></span>
+<span style="display:block;" id="fig:consoleOut-fig"></span>
 <img src="images/2.1consoleOut.png" alt="Console output" width="100%"><p class="caption">
 Figure 1.16: Console output
 </p>
@@ -343,7 +353,7 @@ Figure 1.16: Console output
 <p>Beneath the target, the names of the tasks invoked are shown, in square brackets.</p>
 <p>The most important part of the output, of course, is shown at the end, when the process finishes:</p>
 <div class="figure" style="text-align: center">
-<span id="fig:endconsoleOut-fig"></span>
+<span style="display:block;" id="fig:endconsoleOut-fig"></span>
 <img src="images/2.2endConsoleOut.png" alt="Console output" width="100%"><p class="caption">
 Figure 1.17: Console output
 </p>
@@ -384,7 +394,7 @@ Figure 1.17: Console output
 <p>The Marauroa build script is unusual in that the target that produces the distribution doesn’t also run the tests. But it (the build script) does contain instructions for running the test suites.</p>
 <p>Take a look at the targets in the build script. We can see that there is one called <code>test</code>. That sounds promising. Let’s take a look at figure <a href="building.html#fig:showTestTargetInBuildScript-fig">1.18</a></p>
 <div class="figure" style="text-align: center">
-<span id="fig:showTestTargetInBuildScript-fig"></span>
+<span style="display:block;" id="fig:showTestTargetInBuildScript-fig"></span>
 <img src="images/3.1.1showTestTargetInBuildScript.png" alt="We can see that this target is dependent on another target, called compile-tests. That makes sense as we would expect to have to compile the test (and production) code before we can run the tests." width="100%"><p class="caption">
 Figure 1.18: We can see that this target is dependent on another target, called <code>compile-tests</code>. That makes sense as we would expect to have to compile the test (and production) code before we can run the tests.
 </p>
@@ -392,7 +402,7 @@ Figure 1.18: We can see that this target is dependent on another target, called 
 
 <p>Let’s take a quick look at that target before we look at the rest of the <code>test</code> target shown in figure <a href="building.html#fig:compileTestsTargetJustCode-fig">1.19</a></p>
 <div class="figure" style="text-align: center">
-<span id="fig:compileTestsTargetJustCode-fig"></span>
+<span style="display:block;" id="fig:compileTestsTargetJustCode-fig"></span>
 <img src="images/3.1compileTestsTargetJustCode.png" alt="Testing targets" width="100%"><p class="caption">
 Figure 1.19: Testing targets
 </p>
@@ -450,7 +460,7 @@ This is an excellent example of a *brittle* test.  Ideally, we want our tests to
 <p>Line 37 of the <code>build.ant.properties</code> file tells us that the <code>build-test-reports</code> are in the <code>build/testreport</code> folder. We’ll need to refresh the project to allow Eclipse to show us these new folders and files, so right click on the project name in the Package Explorer View and select <code>Refresh</code>.</p>
 <p>You should now be able to examine the contents of the <code>build/testreport</code> folder shown in figure <a href="building.html#fig:showJUnitTestResultsInXMLFormat-fig">1.20</a></p>
 <div class="figure" style="text-align: center">
-<span id="fig:showJUnitTestResultsInXMLFormat-fig"></span>
+<span style="display:block;" id="fig:showJUnitTestResultsInXMLFormat-fig"></span>
 <img src="images/3.2.4showJUnitTestResultsInXMLFormat.png" alt="The testreport" width="100%"><p class="caption">
 Figure 1.20: The testreport
 </p>
@@ -459,7 +469,7 @@ Figure 1.20: The testreport
 <p><code>TEST-marauroa.clientconnect.ClientConnectTest.xml</code></p>
 <p>you’ll see the JUnit view shown in figure <a href="building.html#fig:showTestResultsForClientCoverage-fig">1.21</a>.</p>
 <div class="figure" style="text-align: center">
-<span id="fig:showTestResultsForClientCoverage-fig"></span>
+<span style="display:block;" id="fig:showTestResultsForClientCoverage-fig"></span>
 <img src="images/3.2.4showTestResultsForClientCoverage.png" alt="The JUnit view" width="100%"><p class="caption">
 Figure 1.21: The JUnit view
 </p>
@@ -475,7 +485,7 @@ Figure 1.21: The JUnit view
 <p>The green bar at the top of the JUnit view also indicates that all the tests in this test class passed.</p>
 <p>We can double click on any of the tests to find out more about them. Try this with the first test: <code>clientconnectTest</code>. You should see the source of the test case, loaded in the Editor view shown in figure <a href="building.html#fig:showSourceOfTestFromTestReport-fig">1.22</a></p>
 <div class="figure" style="text-align: center">
-<span id="fig:showSourceOfTestFromTestReport-fig"></span>
+<span style="display:block;" id="fig:showSourceOfTestFromTestReport-fig"></span>
 <img src="images/3.3.4showSourceOfTestFromTestReport.png" alt="The Editor view" width="100%"><p class="caption">
 Figure 1.22: The Editor view
 </p>
@@ -497,7 +507,7 @@ Don’t try to open the jacoco.xml file in Eclipse! It is huge and Eclipse will 
 <div class="sourceCode" id="cb5"><pre class="sourceCode md"><code class="sourceCode markdown"><span id="cb5-1"><a href="building.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;html</span><span class="ot"> destdir=</span><span class="st">"${build-coverage}"</span> <span class="kw">/&gt;</span></span></code></pre></div>
 <p>Note that the parameter is <code>destdir</code>, not <code>destfile</code>, like in the line that follows. Figure <a href="building.html#fig:addHTMLreportRequestToBuildFile-fig">1.23</a> below shows how the edited build file should look, with the new line highlighted.</p>
 <div class="figure" style="text-align: center">
-<span id="fig:addHTMLreportRequestToBuildFile-fig"></span>
+<span style="display:block;" id="fig:addHTMLreportRequestToBuildFile-fig"></span>
 <img src="images/3.3.5addHTMLreportRequestToBuildFile.png" alt="The JUnit view" width="100%"><p class="caption">
 Figure 1.23: The JUnit view
 </p>
@@ -506,7 +516,7 @@ Figure 1.23: The JUnit view
 <p>Expand the <code>build/coveragereport</code> folder. You should see lots of extra folders inside it, with names that look like they could be Java packages. You should also find a file called <code>index.html</code> down towards the bottom. This is the root file of the HTML report that JaCoCo has created for us.</p>
 <p>Eclipse has a Web browser plug-in that you can use to look at this report (by double-clicking on the <code>index.html</code> file). This plug-in was pretty buggy in previous releases. If you find this to be the case under Eclipse 2020-03 too, you can open your preferred Web browser and look at the files in that. (You’ll need to use a file browser to locate the file in your file space. Searching for the directory called <code>coveragereport</code> is a quick way to do this.)</p>
 <div class="figure" style="text-align: center">
-<span id="fig:showCoverageReport-fig"></span>
+<span style="display:block;" id="fig:showCoverageReport-fig"></span>
 <img src="images/3.3.7showCoverageReport.PNG" alt="A test report" width="100%"><p class="caption">
 Figure 1.24: A test report
 </p>
@@ -528,7 +538,7 @@ Figure 1.24: A test report
 <p>You can drill down further by clicking on the package names to see code coverage reports for each class. If you click on the classes, you’ll get a breakdown of the coverage per method. You can even get reports on the coverage of individual lines of code (by clicking on the methods in the coverage report). For example, figure <a href="building.html#fig:showDetailedMethodCoverageReportMac-fig">1.25</a> shows the detailed coverage report for the method <code>marauroa.common.game.RPObject.size()</code>.</p>
 <!--%%% REDO - small code change means change to line numbers-->
 <div class="figure" style="text-align: center">
-<span id="fig:showDetailedMethodCoverageReportMac-fig"></span>
+<span style="display:block;" id="fig:showDetailedMethodCoverageReportMac-fig"></span>
 <img src="images/3.3.8showDetailedMethodCoverageReportMac.png" alt="A more detailed coverage report" width="100%"><p class="caption">
 Figure 1.25: A more detailed coverage report
 </p>
@@ -548,7 +558,7 @@ Figure 1.25: A more detailed coverage report
 <p>First, we need to get the source of this method loaded into the Editor view. You can do that by expanding the src folder tree in the Package Explorer, or by using the Search facility from the main menu bar. (File search is the easiest to use, but Java search would be a sensible way to run this search, too.)</p>
 <p>Double click on the class or method to load it into the Editor window. You can use the Outline View to locate the method quickly once you have the class loaded into the Editor. Now we can make the change. Comment out line 649, as shown in figure <a href="building.html#fig:commentOutALineOfCode-fig">1.26</a></p>
 <div class="figure" style="text-align: center">
-<span id="fig:commentOutALineOfCode-fig"></span>
+<span style="display:block;" id="fig:commentOutALineOfCode-fig"></span>
 <img src="images/3.4.1commentOutALineOfCode.PNG" alt="A more detailed coverage report" width="100%"><p class="caption">
 Figure 1.26: A more detailed coverage report
 </p>
@@ -556,7 +566,7 @@ Figure 1.26: A more detailed coverage report
 <p>Save the file and run the build test target.</p>
 <p>This time, you should see a failed build like the one shown in figure <a href="building.html#fig:resultsOfRunningTheTestsOnTheModifiedCode-fig">1.27</a>. This is because one (or more) of the tests has failed, because of the change we introduced. The failing test(s) caused the process of executing the test suite to come to a full stop. This is because the Marauroa build script tells JUnit to stop as soon as a failing test is encountered.</p>
 <div class="figure" style="text-align: center">
-<span id="fig:resultsOfRunningTheTestsOnTheModifiedCode-fig"></span>
+<span style="display:block;" id="fig:resultsOfRunningTheTestsOnTheModifiedCode-fig"></span>
 <img src="images/3.4.2resultsOfRunningTheTestsOnTheModifiedCode.png" alt="A more detailed coverage report" width="100%"><p class="caption">
 Figure 1.27: A more detailed coverage report
 </p>
@@ -565,7 +575,7 @@ Figure 1.27: A more detailed coverage report
 <p>To allow this, open up the <code>build.xml</code> file, and go to line 292. On this line, change the values of the <code>haltonerror</code> and <code>haltonfailure</code> parameters to both be <code>false</code>. Then run the tests again, from the Ant View. You should now see a much larger number of test results scrolling by in the Console View.</p>
 <p>Then run the test build target again. You should see output similar to figure <a href="building.html#fig:resultsOfRunningTheTestsOnTheModifiedCodeCompleteBuild-fig">1.28</a>.</p>
 <div class="figure" style="text-align: center">
-<span id="fig:resultsOfRunningTheTestsOnTheModifiedCodeCompleteBuild-fig"></span>
+<span style="display:block;" id="fig:resultsOfRunningTheTestsOnTheModifiedCodeCompleteBuild-fig"></span>
 <img src="images/3.4.2resultsOfRunningTheTestsOnTheModifiedCodeCompleteBuild.PNG" alt="Tests FAILED" width="100%"><p class="caption">
 Figure 1.28: Tests FAILED
 </p>

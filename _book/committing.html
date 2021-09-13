@@ -6,10 +6,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Chapter 20 Integrating commits | Software engineering</title>
 <meta name="author" content="Suzanne Embury and team">
-<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.2"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.9/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Integrating Your Commits with Your Team’s Commits  20.1 Introduction In the team study activity, Syncing with your Team Repository, we practised how to synchronise your local repository with your...">
+<meta name="generator" content="bookdown 0.24 with bs4_book()">
+<meta property="og:title" content="Chapter 20 Integrating commits | Software engineering">
+<meta property="og:type" content="book">
+<meta property="og:url" content="https://software-eng.netlify.app/committing.html">
+<meta property="og:description" content="Integrating Your Commits with Your Team’s Commits  20.1 Introduction In the team study activity, Syncing with your Team Repository, we practised how to synchronise your local repository with your...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chapter 20 Integrating commits | Software engineering">
+<meta name="twitter:site" content="@csmcr">
+<meta name="twitter:description" content="Integrating Your Commits with Your Team’s Commits  20.1 Introduction In the team study activity, Syncing with your Team Repository, we practised how to synchronise your local repository with your...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.10/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
-<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.2.5.1/tabs.js"></script><script src="libs/bs3compat-0.2.5.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
-<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/mark.min.js"></script><!-- CSS --><link rel="stylesheet" href="libs/custom/duncan.css">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.0/transition.js"></script><script src="libs/bs3compat-0.3.0/tabs.js"></script><script src="libs/bs3compat-0.3.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><link rel="stylesheet" href="libs/custom/duncan.css">
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -86,21 +96,21 @@
 </h2>
 <p>Suppose you and a team mate have both made commits on your local <code>master</code> branches, from the starting commit of the project. You worked on a feature branch, and merged it into the development branch (using a fast-forward merge) so your local history looks like figure <a href="committing.html#fig:localCommitGraphBeforeRejectedPushNoHistoryGraphOnly-fig">20.1</a>.</p>
 <div class="figure" style="text-align: center">
-<span id="fig:localCommitGraphBeforeRejectedPushNoHistoryGraphOnly-fig"></span>
+<span style="display:block;" id="fig:localCommitGraphBeforeRejectedPushNoHistoryGraphOnly-fig"></span>
 <img src="images/localCommitGraphBeforeRejectedPushNoHistoryGraphOnly.png" alt="Your local history" width="100%"><p class="caption">
 Figure 20.1: Your local history
 </p>
 </div>
 <p>Your team mate made a single commit directly onto the development branch and pushed their work to the team repository, so that the remote commit graph looks like figure <a href="committing.html#fig:commitGraphInGitLabAfterPushNoHistoryGraphOnly-fig">20.2</a>.</p>
 <div class="figure" style="text-align: center">
-<span id="fig:commitGraphInGitLabAfterPushNoHistoryGraphOnly-fig"></span>
+<span style="display:block;" id="fig:commitGraphInGitLabAfterPushNoHistoryGraphOnly-fig"></span>
 <img src="images/commitGraphInGitLabAfterPushNoHistoryGraphOnly.png" alt="Your remote commit graph" width="100%"><p class="caption">
 Figure 20.2: Your remote commit graph
 </p>
 </div>
 <p>When you push your work, Git rejects the attempt, shown in figure <a href="committing.html#fig:pushRejectedNoHistory-fig">20.3</a>.</p>
 <div class="figure" style="text-align: center">
-<span id="fig:pushRejectedNoHistory-fig"></span>
+<span style="display:block;" id="fig:pushRejectedNoHistory-fig"></span>
 <img src="images/pushRejectedNoHIstory.png" alt="Can you see why git has rejected this push?" width="100%"><p class="caption">
 Figure 20.3: Can you see why git has rejected this push?
 </p>
@@ -122,7 +132,7 @@ Figure 20.3: Can you see why git has rejected this push?
 </h3>
 <p>This step is straightforward. Just right click on the project name in the <code>Package Explorer</code> view, and select <code>Team</code> &gt; <code>Fetch from origin</code>. Your local commit graph now looks like figure <a href="committing.html#fig:localCommitGraphAfterPushRejectedAndFetchNoHistoryb-fig">20.4</a></p>
 <div class="figure" style="text-align: center">
-<span id="fig:localCommitGraphAfterPushRejectedAndFetchNoHistoryb-fig"></span>
+<span style="display:block;" id="fig:localCommitGraphAfterPushRejectedAndFetchNoHistoryb-fig"></span>
 <img src="images/localCommitGraphAfterPushRejectedAndFetchNoHistory.png" alt="Your local commit graph" width="100%"><p class="caption">
 Figure 20.4: Your local commit graph
 </p>
@@ -148,14 +158,14 @@ Figure 20.4: Your local commit graph
 <p>Right click on the commit pointed to by the branch we want to integrate from: in this case, the commit pointed to by branch <code>origin/master</code>. Select <code>Merge</code>.</p>
 <p>This succeeds, and produces the summary shown in figure <a href="committing.html#fig:mergeResultDialogueAfterNonFFMergeNoHistory-fig">20.5</a></p>
 <div class="figure" style="text-align: center">
-<span id="fig:mergeResultDialogueAfterNonFFMergeNoHistory-fig"></span>
+<span style="display:block;" id="fig:mergeResultDialogueAfterNonFFMergeNoHistory-fig"></span>
 <img src="images/mergeResultDialogueAfterNonFFMergeNoHistory.png" alt="Merge result dialog box indicating success" width="100%"><p class="caption">
 Figure 20.5: Merge result dialog box indicating success
 </p>
 </div>
 <p>This tells us that the merge was not a fast-forward merge, that the checked out branch (<code>HEAD</code>) has been moved forward to point to the new merge commit, and reminds us of which commits were merged by this operation. The <code>History</code> view shown in figure <a href="committing.html#fig:localCommitGraphAfterNonFFMergeNoHistory-fig">20.6</a> us the new local commit graph after this operation has completed:</p>
 <div class="figure" style="text-align: center">
-<span id="fig:localCommitGraphAfterNonFFMergeNoHistory-fig"></span>
+<span style="display:block;" id="fig:localCommitGraphAfterNonFFMergeNoHistory-fig"></span>
 <img src="images/localCommitGraphAfterNonFFMergeNoHistory.png" alt="The History view shows us the new local commit graph" width="100%"><p class="caption">
 Figure 20.6: The History view shows us the new local commit graph
 </p>
@@ -164,7 +174,7 @@ Figure 20.6: The History view shows us the new local commit graph
 <p>Notice that only the checked out branch (<code>master</code>) changed its position as a result of this operation. Our feature branch and the remote tracking branch for <code>master</code> both remain as they were before we made the merge.</p>
 <p>If you compare our new local commit graph with the graph at the remote (still as it was at the start of the scenario) shown in figure <a href="committing.html#fig:commitGraphInGitLabAfterPushNoHistoryGraphOnly2-fig">20.7</a>, you’ll see that Git can now perform a fast-forward merge of the new commits on our local <code>master</code> branch with <code>master</code> branch at the remote.</p>
 <div class="figure" style="text-align: center">
-<span id="fig:commitGraphInGitLabAfterPushNoHistoryGraphOnly2-fig"></span>
+<span style="display:block;" id="fig:commitGraphInGitLabAfterPushNoHistoryGraphOnly2-fig"></span>
 <img src="images/commitGraphInGitLabAfterPushNoHistoryGraphOnly.png" alt="New local commit graph with the graph at the remote, still as it was at the start of the scenario" width="100%"><p class="caption">
 Figure 20.7: New local commit graph with the graph at the remote, still as it was at the start of the scenario
 </p>
@@ -172,7 +182,7 @@ Figure 20.7: New local commit graph with the graph at the remote, still as it wa
 <p>So now, we can push our work, and the push should succeed.</p>
 <p>The remote repository now contains our commits, integrated with our team mates’ commits, on <code>master</code>.</p>
 <div class="figure" style="text-align: center">
-<span id="fig:commitGraphInGitLabAfterNonFFMergePushedNoHistory-fig"></span>
+<span style="display:block;" id="fig:commitGraphInGitLabAfterNonFFMergePushedNoHistory-fig"></span>
 <img src="images/commitGraphInGitLabAfterNonFFMergePushedNoHistory.png" alt="The remote repository now contains our commits" width="100%"><p class="caption">
 Figure 20.8: The remote repository now contains our commits
 </p>
@@ -180,7 +190,7 @@ Figure 20.8: The remote repository now contains our commits
 <p>(Note that we didn’t push our feature branch, so it is not visible on GitLab ((gitlab.cs.man.ac.uk)[<a href="https://gitlab.cs.man.ac.uk/" class="uri">https://gitlab.cs.man.ac.uk/</a>], even though the commits that were made on it are now present in the team remote. Git keeps a clear distinction between commits and branches. If you push a branch, you also push the commits it is pointing to, but you don’t automatically push all branches or tags that are pointing to those commits.)</p>
 <p>In our local repository, Git has updated the position of the remote tracking branch, <code>origin/master</code>, to reflect the change in position of the branch in the remote.</p>
 <div class="figure" style="text-align: center">
-<span id="fig:localCommitGraphAfterSuccessfulPushAfterNonFFMergeNoHistory-fig"></span>
+<span style="display:block;" id="fig:localCommitGraphAfterSuccessfulPushAfterNonFFMergeNoHistory-fig"></span>
 <img src="images/localCommitGraphAfterSuccessfulPushAfterNonFFMergeNoHistory.png" alt="Git has updated the position of the remote tracking branch" width="100%"><p class="caption">
 Figure 20.9: Git has updated the position of the remote tracking branch
 </p>
@@ -201,14 +211,14 @@ Git pull (in its vanilla form) is just syntactic sugar for the execution of two 
 </h2>
 <p>Let’s go back in time, to the point at which we started to integrate the commits we had fetched down from the remote. (Luckily, we are using Git, which is a tool for going back in time very easily.) Our local commit graph looks like figure <a href="committing.html#fig:localCommitGraphAfterPushRejectedAndFetchNoHistorya-fig">20.10</a></p>
 <div class="figure" style="text-align: center">
-<span id="fig:localCommitGraphAfterPushRejectedAndFetchNoHistorya-fig"></span>
+<span style="display:block;" id="fig:localCommitGraphAfterPushRejectedAndFetchNoHistorya-fig"></span>
 <img src="images/localCommitGraphAfterPushRejectedAndFetchNoHistory.png" alt="Our local commit graph" width="100%"><p class="caption">
 Figure 20.10: Our local commit graph
 </p>
 </div>
 <p>And our team remote looks like figure <a href="committing.html#fig:commitGraphInGitLabAfterPushNoHistoryGraphOnlya-fig">20.11</a>.</p>
 <div class="figure" style="text-align: center">
-<span id="fig:commitGraphInGitLabAfterPushNoHistoryGraphOnlya-fig"></span>
+<span style="display:block;" id="fig:commitGraphInGitLabAfterPushNoHistoryGraphOnlya-fig"></span>
 <img src="images/commitGraphInGitLabAfterPushNoHistoryGraphOnly.png" alt="Our team remote graph" width="100%"><p class="caption">
 Figure 20.11: Our team remote graph
 </p>
@@ -216,7 +226,7 @@ Figure 20.11: Our team remote graph
 <p>This time, we’re going to use rebase to perform the synchronisation. When we rebase branch A onto branch B, we are asking Git to replay the commits that are unique to branch A on the top of branch B, as though we had made the same changes with B checked out as we did formerly with branch A checked out.</p>
 <p>For example, let’s look at a simple commit made by the Stendhal development team to prepare one of the 2019 releases shown in figure <a href="committing.html#fig:sampleGitLabCommitView-fig">20.12</a></p>
 <div class="figure" style="text-align: center">
-<span id="fig:sampleGitLabCommitView-fig"></span>
+<span style="display:block;" id="fig:sampleGitLabCommitView-fig"></span>
 <img src="images/sampleGitLabCommitView.png" alt="A simple commit made by the Stendhal development team" width="100%"><p class="caption">
 Figure 20.12: A simple commit made by the Stendhal development team
 </p>
@@ -231,7 +241,7 @@ Before we show how to use rebase in the case of our merged feature branch, we’
 </h3>
 <p>Imagine we have made some commits directly to our <code>master</code> branch and need to synchronise these with a commit to <code>master</code> made by a team mate and pushed to the team remote. Our local commit graph looks like figure <a href="committing.html#fig:localCommitGraphMasterRebaseExampleBeforeRebaseNoHistory-fig">20.13</a>.</p>
 <div class="figure" style="text-align: center">
-<span id="fig:localCommitGraphMasterRebaseExampleBeforeRebaseNoHistory-fig"></span>
+<span style="display:block;" id="fig:localCommitGraphMasterRebaseExampleBeforeRebaseNoHistory-fig"></span>
 <img src="images/localCommitGraphMasterRebaseExampleBeforeRebaseNoHistory.png" alt="Our local commit graph" width="100%"><p class="caption">
 Figure 20.13: Our local commit graph
 </p>
@@ -239,7 +249,7 @@ Figure 20.13: Our local commit graph
 <p>We can create a linear code history suitable for fast-forward merging by rebasing our two commits on top of the commit from our team mate. To do this, we make sure we have our local <code>master</code> branch checked out. Then we right click on the commit we want to rebase onto (commit <code>012f3c3</code>) and select <code>Rebase HEAD on</code> from the menu that appears.</p>
 <p>This produces a commit graph shown in figure <a href="committing.html#fig:localCommitGraphMasterRebaseExampleAfterRebaseNoHistory-fig">20.14</a></p>
 <div class="figure" style="text-align: center">
-<span id="fig:localCommitGraphMasterRebaseExampleAfterRebaseNoHistory-fig"></span>
+<span style="display:block;" id="fig:localCommitGraphMasterRebaseExampleAfterRebaseNoHistory-fig"></span>
 <img src="images/localCommitGraphMasterRebaseExampleAfterRebaseNoHistory.png" alt="A commit graph, note the changes carefully" width="100%"><p class="caption">
 Figure 20.14: A commit graph, note the changes carefully
 </p>
@@ -254,7 +264,7 @@ Figure 20.14: A commit graph, note the changes carefully
 </h3>
 <p>Let’s now consider a scenario where we are working on a feature branch. We created the feature branch at the initial commit, and have made a couple of commits on it but have not yet finished working on it. At the start of our working day, we want to synchonise our repository with the team’s, so that we don’t diverge too far away from the work the rest of our team is doing. After we’ve fetched in the commits from the remote, our local graph looks like figure <a href="committing.html#fig:localCommitGraphFBRebaseExampleBeforeRebaseNoHistory-fig">20.15</a>.</p>
 <div class="figure" style="text-align: center">
-<span id="fig:localCommitGraphFBRebaseExampleBeforeRebaseNoHistory-fig"></span>
+<span style="display:block;" id="fig:localCommitGraphFBRebaseExampleBeforeRebaseNoHistory-fig"></span>
 <img src="images/localCommitGraphFBRebaseExampleBeforeRebaseNoHistory.png" alt="Our local graph after we've fetched in the commits from the remote" width="100%"><p class="caption">
 Figure 20.15: Our local graph after we’ve fetched in the commits from the remote
 </p>
@@ -263,7 +273,7 @@ Figure 20.15: Our local graph after we’ve fetched in the commits from the remo
 <p>We can use rebase to get our code base into this state.</p>
 <p>First, we synchronise the position of our local <code>master</code> branch with the <code>origin/master</code> branch. To do this, we check out <code>master</code> then right click on the commit that <code>origin/master</code> is pointing to (commit <code>012f3c3</code>) and select <code>Rebase HEAD on</code>. The result looks like figure <a href="committing.html#fig:localCommitGraphFBRebaseExampleAfterMasterRebaseNoHistory-fig">20.16</a>.</p>
 <div class="figure" style="text-align: center">
-<span id="fig:localCommitGraphFBRebaseExampleAfterMasterRebaseNoHistory-fig"></span>
+<span style="display:block;" id="fig:localCommitGraphFBRebaseExampleAfterMasterRebaseNoHistory-fig"></span>
 <img src="images/localCommitGraphFBRebaseExampleAfterMasterRebaseNoHistory.png" alt="updated commit graph" width="100%"><p class="caption">
 Figure 20.16: updated commit graph
 </p>
@@ -271,7 +281,7 @@ Figure 20.16: updated commit graph
 <p>Notice how we appeared to have performed a fast-forward merge of <code>master</code> into <code>origin/master</code>? There is no difference between the commit graphs that result from a fast-forward merge and from a rebase, in this case.</p>
 <p>Next, we need to replay our feature branch commits on top of <code>master</code>. Check out the feature branch, then right click on the commit where the two <code>master</code> branches are located and select <code>Rebase on HEAD</code>. The commit graph will now look like figure <a href="committing.html#fig:localCommitGraphFBRebaseExampleAfterFBRebaseNoHistory-fig">20.17</a>:</p>
 <div class="figure" style="text-align: center">
-<span id="fig:localCommitGraphFBRebaseExampleAfterFBRebaseNoHistory-fig"></span>
+<span style="display:block;" id="fig:localCommitGraphFBRebaseExampleAfterFBRebaseNoHistory-fig"></span>
 <img src="images/localCommitGraphFBRebaseExampleAfterFBRebaseNoHistory.png" alt="New commit graph" width="100%"><p class="caption">
 Figure 20.17: New commit graph
 </p>
@@ -290,7 +300,7 @@ So when using rebase it’s important to keep in mind which commits in your loca
 </h3>
 <p>We can now finally return to the scenario we started this document with. As a reminder, in our local repository, we had just merged a feature branch with our local <code>master</code> branch, and then discovered that new commits had appeared on the remote master when we synchronised before attempting to push:</p>
 <div class="figure" style="text-align: center">
-<span id="fig:localCommitGraphAfterPushRejectedAndFetchNoHistory-fig"></span>
+<span style="display:block;" id="fig:localCommitGraphAfterPushRejectedAndFetchNoHistory-fig"></span>
 <img src="images/localCommitGraphAfterPushRejectedAndFetchNoHistory.png" alt="A reminder of the commit graph" width="100%"><p class="caption">
 Figure 20.18: A reminder of the commit graph
 </p>
@@ -299,35 +309,35 @@ Figure 20.18: A reminder of the commit graph
 <p>In this case, we need to decide what we want the history of the merged feature branch to look like. If we had remembered to fetch and sync before starting work on the feature branch, we would have ended up with a fast-forward merge of the branch on <code>master</code>, with its parent at <code>origin/master</code>. So, let’s make the history look like that’s what happened.</p>
 <p>To achieve this history, we first reset the local <code>master</code> branch to point to <code>origin/master</code>—the commit it would have been on, if we had remembered to sync before creating the feature branch. Check out <code>master</code>, then right click on the <code>origin/master</code> commit and select <code>Reset</code> &gt; <code>Hard</code>.</p>
 <div class="figure" style="text-align: center">
-<span id="fig:localCommitGraphRebaseExampleAfterResetMasterNoHistory-fig"></span>
+<span style="display:block;" id="fig:localCommitGraphRebaseExampleAfterResetMasterNoHistory-fig"></span>
 <img src="images/localCommitGraphRebaseExampleAfterResetMasterNoHistory.png" alt="local commit graph after reset" width="100%"><p class="caption">
 Figure 20.19: local commit graph after reset
 </p>
 </div>
 <p>Then we rebase the feature branch on top of <code>master</code>. We first check out the feature branch, and then right click on the <code>master</code> branch commit, and select <code>Rebase HEAD on</code>. This results in the graph shown in figure <a href="committing.html#fig:localCommitGraphRebaseExampleAfterFBRebaseNoHistory-fig">20.20</a></p>
 <div class="figure" style="text-align: center">
-<span id="fig:localCommitGraphRebaseExampleAfterFBRebaseNoHistory-fig"></span>
+<span style="display:block;" id="fig:localCommitGraphRebaseExampleAfterFBRebaseNoHistory-fig"></span>
 <img src="images/localCommitGraphRebaseExampleAfterFBRebaseNoHistory.png" alt="Resulting commit graph after feature branch rebasing" width="100%"><p class="caption">
 Figure 20.20: Resulting commit graph after feature branch rebasing
 </p>
 </div>
 <p>Now we have reorganised the history to the point where we are ready to merge the feature branch into our development branch. This is a feature branch integration step, so we should strictly speaking use Git merge. But since it will be a fast forward merge, there is no difference in terms of the commit graph outcome between using merge and rebase in this case.</p>
 <div class="figure" style="text-align: center">
-<span id="fig:localCommitGraphRebaseExampleCompleteNoHistory-fig"></span>
+<span style="display:block;" id="fig:localCommitGraphRebaseExampleCompleteNoHistory-fig"></span>
 <img src="images/localCommitGraphRebaseExampleCompleteNoHistory.png" alt="Reorganised history" width="100%"><p class="caption">
 Figure 20.21: Reorganised history
 </p>
 </div>
 <p>The repository is now ready to push. Since <code>master</code> is ahead of <code>origin/master</code> on the same line of development, Git will have no problem in making the fast-forward merge needed to allow it to accept the push shown in figure <a href="committing.html#fig:localCommitGraphRebaseExampleAfterPushNoHistory-fig">20.22</a></p>
 <div class="figure" style="text-align: center">
-<span id="fig:localCommitGraphRebaseExampleAfterPushNoHistory-fig"></span>
+<span style="display:block;" id="fig:localCommitGraphRebaseExampleAfterPushNoHistory-fig"></span>
 <img src="images/localCommitGraphRebaseExampleAfterPushNoHistory.png" alt="local commit graph after push" width="100%"><p class="caption">
 Figure 20.22: local commit graph after push
 </p>
 </div>
 <p>And our code history on GitLab looks pleasantly clear and linear as in figure <a href="committing.html#fig:commitGraphInGitLabRebaseExampleAfterPushNoHistory-fig">20.23</a>.</p>
 <div class="figure" style="text-align: center">
-<span id="fig:commitGraphInGitLabRebaseExampleAfterPushNoHistory-fig"></span>
+<span style="display:block;" id="fig:commitGraphInGitLabRebaseExampleAfterPushNoHistory-fig"></span>
 <img src="images/commitGraphInGitLabRebaseExampleAfterPushNoHistory.png" alt="Our code history on GitLab is pleasantly clear and linear" width="100%"><p class="caption">
 Figure 20.23: Our code history on GitLab is pleasantly clear and linear
 </p>

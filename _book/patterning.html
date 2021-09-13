@@ -6,10 +6,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Chapter 9 Software design patterns | Software engineering</title>
 <meta name="author" content="Suzanne Embury and team">
-<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.2"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.9/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="9.1 Introduction In this workshop, we will look at design patterns, and their application in refactoring. A software design pattern describes a general, reusable solution to a commonly occurring...">
+<meta name="generator" content="bookdown 0.24 with bs4_book()">
+<meta property="og:title" content="Chapter 9 Software design patterns | Software engineering">
+<meta property="og:type" content="book">
+<meta property="og:url" content="https://software-eng.netlify.app/patterning.html">
+<meta property="og:description" content="9.1 Introduction In this workshop, we will look at design patterns, and their application in refactoring. A software design pattern describes a general, reusable solution to a commonly occurring...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chapter 9 Software design patterns | Software engineering">
+<meta name="twitter:site" content="@csmcr">
+<meta name="twitter:description" content="9.1 Introduction In this workshop, we will look at design patterns, and their application in refactoring. A software design pattern describes a general, reusable solution to a commonly occurring...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.10/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
-<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.2.5.1/tabs.js"></script><script src="libs/bs3compat-0.2.5.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
-<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/mark.min.js"></script><!-- CSS --><link rel="stylesheet" href="libs/custom/duncan.css">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.0/transition.js"></script><script src="libs/bs3compat-0.3.0/tabs.js"></script><script src="libs/bs3compat-0.3.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><link rel="stylesheet" href="libs/custom/duncan.css">
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -98,7 +108,7 @@
 <p>This first section of the workshop focuses on applying the two Behavioural patterns introduced: Strategy, and State.</p>
 <p>For this exercise, you’ll be working with a small-scale Java codebase that’s loosely inspired by some classes in the Stendhal codebase. For this first exercise you’ll be focussing on a set of classes that represent pets. The main classes and their members can be represented in a UML class diagram shown in figure <a href="patterning.html#fig:basicpets-fig">9.1</a></p>
 <div class="figure" style="text-align: center">
-<span id="fig:basicpets-fig"></span>
+<span style="display:block;" id="fig:basicpets-fig"></span>
 <img src="images/BasicPets.png" alt="Pets, Cats, Goats and Magic Dragons" width="100%"><p class="caption">
 Figure 9.1: Pets, Cats, Goats and Magic Dragons
 </p>
@@ -135,14 +145,14 @@ Figure 9.1: Pets, Cats, Goats and Magic Dragons
 <p>It’s clear that many of our Pets have quite different algorithms for growth. Some, like <code>Goats</code> and <code>Cats</code> grow steadily, increasing by a fixed amount over a constant time interval. Others, like <code>MagicDragons</code>, increase by a fixed amount but at irregular intervals – their growth stagnates for a while and then they undergo a growth spurt. Some <code>Pets</code>, like <code>CuddlyToys</code>, don’t grow at all.</p>
 <p>If we wanted to introduce more <code>Pet</code> types, we could quickly end up having to duplicate the code for steady, irregular or no growth across multiple <code>Pet</code> subclases. Alternatively, we could add layers of subclassing shown in figure <a href="patterning.html#fig:petsubclasses-fig">9.2</a></p>
 <div class="figure" style="text-align: center">
-<span id="fig:petsubclasses-fig"></span>
+<span style="display:block;" id="fig:petsubclasses-fig"></span>
 <img src="images/GrowthSubclasses.png" alt="Possible subclasses of Pet" width="100%"><p class="caption">
 Figure 9.2: Possible subclasses of Pet
 </p>
 </div>
 <p>However, this could quickly become difficult to manage, and doesn’t always avoid duplicate. For example, suppose you’re now asked to add a new <code>Bird</code> subtype. Birds can fly (like <code>Dragons</code>) but grow steadily (like <code>Cats</code> and <code>Goats</code>). The resulting class structure might look something like that shown in figure <a href="patterning.html#fig:petsubclasses2-fig">9.3</a></p>
 <div class="figure" style="text-align: center">
-<span id="fig:petsubclasses2-fig"></span>
+<span style="display:block;" id="fig:petsubclasses2-fig"></span>
 <img src="images/GrowthSubclasses2.png" alt="A badly designed hierarchy" width="100%"><p class="caption">
 Figure 9.3: A badly designed hierarchy
 </p>
@@ -177,7 +187,7 @@ Figure 9.3: A badly designed hierarchy
 <p><strong><code>[ACTION]</code></strong> Make the remaining code changes needed to have <code>Pet</code> and its subclasses use <code>GrowthStrategy</code>. This should now mean that there is no special-case <code>grow()</code> implementation in <code>MagicDragon</code> and <code>CuddlyToy</code>. Verify that <code>PetDriver.java</code> still behaves as expected.</p>
 <p>The UML diagram in figure <a href="patterning.html#fig:petstrategy-fig">9.4</a> should be a good representation of your codebase at the end of this migration task.</p>
 <div class="figure" style="text-align: center">
-<span id="fig:petstrategy-fig"></span>
+<span style="display:block;" id="fig:petstrategy-fig"></span>
 <img src="images/GrowthStrategy.png" alt="Your codebase should look something like this at the end of this migration task" width="100%"><p class="caption">
 Figure 9.4: Your codebase should look something like this at the end of this migration task
 </p>
@@ -212,7 +222,7 @@ Figure 9.4: Your codebase should look something like this at the end of this mig
 <p>This first section of the workshop focuses on applying the two Structural patterns introduced: Composite, and Adapter.</p>
 <p>For this exercise, you’ll be working with a set of classes that represent habitats – places that pets might want to live. The main classes and their members can be represented in a UML class diagram in figure <a href="patterning.html#fig:habitat-fig">9.5</a></p>
 <div class="figure" style="text-align: center">
-<span id="fig:habitat-fig"></span>
+<span style="display:block;" id="fig:habitat-fig"></span>
 <img src="images/Habitat.png" alt="Subclasses of Habitat" width="100%"><p class="caption">
 Figure 9.5: Subclasses of Habitat
 </p>
@@ -276,7 +286,7 @@ Likewise, the <code>Farm</code> is described as containing multiple fields and a
 <p><strong><code>[OPTIONAL EXTRA]</code></strong> Modify <code>removeOccupant()</code> to remove an Occupant from this child <code>Habitats</code> if they aren’t found in the parent.</p>
 <p>The UML diagram in figure <a href="patterning.html#fig:composite-fig">9.6</a> should be a good representation of your codebase at the end of this migration task.</p>
 <div class="figure" style="text-align: center">
-<span id="fig:composite-fig"></span>
+<span style="display:block;" id="fig:composite-fig"></span>
 <img src="images/HabitatComposite.png" alt="Your codebase should look something like this at the end of this migration task" width="100%"><p class="caption">
 Figure 9.6: Your codebase should look something like this at the end of this migration task
 </p>

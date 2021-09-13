@@ -6,10 +6,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Chapter 21 Continuous integration | Software engineering</title>
 <meta name="author" content="Suzanne Embury and team">
-<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.2"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.9/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Continuous integration (CI) is the practice of automating the integration of code changes from multiple contributors into a single software project.  21.1 Introduction to Continuous Integration In...">
+<meta name="generator" content="bookdown 0.24 with bs4_book()">
+<meta property="og:title" content="Chapter 21 Continuous integration | Software engineering">
+<meta property="og:type" content="book">
+<meta property="og:url" content="https://software-eng.netlify.app/integrating.html">
+<meta property="og:description" content="Continuous integration (CI) is the practice of automating the integration of code changes from multiple contributors into a single software project.  21.1 Introduction to Continuous Integration In...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chapter 21 Continuous integration | Software engineering">
+<meta name="twitter:site" content="@csmcr">
+<meta name="twitter:description" content="Continuous integration (CI) is the practice of automating the integration of code changes from multiple contributors into a single software project.  21.1 Introduction to Continuous Integration In...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.10/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
-<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.2.5.1/tabs.js"></script><script src="libs/bs3compat-0.2.5.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
-<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/mark.min.js"></script><!-- CSS --><link rel="stylesheet" href="libs/custom/duncan.css">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.0/transition.js"></script><script src="libs/bs3compat-0.3.0/tabs.js"></script><script src="libs/bs3compat-0.3.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><link rel="stylesheet" href="libs/custom/duncan.css">
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -103,7 +113,7 @@
 <p>You can login to the Departments Jenkins continuous integration (CI) server at <a href="https://ci.cs.manchester.ac.uk/jenkins/login">ci.cs.manchester.ac.uk/jenkins</a>. This will take you to a login screen. Enter your University username and password into the form and press <code>Sign in</code>.</p>
 <p>You should now be taken to the main Jenkins “dashboard,” showing the folder we have created to contain your build jobs for the COMP23311 team coursework this semester, which should look something like figure <a href="integrating.html#fig:dashboard-fig">21.1</a></p>
 <div class="figure" style="text-align: center">
-<span id="fig:dashboard-fig"></span>
+<span style="display:block;" id="fig:dashboard-fig"></span>
 <img src="images/dashboard.png" alt="The main Jenkins dashboard" width="100%"><p class="caption">
 Figure 21.1: The main Jenkins dashboard
 </p>
@@ -119,7 +129,7 @@ https://ci.cs.manchester.ac.uk/jenkins/static/7d74f0f2/images/build-status/weath
 https://ci.cs.manchester.ac.uk/jenkins/static/7d74f0f2/images/build-status/weather-sprite.svg
 -->
 <div class="figure" style="text-align: center">
-<span id="fig:weather-montage-fig"></span>
+<span style="display:block;" id="fig:weather-montage-fig"></span>
 <img src="images/weather-montage.png" alt="A range of icons indicate the health of a build. From left to right: A rain icon is used to indicate that between 20% to 39% of builds were successful. A cloud icon: 40% to 59%. An overcast icon: 60% and 79% of builds were successful. A sun icon indicates that greater than 80% of builds were successful." width="100%"><p class="caption">
 Figure 21.2: A range of icons indicate the health of a build. From left to right: A rain icon is used to indicate that between 20% to 39% of builds were successful. A cloud icon: 40% to 59%. An overcast icon: 60% and 79% of builds were successful. A sun icon indicates that greater than 80% of builds were successful.
 </p>
@@ -127,7 +137,7 @@ Figure 21.2: A range of icons indicate the health of a build. From left to right
 
 <p>You can get more information about the health of an item by hovering over the weather icon in Jenkins shown in figure <a href="integrating.html#fig:toolTipWeatherExercise1-fig">21.3</a>.</p>
 <div class="figure" style="text-align: center">
-<span id="fig:toolTipWeatherExercise1-fig"></span>
+<span style="display:block;" id="fig:toolTipWeatherExercise1-fig"></span>
 <img src="images/toolTipWeatherExercise1.png" alt="Hovering over an icon will display a tool tip that gives more information about what the icon means in terms of the build." width="100%"><p class="caption">
 Figure 21.3: Hovering over an icon will display a tool tip that gives more information about what the icon means in terms of the build.
 </p>
@@ -142,7 +152,7 @@ Figure 21.3: Hovering over an icon will display a tool tip that gives more infor
 <p>Next, we’re going to look at the builds that have been set up for your exercise 1 coursework.</p>
 <p>Click on the link for your team’s COMP23311 folder. This will show you a list of the builds and folders that have been created for your team for this course unit shown in figure <a href="integrating.html#fig:sem1-build-jobs-fig">21.4</a>.</p>
 <div class="figure" style="text-align: center">
-<span id="fig:sem1-build-jobs-fig"></span>
+<span style="display:block;" id="fig:sem1-build-jobs-fig"></span>
 <img src="images/sem1-build-jobs.png" alt="An example of how a teams coursework builds look in Jenkins" width="100%"><p class="caption">
 Figure 21.4: An example of how a teams coursework builds look in Jenkins
 </p>
@@ -153,7 +163,7 @@ Figure 21.4: An example of how a teams coursework builds look in Jenkins
 </div>
 <p>We’ll now take you through the builds we have set up for your team for team coursework exercise 1. Click on the <em>Exercise 1 Builds</em> folder link. This will take you to a Web page showing the following builds as in figure <a href="integrating.html#fig:contentsOfExercise1FolderOnJenkins-fig">21.5</a></p>
 <div class="figure" style="text-align: center">
-<span id="fig:contentsOfExercise1FolderOnJenkins-fig"></span>
+<span style="display:block;" id="fig:contentsOfExercise1FolderOnJenkins-fig"></span>
 <img src="images/contentsOfExercise1FolderOnJenkins.png" alt="An example of the contents of the Exercise 1 Builds folder displayed in Jenkins." width="100%"><p class="caption">
 Figure 21.5: An example of the contents of the Exercise 1 Builds folder displayed in Jenkins.
 </p>
@@ -168,7 +178,7 @@ Figure 21.5: An example of the contents of the Exercise 1 Builds folder displaye
 <p>In total, there are four build status icons that you might see in Jenkins, shown in figure <a href="integrating.html#fig:build-status-montage-fig">21.6</a>. The goal for most of our builds is to get a green build icon beside them. This indicates a successful build: there were no compilation errors, the Ant build file was executed successfully and the unit tests all passed. This kind of build is called a <em>stable</em> build.</p>
 <p>The final type of build icon is grey, and this simply indicates either that no builds have yet been attempted for a particular job or that the last build was aborted before it could complete. If no one in your team has pushed code to your repository since the Jenkins builds were created, then all your exercise 1 builds will be grey. This will change as soon as some code changes are pushed.</p>
 <div class="figure" style="text-align: center">
-<span id="fig:build-status-montage-fig"></span>
+<span style="display:block;" id="fig:build-status-montage-fig"></span>
 <img src="images/build-status-montage.png" alt="Four build status icons you might see. From left to right: 1. Grey no entry sign (Not built) build not yet attempted or build aborted. 2. Red exclamation mark (Failed build) the build process could not be completed. 3. Amber exclamation mark (Unstable) build succeeded but some tests failed. 4. Green tick (Stable build) build process succeeded and all tests passed." width="100%"><p class="caption">
 Figure 21.6: Four build status icons you might see. From left to right: 1. Grey no entry sign (<strong>Not built</strong>) build not yet attempted or build aborted. 2. Red exclamation mark (<strong>Failed build</strong>) the build process could not be completed. 3. Amber exclamation mark (<strong>Unstable</strong>) build succeeded but some tests failed. 4. Green tick (<strong>Stable build</strong>) build process succeeded and all tests passed.
 </p>
@@ -189,7 +199,7 @@ Figure 21.6: Four build status icons you might see. From left to right: 1. Grey 
 <p>Next, we’re going to drill down into the information Jenkins provides about individual build jobs. We’ll look at the development branch build first, and will come back to look at the contents of the <code>Feature Branch Builds</code> folder later.</p>
 <p>Click on the build job link for the <code>master</code> branch. You should be taken to a page that looks similar to figure <a href="integrating.html#fig:master-branch-fig">21.7</a>.</p>
 <div class="figure" style="text-align: center">
-<span id="fig:master-branch-fig"></span>
+<span style="display:block;" id="fig:master-branch-fig"></span>
 <img src="images/master-branch.png" alt="Jenkins view of the master branch" width="100%"><p class="caption">
 Figure 21.7: Jenkins view of the master branch
 </p>
@@ -261,7 +271,7 @@ Figure 21.7: Jenkins view of the master branch
 <p>In your browser, click on the breadcrumb for the Exercise 1 Builds. Then click on the link for the <code>Feature Branch Builds</code> folder.</p>
 <p>You should be taken to a web page containing something like figure <a href="integrating.html#fig:FeatureBranchBuilds-fig">21.8</a>.</p>
 <div class="figure" style="text-align: center">
-<span id="fig:FeatureBranchBuilds-fig"></span>
+<span style="display:block;" id="fig:FeatureBranchBuilds-fig"></span>
 <img src="images/FeatureBranchBuilds.png" alt="Jenkins view of the feature branch builds" width="100%"><p class="caption">
 Figure 21.8: Jenkins view of the feature branch builds
 </p>
@@ -270,7 +280,7 @@ Figure 21.8: Jenkins view of the feature branch builds
 <p>You can drill down into any of these builds to get more information about the build, and information about what caused any failed or unstable builds.</p>
 <p>The second set of builds are in the <em>Issue Revealing Builds</em> folder. If you navigate down into that folder, you will see a set of builds looking something as in figure <a href="integrating.html#fig:IssueRevealingBuilds-fig">21.9</a>.</p>
 <div class="figure" style="text-align: center">
-<span id="fig:IssueRevealingBuilds-fig"></span>
+<span style="display:block;" id="fig:IssueRevealingBuilds-fig"></span>
 <img src="images/IssueRevealingBuilds.png" alt="The Issue Revealing Builds folder in Jenkins" width="100%"><p class="caption">
 Figure 21.9: The Issue Revealing Builds folder in Jenkins
 </p>

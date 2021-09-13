@@ -6,10 +6,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Chapter 22 Code review | Software engineering</title>
 <meta name="author" content="Suzanne Embury and team">
-<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.2"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.9/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="In addition to the time spent debugging code (see chapter 3), software engineers spend lots of time reviewing other people’s code. Its a crucial part of building better quality software, see...">
+<meta name="generator" content="bookdown 0.24 with bs4_book()">
+<meta property="og:title" content="Chapter 22 Code review | Software engineering">
+<meta property="og:type" content="book">
+<meta property="og:url" content="https://software-eng.netlify.app/reviewing.html">
+<meta property="og:description" content="In addition to the time spent debugging code (see chapter 3), software engineers spend lots of time reviewing other people’s code. Its a crucial part of building better quality software, see...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chapter 22 Code review | Software engineering">
+<meta name="twitter:site" content="@csmcr">
+<meta name="twitter:description" content="In addition to the time spent debugging code (see chapter 3), software engineers spend lots of time reviewing other people’s code. Its a crucial part of building better quality software, see...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.10/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
-<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.2.5.1/tabs.js"></script><script src="libs/bs3compat-0.2.5.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
-<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/mark.min.js"></script><!-- CSS --><link rel="stylesheet" href="libs/custom/duncan.css">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.0/transition.js"></script><script src="libs/bs3compat-0.3.0/tabs.js"></script><script src="libs/bs3compat-0.3.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><link rel="stylesheet" href="libs/custom/duncan.css">
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -74,7 +84,7 @@
 </h1>
 <p>In addition to the time spent debugging code (see chapter <a href="debugging.html#debugging">3</a>), software engineers spend lots of time reviewing other people’s code. Its a crucial part of building better quality software, see figure <a href="reviewing.html#fig:xkcd-code-quality-fig">22.1</a>. Code review is a crucial skill to learn, both as a reviewer and a reviewee. This chapter introduces key concepts in code review that you can use on this course.</p>
 <div class="figure" style="text-align: center">
-<span id="fig:xkcd-code-quality-fig"></span>
+<span style="display:block;" id="fig:xkcd-code-quality-fig"></span>
 <img src="images/code_quality_3.png" alt="Does your code look like song lyrics written using only the stuff that comes after the question mark in a URL? Reviewing other people’s code can be hard work but probably not as hard as having other people review your code. However, code review is fundamental to building quality software. Code Quality (xkcd.com/1833) by Randall Munroe is licensed under CC BY-NC 2.5" width="100%"><p class="caption">
 Figure 22.1: Does your code look like song lyrics written using only the stuff that comes after the question mark in a URL? Reviewing other people’s code can be hard work but probably not as hard as having other people review <em>your</em> code. However, code review is fundamental to building quality software. <a href="https://xkcd.com/1833/">Code Quality (xkcd.com/1833)</a> by <a href="https://en.wikipedia.org/wiki/Randall_Munroe">Randall Munroe</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC BY-NC 2.5</a>
 </p>
@@ -146,25 +156,25 @@ Figure 22.1: Does your code look like song lyrics written using only the stuff t
 <p>We can see from this list that code review can address more than just defects and errors, covering also code quality, enforcement of conventions, performance issues and code readability aspects. Code reviewers should try not to comment on matters of preference. For example, if the team has not agreed to on a convention for white space in code, reviewers should not criticise team members for using spaces when their own preference is for using tabs, provided the look of the code is the same for both options. The line between preference and best practice is not always clearly defined, so some degree of trial and error is in order. If you find you are continually pointing out that someone is placing their curly brackets differently from the rest of the team, and that person continually ignores your advice, it is probably time to move on to find bigger fish to fry.</p>
 <p>To give an indication of the kinds of conversation that can productively take place using code review, figures <a href="reviewing.html#fig:nodejs1-fig">22.2</a>, <a href="reviewing.html#fig:nodejs2-fig">22.3</a>, <a href="reviewing.html#fig:nodejs3-fig">22.4</a> and <a href="reviewing.html#fig:nodejs4-fig">22.5</a> show examples of commit comments from the NodeJS project from <a href="https://github.com/nodejs/node">github.com/nodejs/node</a>.</p>
 <div class="figure" style="text-align: center">
-<span id="fig:nodejs1-fig"></span>
+<span style="display:block;" id="fig:nodejs1-fig"></span>
 <img src="images/nodejs1.png" alt="Sample conversation from nodejs" width="100%"><p class="caption">
 Figure 22.2: Sample conversation from nodejs
 </p>
 </div>
 <div class="figure" style="text-align: center">
-<span id="fig:nodejs2-fig"></span>
+<span style="display:block;" id="fig:nodejs2-fig"></span>
 <img src="images/nodejs2.png" alt="Sample conversation from nodejs" width="100%"><p class="caption">
 Figure 22.3: Sample conversation from nodejs
 </p>
 </div>
 <div class="figure" style="text-align: center">
-<span id="fig:nodejs3-fig"></span>
+<span style="display:block;" id="fig:nodejs3-fig"></span>
 <img src="images/nodejs3.png" alt="Sample conversation from nodejs" width="100%"><p class="caption">
 Figure 22.4: Sample conversation from nodejs
 </p>
 </div>
 <div class="figure" style="text-align: center">
-<span id="fig:nodejs4-fig"></span>
+<span style="display:block;" id="fig:nodejs4-fig"></span>
 <img src="images/nodejs4.png" alt="Sample conversation from nodejs" width="100%"><p class="caption">
 Figure 22.5: Sample conversation from nodejs
 </p>
@@ -177,14 +187,14 @@ Figure 22.5: Sample conversation from nodejs
 <p>GitLab, like GitHub, provides facilities for commenting on merge/pull requests, and on individual commits.</p>
 <p>When examining a merge request, GitLab allows comments to be placed on the code changes included in the proposed merge. The merge request is assigned to the person who will review the code. After examining the changes, the reviewer can decide to accept the merge request, or to request further changes. Once the changes are made, the developer can request a second round of review. In this way, the code reviewer acts as a gate keeper, preventing poor quality code from reaching the development branch.</p>
 <div class="figure" style="text-align: center">
-<span id="fig:merge-request-assignee-fig"></span>
+<span style="display:block;" id="fig:merge-request-assignee-fig"></span>
 <img src="images/merge_request_assignee.png" alt="Sample conversation from nodejs" width="100%"><p class="caption">
 Figure 22.6: Sample conversation from nodejs
 </p>
 </div>
 <p>Or, comments can be added directly to individual commits. Comments on the commit as a whole can be added through the dialogue box at the end of the commit. Or, comments can be added at specific lines. To do this, hover your mouse over the line in the commit where you wish to add the comment. A small speech bubble will appear to the left hand side of the line. Click on this to bring up a comment box, shown in figure <a href="reviewing.html#fig:comment-commit-fig">22.7</a> similar to those shown in the NodeJS examples given in the previous section.</p>
 <div class="figure" style="text-align: center">
-<span id="fig:comment-commit-fig"></span>
+<span style="display:block;" id="fig:comment-commit-fig"></span>
 <img src="images/comment_commit.png" alt="Sample conversation from nodejs" width="100%"><p class="caption">
 Figure 22.7: Sample conversation from nodejs
 </p>
