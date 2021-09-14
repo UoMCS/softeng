@@ -1,8 +1,6 @@
 # (PART) Weekly Workshops {-}
 
-# Marauroa {#building}
-
-Marauroa is an open source *framework* and engine to develop games. It provides a simple way of creating games on a portable and robust server architecture. Marauroa manages the client server communication and provides an object orientated view of the world for game developers. It further handles database access in a transparent way to store player accounts, character progress and the state of the world.
+# Building and Testing Systems {#building}
 
 ## Introduction {#Introduction}
 
@@ -16,6 +14,8 @@ In this workshop, we will be building and testing Marauroa. We will look at some
 * Run a piece of software consisting of multiple distributed subsystems.
 
 In this, and some later workshops, we'll be working with the code of the *Marauroa games engine* for constructing on-line multi-player games.
+
+Marauroa is an open source *framework* and engine to develop games. It provides a simple way of creating games on a portable and robust server architecture. Marauroa manages the client server communication and provides an object orientated view of the world for game developers. It further handles database access in a transparent way to store player accounts, character progress and the state of the world.
 
 You should already have begun to practice some of these skills, through the GitLab Access Check activity.
 In this workshop, we will build on that activity to carry out these basic skills on a large open source software system.  During the workshop, you will:
