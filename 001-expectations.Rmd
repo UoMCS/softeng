@@ -5,22 +5,32 @@ While you are studying on this software engineering course, you are part of a te
 * Your immediate team members
 * The community of all second year students
 
-Your learning community is supported by a group of graduate teaching assistants (GTAs), mentors and academic staff. So for this course, here's what you can expect of us and what we expect of you:
+Your learning community is supported by a group of graduate teaching assistants (GTAs), mentors and academic staff.
 
-## Our expectations of you {#rtfm}
-We need you to read ALL of the messages we send you via gitlab, jenkins, microsoft teams, piazza forums, email and in this guidebook. Before you ask for help, make sure you Read The Friendly Manual(s). RTFM.
+## Expectation engineering {#agile}
+It's important that you know we expect of you and what you'll get in return. That's what this page describes.
 
-For online sessions (e.g. marking and mentoring) you need to turn up on time by being at a computer with access to:
+```{r xkcd-compiling-fig, echo = FALSE, fig.align = "center", out.width = "75%", fig.cap = "(ref:captionxkcdcompiling)"}
+knitr::include_graphics("images/compiling.png")
+```
+
+(ref:captionxkcdcompiling) There are legitimate reasons for slacking off, such as compiling (and building) your code. Falling out with your team members, not returning their messages or just being busy doing other things are not legitimate reasons for letting your team down. [Compiling (xkcd.com/303)](https://xkcd.com/303/) by [Randall Munroe](https://en.wikipedia.org/wiki/Randall_Munroe) is licensed under [CC BY-NC 2.5](https://creativecommons.org/licenses/by-nc/2.5/)
+
+
+### Our expectations of you {#rtfm}
+We need you to read ALL of the messages we send you via GitLab, Jenkins, Microsoft Teams, the Piazza forum, emails and in this guidebook. Before you ask for help, make sure you have Read The Friendly Manual(s). RTFM.
+
+For the live (physical) sessions you'll need to be in the appropriate lab in the Kilburn building. For online sessions (e.g. marking and mentoring) it is especially important that you turn up on time by being at a computer with access to:
 
 * A working pair of headphones
 * A working microphone that you can mute if you're somewhere noisy
 * A webcam (ideally) but see section \@ref(cameras)
 
-Please note, this may mean the best place to work is not the Kilburn building. Go and find a quiet spot or use your phone (there are good mobile clients for Teams) or work from home.
+Please note, this may mean the best place to work is *not* necessarily the Kilburn building. Go and find a quiet spot, use your laptop (if you have one) or use your phone (there are [good mobile clients for Teams](https://www.microsoft.com/en-gb/microsoft-teams/download-app)) or work from home. It will really help if *at least* one of your team is at a desktop computer.
 
 We have deliberately scheduled online activities so they aren't immediately after physical activities (like a lecture) so that you have time to get setup BEFORE the meeting starts.
 
-## What your team expects of you {#urteam}
+### What your team expects of you {#urteam}
 
 For this course to run smoothly your team will expect that you:
 
@@ -33,27 +43,22 @@ For this course to run smoothly your team will expect that you:
     + Communicating with your team if you have difficulty contributing
     + Reporting issues where necessary, either to a GTA or academic member of staff
 
-```{r xkcd-compiling-fig, echo = FALSE, fig.align = "center", out.width = "75%", fig.cap = "(ref:captionxkcdcompiling)"}
-knitr::include_graphics("images/compiling.png")
-```
+What do you get in return for our expectations and those of your team?
 
-(ref:captionxkcdcompiling) There are legitimate reasons for slacking off, such as compiling (and building) your code. Falling out with your team members, not returning their messages or just being busy doing other things are not legitimate reasons for letting your team down. [Compiling (xkcd.com/303)](https://xkcd.com/303/) by [Randall Munroe](https://en.wikipedia.org/wiki/Randall_Munroe) is licensed under [CC BY-NC 2.5](https://creativecommons.org/licenses/by-nc/2.5/)
-
-
-## What GTAs expect of you {#gtas}
+### What to expect of GTAs {#gtas}
 This course is supported by a team of Graduate Teaching Assistants (GTAs), they are here to help you. They have lots of other people to help too, so please treat them with respect. If you're waiting for support from a GTA, make sure you've Read The Friendly Manual, see section \@ref(rtfm).
 
 Our GTAs have Read Their Friendly Manual to (the GTA wiki) so they will know how to help you, or can quickly find out how to. They won't give you the answer, but will be able to help you find your own way.
 
 The GTAs have scheduled marking sessions that we expect them to stick to. The second year timetable is incredibly crowded, and the team study sessions are the **ONLY TIMES IN THE WEEK** when we can guarantee that everyone in your team is available.
 
-## What your mentors expect from you {#gomentors}
-You have been assigned a mentor who will meet with you online for two one hour meetings, see chapter \@ref(mentoring). These meetings are a bit like code review meetings, they have access to your code repository and can see what your team is up to.
+### What to expect from mentors {#gomentors}
+You have been assigned a mentor who will meet with you online for two one hour meetings, see chapter \@ref(mentoring). These meetings are a bit like code review meetings, they have access to your private code repository and can see what your team is up to.
 
-Our mentors are all professional software engineers, so please treat them with the respect they deserve. They have volunteered to help by sharing their engineering wisdom with you and taken time out of their busy schedules to do so.
+Our mentors are all professional software engineers, who can give you advice on how to manage the process of making better software. so please treat them with the respect they deserve. They have volunteered to help by sharing their engineering wisdom with you and taken time out of their busy schedules to do so.
 
-## What you can expect from us {#academics}
-So what can you expect of us? The academic staff on this course include Suzanne Embury, Anas Elhag, Duncan Hull, Thomas Carroll and Sandra Sampaio. We're here to help but please remember, we're often very busy and have other teaching commitments too besides this course. We're here to ensure that the course runs smoothly and we aim to give feedback on coursework to you within the two week window
+### What you can expect from academic staff {#academics}
+The academic staff on this course include Suzanne Embury, Anas Elhag, Duncan Hull, Thomas Carroll and Sandra Sampaio. We're here to help but please remember, we're often very busy and have other teaching commitments too besides this course. We're here to ensure that the course runs smoothly and we aim to give feedback on coursework to you within the two week window.
 
 ##  Your camera {#cameras}
 We would normally expect participants in small meetings (not large ones like lectures) to turn their cameras on but we understand that there are good reasons why people may not be willing/able to and won’t explicitly ask you to.
