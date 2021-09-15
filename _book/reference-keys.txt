@@ -1,5 +1,6 @@
 fig:course-overview-fig
 fig:cc-by-nc-nd-fig
+fig:xkcd-compiling-fig
 tab:schedtable
 fig:firstview-fig
 fig:eclipseImportProjectFromGit-fig
@@ -99,6 +100,16 @@ contributing
 teambury
 license
 privacy
+rtfm
+urteam
+gtas
+gomentors
+academics
+cameras
+on
+off
+being
+respecting
 tooling
 building
 Introduction

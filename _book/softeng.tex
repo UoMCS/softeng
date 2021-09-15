@@ -266,7 +266,7 @@ The following is an outline of the topics covered in COMP23111.
 \hypertarget{usingit}{%
 \section{Using the lab manual}\label{usingit}}
 
-We expect that the web-based version of this manual will be the one you'll use most at \href{https://software-eng.netlify.app/}{software-eng.netlify.app}. You can search, browse and link to anything in the manual. It was last updated on 13 September, 2021.
+We expect that the web-based version of this manual will be the one you'll use most at \href{https://software-eng.netlify.app/}{software-eng.netlify.app}. You can search, browse and link to anything in the manual. It was last updated on 15 September, 2021.
 
 However, if you'd prefer, the manual is also available as a single pdf file \href{https://software-eng.netlify.app/softeng.pdf}{softeng.pdf} and an epub as well \href{https://software-eng.netlify.app/softeng.epub}{softeng.epub}. Having said that, the content is optimised for viewing in a web browser, so while the pdf and epub are OK, the web version is the best.
 
@@ -355,48 +355,163 @@ So now that we've dispensed with the formalities, you can start using this labor
 
 
 
-\hypertarget{timetabling}{%
-\chapter*{Weekly timetable}\label{timetabling}}
-\addcontentsline{toc}{chapter}{Weekly timetable}
+\hypertarget{expectations}{%
+\chapter*{Expectations}\label{expectations}}
+\addcontentsline{toc}{chapter}{Expectations}
 
-The weekly schedule for autumn 2021 is shown in table \ref{tab:schedtable}, see also:
+While you are studying on this software engineering course, you are part of a team and a wider community:
 
 \begin{itemize}
 \tightlist
 \item
-  \href{https://studentnet.cs.manchester.ac.uk/ugt/timetable}{studentnet.cs.manchester.ac.uk/ugt/timetable} full timetable
+  Your immediate team members
 \item
-  \href{https://www.manchester.ac.uk/discover/key-dates/}{manchester.ac.uk/discover/key-dates} key dates
+  The community of all second year students
 \end{itemize}
 
-\textbackslash begin\{table\}
+Your learning community is supported by a group of graduate teaching assistants (GTAs), mentors and academic staff. So for this course, here's what you can expect of us and what we expect of you:
 
-\textbackslash caption\{\label{tab:schedtable}The weekly schedule for this twelve week course, please note we are using the week numbering from the \href{https://my.manchester.ac.uk/Timetable/2021_22/4614/}{my.manchester.ac.uk timetables} where week 1 is welcome week (rather than week 0)\}
+\hypertarget{rtfm}{%
+\section{Our expectations of you}\label{rtfm}}
+
+We need you to read ALL of the messages we send you via gitlab, jenkins, microsoft teams, piazza forums, email and in this guidebook. Before you ask for help, make sure you Read The Friendly Manual(s). RTFM.
+
+For online sessions (e.g.~marking and mentoring) you need to turn up on time by being at a computer with access to:
+
+\begin{itemize}
+\tightlist
+\item
+  A working microphone
+\item
+  A working headset
+\item
+  A webcam ideally but see section \ref{cameras}
+\end{itemize}
+
+Please note, this may mean the best place to work is not the Kilburn building. Go and find a quiet spot or use your phone (there are good mobile clients for Teams) or work from home.
+
+We have deliberately scheduled online activities so they aren't immediately after physical activities (like a lecture) so that you have time to get setup BEFORE the meeting starts.
+
+\hypertarget{urteam}{%
+\section{What your team expects of you}\label{urteam}}
+
+For this course to run smoothly your team will expect that you:
+
+\begin{itemize}
+\tightlist
+\item
+  Turn up to all the bi-weekly team study sessions, \textbf{especially the marking sessions}
+\item
+  Participate in the workshops
+\item
+  Contribute to your team by:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Respecting your team members, no bullying. Assume good faith by default
+  \item
+    Getting along with your team members. You may not like all of them (that's life) but your team members are crucial to your teams success. While you can get away with being a ``lone wolf'' coder on other course units, you are now expected to behave like a sociable engineer as part of a professional team
+  \item
+    Encouraging people who might be slacking off to make contributions, see figure \ref{fig:xkcd-compiling-fig}
+  \item
+    Communicating with your team if you have difficulty contributing
+  \item
+    Reporting issues where necessary, either to a GTA or academic member of staff
+  \end{itemize}
+\end{itemize}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.75\linewidth]{images/compiling} 
+
+}
+
+\caption{There are legitimate reasons for slacking off, such as compiling (and building) your code. Falling out with your team members, not returning their messages or just being busy doing other things are not legitimate reasons for letting your team down. \href{https://xkcd.com/303/}{Compiling (xkcd.com/303)} by \href{https://en.wikipedia.org/wiki/Randall_Munroe}{Randall Munroe} is licensed under \href{https://creativecommons.org/licenses/by-nc/2.5/}{CC BY-NC 2.5}}\label{fig:xkcd-compiling-fig}
+\end{figure}
+
+
+
+\hypertarget{gtas}{%
+\section{What GTAs expect of you}\label{gtas}}
+
+This course is supported by a team of Graduate Teaching Assistants (GTAs), they are here to help you. They have lots of other people to help too, so please treat them with respect. If you're waiting for support from a GTA, make sure you've Read The Friendly Manual, see section \ref{rtfm}.
+
+Our GTAs have Read Their Friendly Manual to (the GTA wiki) so they will know how to help you, or can quickly find out how to. They won't give you the answer, but will be able to help you find your own way.
+
+The GTAs have scheduled marking sessions that we expect them to stick to. The second year timetable is incredibly crowded, and the team study sessions are the \textbf{ONLY TIMES IN THE WEEK} when we can guarantee that everyone in your team is available.
+
+\hypertarget{gomentors}{%
+\section{What your mentors expect from you}\label{gomentors}}
+
+You have been assigned a mentor who will meet with you online for two one hour meetings, see chapter \ref{mentoring}. These meetings are a bit like code review meetings, they have access to your code repository and can see what your team is up to.
+
+Our mentors are all professional software engineers, so please treat them with the respect they deserve. They have volunteered to help by sharing their engineering wisdom with you and taken time out of their busy schedules to do so.
+
+\hypertarget{academics}{%
+\section{What you can expect from us}\label{academics}}
+
+So what can you expect of us? The academic staff on this course include Suzanne Embury, Anas Elhag, Duncan Hull, Thomas Carroll, Sandra Sampaio and Mercedes. We're here to help. Please remember, we're often very busy and have other teaching commitments too besides this course. We're here to ensure that the course runs smoothly and we aim to feedback on coursework to you within the two week window
+
+\hypertarget{cameras}{%
+\section{Your camera}\label{cameras}}
+
+We would normally expect participants in small meetings (not large ones like lectures) to turn their cameras on but we understand that there are good reasons why people may not be willing/able to and won't explicitly ask you to.
+
+\hypertarget{on}{%
+\subsection{Camera on?}\label{on}}
+
+There has always been a question around whether to turn cameras on during online meetings but it is even more obvious with online meetings becoming the norm rather than the exception. There is a direct benefit in using cameras in small, personal meetings where many of us make use of visual cues to aid the flow of conversation -- at the very least it's easier to identify who is talking. Additionally, it can help people get along -- people might feel more `listened to' if they can see somebody listening and your team will find it easier to remember names etc if they have a face to match the names to.
+
+\hypertarget{off}{%
+\subsection{Camera off?}\label{off}}
+
+There are lots of legitimate reasons why you might turn your camera off. Most obviously, if you don't have access to a camera. But you may also be in an environment which you prefer others not to see, you may have anxiety around the issue, or your connection might be too slow. There are many other perfectly reasonable reasons for you not to put your camera on and you should not feel pressured to do this. If you simply say ``Sorry, I can't turn my camera on today'' then nobody will ask any further and they should never explicitly ask you to turn it on.
+
+\hypertarget{being}{%
+\subsection{Being appropriate}\label{being}}
+
+You should already be treating online meetings like physical ones e.g.~turning up on time, being prepared, listening, engaging etc. Similarly, if people can see you then you should ensure you are wearing appropriate clothes (wearing clothes is the absolute minimum here!) and in an appropriate place (the bathroom is probably not appropriate) as you would for a physical meeting.
+
+\hypertarget{respecting}{%
+\subsection{Respecting others}\label{respecting}}
+
+If other people have decided to turn their cameras on then we ask that you show them respect by not recording anything without their explicit permission. We won't touch on the legality of this as we believe that basic respect for each other should be enough to prevent any issues. You will take part in larger meetings where recording may be standard and in such cases this should be made explicit.
+
+(Thanks to Giles Reger and Sarah Clinch for the text above)
+
+\hypertarget{timetabling}{%
+\chapter*{Weekly timetable}\label{timetabling}}
+\addcontentsline{toc}{chapter}{Weekly timetable}
+
+The weekly schedule for autumn 2021 is shown in table \ref{tab:schedtable}, based on \href{https://timetables.manchester.ac.uk/}{timetables.manchester.ac.uk}, see also \href{https://www.manchester.ac.uk/discover/key-dates/}{manchester.ac.uk/discover/key-dates} key dates
+
+\begin{table}
+
+\caption{\label{tab:schedtable}The weekly schedule for this twelve week course, please note we are using the week numbering from the [timetables.manchester.ac.uk](https://timetables.manchester.ac.uk/) where week zero is welcome week, and week one is the first teaching week}
 \centering
-
 \begin{tabular}[t]{lll}
 \toprule
 Week no. starting & Workshop & Activities\\
 \midrule
-**1**: 20th Sept & Welcome week & details tbc\\
-**2**: 27th Sept & Automated build and test & details tbc\\
-**3**: 4th Oct & Reading large codebases & details tbc\\
-**4**: 11th Oct & Cost estimation, see chapter \ref{estimating} & details tbc\\
-**5**: 18th Oct & Test first development & details tbc\\
+**0**: 20th Sept & Welcome week & make a head start coursework\\
+**1**: 27th Sept & Automated build and test & details tbc\\
+**2**: 4th Oct & Reading large codebases & details tbc\\
+**3**: 11th Oct & Cost estimation, see chapter \ref{estimating} & details tbc\\
+**4**: 18th Oct & Test first development & details tbc\\
 \addlinespace
-**6**: 25th Oct & Git workflows & details tbc\\
-**7**: 1st Nov & Software refactoring & details tbc\\
-**8**: 8th Nov & Design for testability & details tbc\\
-**9**: 15th Nov & Design patterns & details tbc\\
-**10**: 22nd Nov & Risk management and practice exam & details tbc\\
+**5**: 25th Oct & Git workflows & details tbc\\
+**6**: 1st Nov & Reading week & details tbc\\
+**7**: 8th Nov & Software refactoring & details tbc\\
+**8**: 15th Nov & Design for testability & details tbc\\
+**9**: 22nd Nov & Design patterns & details tbc\\
 \addlinespace
-**11**: 29th Nov & Open source challenge & details tbc\\
-**12**: 6th Dec & confirm when reading week is & details tbc\\
-**13**: 13th Dec & tbc & details tbc\\
+**10**: 29th Nov & Open source challenge & details tbc\\
+**11**: 6th Dec & Risk management and practice exam & details tbc\\
+**12**: 13th Dec & tbc & details tbc\\
 \bottomrule
 \end{tabular}
-
-\textbackslash end\{table\}
+\end{table}
 
 \hypertarget{tooling}{%
 \section{Tools}\label{tooling}}

@@ -1,0 +1,73 @@
+# Expectations {.unnumbered #expectations}
+
+While you are studying on this software engineering course, you are part of a team and a wider community:
+
+* Your immediate team members
+* The community of all second year students
+
+Your learning community is supported by a group of graduate teaching assistants (GTAs), mentors and academic staff. So for this course, here's what you can expect of us and what we expect of you:
+
+## Our expectations of you {#rtfm}
+We need you to read ALL of the messages we send you via gitlab, jenkins, microsoft teams, piazza forums, email and in this guidebook. Before you ask for help, make sure you Read The Friendly Manual(s). RTFM.
+
+For online sessions (e.g. marking and mentoring) you need to turn up on time by being at a computer with access to:
+
+* A working pair of headphones
+* A working microphone that you can mute if you're somewhere noisy
+* A webcam (ideally) but see section \@ref(cameras)
+
+Please note, this may mean the best place to work is not the Kilburn building. Go and find a quiet spot or use your phone (there are good mobile clients for Teams) or work from home.
+
+We have deliberately scheduled online activities so they aren't immediately after physical activities (like a lecture) so that you have time to get setup BEFORE the meeting starts.
+
+## What your team expects of you {#urteam}
+
+For this course to run smoothly your team will expect that you:
+
+* Turn up to all the bi-weekly team study sessions, **especially the marking sessions**
+* Participate in the workshops
+* Contribute to your team by:
+    + Respecting your team members, no bullying. Assume good faith by default
+    + Getting along with your team members. You may not like all of them (that's life) but your team members are crucial to your teams success. While you can get away with being a “lone wolf” coder on other course units, you are now expected to behave like a sociable engineer as part of a professional team
+    + Encouraging people who might be slacking off to make contributions, see figure \@ref(fig:xkcd-compiling-fig)
+    + Communicating with your team if you have difficulty contributing
+    + Reporting issues where necessary, either to a GTA or academic member of staff
+
+```{r xkcd-compiling-fig, echo = FALSE, fig.align = "center", out.width = "75%", fig.cap = "(ref:captionxkcdcompiling)"}
+knitr::include_graphics("images/compiling.png")
+```
+
+(ref:captionxkcdcompiling) There are legitimate reasons for slacking off, such as compiling (and building) your code. Falling out with your team members, not returning their messages or just being busy doing other things are not legitimate reasons for letting your team down. [Compiling (xkcd.com/303)](https://xkcd.com/303/) by [Randall Munroe](https://en.wikipedia.org/wiki/Randall_Munroe) is licensed under [CC BY-NC 2.5](https://creativecommons.org/licenses/by-nc/2.5/)
+
+
+## What GTAs expect of you {#gtas}
+This course is supported by a team of Graduate Teaching Assistants (GTAs), they are here to help you. They have lots of other people to help too, so please treat them with respect. If you're waiting for support from a GTA, make sure you've Read The Friendly Manual, see section \@ref(rtfm).
+
+Our GTAs have Read Their Friendly Manual to (the GTA wiki) so they will know how to help you, or can quickly find out how to. They won't give you the answer, but will be able to help you find your own way.
+
+The GTAs have scheduled marking sessions that we expect them to stick to. The second year timetable is incredibly crowded, and the team study sessions are the **ONLY TIMES IN THE WEEK** when we can guarantee that everyone in your team is available.
+
+## What your mentors expect from you {#gomentors}
+You have been assigned a mentor who will meet with you online for two one hour meetings, see chapter \@ref(mentoring). These meetings are a bit like code review meetings, they have access to your code repository and can see what your team is up to.
+
+Our mentors are all professional software engineers, so please treat them with the respect they deserve. They have volunteered to help by sharing their engineering wisdom with you and taken time out of their busy schedules to do so.
+
+## What you can expect from us {#academics}
+So what can you expect of us? The academic staff on this course include Suzanne Embury, Anas Elhag, Duncan Hull, Thomas Carroll and Sandra Sampaio. We're here to help but please remember, we're often very busy and have other teaching commitments too besides this course. We're here to ensure that the course runs smoothly and we aim to give feedback on coursework to you within the two week window
+
+##  Your camera {#cameras}
+We would normally expect participants in small meetings (not large ones like lectures) to turn their cameras on but we understand that there are good reasons why people may not be willing/able to and won’t explicitly ask you to.
+
+### Camera on? {#on}
+There has always been a question around whether to turn cameras on during online meetings but it is even more obvious with online meetings becoming the norm rather than the exception.  There is a direct benefit in using cameras in small, personal meetings where many of us make use of visual cues to aid the flow of conversation – at the very least it’s easier to identify who is talking. Additionally, it can help people get along – people might feel more ‘listened to’ if they can see somebody listening and your team will find it easier to remember names etc if they have a face to match the names to.
+
+### Camera off? #{#off}
+There are lots of legitimate reasons why you might turn your camera off. Most obviously, if you don’t have access to a camera. But you may also be in an environment which you prefer others not to see, you may have anxiety around the issue, or your connection might be too slow. There are many other perfectly reasonable reasons for you not to put your camera on and you should not feel pressured to do this. If you simply say “Sorry, I can’t turn my camera on today” then nobody will ask any further and they should never explicitly ask you to turn it on.
+
+### Being appropriate {#being}
+You should already be treating online meetings like physical ones e.g. turning up on time, being prepared, listening, engaging etc. Similarly, if people can see you then you should ensure you are wearing appropriate clothes (wearing clothes is the absolute minimum here!) and in an appropriate place (the bathroom is probably not appropriate) as you would for a physical meeting.
+
+### Respecting others {#respecting}
+If other people have decided to turn their cameras on then we ask that you show them respect by not recording anything without their explicit permission. We won’t touch on the legality of this as we believe that basic respect for each other should be enough to prevent any issues. You will take part in larger meetings where recording may be standard and in such cases this should be made explicit.
+
+(Thanks to Giles Reger and Sarah Clinch for the text above)
