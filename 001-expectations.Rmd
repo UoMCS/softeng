@@ -49,10 +49,16 @@ For this course to run smoothly your team will expect that you:
 * Participate in the workshops
 * Contribute to your team by:
     + Respecting your team members, no bullying. Assume good faith by default
-    + Getting along with your team members. You may not like all of them (that's life) but your team members are crucial to your teams success. While you can get away with being a “lone wolf” coder on other course units, you are now expected to behave like a sociable engineer as part of a professional team
+    + Getting along with your team members. You may not like all of them (that's life) but your team members are crucial to your teams success. While you can get away with being a “lone wolf” coder on other course units, (see figure \@ref(fig:wolf-fig), you are now expected to behave like a sociable engineer as part of a professional team
     + Encouraging people who might be slacking off to make contributions, see figure \@ref(fig:xkcd-compiling-fig)
     + Communicating with your team if you have difficulty contributing
     + Reporting issues where necessary, either to a GTA or academic member of staff
+
+```{r wolf-fig, echo = FALSE, fig.align = "center", out.width = "99%", fig.cap = "(ref:captionlonewolf)"}
+knitr::include_graphics("images/lonewolf.jpeg")
+```
+
+(ref:captionlonewolf) Normally a social pack animal, wolves sometimes act alone. While being a [lone wolf](https://en.wikipedia.org/wiki/Lone_wolf_(trait)) on other course units may be a reasonable strategy for studying, it won't work well for this one. Don't be a lone wolf because sociable teams usually make better software than loners. CC-BY-SA Image of Winter wolf by ForestWander.com on Wikimedia Commons [w.wiki/45Vj](https://w.wiki/45Vj)
 
 What do you get in return for our expectations and those of your team?
 

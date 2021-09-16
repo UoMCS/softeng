@@ -7,7 +7,7 @@ Much of your time as a software engineer will be spent debugging code, either ot
 knitr::include_graphics("images/debugging.png")
 ```
 
-(ref:captionxkcddebugging) Debugging unfamiliar codebases is a routine part of software engineering. [Compiling (xkcd.com/1722)](https://xkcd.com/1722/) by [Randall Munroe](https://en.wikipedia.org/wiki/Randall_Munroe) is licensed under [CC BY-NC 2.5](https://creativecommons.org/licenses/by-nc/2.5/)
+(ref:captionxkcddebugging) Debugging unfamiliar codebases is a routine part of software engineering. [Debugging (xkcd.com/1722)](https://xkcd.com/1722/) by [Randall Munroe](https://en.wikipedia.org/wiki/Randall_Munroe) is licensed under [CC BY-NC 2.5](https://creativecommons.org/licenses/by-nc/2.5/)
 
 ## Preparing for the workshop
 Welcome to the (ref:coursecode) workshop on *Debugging an Unfamiliar Code Base*.

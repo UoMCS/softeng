@@ -9,7 +9,6 @@ In this activity, we'll take you through the process of synchronising your local
 
 In the activity:
 
-
 * One team member will make a commit to their local repository.
 * That team member will push the commit to the team repository.
 * Everyone else will fetch the commit down into their own local repository.
