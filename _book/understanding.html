@@ -83,7 +83,14 @@
 <h1>
 <span class="header-section-number">2</span> Large systems<a class="anchor" aria-label="anchor" href="#understanding"><i class="fas fa-link"></i></a>
 </h1>
-<p>During your summer internship, year-long placement or after you leave University, chances are you will work on LARGE software systems. So it is crucial to be able to understand large software systems. You need to develop strategies for working with unfamiliar and large codebases.</p>
+<p>During your summer internship, year-long placement or after you leave University, chances are you will work on LARGE software systems. So it is crucial to be able to understand large software systems. You need to develop strategies for working with unfamiliar and large codebases. The codebase you’re working on here is probably much larger than things you’ve worked with previously, though its relatively small compared to larger well known software projects, see figure <a href="understanding.html#fig:xkcd-large-fig">2.1</a>.</p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:xkcd-large-fig"></span>
+<img src="images/telescope_names.png" alt="Like telescopes, software projects can get quite large, so you’ll need to develop strategies for working with large codebases. Telescope Names (xkcd.com/1294) by Randall Munroe is licensed under CC BY-NC 2.5" width="75%"><p class="caption">
+Figure 2.1: Like telescopes, software projects can get quite large, so you’ll need to develop strategies for working with large codebases. <a href="https://xkcd.com/1294/">Telescope Names (xkcd.com/1294)</a> by <a href="https://en.wikipedia.org/wiki/Randall_Munroe">Randall Munroe</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC BY-NC 2.5</a>
+</p>
+</div>
+
 <div id="purposes" class="section level2" number="2.1">
 <h2>
 <span class="header-section-number">2.1</span> Purposes of the workshop<a class="anchor" aria-label="anchor" href="#purposes"><i class="fas fa-link"></i></a>
@@ -117,7 +124,7 @@
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:marauroa-fig"></span>
 <img src="images/marauroa.png" alt="marauroa is a large codbase, how can you find your way around it?" width="100%"><p class="caption">
-Figure 2.1: marauroa is a large codbase, how can you find your way around it?
+Figure 2.2: marauroa is a large codbase, how can you find your way around it?
 </p>
 </div>
 <div id="tips" class="section level4" number="2.2.1.1">
@@ -175,12 +182,12 @@ Figure 2.1: marauroa is a large codbase, how can you find your way around it?
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:marauroa2-fig"></span>
 <img src="images/marauroa2.png" alt="A screenshot from marauroa" width="100%"><p class="caption">
-Figure 2.2: A screenshot from marauroa
+Figure 2.3: A screenshot from marauroa
 </p>
 </div>
 <p>Now, using the tips outlined in section <a href="understanding.html#tips">2.2.1.1</a>, try to apply them to improve your understanding of the Marauroa codebase.</p>
 <p>Let’s start with the application domain. What do you know about Marauroa’s application domain? By this point you should already know that it is a game engine that is used to develop Massive Multiplayer Online Role-Playing Videogames <a href="https://en.wikipedia.org/wiki/Massively_multiplayer_online_role-playing_game">MMORPGs</a>. How does/did this piece of information helped your understanding of the codebase?</p>
-<p>Secondly, in the IDE, follow the gradual expansion of the hierarchy and read package and class names shown in figure <a href="understanding.html#fig:marauroa-fig">2.1</a>. This gives you a bird’s eye view of the general structure of the codebase. Do you think the names are meaningful? Did that contribute to your understanding of the codebase?</p>
+<p>Secondly, in the IDE, follow the gradual expansion of the hierarchy and read package and class names shown in figure <a href="understanding.html#fig:marauroa-fig">2.2</a>. This gives you a bird’s eye view of the general structure of the codebase. Do you think the names are meaningful? Did that contribute to your understanding of the codebase?</p>
 <p>Now try to identify the classes that play a central role. Once you identify a few of those, try to do more digging. Open these classes and skim through them. Check the import clause to see their dependencies. Do you notice anything in common? (Use the Outline view of Eclipse). For instance, check the class <code>marauroad.java</code> within the <code>marauroa.server</code> package. How do you think this approach helps you improve your understanding of the codebase?</p>
 <p>Classes can also be read gradually using a top-down strategy. Look at the icons provided by the environment. Do you know what each icon means? Skim through the comments inside the class – use Javadoc. Do you think the comments were useful? Or are they just adding more chaos?</p>
 <p>Skim the attributes and methods of the class. You don’t need to understand every word to understand overall meaning. Can you establish any hypotheses about the “marauroad.java” class? which one of the following statements do you agree with:</p>
@@ -333,10 +340,10 @@ Figure 2.2: A screenshot from marauroa
 <li>Now we are going to fill out some fields of the <em>New JUnit Test Case</em> dialogue menu.
 <ul>
 <li>
-<strong>Name</strong>. As a convention for naming test classes, you have to append <em>Test</em> to the code under test class name, see figure <a href="understanding.html#fig:junit-name-fig">2.3</a>
+<strong>Name</strong>. As a convention for naming test classes, you have to append <em>Test</em> to the code under test class name, see figure <a href="understanding.html#fig:junit-name-fig">2.4</a>
 </li>
 <li>
-<strong>Class under test</strong>. You can specify which is the class under test in the last field of the dialogue menu. Click <code>Browse...</code> see figure <a href="understanding.html#fig:junit-classundertest-fig">2.4</a>
+<strong>Class under test</strong>. You can specify which is the class under test in the last field of the dialogue menu. Click <code>Browse...</code> see figure <a href="understanding.html#fig:junit-classundertest-fig">2.5</a>
 </li>
 <li>A dialogue will ask about whether you want to include the JUnit libraries. Say <code>Yes</code> to this.</li>
 <li>Click on <em>Finish</em>.</li>
@@ -364,13 +371,13 @@ Figure 2.2: A screenshot from marauroa
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:junit-name-fig"></span>
 <img src="images/junit-name.png" alt="JUnit Test Case, with Test appended to the Acme class" width="100%"><p class="caption">
-Figure 2.3: JUnit Test Case, with Test appended to the Acme class
+Figure 2.4: JUnit Test Case, with Test appended to the Acme class
 </p>
 </div>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:junit-classundertest-fig"></span>
 <img src="images/junit-classundertest.png" alt="The Class Under Test in this example is Acme" width="100%"><p class="caption">
-Figure 2.4: The Class Under Test in this example is Acme
+Figure 2.5: The Class Under Test in this example is Acme
 </p>
 </div>
 <div class="rmdnote">

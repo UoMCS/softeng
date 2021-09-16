@@ -1,6 +1,14 @@
 # Large systems {#understanding}
 
-During your summer internship, year-long placement or after you leave University, chances are you will work on LARGE software systems. So it is crucial to be able to understand large software systems. You need to develop strategies for working with unfamiliar and large codebases.
+During your summer internship, year-long placement or after you leave University, chances are you will work on LARGE software systems. So it is crucial to be able to understand large software systems. You need to develop strategies for working with unfamiliar and large codebases. The codebase you're working on here is probably much larger than things you've worked with previously, though its relatively small compared to larger well known software projects, see figure \@ref(fig:xkcd-large-fig).
+
+
+```{r xkcd-large-fig, echo = FALSE, fig.align = "center", out.width = "75%", fig.cap = "(ref:captionxkcdlarge)"}
+knitr::include_graphics("images/telescope_names.png")
+```
+
+(ref:captionxkcdlarge) Like telescopes, software projects can get quite large, so you'll need to develop strategies for working with large codebases. [Telescope Names (xkcd.com/1294)](https://xkcd.com/1294/) by [Randall Munroe](https://en.wikipedia.org/wiki/Randall_Munroe) is licensed under [CC BY-NC 2.5](https://creativecommons.org/licenses/by-nc/2.5/)
+
 
 ## Purposes of the workshop  {#purposes}
 In this workshop, we will look at strategies to better comprehend unfamiliar large codebases. These strategies are supported by code reading techniques [@codereading] and the functionalities offered by your Integrated Development Environment (IDE). We'll be assuming that, after this workshop, you will be capable of carrying out the following tasks for yourself, without needing much guidance:

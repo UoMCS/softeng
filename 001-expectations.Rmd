@@ -20,6 +20,17 @@ knitr::include_graphics("images/compiling.png")
 ### Our expectations of you {#rtfm}
 We need you to read ALL of the messages we send you via GitLab, Jenkins, Microsoft Teams, the Piazza forum, emails and in this guidebook. Before you ask for help, make sure you have Read The Friendly Manual(s). RTFM.
 
+#### Workshops vs. Team study {#workshops}
+There are two main sessions:
+
+1. Team study sessions
+1. Workshops
+
+Team study sessions are for you to get together as a team to work alongside each other. You can also get help from GTAs and staff on coursework.
+
+Each workshop has a specific theme that we need you to focus on. This means **we won't discuss coursework with you during the workshops**, otherwise we risk not getting through workshop material.
+
+#### Physical vs online sessions {#online}
 For the live (physical) sessions you'll need to be in the appropriate lab in the Kilburn building. For online sessions (e.g. marking and mentoring) it is especially important that you turn up on time by being at a computer with access to:
 
 * A working pair of headphones

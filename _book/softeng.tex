@@ -266,7 +266,7 @@ The following is an outline of the topics covered in COMP23111.
 \hypertarget{usingit}{%
 \section{Using the lab manual}\label{usingit}}
 
-We expect that the web-based version of this manual will be the one you'll use most at \href{https://software-eng.netlify.app/}{software-eng.netlify.app}. You can search, browse and link to anything in the manual. It was last updated on 15 September, 2021.
+We expect that the web-based version of this manual will be the one you'll use most at \href{https://software-eng.netlify.app/}{software-eng.netlify.app}. You can search, browse and link to anything in the manual. It was last updated on 16 September, 2021.
 
 However, if you'd prefer, the manual is also available as a single pdf file \href{https://software-eng.netlify.app/softeng.pdf}{softeng.pdf} and an epub as well \href{https://software-eng.netlify.app/softeng.epub}{softeng.epub}. Having said that, the content is optimised for viewing in a web browser, so while the pdf and epub are OK, the web version is the best.
 
@@ -391,6 +391,27 @@ It's important that you know we expect of you and what you'll get in return. Tha
 \subsection{Our expectations of you}\label{rtfm}}
 
 We need you to read ALL of the messages we send you via GitLab, Jenkins, Microsoft Teams, the Piazza forum, emails and in this guidebook. Before you ask for help, make sure you have Read The Friendly Manual(s). RTFM.
+
+\hypertarget{workshops}{%
+\subsubsection{Workshops vs.~Team study}\label{workshops}}
+
+There are two main sessions:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Team study sessions
+\item
+  Workshops
+\end{enumerate}
+
+Team study sessions are for you to get together as a team to work alongside each other. You can also get help from GTAs and staff on coursework.
+
+Each workshop has a specific theme that we need you to focus on. This means \textbf{we won't discuss coursework with you during the workshops}, otherwise we risk not getting through workshop material.
+
+\hypertarget{online}{%
+\subsubsection{Physical vs online sessions}\label{online}}
 
 For the live (physical) sessions you'll need to be in the appropriate lab in the Kilburn building. For online sessions (e.g.~marking and mentoring) it is especially important that you turn up on time by being at a computer with access to:
 
@@ -1604,7 +1625,18 @@ Do not hesitate to ask if you are stuck!
 \hypertarget{understanding}{%
 \chapter{Large systems}\label{understanding}}
 
-During your summer internship, year-long placement or after you leave University, chances are you will work on LARGE software systems. So it is crucial to be able to understand large software systems. You need to develop strategies for working with unfamiliar and large codebases.
+During your summer internship, year-long placement or after you leave University, chances are you will work on LARGE software systems. So it is crucial to be able to understand large software systems. You need to develop strategies for working with unfamiliar and large codebases. The codebase you're working on here is probably much larger than things you've worked with previously, though its relatively small compared to larger well known software projects, see figure \ref{fig:xkcd-large-fig}.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.75\linewidth]{images/telescope_names} 
+
+}
+
+\caption{Like telescopes, software projects can get quite large, so you'll need to develop strategies for working with large codebases. \href{https://xkcd.com/1294/}{Telescope Names (xkcd.com/1294)} by \href{https://en.wikipedia.org/wiki/Randall_Munroe}{Randall Munroe} is licensed under \href{https://creativecommons.org/licenses/by-nc/2.5/}{CC BY-NC 2.5}}\label{fig:xkcd-large-fig}
+\end{figure}
+
+
 
 \hypertarget{purposes}{%
 \section{Purposes of the workshop}\label{purposes}}
@@ -2180,7 +2212,18 @@ Checks that both variables refer to different objects.
 \hypertarget{debugging}{%
 \chapter{Debugging a Codebase}\label{debugging}}
 
-Much of your time as a software engineer will be spent debugging code, either other people's or your own. That code will often be unfamiliar to you so it is important to be able develop strategies for debugging an unfamiliar codebase. In this course we will use Stendhal as an example to help you develop better debugging skills.
+Much of your time as a software engineer will be spent debugging code, either other people's or your own. That code will often be unfamiliar to you so it is important to be able develop strategies for debugging an unfamiliar codebase. In this course we will use Stendhal as an example to help you develop better debugging skills, see figure \ref{fig:xkcd-debugging-fig}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.99\linewidth]{images/debugging} 
+
+}
+
+\caption{Debugging unfamiliar codebases is a routine part of software engineering. \href{https://xkcd.com/1722/}{Compiling (xkcd.com/1722)} by \href{https://en.wikipedia.org/wiki/Randall_Munroe}{Randall Munroe} is licensed under \href{https://creativecommons.org/licenses/by-nc/2.5/}{CC BY-NC 2.5}}\label{fig:xkcd-debugging-fig}
+\end{figure}
+
+
 
 \hypertarget{preparing-for-the-workshop}{%
 \section{Preparing for the workshop}\label{preparing-for-the-workshop}}
@@ -2458,10 +2501,20 @@ Material to be added here
 \hypertarget{flowing}{%
 \chapter{Git workflows}\label{flowing}}
 
-Material to be added here
+There are several workflows you can use in git, figure \ref{fig:xkcd-git-fig} should not be one of them.
 
-\hypertarget{course-content-2}{%
-\section{Course content}\label{course-content-2}}
+\begin{figure}
+
+{\centering \includegraphics[width=0.55\linewidth]{images/git} 
+
+}
+
+\caption{Deleting your project and downloading a fresh copy is not the best workflow. \href{https://xkcd.com/1597/}{Telescope Names (xkcd.com/1597)} by \href{https://en.wikipedia.org/wiki/Randall_Munroe}{Randall Munroe} is licensed under \href{https://creativecommons.org/licenses/by-nc/2.5/}{CC BY-NC 2.5}}\label{fig:xkcd-git-fig}
+\end{figure}
+
+
+
+This workshop will look at different workflows you can use.
 
 \hypertarget{refactoring}{%
 \chapter{Software Refactoring}\label{refactoring}}
@@ -3258,8 +3311,8 @@ In this final part of the exercise you should consider if there is a sensible ap
 
 Content to be added here
 
-\hypertarget{course-content-3}{%
-\section{Course content}\label{course-content-3}}
+\hypertarget{course-content-2}{%
+\section{Course content}\label{course-content-2}}
 
 \hypertarget{opening}{%
 \chapter{Open source challenge}\label{opening}}
@@ -3375,7 +3428,18 @@ For Github-hosted projects you do this by making a pull request: \href{https://h
 \hypertarget{starting}{%
 \chapter{Stendhalgame.org}\label{starting}}
 
-Stendhal (\href{https://stendhalgame.org/}{stendhalgame.org}) is a massively multiplayer online role-playing game (\href{https://en.wikipedia.org/wiki/Massively_multiplayer_online_role-playing_game}{MMORPG}) with an old school feel. You can explore cities, forest, mountains, plains and dungeons.
+Stendhal (\href{https://stendhalgame.org/}{stendhalgame.org}) is a massively multiplayer online role-playing game (\href{https://en.wikipedia.org/wiki/Massively_multiplayer_online_role-playing_game}{MMORPG}) with an old school feel. You can explore cities, forest, mountains, plains and dungeons. A screenshot of some of the the game shown in figure \ref{fig:stendhalgame-fig}.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.75\linewidth]{images/Semos_City_NPCs-2020} 
+
+}
+
+\caption{A screenshot from \href{https://stendhalgame.org/}{stendhalgame.org} showing a selection of the 300 non-player characters (NPCs)}\label{fig:stendhalgame-fig}
+\end{figure}
+
+
 
 \hypertarget{introduction-2}{%
 \section{Introduction}\label{introduction-2}}
