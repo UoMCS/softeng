@@ -1,6 +1,6 @@
 # (PART) Team study materials {-}
 
-# Stendhalgame.org {#starting}
+# Starting with Stendhal {#starting}
 Stendhal ([stendhalgame.org](https://stendhalgame.org/)) is a massively multiplayer online role-playing game ([MMORPG](https://en.wikipedia.org/wiki/Massively_multiplayer_online_role-playing_game)) with an old school feel. You can explore cities, forest, mountains, plains and dungeons. A screenshot of some of the the game shown in figure \@ref(fig:stendhalgame-fig).
 
 
@@ -10,9 +10,12 @@ knitr::include_graphics("images/Semos_City_NPCs-2020.png")
 
 (ref:captionstgame) A screenshot from [stendhalgame.org](https://stendhalgame.org/) showing a selection of the 300 non-player characters (NPCs)
 
+In this course, we use the open source code base for the Stendhal game to practice a range of software engineering skills.  This chapter describes an activity that you can work through with your team to help you get started on working with the code base.  You'll need to carry out many of the same steps described here as you tackle the issues set for your team for the 1st team coursework exercise.
+
+
 ## Introduction
 
-In the team study sessions from week 2 onwards, you'll be working on your team coursework. The focus initially is on writing tests to make the issues in Stendhal visible: that is, you will write tests that fail when the bug reported by the issue is present in the code base, and pass when it is not present.  The process is:
+In the team study sessions from week 2 onwards, you'll be working on your team coursework. The focus initially is on writing tests to make the issues your team has been asked to fix visible: that is, you will write tests that fail when the bug reported by the issue is present in the code base, and pass when it is not present.  The process is:
 
 
 1. First, understand the bug by replicating it manually in your local copy of the game.
