@@ -266,7 +266,7 @@ The following is an outline of the topics covered in COMP23111.
 \hypertarget{usingit}{%
 \section{Using the lab manual}\label{usingit}}
 
-We expect that the web-based version of this manual will be the one you'll use most at \href{https://software-eng.netlify.app/}{software-eng.netlify.app}. You can search, browse and link to anything in the manual. It was last updated on 16 September, 2021.
+We expect that the web-based version of this manual will be the one you'll use most at \href{https://software-eng.netlify.app/}{software-eng.netlify.app}. You can search, browse and link to anything in the manual. It was last updated on 20 September, 2021.
 
 However, if you'd prefer, the manual is also available as a single pdf file \href{https://software-eng.netlify.app/softeng.pdf}{softeng.pdf} and an epub as well \href{https://software-eng.netlify.app/softeng.epub}{softeng.epub}. Having said that, the content is optimised for viewing in a web browser, so while the pdf and epub are OK, the web version is the best.
 
@@ -439,16 +439,16 @@ For this course to run smoothly your team will expect that you:
 \item
   Turn up to all the bi-weekly team study sessions, \textbf{especially the marking sessions}
 \item
-  Participate in the workshops
+  Participate in the all workshops
 \item
   Contribute to your team by:
 
   \begin{itemize}
   \tightlist
   \item
-    Respecting your team members, no bullying. Assume good faith by default
+    Respecting your team members, no bullying. Assume good faith by default. It's your responsibility to make your team work. Team work makes the dream work.
   \item
-    Getting along with your team members. You may not like all of them (that's life) but your team members are crucial to your teams success. While you can get away with being a ``lone wolf'' coder on other course units, (see figure \ref{fig:wolf-fig}, you are now expected to behave like a sociable engineer as part of a professional team
+    Getting along with your team members. You may not like all of them (that's life) but your team members are crucial to your teams success. While you can get away with being a ``lone wolf'' coder on other course units, (see figure \ref{fig:wolf-fig}), you are now expected to behave like a sociable engineer as part of a professional team
   \item
     Encouraging people who might be slacking off to make contributions, see figure \ref{fig:xkcd-compiling-fig}
   \item
@@ -543,21 +543,21 @@ The weekly schedule for autumn 2021 is shown in table \ref{tab:schedtable}, base
 \toprule
 Week no. & Subject & Deadlines\\
 \midrule
-**0**: 20th Sept & Configuring, see section \ref{week0} & IndCwk1-S-Basic Git (premarked)\\
-**1**: 27th Sept & Automated build and test, see see section \ref{week1} & IndCwk1-S-Basic Git (final)\\
+**0**: 20th Sept & Configuring, see section \ref{week0} & \\
+**1**: 27th Sept & Automated build and test, see see section \ref{week1} & IndCwk2, Fri 1st Oct, 6pm\\
 **2**: 4th Oct & Reading large codebases, see see section \ref{week2} & \\
-**3**: 11th Oct & Debugging, see see section \ref{week3} & TeamCwk1-S-Fixing Bugs\\
+**3**: 11th Oct & Debugging, see see section \ref{week3} & IndCwk2, Fri 15th Oct, 6pm\\
 **4**: 18th Oct & Cost estimation, see see section \ref{week4} & \\
 \addlinespace
-**5**: 25th Oct & Test first development, see see section \ref{week5} & \\
-**6**: 1st Nov & Git workflows, see see section \ref{week6} & IndCwk2-S-Conflicts in Git (premarked)\\
-**7**: 8th Nov & Reading week see see section \ref{week7} & IndCwk2-S-Conflicts in Git (final)\\
+**5**: 25th Oct & Test first development, see see section \ref{week5} & TeamCwk1, 29th Oct, 6pm\\
+**6**: 1st Nov & Reading week see see section \ref{week6} & \\
+**7**: 8th Nov & Git workflows, see see section \ref{week7} & \\
 **8**: 15th Nov & Software refactoring, see see section \ref{week8} & \\
-**9**: 22nd Nov & Design for testability, see see section \ref{week9} & TeamCwk2-S-Adding Features\\
+**9**: 22nd Nov & Design for testability, see see section \ref{week9} & \\
 \addlinespace
-**10**: 29th Nov & Design patterns, see see section \ref{week10} & \\
+**10**: 29th Nov & Design patterns, see see section \ref{week10} & TeamCwk2, Fri 3rd Dec, 6pm\\
 **11**: 6th Dec & Risk management and practice exam, see see section \ref{week11} & \\
-**12**: 13th Dec & Open source challenge, see see section \ref{week8} & \\
+**12**: 13th Dec & Open source challenge, see see section \ref{week12} & \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -673,9 +673,9 @@ Events in the week starting 25th October:
 \end{enumerate}
 
 \hypertarget{week6}{%
-\section{Workflowing}\label{week6}}
+\section{Pausing}\label{week6}}
 
-Events in the week starting 1st November:
+Events in the week starting 1st November (reading week). Take a break if you're ahead, or catchup if you've fallen behind. There are no activities in reading week.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -691,9 +691,9 @@ Events in the week starting 1st November:
 \end{enumerate}
 
 \hypertarget{week7}{%
-\section{Pausing}\label{week7}}
+\section{Workflowing}\label{week7}}
 
-Events in the week starting 8th November (reading week). Take a break if you're ahead, or catchup if you've fallen behind. There are no activities in reading week.
+Events in the week starting 8th November:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -841,9 +841,7 @@ We'll be using the following tools:
 \part{Weekly Workshops}\label{part-weekly-workshops}}
 
 \hypertarget{building}{%
-\chapter{Marauroa}\label{building}}
-
-Marauroa is an open source \emph{framework} and engine to develop games. It provides a simple way of creating games on a portable and robust server architecture. Marauroa manages the client server communication and provides an object orientated view of the world for game developers. It further handles database access in a transparent way to store player accounts, character progress and the state of the world.
+\chapter{Building and Testing Systems}\label{building}}
 
 \hypertarget{Introduction}{%
 \section{Introduction}\label{Introduction}}
@@ -865,6 +863,8 @@ In this workshop, we will be building and testing Marauroa. We will look at some
 \end{itemize}
 
 In this, and some later workshops, we'll be working with the code of the \emph{Marauroa games engine} for constructing on-line multi-player games.
+
+Marauroa is an open source \emph{framework} and engine to develop games. It provides a simple way of creating games on a portable and robust server architecture. Marauroa manages the client server communication and provides an object orientated view of the world for game developers. It further handles database access in a transparent way to store player accounts, character progress and the state of the world.
 
 You should already have begun to practice some of these skills, through the GitLab Access Check activity.
 In this workshop, we will build on that activity to carry out these basic skills on a large open source software system. During the workshop, you will:
@@ -3437,7 +3437,7 @@ For Github-hosted projects you do this by making a pull request: \href{https://h
 \part{Team study materials}\label{part-team-study-materials}}
 
 \hypertarget{starting}{%
-\chapter{Stendhalgame.org}\label{starting}}
+\chapter{Starting with Stendhal}\label{starting}}
 
 Stendhal (\href{https://stendhalgame.org/}{stendhalgame.org}) is a massively multiplayer online role-playing game (\href{https://en.wikipedia.org/wiki/Massively_multiplayer_online_role-playing_game}{MMORPG}) with an old school feel. You can explore cities, forest, mountains, plains and dungeons. A screenshot of some of the the game shown in figure \ref{fig:stendhalgame-fig}.
 
@@ -3452,10 +3452,12 @@ Stendhal (\href{https://stendhalgame.org/}{stendhalgame.org}) is a massively mul
 
 
 
+In this course, we use the open source code base for the Stendhal game to practice a range of software engineering skills. This chapter describes an activity that you can work through with your team to help you get started on working with the code base. You'll need to carry out many of the same steps described here as you tackle the issues set for your team for the 1st team coursework exercise.
+
 \hypertarget{introduction-2}{%
 \section{Introduction}\label{introduction-2}}
 
-In the team study sessions from week 2 onwards, you'll be working on your team coursework. The focus initially is on writing tests to make the issues in Stendhal visible: that is, you will write tests that fail when the bug reported by the issue is present in the code base, and pass when it is not present. The process is:
+In the team study sessions from week 2 onwards, you'll be working on your team coursework. The focus initially is on writing tests to make the issues your team has been asked to fix visible: that is, you will write tests that fail when the bug reported by the issue is present in the code base, and pass when it is not present. The process is:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}

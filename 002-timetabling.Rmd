@@ -9,24 +9,25 @@ The weekly schedule for autumn 2021 is shown in table \@ref(tab:schedtable), bas
 ```{r schedtable, echo = FALSE}
 io_table <- tibble::tribble(
     ~ "Week no."       , ~ "Subject",      ~ "Deadlines",
-  "**0**: 20th Sept"            , "Configuring, (ref:weekzero)",   "IndCwk1-S-Basic Git (premarked)",  
-  "**1**: 27th Sept"            , "Automated build and test, see (ref:weekone)",  "IndCwk1-S-Basic Git (final)",
+  "**0**: 20th Sept"            , "Configuring, (ref:weekzero)",   "",  
+  "**1**: 27th Sept"            , "Automated build and test, see (ref:weekone)",  "IndCwk2, Fri 1st Oct, 6pm",
   "**2**: 4th Oct"              , "Reading large codebases, see (ref:weektwo)",  "",
-  "**3**: 11th Oct"             , "Debugging, see (ref:weekthree)", "TeamCwk1-S-Fixing Bugs",
+  "**3**: 11th Oct"             , "Debugging, see (ref:weekthree)", "IndCwk2, Fri 15th Oct, 6pm",
   "**4**: 18th Oct"             , "Cost estimation, see (ref:weekfour)",  "",
-  "**5**: 25th Oct"             , "Test first development, see (ref:weekfive)", "",
-  "**6**: 1st Nov"              , "Git workflows, see (ref:weeksix)",  "IndCwk2-S-Conflicts in Git (premarked)",
-  "**7**: 8th Nov"              , "Reading week see (ref:weekseven)", "IndCwk2-S-Conflicts in Git (final)",
+  "**5**: 25th Oct"             , "Test first development, see (ref:weekfive)", "TeamCwk1, 29th Oct, 6pm ",
+  "**6**: 1st Nov"              , "Reading week see (ref:weeksix)", "",
+  "**7**: 8th Nov"              , "Git workflows, see (ref:weekseven)",  "",
   "**8**: 15th Nov"             , "Software refactoring, see (ref:weekeight)", "",
-  "**9**: 22nd Nov"            , "Design for testability, see (ref:weeknine)", "TeamCwk2-S-Adding Features",
-  "**10**: 29th Nov"            , "Design patterns, see (ref:weekten)", "",
+  "**9**: 22nd Nov"            , "Design for testability, see (ref:weeknine)", "",
+  "**10**: 29th Nov"            , "Design patterns, see (ref:weekten)", "TeamCwk2, Fri 3rd Dec, 6pm",
   "**11**: 6th Dec"             , "Risk management and practice exam, see (ref:weekeleven)", "",
-  "**12**: 13th Dec"            , "Open source challenge, see (ref:weekeight)", "",
+  "**12**: 13th Dec"            , "Open source challenge, see (ref:weektwelve)", "",
 
 )
 knitr::kable(io_table, caption = "The weekly schedule for this twelve week course, please note we are using the week numbering from the [timetables.manchester.ac.uk](https://timetables.manchester.ac.uk/) where week zero is welcome week, and week one is the first teaching week", booktabs = TRUE)
 ```
 
+<!-- premarking deadline is Tuesday of that week-->
 ## Configuring {#week0}
 
 Events in the week starting 20th September:
@@ -83,8 +84,9 @@ Events in the week starting 25th October:
 1. **Coursework deadlines**:
 
 
-## Workflowing {#week6}
-Events in the week starting 1st November:
+## Pausing {#week6}
+Events in the week starting 1st November (reading week). Take a break if you're ahead, or catchup if you've fallen behind. There are no activities in reading week.
+
 
 1. **Team Study Tuesday**:
 1. **Workshop**: Git workflows
@@ -92,8 +94,8 @@ Events in the week starting 1st November:
 1. **Coursework deadlines**:
 
 
-## Pausing {#week7}
-Events in the week starting 8th November (reading week). Take a break if you're ahead, or catchup if you've fallen behind. There are no activities in reading week.
+## Workflowing {#week7}
+Events in the week starting 8th November:
 
 1. **Team Study Tuesday**: None
 1. **Workshop**: None

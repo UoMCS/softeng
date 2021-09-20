@@ -4,18 +4,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Chapter 1 Marauroa | Software engineering</title>
+<title>Chapter 1 Building and Testing Systems | Software engineering</title>
 <meta name="author" content="Suzanne Embury and team">
-<meta name="description" content="Marauroa is an open source framework and engine to develop games. It provides a simple way of creating games on a portable and robust server architecture. Marauroa manages the client server...">
+<meta name="description" content="1.1 Introduction In this workshop, we will be building and testing Marauroa. We will look at some essential processes for working on an existing team-developed software system. We’ll be assuming...">
 <meta name="generator" content="bookdown 0.24 with bs4_book()">
-<meta property="og:title" content="Chapter 1 Marauroa | Software engineering">
+<meta property="og:title" content="Chapter 1 Building and Testing Systems | Software engineering">
 <meta property="og:type" content="book">
 <meta property="og:url" content="https://software-eng.netlify.app/building.html">
-<meta property="og:description" content="Marauroa is an open source framework and engine to develop games. It provides a simple way of creating games on a portable and robust server architecture. Marauroa manages the client server...">
+<meta property="og:description" content="1.1 Introduction In this workshop, we will be building and testing Marauroa. We will look at some essential processes for working on an existing team-developed software system. We’ll be assuming...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Chapter 1 Marauroa | Software engineering">
+<meta name="twitter:title" content="Chapter 1 Building and Testing Systems | Software engineering">
 <meta name="twitter:site" content="@csmcr">
-<meta name="twitter:description" content="Marauroa is an open source framework and engine to develop games. It provides a simple way of creating games on a portable and robust server architecture. Marauroa manages the client server...">
+<meta name="twitter:description" content="1.1 Introduction In this workshop, we will be building and testing Marauroa. We will look at some essential processes for working on an existing team-developed software system. We’ll be assuming...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.10/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.0/transition.js"></script><script src="libs/bs3compat-0.3.0/tabs.js"></script><script src="libs/bs3compat-0.3.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -45,7 +45,7 @@
 <li><a class="" href="expectations.html">Expectations</a></li>
 <li><a class="" href="timetabling.html">Weekly timetable</a></li>
 <li class="book-part">Weekly Workshops</li>
-<li><a class="active" href="building.html"><span class="header-section-number">1</span> Marauroa</a></li>
+<li><a class="active" href="building.html"><span class="header-section-number">1</span> Building and Testing Systems</a></li>
 <li><a class="" href="understanding.html"><span class="header-section-number">2</span> Large systems</a></li>
 <li><a class="" href="debugging.html"><span class="header-section-number">3</span> Debugging a Codebase</a></li>
 <li><a class="" href="estimating.html"><span class="header-section-number">4</span> Cost estimation</a></li>
@@ -57,7 +57,7 @@
 <li><a class="" href="risking.html"><span class="header-section-number">10</span> Risk management</a></li>
 <li><a class="" href="opening.html"><span class="header-section-number">11</span> Open source challenge</a></li>
 <li class="book-part">Team study materials</li>
-<li><a class="" href="starting.html"><span class="header-section-number">12</span> Stendhalgame.org</a></li>
+<li><a class="" href="starting.html"><span class="header-section-number">12</span> Starting with Stendhal</a></li>
 <li><a class="" href="mentoring.html"><span class="header-section-number">13</span> Industrial mentoring</a></li>
 <li><a class="" href="syncing.html"><span class="header-section-number">14</span> Synchronising</a></li>
 <li class="book-part">Coursework</li>
@@ -81,9 +81,8 @@
 </div>
   </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="building" class="section level1" number="1">
 <h1>
-<span class="header-section-number">1</span> Marauroa<a class="anchor" aria-label="anchor" href="#building"><i class="fas fa-link"></i></a>
+<span class="header-section-number">1</span> Building and Testing Systems<a class="anchor" aria-label="anchor" href="#building"><i class="fas fa-link"></i></a>
 </h1>
-<p>Marauroa is an open source <em>framework</em> and engine to develop games. It provides a simple way of creating games on a portable and robust server architecture. Marauroa manages the client server communication and provides an object orientated view of the world for game developers. It further handles database access in a transparent way to store player accounts, character progress and the state of the world.</p>
 <div id="Introduction" class="section level2" number="1.1">
 <h2>
 <span class="header-section-number">1.1</span> Introduction<a class="anchor" aria-label="anchor" href="#Introduction"><i class="fas fa-link"></i></a>
@@ -98,6 +97,7 @@
 <li>Run a piece of software consisting of multiple distributed subsystems.</li>
 </ul>
 <p>In this, and some later workshops, we’ll be working with the code of the <em>Marauroa games engine</em> for constructing on-line multi-player games.</p>
+<p>Marauroa is an open source <em>framework</em> and engine to develop games. It provides a simple way of creating games on a portable and robust server architecture. Marauroa manages the client server communication and provides an object orientated view of the world for game developers. It further handles database access in a transparent way to store player accounts, character progress and the state of the world.</p>
 <p>You should already have begun to practice some of these skills, through the GitLab Access Check activity.
 In this workshop, we will build on that activity to carry out these basic skills on a large open source software system. During the workshop, you will:</p>
 <ol style="list-style-type: decimal">
@@ -624,7 +624,7 @@ Figure 1.28: Tests FAILED
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#building"><span class="header-section-number">1</span> Marauroa</a></li>
+<li><a class="nav-link" href="#building"><span class="header-section-number">1</span> Building and Testing Systems</a></li>
 <li><a class="nav-link" href="#Introduction"><span class="header-section-number">1.1</span> Introduction</a></li>
 <li>
 <a class="nav-link" href="#acquiring"><span class="header-section-number">1.2</span> Acquiring Marauroa</a><ul class="nav navbar-nav">

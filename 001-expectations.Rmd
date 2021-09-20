@@ -46,9 +46,9 @@ We have deliberately scheduled online activities so they aren't immediately afte
 For this course to run smoothly your team will expect that you:
 
 * Turn up to all the bi-weekly team study sessions, **especially the marking sessions**
-* Participate in the workshops
+* Participate in the all workshops
 * Contribute to your team by:
-    + Respecting your team members, no bullying. Assume good faith by default. It's your responsibility to make your team work. Team work makes the dream work. 
+    + Respecting your team members, no bullying. Assume good faith by default. It's your responsibility to make your team work. Team work makes the dream work.
     + Getting along with your team members. You may not like all of them (that's life) but your team members are crucial to your teams success. While you can get away with being a “lone wolf” coder on other course units, (see figure \@ref(fig:wolf-fig)), you are now expected to behave like a sociable engineer as part of a professional team
     + Encouraging people who might be slacking off to make contributions, see figure \@ref(fig:xkcd-compiling-fig)
     + Communicating with your team if you have difficulty contributing
