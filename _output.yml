@@ -1,6 +1,7 @@
 # WEB version at on netlify.app
 bookdown::bs4_book:
   includes:
+    in_header: [header.html]
   theme:
     primary: "#637238"
   repo: https://github.com/dullhunk/softeng

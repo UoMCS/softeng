@@ -3,4 +3,55 @@
 
 # Individual Coursework 1 {#gitting}
 
-will go here (basic git)
+## Introduction {#introcw1}
+
+The first piece of coursework for (ref:coursecode) is an individual exercise designed to help you warm up your Git and Java skills after the long summer holidays, so that you are ready to collaborate with your team on the team-based coursework.  It takes you through the simple Git workflow we'll be using in the team coursework later in the semester and introduces some basic Java testing and debugging concepts.  You'll carry out the following steps:
+
+* Clone a GitLab repository
+* Compile the code and run it
+* Test the code using an automated test suite to reveal a bug
+* Make a new branch in the repository
+* Fix the bug and see the tests pass
+* Commit the fix to the repository
+* Merge your branch with the development branch
+* Push your changes to your remote repository
+* Update the issue tracker to record the project status
+
+Detailed instructions for carrying these tasks out from within the Eclipse IDE are given in this document.  We focus on Eclipse as that is the IDE used for the team coursework.  You are free to use any IDE that you wish to carry out this individual coursework exercise, but we can currently only provide instructions and technical support for Eclipse.
+
+Once the exercise is completed, you should be ready to use the same workflow on your team's repository in the first team coursework exercise.
+
+::: {.rmdnote}
+**Trouble-shooting**: If you experience problems when completing this exercise, you can find a trouble-shooting guide on the Department's wiki at:
+
+[wiki.cs.manchester.ac.uk/index.php/LabHelp:Main_Page](https://wiki.cs.manchester.ac.uk/index.php/LabHelp:Main_Page)
+
+We've provided two indexes into the trouble shooter, to help you find your way around. One is an index of error messages:  
+
+[wiki.cs.manchester.ac.uk/index.php/LabHelp:Errors](https://wiki.cs.manchester.ac.uk/index.php/LabHelp:Errors)
+
+If a specific error message is being reported alongside the problem you are experiencing, then you can look for it in this index, and find suggested solutions that have worked for students with this problem in the past.
+
+The second index contains descriptions of more general symptoms:  
+
+[wiki.cs.manchester.ac.uk/index.php/LabHelp:Symptoms](https://wiki.cs.manchester.ac.uk/index.php/LabHelp:Symptoms)
+
+Use this index when something is going wrong but you do not have a specific error message to help you track down the cause of the problem.  
+
+Please report any problems you encounter that are not covered in the troubleshooter as soon as possible, including full details of specific error messages and screenshots where appropriate. You can report problems on the course unit forum, or by e-mail the course leader. We'll do our best to help!  
+
+:::
+
+## About the Coursework {#about}
+
+### Key Information {#key}
+
+The exercise will be marked out of (ref:totalmark), and will count towards (ref:percentage) percent of your total mark for the course unit.
+
+The deadline for the exercise is: (ref:deadline)
+
+You'll submit your work through your own private GitLab repository.  This has been created for you, and should be visible in your personal project list through the GitLab web interface at
+
+::: {.rmdnote}
+[gitlab.cs.man.ac.uk](https://gitlab.cs.man.ac.uk)
+:::
