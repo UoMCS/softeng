@@ -182,7 +182,7 @@ If you have set up a PGP key for the machine you are using and have uploaded it 
 
 Information about GitLab SSH setup within the Department, including how to create and register a PGP key with our GitLab server, can be found on the Department wiki pages:
 
-[wiki.cs.manchester.ac.uk/index.php/Gitlab/Git_Setup]([https://wiki.cs.manchester.ac.uk/index.php/Gitlab/Git_Setup])
+[wiki.cs.manchester.ac.uk/index.php/Gitlab/Git_Setup][https://wiki.cs.manchester.ac.uk/index.php/Gitlab/Git_Setup]
 :::
 
 After you have entered correct login details, Eclipse will fetch some information about the remote repository.  It will then ask you which branches you might want to work with in the cloned repository.  In fact, all branches will be included in the clone regardless of what you select here.  But Eclipse will create local versions of the branches you select (so-called `remote tracking branches`), in addition to the branches already present in the remote.
