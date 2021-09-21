@@ -55,3 +55,141 @@ You'll submit your work through your own private GitLab repository.  This has be
 ::: {.rmdnote}
 [gitlab.cs.man.ac.uk](https://gitlab.cs.man.ac.uk)
 :::
+
+At the deadline, we'll make a clone of your repository and run the automated marking code.  You just have to make sure you have pushed your Git branches and commits to your GitLab repository by then, and make a comment in your issue tracker to let us know the work is ready to mark.  There are no additional submission steps.
+
+
+### Marking Scheme {#markingscheme}
+
+This coursework exercise consists of 8 steps.  If you complete them all correctly, then you should earn full marks against the marking scheme shown in table \@ref(tab:marktable).
+
+
+```{r marktable, echo = FALSE}
+mark_table <- tibble::tribble(
+    ~ "Criterion"                        , ~ "Marks",   
+    "At least one new commit has been made by the student and pushed to the GitLab repository", "1",
+    "The new commits have the author and committer e-mails set to the student's University e-mail address", "2",
+    "A feature branch with the correct name has been created and pushed to GitLab", "1",
+    "The feature branch appears to have been merged with the development branch", "2",
+    "The tests all pass on the development branch", "2",
+    "The tests all pass on the feature branch","1",
+    "The issue has been closed if the bug fix has been merged into the development branch and the tests all pass, and has been left open otherwise", "1",
+    "**Total**", "**10**",    
+)
+knitr::kable(mark_table, caption = "The Mark scheme for the first piece of individual coursework", booktabs = TRUE)
+```
+
+Note that we can only mark work that is present in your GitLab repository, while the earlier steps involve doing work in your local Git repository.  We won't be able to see that work until you get to the final step, and push your commits and branches to your GitLab repository.  If you reach the deadline with some of the steps incomplete, and want us to mark what work you have done, you'll need to jump forward to step 7 and work through as much of it as you can before the deadline to allow this.
+
+
+### Pre-Deadline Feedback {#prov}
+
+To give you a chance to see how well you have understood and applied the principles underlying this coursework exercise, we will run the marking code 1 week in advance of the deadline, to generate provisional marks and feedback on the work completed by that time.  The feedback and a provisional mark will appear on the GitLab issue tracker for the coursework repository.
+
+The provisional marking will take place after **Tuesday 28th September 2021, after 6.00pm**
+
+You will then have 3 days to make corrections before the final marking process takes place, shortly after the coursework deadline on the Friday.
+
+You don't have to do any specific to request this provisional marking.  We will mark all the repositories at this time, and provide whatever feedback we can based on whatever work you have done at that point.
+
+### Late Submissions {#late}
+
+This coursework uses the University's standard policy on marking work that has been submitted late.
+
+A penalty of 1 mark will be applied for each 24 hour period following the deadline that the work is late, up a total of 10 such periods.  Note that for the purposes of this calculation, weekends and evenings are counted.  This means that, since this coursework's deadline is on a Friday, a submission on the following Monday morning will receive a penalty of 3 marks.
+
+These penalties will be applied until all marks earned by the student have been removed.  Marks will not go below zero.
+
+Work which is submitted more than 10 calendar days after the deadline will be considered a non-submission and will be given an automatic mark of 0.  At the discretion of the course leader and the Department, we may be able to give the mark the work would have achieved if not submitted late, along with feedback explaining it.  Contact the course team leader if you want to discuss the possibility of doing this.
+
+For this coursework, the submission time will be the date and time at which you place the comment saying the work is ready for marking on the issue for the exercise.  All work that has been pushed to GitLab by that date will be marked.  Any commits or references that are not pushed to GitLab until after marking is requested will not be considered during marking, even if they were created or modified in your local Git repository before this.
+
+
+### Plagiarism {#plagiarism}
+
+This coursework is subject to the University's standard policy on plagiarism:
+
+
+::: {.rmdnote}
+[wiki.cs.manchester.ac.uk/index.php/UGHandbook21:Academic_Malpractice](https://wiki.cs.manchester.ac.uk/index.php/UGHandbook21:Academic_Malpractice)
+:::
+
+### How to Get Help {#help}
+
+Help with this exercise will be available in two clinic sessions, one in week 0 and one in week 1.  A member of academic staff will be available, online, for individual consultations on this exercise, on an as needed basis.  If you do not have problems with the coursework, you do not need to attend.
+
+See Blackboard [online.manchester.ac.uk](https://online.manchester.ac.uk) for details of how to access these sessions, and when they will run:
+
+Help is also available through the Blackboard discussion forum, or by e-mail to Dr Anas Elhag: `anas.elhag@manchester.ac.uk`. We aim to respond within 3 days of receiving each query.
+
+
+## The Coursework Instructions {#instructions}
+
+### Step 1: Start Eclipse {#starteclipse}
+
+First we need to run Eclipse within the VM (or the IDE you have chosen to use for this activity, if doing the exercise directly on your own machine).
+
+Run the VM and start (ref:ideversion).  From the command line, this is done by typing:
+
+````md
+/opt/eclipse-2020-03/eclipse
+````
+
+
+You can also find it in the `Applications` menu, under `Programming`.
+
+
+If it is the first time you have run this version of Eclipse, you will be prompted to create or select a *workspace*.  This is just a folder where your Eclipse projects will live.  Choose the default offered, or use the file browser to choose a location that you prefer and make a folder with an appropriate name (such as `EclipseProjects`).  Or you can make a workspace that will contain only projects relating to (ref:coursecode), such as `COMP23311Workspace`
+
+Once you have told Eclipse which workspace you want to use, Eclipse will load.
+
+If this is the first time you have accessed this workspace, then you will see a Welcome view, giving links to tutorials on using Eclipse.  Click the cross on the tab to remove it.  You should now see the basic Eclipse window, with default code views opened and ready to be used.
+
+
+### Step 2: Clone a GitLab Repository in Eclipse {#clone}
+
+The next step in the activity is to ask Eclipse to clone the required GitLab repository, and import its contents as a Java project.
+
+Choose the `File` > `Import` menu option.
+
+In the wizard that appears, select the `Git` > `Projects from Git` option and click `Next`.
+
+There are two ways to import a project from Git.  You can import from a local Git repository or clone a remote repository.  We're going to work with a project that is currently stored remotely in GitLab, so select `Clone URI` from the list of options and click `Next`.
+
+In the form that appears, you need enter only the URI of the remote repository that you want Eclipse to clone.  Eclipse will fill in the other fields, using the components of the URI.  For this activity, you should clone the repository with the URI:
+
+::: {.rmdnote}
+(ref:repoURI)
+:::
+
+where `<your-username>` is replaced by your University username.  This is a personal repository that has been set up just for use by yourself, for this activity.  No other students can see its contents (though the course team and GTAs can see it).
+
+::: {.rmdcaution}
+(ref:cautionbox)
+Note that the URI you need to give when cloning a remote Git project is *not* the same as the URL of the GitLab page describing the project, even when using the HTTPS protocol.  Make sure you have the right URI by checking against the one given on your project's main GitLab page.  It should end in the string `.git`.
+:::
+
+<!--%%% TODO: Add screen shot?  Is it needed?-->
+
+Once the URI is entered, Eclipse will fill the other fields for you.  (If this doesn't happen, it's likely that something went wrong when copying the link text from this pdf.  Try copying it directly from the GitLab page for the project, instead.  If you are still getting an error, get help in one of the scheduled clinic sessions.)
+
+Click `Next`.  Eclipse will connect to GitLab to authenticate your connection.  Since we are using the HTTPS access protocol here, you will need to enter your University username and password at this point.  (You will also be given an option to save the details, so you don't need to enter them again.)
+
+::: {.rmdnote}
+**An Aside on Protocols:** GitLab can authenticate through two protocols, HTTPS and SSH.  In previous academic years, we've found the HTTPS protocol to be most stable on our lab machines, but at present we expect both protocols to work well for our students on the VM you are asked to use for coursework, or from your own machine directly, in Eclipse or with other IDEs.
+
+If you have set up a PGP key for the machine you are using and have uploaded it to your GitLab account, and want to use the SSH protocol for this coursework, just copy and paste the SSH URI for your repository into the `Repository URI` field in place of the HTTPS URI.  Note that you *must* also tick the checkbox labelled `Accept and store this key, and continue connecting?` for the SSH connection to work.
+
+Information about GitLab SSH setup within the Department, including how to create and register a PGP key with our GitLab server, can be found on the Department wiki pages:
+
+[wiki.cs.manchester.ac.uk/index.php/Gitlab/Git_Setup]([https://wiki.cs.manchester.ac.uk/index.php/Gitlab/Git_Setup])
+:::
+
+After you have entered correct login details, Eclipse will fetch some information about the remote repository.  It will then ask you which branches you might want to work with in the cloned repository.  In fact, all branches will be included in the clone regardless of what you select here.  But Eclipse will create local versions of the branches you select (so-called `remote tracking branches`), in addition to the branches already present in the remote.
+
+There is only one branch in this repository (the `master` branch) and that is the one we will be working with.  So ensure that that branch is selected, as in figure \@ref(fig:selectLocalBranchesForClone-fig), and click `Next`.
+
+
+```{r selectLocalBranchesForClone-fig, echo = FALSE, fig.align = "center", out.width = "80%", fig.cap = "Selecting a branch"}
+knitr::include_graphics("images/selectLocalBranchesForClone.png")
+```

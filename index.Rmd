@@ -157,13 +157,20 @@ So now that we've dispensed with the formalities, you can start using this labor
 
 (ref:commit-were-using) `f30e098`  
 
+(ref:repoURI) [gitlab.cs.man.ac.uk/COMP23311_2020/sliding_puzzle_your-username.git](https://gitlab.cs.man.ac.uk/COMP23311_2021/sliding_puzzle-your-username.git)
 
 (ref:coursecode) COMP23311  
 
 (ref:totalmark) X  
+<!-- todo update hanbook urls e.g. UGHandbook21:Academic_Malpractice to UGHandbook22:Academic_Malpractice etc-->
+
 
 (ref:percentage) Y  
 
 (ref:deadline) Z  
+
+(ref:cautionbox) ⚠️ **Caution** ⚠️  
+
+(ref:commentbox) **`#Comment`**
 
 (ref:anotherref) here

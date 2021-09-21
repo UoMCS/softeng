@@ -55,6 +55,8 @@ fig:teamMatesLocalCommitGraphBeforeFetchNoHistory-fig
 fig:fetchSucceededNoHistory-fig
 fig:teamMatesLocalCommitGraphAfterFetchNoHistory-fig
 fig:teamMatesLocalCommitGraphAfterFFMergeNoHistory-fig
+tab:marktable
+fig:selectLocalBranchesForClone-fig
 fig:localCommitGraphBeforeRejectedPushNoHistoryGraphOnly-fig
 fig:commitGraphInGitLabAfterPushNoHistoryGraphOnly-fig
 fig:pushRejectedNoHistory-fig
@@ -270,6 +272,14 @@ gitting
 introcw1
 about
 key
+markingscheme
+prov
+late
+plagiarism
+help
+instructions
+starteclipse
+clone
 conflicting
 dealing
 working

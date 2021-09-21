@@ -127,11 +127,153 @@
 <h3>
 <span class="header-section-number">15.2.1</span> Key Information<a class="anchor" aria-label="anchor" href="#key"><i class="fas fa-link"></i></a>
 </h3>
-<p>The exercise will be marked out of X, and will count towards Y percent of your total mark for the course unit.</p>
+<p>The exercise will be marked out of (ref:totalmark), and will count towards Y percent of your total mark for the course unit.</p>
 <p>The deadline for the exercise is: Z</p>
 <p>You’ll submit your work through your own private GitLab repository. This has been created for you, and should be visible in your personal project list through the GitLab web interface at</p>
 <div class="rmdnote">
 <p><a href="https://gitlab.cs.man.ac.uk">gitlab.cs.man.ac.uk</a></p>
+</div>
+<p>At the deadline, we’ll make a clone of your repository and run the automated marking code. You just have to make sure you have pushed your Git branches and commits to your GitLab repository by then, and make a comment in your issue tracker to let us know the work is ready to mark. There are no additional submission steps.</p>
+</div>
+<div id="markingscheme" class="section level3" number="15.2.2">
+<h3>
+<span class="header-section-number">15.2.2</span> Marking Scheme<a class="anchor" aria-label="anchor" href="#markingscheme"><i class="fas fa-link"></i></a>
+</h3>
+<p>This coursework exercise consists of 8 steps. If you complete them all correctly, then you should earn full marks against the marking scheme shown in table <a href="gitting.html#tab:marktable">15.1</a>.</p>
+<div class="inline-table"><table class="table table-sm">
+<caption>
+<span id="tab:marktable">Table 15.1: </span>The Mark scheme for the first piece of individual coursework</caption>
+<colgroup>
+<col width="95%">
+<col width="4%">
+</colgroup>
+<thead><tr class="header">
+<th align="left">Criterion</th>
+<th align="left">Marks</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td align="left">At least one new commit has been made by the student and pushed to the GitLab repository</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">The new commits have the author and committer e-mails set to the student’s University e-mail address</td>
+<td align="left">2</td>
+</tr>
+<tr class="odd">
+<td align="left">A feature branch with the correct name has been created and pushed to GitLab</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">The feature branch appears to have been merged with the development branch</td>
+<td align="left">2</td>
+</tr>
+<tr class="odd">
+<td align="left">The tests all pass on the development branch</td>
+<td align="left">2</td>
+</tr>
+<tr class="even">
+<td align="left">The tests all pass on the feature branch</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">The issue has been closed if the bug fix has been merged into the development branch and the tests all pass, and has been left open otherwise</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Total</strong></td>
+<td align="left"><strong>10</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>Note that we can only mark work that is present in your GitLab repository, while the earlier steps involve doing work in your local Git repository. We won’t be able to see that work until you get to the final step, and push your commits and branches to your GitLab repository. If you reach the deadline with some of the steps incomplete, and want us to mark what work you have done, you’ll need to jump forward to step 7 and work through as much of it as you can before the deadline to allow this.</p>
+</div>
+<div id="prov" class="section level3" number="15.2.3">
+<h3>
+<span class="header-section-number">15.2.3</span> Pre-Deadline Feedback<a class="anchor" aria-label="anchor" href="#prov"><i class="fas fa-link"></i></a>
+</h3>
+<p>To give you a chance to see how well you have understood and applied the principles underlying this coursework exercise, we will run the marking code 1 week in advance of the deadline, to generate provisional marks and feedback on the work completed by that time. The feedback and a provisional mark will appear on the GitLab issue tracker for the coursework repository.</p>
+<p>The provisional marking will take place after <strong>Tuesday 28th September 2021, after 6.00pm</strong></p>
+<p>You will then have 3 days to make corrections before the final marking process takes place, shortly after the coursework deadline on the Friday.</p>
+<p>You don’t have to do any specific to request this provisional marking. We will mark all the repositories at this time, and provide whatever feedback we can based on whatever work you have done at that point.</p>
+</div>
+<div id="late" class="section level3" number="15.2.4">
+<h3>
+<span class="header-section-number">15.2.4</span> Late Submissions<a class="anchor" aria-label="anchor" href="#late"><i class="fas fa-link"></i></a>
+</h3>
+<p>This coursework uses the University’s standard policy on marking work that has been submitted late.</p>
+<p>A penalty of 1 mark will be applied for each 24 hour period following the deadline that the work is late, up a total of 10 such periods. Note that for the purposes of this calculation, weekends and evenings are counted. This means that, since this coursework’s deadline is on a Friday, a submission on the following Monday morning will receive a penalty of 3 marks.</p>
+<p>These penalties will be applied until all marks earned by the student have been removed. Marks will not go below zero.</p>
+<p>Work which is submitted more than 10 calendar days after the deadline will be considered a non-submission and will be given an automatic mark of 0. At the discretion of the course leader and the Department, we may be able to give the mark the work would have achieved if not submitted late, along with feedback explaining it. Contact the course team leader if you want to discuss the possibility of doing this.</p>
+<p>For this coursework, the submission time will be the date and time at which you place the comment saying the work is ready for marking on the issue for the exercise. All work that has been pushed to GitLab by that date will be marked. Any commits or references that are not pushed to GitLab until after marking is requested will not be considered during marking, even if they were created or modified in your local Git repository before this.</p>
+</div>
+<div id="plagiarism" class="section level3" number="15.2.5">
+<h3>
+<span class="header-section-number">15.2.5</span> Plagiarism<a class="anchor" aria-label="anchor" href="#plagiarism"><i class="fas fa-link"></i></a>
+</h3>
+<p>This coursework is subject to the University’s standard policy on plagiarism:</p>
+<div class="rmdnote">
+<p><a href="https://wiki.cs.manchester.ac.uk/index.php/UGHandbook21:Academic_Malpractice">wiki.cs.manchester.ac.uk/index.php/UGHandbook21:Academic_Malpractice</a></p>
+</div>
+</div>
+<div id="help" class="section level3" number="15.2.6">
+<h3>
+<span class="header-section-number">15.2.6</span> How to Get Help<a class="anchor" aria-label="anchor" href="#help"><i class="fas fa-link"></i></a>
+</h3>
+<p>Help with this exercise will be available in two clinic sessions, one in week 0 and one in week 1. A member of academic staff will be available, online, for individual consultations on this exercise, on an as needed basis. If you do not have problems with the coursework, you do not need to attend.</p>
+<p>See Blackboard <a href="https://online.manchester.ac.uk">online.manchester.ac.uk</a> for details of how to access these sessions, and when they will run:</p>
+<p>Help is also available through the Blackboard discussion forum, or by e-mail to Dr Anas Elhag: <code>anas.elhag@manchester.ac.uk</code>. We aim to respond within 3 days of receiving each query.</p>
+</div>
+</div>
+<div id="instructions" class="section level2" number="15.3">
+<h2>
+<span class="header-section-number">15.3</span> The Coursework Instructions<a class="anchor" aria-label="anchor" href="#instructions"><i class="fas fa-link"></i></a>
+</h2>
+<div id="starteclipse" class="section level3" number="15.3.1">
+<h3>
+<span class="header-section-number">15.3.1</span> Step 1: Start Eclipse<a class="anchor" aria-label="anchor" href="#starteclipse"><i class="fas fa-link"></i></a>
+</h3>
+<p>First we need to run Eclipse within the VM (or the IDE you have chosen to use for this activity, if doing the exercise directly on your own machine).</p>
+<p>Run the VM and start <code>2020-03</code>. From the command line, this is done by typing:</p>
+<div class="sourceCode" id="cb47"><pre class="sourceCode md"><code class="sourceCode markdown"><span id="cb47-1"><a href="gitting.html#cb47-1" aria-hidden="true" tabindex="-1"></a>/opt/eclipse-2020-03/eclipse</span></code></pre></div>
+<p>You can also find it in the <code>Applications</code> menu, under <code>Programming</code>.</p>
+<p>If it is the first time you have run this version of Eclipse, you will be prompted to create or select a <em>workspace</em>. This is just a folder where your Eclipse projects will live. Choose the default offered, or use the file browser to choose a location that you prefer and make a folder with an appropriate name (such as <code>EclipseProjects</code>). Or you can make a workspace that will contain only projects relating to COMP23311, such as <code>COMP23311Workspace</code></p>
+<p>Once you have told Eclipse which workspace you want to use, Eclipse will load.</p>
+<p>If this is the first time you have accessed this workspace, then you will see a Welcome view, giving links to tutorials on using Eclipse. Click the cross on the tab to remove it. You should now see the basic Eclipse window, with default code views opened and ready to be used.</p>
+</div>
+<div id="clone" class="section level3" number="15.3.2">
+<h3>
+<span class="header-section-number">15.3.2</span> Step 2: Clone a GitLab Repository in Eclipse<a class="anchor" aria-label="anchor" href="#clone"><i class="fas fa-link"></i></a>
+</h3>
+<p>The next step in the activity is to ask Eclipse to clone the required GitLab repository, and import its contents as a Java project.</p>
+<p>Choose the <code>File</code> &gt; <code>Import</code> menu option.</p>
+<p>In the wizard that appears, select the <code>Git</code> &gt; <code>Projects from Git</code> option and click <code>Next</code>.</p>
+<p>There are two ways to import a project from Git. You can import from a local Git repository or clone a remote repository. We’re going to work with a project that is currently stored remotely in GitLab, so select <code>Clone URI</code> from the list of options and click <code>Next</code>.</p>
+<p>In the form that appears, you need enter only the URI of the remote repository that you want Eclipse to clone. Eclipse will fill in the other fields, using the components of the URI. For this activity, you should clone the repository with the URI:</p>
+<div class="rmdnote">
+<p><a href="https://gitlab.cs.man.ac.uk/COMP23311_2021/sliding_puzzle-your-username.git">gitlab.cs.man.ac.uk/COMP23311_2020/sliding_puzzle_your-username.git</a></p>
+</div>
+<p>where <code>&lt;your-username&gt;</code> is replaced by your University username. This is a personal repository that has been set up just for use by yourself, for this activity. No other students can see its contents (though the course team and GTAs can see it).</p>
+<div class="rmdcaution">
+<p>⚠️ <strong>Caution</strong> ⚠️
+Note that the URI you need to give when cloning a remote Git project is <em>not</em> the same as the URL of the GitLab page describing the project, even when using the HTTPS protocol. Make sure you have the right URI by checking against the one given on your project’s main GitLab page. It should end in the string <code>.git</code>.</p>
+</div>
+<!--%%% TODO: Add screen shot?  Is it needed?-->
+<p>Once the URI is entered, Eclipse will fill the other fields for you. (If this doesn’t happen, it’s likely that something went wrong when copying the link text from this pdf. Try copying it directly from the GitLab page for the project, instead. If you are still getting an error, get help in one of the scheduled clinic sessions.)</p>
+<p>Click <code>Next</code>. Eclipse will connect to GitLab to authenticate your connection. Since we are using the HTTPS access protocol here, you will need to enter your University username and password at this point. (You will also be given an option to save the details, so you don’t need to enter them again.)</p>
+<div class="rmdnote">
+<p><strong>An Aside on Protocols:</strong> GitLab can authenticate through two protocols, HTTPS and SSH. In previous academic years, we’ve found the HTTPS protocol to be most stable on our lab machines, but at present we expect both protocols to work well for our students on the VM you are asked to use for coursework, or from your own machine directly, in Eclipse or with other IDEs.</p>
+<p>If you have set up a PGP key for the machine you are using and have uploaded it to your GitLab account, and want to use the SSH protocol for this coursework, just copy and paste the SSH URI for your repository into the <code>Repository URI</code> field in place of the HTTPS URI. Note that you <em>must</em> also tick the checkbox labelled <code>Accept and store this key, and continue connecting?</code> for the SSH connection to work.</p>
+<p>Information about GitLab SSH setup within the Department, including how to create and register a PGP key with our GitLab server, can be found on the Department wiki pages:</p>
+<p><a href="%5Bhttps://wiki.cs.manchester.ac.uk/index.php/Gitlab/Git_Setup%5D">wiki.cs.manchester.ac.uk/index.php/Gitlab/Git_Setup</a></p>
+</div>
+<p>After you have entered correct login details, Eclipse will fetch some information about the remote repository. It will then ask you which branches you might want to work with in the cloned repository. In fact, all branches will be included in the clone regardless of what you select here. But Eclipse will create local versions of the branches you select (so-called <code>remote tracking branches</code>), in addition to the branches already present in the remote.</p>
+<p>There is only one branch in this repository (the <code>master</code> branch) and that is the one we will be working with. So ensure that that branch is selected, as in figure <a href="gitting.html#fig:selectLocalBranchesForClone-fig">15.1</a>, and click <code>Next</code>.</p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:selectLocalBranchesForClone-fig"></span>
+<img src="images/selectLocalBranchesForClone.png" alt="Selecting a branch" width="80%"><p class="caption">
+Figure 15.1: Selecting a branch
+</p>
 </div>
 
 </div>
@@ -146,7 +288,20 @@
 <li><a class="nav-link" href="#gitting"><span class="header-section-number">15</span> Individual Coursework 1</a></li>
 <li><a class="nav-link" href="#introcw1"><span class="header-section-number">15.1</span> Introduction</a></li>
 <li>
-<a class="nav-link" href="#about"><span class="header-section-number">15.2</span> About the Coursework</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#key"><span class="header-section-number">15.2.1</span> Key Information</a></li></ul>
+<a class="nav-link" href="#about"><span class="header-section-number">15.2</span> About the Coursework</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#key"><span class="header-section-number">15.2.1</span> Key Information</a></li>
+<li><a class="nav-link" href="#markingscheme"><span class="header-section-number">15.2.2</span> Marking Scheme</a></li>
+<li><a class="nav-link" href="#prov"><span class="header-section-number">15.2.3</span> Pre-Deadline Feedback</a></li>
+<li><a class="nav-link" href="#late"><span class="header-section-number">15.2.4</span> Late Submissions</a></li>
+<li><a class="nav-link" href="#plagiarism"><span class="header-section-number">15.2.5</span> Plagiarism</a></li>
+<li><a class="nav-link" href="#help"><span class="header-section-number">15.2.6</span> How to Get Help</a></li>
+</ul>
+</li>
+<li>
+<a class="nav-link" href="#instructions"><span class="header-section-number">15.3</span> The Coursework Instructions</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#starteclipse"><span class="header-section-number">15.3.1</span> Step 1: Start Eclipse</a></li>
+<li><a class="nav-link" href="#clone"><span class="header-section-number">15.3.2</span> Step 2: Clone a GitLab Repository in Eclipse</a></li>
+</ul>
 </li>
 </ul>
 
