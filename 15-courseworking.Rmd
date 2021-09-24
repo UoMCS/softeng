@@ -1,5 +1,12 @@
 # (PART) Coursework {-}
 
+<!-- Configuration for the exercise -->
+(ref:totalmark) 10
+(ref:percentage) 10
+(ref:deadline) 6.00pm, Friday 1st October 2021
+(ref:numsteps) 9
+(ref:ideversion) Eclipse 2020-03
+(ref:repoURI) https://gitlab.cs.man.ac.uk/comp23311_2021/sliding_puzzle_<your-username>
 
 # Individual Coursework 1 {#gitting}
 
@@ -15,15 +22,15 @@
 
 The first piece of coursework for (ref:coursecode) is an individual exercise designed to help you warm up your Git and Java skills after the long summer holidays, so that you are ready to collaborate with your team on the team-based coursework.  It takes you through the simple Git workflow we'll be using in the team coursework later in the semester and introduces some basic Java testing and debugging concepts.  You'll carry out the following steps:
 
-* Clone a GitLab repository
-* Compile the code and run it
-* Test the code using an automated test suite to reveal a bug
-* Make a new branch in the repository
-* Fix the bug and see the tests pass
-* Commit the fix to the repository
-* Merge your branch with the development branch
-* Push your changes to your remote repository
-* Update the issue tracker to record the project status
+* Clone a GitLab repository.
+* Compile the code and run it.
+* Test the code using an automated test suite to reveal a bug.
+* Make a new branch in the repository.
+* Fix the bug and see the tests pass.
+* Commit the fix to the repository.
+* Merge your branch with the development branch.
+* Push your changes to your remote repository.
+* Update the issue tracker to record the project status.
 
 Detailed instructions for carrying these tasks out from within the Eclipse IDE are given in this document.  We focus on Eclipse as that is the IDE used for the team coursework.  You are free to use any IDE that you wish to carry out this individual coursework exercise, but we can currently only provide instructions and technical support for Eclipse.
 
@@ -46,7 +53,7 @@ The second index contains descriptions of more general symptoms:
 
 Use this index when something is going wrong but you do not have a specific error message to help you track down the cause of the problem.  
 
-Please report any problems you encounter that are not covered in the troubleshooter as soon as possible, including full details of specific error messages and screenshots where appropriate. You can report problems on the course unit forum, or by e-mail the course leader. We'll do our best to help!  
+Please report any problems you encounter that are not covered in the troubleshooter, giving details of specific error messages and screenshots where appropriate. You can report problems on the course unit forum (Piazza) or through the [Live Help Queue](https://gitlab.cs.man.ac.uk/comp23311_2021/COMP23311-Live-Help-Queue) in Team Study Sessions. We'll do our best to help!  
 
 :::
 
@@ -58,7 +65,7 @@ The exercise will be marked out of (ref:totalmark), and will count towards (ref:
 
 The deadline for the exercise is: (ref:deadline)
 
-You'll submit your work through your own private GitLab repository.  This has been created for you, and should be visible in your personal project list through the GitLab web interface at
+You'll submit your work through your own private GitLab repository.  This is created for you, and should be visible in your personal project list through the GitLab web interface at
 
 ::: {.rmdnote}
 [gitlab.cs.man.ac.uk](https://gitlab.cs.man.ac.uk)
@@ -67,9 +74,26 @@ You'll submit your work through your own private GitLab repository.  This has be
 At the deadline, we'll make a clone of your repository and run the automated marking code.  You just have to make sure you have pushed your Git branches and commits to your GitLab repository by then, and make a comment in your issue tracker to let us know the work is ready to mark.  There are no additional submission steps.
 
 
+### Submission Procedure {#submission}
+
+To submit your work for marking, you must add a comment to the coursework issue in the issue tracker of your project, saying:
+
+::: {.rmdnote}
+Project ready for marking.
+:::
+
+The time of submission will be the time at which this comment was added to the repository.
+
+If this exact phrase is not present as a comment on the coursework issue at the deadline, we will assume that you were not ready to submit the work and you'll get a mark of 0.
+
+You may delete and re-add the comment as many times as you like up until the formal deadline for the coursework.  Once your work has been marked, we will ignore any further changes to your issue tracker; it will not be possible to request marking for a second time once marking for your project is complete and the feedback has been uploaded to your issue tracker, even if the deadline has not yet passed.
+
+Any changes to your repository made after the final eligible marking request comment will be ignored by the marking process.  So make sure you have definitely finished all your work, before you add the comment, especially if you are submitting after the deadline.
+
+
 ### Marking Scheme {#markingscheme}
 
-This coursework exercise consists of 8 steps.  If you complete them all correctly, then you should earn full marks against the marking scheme shown in table \@ref(tab:marktable).
+This coursework exercise consists of (ref:numsteps) steps.  If you complete them all correctly, then you should earn full marks against the marking scheme shown in table \@ref(tab:marktable).
 
 
 ```{r marktable, echo = FALSE}
@@ -92,13 +116,14 @@ Note that we can only mark work that is present in your GitLab repository, while
 
 ### Pre-Deadline Feedback {#prov}
 
-To give you a chance to see how well you have understood and applied the principles underlying this coursework exercise, we will run the marking code 1 week in advance of the deadline, to generate provisional marks and feedback on the work completed by that time.  The feedback and a provisional mark will appear on the GitLab issue tracker for the coursework repository.
+To give you a chance to see how well you have understood and applied the principles underlying this coursework exercise, we will run the marking code a little ahead of the deadline, to generate provisional marks and feedback on the work completed by that time.  The feedback and a provisional mark will appear on the GitLab issue tracker for the coursework repository.
 
-The provisional marking will take place after **Tuesday 28th September 2021, after 6.00pm**
+The provisional marking will take place on **Tuesday 28th September 2021, after 6.00pm**
 
 You will then have 3 days to make corrections before the final marking process takes place, shortly after the coursework deadline on the Friday.
 
-You don't have to do any specific to request this provisional marking.  We will mark all the repositories at this time, and provide whatever feedback we can based on whatever work you have done at that point.
+You don't have to do anything specific to request this provisional marking.  We will mark all the repositories at this time, and provide what feedback we can based on whatever work you have done at that point.
+
 
 ### Late Submissions {#late}
 
@@ -112,37 +137,38 @@ Work which is submitted more than 10 calendar days after the deadline will be co
 
 For this coursework, the submission time will be the date and time at which you place the comment saying the work is ready for marking on the issue for the exercise.  All work that has been pushed to GitLab by that date will be marked.  Any commits or references that are not pushed to GitLab until after marking is requested will not be considered during marking, even if they were created or modified in your local Git repository before this.
 
+Once the initial deadline has passed, we'll only be running the automated marking software every couple of weeks.  So, there may be a delay in receiving your mark and feedback for a late submission.
+
 
 ### Plagiarism {#plagiarism}
 
 This coursework is subject to the University's standard policy on plagiarism:
 
-
 ::: {.rmdnote}
 [wiki.cs.manchester.ac.uk/index.php/UGHandbook21:Academic_Malpractice](https://wiki.cs.manchester.ac.uk/index.php/UGHandbook21:Academic_Malpractice)
 :::
 
+
 ### How to Get Help {#help}
 
-Help with this exercise will be available in two clinic sessions, one in week 0 and one in week 1.  A member of academic staff will be available, online, for individual consultations on this exercise, on an as needed basis.  If you do not have problems with the coursework, you do not need to attend.
+Help with this exercise will be available in the two team study sessions in the week before the deadline for submission.  Team study sessions are scheduled on Tuesdays at 10.00am and on Thursdays at 11.00am.  Since the team coursework has not yet started, these sessions are run on a clinic basis: you only need to turn up if you need help with the individual coursework.  GTAs and academic staff will be available to provide help and advice.
 
-See Blackboard [online.manchester.ac.uk](https://online.manchester.ac.uk) for details of how to access these sessions, and when they will run:
+See Blackboard [online.manchester.ac.uk](https://online.manchester.ac.uk) for details of how to access these sessions if you are joining them online.
 
-Help is also available through the Blackboard discussion forum, or by e-mail to Dr Anas Elhag: `anas.elhag@manchester.ac.uk`. We aim to respond within 3 days of receiving each query.
+Help is also available through the Piazza discussion forum.
 
 
 ## The Coursework Instructions {#instructions}
 
 ### Step One: Start Eclipse {#starteclipse}
 
-First we need to run Eclipse within the VM (or the IDE you have chosen to use for this activity, if doing the exercise directly on your own machine).
+First we need to run Eclipse (or the IDE you have chosen to use for this activity, if using a different one).  If working from home, you should use the VM provided by the department.
 
-Run the VM and start (ref:ideversion).  From the command line, this is done by typing:
+Start (ref:ideversion).  From the command line, this is done by typing:
 
 ````md
 /opt/eclipse-2020-03/eclipse
 ````
-
 
 You can also find it in the `Applications` menu, under `Programming`.
 
