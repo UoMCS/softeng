@@ -1,3 +1,32 @@
 # Individual Coursework 2 {#conflicting}
 
 Exercise 2: conflicts in git
+
+## Test-First Development and Managing Conflicts {#TFD}
+
+### Introduction {#introt}
+
+This second individual coursework exercise for (ref:coursecode) is designed to help you develop two new skills that professional software engineers need, and that will be essential for the remaining team coursework:
+
+*  Test-first development, and
+* Handling conflicts during integration of separate lines of development with Git.
+
+Test-first development (TFD) is an approach to developing software in which we first write the test cases describing the functionality we need to implement, and then write the production code that will cause them to change from failing tests to passing tests.  The tests provide the specification for what needs to be built.  You got a taste of TFD in writing the tests to make your bugs visible in the code base in the first team coursework exercise, but you'll be required to apply it more extensively in the second team coursework exercise.  This individual coursework exercise gives you a chance to practice the basic skills in private, before you have to use them in front of your team and mentor.  It does this by giving you a set of test cases describing the behaviour needed of a new feature for the Sliding Puzzle game you worked on in the first individual coursework exercise.  Your task is to make these failing tests pass, by implementing the feature as the tests (and the issue text) describe it.
+
+When you've implemented the feature, you'll need to integrate it with your \menu{master} branch.  But, another member of the Sliding Puzzle team has also made commits on the master branch since work on your feature began, implementing another feature.  You'll need to merge the two lines of development together.  Since both features touch much the same parts of the code, a number of conflicts will be discovered when you try to merge.  Your task will  be to remove the conflicts from the code base, so that the merge can go ahead.  You'll finish by creating a commit that contains both new features, co-existing together, and passing all the tests.
+
+You'll practice these skills by carrying out the following steps:
+
+1. Clone the coursework repository and import it into your IDE.
+1. Read the tests describing the new feature you must implement, on the feature branch provided.
+1. Make changes to the production code, to implement the feature and cause the tests to pass.
+1. Commit the code to the feature branch.
+<!--%  \item Synchronise your local repository to bring in changes made by your team mate.-->
+1. Merge your branch with the development branch.
+1. Deal with the conflicts that the attempt to merge makes visible, and complete the merge.
+1. Push the completed merge to your remote repository for marking.
+1. Update the issue tracker to record the project status, and request marking.
+
+Instructions for carrying these tasks out from within the Eclipse IDE are given in this document.  We focus on Eclipse as that is the IDE used for the team coursework.  You are free to use any IDE that you wish to carry out this individual coursework exercise, but we can currently only provide instructions and technical support for Eclipse, run on the VM provided by the Department.
+
+Once the exercise is completed, you should be ready to use the same skills on your team's repository in the remaining team coursework exercises.

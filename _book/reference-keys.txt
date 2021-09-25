@@ -46,7 +46,9 @@ fig:petsubclasses2-fig
 fig:petstrategy-fig
 fig:habitat-fig
 fig:composite-fig
+fig:xkcd-risk-fig
 fig:stendhalgame-fig
+fig:mentoring-fig
 fig:fileStagedForCommit-fig
 fig:localCommitGraphBeforePushNoHistory-fig
 fig:commitGraphInGitLabBeforePushNoHistory-fig
@@ -276,8 +278,11 @@ introduction-2
 replicatingissues
 inspiration
 mentoring
-your-mentors
-getting-the-most-of-your-mentor
+about-the-department-of-computer-science
+about-the-course-unit-you-will-support
+about-the-mentoring-scheme
+meeting-agenda
+ourmentor
 syncing
 syncintro
 locommit
@@ -306,6 +311,8 @@ pushingchange
 issuetracker
 gameover
 conflicting
+TFD
+introt
 dealing
 working
 guiding

@@ -1,10 +1,10 @@
 # (PART) Weekly Workshops {-}
 
-# Building and Testing Systems {#building}
+# Building and testing {#building}
 
 ## Introduction {#Introduction}
 
-In this workshop, we will be building and testing Marauroa. We will look at some essential processes for working on an existing team-developed software system. We'll be assuming that, after this workshop, you are capable of carrying out the following tasks for yourself, without needing much guidance:
+In this workshop, we will be building and testing a system called Marauroa. We will look at some essential processes for working on an existing team-developed software system. We'll be assuming that, after this workshop, you are capable of carrying out the following tasks for yourself, without needing much guidance:
 
 
 * Acquire the right version of the source code on which to work.

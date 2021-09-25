@@ -39,11 +39,11 @@ Events in the week starting 20th September:
 
 Events in the week starting 27th September:
 
-1. **Team Study Tuesday**: Work on team coursework 1 (individually), see section \@ref(gitting)
-1. **One off lecture** to introduce the course unit at 9am on Wednesday 29th September, check your timetable
+1. **Team Study Tuesday**: Work on individual coursework 1 described in chapter \@ref(gitting)
+1. **One off lecture** to introduce the course unit at 9am on Wednesday 29th September, Simon Engineering building check [timetables.manchester.ac.uk](https://timetables.manchester.ac.uk/)
 1. **Workshop**: Automated build and test with Duncan Hull
-1. **Team Study Thursday** Work on team coursework 1 (individually), see section \@ref(gitting)
-1. **Coursework deadlines**: Deadline for individual coursework 1, see chapter \@ref(gitting)
+1. **Team Study Thursday** Work on individual coursework 1 described in chapter \@ref(gitting)
+1. **Coursework deadlines**: Individual individual coursework 1 can be pre-marked (automatically) if you submit by **6pm Tuesday 28th September** and finally by **6pm on Friday 1st October**
 
 
 ## Reading {#week2}
@@ -143,7 +143,7 @@ Events in the week starting 13th December:
 
 1. **Team Study Tuesday**:
 1. **Workshop**: Open source challenge
-1. **Team Study Thursday** 
+1. **Team Study Thursday**
 1. **Coursework deadlines**:
 
 

@@ -1,5 +1,12 @@
 # Risk management  {#risking}
 
-Content to be added here
+```{r xkcd-risk-fig, echo = FALSE, fig.align = "center", out.width = "75%", fig.cap = "(ref:captionxkcdrisk)"}
+knitr::include_graphics("images/covid_risk_chart.png")
+```
+
+(ref:captionxkcdrisk) Just like life duringa global pandemic, software engineering is inherently risky [COVID Risk Chart (xkcd.com/2333)](https://xkcd.com/2333/) by [Randall Munroe](https://en.wikipedia.org/wiki/Randall_Munroe) is licensed under [CC BY-NC 2.5](https://creativecommons.org/licenses/by-nc/2.5/)
+
 
 ## Course content
+
+See workshop

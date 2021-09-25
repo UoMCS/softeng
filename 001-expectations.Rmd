@@ -31,7 +31,7 @@ Team study sessions are for you to get together as a team to work alongside each
 Each workshop has a specific theme that we need you to focus on. This means **we won't discuss coursework with you during the workshops**, otherwise we risk not getting through workshop material.
 
 #### Physical vs online sessions {#online}
-For the live (physical) sessions you'll need to be in the appropriate lab in the Kilburn building. For online sessions (e.g. marking and mentoring) it is especially important that you turn up on time by being at a computer with access to:
+For the live (physical) sessions you'll need to be in the appropriate lab in the Kilburn building. For online sessions (e.g. some marking and mentoring) it is especially important that you turn up on time by being at a computer with access to:
 
 * A working pair of headphones
 * A working microphone that you can mute if you're somewhere noisy

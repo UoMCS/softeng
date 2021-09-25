@@ -121,12 +121,22 @@ Most of the guidebook is generated from [RMarkdown](https://en.wikipedia.org/wik
 ## Acknowledgements {#teambury}
 This course has been designed, built and written by [Suzanne Embury](http://www.cs.man.ac.uk/~embury/) at the University of Manchester with support from a team of academics, industry club members, support staff, graduate teaching assistants (GTAs) and summer students including (in alphabetical order):
 
-Muideen Ajagbe, Mohammed Alhamadi, Aitor Apaolaza, Mercedes Argüello Casteleiro, Gerard Capes, Thomas Carroll, Martina Catizone, Sarah Clinch, Peter Crowther, Anas Elhag, Sukru Eraslan, Gareth Henshall, Duncan Hull, Nikolaos Konstantinou, Kamilla Kopec-Harding, Kaspar Matas, Chris Page, Dario Panada, Liam Pringle, Julio Cesar Cortes Rios, Sara Padilla Romero, Viktor Schlegel, Stefan Strat, Jake Saunders, Federico Tavella, Mokanarangan Thayaparan, David Toluhi, Karl Tye and Markel Vigo.
+Muideen Ajagbe, Mohammed Alhamadi, Aitor Apaolaza, Gerard Capes,  Martina Catizone, Sarah Clinch, Peter Crowther,  Sukru Eraslan, Gareth Henshall, Duncan Hull, Caroline Jay, Nikolaos Konstantinou, Kamilla Kopec-Harding, Kaspar Matas, Chris Page, Dario Panada, Steve Pettifer, Liam Pringle, Julio Cesar Cortes Rios, Sara Padilla Romero, Viktor Schlegel, Stefan Strat, Jake Saunders, Federico Tavella, Mokanarangan Thayaparan, David Toluhi, Karl Tye and Markel Vigo.
 
-We'd also like to thank students who have done the course since its first iteration.
+Academic staff on the course for 2021/22 include:
+
+* [Mercedes Argüello Casteleiro](https://scholar.google.com/citations?user=ci1ifBoAAAAJ&hl=en)
+* [Thomas Carroll](https://cgi.csc.liv.ac.uk/~tomc/)
+* [Suzanne Embury](http://www.cs.man.ac.uk/~embury/)
+* [Duncan Hull](http://www.cs.man.ac.uk/~hulld/)
+* [Sandra Sampaio](https://www.research.manchester.ac.uk/portal/s.sampaio.html)
+* [Anas Elhag](https://scholar.google.co.uk/citations?user=eY8KtX4AAAAJ&hl=en)
+
+We'd also like to thank all the 1,500+ students who have done the course since its first iteration in 2016 and given us feedback on how to improve.
+
+<!--2016, two cohorts of 250 = 500 plus 250 cohorts in 2017, 2018, 2019 and 2020-->
 
 Thanks also to our [industrial mentors](https://www.cs.manchester.ac.uk/connect/business-engagement/industrial-mentoring/), the Institute of Coding (IoC) [instituteofcoding.org](https://instituteofcoding.org/) and the [Office for Students](https://www.officeforstudents.org.uk/) (OFS) for their ongoing support.
-
 
 ## Licensing {#license}
 The *text* of this lab manual is published under the [Creative Commons Attribution-NonCommercial-NoDerivs 3.0 License](https://creativecommons.org/licenses/by-nc-nd/3.0/) (CC-BY-NC-ND) license see figure \@ref(fig:cc-by-nc-nd-fig)
