@@ -1,13 +1,5 @@
 # (PART) Coursework {-}
 
-<!-- Configuration for the exercise -->
-(ref:totalmark) 10
-(ref:percentage) 10
-(ref:deadline) 6.00pm, Friday 1st October 2021
-(ref:numsteps) 9
-(ref:ideversion) Eclipse 2020-03
-(ref:repoURI) https://gitlab.cs.man.ac.uk/comp23311_2021/sliding_puzzle_<your-username>
-
 # Individual Coursework 1 {#gitting}
 
 <!-- Changes for 2021/2022 -->
@@ -63,7 +55,7 @@ Please report any problems you encounter that are not covered in the troubleshoo
 
 The exercise will be marked out of (ref:totalmark), and will count towards (ref:percentage) percent of your total mark for the course unit.
 
-The deadline for the exercise is: (ref:deadline)
+The deadline for the exercise is (ref:deadline)
 
 You'll submit your work through your own private GitLab repository.  This is created for you, and should be visible in your personal project list through the GitLab web interface at
 
@@ -436,7 +428,7 @@ Press the “Add All Branches Spec button in the middle of this dialogue.  This 
 Before it asks Git to push, Eclipse will give you a summary of what the push will do and ask you to confirm that you want to go ahead, looking something like the dialogue shown in figure \@ref(fig:confirmationOfPushToRemote-fig)
 
 <!-- TODO: update this figure to show push of the commit, not the merge -->
- 
+
 ```{r confirmationOfPushToRemote-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap = "Confirmation of push to remote dialog"}
 knitr::include_graphics("images/confirmationOfPushToRemote.png")
 ```
@@ -444,11 +436,11 @@ knitr::include_graphics("images/confirmationOfPushToRemote.png")
 Press `OK` to initiate the push.
 
 When the push is successfully completed, look at the contents of the History View.  Can you see what has changed, as a result of the push?
-    
+
 You should also look at the commit graph in your remote repository.  How has that changed since we looked at it before the push operation?
 
 <!-- TODO: add screen shots for these two commit graph views?  Or is it useful for students to work it out for themselves? -->
-    
+
 <!--\screen{checkGitLabNetworkAfterPush}-->
 
 ::: {.rmdnote}
@@ -457,7 +449,7 @@ You should also look at the commit graph in your remote repository.  How has tha
 As a rule of thumb, you should only commit working code.  This means: code that compiles and passes the tests.  It is especially embarrassing to push code with compile errors to your team's repository.  Remember to check *before* you push!
 :::
 
-    
+
 ### Step six: Merge your Changes {#mergechanges}
 
 In the Git workflow we use for this exercise, the development branch is called `master`.
@@ -519,7 +511,7 @@ The History View (visible in the above screenshot) shows the new Git network aft
 ### Step seven: Push the Changes to the Remote Repository {#pushingchange}
 
 If the merge looks okay in your History view, and the tests all still pass, we can push the changes to the remote repository.  
-    
+
 As before, we do this by right clicking on the project name, and selecting `Team` > `Push to origin` from the menu that appears.  Again, if you haven't saved your GitLab credentials in Eclipse, you'll need to supply them again for this operation to complete.   
 
 Press `OK` to initiate the push.
@@ -527,13 +519,13 @@ Press `OK` to initiate the push.
 When the push is successfully completed, look at the contents of the History View.  Can you see what has changed, as a result of this second push?
 
 <!--\screen{checkGitLabNetworkAfterPush}-->
-    
+
 If you have merged and pushed correctly, you should see both branches pointing to the same commit on GitLab as shown in figure \@ref(fig:checkGitLabNetworkAfterFeatureBranchIsPushed-fig)
 
 ```{r checkGitLabNetworkAfterFeatureBranchIsPushed-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap = "Screenshot showing check gitlab network after feature branch is pushed"}
 knitr::include_graphics("images/checkGitLabNetworkAfterFeatureBranchIsPushed.png")
 ```
-    
+
 
 ### Step 8: Record the Project Status in the Issue Tracker {#issuetracker}
 
@@ -547,7 +539,7 @@ Project ready for marking.
 ````
 
 This comment will be detected by the automated marking code, and your work will be scheduled for marking at the next automated marking point.  Because of this, it's important that you use this exact text string in your issue comment.  You can delete and re-add the comment at any time before the coursework deadline, if you want to make further changes.  It's also important that you add the comment to the correct issue.  In the past, students have created new issues for this marking-request comment and even, in a few cases, have made dummy commits with this string as the commit message.  None of these actions will be picked up by the automated marking system, so it's important to check that the comment is appearing on the issue we created for you and that all your changes are visible at your remote *before* the deadline.
-    
+
 
 ::: {.rmdcaution}
 (ref:cautionbox)
@@ -555,11 +547,11 @@ It is your responsibility to check that your work has been successfully pushed t
 :::
 
 If you submit your work late for whatever reason, add this comment to your issue to let us know that you are ready for the work to be marked.  Late marking will be rerun every couple of weeks, so you won't receive feedback immediately.
-    
-    
-    
+
+
+
 ### Coursework Complete {#gameover}
 
 This completes the instructions for the first individual coursework exercise for (ref:coursecode). If you managed to complete it in full, then you can be confident that your Git/GitLab set up is as needed on this machine for the workshops and the coursework.  Perhaps even more importantly, you have gone through the basic cycle of steps we'll expect you to follow when carrying out the team coursework for this unit.  If you were unfamiliar with this approach to coding, then it might have felt long-winded and complicated.  But with a little practice, this pattern of work will become easier and more natural.  And, with this experience under your belt, you'll find it much easier to adapt to variants of it, if you join a software engineering team on placement or in employment outside University.
-    
+
 In the next individual coursework, we'll look at a more complicated merge case, when Git can't handle the merge by itself and needs help from you to intervene.

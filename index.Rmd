@@ -171,20 +171,23 @@ So now that we've dispensed with the formalities, you can start using this labor
 
 (ref:coursecode) COMP23311  
 
-(ref:totalmark) X  
 
 
 <!-- todo update hanbook urls e.g. UGHandbook21:Academic_Malpractice to UGHandbook22:Academic_Malpractice etc-->
-
-
-(ref:percentage) Y  
-
-(ref:deadline) Z  
 
 (ref:infobox) ℹ️ **Note** ℹ️   
 
 (ref:cautionbox) ⚠️ **Caution** ⚠️  
 
-(ref:commentbox) **`#Comment`**
+(ref:commentbox) **`#Comment`**  
 
-(ref:anotherref) here
+(ref:anotherref) here  
+
+<!-- Configuration for the exercise -->
+(ref:totalmark) 10  
+
+(ref:percentage) 10  
+
+(ref:deadline) 6.00pm, Friday 1st October 2021  
+
+(ref:numsteps) 9  
