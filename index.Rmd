@@ -191,3 +191,6 @@ So now that we've dispensed with the formalities, you can start using this labor
 (ref:deadline) 6.00pm, Friday 1st October 2021  
 
 (ref:numsteps) 9  
+
+
+(ref:mentors) ARM, Avecto, Barclays, BBC, Blaize, Bloomberg, Booking.com, CDL Software, CodeThink, Code Computer Love, DataCentred, Digital Bridge Ltd, EGN Digital, Facebook, Farm Digital, Goldman Sachs, Google, IBM, Koder.ly, Morgan Stanley, NCC Group, On The Beach, Rental Cars, Sainsburys, Sage Group plc, SteamaCo, THG, ThoughtWorks and Zuhlke.

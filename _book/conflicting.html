@@ -19,11 +19,13 @@
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.10/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.0/transition.js"></script><script src="libs/bs3compat-0.3.0/tabs.js"></script><script src="libs/bs3compat-0.3.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
-<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><!-- Google Tag Manager --><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-KHJ4G9P');</script><!-- End Google Tag Manager --><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><link rel="stylesheet" href="libs/custom/duncan.css">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-GJ4FGSK01L"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GJ4FGSK01L');
+    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><link rel="stylesheet" href="libs/custom/duncan.css">
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -51,7 +53,7 @@
 <li class="book-part">Weekly Workshops</li>
 <li><a class="" href="building.html"><span class="header-section-number">1</span> Building and testing</a></li>
 <li><a class="" href="understanding.html"><span class="header-section-number">2</span> Large systems</a></li>
-<li><a class="" href="debugging.html"><span class="header-section-number">3</span> Debugging a Codebase</a></li>
+<li><a class="" href="debugging.html"><span class="header-section-number">3</span> Debugging</a></li>
 <li><a class="" href="estimating.html"><span class="header-section-number">4</span> Cost estimation</a></li>
 <li><a class="" href="testing.html"><span class="header-section-number">5</span> Test first development</a></li>
 <li><a class="" href="flowing.html"><span class="header-section-number">6</span> Git workflows</a></li>
@@ -63,7 +65,7 @@
 <li class="book-part">Team study materials</li>
 <li><a class="" href="starting.html"><span class="header-section-number">12</span> Starting with Stendhal</a></li>
 <li><a class="" href="mentoring.html"><span class="header-section-number">13</span> Industrial mentoring</a></li>
-<li><a class="" href="ourmentor.html"><span class="header-section-number">14</span> What to expect of your mentor</a></li>
+<li><a class="" href="ourmentor.html"><span class="header-section-number">14</span> Your mentor</a></li>
 <li><a class="" href="syncing.html"><span class="header-section-number">15</span> Synchronising</a></li>
 <li class="book-part">Coursework</li>
 <li><a class="" href="gitting.html"><span class="header-section-number">16</span> Individual Coursework 1</a></li>
@@ -103,7 +105,7 @@
 <li>Handling conflicts during integration of separate lines of development with Git.</li>
 </ul>
 <p>Test-first development (TFD) is an approach to developing software in which we first write the test cases describing the functionality we need to implement, and then write the production code that will cause them to change from failing tests to passing tests. The tests provide the specification for what needs to be built. You got a taste of TFD in writing the tests to make your bugs visible in the code base in the first team coursework exercise, but you’ll be required to apply it more extensively in the second team coursework exercise. This individual coursework exercise gives you a chance to practice the basic skills in private, before you have to use them in front of your team and mentor. It does this by giving you a set of test cases describing the behaviour needed of a new feature for the Sliding Puzzle game you worked on in the first individual coursework exercise. Your task is to make these failing tests pass, by implementing the feature as the tests (and the issue text) describe it.</p>
-<p>When you’ve implemented the feature, you’ll need to integrate it with your  branch. But, another member of the Sliding Puzzle team has also made commits on the master branch since work on your feature began, implementing another feature. You’ll need to merge the two lines of development together. Since both features touch much the same parts of the code, a number of conflicts will be discovered when you try to merge. Your task will be to remove the conflicts from the code base, so that the merge can go ahead. You’ll finish by creating a commit that contains both new features, co-existing together, and passing all the tests.</p>
+<p>When you’ve implemented the feature, you’ll need to integrate it with your <code>master</code> branch. But, another member of the Sliding Puzzle team has also made commits on the master branch since work on your feature began, implementing another feature. You’ll need to merge the two lines of development together. Since both features touch much the same parts of the code, a number of conflicts will be discovered when you try to merge. Your task will be to remove the conflicts from the code base, so that the merge can go ahead. You’ll finish by creating a commit that contains both new features, co-existing together, and passing all the tests.</p>
 <p>You’ll practice these skills by carrying out the following steps:</p>
 <ol style="list-style-type: decimal">
 <li>Clone the coursework repository and import it into your IDE.</li>

@@ -19,11 +19,13 @@
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.10/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.0/transition.js"></script><script src="libs/bs3compat-0.3.0/tabs.js"></script><script src="libs/bs3compat-0.3.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
-<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><!-- Google Tag Manager --><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-KHJ4G9P');</script><!-- End Google Tag Manager --><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><link rel="stylesheet" href="libs/custom/duncan.css">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-GJ4FGSK01L"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GJ4FGSK01L');
+    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><link rel="stylesheet" href="libs/custom/duncan.css">
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -51,7 +53,7 @@
 <li class="book-part">Weekly Workshops</li>
 <li><a class="" href="building.html"><span class="header-section-number">1</span> Building and testing</a></li>
 <li><a class="" href="understanding.html"><span class="header-section-number">2</span> Large systems</a></li>
-<li><a class="" href="debugging.html"><span class="header-section-number">3</span> Debugging a Codebase</a></li>
+<li><a class="" href="debugging.html"><span class="header-section-number">3</span> Debugging</a></li>
 <li><a class="" href="estimating.html"><span class="header-section-number">4</span> Cost estimation</a></li>
 <li><a class="" href="testing.html"><span class="header-section-number">5</span> Test first development</a></li>
 <li><a class="" href="flowing.html"><span class="header-section-number">6</span> Git workflows</a></li>
@@ -63,7 +65,7 @@
 <li class="book-part">Team study materials</li>
 <li><a class="" href="starting.html"><span class="header-section-number">12</span> Starting with Stendhal</a></li>
 <li><a class="" href="mentoring.html"><span class="header-section-number">13</span> Industrial mentoring</a></li>
-<li><a class="" href="ourmentor.html"><span class="header-section-number">14</span> What to expect of your mentor</a></li>
+<li><a class="" href="ourmentor.html"><span class="header-section-number">14</span> Your mentor</a></li>
 <li><a class="" href="syncing.html"><span class="header-section-number">15</span> Synchronising</a></li>
 <li class="book-part">Coursework</li>
 <li><a class="" href="gitting.html"><span class="header-section-number">16</span> Individual Coursework 1</a></li>
@@ -90,9 +92,14 @@
 <p>The weekly schedule for autumn 2021 is shown in table <a href="timetabling.html#tab:schedtable">0.1</a>, based on <a href="https://timetables.manchester.ac.uk/">timetables.manchester.ac.uk</a>, see also <a href="https://www.manchester.ac.uk/discover/key-dates/">manchester.ac.uk/discover/key-dates</a> key dates.</p>
 <ul>
 <li>Other than the introductory lecture in week 1, there are no lectures. Instead we have workshops which are more like labs and may contain mini-lectures</li>
-<li>Workshops are on Tuesday or Friday afternoon depending on your lab group</li>
-<li>Team study sessions are on Tuesdays at 10am and Thursday at 11am</li>
+<li>Workshops are on Tuesday or Friday afternoon depending on your lab group,</li>
+<li>Team study sessions are on Tuesdays at 10am and Thursday at 11am.</li>
 </ul>
+<p>For online activities, everything is on Microsoft Teams. Because of constraints on the number of private channels in Teams, the year is arbitrarily split into two spaces:</p>
+<ol style="list-style-type: decimal">
+<li><a href="https://bit.ly/software-engineering-A">bit.ly/software-engineering-A</a></li>
+<li><a href="https://bit.ly/software-engineering-b">bit.ly/software-engineering-b</a></li>
+</ol>
 <div class="inline-table"><table class="table table-sm">
 <caption>
 <span id="tab:schedtable">Table 0.1: </span>The weekly schedule for this twelve week course, please note we are using the week numbering from the <a href="https://timetables.manchester.ac.uk/">timetables.manchester.ac.uk</a> where week zero is welcome week, and week one is the first teaching week</caption>
@@ -109,109 +116,93 @@
 <tbody>
 <tr class="odd">
 <td align="left">
-<strong>0</strong>: 20th Sept</td>
-<td align="left">Configuring, see section <a href="timetabling.html#week0">0.10</a>
-</td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left">
 <strong>1</strong>: 27th Sept</td>
-<td align="left">Automated build and test, see see section <a href="timetabling.html#week1">0.11</a>
+<td align="left">Automated build and test, see see section <a href="timetabling.html#week1">0.10</a>
 </td>
 <td align="left">IndCwk2, Fri 1st Oct, 6pm</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">
 <strong>2</strong>: 4th Oct</td>
-<td align="left">Reading large codebases, see see section <a href="timetabling.html#week2">0.12</a>
+<td align="left">Reading large codebases, see see section <a href="timetabling.html#week2">0.11</a>
 </td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">
 <strong>3</strong>: 11th Oct</td>
-<td align="left">Debugging, see see section <a href="timetabling.html#week3">0.13</a>
+<td align="left">Debugging, see see section <a href="timetabling.html#week3">0.12</a>
 </td>
 <td align="left">IndCwk2, Fri 15th Oct, 6pm</td>
 </tr>
-<tr class="odd">
-<td align="left">
-<strong>4</strong>: 18th Oct</td>
-<td align="left">Cost estimation, see see section <a href="timetabling.html#week4">0.14</a>
-</td>
-<td align="left"></td>
-</tr>
 <tr class="even">
 <td align="left">
+<strong>4</strong>: 18th Oct</td>
+<td align="left">Cost estimation, see see section <a href="timetabling.html#week4">0.13</a>
+</td>
+<td align="left">Mentoring week 1</td>
+</tr>
+<tr class="odd">
+<td align="left">
 <strong>5</strong>: 25th Oct</td>
-<td align="left">Test first development, see see section <a href="timetabling.html#week5">0.15</a>
+<td align="left">Test first development, see see section <a href="timetabling.html#week5">0.14</a>
 </td>
 <td align="left">TeamCwk1, 29th Oct, 6pm</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">
 <strong>6</strong>: 1st Nov</td>
-<td align="left">Reading week see see section <a href="timetabling.html#week6">0.16</a>
+<td align="left">Reading week see see section <a href="timetabling.html#week6">0.15</a>
 </td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">
 <strong>7</strong>: 8th Nov</td>
-<td align="left">Git workflows, see see section <a href="timetabling.html#week7">0.17</a>
-</td>
-<td align="left"></td>
-</tr>
-<tr class="odd">
-<td align="left">
-<strong>8</strong>: 15th Nov</td>
-<td align="left">Software refactoring, see see section <a href="timetabling.html#week8">0.18</a>
+<td align="left">Git workflows, see see section <a href="timetabling.html#week7">0.16</a>
 </td>
 <td align="left"></td>
 </tr>
 <tr class="even">
 <td align="left">
-<strong>9</strong>: 22nd Nov</td>
-<td align="left">Design for testability, see see section <a href="timetabling.html#week9">0.19</a>
+<strong>8</strong>: 15th Nov</td>
+<td align="left">Software refactoring, see see section <a href="timetabling.html#week8">0.17</a>
 </td>
-<td align="left"></td>
+<td align="left">Mentoring week 2</td>
 </tr>
 <tr class="odd">
 <td align="left">
+<strong>9</strong>: 22nd Nov</td>
+<td align="left">Design for testability, see see section <a href="timetabling.html#week9">0.18</a>
+</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">
 <strong>10</strong>: 29th Nov</td>
-<td align="left">Design patterns, see see section <a href="timetabling.html#week10">0.20</a>
+<td align="left">Design patterns, see see section <a href="timetabling.html#week10">0.19</a>
 </td>
 <td align="left">TeamCwk2, Fri 3rd Dec, 6pm</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">
 <strong>11</strong>: 6th Dec</td>
-<td align="left">Risk management and practice exam, see see section <a href="timetabling.html#week11">0.21</a>
+<td align="left">Risk management and practice exam, see see section <a href="timetabling.html#week11">0.20</a>
 </td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">
 <strong>12</strong>: 13th Dec</td>
-<td align="left">Open source challenge, see see section <a href="timetabling.html#week12">0.22</a>
+<td align="left">Open source challenge, see see section <a href="timetabling.html#week12">0.21</a>
 </td>
 <td align="left"></td>
 </tr>
 </tbody>
 </table></div>
-<!-- premarking deadline is Tuesday of that week--><div id="week0" class="section level2" number="0.10">
+<div id="week1" class="section level2" number="0.10">
 <h2>
-<span class="header-section-number">0.10</span> Configuring<a class="anchor" aria-label="anchor" href="#week0"><i class="fas fa-link"></i></a>
-</h2>
-<p>Events in the week starting 20th September:</p>
-<ol style="list-style-type: decimal">
-<li>Configuring, you will receive a notification from gitlab so that you are ready for week 1</li>
-</ol>
-</div>
-<div id="week1" class="section level2" number="0.11">
-<h2>
-<span class="header-section-number">0.11</span> Automating<a class="anchor" aria-label="anchor" href="#week1"><i class="fas fa-link"></i></a>
+<span class="header-section-number">0.10</span> Automating<a class="anchor" aria-label="anchor" href="#week1"><i class="fas fa-link"></i></a>
 </h2>
 <p>Events in the week starting 27th September:</p>
 <ol style="list-style-type: decimal">
@@ -227,187 +218,200 @@
 <strong>Team Study Thursday</strong> Work on individual coursework 1 described in chapter <a href="gitting.html#gitting">16</a>
 </li>
 <li>
-<strong>Coursework deadlines</strong>: Individual individual coursework 1 can be pre-marked (automatically) if you submit by <strong>6pm Tuesday 28th September</strong> and finally by <strong>6pm on Friday 1st October</strong>
+<strong>Coursework deadlines</strong>: Individual individual coursework 1 can be pre-marked (automatically) if you submit by <strong>6pm Tuesday 28th September</strong> and finally marked when submitted by <strong>6pm on Friday 1st October</strong>
 </li>
 </ol>
 </div>
-<div id="week2" class="section level2" number="0.12">
+<div id="week2" class="section level2" number="0.11">
 <h2>
-<span class="header-section-number">0.12</span> Reading<a class="anchor" aria-label="anchor" href="#week2"><i class="fas fa-link"></i></a>
+<span class="header-section-number">0.11</span> Reading<a class="anchor" aria-label="anchor" href="#week2"><i class="fas fa-link"></i></a>
 </h2>
 <p>Events in the week starting 4th October:</p>
 <ol style="list-style-type: decimal">
 <li>
-<strong>Team Study Tuesday</strong>:</li>
+<strong>Team Study Tuesday</strong>: Working on team coursework</li>
 <li>
-<strong>Workshop</strong>: Reading large code bases</li>
-<li><strong>Team Study Thursday</strong></li>
+<strong>Workshop</strong>: Reading large code bases with Anas Elhag</li>
 <li>
-<strong>Coursework deadlines</strong>:</li>
+<strong>Team Study Thursday</strong> Working on team coursework</li>
 </ol>
 </div>
-<div id="week3" class="section level2" number="0.13">
+<div id="week3" class="section level2" number="0.12">
 <h2>
-<span class="header-section-number">0.13</span> Debugging<a class="anchor" aria-label="anchor" href="#week3"><i class="fas fa-link"></i></a>
+<span class="header-section-number">0.12</span> Debugging<a class="anchor" aria-label="anchor" href="#week3"><i class="fas fa-link"></i></a>
 </h2>
 <p>Events in the week starting 11th October:</p>
 <ol style="list-style-type: decimal">
 <li>
-<strong>Team Study Tuesday</strong>:</li>
+<strong>Team Study Tuesday</strong>: Working on team coursework</li>
 <li>
-<strong>Workshop</strong>: Debugging</li>
-<li><strong>Team Study Thursday</strong></li>
+<strong>Workshop</strong>: Debugging codebases with Anas Elhag</li>
 <li>
-<strong>Coursework deadlines</strong>:</li>
+<strong>Team Study Thursday</strong> Working on team coursework</li>
+<li>
+<strong>Coursework deadlines</strong>: Individual individual coursework 2 can be pre-marked (automatically) if you submit by <strong>6pm Tuesday 13th October</strong> and finally marked when submitted by <strong>6pm on Friday 15th October</strong>
+</li>
 </ol>
 </div>
-<div id="week4" class="section level2" number="0.14">
+<div id="week4" class="section level2" number="0.13">
 <h2>
-<span class="header-section-number">0.14</span> Estimating<a class="anchor" aria-label="anchor" href="#week4"><i class="fas fa-link"></i></a>
+<span class="header-section-number">0.13</span> Estimating<a class="anchor" aria-label="anchor" href="#week4"><i class="fas fa-link"></i></a>
 </h2>
 <p>Events in the week starting 18th October:</p>
 <ol style="list-style-type: decimal">
 <li>
-<strong>Team Study Tuesday</strong>:</li>
+<strong>Team Study Tuesday</strong>: Working on team coursework</li>
 <li>
 <strong>Workshop</strong>: Cost estimation with Duncan Hull</li>
-<li><strong>Team Study Thursday</strong></li>
 <li>
-<strong>Coursework deadlines</strong>:</li>
+<strong>Team Study Thursday</strong> Meet your team mentor on Teams</li>
 </ol>
 </div>
-<div id="week5" class="section level2" number="0.15">
+<div id="week5" class="section level2" number="0.14">
 <h2>
-<span class="header-section-number">0.15</span> Testing<a class="anchor" aria-label="anchor" href="#week5"><i class="fas fa-link"></i></a>
+<span class="header-section-number">0.14</span> Testing<a class="anchor" aria-label="anchor" href="#week5"><i class="fas fa-link"></i></a>
 </h2>
 <p>Events in the week starting 25th October:</p>
 <ol style="list-style-type: decimal">
 <li>
-<strong>Team Study Tuesday</strong>:</li>
+<strong>Team Study Tuesday</strong>: Working on team coursework</li>
 <li>
-<strong>Workshop</strong>: Test first development</li>
-<li><strong>Team Study Thursday</strong></li>
+<strong>Workshop</strong>: Test first development with Anas Elhag</li>
 <li>
-<strong>Coursework deadlines</strong>:</li>
+<strong>Team Study Thursday</strong> Working on team coursework</li>
+<li>
+<strong>Coursework deadlines</strong>: TeamCwk1 due, 29th October at 6pm</li>
 </ol>
 </div>
-<div id="week6" class="section level2" number="0.16">
+<div id="week6" class="section level2" number="0.15">
 <h2>
-<span class="header-section-number">0.16</span> Pausing<a class="anchor" aria-label="anchor" href="#week6"><i class="fas fa-link"></i></a>
+<span class="header-section-number">0.15</span> Pausing<a class="anchor" aria-label="anchor" href="#week6"><i class="fas fa-link"></i></a>
 </h2>
-<p>Events in the week starting 1st November (reading week). Take a break if you’re ahead, or catchup if you’ve fallen behind. There are no activities in reading week.</p>
+<p>Events in the week starting 1st November (reading week). Take a break if you’re ahead, or catchup if you’ve fallen behind.</p>
 <ol style="list-style-type: decimal">
-<li>
-<strong>Team Study Tuesday</strong>:</li>
-<li>
-<strong>Workshop</strong>: Git workflows</li>
-<li><strong>Team Study Thursday</strong></li>
-<li>
-<strong>Coursework deadlines</strong>:</li>
+<li>There are no activities in reading week</li>
 </ol>
 </div>
-<div id="week7" class="section level2" number="0.17">
+<div id="week7" class="section level2" number="0.16">
 <h2>
-<span class="header-section-number">0.17</span> Workflowing<a class="anchor" aria-label="anchor" href="#week7"><i class="fas fa-link"></i></a>
+<span class="header-section-number">0.16</span> Workflowing<a class="anchor" aria-label="anchor" href="#week7"><i class="fas fa-link"></i></a>
 </h2>
 <p>Events in the week starting 8th November:</p>
 <ol style="list-style-type: decimal">
 <li>
-<strong>Team Study Tuesday</strong>:</li>
+<strong>Team Study Tuesday</strong>: Working on team coursework</li>
 <li>
-<strong>Workshop</strong>:</li>
-<li><strong>Team Study Thursday</strong></li>
+<strong>Workshop</strong>: Git workflows with Suzanne Embury</li>
 <li>
-<strong>Coursework deadlines</strong>:</li>
+<strong>Team Study Thursday</strong> Working on team coursework</li>
 </ol>
 </div>
-<div id="week8" class="section level2" number="0.18">
+<div id="week8" class="section level2" number="0.17">
 <h2>
-<span class="header-section-number">0.18</span> Refactoring<a class="anchor" aria-label="anchor" href="#week8"><i class="fas fa-link"></i></a>
+<span class="header-section-number">0.17</span> Refactoring<a class="anchor" aria-label="anchor" href="#week8"><i class="fas fa-link"></i></a>
 </h2>
 <p>Events in the week starting 15th November:</p>
 <ol style="list-style-type: decimal">
 <li>
-<strong>Team Study Tuesday</strong>:</li>
+<strong>Team Study Tuesday</strong>: Working on team coursework</li>
 <li>
-<strong>Workshop</strong>: Refactoring</li>
-<li><strong>Team Study Thursday</strong></li>
+<strong>Workshop</strong>: Refactoring with Anas Elhag</li>
 <li>
-<strong>Coursework deadlines</strong>:</li>
+<strong>Team Study Thursday</strong> Working on team coursework</li>
 </ol>
 </div>
-<div id="week9" class="section level2" number="0.19">
+<div id="week9" class="section level2" number="0.18">
 <h2>
-<span class="header-section-number">0.19</span> Testing<a class="anchor" aria-label="anchor" href="#week9"><i class="fas fa-link"></i></a>
+<span class="header-section-number">0.18</span> Testing<a class="anchor" aria-label="anchor" href="#week9"><i class="fas fa-link"></i></a>
 </h2>
 <p>Events in the week starting 22nd November:</p>
 <ol style="list-style-type: decimal">
 <li>
-<strong>Team Study Tuesday</strong>:</li>
+<strong>Team Study Tuesday</strong>: Working on team coursework</li>
 <li>
-<strong>Workshop</strong>: Design for testability</li>
-<li><strong>Team Study Thursday</strong></li>
+<strong>Workshop</strong>: Design for testability Anas Elhag</li>
 <li>
-<strong>Coursework deadlines</strong>:</li>
+<strong>Team Study Thursday</strong> Second mentoring session</li>
 </ol>
 </div>
-<div id="week10" class="section level2" number="0.20">
+<div id="week10" class="section level2" number="0.19">
 <h2>
-<span class="header-section-number">0.20</span> Patterning<a class="anchor" aria-label="anchor" href="#week10"><i class="fas fa-link"></i></a>
+<span class="header-section-number">0.19</span> Patterning<a class="anchor" aria-label="anchor" href="#week10"><i class="fas fa-link"></i></a>
 </h2>
 <p>Events in the week starting 29th November:</p>
 <ol style="list-style-type: decimal">
 <li>
-<strong>Team Study Tuesday</strong>:</li>
+<strong>Team Study Tuesday</strong>: Working on team coursework</li>
 <li>
-<strong>Workshop</strong>: Design patterns</li>
-<li><strong>Team Study Thursday</strong></li>
+<strong>Workshop</strong>: Design patterns with Sandra Sampaio</li>
 <li>
-<strong>Coursework deadlines</strong>:</li>
+<strong>Team Study Thursday</strong> Working on team coursework</li>
+<li>
+<strong>Coursework deadlines</strong>: TeamCwk2 due, Friday 3rd December at 6pm</li>
 </ol>
 </div>
-<div id="week11" class="section level2" number="0.21">
+<div id="week11" class="section level2" number="0.20">
 <h2>
-<span class="header-section-number">0.21</span> Managing<a class="anchor" aria-label="anchor" href="#week11"><i class="fas fa-link"></i></a>
+<span class="header-section-number">0.20</span> Managing<a class="anchor" aria-label="anchor" href="#week11"><i class="fas fa-link"></i></a>
 </h2>
 <p>Events in the week starting 6th December:</p>
 <ol style="list-style-type: decimal">
 <li>
-<strong>Team Study Tuesday</strong>:</li>
+<strong>Team Study Tuesday</strong>: Marking sessions</li>
 <li>
-<strong>Workshop</strong>: Risk management and practice exam</li>
-<li><strong>Team Study Thursday</strong></li>
+<strong>Workshop</strong>: Risk management and practice exam with Sandra Sampaio</li>
 <li>
-<strong>Coursework deadlines</strong>:</li>
+<strong>Team Study Thursday</strong> Marking sessions</li>
 </ol>
 </div>
-<div id="week12" class="section level2" number="0.22">
+<div id="week12" class="section level2" number="0.21">
 <h2>
-<span class="header-section-number">0.22</span> Challenging<a class="anchor" aria-label="anchor" href="#week12"><i class="fas fa-link"></i></a>
+<span class="header-section-number">0.21</span> Challenging<a class="anchor" aria-label="anchor" href="#week12"><i class="fas fa-link"></i></a>
 </h2>
 <p>Events in the week starting 13th December:</p>
 <ol style="list-style-type: decimal">
 <li>
-<strong>Team Study Tuesday</strong>:</li>
+<strong>Team Study Tuesday</strong>: Marking sessions</li>
 <li>
-<strong>Workshop</strong>: Open source challenge</li>
+<strong>Workshop</strong>: Open source challenge with Sandra Sampaio</li>
 <li><strong>Team Study Thursday</strong></li>
 <li>
 <strong>Coursework deadlines</strong>:</li>
 </ol>
 </div>
-<div id="tooling" class="section level2" number="0.23">
+<div id="tooling" class="section level2" number="0.22">
 <h2>
-<span class="header-section-number">0.23</span> Tools<a class="anchor" aria-label="anchor" href="#tooling"><i class="fas fa-link"></i></a>
+<span class="header-section-number">0.22</span> Tools<a class="anchor" aria-label="anchor" href="#tooling"><i class="fas fa-link"></i></a>
 </h2>
 <p>We’ll be using the following tools:</p>
+<div id="msfteams" class="section level3" number="0.22.1">
+<h3>
+<span class="header-section-number">0.22.1</span> Microsoft Teams<a class="anchor" aria-label="anchor" href="#msfteams"><i class="fas fa-link"></i></a>
+</h3>
 <ul>
-<li>Team study sessions take place on Microsoft Teams, login using your <code>@student.manchester.ac.uk</code> email address at <a href="https://teams.microsoft.com/">teams.microsoft.com</a> or <a href="https://www.microsoft.com/en-gb/microsoft-teams/download-app">download a native teams client</a>
+<li>Team study sessions take place on Microsoft Teams, login using your <code>@student.manchester.ac.uk</code> email address at <a href="https://teams.microsoft.com/">teams.microsoft.com</a> or <a href="https://www.microsoft.com/en-gb/microsoft-teams/download-app">download a native teams client</a> everthing else is in the guidebook at <a href="https://software-eng.netlify.app/">software-eng.netlify.app/</a>
 </li>
-<li>Other course materials (coursework submission, slides and videos) can be found on blackboard <a href="https://online.manchester.ac.uk/">online.manchester.ac.uk</a>
+<li>Teams is also the place to go for livestream if you’re following the workshops online</li>
+</ul>
+</div>
+<div id="blackboard" class="section level3" number="0.22.2">
+<h3>
+<span class="header-section-number">0.22.2</span> Blackboard<a class="anchor" aria-label="anchor" href="#blackboard"><i class="fas fa-link"></i></a>
+</h3>
+<ul>
+<li>Other course materials (slides and videos) can be found on at <a href="https://online.manchester.ac.uk/">online.manchester.ac.uk</a>
 </li>
 </ul>
+</div>
+<div id="gitlab" class="section level3" number="0.22.3">
+<h3>
+<span class="header-section-number">0.22.3</span> GitLab<a class="anchor" aria-label="anchor" href="#gitlab"><i class="fas fa-link"></i></a>
+</h3>
+<ul>
+<li>GitLab issue tracker</li>
+</ul>
 <!--hacky way to get chapter references in tables-->
+</div>
 </div>
 </div>
 
@@ -420,20 +424,25 @@
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
 <li><a class="nav-link" href="#timetabling">Weekly timetable</a></li>
-<li><a class="nav-link" href="#week0"><span class="header-section-number">0.10</span> Configuring</a></li>
-<li><a class="nav-link" href="#week1"><span class="header-section-number">0.11</span> Automating</a></li>
-<li><a class="nav-link" href="#week2"><span class="header-section-number">0.12</span> Reading</a></li>
-<li><a class="nav-link" href="#week3"><span class="header-section-number">0.13</span> Debugging</a></li>
-<li><a class="nav-link" href="#week4"><span class="header-section-number">0.14</span> Estimating</a></li>
-<li><a class="nav-link" href="#week5"><span class="header-section-number">0.15</span> Testing</a></li>
-<li><a class="nav-link" href="#week6"><span class="header-section-number">0.16</span> Pausing</a></li>
-<li><a class="nav-link" href="#week7"><span class="header-section-number">0.17</span> Workflowing</a></li>
-<li><a class="nav-link" href="#week8"><span class="header-section-number">0.18</span> Refactoring</a></li>
-<li><a class="nav-link" href="#week9"><span class="header-section-number">0.19</span> Testing</a></li>
-<li><a class="nav-link" href="#week10"><span class="header-section-number">0.20</span> Patterning</a></li>
-<li><a class="nav-link" href="#week11"><span class="header-section-number">0.21</span> Managing</a></li>
-<li><a class="nav-link" href="#week12"><span class="header-section-number">0.22</span> Challenging</a></li>
-<li><a class="nav-link" href="#tooling"><span class="header-section-number">0.23</span> Tools</a></li>
+<li><a class="nav-link" href="#week1"><span class="header-section-number">0.10</span> Automating</a></li>
+<li><a class="nav-link" href="#week2"><span class="header-section-number">0.11</span> Reading</a></li>
+<li><a class="nav-link" href="#week3"><span class="header-section-number">0.12</span> Debugging</a></li>
+<li><a class="nav-link" href="#week4"><span class="header-section-number">0.13</span> Estimating</a></li>
+<li><a class="nav-link" href="#week5"><span class="header-section-number">0.14</span> Testing</a></li>
+<li><a class="nav-link" href="#week6"><span class="header-section-number">0.15</span> Pausing</a></li>
+<li><a class="nav-link" href="#week7"><span class="header-section-number">0.16</span> Workflowing</a></li>
+<li><a class="nav-link" href="#week8"><span class="header-section-number">0.17</span> Refactoring</a></li>
+<li><a class="nav-link" href="#week9"><span class="header-section-number">0.18</span> Testing</a></li>
+<li><a class="nav-link" href="#week10"><span class="header-section-number">0.19</span> Patterning</a></li>
+<li><a class="nav-link" href="#week11"><span class="header-section-number">0.20</span> Managing</a></li>
+<li><a class="nav-link" href="#week12"><span class="header-section-number">0.21</span> Challenging</a></li>
+<li>
+<a class="nav-link" href="#tooling"><span class="header-section-number">0.22</span> Tools</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#msfteams"><span class="header-section-number">0.22.1</span> Microsoft Teams</a></li>
+<li><a class="nav-link" href="#blackboard"><span class="header-section-number">0.22.2</span> Blackboard</a></li>
+<li><a class="nav-link" href="#gitlab"><span class="header-section-number">0.22.3</span> GitLab</a></li>
+</ul>
+</li>
 </ul>
 
       <div class="book-extra">

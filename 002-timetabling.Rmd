@@ -3,21 +3,25 @@
 The weekly schedule for autumn 2021 is shown in table \@ref(tab:schedtable), based on [timetables.manchester.ac.uk](https://timetables.manchester.ac.uk/), see also [manchester.ac.uk/discover/key-dates](https://www.manchester.ac.uk/discover/key-dates/) key dates.
 
 * Other than the introductory lecture in week 1, there are no lectures. Instead we have workshops which are more like labs and may contain mini-lectures
-* Workshops are on Tuesday or Friday afternoon depending on your lab group
-* Team study sessions are on Tuesdays at 10am and Thursday at 11am
+* Workshops are on Tuesday or Friday afternoon depending on your lab group,
+* Team study sessions are on Tuesdays at 10am and Thursday at 11am.
+
+For online activities, everything is on Microsoft Teams. Because of constraints on the number of private channels in Teams, the year is arbitrarily split into two spaces:
+
+1. [bit.ly/software-engineering-A](https://bit.ly/software-engineering-A)
+1. [bit.ly/software-engineering-b](https://bit.ly/software-engineering-b)
 
 ```{r schedtable, echo = FALSE}
 io_table <- tibble::tribble(
     ~ "Week no."       , ~ "Subject",      ~ "Deadlines",
-  "**0**: 20th Sept"            , "Configuring, (ref:weekzero)",   "",  
   "**1**: 27th Sept"            , "Automated build and test, see (ref:weekone)",  "IndCwk2, Fri 1st Oct, 6pm",
   "**2**: 4th Oct"              , "Reading large codebases, see (ref:weektwo)",  "",
   "**3**: 11th Oct"             , "Debugging, see (ref:weekthree)", "IndCwk2, Fri 15th Oct, 6pm",
-  "**4**: 18th Oct"             , "Cost estimation, see (ref:weekfour)",  "",
+  "**4**: 18th Oct"             , "Cost estimation, see (ref:weekfour)",  "Mentoring week 1",
   "**5**: 25th Oct"             , "Test first development, see (ref:weekfive)", "TeamCwk1, 29th Oct, 6pm ",
   "**6**: 1st Nov"              , "Reading week see (ref:weeksix)", "",
   "**7**: 8th Nov"              , "Git workflows, see (ref:weekseven)",  "",
-  "**8**: 15th Nov"             , "Software refactoring, see (ref:weekeight)", "",
+  "**8**: 15th Nov"             , "Software refactoring, see (ref:weekeight)", "Mentoring week 2",
   "**9**: 22nd Nov"            , "Design for testability, see (ref:weeknine)", "",
   "**10**: 29th Nov"            , "Design patterns, see (ref:weekten)", "TeamCwk2, Fri 3rd Dec, 6pm",
   "**11**: 6th Dec"             , "Risk management and practice exam, see (ref:weekeleven)", "",
@@ -27,12 +31,6 @@ io_table <- tibble::tribble(
 knitr::kable(io_table, caption = "The weekly schedule for this twelve week course, please note we are using the week numbering from the [timetables.manchester.ac.uk](https://timetables.manchester.ac.uk/) where week zero is welcome week, and week one is the first teaching week", booktabs = TRUE)
 ```
 
-<!-- premarking deadline is Tuesday of that week-->
-## Configuring {#week0}
-
-Events in the week starting 20th September:
-
-1. Configuring, you will receive a notification from gitlab so that you are ready for week 1
 
 
 ## Automating {#week1}
@@ -43,106 +41,94 @@ Events in the week starting 27th September:
 1. **One off lecture** to introduce the course unit at 9am on Wednesday 29th September, Simon Engineering building check [timetables.manchester.ac.uk](https://timetables.manchester.ac.uk/)
 1. **Workshop**: Automated build and test with Duncan Hull
 1. **Team Study Thursday** Work on individual coursework 1 described in chapter \@ref(gitting)
-1. **Coursework deadlines**: Individual individual coursework 1 can be pre-marked (automatically) if you submit by **6pm Tuesday 28th September** and finally by **6pm on Friday 1st October**
+1. **Coursework deadlines**: Individual individual coursework 1 can be pre-marked (automatically) if you submit by **6pm Tuesday 28th September** and finally marked when submitted by **6pm on Friday 1st October**
 
 
 ## Reading {#week2}
 Events in the week starting 4th October:
 
-1. **Team Study Tuesday**:
-1. **Workshop**: Reading large code bases
-1. **Team Study Thursday**
-1. **Coursework deadlines**:
+1. **Team Study Tuesday**: Working on team coursework
+1. **Workshop**: Reading large code bases with Anas Elhag
+1. **Team Study Thursday** Working on team coursework
 
 ## Debugging {#week3}
 Events in the week starting 11th October:
 
-1. **Team Study Tuesday**:
-1. **Workshop**: Debugging
-1. **Team Study Thursday**
-1. **Coursework deadlines**:
+1. **Team Study Tuesday**: Working on team coursework
+1. **Workshop**: Debugging codebases with Anas Elhag
+1. **Team Study Thursday** Working on team coursework
+1. **Coursework deadlines**: Individual individual coursework 2 can be pre-marked (automatically) if you submit by **6pm Tuesday 13th October** and finally marked when submitted by **6pm on Friday 15th October**
 
 
 ## Estimating {#week4}
 Events in the week starting 18th October:
 
-1. **Team Study Tuesday**:
+1. **Team Study Tuesday**: Working on team coursework
 1. **Workshop**: Cost estimation with Duncan Hull
-1. **Team Study Thursday**
-1. **Coursework deadlines**:
+1. **Team Study Thursday** Meet your team mentor on Teams
 
 
 ## Testing {#week5}
 Events in the week starting 25th October:
 
-1. **Team Study Tuesday**:
-1. **Workshop**: Test first development
-1. **Team Study Thursday**
-1. **Coursework deadlines**:
+1. **Team Study Tuesday**: Working on team coursework
+1. **Workshop**: Test first development with Anas Elhag
+1. **Team Study Thursday** Working on team coursework
+1. **Coursework deadlines**: TeamCwk1 due, 29th October at 6pm
 
 
 ## Pausing {#week6}
-Events in the week starting 1st November (reading week). Take a break if you're ahead, or catchup if you've fallen behind. There are no activities in reading week.
+Events in the week starting 1st November (reading week). Take a break if you're ahead, or catchup if you've fallen behind.
 
-
-1. **Team Study Tuesday**:
-1. **Workshop**: Git workflows
-1. **Team Study Thursday**
-1. **Coursework deadlines**:
-
+1. There are no activities in reading week
 
 ## Workflowing {#week7}
 Events in the week starting 8th November:
 
-1. **Team Study Tuesday**:
-1. **Workshop**:
-1. **Team Study Thursday**
-1. **Coursework deadlines**:
+1. **Team Study Tuesday**: Working on team coursework
+1. **Workshop**: Git workflows with Suzanne Embury
+1. **Team Study Thursday** Working on team coursework
 
 
 ## Refactoring {#week8}
 Events in the week starting 15th November:
 
-1. **Team Study Tuesday**:
-1. **Workshop**: Refactoring
-1. **Team Study Thursday**
-1. **Coursework deadlines**:
+1. **Team Study Tuesday**: Working on team coursework
+1. **Workshop**: Refactoring with Anas Elhag
+1. **Team Study Thursday** Working on team coursework
 
 
 ## Testing {#week9}
 Events in the week starting 22nd November:
 
-1. **Team Study Tuesday**:
-1. **Workshop**: Design for testability
-1. **Team Study Thursday**
-1. **Coursework deadlines**:
+1. **Team Study Tuesday**: Working on team coursework
+1. **Workshop**: Design for testability Anas Elhag
+1. **Team Study Thursday** Second mentoring session
 
 
 ## Patterning {#week10}
 Events in the week starting 29th November:
 
-1. **Team Study Tuesday**:
-1. **Workshop**: Design patterns
-1. **Team Study Thursday**
-1. **Coursework deadlines**:
-
+1. **Team Study Tuesday**: Working on team coursework
+1. **Workshop**: Design patterns with Sandra Sampaio
+1. **Team Study Thursday** Working on team coursework
+1. **Coursework deadlines**: TeamCwk2 due, Friday 3rd December at 6pm
 
 
 ## Managing {#week11}
 Events in the week starting 6th December:
 
-1. **Team Study Tuesday**:
-1. **Workshop**: Risk management and practice exam
-1. **Team Study Thursday**
-1. **Coursework deadlines**:
+1. **Team Study Tuesday**:  Marking sessions
+1. **Workshop**: Risk management and practice exam with Sandra Sampaio
+1. **Team Study Thursday**  Marking sessions
 
 
 
 ## Challenging {#week12}
 Events in the week starting 13th December:
 
-1. **Team Study Tuesday**:
-1. **Workshop**: Open source challenge
+1. **Team Study Tuesday**: Marking sessions
+1. **Workshop**: Open source challenge with Sandra Sampaio
 1. **Team Study Thursday**
 1. **Coursework deadlines**:
 
@@ -153,8 +139,20 @@ Events in the week starting 13th December:
 
 We'll be using the following tools:
 
-* Team study sessions take place on Microsoft Teams, login using your `@student.manchester.ac.uk` email address at [teams.microsoft.com](https://teams.microsoft.com/) or [download a native teams client](https://www.microsoft.com/en-gb/microsoft-teams/download-app)
-* Other course materials (coursework submission, slides and videos) can be found on blackboard [online.manchester.ac.uk](https://online.manchester.ac.uk/)
+### Microsoft Teams {#msfteams}
+
+* Team study sessions take place on Microsoft Teams, login using your `@student.manchester.ac.uk` email address at [teams.microsoft.com](https://teams.microsoft.com/) or [download a native teams client](https://www.microsoft.com/en-gb/microsoft-teams/download-app) everthing else is in the guidebook at [software-eng.netlify.app/](https://software-eng.netlify.app/)
+* Teams is also the place to go for livestream if you're following the workshops online
+
+
+### Blackboard {#blackboard}
+
+* Other course materials (slides and videos) can be found on at [online.manchester.ac.uk](https://online.manchester.ac.uk/)
+
+### GitLab {#gitlab}
+
+* GitLab issue tracker
+
 
 <!--hacky way to get chapter references in tables-->
 

@@ -121,6 +121,18 @@ knitr::include_graphics("images/1.4selectMarauroaBranches.png")
 
 Make sure that the `master` branch is selected, and press `Next`.
 
+::: {.rmdcaution}
+(ref:cautionbox)
+**Master or Main?**
+
+Historically, the default name for initial branch in a git repository was `master`. The initial branch was called "master repository" with other copies serving as "slave repositories".
+
+Note that as of 2021, the use of `master` has now been deprecated. We're using it in this course unit, but by default, new projects using git will call the initial branch `main` not `master` to avoid problemantic [master/slave terminology](https://en.wikipedia.org/wiki/Master/slave_(technology)).
+
+See [about.gitlab.com/blog/2021/03/10/new-git-default-branch-name/](https://about.gitlab.com/blog/2021/03/10/new-git-default-branch-name/) for more details on the switch.
+:::
+
+
 As in the GitLab Access Check activity, we need to tell Eclipse where we want the cloned repository to be stored before it can issue the Git command to create it see figure \@ref(fig:configureLocalStorageMarauroa-fig)
 
 ```{r configureLocalStorageMarauroa-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap = "Cloning from git dialog box"}

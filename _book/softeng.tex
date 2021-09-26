@@ -266,7 +266,7 @@ The following is an outline of the topics covered in COMP23111.
 \hypertarget{usingit}{%
 \section{Using the lab manual}\label{usingit}}
 
-We expect that the web-based version of this manual will be the one you'll use most at \href{https://software-eng.netlify.app/}{software-eng.netlify.app}. You can search, browse and link to anything in the manual. It was last updated on 24 September, 2021.
+We expect that the web-based version of this manual will be the one you'll use most at \href{https://software-eng.netlify.app/}{software-eng.netlify.app}. You can search, browse and link to anything in the manual. It was last updated on 27 September, 2021.
 
 However, if you'd prefer, the manual is also available as a single pdf file \href{https://software-eng.netlify.app/softeng.pdf}{softeng.pdf} and an epub as well \href{https://software-eng.netlify.app/softeng.epub}{softeng.epub}. Having said that, the content is optimised for viewing in a web browser, so while the pdf and epub are OK, the web version is the best.
 
@@ -302,9 +302,27 @@ Most of the guidebook is generated from \href{https://en.wikipedia.org/wiki/Mark
 
 This course has been designed, built and written by \href{http://www.cs.man.ac.uk/~embury/}{Suzanne Embury} at the University of Manchester with support from a team of academics, industry club members, support staff, graduate teaching assistants (GTAs) and summer students including (in alphabetical order):
 
-Muideen Ajagbe, Mohammed Alhamadi, Aitor Apaolaza, Mercedes Argüello Casteleiro, Gerard Capes, Thomas Carroll, Martina Catizone, Sarah Clinch, Peter Crowther, Anas Elhag, Sukru Eraslan, Gareth Henshall, Duncan Hull, Nikolaos Konstantinou, Kamilla Kopec-Harding, Kaspar Matas, Chris Page, Dario Panada, Liam Pringle, Julio Cesar Cortes Rios, Sara Padilla Romero, Viktor Schlegel, Stefan Strat, Jake Saunders, Federico Tavella, Mokanarangan Thayaparan, David Toluhi, Karl Tye and Markel Vigo.
+Muideen Ajagbe, Mohammed Alhamadi, Aitor Apaolaza, Gerard Capes, Martina Catizone, Sarah Clinch, Peter Crowther, Sukru Eraslan, Gareth Henshall, Duncan Hull, Caroline Jay, Nikolaos Konstantinou, Kamilla Kopec-Harding, Kaspar Matas, Chris Page, Dario Panada, Steve Pettifer, Liam Pringle, Julio Cesar Cortes Rios, Sara Padilla Romero, Viktor Schlegel, Stefan Strat, Jake Saunders, Federico Tavella, Mokanarangan Thayaparan, David Toluhi, Karl Tye and Markel Vigo.
 
-We'd also like to thank students who have done the course since its first iteration.
+Academic staff on the course for 2021/22 include:
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://scholar.google.com/citations?user=ci1ifBoAAAAJ\&hl=en}{Mercedes Argüello Casteleiro}
+\item
+  \href{https://cgi.csc.liv.ac.uk/~tomc/}{Thomas Carroll}
+\item
+  \href{http://www.cs.man.ac.uk/~embury/}{Suzanne Embury}
+\item
+  \href{http://www.cs.man.ac.uk/~hulld/}{Duncan Hull}
+\item
+  \href{https://www.research.manchester.ac.uk/portal/s.sampaio.html}{Sandra Sampaio}
+\item
+  \href{https://scholar.google.co.uk/citations?user=eY8KtX4AAAAJ\&hl=en}{Anas Elhag}
+\end{itemize}
+
+We'd also like to thank all the 1,500+ students who have done the course since its first iteration in 2016 and given us feedback on how to improve.
 
 Thanks also to our \href{https://www.cs.manchester.ac.uk/connect/business-engagement/industrial-mentoring/}{industrial mentors}, the Institute of Coding (IoC) \href{https://instituteofcoding.org/}{instituteofcoding.org} and the \href{https://www.officeforstudents.org.uk/}{Office for Students} (OFS) for their ongoing support.
 
@@ -346,6 +364,10 @@ This site is hosted on \href{https://www.netlify.com/}{netlify.com}, see the \hr
 Some of these services use cookies. These can be disabled in your browser, see \href{https://www.allaboutcookies.org/manage-cookies/}{allaboutcookies.org/manage-cookies}
 
 So now that we've dispensed with the formalities, you can start using this laboratory manual.
+
+
+
+
 
 
 
@@ -427,7 +449,7 @@ Each workshop has a specific theme that we need you to focus on. This means \tex
 \hypertarget{online}{%
 \subsubsection{Physical vs online sessions}\label{online}}
 
-For the live (physical) sessions you'll need to be in the appropriate lab in the Kilburn building. For online sessions (e.g.~marking and mentoring) it is especially important that you turn up on time by being at a computer with access to:
+For the live (physical) sessions you'll need to be in the appropriate lab in the Kilburn building. For online sessions (e.g.~some marking and mentoring) it is especially important that you turn up on time by being at a computer with access to:
 
 \begin{itemize}
 \tightlist
@@ -544,10 +566,21 @@ The weekly schedule for autumn 2021 is shown in table \ref{tab:schedtable}, base
 \item
   Other than the introductory lecture in week 1, there are no lectures. Instead we have workshops which are more like labs and may contain mini-lectures
 \item
-  Workshops are on Tuesday or Friday afternoon depending on your lab group
+  Workshops are on Tuesday or Friday afternoon depending on your lab group,
 \item
-  Team study sessions are on Tuesdays at 10am and Thursday at 11am
+  Team study sessions are on Tuesdays at 10am and Thursday at 11am.
 \end{itemize}
+
+For online activities, everything is on Microsoft Teams. Because of constraints on the number of private channels in Teams, the year is arbitrarily split into two spaces:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \href{https://bit.ly/software-engineering-A}{bit.ly/software-engineering-A}
+\item
+  \href{https://bit.ly/software-engineering-b}{bit.ly/software-engineering-b}
+\end{enumerate}
 
 \begin{table}
 
@@ -557,36 +590,23 @@ The weekly schedule for autumn 2021 is shown in table \ref{tab:schedtable}, base
 \toprule
 Week no. & Subject & Deadlines\\
 \midrule
-**0**: 20th Sept & Configuring, see section \ref{week0} & \\
 **1**: 27th Sept & Automated build and test, see see section \ref{week1} & IndCwk2, Fri 1st Oct, 6pm\\
 **2**: 4th Oct & Reading large codebases, see see section \ref{week2} & \\
 **3**: 11th Oct & Debugging, see see section \ref{week3} & IndCwk2, Fri 15th Oct, 6pm\\
-**4**: 18th Oct & Cost estimation, see see section \ref{week4} & \\
-\addlinespace
+**4**: 18th Oct & Cost estimation, see see section \ref{week4} & Mentoring week 1\\
 **5**: 25th Oct & Test first development, see see section \ref{week5} & TeamCwk1, 29th Oct, 6pm\\
+\addlinespace
 **6**: 1st Nov & Reading week see see section \ref{week6} & \\
 **7**: 8th Nov & Git workflows, see see section \ref{week7} & \\
-**8**: 15th Nov & Software refactoring, see see section \ref{week8} & \\
+**8**: 15th Nov & Software refactoring, see see section \ref{week8} & Mentoring week 2\\
 **9**: 22nd Nov & Design for testability, see see section \ref{week9} & \\
-\addlinespace
 **10**: 29th Nov & Design patterns, see see section \ref{week10} & TeamCwk2, Fri 3rd Dec, 6pm\\
+\addlinespace
 **11**: 6th Dec & Risk management and practice exam, see see section \ref{week11} & \\
 **12**: 13th Dec & Open source challenge, see see section \ref{week12} & \\
 \bottomrule
 \end{tabular}
 \end{table}
-
-\hypertarget{week0}{%
-\section{Configuring}\label{week0}}
-
-Events in the week starting 20th September:
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  Configuring, you will receive a notification from gitlab so that you are ready for week 1
-\end{enumerate}
 
 \hypertarget{week1}{%
 \section{Automating}\label{week1}}
@@ -597,15 +617,15 @@ Events in the week starting 27th September:
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  \textbf{Team Study Tuesday}: Work on team coursework 1 (individually), see section \ref{gitting}
+  \textbf{Team Study Tuesday}: Work on individual coursework 1 described in chapter \ref{gitting}
 \item
-  \textbf{One off lecture} to introduce the course unit at 9am on Wednesday 29th September, check your timetable
+  \textbf{One off lecture} to introduce the course unit at 9am on Wednesday 29th September, Simon Engineering building check \href{https://timetables.manchester.ac.uk/}{timetables.manchester.ac.uk}
 \item
   \textbf{Workshop}: Automated build and test with Duncan Hull
 \item
-  \textbf{Team Study Thursday} Work on team coursework 1 (individually), see section \ref{gitting}
+  \textbf{Team Study Thursday} Work on individual coursework 1 described in chapter \ref{gitting}
 \item
-  \textbf{Coursework deadlines}: Deadline for individual coursework 1, see chapter \ref{gitting}
+  \textbf{Coursework deadlines}: Individual individual coursework 1 can be pre-marked (automatically) if you submit by \textbf{6pm Tuesday 28th September} and finally marked when submitted by \textbf{6pm on Friday 1st October}
 \end{enumerate}
 
 \hypertarget{week2}{%
@@ -617,13 +637,11 @@ Events in the week starting 4th October:
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  \textbf{Team Study Tuesday}:
+  \textbf{Team Study Tuesday}: Working on team coursework
 \item
-  \textbf{Workshop}: Reading large code bases
+  \textbf{Workshop}: Reading large code bases with Anas Elhag
 \item
-  \textbf{Team Study Thursday}
-\item
-  \textbf{Coursework deadlines}:
+  \textbf{Team Study Thursday} Working on team coursework
 \end{enumerate}
 
 \hypertarget{week3}{%
@@ -635,13 +653,13 @@ Events in the week starting 11th October:
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  \textbf{Team Study Tuesday}:
+  \textbf{Team Study Tuesday}: Working on team coursework
 \item
-  \textbf{Workshop}: Debugging
+  \textbf{Workshop}: Debugging codebases with Anas Elhag
 \item
-  \textbf{Team Study Thursday}
+  \textbf{Team Study Thursday} Working on team coursework
 \item
-  \textbf{Coursework deadlines}:
+  \textbf{Coursework deadlines}: Individual individual coursework 2 can be pre-marked (automatically) if you submit by \textbf{6pm Tuesday 13th October} and finally marked when submitted by \textbf{6pm on Friday 15th October}
 \end{enumerate}
 
 \hypertarget{week4}{%
@@ -653,13 +671,11 @@ Events in the week starting 18th October:
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  \textbf{Team Study Tuesday}:
+  \textbf{Team Study Tuesday}: Working on team coursework
 \item
   \textbf{Workshop}: Cost estimation with Duncan Hull
 \item
-  \textbf{Team Study Thursday}
-\item
-  \textbf{Coursework deadlines}:
+  \textbf{Team Study Thursday} Meet your team mentor on Teams
 \end{enumerate}
 
 \hypertarget{week5}{%
@@ -671,31 +687,25 @@ Events in the week starting 25th October:
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  \textbf{Team Study Tuesday}:
+  \textbf{Team Study Tuesday}: Working on team coursework
 \item
-  \textbf{Workshop}: Test first development
+  \textbf{Workshop}: Test first development with Anas Elhag
 \item
-  \textbf{Team Study Thursday}
+  \textbf{Team Study Thursday} Working on team coursework
 \item
-  \textbf{Coursework deadlines}:
+  \textbf{Coursework deadlines}: TeamCwk1 due, 29th October at 6pm
 \end{enumerate}
 
 \hypertarget{week6}{%
 \section{Pausing}\label{week6}}
 
-Events in the week starting 1st November (reading week). Take a break if you're ahead, or catchup if you've fallen behind. There are no activities in reading week.
+Events in the week starting 1st November (reading week). Take a break if you're ahead, or catchup if you've fallen behind.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  \textbf{Team Study Tuesday}:
-\item
-  \textbf{Workshop}: Git workflows
-\item
-  \textbf{Team Study Thursday}
-\item
-  \textbf{Coursework deadlines}:
+  There are no activities in reading week
 \end{enumerate}
 
 \hypertarget{week7}{%
@@ -707,13 +717,11 @@ Events in the week starting 8th November:
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  \textbf{Team Study Tuesday}:
+  \textbf{Team Study Tuesday}: Working on team coursework
 \item
-  \textbf{Workshop}:
+  \textbf{Workshop}: Git workflows with Suzanne Embury
 \item
-  \textbf{Team Study Thursday}
-\item
-  \textbf{Coursework deadlines}:
+  \textbf{Team Study Thursday} Working on team coursework
 \end{enumerate}
 
 \hypertarget{week8}{%
@@ -725,13 +733,11 @@ Events in the week starting 15th November:
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  \textbf{Team Study Tuesday}:
+  \textbf{Team Study Tuesday}: Working on team coursework
 \item
-  \textbf{Workshop}: Refactoring
+  \textbf{Workshop}: Refactoring with Anas Elhag
 \item
-  \textbf{Team Study Thursday}
-\item
-  \textbf{Coursework deadlines}:
+  \textbf{Team Study Thursday} Working on team coursework
 \end{enumerate}
 
 \hypertarget{week9}{%
@@ -743,13 +749,11 @@ Events in the week starting 22nd November:
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  \textbf{Team Study Tuesday}:
+  \textbf{Team Study Tuesday}: Working on team coursework
 \item
-  \textbf{Workshop}: Design for testability
+  \textbf{Workshop}: Design for testability Anas Elhag
 \item
-  \textbf{Team Study Thursday}
-\item
-  \textbf{Coursework deadlines}:
+  \textbf{Team Study Thursday} Second mentoring session
 \end{enumerate}
 
 \hypertarget{week10}{%
@@ -761,13 +765,13 @@ Events in the week starting 29th November:
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  \textbf{Team Study Tuesday}:
+  \textbf{Team Study Tuesday}: Working on team coursework
 \item
-  \textbf{Workshop}: Design patterns
+  \textbf{Workshop}: Design patterns with Sandra Sampaio
 \item
-  \textbf{Team Study Thursday}
+  \textbf{Team Study Thursday} Working on team coursework
 \item
-  \textbf{Coursework deadlines}:
+  \textbf{Coursework deadlines}: TeamCwk2 due, Friday 3rd December at 6pm
 \end{enumerate}
 
 \hypertarget{week11}{%
@@ -779,13 +783,11 @@ Events in the week starting 6th December:
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  \textbf{Team Study Tuesday}:
+  \textbf{Team Study Tuesday}: Marking sessions
 \item
-  \textbf{Workshop}: Risk management and practice exam
+  \textbf{Workshop}: Risk management and practice exam with Sandra Sampaio
 \item
-  \textbf{Team Study Thursday}
-\item
-  \textbf{Coursework deadlines}:
+  \textbf{Team Study Thursday} Marking sessions
 \end{enumerate}
 
 \hypertarget{week12}{%
@@ -797,9 +799,9 @@ Events in the week starting 13th December:
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  \textbf{Team Study Tuesday}:
+  \textbf{Team Study Tuesday}: Marking sessions
 \item
-  \textbf{Workshop}: Open source challenge
+  \textbf{Workshop}: Open source challenge with Sandra Sampaio
 \item
   \textbf{Team Study Thursday}
 \item
@@ -811,12 +813,33 @@ Events in the week starting 13th December:
 
 We'll be using the following tools:
 
+\hypertarget{msfteams}{%
+\subsection{Microsoft Teams}\label{msfteams}}
+
 \begin{itemize}
 \tightlist
 \item
-  Team study sessions take place on Microsoft Teams, login using your \texttt{@student.manchester.ac.uk} email address at \href{https://teams.microsoft.com/}{teams.microsoft.com} or \href{https://www.microsoft.com/en-gb/microsoft-teams/download-app}{download a native teams client}
+  Team study sessions take place on Microsoft Teams, login using your \texttt{@student.manchester.ac.uk} email address at \href{https://teams.microsoft.com/}{teams.microsoft.com} or \href{https://www.microsoft.com/en-gb/microsoft-teams/download-app}{download a native teams client} everthing else is in the guidebook at \href{https://software-eng.netlify.app/}{software-eng.netlify.app/}
 \item
-  Other course materials (coursework submission, slides and videos) can be found on blackboard \href{https://online.manchester.ac.uk/}{online.manchester.ac.uk}
+  Teams is also the place to go for livestream if you're following the workshops online
+\end{itemize}
+
+\hypertarget{blackboard}{%
+\subsection{Blackboard}\label{blackboard}}
+
+\begin{itemize}
+\tightlist
+\item
+  Other course materials (slides and videos) can be found on at \href{https://online.manchester.ac.uk/}{online.manchester.ac.uk}
+\end{itemize}
+
+\hypertarget{gitlab}{%
+\subsection{GitLab}\label{gitlab}}
+
+\begin{itemize}
+\tightlist
+\item
+  GitLab issue tracker
 \end{itemize}
 
 
@@ -849,12 +872,12 @@ We'll be using the following tools:
 \part{Weekly Workshops}\label{part-weekly-workshops}}
 
 \hypertarget{building}{%
-\chapter{Building and Testing Systems}\label{building}}
+\chapter{Building and testing}\label{building}}
 
 \hypertarget{Introduction}{%
 \section{Introduction}\label{Introduction}}
 
-In this workshop, we will be building and testing Marauroa. We will look at some essential processes for working on an existing team-developed software system. We'll be assuming that, after this workshop, you are capable of carrying out the following tasks for yourself, without needing much guidance:
+In this workshop, we will be building and testing a system called Marauroa. We will look at some essential processes for working on an existing team-developed software system. We'll be assuming that, after this workshop, you are capable of carrying out the following tasks for yourself, without needing much guidance:
 
 \begin{itemize}
 \tightlist
@@ -1019,6 +1042,15 @@ We're not going to be making any serious changes to the Marauroa code base in th
 \end{figure}
 
 Make sure that the \texttt{master} branch is selected, and press \texttt{Next}.
+
+⚠️ \textbf{Caution} ⚠️
+\textbf{Master or Main?}
+
+Historically, the default name for initial branch in a git repository was \texttt{master}. The initial branch was called ``master repository'' with other copies serving as ``slave repositories''.
+
+Note that as of 2021, the use of \texttt{master} has now been deprecated. We're using it in this course unit, but by default, new projects using git will call the initial branch \texttt{main} not \texttt{master} to avoid problemantic \href{https://en.wikipedia.org/wiki/Master/slave_(technology)}{master/slave terminology}.
+
+See \href{https://about.gitlab.com/blog/2021/03/10/new-git-default-branch-name/}{about.gitlab.com/blog/2021/03/10/new-git-default-branch-name/} for more details on the switch.
 
 As in the GitLab Access Check activity, we need to tell Eclipse where we want the cloned repository to be stored before it can issue the Git command to create it see figure \ref{fig:configureLocalStorageMarauroa-fig}
 
@@ -2229,7 +2261,7 @@ Checks that both variables refer to the same object.
 Checks that both variables refer to different objects.
 
 \hypertarget{debugging}{%
-\chapter{Debugging a Codebase}\label{debugging}}
+\chapter{Debugging}\label{debugging}}
 
 Much of your time as a software engineer will be spent debugging code, either other people's or your own. That code will often be unfamiliar to you so it is important to be able develop strategies for debugging an unfamiliar codebase. In this course we will use Stendhal as an example to help you develop better debugging skills, see figure \ref{fig:xkcd-debugging-fig}
 
@@ -3328,10 +3360,21 @@ In this final part of the exercise you should consider if there is a sensible ap
 \hypertarget{risking}{%
 \chapter{Risk management}\label{risking}}
 
-Content to be added here
+\begin{figure}
+
+{\centering \includegraphics[width=0.75\linewidth]{images/covid_risk_chart} 
+
+}
+
+\caption{Just like life during a global pandemic, software engineering is inherently risky \href{https://xkcd.com/2333/}{COVID Risk Chart (xkcd.com/2333)} by \href{https://en.wikipedia.org/wiki/Randall_Munroe}{Randall Munroe} is licensed under \href{https://creativecommons.org/licenses/by-nc/2.5/}{CC BY-NC 2.5}}\label{fig:xkcd-risk-fig}
+\end{figure}
+
+
 
 \hypertarget{course-content-2}{%
 \section{Course content}\label{course-content-2}}
+
+See workshop
 
 \hypertarget{opening}{%
 \chapter{Open source challenge}\label{opening}}
@@ -3519,13 +3562,270 @@ Of course, since this is a coursework exercise, you \emph{should} feel embarrass
 \hypertarget{mentoring}{%
 \chapter{Industrial mentoring}\label{mentoring}}
 
-\hypertarget{your-mentors}{%
-\section{Your mentors}\label{your-mentors}}
+For mentors, welcome and thanks for your interest in our software engineering mentoring program. This chapter is aimed primarily at \textbf{mentors not students} so if you're a student on this course you can go straight to chapter \ref{ourmentor} to find out more about how mentoring works.
 
-Information on mentors here
+\begin{figure}
 
-\hypertarget{getting-the-most-of-your-mentor}{%
-\section{Getting the most of your mentor}\label{getting-the-most-of-your-mentor}}
+{\centering \includegraphics[width=1\linewidth]{images/software-mentoring} 
+
+}
+
+\caption{An outline of software engineering mentoring at the University of Manchester. Watch the full 13 minute introduction at \href{https://youtu.be/H3rnYhd5hx8}{youtu.be/H3rnYhd5hx8}}\label{fig:mentoring-fig}
+\end{figure}
+
+
+
+A short video explaining the scheme is shown in figure \ref{fig:mentoring-fig} which describes:
+
+\begin{itemize}
+\tightlist
+\item
+  about the course and our students, see sections \ref{aboutus} and \ref{thecourse}
+\item
+  who is currently involved, see section \ref{thanks}
+\item
+  what we ask of volunteer mentors, see \ref{mentoringscheme}
+\item
+  what you get in return, see \ref{payback}
+\item
+  how to sign up, see \ref{registration}
+\end{itemize}
+
+\hypertarget{when}{%
+\section{When are the mentoring sessions?}\label{when}}
+
+There are two one hour sessions timetabled, where you will meet with the same team. Please only register if you can make BOTH of the sessions in the alloted time:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Thursday 21st October 2021 at 11am}
+\item
+  \textbf{Thursday 18th November 2021 at 11am}
+\end{enumerate}
+
+These are the only times when we can guarantee that everyone in a given software engineering team will be available.
+
+\hypertarget{registration}{%
+\section{I'm interested, how can I register?}\label{registration}}
+
+Register your interest via the zoom link below, although the actual sessions will be on Microsoft Teams.
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://zoom.us/meeting/register/tJUrdO-rqDgiGtcKDTP_Zj_d_oWTPznHYl8t}{zoom.us/meeting/register/tJUrdO-rqDgiGtcKDTP\_Zj\_d\_oWTPznHYl8t}
+\end{itemize}
+
+We are looking for around 60 mentors in 2021, if we are oversubscribed we will giving higher priority to
+
+\begin{itemize}
+\tightlist
+\item
+  previous mentors, those employers who have already supported the scheme (see section \ref{thanks})
+\item
+  female mentors, because women are under-represented in our software engineering mentoring team
+\end{itemize}
+
+\hypertarget{aboutus}{%
+\section{About the Department of Computer Science}\label{aboutus}}
+
+The Department of Computer Science at the University of Manchester \href{https://www.cs.manchester.ac.uk}{www.cs.manchester.ac.uk} is one of the oldest in the UK. The \href{http://www.computinghistory.org.uk/det/6013/The-Manchester-Baby-the-world-s-first-stored-program-computer-ran-its-first-program}{worlds first stored-program computer} (the \href{https://en.wikipedia.org/wiki/Manchester_Baby}{Manchester Baby}) was developed here in 1948, by the engineers and scientists who would go on to found the Department. This was followed by the first floating point machine, the first transistor computer and the first computer to use virtual memory. This history of innovation continues today with cutting-edge research projects like SpiNNaker (part of the Billion Euro \href{https://www.humanbrainproject.eu/}{Human Brain Project}) which has built a \href{https://apt.cs.manchester.ac.uk/projects/SpiNNaker/project/}{million core ARM-powered neural High Performance Computer (HPC)}.
+
+In the most recent government ranking of all research across the UK, the School was ranked 4th in the UK (based on GPA), and was assessed as having the best environment in the UK for computer science and informatics research. Since awarding the first undergraduate degrees in Computer Science in 1965, the school has awarded 10,000 degrees in Computer Science at Bachelors, Masters and Doctoral level. Our students are sought after by employees, and are active (and successful) in taking part in major coding competitions and hackathons.
+
+As of 2022, our \href{https://www.manchester.ac.uk/study/undergraduate/courses/2022/00560/bsc-computer-science/}{entry tariff is A* A* A*} with an A * in Maths, and a minimum of one Science subject at A*. As this is a second year course, students have been previous experience of programming in Python and Java (see section \ref{prereq})
+
+You can find out more about mentoring and other business engagement activities at \href{https://www.cs.manchester.ac.uk/connect/business-engagement/industrial-mentoring/}{www.cs.manchester.ac.uk/connect/business-engagement/industrial-mentoring/}
+
+\hypertarget{thecourse}{%
+\section{About the course}\label{thecourse}}
+
+If you volunteer, the course unit you will support is our second year compulsory course on \href{https://studentnet.cs.manchester.ac.uk/ugt/COMP23311/syllabus/}{Software Engineering 1 (COMP23311)}. This is a year-long course unit that is taken by students on all of our undergraduate programmes followed by \href{https://studentnet.cs.manchester.ac.uk/ugt/COMP23412/syllabus/}{Software Engineering 2 (COMP23412)}. The course focusses on the skills and expertise needed to be able to work with a large body of code. Students will gain experience of
+
+\begin{itemize}
+\tightlist
+\item
+  fixing bugs in code written by other people
+\item
+  writing and automating tests using test first development
+\item
+  adding new features to code without breaking the existing functionality
+\item
+  making larger scale architectural changes to improve non-functional properties of the system
+\end{itemize}
+
+all while keeping the system up and running for its users.
+
+For the 2021/22 academic year, we have a cohort of more than 400 students taking Software Engineering. They have already worked on individual assignments in the first semester, but in this semester, they will be working in teams of around 8. They will undertake 2 team-based coursework assignments across the semester, as well as keeping an individual reflective journal focussed on developing their personal software process, and a final examination in the summer.
+
+As well as learning about the academic discipline of software engineering, students take this course unit to gain key employability skills, to prepare them for interviews for industrial placements and graduate positions, and to allow them to hit the ground running when they do start work.
+
+\hypertarget{mentoringscheme}{%
+\section{About the Mentoring Scheme}\label{mentoringscheme}}
+
+As a mentor, you are asked to meet with your team of students twice, to work with a team of students for around an hour each time using Microsoft Teams. The visits take place in specific weeks, during time when the teams are scheduled to be working on their Software Engineering coursework. The dates/times for the visits are described in the eventbrite invitation you have received. Both sessions are one hour long.
+
+\hypertarget{agenda}{%
+\section{Meeting agenda}\label{agenda}}
+
+We suggest the following questions may be useful for
+
+\hypertarget{teambuilding}{%
+\subsection{Getting to know your team}\label{teambuilding}}
+
+Questions to get to know your team:
+
+\begin{itemize}
+\tightlist
+\item
+  What degree programme are you studying?
+\item
+  What ideas do you have about your career?
+\item
+  What interests you about computers/building software?
+\item
+  Are you thinking of doing an industrial year, or a summer placement?
+\item
+  What is the largest piece of software you have built/worked with so far?
+\end{itemize}
+
+\hypertarget{challenging}{%
+\subsection{Challenging and guiding the team}\label{challenging}}
+
+Questions to challenge and guide your team:
+
+\begin{itemize}
+\tightlist
+\item
+  What are you working on at the moment?
+\item
+  How are you coordinating work within your team?
+\item
+  What sorts of challenges are you facing at the moment?
+\item
+  What team working issues have you faced so far?
+\item
+  How did you divide the work between the team members?
+\item
+  How do you think your team is performing? How do you know?
+\item
+  Are you on target to meet your next deadline? If yes, how do you know that?
+\end{itemize}
+
+\hypertarget{studentqs}{%
+\subsection{Questions the Students Might Ask Mentors}\label{studentqs}}
+
+\emph{Questions about the mentor}:
+
+\begin{itemize}
+\tightlist
+\item
+  Can you give a brief overview of your career up to this point?
+\item
+  How did you get into the job you are doing today?
+\item
+  What do you enjoy about your current role?
+\item
+  Was there anything that surprised you about working in industry compared to being a student?
+\end{itemize}
+
+\emph{Questions about employability}:
+
+\begin{itemize}
+\tightlist
+\item
+  What skills do I need to be competitive in job applications?
+\item
+  What skills do you look for when you are hiring people?
+\item
+  What do you know now you wish you'd known as a student?
+\item
+  What are the current trends in software development?
+\item
+  What up-and-coming topics do you recommend we should know about?
+\item
+  What can I do to make my CV stand out when applying for placements/jobs?
+\end{itemize}
+
+\emph{Questions about team-work}:
+
+\begin{itemize}
+\tightlist
+\item
+  How do you resolve technical disagreements in development teams?
+\item
+  How do you deal with personality clashes within your team?
+\item
+  How do you encourage people to recommit to the team?
+\item
+  One of our team members isn't contributing. Would this happen in industry? How would you resolve these problems?
+\end{itemize}
+
+\emph{Questions about the process of developing software}:
+
+\begin{itemize}
+\tightlist
+\item
+  What processes/methodologies do you use in your company?
+\item
+  What software tools do you use and why?
+\item
+  What process do you use to release software in your company?
+\item
+  What code review practices do you use?
+\item
+  What makes a good commit message?
+\item
+  How big is the software system you are working on now?
+\item
+  What techniques do you use when working with code written by other people?
+\item
+  How can we avoid getting into a mess when using Git (or other version control systems)?
+\item
+  We're having a lot of trouble fixing this bug/making this change? Do you struggle with this too? How would you go about dealing with this sort of problem?
+\end{itemize}
+
+\hypertarget{payback}{%
+\section{What do you get in return?}\label{payback}}
+
+There are several benefits for mentors:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Increasing visibility of your employer as an organisation that makes good quality software
+\item
+  Share your knowledge and expertise: employers often complain that students could be taught better, this is your chance to improve the quality of teaching and prepare students for the workplace by making them aware of the realities of modern software engineering
+\item
+  Career development: its good for junior software engineers to demonstrate leadership and mentoring skills
+\item
+  Digital badge: we're offering signed digital badges as micro-credentials to thank our volunteer mentors
+\item
+  Fun: Many of our mentors enjoy the experience of working with young people as they take on a big software engineering project, often for the first time
+\end{enumerate}
+
+\hypertarget{thanks}{%
+\section{Who are the mentors?}\label{thanks}}
+
+We would like to thanks all of the employers who have helped us to date including:
+
+ARM, Avecto, Barclays, BBC, Blaize, Bloomberg, Booking.com, CDL Software, CodeThink, Code Computer Love, DataCentred, Digital Bridge Ltd, EGN Digital, Facebook, Farm Digital, Goldman Sachs, Google, IBM, Koder.ly, Morgan Stanley, NCC Group, On The Beach, Rental Cars, Sainsburys, Sage Group plc, SteamaCo, THG, ThoughtWorks and Zuhlke.
+
+Thanks also to over 1,500 students who have taken the course since its inception in 2016 and given us feedback on how to improve it.
+
+\hypertarget{ourmentor}{%
+\chapter{Your mentor}\label{ourmentor}}
+
+Your mentor is a professional software engineer from one of the employers listed here: ARM, Avecto, Barclays, BBC, Blaize, Bloomberg, Booking.com, CDL Software, CodeThink, Code Computer Love, DataCentred, Digital Bridge Ltd, EGN Digital, Facebook, Farm Digital, Goldman Sachs, Google, IBM, Koder.ly, Morgan Stanley, NCC Group, On The Beach, Rental Cars, Sainsburys, Sage Group plc, SteamaCo, THG, ThoughtWorks and Zuhlke.
+
+Your mentor will meet your team twice on Microsoft Teams during the mentoring sessions on Thursdays. They can help you understand how what you're learning on this course releates to software engineering in the real world.
+
+Mentors have volunteered their time to help you, so make sure you ask them lots of questions, some suggested questions are shown in section \ref{studentqs} if you need some inspiration.
+
+It makes your mentors job a lot easier if you turn your camera on, see section \ref{cameras}
 
 \hypertarget{syncing}{%
 \chapter{Synchronising}\label{syncing}}
@@ -3783,13 +4083,6 @@ Good luck!
 \hypertarget{part-coursework}{%
 \part{Coursework}\label{part-coursework}}
 
-X 10
-Y 10
-Z 6.00pm, Friday 1st October 2021
-
-
-
-
 \hypertarget{gitting}{%
 \chapter{Individual Coursework 1}\label{gitting}}
 
@@ -3848,9 +4141,9 @@ Please report any problems you encounter that are not covered in the troubleshoo
 \hypertarget{key}{%
 \subsection{Key Information}\label{key}}
 
-The exercise will be marked out of X, and will count towards Y percent of your total mark for the course unit.
+The exercise will be marked out of 10, and will count towards 10 percent of your total mark for the course unit.
 
-The deadline for the exercise is: Z
+The deadline for the exercise is 6.00pm, Friday 1st October 2021
 
 You'll submit your work through your own private GitLab repository. This is created for you, and should be visible in your personal project list through the GitLab web interface at
 
@@ -3876,9 +4169,7 @@ Any changes to your repository made after the final eligible marking request com
 \hypertarget{markingscheme}{%
 \subsection{Marking Scheme}\label{markingscheme}}
 
-This coursework exercise consists of 9
-(ref:ideversion) Eclipse 2020-03
-(ref:repoURI) \url{https://gitlab.cs.man.ac.uk/comp23311_2021/sliding_puzzle_} steps. If you complete them all correctly, then you should earn full marks against the marking scheme shown in table \ref{tab:marktable}.
+This coursework exercise consists of 9 steps. If you complete them all correctly, then you should earn full marks against the marking scheme shown in table \ref{tab:marktable}.
 
 \begin{table}
 
@@ -3987,19 +4278,19 @@ In the form that appears, you need enter only the URI of the remote repository t
 where \texttt{\textless{}your-username\textgreater{}} is replaced by your University username. This is a personal repository that has been set up just for use by yourself, for this activity. No other students can see its contents (though the course team and GTAs can see it).
 
 ⚠️ \textbf{Caution} ⚠️
-Note that the URI you need to give when cloning a remote Git project is \emph{not} the same as the URL of the GitLab page describing the project, even when using the HTTPS protocol. Make sure you have the right URI by checking against the one given on your project's main GitLab page. It should end in the string \texttt{.git}.
+Note that the URI you need to give when cloning a remote Git project is \emph{not} the same as the URL of the GitLab page describing the project, even when using the HTTPS protocol. Make sure you have the right URI by checking against the one given on your project's main GitLab page, via the \texttt{Clone} button. It should end in the string \texttt{.git}.
 
-Once the URI is entered, Eclipse will fill the other fields for you. (If this doesn't happen, it's likely that something went wrong when copying the link text from this pdf. Try copying it directly from the GitLab page for the project, instead. If you are still getting an error, get help in one of the scheduled clinic sessions.)
+Once the URI is entered, Eclipse will fill the other fields for you. (If this doesn't happen, it's likely that something went wrong when copying the link text from this pdf. Try copying it directly from values given with the \texttt{Clone} button on the GitLab page for the project, instead. If you are still getting an error, get help in one of the team study sessions.)
 
 Click \texttt{Next}. Eclipse will connect to GitLab to authenticate your connection. Since we are using the HTTPS access protocol here, you will need to enter your University username and password at this point. (You will also be given an option to save the details, so you don't need to enter them again.)
 
 \textbf{An Aside on Protocols:} GitLab can authenticate through two protocols, HTTPS and SSH. In previous academic years, we've found the HTTPS protocol to be most stable on our lab machines, but at present we expect both protocols to work well for our students on the VM you are asked to use for coursework, or from your own machine directly, in Eclipse or with other IDEs.
 
-If you have set up a PGP key for the machine you are using and have uploaded it to your GitLab account, and want to use the SSH protocol for this coursework, just copy and paste the SSH URI for your repository into the \texttt{Repository\ URI} field in place of the HTTPS URI. Note that you \emph{must} also tick the checkbox labelled \texttt{Accept\ and\ store\ this\ key,\ and\ continue\ connecting?} for the SSH connection to work.
+If you have set up an SSH key for the machine you are using and have uploaded it to your GitLab account, and want to use the SSH protocol for this coursework, just copy and paste the SSH URI for your repository into the \texttt{Repository\ URI} field in place of the HTTPS URI. Note that you \emph{must} also tick the checkbox labelled \texttt{Accept\ and\ store\ this\ key,\ and\ continue\ connecting?} for the SSH connection to work.
 
 Information about GitLab SSH setup within the Department, including how to create and register a PGP key with our GitLab server, can be found on the Department wiki pages:
 
-{[}wiki.cs.manchester.ac.uk/index.php/Gitlab/Git\_Setup{]}{[}\url{https://wiki.cs.manchester.ac.uk/index.php/Gitlab/Git_Setup}{]}
+\href{https://wiki.cs.manchester.ac.uk/index.php/Gitlab/Git_Setup}{wiki.cs.manchester.ac.uk/index.php/Gitlab/Git\_Setup}
 
 After you have entered correct login details, Eclipse will fetch some information about the remote repository. It will then ask you which branches you might want to work with in the cloned repository. In fact, all branches will be included in the clone regardless of what you select here. But Eclipse will create local versions of the branches you select (so-called \texttt{remote\ tracking\ branches}), in addition to the branches already present in the remote.
 
@@ -4064,11 +4355,11 @@ The project should now have been imported, and should be visible in the Package 
 
 In your web browser, open the GitLab page for the repository created for you for this exercise and go to the issue tracker (using the menu on the left). You should see a single open issue. This issue describes a bug within the program which you are going to fix.
 
-Your first task is to see if you can replicate this issue within the program itself. To launch the puzzle, find the \texttt{Puzzle} class in the \texttt{Package Explorer} view: it is located in the:
+Your first task is to see if you can replicate this issue within the program itself. To launch the puzzle, find the \texttt{Puzzle} class in the \texttt{Package\ Explorer} view: it is located in the:
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{uk.ac.man.cs.puzzle\}}
+\NormalTok{uk.ac.man.cs.puzzle}
 \end{Highlighting}
 \end{Shaded}
 
@@ -4078,7 +4369,7 @@ The game is a simple 8-tile sliding puzzle where the goal is to get the tiles in
 
 Play around with the puzzle for a while and see if you can replicate the bug which the issue describes. After you are done, close the program and return to Eclipse to continue the bug fixing process.
 
-The code base we are working with follows a common (and useful) convention of making a clear separation between test code and production code (that is, the code that actually implements the functionality needed by the client). It contains two source folders. The one called \{\tt src\} contains the production code, while the \{\tt test\} source folder contains the test code.
+The code base we are working with follows a common (and useful) convention of making a clear separation between test code and production code (that is, the code that actually implements the functionality needed by the client). It contains two source folders. The one called \texttt{src} contains the production code, while the \texttt{test} source folder contains the test code.
 
 ℹ️ \textbf{Note} ℹ️
 A \texttt{source\ folder} in Eclipse is simply a folder that is on the build path for the project. In the case of a Java project, like this one, that means that the folder is on the Java class path. Java classes and methods stored within folders that are not on the build path will not be found by the Eclipse Java compiler and will not be executed when the code is run. Eclipse uses a special folder icon with a small package symbol overlaid on it, to distinguish source folders from ordinary folders.
@@ -4122,7 +4413,7 @@ We're going to make a simple change to this project, and commit it to the Git re
 
 To do this in Eclipse, right click on the name of the \texttt{sliding-puzzle} project in the \texttt{Package\ Explorer} view. From the menu that appears, select \texttt{Team} \textgreater{} \texttt{SwitchTo} \textgreater{} \texttt{New\ Branch}. Eclipse then asks you to give the branch a name.
 
-Branch names should describe the functional change that the branch will contain. We're going to make a change that will fix the failing tests related to the mouse interaction, so we will call the new branch ``\texttt{mouse-interaction-fix}''.
+Branch names should describe the functional change that the branch will contain. We're going to make a change that will fix the failing tests related to the mouse interaction, so we will call the new branch \texttt{mouse-interaction-fix}.
 
 Enter this exact name (without the quotes) into the dialogue box as the branch name. Make sure the \texttt{Check\ out\ new\ branch} option is selected and press \texttt{Finish}.
 
@@ -4144,7 +4435,7 @@ One difference you should see, however, is that your new feature branch now appe
 \caption{After creating branch note the annotation change in the package explorer}\label{fig:afterCreateBranchSeeTheAnnotationChangeInPackageExplorer-fig}
 \end{figure}
 
-If you don't see this, then something has gone wrong. If you can't work out what it is, then you can get help from staff or a TA in one of the clinic sessions for this exercise.
+If you don't see this, then something has gone wrong. If you can't work out what it is, then you can get help from staff or a GTA in one of the team study sessions for this exercise.
 
 ℹ️ \textbf{Note} ℹ️
 \emph{The Team Menu}
@@ -4207,7 +4498,7 @@ Before committing the change, it is important to check that the tests now pass. 
 \caption{The JUnit view}\label{fig:runTestsAfterMakingTheChangeAndAllPass-fig}
 \end{figure}
 
-If the tests do pass, \textbf{run the puzzle and check that it now behaves as intended}. If your tests keep failing, or the puzzle still isn't working as it should, and you can't find the problem, you'll need to come to one of the clinic sessions to get help from staff or GTAs.
+If the tests do pass, \textbf{run the puzzle and check that it now behaves as intended}. If your tests keep failing, or the puzzle still isn't working as it should, and you can't find the problem, you'll need to come to one of the team study sessions to get help from staff or GTAs.
 
 Once the code compiles, passes all the tests, and the puzzle runs as expected we can commit our changes to our \emph{local} Git repository. To tell Eclipse that the change we've made should be included in this commit, drag the file from the `Unstaged Changes' box to the `Staged Changes' box in the Git Staging view. Figure \ref{fig:stageTheChangesNowTheTestsPass-fig} illustrates how this should look for a different change than the one you are making.
 
@@ -4252,7 +4543,50 @@ So, before we do anything else, we're going to check that the commit went throug
 
 This view shows the history of commits that are visible from the currently checked out commit. It shows that the branch we are on is one commit ahead of the local \texttt{master}, as well as the \texttt{master} branch in the remote repository (called \texttt{origin/master} because \texttt{origin} is the default name for the remote repository). The history view also tells us which branch is currently checked out, by bolding the name of the branch (and also putting the label \texttt{HEAD} next to it).
 
-This looks okay, so we will go ahead and merge our changes with the development branch.
+This looks okay, so we will go ahead and push the changes to the remote. Before doing this, take a look at the network for your remote repository on GitLab shown in figure \ref{fig:checkGitLabRemoteBeforePush-fig}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{images/checkGitLabRemoteBeforePush} 
+
+}
+
+\caption{Screenshot showing gitlab before pushing}\label{fig:checkGitLabRemoteBeforePush-fig}
+\end{figure}
+
+You should see only the \texttt{master} branch and the original lone commit. The changes you have made in your local repository are, as yet, not present in your remote (and therefore not visible to any collaborators you may have on the project).
+
+Now push the changes, by right clicking on the project name, and selecting \texttt{Team} \textgreater{} \texttt{Push\ to\ origin} from the menu that appears. Whenever you perform remote operations, like push, Eclipse will need your GitLab credentials. If you didn't save them earlier, you'll be asked to provide them again at this point.
+
+At this point, you may be asked to configure your repository for pushing. This sounds complicated but in fact is simple. Git is just asking you to tell it how it can map local branches to remote branches. Click on \texttt{Advanced}. You should see the dialogue appear in figure \ref{fig:configurePushRefSpecs-fig}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{images/configurePushRefSpecs} 
+
+}
+
+\caption{Configure push dialog}\label{fig:configurePushRefSpecs-fig}
+\end{figure}
+
+Press the ``Add All Branches Spec button in the middle of this dialogue. This will add the default \emph{ref specs} (reference specifications) to your repository. Select ``Finish''. Your repository should now be configured for push.
+
+Before it asks Git to push, Eclipse will give you a summary of what the push will do and ask you to confirm that you want to go ahead, looking something like the dialogue shown in figure \ref{fig:confirmationOfPushToRemote-fig}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{images/confirmationOfPushToRemote} 
+
+}
+
+\caption{Confirmation of push to remote dialog}\label{fig:confirmationOfPushToRemote-fig}
+\end{figure}
+
+Press \texttt{OK} to initiate the push.
+
+When the push is successfully completed, look at the contents of the History View. Can you see what has changed, as a result of the push?
+
+You should also look at the commit graph in your remote repository. How has that changed since we looked at it before the push operation?
 
 ℹ️ \textbf{Note} ℹ️
 
@@ -4323,67 +4657,15 @@ The History View (visible in the above screenshot) shows the new Git network aft
 \hypertarget{pushingchange}{%
 \subsection{Step seven: Push the Changes to the Remote Repository}\label{pushingchange}}
 
-If the merge looks okay in your History view, and the tests all still pass, we can push the changes to the remote repository. Before doing this, take a look at the network for your remote repository on GitLab shown in figure \ref{fig:checkGitLabRemoteBeforePush-fig}
+If the merge looks okay in your History view, and the tests all still pass, we can push the changes to the remote repository.
 
-\begin{figure}
-
-{\centering \includegraphics[width=1\linewidth]{images/checkGitLabRemoteBeforePush} 
-
-}
-
-\caption{Screenshot showing gitlab before pushing}\label{fig:checkGitLabRemoteBeforePush-fig}
-\end{figure}
-
-You should see only the \texttt{master} branch and the original lone commit. The changes you have made in your local repository are, as yet, not present in your remote (and therefore not visible to any collaborators you may have on the project).
-
-Now push the changes, by right clicking on the project name, and selecting \texttt{Team} \textgreater{} \texttt{Push\ to\ origin} from the menu that appears. Whenever you perform remote operations, like push, Eclipse will need your GitLab credentials. If you didn't save them earlier, you'll be asked to provide them again at this point.
-
-At this point, you may be asked to configure your repository for pushing. This sounds complicated but in fact is simple. Git is just asking you to tell it how it can map local branches to remote branches. Click on \texttt{Advanced}. You should see the dialogue appear in figure \ref{fig:configurePushRefSpecs-fig}
-
-\begin{figure}
-
-{\centering \includegraphics[width=1\linewidth]{images/configurePushRefSpecs} 
-
-}
-
-\caption{Configure push dialog}\label{fig:configurePushRefSpecs-fig}
-\end{figure}
-
-Press the ``Add All Branches Spec button in the middle of this dialogue. This will add the default \emph{ref specs} (reference specifications) to your repository. Select ``Finish''. Your repository should now be configured for push.
-
-Before it asks Git to push, Eclipse will give you a summary of what the push will do and ask you to confirm that you want to go ahead, shown in figure \ref{fig:confirmationOfPushToRemote-fig}
-
-\begin{figure}
-
-{\centering \includegraphics[width=1\linewidth]{images/confirmationOfPushToRemote} 
-
-}
-
-\caption{Confirmation of push to remote dialog}\label{fig:confirmationOfPushToRemote-fig}
-\end{figure}
+As before, we do this by right clicking on the project name, and selecting \texttt{Team} \textgreater{} \texttt{Push\ to\ origin} from the menu that appears. Again, if you haven't saved your GitLab credentials in Eclipse, you'll need to supply them again for this operation to complete.
 
 Press \texttt{OK} to initiate the push.
 
-When the push is successfully completed, look at the contents of the History View. Can you see what has changed, as a result of the push?
+When the push is successfully completed, look at the contents of the History View. Can you see what has changed, as a result of this second push?
 
-\hypertarget{issuetracker}{%
-\subsection{Step 8: Record the Project Status in the Issue Tracker}\label{issuetracker}}
-
-Once the bug fix has been merged into the development branch, and the tests all still pass, we can close the issue. Open the \texttt{Wrong\ Tiles\ Sliding} issue in the issue tracker and click on the \texttt{Close\ issue} button. (Of course, if the feature branch hasn't been merged into the development branch and the tests still fail, then we can't close the issue, as the bug wouldn't be properly fixed yet.)
-
-hen you are ready for your work to be marked, add a comment to the issue, to let the automated marking system know. The comment should contain the following text:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{Project ready for marking.}
-\end{Highlighting}
-\end{Shaded}
-
-This comment will be detected by the automated marking code, and your work will be scheduled for marking at the next automated marking point. Because of this, it's important that you use this exact text string in your issue comment. You can delete and re-add the comment at any time before the coursework deadline, if you want to make further changes.
-
-If you submit your work late for whatever reason, add this comment to your issue to let us know that you are ready for the work to be marked, and the late penalties to be worked out.
-
-There is one last step to take, which is for the purposes of marking only. Please make sure you also push your feature branch to the remote repository, so that the marking code can see that you have created it, and it is in the correct place. You can do this by checking out the feature branch, right clicking on the project name in the Package Explorer, and selecting \texttt{Team} \textgreater{} \texttt{Push\ Branch\ \textquotesingle{}mouse-interaction-fix\textquotesingle{}}. When done, you should see both branches pointing to the same commit on GitLab as shown in figure \ref{fig:checkGitLabNetworkAfterFeatureBranchIsPushed-fig}
+If you have merged and pushed correctly, you should see both branches pointing to the same commit on GitLab as shown in figure \ref{fig:checkGitLabNetworkAfterFeatureBranchIsPushed-fig}
 
 \begin{figure}
 
@@ -4394,18 +4676,84 @@ There is one last step to take, which is for the purposes of marking only. Pleas
 \caption{Screenshot showing check gitlab network after feature branch is pushed}\label{fig:checkGitLabNetworkAfterFeatureBranchIsPushed-fig}
 \end{figure}
 
+\hypertarget{issuetracker}{%
+\subsection{Step 8: Record the Project Status in the Issue Tracker}\label{issuetracker}}
+
+Once the bug fix has been merged into the development branch, and the tests all still pass, we can close the issue. Open the \texttt{Wrong\ Tiles\ Sliding} issue in the issue tracker and click on the \texttt{Close\ issue} button. (Of course, if the feature branch hasn't been merged into the development branch and the tests still fail, then we can't close the issue, as the bug wouldn't be properly fixed yet.)
+
+When you are ready for your work to be marked, add a comment to the issue, to let the automated marking system know. The comment should contain the following text:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Project ready for marking.}
+\end{Highlighting}
+\end{Shaded}
+
+This comment will be detected by the automated marking code, and your work will be scheduled for marking at the next automated marking point. Because of this, it's important that you use this exact text string in your issue comment. You can delete and re-add the comment at any time before the coursework deadline, if you want to make further changes. It's also important that you add the comment to the correct issue. In the past, students have created new issues for this marking-request comment and even, in a few cases, have made dummy commits with this string as the commit message. None of these actions will be picked up by the automated marking system, so it's important to check that the comment is appearing on the issue we created for you and that all your changes are visible at your remote \emph{before} the deadline.
+
 ⚠️ \textbf{Caution} ⚠️
 It is your responsibility to check that your work has been successfully pushed to the GitLab project repository \emph{before} the deadline for coursework submission. We will not mark your local repository contents, only the contents of your GitLab repository. Therefore, make sure you check that the full set of commits and branches you expect to see are visible in your GitLab repository, and report any problems to the course team \emph{before} the deadline.
+
+If you submit your work late for whatever reason, add this comment to your issue to let us know that you are ready for the work to be marked. Late marking will be rerun every couple of weeks, so you won't receive feedback immediately.
 
 \hypertarget{gameover}{%
 \subsection{Coursework Complete}\label{gameover}}
 
 This completes the instructions for the first individual coursework exercise for COMP23311. If you managed to complete it in full, then you can be confident that your Git/GitLab set up is as needed on this machine for the workshops and the coursework. Perhaps even more importantly, you have gone through the basic cycle of steps we'll expect you to follow when carrying out the team coursework for this unit. If you were unfamiliar with this approach to coding, then it might have felt long-winded and complicated. But with a little practice, this pattern of work will become easier and more natural. And, with this experience under your belt, you'll find it much easier to adapt to variants of it, if you join a software engineering team on placement or in employment outside University.
 
+In the next individual coursework, we'll look at a more complicated merge case, when Git can't handle the merge by itself and needs help from you to intervene.
+
 \hypertarget{conflicting}{%
 \chapter{Individual Coursework 2}\label{conflicting}}
 
 Exercise 2: conflicts in git
+
+\hypertarget{TFD}{%
+\section{Test-First Development and Managing Conflicts}\label{TFD}}
+
+\hypertarget{introt}{%
+\subsection{Introduction}\label{introt}}
+
+This second individual coursework exercise for COMP23311 is designed to help you develop two new skills that professional software engineers need, and that will be essential for the remaining team coursework:
+
+\begin{itemize}
+\tightlist
+\item
+  Test-first development, and
+\item
+  Handling conflicts during integration of separate lines of development with Git.
+\end{itemize}
+
+Test-first development (TFD) is an approach to developing software in which we first write the test cases describing the functionality we need to implement, and then write the production code that will cause them to change from failing tests to passing tests. The tests provide the specification for what needs to be built. You got a taste of TFD in writing the tests to make your bugs visible in the code base in the first team coursework exercise, but you'll be required to apply it more extensively in the second team coursework exercise. This individual coursework exercise gives you a chance to practice the basic skills in private, before you have to use them in front of your team and mentor. It does this by giving you a set of test cases describing the behaviour needed of a new feature for the Sliding Puzzle game you worked on in the first individual coursework exercise. Your task is to make these failing tests pass, by implementing the feature as the tests (and the issue text) describe it.
+
+When you've implemented the feature, you'll need to integrate it with your \texttt{master} branch. But, another member of the Sliding Puzzle team has also made commits on the master branch since work on your feature began, implementing another feature. You'll need to merge the two lines of development together. Since both features touch much the same parts of the code, a number of conflicts will be discovered when you try to merge. Your task will be to remove the conflicts from the code base, so that the merge can go ahead. You'll finish by creating a commit that contains both new features, co-existing together, and passing all the tests.
+
+You'll practice these skills by carrying out the following steps:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Clone the coursework repository and import it into your IDE.
+\item
+  Read the tests describing the new feature you must implement, on the feature branch provided.
+\item
+  Make changes to the production code, to implement the feature and cause the tests to pass.
+\item
+  Commit the code to the feature branch.
+\item
+  Merge your branch with the development branch.
+\item
+  Deal with the conflicts that the attempt to merge makes visible, and complete the merge.
+\item
+  Push the completed merge to your remote repository for marking.
+\item
+  Update the issue tracker to record the project status, and request marking.
+\end{enumerate}
+
+Instructions for carrying these tasks out from within the Eclipse IDE are given in this document. We focus on Eclipse as that is the IDE used for the team coursework. You are free to use any IDE that you wish to carry out this individual coursework exercise, but we can currently only provide instructions and technical support for Eclipse, run on the VM provided by the Department.
+
+Once the exercise is completed, you should be ready to use the same skills on your team's repository in the remaining team coursework exercises.
 
 \hypertarget{dealing}{%
 \chapter{Team Coursework 1}\label{dealing}}
