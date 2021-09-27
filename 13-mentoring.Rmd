@@ -10,10 +10,10 @@ knitr::include_graphics("images/software-mentoring.png")
 
 A short video explaining the scheme is shown in figure \@ref(fig:mentoring-fig) which describes:
 
-* about the course and our students, see sections \@ref(aboutus) and \@ref(thecourse)
-* who is currently involved, see section \@ref(thanks)
+* the course and our students, see sections \@ref(thecourse) and \@ref(aboutus)
+* employers who are currently involved, see section \@ref(thanks)
 * what we ask of volunteer mentors, see \@ref(mentoringscheme)
-* what you get in return, see \@ref(payback)
+* what you get in return for volunteering, see \@ref(payback)
 * how to sign up, see \@ref(registration)
 
 ## When are the mentoring sessions? {#when}
@@ -31,10 +31,11 @@ Register your interest via the zoom link below:
 
 * [zoom.us/meeting/register/tJUrdO-rqDgiGtcKDTP_Zj_d_oWTPznHYl8t](https://zoom.us/meeting/register/tJUrdO-rqDgiGtcKDTP_Zj_d_oWTPznHYl8t)
 
-We are looking for around 60 mentors in 2021, if we are oversubscribed we will giving higher priority to
+We are looking for around 60 mentors in 2021, if we are oversubscribed we will give higher priority to:
 
 * previous mentors, those employers who have already supported the scheme (see section \@ref(thanks))
 * female mentors, because women are under-represented in our software engineering mentoring team
+* other minority groups such as BAME mentors
 * alumni, especially former students who have done this course since 2016
 
 ## About the Department of Computer Science {#aboutus}
@@ -56,12 +57,12 @@ If you volunteer, the course unit you will support is our second year compulsory
 
  ...all while keeping the system up and running for its users.
 
-For the 2021/22 academic year, we have a cohort of more than 400 students taking Software Engineering. They have already worked on individual assignments in the first semester, but in this semester, they will be working in teams of around 8. They will undertake 2 team-based coursework assignments across the semester, as well as keeping an individual reflective journal focussed on developing their personal software process, and a final examination in the summer.
+For the 2021/22 academic year, we have a cohort of more than 400 students taking Software Engineering. They have already worked on individual assignments in the first semester, but in this semester, they will be working in teams of around 8. They will undertake 2 team-based coursework assignments across the semester, and a final examination in the summer.
 
 As well as learning about the academic discipline of software engineering, students take this course unit to gain key employability skills, to prepare them for interviews for industrial placements and graduate positions, and to allow them to hit the ground running when they do start work.
 
 ## About the Mentoring Scheme {#mentoringscheme}
-As a mentor, you are asked to meet with your team of students twice, to work with a team of students for around an hour each time using Microsoft Teams. The visits take place in specific weeks, during time when the teams are scheduled to be working on their Software Engineering coursework. The dates/times for the visits are described in the eventbrite invitation you have received. Both sessions are one hour long.
+As a mentor, you are asked to meet with your team of students twice, to work with a team of students for around an hour each time using Zoom. The visits take place in specific weeks, during time when the teams are scheduled to be working on their Software Engineering coursework. The dates/times for the visits are described in section \@ref(when). Both sessions are one hour long.
 
 ## Meeting agenda {#agenda}
 We suggest the following questions may be useful for
@@ -135,7 +136,7 @@ There are several benefits for mentors:
 1. Fun: Many of our mentors enjoy the experience of working with young people as they take on a big software engineering project, often for the first time
 
 ## Who are the mentors? {#thanks}
-We would like to thanks all of the employers who have helped us to date including:
+We would like to thank all of our partners and employers who have helped us to date including:
 
 (ref:mentors)
 
