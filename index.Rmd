@@ -193,4 +193,4 @@ So now that we've dispensed with the formalities, you can start using this labor
 (ref:numsteps) 9  
 
 
-(ref:mentors) ARM, Avecto, Barclays, BBC, Blaize, Bloomberg, Booking.com, CDL Software, CodeThink, Code Computer Love, DataCentred, Digital Bridge Ltd, EGN Digital, Facebook, Farm Digital, Goldman Sachs, Google, IBM, Koder.ly, Morgan Stanley, NCC Group, On The Beach, Rental Cars, Sainsburys, Sage Group plc, SteamaCo, THG, ThoughtWorks and Zuhlke.
+(ref:mentors) ARM, Avecto, Barclays, BBC, Blaize, Bloomberg, Booking.com, CDL Software, CodeThink, Code Computer Love, DataCentred, Digital Bridge Ltd, EGN Digital, Facebook, Farm Digital, Giant Digital, Goldman Sachs, Google, IBM, Koder.ly, Matillion, Morgan Stanley, NCC Group, On The Beach, Rental Cars, Sainsburys, Sage Group plc, Siemens (Mentor Graphics), SteamaCo, THG, ThoughtWorks and Zuhlke.
