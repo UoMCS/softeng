@@ -13,7 +13,7 @@ A short video explaining the scheme is shown in figure \@ref(fig:mentoring-fig) 
 * the course and our students, see sections \@ref(thecourse) and \@ref(aboutus)
 * employers who are currently involved, see section \@ref(thanks)
 * what we ask of volunteer mentors, see \@ref(mentoringscheme)
-* what you get in return for volunteering, see \@ref(payback)
+* what mentors get in return for volunteering, see \@ref(payback)
 * how to sign up, see \@ref(registration)
 
 ## When are the mentoring sessions? {#when}
@@ -38,12 +38,17 @@ We are looking for around 60 mentors in 2021, if we are oversubscribed we will g
 * other minority groups such as BAME mentors
 * alumni, especially former students who have done this course since 2016
 
-## About the Department of Computer Science {#aboutus}
-The Department of Computer Science at the University of Manchester [www.cs.manchester.ac.uk](https://www.cs.manchester.ac.uk) is one of the oldest and biggest in the UK. The [worlds first stored-program computer](http://www.computinghistory.org.uk/det/6013/The-Manchester-Baby-the-world-s-first-stored-program-computer-ran-its-first-program) (the “[Manchester Baby](https://en.wikipedia.org/wiki/Manchester_Baby)”) was developed here in 1948, by the engineers and scientists who would go on to found the Department. This was followed by the first floating point machine, the first transistor computer and the first computer to use virtual memory. This history of innovation continues today with cutting-edge research projects like SpiNNaker (part of the Billion Euro [Human Brain Project](https://www.humanbrainproject.eu/)) which has built a [million core ARM-powered neural High Performance Computer (HPC)](https://apt.cs.manchester.ac.uk/projects/SpiNNaker/project/).
+## About us {#aboutus}
+The Department of Computer Science at the University of Manchester [www.cs.manchester.ac.uk](https://www.cs.manchester.ac.uk) is one of the oldest and biggest in the UK. The [worlds first stored-program computer](http://www.computinghistory.org.uk/det/6013/The-Manchester-Baby-the-world-s-first-stored-program-computer-ran-its-first-program) (the “[Manchester Baby](https://en.wikipedia.org/wiki/Manchester_Baby)”) was developed here in 1948, by the engineers and scientists who would go on to found the Department. This was followed by
+* the first floating point machine
+* the first transistor computer
+* the first computer to use virtual memory
+
+This history of innovation continues today with cutting-edge research projects like SpiNNaker (part of the Billion Euro [Human Brain Project](https://www.humanbrainproject.eu/)) which has built a [million core ARM-powered neural High Performance Computer (HPC)](https://apt.cs.manchester.ac.uk/projects/SpiNNaker/project/).
 
 In the most recent government ranking of all research across the UK, the School was ranked 4th in the UK (based on GPA), and was assessed as having the best environment in the UK for computer science and informatics research. Since awarding the first undergraduate degrees in Computer Science in 1965, the school has awarded 10,000 degrees in Computer Science at Bachelors, Masters and Doctoral level. Our students are sought after by employees, and are active (and successful) in taking part in major coding competitions and hackathons.
 
-As of 2022, our [entry tariff is A* A* A*](https://www.manchester.ac.uk/study/undergraduate/courses/2022/00560/bsc-computer-science/) with an A * in Maths, and a minimum of one Science subject at A*. As this is a second year course, students already have some experience of programming in Python and Java from their first year undergraduate study, see section \@ref(prereq).
+As of 2022, our [entry tariff is A* A* A*](https://www.manchester.ac.uk/study/undergraduate/courses/2022/00560/bsc-computer-science/) with an A* in Maths, and a minimum of one Science subject at A*. As this is a second year course, students already have some experience of programming in Python and Java from their first year undergraduate study, see section \@ref(prereq).
 
 You can find out more about mentoring and other business engagement activities at [www.cs.manchester.ac.uk/connect/business-engagement/industrial-mentoring/](https://www.cs.manchester.ac.uk/connect/business-engagement/industrial-mentoring/)
 
@@ -57,15 +62,12 @@ If you volunteer, the course unit you will support is our second year compulsory
 
  ...all while keeping the system up and running for its users.
 
-For the 2021/22 academic year, we have a cohort of more than 400 students taking Software Engineering. They have already worked on individual assignments in the first semester, but in this semester, they will be working in teams of around 8. They will undertake 2 team-based coursework assignments across the semester, and a final examination in the summer.
-
-Students looking for placements starting in 2022, start searching now and keep looking throughout the academic year up until June
-
+For the 2021/22 academic year, we have a cohort of more than 400 students taking Software Engineering. They will be working in small teams of around 7 students to undertake team-based coursework assignments across the semester, and a final examination in the summer.
 
 As well as learning about the academic discipline of software engineering, students take this course unit to gain key employability skills, to prepare them for interviews for industrial placements and graduate positions, and to allow them to hit the ground running when they do start work.
 
 ## About the Mentoring Scheme {#mentoringscheme}
-As a mentor, you are asked to meet with your team of students twice, to work with a team of students for around an hour each time using Zoom. The visits take place in specific weeks, during time when the teams are scheduled to be working on their Software Engineering coursework. The dates/times for the visits are described in section \@ref(when). Both sessions are one hour long.
+As a mentor, you are asked to meet with your team of students twice, to work with a team of students for around an hour each time using Teams/Zoom. The visits take place in specific weeks, during time when the teams are scheduled to be working on their Software Engineering coursework, see section \@ref(dealing). The dates/times for the visits are described in section \@ref(when). Both sessions are fifty minutes long.
 
 ## Meeting agenda {#agenda}
 We suggest the following questions may be useful for structuring your meeting:
@@ -129,17 +131,17 @@ Questions to challenge and guide your team:
 * How can we avoid getting into a mess when using Git (or other version control systems)?
 * We’re having a lot of trouble fixing this bug/making this change? Do you struggle with this too? How would you go about dealing with this sort of problem?
 
-## What do you get in return? {#payback}
-There are several benefits for mentors:
+## What do mentors get in return? {#payback}
+There are several benefits for you and your employer as a mentor:
 
 1. Increasing visibility of your employer as an organisation that makes good quality software
 1. Share your knowledge and expertise: employers often complain that students could be taught better, this is your chance to improve the quality of teaching and prepare students for the workplace by making them aware of the realities of modern software engineering
-1. Career development: its good for junior software engineers to demonstrate leadership and mentoring skills
+1. Career development: this is an opportunity for junior software engineers to demonstrate leadership and mentoring skills
 1. Digital badge: we're offering signed digital badges as micro-credentials to thank our volunteer mentors
 1. Fun: Many of our mentors enjoy the experience of working with young people as they take on a big software engineering project, often for the first time
 
 ## Who are the mentors? {#thanks}
-We would like to thank all of our partners and employers who have helped us to date including:
+We would like to thank all of our collaborators, partners and industry club members who have helped us to date including:
 
 (ref:mentors)
 

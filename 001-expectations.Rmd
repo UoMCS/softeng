@@ -20,6 +20,26 @@ knitr::include_graphics("images/compiling.png")
 ### Our expectations of you {#rtfm}
 We need you to read ALL of the messages we send you via GitLab, Jenkins, Microsoft Teams, the Piazza forum, emails and in this guidebook. Before you ask for help, make sure you have Read The Friendly Manual(s). RTFM.
 
+#### Getting help {#helpme}
+
+Regardless of if you are attending live (in person) or remotely (online, login to Teams) the mechanism for getting help is the same:
+
+For live sessions (timetabled), team study and workshops you need to use:
+
+* [https://gitlab.cs.man.ac.uk/comp23311_2021/COMP23311-Live-Help-Queue/
+](https://gitlab.cs.man.ac.uk/comp23311_2021/COMP23311-Live-Help-Queue/)
+
+
+*Outside* of live sessions use the piazza discussion board
+
+* [piazza.com/class/ku382xdryxd644](https://piazza.com/class/ku382xdryxd644)
+
+Please note:
+
+* During Team study sessions: we can discuss and help with coursework
+* During Workshops: we will support workshop content only, **NO COURSEWORK** questions
+
+
 #### Workshops vs. Team study {#workshops}
 There are two main sessions:
 
