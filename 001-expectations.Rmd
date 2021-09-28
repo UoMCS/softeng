@@ -26,8 +26,7 @@ Regardless of if you are attending live (in person) or remotely (online, login t
 
 For live sessions (timetabled), team study and workshops you need to use:
 
-* [https://gitlab.cs.man.ac.uk/comp23311_2021/COMP23311-Live-Help-Queue/
-](https://gitlab.cs.man.ac.uk/comp23311_2021/COMP23311-Live-Help-Queue/)
+* [gitlab.cs.man.ac.uk/comp23311_2021/COMP23311-Live-Help-Queue](https://gitlab.cs.man.ac.uk/comp23311_2021/COMP23311-Live-Help-Queue/)
 
 
 *Outside* of live sessions use the piazza discussion board
