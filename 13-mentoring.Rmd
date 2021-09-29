@@ -8,7 +8,7 @@ knitr::include_graphics("images/software-mentoring.png")
 
 (ref:captionmentoring) An outline of software engineering mentoring at the University of Manchester. Watch the full 13 minute introduction at [youtu.be/H3rnYhd5hx8](https://youtu.be/H3rnYhd5hx8)
 
-A short video explaining the scheme is shown in figure \@ref(fig:mentoring-fig) which describes:
+A short video explaining our software engineering scheme is shown in figure \@ref(fig:mentoring-fig) which describes:
 
 * the course and our students, see sections \@ref(thecourse) and \@ref(aboutus)
 * employers who are currently involved, see section \@ref(thanks)
