@@ -1,6 +1,6 @@
 # Industrial mentoring {#mentoring}
 
-Hello, welcome and thanks for your interest in our software engineering mentoring program. This chapter is aimed primarily at **mentors not students** so if you're a student on this course you can go straight to chapter \@ref(ourmentor) to find out more about how mentoring works.
+Hello, welcome and thanks for your interest in our software engineering mentoring program. This chapter is aimed primarily at **mentors not students** so if you're a student on this course you can go ignore this bit and go straight to chapter \@ref(ourmentor) to find out more about how mentoring works.
 
 If you're a mentor (or a potential mentor) read on...
 
@@ -33,10 +33,10 @@ Register your interest via the zoom link below:
 
 * [zoom.us/meeting/register/tJUrdO-rqDgiGtcKDTP_Zj_d_oWTPznHYl8t](https://zoom.us/meeting/register/tJUrdO-rqDgiGtcKDTP_Zj_d_oWTPznHYl8t)
 
-We are looking for around 60 mentors in 2021, if we are oversubscribed we will give higher priority to:
+We are looking for around 60 mentors in 2021, when we are oversubscribed we will give higher priority to:
 
 * returning mentors, those employers who have already supported the scheme (see section \@ref(thanks))
-* female mentors, because women are under-represented in our community of software engineering mentors
+* female mentors, because women are under-represented in our community
 * BAME and other minority group mentors
 * alumni, especially former students who have done this course since 2016
 * local employers, as part of the University's commitment to [civic engagement and social responsibility](https://www.manchester.ac.uk/discover/vision/#panel-civic-engagement)

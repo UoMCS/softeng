@@ -3,7 +3,6 @@
 # Starting with Stendhal {#starting}
 Stendhal ([stendhalgame.org](https://stendhalgame.org/)) is a massively multiplayer online role-playing game ([MMORPG](https://en.wikipedia.org/wiki/Massively_multiplayer_online_role-playing_game)) with an old school feel. You can explore cities, forest, mountains, plains and dungeons. A screenshot of some of the the game shown in figure \@ref(fig:stendhalgame-fig).
 
-
 ```{r stendhalgame-fig, echo = FALSE, fig.align = "center", out.width = "75%", fig.cap = "(ref:captionstgame)"}
 knitr::include_graphics("images/Semos_City_NPCs-2020.png")
 ```
