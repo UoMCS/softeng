@@ -2,6 +2,8 @@
 
 Hello, welcome and thanks for your interest in our software engineering mentoring program. This chapter is aimed primarily at **mentors not students** so if you're a student on this course you can go straight to chapter \@ref(ourmentor) to find out more about how mentoring works.
 
+If you're a mentor (or a potential mentor) read on...
+
 ```{r mentoring-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap = "(ref:captionmentoring)"}
 knitr::include_graphics("images/software-mentoring.png")
 ```
@@ -20,10 +22,10 @@ A short video explaining our software engineering scheme is shown in figure \@re
 
 There are two one hour sessions timetabled, where you will meet with the same team. Please only register if you can make BOTH of the sessions in the alloted time:
 
-1. **Thursday 21st October 2021 at 11am**
-1. **Thursday 18th November 2021 at 11am**
+1. **Thursday 21st October 2021 at 11am** BST (GMT+1) London (on Zoom)
+1. **Thursday 18th November 2021 at 11am** GMT London (on Zoom)
 
-These are the only times when we can guarantee that everyone in a given software engineering team will be available.
+These are the only times when we can guarantee that everyone in a given software engineering team will be available. Timetabling 400+ students is complicated as they are all on different degree programs with different options selected. This is why the mentoring sessions are rigidly fixed.
 
 ## I'm interested, how can I register? {#registration}
 
@@ -33,10 +35,11 @@ Register your interest via the zoom link below:
 
 We are looking for around 60 mentors in 2021, if we are oversubscribed we will give higher priority to:
 
-* previous mentors, those employers who have already supported the scheme (see section \@ref(thanks))
-* female mentors, because women are under-represented in our software engineering mentoring team
-* other minority groups such as BAME mentors
+* returning mentors, those employers who have already supported the scheme (see section \@ref(thanks))
+* female mentors, because women are under-represented in our community of software engineering mentors
+* BAME and other minority group mentors
 * alumni, especially former students who have done this course since 2016
+* local employers, as part of the University's commitment to [civic engagement and social responsibility](https://www.manchester.ac.uk/discover/vision/#panel-civic-engagement)
 
 ## About us {#aboutus}
 The Department of Computer Science at the University of Manchester [www.cs.manchester.ac.uk](https://www.cs.manchester.ac.uk) is one of the oldest and biggest in the UK. The [worlds first stored-program computer](http://www.computinghistory.org.uk/det/6013/The-Manchester-Baby-the-world-s-first-stored-program-computer-ran-its-first-program) (the “[Manchester Baby](https://en.wikipedia.org/wiki/Manchester_Baby)”) was developed here in 1948, by the engineers and scientists who would go on to found the Department. This was followed by:
