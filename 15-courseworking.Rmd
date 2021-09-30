@@ -416,7 +416,7 @@ knitr::include_graphics("images/checkGitLabRemoteBeforePush.png")
 
 You should see only the `master` branch and the original lone commit. The changes you have made in your local repository are, as yet, not present in your remote (and therefore not visible to any collaborators you may have on the project).
 
-Now push the changes, by right clicking on the project name, and selecting `Team` > `Push to origin` from the menu that appears.  Whenever you perform remote operations, like push, Eclipse will need your GitLab credentials.  If you didn't save them earlier, you'll be asked to provide them again at this point.
+Now push the changes, by right clicking on the project name, and selecting `Team` > `Push to origin` from the menu that appears. If this is not available, then you may also do `Team` > `Remote` > `Push` , then ensure the details are correct on the dialogue box, and then click `Next`.  Whenever you perform remote operations, like push, Eclipse will need your GitLab credentials.  If you didn't save them earlier, you'll be asked to provide them again at this point.
 
 At this point, you may be asked to configure your repository for pushing. This sounds complicated but in fact is simple.  Git is just asking you to tell it how it can map local branches to remote branches.  Click on `Advanced`. You should see the dialogue appear in figure \@ref(fig:configurePushRefSpecs-fig)
 
