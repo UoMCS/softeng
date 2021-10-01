@@ -204,18 +204,19 @@ It’s a common practice to annotate each section with it’s name as a comment,
 
 Let's put the knowledge you have gained so far into practice. you will build a class with two methods and then write some unit tests to check that all is working as expected. Follow these steps:
 
-1. Create a new project: `File` > `New` > `Java Project`
+1. Create a new project: `File` > `New` > `Java Project` (in our example, we have called the project `COMP23311`)
 1. The `src` source folder has been created by default. Create another source folder by right-clicking on the root element of the hierarchy:  `New` > `Source Folder`.
 1. One of the folders will contain the code under test, while the other one while have the tests.
-1. On the code under test folder, create a class `New` > `Class` with two methods: one that returns the sum of two integers and another one that :
-	+ One of them returns the sum of two integers. `IN: 5,3; OUT: 8`
-	+ The other one, gets two strings and returns a string that which is the product of linking them. `IN: aab, bbc; OUT: aabbbc`
+1. On the code under test folder, create a class `New` > `Class` (our example calles this class `Acme`) with two methods: 
+	+ One which returns the sum of two integers. `IN: 5,3; OUT: 8`
+	+ One which takes two strings and returns a string which is the product of concatenating them. `IN: aab, bbc; OUT: aabbbc`; `IN: abc, xyz; OUT: abcxyz`
 1. Create the Test case by *right clicking* on the project, `New` and then select `JUnit Test Case`.
 1. Now we are going to fill out some fields of the *New JUnit Test Case* dialogue menu.
     + **Name**. As a convention for naming test classes, you have to append *Test* to the code under test class name, see figure \@ref(fig:junit-name-fig)
     + **Class under test**. You can specify which is the class under test in the last field of the dialogue menu. Click `Browse...` see figure \@ref(fig:junit-classundertest-fig)
     + A dialogue will ask about whether you want to include the JUnit libraries. Say `Yes` to this.
     + Click on *Finish*.
+1. You now need to create methods which test the code you have written. You ultimately have to think to yourself "How can I know that this code is functioning correctly? What behaviour will I look for to tell me this? Can I trip-up the code in any way, therefore telling me that it isnt working properly?"
 1. You could test many things:
     + On the sum method, check whether the output is `8` when the inputs are `3` and `5`
     + On the string concatenation method, check the output is `aabbbc` when the inputs are `aab` and `bbc`
