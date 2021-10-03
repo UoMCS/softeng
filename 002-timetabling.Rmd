@@ -47,7 +47,7 @@ Events in the week starting 27th September:
 ## Reading {#week2}
 Events in the week starting 4th October:
 
-1. **Team Study Tuesday**: Individual coursework 2 starts, see \@ref(conflicting). Meet your team on Teams
+1. **Team Study Tuesday**: Individual coursework 2 starts, see chapter \@ref(conflicting). Meet your team on Teams
 1. **Workshop**: Reading large code bases with Anas Elhag
 1. **Team Study Thursday** Working on coursework
 

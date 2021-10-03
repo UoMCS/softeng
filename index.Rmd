@@ -175,6 +175,12 @@ So now that we've dispensed with the formalities, you can start using this labor
 
 
 <!-- todo update hanbook urls e.g. UGHandbook21:Academic_Malpractice to UGHandbook22:Academic_Malpractice etc-->
+<!--
+23311-TeamCwk1-S-Fixing Bugs		120	40
+23311-TeamCwk2-S-Adding Features		120	40
+23311-IndCwk1-S-Basic Git		10	10
+23311-IndCwk2-S-Conflicts in Git		10	10
+-->
 
 (ref:infobox) ℹ️ **Note** ℹ️   
 
@@ -190,6 +196,9 @@ So now that we've dispensed with the formalities, you can start using this labor
 (ref:percentage) 10  
 
 (ref:deadline) 6.00pm, Friday 1st October 2021  
+
+(ref:deadline2) 6.00pm, Friday 15th October 2021  
+
 
 (ref:numsteps) 9  
 
