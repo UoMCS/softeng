@@ -24,14 +24,14 @@ We need you to read ALL of the messages we send you via GitLab, Jenkins, Microso
 
 Regardless of if you are attending live (in person) or remotely (online, login to Teams) the mechanism for getting help is the same:
 
-For live sessions (timetabled), team study and workshops you need to use:
+For live sessions (timetabled), team study and workshops you need to use the issue tracker:
 
-* [gitlab.cs.man.ac.uk/comp23311_2021/COMP23311-Live-Help-Queue](https://gitlab.cs.man.ac.uk/comp23311_2021/COMP23311-Live-Help-Queue/)
+* (ref:livehelpqueue)
 
 
-*Outside* of live sessions use the piazza discussion board
+*Outside* of live sessions use the piazza discussion board:
 
-* [piazza.com/class/ku382xdryxd644](https://piazza.com/class/ku382xdryxd644)
+* (ref:piazzaforum)
 
 Please note:
 
@@ -86,7 +86,12 @@ This course is supported by a team of Graduate Teaching Assistants (GTAs), they 
 
 Our GTAs have Read Their Friendly Manual to (the GTA wiki) so they will know how to help you, or can quickly find out how to. They won't give you the answer, but will be able to help you find your own way.
 
+::: {.rmdcaution}
+
+(ref:cautionbox)
 The GTAs have scheduled marking sessions that we expect them to stick to. The second year timetable is incredibly crowded, and the team study sessions are the **ONLY TIMES IN THE WEEK** when we can guarantee that everyone in your team is available.
+
+:::
 
 ### What to expect from mentors {#gomentors}
 You have been assigned a mentor who will meet with you online for two one hour meetings, see chapter \@ref(mentoring). These meetings are a bit like code review meetings, they have access to your private code repository and can see what your team is up to.
@@ -94,7 +99,18 @@ You have been assigned a mentor who will meet with you online for two one hour m
 Our mentors are all professional software engineers, who can give you advice on how to manage the process of making better software. so please treat them with the respect they deserve. They have volunteered to help by sharing their engineering wisdom with you and taken time out of their busy schedules to do so.
 
 ### What you can expect from academic staff {#academics}
-The academic staff on this course include Suzanne Embury, Anas Elhag, Duncan Hull, Thomas Carroll and Sandra Sampaio. We're here to help but please remember, we're often very busy and have other teaching commitments too besides this course. We're here to ensure that the course runs smoothly and we aim to give feedback on coursework to you within the two week window.
+The academic staff on this course include Suzanne Embury, Anas Elhag, Duncan Hull, Thomas Carroll and Sandra Sampaio. We're here to help but please remember, there are 400+ students on this course so we can't reply to every single personal email.
+
+::: {.rmdcaution}
+
+(ref:cautionbox)
+
+Please **don't email staff or GTAs** directly unless you have good reason too (e.g. personal issues).
+
+Intead, please post issues on the forum at (ref:piazzaforum) where *everyone* can see the response or in the help queue (ref:livehelpqueue) within the workshop / team study sessions.
+:::
+
+we're often very busy and have other teaching commitments too besides this course. We're here to ensure that the course runs smoothly and we aim to give feedback on coursework to you within the two week window.
 
 ##  Your camera {#cameras}
 We would normally expect participants in small meetings (not large ones like lectures) to turn their cameras on but we understand that there are good reasons why people may not be willing/able to and won’t explicitly ask you to.

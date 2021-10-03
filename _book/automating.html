@@ -125,33 +125,33 @@
 <!--%%% Ideally, the example used in the rest of this document would
 %%% match up with one of the examples used in COMP16412.-->
 <p>We’ll introduce these ideas by looking at how we would use JUnit to test a very simple Java method. In the code listing below, you’ll find the code for some JUnit tests for a method that calculates the largest square that is less than or equal to its parameter. We’ll go through this test class line by line.</p>
-<div class="sourceCode" id="cb52"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb52-1"><a href="automating.html#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="kw">import static</span><span class="im"> org.hamcrest.MatcherAssert.assertThat;</span></span>
-<span id="cb52-2"><a href="automating.html#cb52-2" aria-hidden="true" tabindex="-1"></a><span class="kw">import static</span><span class="im"> org.hamcrest.core.Is.is;</span></span>
-<span id="cb52-3"><a href="automating.html#cb52-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-4"><a href="automating.html#cb52-4" aria-hidden="true" tabindex="-1"></a><span class="kw">import</span><span class="im"> org.junit.Test;</span></span>
-<span id="cb52-5"><a href="automating.html#cb52-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-6"><a href="automating.html#cb52-6" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="kw">class</span> LargestSquareTest {</span>
-<span id="cb52-7"><a href="automating.html#cb52-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-8"><a href="automating.html#cb52-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">@Test</span></span>
-<span id="cb52-9"><a href="automating.html#cb52-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">public</span> <span class="dt">void</span> <span class="fu">shouldReturn0AsLargestSquareLessThanOrEqualTo0</span>() {</span>
-<span id="cb52-10"><a href="automating.html#cb52-10" aria-hidden="true" tabindex="-1"></a>        <span class="fu">assertThat</span>(LargestSquare.<span class="fu">lessThanOrEq</span>(<span class="dv">0</span>), <span class="fu">is</span>(<span class="dv">0</span>));</span>
-<span id="cb52-11"><a href="automating.html#cb52-11" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb52-12"><a href="automating.html#cb52-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-13"><a href="automating.html#cb52-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">@Test</span></span>
-<span id="cb52-14"><a href="automating.html#cb52-14" aria-hidden="true" tabindex="-1"></a>    <span class="kw">public</span> <span class="dt">void</span> <span class="fu">shouldReturn1AsLargestSquareLessThanOrEqualTo1</span>() {</span>
-<span id="cb52-15"><a href="automating.html#cb52-15" aria-hidden="true" tabindex="-1"></a>        <span class="fu">assertThat</span>(LargestSquare.<span class="fu">lessThanOrEq</span>(<span class="dv">1</span>), <span class="fu">is</span>(<span class="dv">1</span>));</span>
-<span id="cb52-16"><a href="automating.html#cb52-16" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb52-17"><a href="automating.html#cb52-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-18"><a href="automating.html#cb52-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">@Test</span></span>
-<span id="cb52-19"><a href="automating.html#cb52-19" aria-hidden="true" tabindex="-1"></a>    <span class="kw">public</span> <span class="dt">void</span> <span class="fu">shouldReturn1AsLargestSquareLessThanOrEqualTo3</span>() {</span>
-<span id="cb52-20"><a href="automating.html#cb52-20" aria-hidden="true" tabindex="-1"></a>        <span class="fu">assertThat</span>(LargestSquare.<span class="fu">lessThanOrEq</span>(<span class="dv">3</span>), <span class="fu">is</span>(<span class="dv">1</span>));</span>
-<span id="cb52-21"><a href="automating.html#cb52-21" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb52-22"><a href="automating.html#cb52-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-23"><a href="automating.html#cb52-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">@Test</span></span>
-<span id="cb52-24"><a href="automating.html#cb52-24" aria-hidden="true" tabindex="-1"></a>    <span class="kw">public</span> <span class="dt">void</span> <span class="fu">shouldReturn4AsLargestSquareLessThanOrEqualTo4</span>() {</span>
-<span id="cb52-25"><a href="automating.html#cb52-25" aria-hidden="true" tabindex="-1"></a>        <span class="fu">assertThat</span>(LargestSquare.<span class="fu">lessThanOrEq</span>(<span class="dv">4</span>), <span class="fu">is</span>(<span class="dv">4</span>));</span>
-<span id="cb52-26"><a href="automating.html#cb52-26" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb52-27"><a href="automating.html#cb52-27" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb53"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb53-1"><a href="automating.html#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="kw">import static</span><span class="im"> org.hamcrest.MatcherAssert.assertThat;</span></span>
+<span id="cb53-2"><a href="automating.html#cb53-2" aria-hidden="true" tabindex="-1"></a><span class="kw">import static</span><span class="im"> org.hamcrest.core.Is.is;</span></span>
+<span id="cb53-3"><a href="automating.html#cb53-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-4"><a href="automating.html#cb53-4" aria-hidden="true" tabindex="-1"></a><span class="kw">import</span><span class="im"> org.junit.Test;</span></span>
+<span id="cb53-5"><a href="automating.html#cb53-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-6"><a href="automating.html#cb53-6" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="kw">class</span> LargestSquareTest {</span>
+<span id="cb53-7"><a href="automating.html#cb53-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-8"><a href="automating.html#cb53-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">@Test</span></span>
+<span id="cb53-9"><a href="automating.html#cb53-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">public</span> <span class="dt">void</span> <span class="fu">shouldReturn0AsLargestSquareLessThanOrEqualTo0</span>() {</span>
+<span id="cb53-10"><a href="automating.html#cb53-10" aria-hidden="true" tabindex="-1"></a>        <span class="fu">assertThat</span>(LargestSquare.<span class="fu">lessThanOrEq</span>(<span class="dv">0</span>), <span class="fu">is</span>(<span class="dv">0</span>));</span>
+<span id="cb53-11"><a href="automating.html#cb53-11" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb53-12"><a href="automating.html#cb53-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-13"><a href="automating.html#cb53-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">@Test</span></span>
+<span id="cb53-14"><a href="automating.html#cb53-14" aria-hidden="true" tabindex="-1"></a>    <span class="kw">public</span> <span class="dt">void</span> <span class="fu">shouldReturn1AsLargestSquareLessThanOrEqualTo1</span>() {</span>
+<span id="cb53-15"><a href="automating.html#cb53-15" aria-hidden="true" tabindex="-1"></a>        <span class="fu">assertThat</span>(LargestSquare.<span class="fu">lessThanOrEq</span>(<span class="dv">1</span>), <span class="fu">is</span>(<span class="dv">1</span>));</span>
+<span id="cb53-16"><a href="automating.html#cb53-16" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb53-17"><a href="automating.html#cb53-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-18"><a href="automating.html#cb53-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">@Test</span></span>
+<span id="cb53-19"><a href="automating.html#cb53-19" aria-hidden="true" tabindex="-1"></a>    <span class="kw">public</span> <span class="dt">void</span> <span class="fu">shouldReturn1AsLargestSquareLessThanOrEqualTo3</span>() {</span>
+<span id="cb53-20"><a href="automating.html#cb53-20" aria-hidden="true" tabindex="-1"></a>        <span class="fu">assertThat</span>(LargestSquare.<span class="fu">lessThanOrEq</span>(<span class="dv">3</span>), <span class="fu">is</span>(<span class="dv">1</span>));</span>
+<span id="cb53-21"><a href="automating.html#cb53-21" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb53-22"><a href="automating.html#cb53-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-23"><a href="automating.html#cb53-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">@Test</span></span>
+<span id="cb53-24"><a href="automating.html#cb53-24" aria-hidden="true" tabindex="-1"></a>    <span class="kw">public</span> <span class="dt">void</span> <span class="fu">shouldReturn4AsLargestSquareLessThanOrEqualTo4</span>() {</span>
+<span id="cb53-25"><a href="automating.html#cb53-25" aria-hidden="true" tabindex="-1"></a>        <span class="fu">assertThat</span>(LargestSquare.<span class="fu">lessThanOrEq</span>(<span class="dv">4</span>), <span class="fu">is</span>(<span class="dv">4</span>));</span>
+<span id="cb53-26"><a href="automating.html#cb53-26" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb53-27"><a href="automating.html#cb53-27" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 <p>After some import statements to pull in the JUnit classes and static methods we need, you’ll see what should be a definition for a class called <strong><code>LargestSquareTest</code></strong> with <code>public class LargestSquareTest</code>. JUnit classes are ordinary Java classes, defined in the usual way. This JUnit class is going to contain tests for a solution class called <strong><code>LargestSquare</code></strong>, so we will call it <strong><code>LargestSquareTest</code></strong>. In fact, the class could have any legal name. But, here, we’re following a common convention that JUnit test classes are named after the class they test, with the word <code>Test</code> stuck on the end. This is useful because, as a reader of code, we can see instantly which classes are test classes and which not, and also which class is being tested by which test class.</p>
 <p>Inside the class, there are four method definitions. Each of these methods describes a separate test case for the class under test. These too are ordinary Java instance methods, of the kind you have met before, with the exception of the fact that they are each annotated with <code>@Test</code>. You have not encountered annotations in COMP16121/212, but they are very simple to understand. They allow us to annotate code with information that is useful to the compiler and other language processors, but which will be ignored during ordinary execution. In this case, the purpose of the annotations is purely to tell the JUnit test runner which of the methods defined on the class should be executed as test cases, and which should not.</p>
 <p>There are a couple of other JUnit annotations that we’ll encounter later in the course. For now, the important thing to note is that we must put the <code>@Test</code> annotation at the start of every test case method we write. If we don’t, the test case described by the un-annotated method won’t get executed when we run the test suite.</p>

@@ -331,15 +331,14 @@ Figure 2.3: A screenshot from marauroa
 </h3>
 <p>Let’s put the knowledge you have gained so far into practice. you will build a class with two methods and then write some unit tests to check that all is working as expected. Follow these steps:</p>
 <ol style="list-style-type: decimal">
-<li>Create a new project: <code>File</code> &gt; <code>New</code> &gt; <code>Java Project</code>
-</li>
+<li>Create a new project: <code>File</code> &gt; <code>New</code> &gt; <code>Java Project</code> (in our example, we have called the project <code>COMP23311</code>)</li>
 <li>The <code>src</code> source folder has been created by default. Create another source folder by right-clicking on the root element of the hierarchy: <code>New</code> &gt; <code>Source Folder</code>.</li>
 <li>One of the folders will contain the code under test, while the other one while have the tests.</li>
-<li>On the code under test folder, create a class <code>New</code> &gt; <code>Class</code> with two methods: one that returns the sum of two integers and another one that :
+<li>On the code under test folder, create a class <code>New</code> &gt; <code>Class</code> (our example calles this class <code>Acme</code>) with two methods:
 <ul>
-<li>One of them returns the sum of two integers. <code>IN: 5,3; OUT: 8</code>
+<li>One which returns the sum of two integers. <code>IN: 5,3; OUT: 8</code>
 </li>
-<li>The other one, gets two strings and returns a string that which is the product of linking them. <code>IN: aab, bbc; OUT: aabbbc</code>
+<li>One which takes two strings and returns a string which is the product of concatenating them. <code>IN: aab, bbc; OUT: aabbbc</code>; <code>IN: abc, xyz; OUT: abcxyz</code>
 </li>
 </ul>
 </li>
@@ -356,6 +355,7 @@ Figure 2.3: A screenshot from marauroa
 <li>Click on <em>Finish</em>.</li>
 </ul>
 </li>
+<li>You now need to create methods which test the code you have written. You ultimately have to think to yourself “How can I know that this code is functioning correctly? What behaviour will I look for to tell me this? Can I trip-up the code in any way, therefore telling me that it isnt working properly?”</li>
 <li>You could test many things:
 <ul>
 <li>On the sum method, check whether the output is <code>8</code> when the inputs are <code>3</code> and <code>5</code>

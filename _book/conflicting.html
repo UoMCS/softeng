@@ -121,6 +121,212 @@
 </ol>
 <p>Instructions for carrying these tasks out from within the Eclipse IDE are given in this document. We focus on Eclipse as that is the IDE used for the team coursework. You are free to use any IDE that you wish to carry out this individual coursework exercise, but we can currently only provide instructions and technical support for Eclipse, run on the VM provided by the Department.</p>
 <p>Once the exercise is completed, you should be ready to use the same skills on your team’s repository in the remaining team coursework exercises.</p>
+<div class="rmdnote">
+<p>ℹ️ <strong>Note</strong> ℹ️</p>
+<p><strong>Trouble-shooting</strong> If you experience problems when completing this exercise, you can find a trouble-shooting guide on the School’s wiki at:</p>
+<p><a href="https://wiki.cs.manchester.ac.uk/index.php/LabHelp:Main_Page">wiki.cs.manchester.ac.uk/index.php/LabHelp:Main_Page</a></p>
+<p>We’ve provided two indexes into the trouble shooter, to help you find your way around. One is an index of error messages:</p>
+<p><a href="https://wiki.cs.manchester.ac.uk/index.php/LabHelp:Errors">wiki.cs.manchester.ac.uk/index.php/LabHelp:Errors</a></p>
+<p>If a specific error message is being reported alongside the problem you are experiencing, then you can look for it in this index, and find suggested solutions that have worked for students with this problem in the past.</p>
+<p>The second index contains descriptions of more general symptoms:</p>
+<p><a href="https://wiki.cs.manchester.ac.uk/index.php/LabHelp:Symptoms">wiki.cs.manchester.ac.uk/index.php/LabHelp:Symptoms</a></p>
+<p>Use this index when something is going wrong but you do not have any specific error message to help you track down the cause of the problem.</p>
+</div>
+<p>Please report any problems you encounter that are not covered in the troubleshooter as soon as possible, including full details of specific error messages and screenshots where appropriate. You can report problems on the course unit piazza forum at <a href="https://piazza.com/class/ku382xdryxd644">piazza.com/class/ku382xdryxd644</a>, or by e-mail to the course team. We’ll do our best to help!</p>
+</div>
+</div>
+<div id="aboutcwk2" class="section level2" number="17.2">
+<h2>
+<span class="header-section-number">17.2</span> About the Coursework<a class="anchor" aria-label="anchor" href="#aboutcwk2"><i class="fas fa-link"></i></a>
+</h2>
+<div id="keyinfo" class="section level3" number="17.2.1">
+<h3>
+<span class="header-section-number">17.2.1</span> Key Information<a class="anchor" aria-label="anchor" href="#keyinfo"><i class="fas fa-link"></i></a>
+</h3>
+<p>The exercise will be marked out of (ref:totalmark2), and will count towards (ref:percentage2) of your total mark for the course unit.</p>
+<p>The deadline for submitting the exercise is: <strong>(ref:deadline2)</strong></p>
+<p>You’ll submit your work through a GitLab repository that will be created for you when the exercise begins. Once created, this should be visible in your personal project list through the GitLab web interface at:</p>
+<p><a href="https://gitlab.cs.manchester.ac.uk">gitlab.cs.manchester.ac.uk</a></p>
+<p>At the deadline, we’ll make a clone of your repository and run the automated marking code. You just have to make sure you have pushed your Git branches and commits to your GitLab repository by then, and make a comment in your issue tracker to let us know the work is ready to mark. There are no additional submission steps.</p>
+<p>Feedback on your work will be uploaded to the issue tracker of the GitLab project, when the marking code is run.</p>
+</div>
+</div>
+<div id="markingscheme2" class="section level2" number="17.3">
+<h2>
+<span class="header-section-number">17.3</span> Marking Scheme<a class="anchor" aria-label="anchor" href="#markingscheme2"><i class="fas fa-link"></i></a>
+</h2>
+<!--TODO: check that the number of steps referred to below is correct.-->
+<!--TODO: check that the push step mentioned at the end of the paragraph is the correct one-->
+<p>This coursework exercise consists of 8 steps. If you complete them all correctly, then you should earn full marks against the marking scheme shown in table <a href="conflicting.html#tab:marktable2">17.1</a>. But note that we can only mark work that is present in your GitLab repository, and the earlier steps involve doing work in your local Git repository. We won’t be able to see that work until you get to the final step, and push your commits and branches to your GitLab repository. If you reach the deadline with some of the steps incomplete, and want us to mark what work you have done, you’ll need to jump forward to step 7 and complete as much of it as you can before the deadline to allow this.</p>
+<div class="inline-table"><table class="table table-sm">
+<caption>
+<span id="tab:marktable2">Table 17.1: </span>The Mark scheme for the second piece of individual coursework</caption>
+<colgroup>
+<col width="96%">
+<col width="3%">
+</colgroup>
+<thead><tr class="header">
+<th align="left">Criterion</th>
+<th align="left">Marks</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td align="left">The <code>move-counter</code> branch passes the tests supplied in commit <code>e751f062</code>.</td>
+<td align="left">2</td>
+</tr>
+<tr class="even">
+<td align="left">The <code>master</code> branch passes the tests supplied in both feature branches (commits <code>e751f062</code> and <code>1a2923aa</code>).</td>
+<td align="left">2</td>
+</tr>
+<tr class="odd">
+<td align="left">The <code>master</code> branch is located at a merge commit, with one parent being commit <code>1a2923aa</code> (pointed to by the <code>game-timer</code> branch) and the other parent being the commit pointed to by the <code>move-counter</code> branch.</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">No other merge commits appear in the commit graph.</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">The code version represented by the commit on the <code>move-counter</code> branch contains conflicting code elements when compared with the code at the original location of the <code>master</code> branch (commit <code>1a2923aa</code>)</td>
+<td align="left">2</td>
+</tr>
+<tr class="even">
+<td align="left">No conflict markers exist in the merged code. (If the <code>move-counter</code> branch has not been merged with <code>master</code> in the submitted repository, the mark for this criterion will be 0</td>
+<td align="left">2</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Total</strong></td>
+<td align="left"><strong>10</strong></td>
+</tr>
+</tbody>
+</table></div>
+<div class="rmdcaution">
+<p>⚠️ <strong>Caution</strong> ⚠️</p>
+<p>Note that the coursework must be carried out without the use of merge requests. The point of the exercise is to carry out these operations for yourself, in your local repository, and to gain an understanding of exactly what Git is doing when tools such as pull/merge requests are used.</p>
+<p><strong>Any use of merge requests, even if they are subsequently deleted, will incur a 50% mark penalty.</strong></p>
+</div>
+</div>
+<div id="predead" class="section level2" number="17.4">
+<h2>
+<span class="header-section-number">17.4</span> Pre-Deadline Feedback<a class="anchor" aria-label="anchor" href="#predead"><i class="fas fa-link"></i></a>
+</h2>
+<p>To give you a chance to check your work and make corrections in advance of the deadline, we will run the automated marking code on all student repositories on:</p>
+<p>(ref:feedbackdateindicwk1)</p>
+<p>This will add provisional feedback and a provisional mark to the issue tracker for your repository, covering the part of the work you have completed and pushed to GitLab by that date. You will then have until the deadline to make corrections. The automated marking code will mark only your latest commits, and will ignore earlier incorrect commits or merge attempts. This means you can commit fixes to your feature branch and attempt the merge again, to try to catch up on any marks you may have missed in your first attempt.</p>
+<p>All repositories where any changes have been made by students will be provisionally marked. You don’t need to request it.</p>
+<div id="subproc" class="section level3" number="17.4.1">
+<h3>
+<span class="header-section-number">17.4.1</span> Submission Procedure<a class="anchor" aria-label="anchor" href="#subproc"><i class="fas fa-link"></i></a>
+</h3>
+<p>To submit your work for marking, you must add a comment to the coursework issue in the issue tracker of your project, saying:</p>
+<div class="sourceCode" id="cb52"><pre class="sourceCode md"><code class="sourceCode markdown"><span id="cb52-1"><a href="conflicting.html#cb52-1" aria-hidden="true" tabindex="-1"></a>Project ready for marking.</span></code></pre></div>
+<p>The time of submission will be the time at which this comment was added to the repository.</p>
+<p>If this comment is not present on the coursework issue, we will assume that you are not ready to submit the work.</p>
+<p>You may delete and re-add the comment as many times as you like up until the formal deadline for the coursework. Once your work has been marked, we will ignore any further changes to your issue tracker; it will not be possible to request marking for a second time once marking for your project is complete and the feedback has been uploaded to your issue tracker.</p>
+<p>Any changes to your repository made after the final eligible marking request has been made will be ignored by the marking process. So make sure you have definitely finished all your work, before you add the comment, especially if you are submitting after the deadline.</p>
+</div>
+<div id="lateness" class="section level3" number="17.4.2">
+<h3>
+<span class="header-section-number">17.4.2</span> Late Submissions<a class="anchor" aria-label="anchor" href="#lateness"><i class="fas fa-link"></i></a>
+</h3>
+<p>This coursework uses the University’s standard policy on marking work that has been submitted late.</p>
+<p>A penalty of 1 mark will be applied for each 24 hour period following the deadline that the work is late, up a total of 9 such periods. Note that for the purposes of this calculation, weekends and evenings are counted. This means that, since this coursework’s deadline is on a Friday, a submission on Monday morning will receive a penalty of 3 marks.</p>
+<p>These penalties will be applied until all marks earned by the student have been removed. Marks will not go below zero.</p>
+<p>Work which is submitted more than 10 calendar days after the deadline will be considered a non-submission and will be given an automatic mark of 0. It is at the discretion of the course leader and the Department as to whether the work is marked sufficiently for feedback to be provided.</p>
+<p>For this coursework, the submission time will be the date and time at which you place the comment saying the work is ready for marking on the issue for the exercise. All work that has been pushed to GitLab by that date will be marked. Any commits or references that are not pushed to GitLab until after marking is requested will not be considered during marking, even if they were created or modified in your local Git repository before this.</p>
+</div>
+<div id="dontcopy" class="section level3" number="17.4.3">
+<h3>
+<span class="header-section-number">17.4.3</span> Plagiarism<a class="anchor" aria-label="anchor" href="#dontcopy"><i class="fas fa-link"></i></a>
+</h3>
+<p>This coursework is subject to the University’s standard policy on plagiarism:</p>
+<p><a href="https://wiki.cs.manchester.ac.uk/index.php/UGHandbook19:Academic_Malpractice">wiki.cs.manchester.ac.uk/index.php/UGHandbook19:Academic_Malpractice</a></p>
+</div>
+<div id="gettinghelp" class="section level3" number="17.4.4">
+<h3>
+<span class="header-section-number">17.4.4</span> How to Get Help<a class="anchor" aria-label="anchor" href="#gettinghelp"><i class="fas fa-link"></i></a>
+</h3>
+<p>Help with this exercise will be available in the team study sessions (when your team is not being marked). Sign up on the live help queue (re:livehelpqueue) during the sessions, using the <code>Individual Coursework Ex 2</code> label and issue template. A member of staff or a GTA will speak to you in person or direct call you on Microsoft Teams when we are ready to provide help.</p>
+</div>
+</div>
+<div id="indycwk2in" class="section level2" number="17.5">
+<h2>
+<span class="header-section-number">17.5</span> The Coursework Instructions<a class="anchor" aria-label="anchor" href="#indycwk2in"><i class="fas fa-link"></i></a>
+</h2>
+<div id="cloneandimport" class="section level3" number="17.5.1">
+<h3>
+<span class="header-section-number">17.5.1</span> Step one: Clone and Import the Project into Eclipse<a class="anchor" aria-label="anchor" href="#cloneandimport"><i class="fas fa-link"></i></a>
+</h3>
+<p>Within Eclipse on the VM (or whatever IDE/platform you have chosen to do the coursework on), import the project for the coursework by cloning from this URI:</p>
+<p>2URI</p>
+<p>where <code>&lt;your-username&gt;</code> is replaced by your University username. This is a personal repository that has been set up just for use by yourself, for this activity. No other students can see its contents (though the course team and GTAs can see it).</p>
+<p>This should cause a new Java project to appear in your IDE, ready for use.</p>
+<p>::: {.rmdnote}</p>
+<p>ℹ️ <strong>Note</strong> ℹ️
+If you are unsure of how to complete this step, refer back to steps 1 and 2 in the instructions for the 1st individual coursework exercise for this course unit (chapter (gitting)), for detailed instructions.</p>
+</div>
+<div id="runderstand" class="section level3" number="17.5.2">
+<h3>
+<span class="header-section-number">17.5.2</span> Step two: Run and Understand the Test Cases for the Feature<a class="anchor" aria-label="anchor" href="#runderstand"><i class="fas fa-link"></i></a>
+</h3>
+<p>An issue has been placed in the issue tracker for the project, describing the new feature you are asked to implement for this coursework. Work was already begun on the issue, and a feature branch already exists in the repository. Some test cases describing the feature have been committed to the branch, along with the bare minimum of changes to the production code needed to make the test code compile.</p>
+<p>The branch is called: <code>move-counter</code></p>
+<p>You must check out this feature branch, and use the tests to guide the implementation of the new feature. The first step is to read the test code, to understand what each one is saying about the functionality that you must implement.</p>
+<p>You should practice the techniques for test reading that were presented in the workshops, and consider each test case in terms of the “Act, Arrange, Assert” model.</p>
+<p>The next step is to run the tests. Since the default project classpath is sufficient for this simple project, we can do this by right clicking on the <code>test</code> folder and selecting <code>Run As</code> &gt; <code>JUnit Test</code>. You’ll see that a couple of the new test cases pass, but most of them fail.</p>
+<div class="rmdnote">
+<p>ℹ️ <strong>Note</strong> ℹ️</p>
+<p><strong>Test-First Development</strong></p>
+<p>Test-first development (TFD) is a style of software development in which we begin by writing a collection of tests that describe the new functionality to be added to the system. When we run these tests, they will (mostly) fail, because the feature they describe is not yet implemented. The next step is to make changes to the production code to implement the required feature, and thus make the test cases pass.</p>
+<p>In this approach to development, the tests change their function. Instead of aiming to detect errors <em>after</em> they have been introduced into the code base, the tests take on the role of the specification: an executable specification that we can run repeatedly, as the feature implementation moves forward. The tests also therefore function as a kind of progress report, telling us how much work remains to be done before we can consider the feature finished.</p>
+<p>But writing the test code before the production code also has a profound effect on how we design our code. When we write the production code before the tests, we often make design errors, because we are thinking too much about the code from the point of view of the implementer of the class we are working on. This makes it hard to make good decisions about what parts of the behaviour should be exposed through the class’s interface, and what should be hidden behind it.</p>
+<p>When we write the test code first, we are forced to think about the classes we are testing from the point of view of a user of the class, rather than an implementer of the class. The process of writing the tests helps us see what information and services the class must provide through its public interface, and how they should be designed to ensure clarity and ease of use. We can then implement the feature in a way that corresponds to this design, and can concentrate on making the internals of the class clear and efficient. Implementation is often quicker and easier in TFD, because many of the hard design choices have already been made for us.</p>
+</div>
+</div>
+<div id="testsipass" class="section level3" number="17.5.3">
+<h3>
+<span class="header-section-number">17.5.3</span> Step three: Implement the Feature/Make the Tests Pass<a class="anchor" aria-label="anchor" href="#testsipass"><i class="fas fa-link"></i></a>
+</h3>
+<p>When you have a good grasp on what the functionality that the tests describe, you should start work on implementing that functionality and making the tests pass.</p>
+<p>Make sure you have the <code>move-counter</code> branch checked out before you make any changes to the code.</p>
+<p>The usual approach in TFD is to take each failing test in turn, and to make the changes needed to make the test pass. In doing so, you should treat each test case as an example of a more general set of tests, and write the code to work for all those tests.</p>
+<div class="rmdnote">
+<p>ℹ️ <strong>Note</strong> ℹ️</p>
+<p><strong>Alternative Approaches to Testing and Development</strong>
+Broadly speaking, there are three main alternatives to TFD in common use. They are described below.</p>
+<p><em>Manual-Test Development (MTD)</em></p>
+<p>In this, the oldest form of development, no (or very little) automated test code is written for the system, and any testing that is performed is done manually. This form of development is still common in open source projects, and in code written by smaller consultancies. And even projects with excellent automated test coverage may have some tests that need to be run manually, if they depend on complex fixture set-up steps (such as hardware configuration) or have complex outcomes.</p>
+<!-- Add exploratory testing-->
+<p><em>Test-After Development (TAD)</em></p>
+<p>In this form of development, features are implemented in the production code, and once they are finished a number of test cases are written to check the correctness of the implementation. The tests are sometimes written by the same people who implemented the feature, sometimes by an independent development team, and sometimes (though now more rarely) by a dedicated independent test team who write test cases from the specification document. We’ve included this last case under TAD, because in practice the test cases aren’t fully implemented or run until after the implementation has reached a certain level of maturity.</p>
+<p><em>Test-Driven Development (TDD)</em></p>
+<p>In this, the most modern of the forms of development listed here, the implementation of the feature and the set of test cases that describe it are implemented together, in small steps, interleaving the writing of test code with the writing of production code. In TDD, production code can only be written in response to a failing unit test, and only the minimal production code changes needed to cause the test to pass should be made. After each new test case passes, the design of the code base is reviewed, to look for improvement opportunities, and ways to generalise the implementation to cover more test cases of the same group.</p>
+<p>TDD is similar to TFD, but has some important differences. In TFD, we grow the implementation of a feature to closely match the requirements described by the test cases. In TDD, we grow both the implementation <em>and</em> the test suite to fit the requirements, aiming to create only the tests and production code needed to deliver value to the client. It results in code with a high test coverage, strong correctness, and a lean implementation focused on the requirements. But it can be challenging to apply, requiring (at least when being learnt) both discipline and creativity.</p>
+<p>TDD will be covered again briefly in <a href="https://studentnet.cs.manchester.ac.uk/ugt/COMP23412/syllabus/">Software Engineering 2: COMP23412</a>
+<!--and in more depth in COMP33712 (along with the related technique of Behaviour Driven Development, BDD).--></p>
+</div>
+<p>The implementation task for this feature is neither large nor complicated. You should not need to write many lines of code to reach a solution. You can look at the code written for the Game Timer feature, in the commits on the development branch, to get inspiration for how to handle most of the behaviour required to implement the Move Counter feature. Just follow the tests, and try to write the smallest amount of code needed to make them pass. If you don’t write enough code, the tests will tell you, by failing. If you write lots of code that isn’t needed, the tests won’t tell you that, but you’ll have added to the maintenance costs of the system for the remainder of the lifetime of your code.</p>
+<p>There are a couple of slightly tricky aspects to the implementation that do not have equivalents in the Game Timer feature. Since this is not an exercise in general Java coding, some hints are given below to help you with them. Highlight the text to view the hints. or copy and paste them into an editor, should you want to see them. You are free to implement the feature in any way that is compatible with the tests as given, and the description in the issue.</p>
+<div class="rmdnote">
+<p><strong>Hint: Switching off move counting while shuffling the puzzle</strong></p>
+<p>View source of this page if you want to see the hint<br><!--A simple solution is to record the value of the move counter at the start of the shuffle in a variable, and to use this to replace the move counter's value at the end of the shuffle routine.--></p>
+</div>
+<div class="rmdnote">
+<p><strong>Hint: Refreshing the Move Counter from GraphicsPanel</strong>
+View source of this page if you want to see the hint</p>
+<!--Since the `GraphicsPanel` handles the processing of user moves in the GUI, this instance also needs to be able to trigger a refresh of the displayed move counter in the game.  The `GUI` instance controls the display of the move counter. It knows about the `GraphicsPanel` instance, but the `GraphicsPanel` instance doesn't know about the `GUI` instance, and so can't request a refresh.
+
+An easy solution is to pass the `GUI` instance to the `GraphicsPanel` in its constructor, so that it can call the `refresh` method directly.  However, this creates a circular dependency between `GraphicsPanel` and `GUI` that may block future reuse of these components.
+
+More elegantly, but slightly trickier, is to set up an `ActionListener` instance for `GUI`, that can be passed to `GraphicsPanel`, so it can raise a refresh notification whenever needed.
+
+There are no marks for how you implement this part of the functionality, provided the tests pass, so there is no problem with adopting either of these approaches.  Or, you can come up with your own solution.-->
+</div>
+<p>When all the tests on the <code>move-counter</code> branch pass, this step is completed.</p>
+<div class="rmdnote">
+<p>ℹ️ <strong>Note</strong> ℹ️
+Please note that the Sliding Puzzle code base we are working from has some limitations. In particular, the testing of some aspects of the GUI does not follow best practice. However, providing a more up-to-the-minute style of test would have required the whole system to be much larger, and for us to use advanced Java elements that we have not taught you yet. We therefore decided to keep the example small and simple, for this exercise.</p>
+</div>
 
 </div>
 </div>
@@ -134,6 +340,25 @@
 <li><a class="nav-link" href="#conflicting"><span class="header-section-number">17</span> Individual Coursework 2</a></li>
 <li>
 <a class="nav-link" href="#TFD"><span class="header-section-number">17.1</span> Test-First Development and Managing Conflicts</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#introt"><span class="header-section-number">17.1.1</span> Introduction</a></li></ul>
+</li>
+<li>
+<a class="nav-link" href="#aboutcwk2"><span class="header-section-number">17.2</span> About the Coursework</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#keyinfo"><span class="header-section-number">17.2.1</span> Key Information</a></li></ul>
+</li>
+<li><a class="nav-link" href="#markingscheme2"><span class="header-section-number">17.3</span> Marking Scheme</a></li>
+<li>
+<a class="nav-link" href="#predead"><span class="header-section-number">17.4</span> Pre-Deadline Feedback</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#subproc"><span class="header-section-number">17.4.1</span> Submission Procedure</a></li>
+<li><a class="nav-link" href="#lateness"><span class="header-section-number">17.4.2</span> Late Submissions</a></li>
+<li><a class="nav-link" href="#dontcopy"><span class="header-section-number">17.4.3</span> Plagiarism</a></li>
+<li><a class="nav-link" href="#gettinghelp"><span class="header-section-number">17.4.4</span> How to Get Help</a></li>
+</ul>
+</li>
+<li>
+<a class="nav-link" href="#indycwk2in"><span class="header-section-number">17.5</span> The Coursework Instructions</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#cloneandimport"><span class="header-section-number">17.5.1</span> Step one: Clone and Import the Project into Eclipse</a></li>
+<li><a class="nav-link" href="#runderstand"><span class="header-section-number">17.5.2</span> Step two: Run and Understand the Test Cases for the Feature</a></li>
+<li><a class="nav-link" href="#testsipass"><span class="header-section-number">17.5.3</span> Step three: Implement the Feature/Make the Tests Pass</a></li>
+</ul>
 </li>
 </ul>
 

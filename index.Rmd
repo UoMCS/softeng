@@ -169,8 +169,9 @@ So now that we've dispensed with the formalities, you can start using this labor
 
 (ref:repoURI) [https://gitlab.cs.man.ac.uk/COMP23311_2021/sliding_puzzle_&lt;your-username&gt;.git](https://gitlab.cs.man.ac.uk/COMP23311_2021/sliding_puzzle-your-username.git)
 
-(ref:coursecode) COMP23311  
+(ref:repo2URI) [https://gitlab.cs.man.ac.uk/COMP23311_2021/sliding_puzzle2_&lt;your-username&gt;.git](https://gitlab.cs.man.ac.uk/COMP23311_2021/sliding_puzzle2-your-username.git)
 
+(ref:coursecode) COMP23311  
 
 
 <!-- todo update hanbook urls e.g. UGHandbook21:Academic_Malpractice to UGHandbook22:Academic_Malpractice etc-->
@@ -191,6 +192,11 @@ So now that we've dispensed with the formalities, you can start using this labor
 (ref:deadline) 6.00pm, Friday 1st October 2021  
 
 (ref:numsteps) 9  
+
+
+(ref:piazzaforum) [piazza.com/class/ku382xdryxd644](https://piazza.com/class/ku382xdryxd644)
+
+(ref:livehelpqueue) [gitlab.cs.man.ac.uk/comp23311_2021/COMP23311-Live-Help-Queue](https://gitlab.cs.man.ac.uk/comp23311_2021/COMP23311-Live-Help-Queue/)
 
 
 (ref:mentors) Apadmi, ARM, Auto Trader UK, Barclays, BBC, Beyond Trust, Blaize, Bloomberg, Booking.com, CDL Software, CodeThink, Code Computer Love, Cubic Motion (now Epic Games), DataCentred, Digital Bridge Ltd, Disney Streaming, EGN Digital, Facebook, Farm Digital, Giant Digital, Goldman Sachs, Google, IBM, Ivanti, Koder.ly, Matillion, Morgan Stanley, NCC Group, On The Beach, Rental Cars, Sainsburys, Sage Group plc, Siemens (Mentor Graphics), SteamaCo, THG, ThoughtWorks and Zuhlke.

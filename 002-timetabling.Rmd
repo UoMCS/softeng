@@ -14,7 +14,7 @@ For online activities, everything is on Microsoft Teams. Because of constraints 
 ```{r schedtable, echo = FALSE}
 io_table <- tibble::tribble(
     ~ "Week no."       , ~ "Subject",      ~ "Deadlines",
-  "**1**: 27th Sept"            , "Automated build and test, see (ref:weekone)",  "IndCwk2, Fri 1st Oct, 6pm",
+  "~~**1**: 27th Sept~~"            , "~~Automated build and test, see (ref:weekone)~~",  "~~IndCwk2, Fri 1st Oct, 6pm~~",
   "**2**: 4th Oct"              , "Reading large codebases, see (ref:weektwo)",  "",
   "**3**: 11th Oct"             , "Debugging, see (ref:weekthree)", "IndCwk2, Fri 15th Oct, 6pm",
   "**4**: 18th Oct"             , "Cost estimation, see (ref:weekfour)",  "Mentoring week 1",
@@ -47,9 +47,9 @@ Events in the week starting 27th September:
 ## Reading {#week2}
 Events in the week starting 4th October:
 
-1. **Team Study Tuesday**: Working on team coursework
+1. **Team Study Tuesday**: Individual coursework 2 starts, see \@ref(conflicting). Meet your team on Teams
 1. **Workshop**: Reading large code bases with Anas Elhag
-1. **Team Study Thursday** Working on team coursework
+1. **Team Study Thursday** Working on coursework
 
 ## Debugging {#week3}
 Events in the week starting 11th October:

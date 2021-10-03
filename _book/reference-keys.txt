@@ -76,6 +76,7 @@ fig:confirmationOfPushToRemote-fig
 fig:requestTheMergeIntoMasterAndSelectbranchToMergeIn-fig
 fig:mergeResultShowingSuccessFastForward-fig
 fig:checkGitLabNetworkAfterFeatureBranchIsPushed-fig
+tab:marktable2
 fig:localCommitGraphBeforeRejectedPushNoHistoryGraphOnly-fig
 fig:commitGraphInGitLabAfterPushNoHistoryGraphOnly-fig
 fig:pushRejectedNoHistory-fig
@@ -323,6 +324,18 @@ gameover
 conflicting
 TFD
 introt
+aboutcwk2
+keyinfo
+markingscheme2
+predead
+subproc
+lateness
+dontcopy
+gettinghelp
+indycwk2in
+cloneandimport
+runderstand
+testsipass
 dealing
 working
 guiding
