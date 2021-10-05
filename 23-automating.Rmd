@@ -95,3 +95,5 @@ Next, we'll look at what is happening inside the test case methods themselves.  
 Notice how the whole test case reads quite like an English sentence describing how we want the code to behave.  We want to "assert that the largest square less than or equal to 0 is 0".  Well-written test cases should have this property.  They should (as far as practicable) read like natural, readable statements of the behaviour we are trying to implement.
 
 There is a lot more to learn about JUnit than the very simple tests we have described so far.  But, this brief introduction should be enough to help you get started on working with tests in the workshops and coursework over the next few weeks.
+
+Document version: `r format(Sys.time(), '%d %B, %Y')`

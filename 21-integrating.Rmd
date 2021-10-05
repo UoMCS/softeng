@@ -260,3 +260,6 @@ If any aspect of the Jenkins builds we have created for you are unclear, please 
 The School's CI server is administered by Chris Page.  Technical faults and outages should be reported to him through [support.cs.manchester.ac.uk](https://support.cs.manchester.ac.uk).
 
 Bugs or feature requests for the RoboTA system should be reported through the project issue tracker at [gitlab.cs.man.ac.uk/institute-of-coding/robota-issue-tracker](https://gitlab.cs.man.ac.uk/institute-of-coding/robota-issue-tracker)
+
+
+Document version: `r format(Sys.time(), '%d %B, %Y')`

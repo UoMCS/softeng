@@ -7,3 +7,13 @@ Your mentor will meet your team twice on Microsoft Teams during the mentoring se
 Mentors have volunteered their time to help you, so make sure you ask them lots of questions, some suggested questions are shown in section \@ref(studentqs) if you need some inspiration.
 
 It makes your mentors job a lot easier if you turn your camera on, see section \@ref(cameras)
+
+## But I'm not interested in employer x?
+
+If you're lucky, your mentor from employer $x$ will just happen to be working in the sector that you are interested.
+
+If they're not, you can still learn lots from them. Software engineering is converging on standard practices which means you can learn a huge amount from our mentors, even if you're not especially interseted in the employer they work for.
+
+The way that high quality software is built in different industries is remarkably similar, from banks to technology companies and from e-commerce companies to consumer electronics. 
+
+Document version: `r format(Sys.time(), '%d %B, %Y')`

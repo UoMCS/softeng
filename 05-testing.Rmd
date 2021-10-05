@@ -1,5 +1,8 @@
 # Test first development {#testing}
 
-Material to be added here
+Material will be added here
 
 ## Course content
+
+
+Document version: `r format(Sys.time(), '%d %B, %Y')`

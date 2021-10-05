@@ -1,6 +1,6 @@
 # (PART) Team study materials {-}
 
-# Starting with Stendhal {#starting}
+# Testing Stendhal {#starting}
 Stendhal ([stendhalgame.org](https://stendhalgame.org/)) is a massively multiplayer online role-playing game ([MMORPG](https://en.wikipedia.org/wiki/Massively_multiplayer_online_role-playing_game)) with an old school feel. You can explore cities, forest, mountains, plains and dungeons. A screenshot of some of the the game shown in figure \@ref(fig:stendhalgame-fig).
 
 ```{r stendhalgame-fig, echo = FALSE, fig.align = "center", out.width = "75%", fig.cap = "(ref:captionstgame)"}
@@ -35,7 +35,7 @@ Following common practice, the Stendhal team have provided facilities for suppor
 
 Information on these useful features can be found on the Stendhal wiki at:
 
-[https://stendhalgame.org/wiki/Stendhal:Administration](https://stendhalgame.org/wiki/Stendhal:Administration)
+[stendhalgame.org/wiki/Stendhal:Administration](https://stendhalgame.org/wiki/Stendhal:Administration)
 
 Think carefully within your team about how you will use these admin features, and especially what test accounts you will use.  The admin accounts are specified through the contents of a file in the source code base, and therefore something that is potentially under version control.  You don't want to mess up your Git history by continually committing and changing everyone's favourite test accounts in this file.  A little coordination at the beginning can keep your Git history clean, while allowing everyone to be able to access at least one admin level player account.
 

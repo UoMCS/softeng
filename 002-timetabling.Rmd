@@ -11,6 +11,17 @@ For online activities, everything is on Microsoft Teams. Because of constraints 
 1. [bit.ly/software-engineering-A](https://bit.ly/software-engineering-A)
 1. [bit.ly/software-engineering-b](https://bit.ly/software-engineering-b)
 
+Microsoft Teams is, as the name suggests, where you'll meet your team.
+
+## Where should I go if I'm on campus? {#campus}
+Most teams will have a mixture of online and on campus students. If you're on campus go to the rooms below and contact any remote members of our team via Teams:
+
+* **Teams 1-30**: 1.8 & 1.10
+* **Teams 31-44**: LF31
+* **Teams 44-56**: Tootill
+
+The weekly schedule is shown in \@ref(tab:schedtable).
+
 ```{r schedtable, echo = FALSE}
 io_table <- tibble::tribble(
     ~ "Week no."       , ~ "Subject",      ~ "Deadlines",
@@ -182,3 +193,6 @@ We'll be using the following tools:
 (ref:weekeleven) see section \@ref(week11)  
 
 (ref:weektwelve) see section \@ref(week12)  
+
+
+Document version: `r format(Sys.time(), '%d %B, %Y')`

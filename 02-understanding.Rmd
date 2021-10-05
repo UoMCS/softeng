@@ -207,7 +207,7 @@ Let's put the knowledge you have gained so far into practice. you will build a c
 1. Create a new project: `File` > `New` > `Java Project` (in our example, we have called the project `COMP23311`)
 1. The `src` source folder has been created by default. Create another source folder by right-clicking on the root element of the hierarchy:  `New` > `Source Folder`.
 1. One of the folders will contain the code under test, while the other one while have the tests.
-1. On the code under test folder, create a class `New` > `Class` (our example calles this class `Acme`) with two methods: 
+1. On the code under test folder, create a class `New` > `Class` (our example calles this class `Acme`) with two methods:
 	+ One which returns the sum of two integers. `IN: 5,3; OUT: 8`
 	+ One which takes two strings and returns a string which is the product of concatenating them. `IN: aab, bbc; OUT: aabbbc`; `IN: abc, xyz; OUT: abcxyz`
 1. Create the Test case by *right clicking* on the project, `New` and then select `JUnit Test Case`.
@@ -385,3 +385,6 @@ Checks that both variables refer to the same object.
 assertNotSame(String message, expected, actual)
 ````
 Checks that both variables refer to different objects.
+
+
+Document version: `r format(Sys.time(), '%d %B, %Y')`

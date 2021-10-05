@@ -213,3 +213,5 @@ Work in pairs or small groups to make the Daily Item Quest functionality testabl
 You do not have to create a complete implementation.  Just sketch out the changes you would make, in sufficient detail to understand the costs and benefits.
 
 There is no single right answer to this.  Several approaches could work.  If you are unsure, just try one and see how it looks when it is sketched out.  Discuss your answer with staff if unsure.
+
+Document version: `r format(Sys.time(), '%d %B, %Y')`

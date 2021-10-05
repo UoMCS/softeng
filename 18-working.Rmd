@@ -4,3 +4,6 @@ Working with Features
 
 
 <!--Team coursework 3: Migrating a Family of Features removed-->
+
+
+Document version: `r format(Sys.time(), '%d %B, %Y')`

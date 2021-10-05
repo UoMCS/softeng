@@ -478,3 +478,6 @@ You can only request one reset for this coursework exercise, so use it wisely.
 ### Coursework Complete {#cw2fin}
 
 This completes the instructions for the second individual coursework exercise for this course unit.  If you managed to complete it in full, then you'll be all to apply the same skills to the second team coursework exercise.  You'll also be ready to collaborate on team Git projects, and will hopefully have a better understanding of the practical importance of writing focussed commits.
+
+
+Document version: `r format(Sys.time(), '%d %B, %Y')`

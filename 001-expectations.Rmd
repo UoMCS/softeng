@@ -18,7 +18,7 @@ knitr::include_graphics("images/compiling.png")
 
 
 ### Our expectations of you {#rtfm}
-We need you to read ALL of the messages we send you via GitLab, Jenkins, Microsoft Teams, the Piazza forum, emails and in this guidebook. Before you ask for help, make sure you have Read The Friendly Manual(s). RTFM.
+We need you to read ALL of the messages we send you via GitLab, Jenkins, Microsoft Teams, the Piazza forum, emails and in this guidebook. Before you ask for help, make sure you have Read The Friendly Manual(s). [RTFM](https://en.wikipedia.org/wiki/RTFM).
 
 #### Getting help {#helpme}
 
@@ -128,3 +128,6 @@ You should already be treating online meetings like physical ones e.g. turning u
 If other people have decided to turn their cameras on then we ask that you show them respect by not recording anything without their explicit permission. We won’t touch on the legality of this as we believe that basic respect for each other should be enough to prevent any issues. You will take part in larger meetings where recording may be standard and in such cases this should be made explicit.
 
 (Thanks to Giles Reger and Sarah Clinch for the text above)
+
+
+Document version: `r format(Sys.time(), '%d %B, %Y')`

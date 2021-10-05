@@ -4,18 +4,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Chapter 21 Integrating commits | Software engineering</title>
+<title>Chapter 22 Integrating commits | Software engineering</title>
 <meta name="author" content="Suzanne Embury and team">
-<meta name="description" content="Integrating Your Commits with Your Team’s Commits  21.1 Introduction In the team study activity, Syncing with your Team Repository, we practised how to synchronise your local repository with your...">
+<meta name="description" content="Integrating Your Commits with Your Team’s Commits  22.1 Introduction In the team study activity, Syncing with your Team Repository, we practised how to synchronise your local repository with your...">
 <meta name="generator" content="bookdown 0.24 with bs4_book()">
-<meta property="og:title" content="Chapter 21 Integrating commits | Software engineering">
+<meta property="og:title" content="Chapter 22 Integrating commits | Software engineering">
 <meta property="og:type" content="book">
 <meta property="og:url" content="https://software-eng.netlify.app/committing.html">
-<meta property="og:description" content="Integrating Your Commits with Your Team’s Commits  21.1 Introduction In the team study activity, Syncing with your Team Repository, we practised how to synchronise your local repository with your...">
+<meta property="og:description" content="Integrating Your Commits with Your Team’s Commits  22.1 Introduction In the team study activity, Syncing with your Team Repository, we practised how to synchronise your local repository with your...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Chapter 21 Integrating commits | Software engineering">
+<meta name="twitter:title" content="Chapter 22 Integrating commits | Software engineering">
 <meta name="twitter:site" content="@csmcr">
-<meta name="twitter:description" content="Integrating Your Commits with Your Team’s Commits  21.1 Introduction In the team study activity, Syncing with your Team Repository, we practised how to synchronise your local repository with your...">
+<meta name="twitter:description" content="Integrating Your Commits with Your Team’s Commits  22.1 Introduction In the team study activity, Syncing with your Team Repository, we practised how to synchronise your local repository with your...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.10/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.0/transition.js"></script><script src="libs/bs3compat-0.3.0/tabs.js"></script><script src="libs/bs3compat-0.3.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -63,22 +63,23 @@
 <li><a class="" href="risking.html"><span class="header-section-number">10</span> Risk management</a></li>
 <li><a class="" href="opening.html"><span class="header-section-number">11</span> Open source challenge</a></li>
 <li class="book-part">Team study materials</li>
-<li><a class="" href="starting.html"><span class="header-section-number">12</span> Starting with Stendhal</a></li>
-<li><a class="" href="mentoring.html"><span class="header-section-number">13</span> Industrial mentoring</a></li>
-<li><a class="" href="ourmentor.html"><span class="header-section-number">14</span> Your mentor</a></li>
-<li><a class="" href="syncing.html"><span class="header-section-number">15</span> Synchronising</a></li>
+<li><a class="" href="starting.html"><span class="header-section-number">12</span> Testing Stendhal</a></li>
+<li><a class="" href="testings.html"><span class="header-section-number">13</span> Building Stendhal</a></li>
+<li><a class="" href="mentoring.html"><span class="header-section-number">14</span> Industrial mentoring</a></li>
+<li><a class="" href="ourmentor.html"><span class="header-section-number">15</span> Your mentor</a></li>
+<li><a class="" href="syncing.html"><span class="header-section-number">16</span> Synchronising</a></li>
 <li class="book-part">Coursework</li>
-<li><a class="" href="gitting.html"><span class="header-section-number">16</span> Individual Coursework 1</a></li>
-<li><a class="" href="conflicting.html"><span class="header-section-number">17</span> Individual Coursework 2</a></li>
-<li><a class="" href="dealing.html"><span class="header-section-number">18</span> Team Coursework 1</a></li>
-<li><a class="" href="working.html"><span class="header-section-number">19</span> Team Coursework 2</a></li>
+<li><a class="" href="gitting.html"><span class="header-section-number">17</span> Individual Coursework 1</a></li>
+<li><a class="" href="conflicting.html"><span class="header-section-number">18</span> Individual Coursework 2</a></li>
+<li><a class="" href="dealing.html"><span class="header-section-number">19</span> Team Coursework 1</a></li>
+<li><a class="" href="working.html"><span class="header-section-number">20</span> Team Coursework 2</a></li>
 <li class="book-part">Self study materials</li>
-<li><a class="" href="guiding.html"><span class="header-section-number">20</span> Testing Stendhal</a></li>
-<li><a class="active" href="committing.html"><span class="header-section-number">21</span> Integrating commits</a></li>
-<li><a class="" href="integrating.html"><span class="header-section-number">22</span> Continuous integration</a></li>
-<li><a class="" href="reviewing.html"><span class="header-section-number">23</span> Code review</a></li>
-<li><a class="" href="automating.html"><span class="header-section-number">24</span> Unit testing</a></li>
-<li><a class="" href="reading.html"><span class="header-section-number">25</span> References</a></li>
+<li><a class="" href="guiding.html"><span class="header-section-number">21</span> Testing Stendhal</a></li>
+<li><a class="active" href="committing.html"><span class="header-section-number">22</span> Integrating commits</a></li>
+<li><a class="" href="integrating.html"><span class="header-section-number">23</span> Continuous integration</a></li>
+<li><a class="" href="reviewing.html"><span class="header-section-number">24</span> Code review</a></li>
+<li><a class="" href="automating.html"><span class="header-section-number">25</span> Unit testing</a></li>
+<li><a class="" href="reading.html"><span class="header-section-number">26</span> References</a></li>
 </ul>
 
         <div class="book-extra">
@@ -86,41 +87,41 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="committing" class="section level1" number="21">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="committing" class="section level1" number="22">
 <h1>
-<span class="header-section-number">21</span> Integrating commits<a class="anchor" aria-label="anchor" href="#committing"><i class="fas fa-link"></i></a>
+<span class="header-section-number">22</span> Integrating commits<a class="anchor" aria-label="anchor" href="#committing"><i class="fas fa-link"></i></a>
 </h1>
 <p>Integrating Your Commits with Your Team’s Commits</p>
-<div id="commintro" class="section level2" number="21.1">
+<div id="commintro" class="section level2" number="22.1">
 <h2>
-<span class="header-section-number">21.1</span> Introduction<a class="anchor" aria-label="anchor" href="#commintro"><i class="fas fa-link"></i></a>
+<span class="header-section-number">22.1</span> Introduction<a class="anchor" aria-label="anchor" href="#commintro"><i class="fas fa-link"></i></a>
 </h2>
 <p>In the team study activity, Syncing with your Team Repository, we practised how to synchronise your local repository with your team’s when someone in your team had pushed work to the remote since you last synchronised. In this follow on self-study document, we’ll cover the procedure we recommend you to follow when you have work on your local <code>master</code> branch that you need to integrate with work at the team remote. It covers more complex cases than the team study activity. but ones which are very common when working on a collaborative coding project using Git.</p>
-<p>Note that this document is an explanation of various Git concepts, using a running example based on the example used in chapter <a href="syncing.html#syncing">15</a> <em>Syncing with your Team Repository</em>. You won’t be able to follow along with these exact steps on your own project, but you’ll be able to use the concepts and ideas we describe in your own work afterwards.</p>
+<p>Note that this document is an explanation of various Git concepts, using a running example based on the example used in chapter <a href="syncing.html#syncing">16</a> <em>Syncing with your Team Repository</em>. You won’t be able to follow along with these exact steps on your own project, but you’ll be able to use the concepts and ideas we describe in your own work afterwards.</p>
 </div>
-<div id="rejected" class="section level2" number="21.2">
+<div id="rejected" class="section level2" number="22.2">
 <h2>
-<span class="header-section-number">21.2</span> Git has Rejected my Push<a class="anchor" aria-label="anchor" href="#rejected"><i class="fas fa-link"></i></a>
+<span class="header-section-number">22.2</span> Git has Rejected my Push<a class="anchor" aria-label="anchor" href="#rejected"><i class="fas fa-link"></i></a>
 </h2>
-<p>Suppose you and a team mate have both made commits on your local <code>master</code> branches, from the starting commit of the project. You worked on a feature branch, and merged it into the development branch (using a fast-forward merge) so your local history looks like figure <a href="committing.html#fig:localCommitGraphBeforeRejectedPushNoHistoryGraphOnly-fig">21.1</a>.</p>
+<p>Suppose you and a team mate have both made commits on your local <code>master</code> branches, from the starting commit of the project. You worked on a feature branch, and merged it into the development branch (using a fast-forward merge) so your local history looks like figure <a href="committing.html#fig:localCommitGraphBeforeRejectedPushNoHistoryGraphOnly-fig">22.1</a>.</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:localCommitGraphBeforeRejectedPushNoHistoryGraphOnly-fig"></span>
 <img src="images/localCommitGraphBeforeRejectedPushNoHistoryGraphOnly.png" alt="Your local history" width="100%"><p class="caption">
-Figure 21.1: Your local history
+Figure 22.1: Your local history
 </p>
 </div>
-<p>Your team mate made a single commit directly onto the development branch and pushed their work to the team repository, so that the remote commit graph looks like figure <a href="committing.html#fig:commitGraphInGitLabAfterPushNoHistoryGraphOnly-fig">21.2</a>.</p>
+<p>Your team mate made a single commit directly onto the development branch and pushed their work to the team repository, so that the remote commit graph looks like figure <a href="committing.html#fig:commitGraphInGitLabAfterPushNoHistoryGraphOnly-fig">22.2</a>.</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:commitGraphInGitLabAfterPushNoHistoryGraphOnly-fig"></span>
 <img src="images/commitGraphInGitLabAfterPushNoHistoryGraphOnly.png" alt="Your remote commit graph" width="100%"><p class="caption">
-Figure 21.2: Your remote commit graph
+Figure 22.2: Your remote commit graph
 </p>
 </div>
-<p>When you push your work, Git rejects the attempt, shown in figure <a href="committing.html#fig:pushRejectedNoHistory-fig">21.3</a>.</p>
+<p>When you push your work, Git rejects the attempt, shown in figure <a href="committing.html#fig:pushRejectedNoHistory-fig">22.3</a>.</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:pushRejectedNoHistory-fig"></span>
 <img src="images/pushRejectedNoHIstory.png" alt="Can you see why git has rejected this push?" width="100%"><p class="caption">
-Figure 21.3: Can you see why git has rejected this push?
+Figure 22.3: Can you see why git has rejected this push?
 </p>
 </div>
 <p>Can you see why?</p>
@@ -134,15 +135,15 @@ Figure 21.3: Can you see why git has rejected this push?
 <li>Fetch down the new commits from the remote repository.</li>
 <li>Integrate your existing commits with the new commits.</li>
 </ol>
-<div id="fetchingr" class="section level3" number="21.2.1">
+<div id="fetchingr" class="section level3" number="22.2.1">
 <h3>
-<span class="header-section-number">21.2.1</span> Fetching the New Commits from the Remote<a class="anchor" aria-label="anchor" href="#fetchingr"><i class="fas fa-link"></i></a>
+<span class="header-section-number">22.2.1</span> Fetching the New Commits from the Remote<a class="anchor" aria-label="anchor" href="#fetchingr"><i class="fas fa-link"></i></a>
 </h3>
-<p>This step is straightforward. Just right click on the project name in the <code>Package Explorer</code> view, and select <code>Team</code> &gt; <code>Fetch from origin</code>. Your local commit graph now looks like figure <a href="committing.html#fig:localCommitGraphAfterPushRejectedAndFetchNoHistoryb-fig">21.4</a></p>
+<p>This step is straightforward. Just right click on the project name in the <code>Package Explorer</code> view, and select <code>Team</code> &gt; <code>Fetch from origin</code>. Your local commit graph now looks like figure <a href="committing.html#fig:localCommitGraphAfterPushRejectedAndFetchNoHistoryb-fig">22.4</a></p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:localCommitGraphAfterPushRejectedAndFetchNoHistoryb-fig"></span>
 <img src="images/localCommitGraphAfterPushRejectedAndFetchNoHistory.png" alt="Your local commit graph" width="100%"><p class="caption">
-Figure 21.4: Your local commit graph
+Figure 22.4: Your local commit graph
 </p>
 </div>
 <p>We can see from this why a fast-forward merge of the remote tracking branch for <code>master</code> into our local <code>master</code> branch was not possible.</p>
@@ -151,9 +152,9 @@ Figure 21.4: Your local commit graph
 <p>In the situation we are looking at now, synchronising your work with the work of your team, <strong>we recommend that you use rebase rather than merge</strong>. In the remainder of this document, we’ll look at both strategies, and explain why we make this recommendation.</p>
 </div>
 </div>
-<div id="integrating-the-new-commits-using-merge" class="section level2" number="21.3">
+<div id="integrating-the-new-commits-using-merge" class="section level2" number="22.3">
 <h2>
-<span class="header-section-number">21.3</span> Integrating the New Commits using Merge<a class="anchor" aria-label="anchor" href="#integrating-the-new-commits-using-merge"><i class="fas fa-link"></i></a>
+<span class="header-section-number">22.3</span> Integrating the New Commits using Merge<a class="anchor" aria-label="anchor" href="#integrating-the-new-commits-using-merge"><i class="fas fa-link"></i></a>
 </h2>
 <p>The Git merge operation takes two branches, one pointing to the line of development that needs to be extended with the new changes (the <em>target</em>} branch), and the other pointing to the line of development containing the new changes that need to be integrated (the <em>source</em>} branch). There are three possible options for any merge:</p>
 <ol style="list-style-type: decimal">
@@ -164,27 +165,27 @@ Figure 21.4: Your local commit graph
 <p>Looking at our example and the combined graph after the Fetch operation, we can see that the 3rd of these cases applies.</p>
 <p>To make the merge commit, <strong>first make sure that you have checked out the branch you want to integrate the new commit into</strong>. In this case, this is our local <code>master</code> branch. We can see from the <code>History</code> view contents that it is already checked out.</p>
 <p>Right click on the commit pointed to by the branch we want to integrate from: in this case, the commit pointed to by branch <code>origin/master</code>. Select <code>Merge</code>.</p>
-<p>This succeeds, and produces the summary shown in figure <a href="committing.html#fig:mergeResultDialogueAfterNonFFMergeNoHistory-fig">21.5</a></p>
+<p>This succeeds, and produces the summary shown in figure <a href="committing.html#fig:mergeResultDialogueAfterNonFFMergeNoHistory-fig">22.5</a></p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:mergeResultDialogueAfterNonFFMergeNoHistory-fig"></span>
 <img src="images/mergeResultDialogueAfterNonFFMergeNoHistory.png" alt="Merge result dialog box indicating success" width="100%"><p class="caption">
-Figure 21.5: Merge result dialog box indicating success
+Figure 22.5: Merge result dialog box indicating success
 </p>
 </div>
-<p>This tells us that the merge was not a fast-forward merge, that the checked out branch (<code>HEAD</code>) has been moved forward to point to the new merge commit, and reminds us of which commits were merged by this operation. The <code>History</code> view shown in figure <a href="committing.html#fig:localCommitGraphAfterNonFFMergeNoHistory-fig">21.6</a> us the new local commit graph after this operation has completed:</p>
+<p>This tells us that the merge was not a fast-forward merge, that the checked out branch (<code>HEAD</code>) has been moved forward to point to the new merge commit, and reminds us of which commits were merged by this operation. The <code>History</code> view shown in figure <a href="committing.html#fig:localCommitGraphAfterNonFFMergeNoHistory-fig">22.6</a> us the new local commit graph after this operation has completed:</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:localCommitGraphAfterNonFFMergeNoHistory-fig"></span>
 <img src="images/localCommitGraphAfterNonFFMergeNoHistory.png" alt="The History view shows us the new local commit graph" width="100%"><p class="caption">
-Figure 21.6: The History view shows us the new local commit graph
+Figure 22.6: The History view shows us the new local commit graph
 </p>
 </div>
 <p>Here you can clearly see the new merge commit, with its two parent links. The code base it represents contains the changes made by us (the fix of the healing spell bug) and the changes made and pushed by our team mate (the addition of an admin player to the <code>admins.txt</code> file.</p>
 <p>Notice that only the checked out branch (<code>master</code>) changed its position as a result of this operation. Our feature branch and the remote tracking branch for <code>master</code> both remain as they were before we made the merge.</p>
-<p>If you compare our new local commit graph with the graph at the remote (still as it was at the start of the scenario) shown in figure <a href="committing.html#fig:commitGraphInGitLabAfterPushNoHistoryGraphOnly2-fig">21.7</a>, you’ll see that Git can now perform a fast-forward merge of the new commits on our local <code>master</code> branch with <code>master</code> branch at the remote.</p>
+<p>If you compare our new local commit graph with the graph at the remote (still as it was at the start of the scenario) shown in figure <a href="committing.html#fig:commitGraphInGitLabAfterPushNoHistoryGraphOnly2-fig">22.7</a>, you’ll see that Git can now perform a fast-forward merge of the new commits on our local <code>master</code> branch with <code>master</code> branch at the remote.</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:commitGraphInGitLabAfterPushNoHistoryGraphOnly2-fig"></span>
 <img src="images/commitGraphInGitLabAfterPushNoHistoryGraphOnly.png" alt="New local commit graph with the graph at the remote, still as it was at the start of the scenario" width="100%"><p class="caption">
-Figure 21.7: New local commit graph with the graph at the remote, still as it was at the start of the scenario
+Figure 22.7: New local commit graph with the graph at the remote, still as it was at the start of the scenario
 </p>
 </div>
 <p>So now, we can push our work, and the push should succeed.</p>
@@ -192,7 +193,7 @@ Figure 21.7: New local commit graph with the graph at the remote, still as it wa
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:commitGraphInGitLabAfterNonFFMergePushedNoHistory-fig"></span>
 <img src="images/commitGraphInGitLabAfterNonFFMergePushedNoHistory.png" alt="The remote repository now contains our commits" width="100%"><p class="caption">
-Figure 21.8: The remote repository now contains our commits
+Figure 22.8: The remote repository now contains our commits
 </p>
 </div>
 <p>(Note that we didn’t push our feature branch, so it is not visible on GitLab ((gitlab.cs.man.ac.uk)[<a href="https://gitlab.cs.man.ac.uk/" class="uri">https://gitlab.cs.man.ac.uk/</a>], even though the commits that were made on it are now present in the team remote. Git keeps a clear distinction between commits and branches. If you push a branch, you also push the commits it is pointing to, but you don’t automatically push all branches or tags that are pointing to those commits.)</p>
@@ -200,7 +201,7 @@ Figure 21.8: The remote repository now contains our commits
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:localCommitGraphAfterSuccessfulPushAfterNonFFMergeNoHistory-fig"></span>
 <img src="images/localCommitGraphAfterSuccessfulPushAfterNonFFMergeNoHistory.png" alt="Git has updated the position of the remote tracking branch" width="100%"><p class="caption">
-Figure 21.9: Git has updated the position of the remote tracking branch
+Figure 22.9: Git has updated the position of the remote tracking branch
 </p>
 </div>
 <p>Merge in Git is a great tool when we want to integrate feature branches into our development branch, or hotfix branches into our release branch, or any situation where a line of development has reached a stable state and needs to be integrated with the next line of development in the pipeline leading to released code.</p>
@@ -213,85 +214,85 @@ Git pull (in its vanilla form) is just syntactic sugar for the execution of two 
 <p>It is possible to configure the pull command to work differently (using rebase instead of merge, for example). For this course unit, and especially for students who are new to collaborative coding using Git, we recommend that you avoid the use of the pull command, and instead carry out the two steps separately for yourself. This does not require many more mouse clicks, and allows you to see what is happening at each stage, and adjust your next steps accordingly. It also means you gain a much more solid understanding of what Git is actually doing, rather than just issuing a pull command and hoping for the best.</p>
 </div>
 </div>
-<div id="rebase" class="section level2" number="21.4">
+<div id="rebase" class="section level2" number="22.4">
 <h2>
-<span class="header-section-number">21.4</span> Integrating the New Commits using Rebase<a class="anchor" aria-label="anchor" href="#rebase"><i class="fas fa-link"></i></a>
+<span class="header-section-number">22.4</span> Integrating the New Commits using Rebase<a class="anchor" aria-label="anchor" href="#rebase"><i class="fas fa-link"></i></a>
 </h2>
-<p>Let’s go back in time, to the point at which we started to integrate the commits we had fetched down from the remote. (Luckily, we are using Git, which is a tool for going back in time very easily.) Our local commit graph looks like figure <a href="committing.html#fig:localCommitGraphAfterPushRejectedAndFetchNoHistorya-fig">21.10</a></p>
+<p>Let’s go back in time, to the point at which we started to integrate the commits we had fetched down from the remote. (Luckily, we are using Git, which is a tool for going back in time very easily.) Our local commit graph looks like figure <a href="committing.html#fig:localCommitGraphAfterPushRejectedAndFetchNoHistorya-fig">22.10</a></p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:localCommitGraphAfterPushRejectedAndFetchNoHistorya-fig"></span>
 <img src="images/localCommitGraphAfterPushRejectedAndFetchNoHistory.png" alt="Our local commit graph" width="100%"><p class="caption">
-Figure 21.10: Our local commit graph
+Figure 22.10: Our local commit graph
 </p>
 </div>
-<p>And our team remote looks like figure <a href="committing.html#fig:commitGraphInGitLabAfterPushNoHistoryGraphOnlya-fig">21.11</a>.</p>
+<p>And our team remote looks like figure <a href="committing.html#fig:commitGraphInGitLabAfterPushNoHistoryGraphOnlya-fig">22.11</a>.</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:commitGraphInGitLabAfterPushNoHistoryGraphOnlya-fig"></span>
 <img src="images/commitGraphInGitLabAfterPushNoHistoryGraphOnly.png" alt="Our team remote graph" width="100%"><p class="caption">
-Figure 21.11: Our team remote graph
+Figure 22.11: Our team remote graph
 </p>
 </div>
 <p>This time, we’re going to use rebase to perform the synchronisation. When we rebase branch A onto branch B, we are asking Git to replay the commits that are unique to branch A on the top of branch B, as though we had made the same changes with B checked out as we did formerly with branch A checked out.</p>
-<p>For example, let’s look at a simple commit made by the Stendhal development team to prepare one of the 2019 releases shown in figure <a href="committing.html#fig:sampleGitLabCommitView-fig">21.12</a></p>
+<p>For example, let’s look at a simple commit made by the Stendhal development team to prepare one of the 2019 releases shown in figure <a href="committing.html#fig:sampleGitLabCommitView-fig">22.12</a></p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:sampleGitLabCommitView-fig"></span>
 <img src="images/sampleGitLabCommitView.png" alt="A simple commit made by the Stendhal development team" width="100%"><p class="caption">
-Figure 21.12: A simple commit made by the Stendhal development team
+Figure 22.12: A simple commit made by the Stendhal development team
 </p>
 </div>
 <p>This shows the change introduced by the commit. The red coloured lines (starting with <code><a href="https://rdrr.io/r/base/Arithmetic.html">-</a></code>) are lines that have been deleted, and the green coloured lines (starting with <code><a href="https://rdrr.io/r/base/Arithmetic.html">+</a></code>) are lines that have been added in the commit. Git stores the 3 lines before the change and the three lines after the change, to allow it to work out where the change should be applied. (Line numbers are also shown, but can’t be relied upon entirely - if lines are added or removed to the part of the file before this, then the line numbers will be completely inaccurate.)</p>
 <p>Although this change was made to a specific version of the code, the same change can be made to <em>any</em> version that includes this file, in a version that contains the lines that are modified by the commit and the preceding and following lines that identify them. In other words, the commit can be taken and replayed in some other part of the commit graph. Provided the affected parts of the files are the same, the commit makes just as much sense when replayed as it does when originally applied. This is rebasing.</p>
 <p>We can use this notion to integrate our work, with the work of the team.
 Before we show how to use rebase in the case of our merged feature branch, we’ll first illustrate the idea through some simpler scenarios.</p>
-<div id="rebasingc" class="section level3" number="21.4.1">
+<div id="rebasingc" class="section level3" number="22.4.1">
 <h3>
-<span class="header-section-number">21.4.1</span> Rebasing Commits Made on the Master Branch<a class="anchor" aria-label="anchor" href="#rebasingc"><i class="fas fa-link"></i></a>
+<span class="header-section-number">22.4.1</span> Rebasing Commits Made on the Master Branch<a class="anchor" aria-label="anchor" href="#rebasingc"><i class="fas fa-link"></i></a>
 </h3>
-<p>Imagine we have made some commits directly to our <code>master</code> branch and need to synchronise these with a commit to <code>master</code> made by a team mate and pushed to the team remote. Our local commit graph looks like figure <a href="committing.html#fig:localCommitGraphMasterRebaseExampleBeforeRebaseNoHistory-fig">21.13</a>.</p>
+<p>Imagine we have made some commits directly to our <code>master</code> branch and need to synchronise these with a commit to <code>master</code> made by a team mate and pushed to the team remote. Our local commit graph looks like figure <a href="committing.html#fig:localCommitGraphMasterRebaseExampleBeforeRebaseNoHistory-fig">22.13</a>.</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:localCommitGraphMasterRebaseExampleBeforeRebaseNoHistory-fig"></span>
 <img src="images/localCommitGraphMasterRebaseExampleBeforeRebaseNoHistory.png" alt="Our local commit graph" width="100%"><p class="caption">
-Figure 21.13: Our local commit graph
+Figure 22.13: Our local commit graph
 </p>
 </div>
 <p>We can create a linear code history suitable for fast-forward merging by rebasing our two commits on top of the commit from our team mate. To do this, we make sure we have our local <code>master</code> branch checked out. Then we right click on the commit we want to rebase onto (commit <code>012f3c3</code>) and select <code>Rebase HEAD on</code> from the menu that appears.</p>
-<p>This produces a commit graph shown in figure <a href="committing.html#fig:localCommitGraphMasterRebaseExampleAfterRebaseNoHistory-fig">21.14</a></p>
+<p>This produces a commit graph shown in figure <a href="committing.html#fig:localCommitGraphMasterRebaseExampleAfterRebaseNoHistory-fig">22.14</a></p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:localCommitGraphMasterRebaseExampleAfterRebaseNoHistory-fig"></span>
 <img src="images/localCommitGraphMasterRebaseExampleAfterRebaseNoHistory.png" alt="A commit graph, note the changes carefully" width="100%"><p class="caption">
-Figure 21.14: A commit graph, note the changes carefully
+Figure 22.14: A commit graph, note the changes carefully
 </p>
 </div>
 <p>Look carefully at what happened here. It almost looks as though the two commits on <code>master</code> were moved across to the <code>origin/master</code> branch. In fact, they are brand new commits; you will see that they have different SHA identifiers. The change made to the code is the same, as are the commit message and the author details. But the committer details have changed to show a different committed date. And the committer could potentially have changed, if the person doing the rebase wasn’t the same as the person making the commits in the first place.</p>
 <p>The local <code>master</code> branch has now moved to point to the latest of the new (rebased) commits. The old commits are still present in the repository, but since they are now not reachable from any branch or tag, Git does not show them.</p>
 <p>Since <code>master</code> is now ahead of its position in the remote repository, we’ll be able to push it to the team repository. The <code>origin/master</code> branch will be moved forward to the tip of <code>master</code> as a result of the push. When a local branch is at the same location as its remote tracking branch, then we know that the repositories are in sync (at least as far as those branches go).</p>
 </div>
-<div id="featureb" class="section level3" number="21.4.2">
+<div id="featureb" class="section level3" number="22.4.2">
 <h3>
-<span class="header-section-number">21.4.2</span> Rebasing to Sync Repositories When Working on a Feature Branch<a class="anchor" aria-label="anchor" href="#featureb"><i class="fas fa-link"></i></a>
+<span class="header-section-number">22.4.2</span> Rebasing to Sync Repositories When Working on a Feature Branch<a class="anchor" aria-label="anchor" href="#featureb"><i class="fas fa-link"></i></a>
 </h3>
-<p>Let’s now consider a scenario where we are working on a feature branch. We created the feature branch at the initial commit, and have made a couple of commits on it but have not yet finished working on it. At the start of our working day, we want to synchonise our repository with the team’s, so that we don’t diverge too far away from the work the rest of our team is doing. After we’ve fetched in the commits from the remote, our local graph looks like figure <a href="committing.html#fig:localCommitGraphFBRebaseExampleBeforeRebaseNoHistory-fig">21.15</a>.</p>
+<p>Let’s now consider a scenario where we are working on a feature branch. We created the feature branch at the initial commit, and have made a couple of commits on it but have not yet finished working on it. At the start of our working day, we want to synchonise our repository with the team’s, so that we don’t diverge too far away from the work the rest of our team is doing. After we’ve fetched in the commits from the remote, our local graph looks like figure <a href="committing.html#fig:localCommitGraphFBRebaseExampleBeforeRebaseNoHistory-fig">22.15</a>.</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:localCommitGraphFBRebaseExampleBeforeRebaseNoHistory-fig"></span>
 <img src="images/localCommitGraphFBRebaseExampleBeforeRebaseNoHistory.png" alt="Our local graph after we've fetched in the commits from the remote" width="100%"><p class="caption">
-Figure 21.15: Our local graph after we’ve fetched in the commits from the remote
+Figure 22.15: Our local graph after we’ve fetched in the commits from the remote
 </p>
 </div>
 <p>If we’d started work on this feature branch after our team mate had pushed their commit to the remote, we’d be able to synchronise easily. Our feature branch would have begun at commit <code>012f3c3</code>, where our local <code>master</code> branch would be. We’d be able to push the code to the remote straightaway, as all integration would be with fast forward merges.</p>
 <p>We can use rebase to get our code base into this state.</p>
-<p>First, we synchronise the position of our local <code>master</code> branch with the <code>origin/master</code> branch. To do this, we check out <code>master</code> then right click on the commit that <code>origin/master</code> is pointing to (commit <code>012f3c3</code>) and select <code>Rebase HEAD on</code>. The result looks like figure <a href="committing.html#fig:localCommitGraphFBRebaseExampleAfterMasterRebaseNoHistory-fig">21.16</a>.</p>
+<p>First, we synchronise the position of our local <code>master</code> branch with the <code>origin/master</code> branch. To do this, we check out <code>master</code> then right click on the commit that <code>origin/master</code> is pointing to (commit <code>012f3c3</code>) and select <code>Rebase HEAD on</code>. The result looks like figure <a href="committing.html#fig:localCommitGraphFBRebaseExampleAfterMasterRebaseNoHistory-fig">22.16</a>.</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:localCommitGraphFBRebaseExampleAfterMasterRebaseNoHistory-fig"></span>
 <img src="images/localCommitGraphFBRebaseExampleAfterMasterRebaseNoHistory.png" alt="updated commit graph" width="100%"><p class="caption">
-Figure 21.16: updated commit graph
+Figure 22.16: updated commit graph
 </p>
 </div>
 <p>Notice how we appeared to have performed a fast-forward merge of <code>master</code> into <code>origin/master</code>? There is no difference between the commit graphs that result from a fast-forward merge and from a rebase, in this case.</p>
-<p>Next, we need to replay our feature branch commits on top of <code>master</code>. Check out the feature branch, then right click on the commit where the two <code>master</code> branches are located and select <code>Rebase on HEAD</code>. The commit graph will now look like figure <a href="committing.html#fig:localCommitGraphFBRebaseExampleAfterFBRebaseNoHistory-fig">21.17</a>:</p>
+<p>Next, we need to replay our feature branch commits on top of <code>master</code>. Check out the feature branch, then right click on the commit where the two <code>master</code> branches are located and select <code>Rebase on HEAD</code>. The commit graph will now look like figure <a href="committing.html#fig:localCommitGraphFBRebaseExampleAfterFBRebaseNoHistory-fig">22.17</a>:</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:localCommitGraphFBRebaseExampleAfterFBRebaseNoHistory-fig"></span>
 <img src="images/localCommitGraphFBRebaseExampleAfterFBRebaseNoHistory.png" alt="New commit graph" width="100%"><p class="caption">
-Figure 21.17: New commit graph
+Figure 22.17: New commit graph
 </p>
 </div>
 <p>As can be seen, we now have a synchronised (and tidy!) commit history. The local <code>master</code> branch is at the same location as its remote tracking branch (for now) and the feature branch is based on the latest version of the code. We can now push either <code>master</code> or the feature branch successfully, and can continue work on the feature branch knowing we are building on a recent version of the code.</p>
@@ -302,15 +303,15 @@ Figure 21.17: New commit graph
 So when using rebase it’s important to keep in mind which commits in your local commit graph also exist in your team’s remote and which commits are just local to your own code history. Commits in the former category should not be rebased. Commits in the latter category can be.</p>
 </div>
 </div>
-<div id="rebaseffm" class="section level3" number="21.4.3">
+<div id="rebaseffm" class="section level3" number="22.4.3">
 <h3>
-<span class="header-section-number">21.4.3</span> Rebasing to Sync Repositories After a Fast-Forward Merge<a class="anchor" aria-label="anchor" href="#rebaseffm"><i class="fas fa-link"></i></a>
+<span class="header-section-number">22.4.3</span> Rebasing to Sync Repositories After a Fast-Forward Merge<a class="anchor" aria-label="anchor" href="#rebaseffm"><i class="fas fa-link"></i></a>
 </h3>
 <p>We can now finally return to the scenario we started this document with. As a reminder, in our local repository, we had just merged a feature branch with our local <code>master</code> branch, and then discovered that new commits had appeared on the remote master when we synchronised before attempting to push:</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:localCommitGraphAfterPushRejectedAndFetchNoHistory-fig"></span>
 <img src="images/localCommitGraphAfterPushRejectedAndFetchNoHistory.png" alt="A reminder of the commit graph" width="100%"><p class="caption">
-Figure 21.18: A reminder of the commit graph
+Figure 22.18: A reminder of the commit graph
 </p>
 </div>
 <p>This scenario gives an example of how rebase requires a little extra thought before using it. We need first to decide what we want the code history to look like, and then we can use rebase to make that happen.</p>
@@ -319,35 +320,35 @@ Figure 21.18: A reminder of the commit graph
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:localCommitGraphRebaseExampleAfterResetMasterNoHistory-fig"></span>
 <img src="images/localCommitGraphRebaseExampleAfterResetMasterNoHistory.png" alt="local commit graph after reset" width="100%"><p class="caption">
-Figure 21.19: local commit graph after reset
+Figure 22.19: local commit graph after reset
 </p>
 </div>
-<p>Then we rebase the feature branch on top of <code>master</code>. We first check out the feature branch, and then right click on the <code>master</code> branch commit, and select <code>Rebase HEAD on</code>. This results in the graph shown in figure <a href="committing.html#fig:localCommitGraphRebaseExampleAfterFBRebaseNoHistory-fig">21.20</a></p>
+<p>Then we rebase the feature branch on top of <code>master</code>. We first check out the feature branch, and then right click on the <code>master</code> branch commit, and select <code>Rebase HEAD on</code>. This results in the graph shown in figure <a href="committing.html#fig:localCommitGraphRebaseExampleAfterFBRebaseNoHistory-fig">22.20</a></p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:localCommitGraphRebaseExampleAfterFBRebaseNoHistory-fig"></span>
 <img src="images/localCommitGraphRebaseExampleAfterFBRebaseNoHistory.png" alt="Resulting commit graph after feature branch rebasing" width="100%"><p class="caption">
-Figure 21.20: Resulting commit graph after feature branch rebasing
+Figure 22.20: Resulting commit graph after feature branch rebasing
 </p>
 </div>
 <p>Now we have reorganised the history to the point where we are ready to merge the feature branch into our development branch. This is a feature branch integration step, so we should strictly speaking use Git merge. But since it will be a fast forward merge, there is no difference in terms of the commit graph outcome between using merge and rebase in this case.</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:localCommitGraphRebaseExampleCompleteNoHistory-fig"></span>
 <img src="images/localCommitGraphRebaseExampleCompleteNoHistory.png" alt="Reorganised history" width="100%"><p class="caption">
-Figure 21.21: Reorganised history
+Figure 22.21: Reorganised history
 </p>
 </div>
-<p>The repository is now ready to push. Since <code>master</code> is ahead of <code>origin/master</code> on the same line of development, Git will have no problem in making the fast-forward merge needed to allow it to accept the push shown in figure <a href="committing.html#fig:localCommitGraphRebaseExampleAfterPushNoHistory-fig">21.22</a></p>
+<p>The repository is now ready to push. Since <code>master</code> is ahead of <code>origin/master</code> on the same line of development, Git will have no problem in making the fast-forward merge needed to allow it to accept the push shown in figure <a href="committing.html#fig:localCommitGraphRebaseExampleAfterPushNoHistory-fig">22.22</a></p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:localCommitGraphRebaseExampleAfterPushNoHistory-fig"></span>
 <img src="images/localCommitGraphRebaseExampleAfterPushNoHistory.png" alt="local commit graph after push" width="100%"><p class="caption">
-Figure 21.22: local commit graph after push
+Figure 22.22: local commit graph after push
 </p>
 </div>
-<p>And our code history on GitLab looks pleasantly clear and linear as in figure <a href="committing.html#fig:commitGraphInGitLabRebaseExampleAfterPushNoHistory-fig">21.23</a>.</p>
+<p>And our code history on GitLab looks pleasantly clear and linear as in figure <a href="committing.html#fig:commitGraphInGitLabRebaseExampleAfterPushNoHistory-fig">22.23</a>.</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:commitGraphInGitLabRebaseExampleAfterPushNoHistory-fig"></span>
 <img src="images/commitGraphInGitLabRebaseExampleAfterPushNoHistory.png" alt="Our code history on GitLab is pleasantly clear and linear" width="100%"><p class="caption">
-Figure 21.23: Our code history on GitLab is pleasantly clear and linear
+Figure 22.23: Our code history on GitLab is pleasantly clear and linear
 </p>
 </div>
 <div class="rmdnote">
@@ -357,9 +358,9 @@ Instead, you need to get your repository into a state where it can be pushed, wi
 </div>
 </div>
 </div>
-<div id="rFinalWord" class="section level2" number="21.5">
+<div id="rFinalWord" class="section level2" number="22.5">
 <h2>
-<span class="header-section-number">21.5</span> A Final Word<a class="anchor" aria-label="anchor" href="#rFinalWord"><i class="fas fa-link"></i></a>
+<span class="header-section-number">22.5</span> A Final Word<a class="anchor" aria-label="anchor" href="#rFinalWord"><i class="fas fa-link"></i></a>
 </h2>
 <p>In this document, we took you through several different approaches to synchronising your local repository with your team remote, after your team mates have made changes. In this course unit, we ask you to use:</p>
 <ul>
@@ -370,29 +371,30 @@ Instead, you need to get your repository into a state where it can be pushed, wi
 <p>This is by no means the only workflow you could use, and we certainly don’t claim it as the best in all circumstances. But it is an approach that allows you to gain the core Git skills that will enable you to use any workflow that you may be called up on to comply with in future projects.</p>
 <p>One major omission from this document is any discussion of what happens when we encounter conflicts while integrating code or synchronising our repository. We’ve chosen the issues for exercise 1 to try to avoid conflicts, but you will definitely encounter them in the second team coursework exercise, when you start to work on larger features in sub-teams. We’ll cover handling conflicts in another learning resource for the unit.</p>
 <p>Good luck!</p>
+<p>Document version: 05 October, 2021</p>
 
 </div>
 </div>
   <div class="chapter-nav">
-<div class="prev"><a href="guiding.html"><span class="header-section-number">20</span> Testing Stendhal</a></div>
-<div class="next"><a href="integrating.html"><span class="header-section-number">22</span> Continuous integration</a></div>
+<div class="prev"><a href="guiding.html"><span class="header-section-number">21</span> Testing Stendhal</a></div>
+<div class="next"><a href="integrating.html"><span class="header-section-number">23</span> Continuous integration</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#committing"><span class="header-section-number">21</span> Integrating commits</a></li>
-<li><a class="nav-link" href="#commintro"><span class="header-section-number">21.1</span> Introduction</a></li>
+<li><a class="nav-link" href="#committing"><span class="header-section-number">22</span> Integrating commits</a></li>
+<li><a class="nav-link" href="#commintro"><span class="header-section-number">22.1</span> Introduction</a></li>
 <li>
-<a class="nav-link" href="#rejected"><span class="header-section-number">21.2</span> Git has Rejected my Push</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#fetchingr"><span class="header-section-number">21.2.1</span> Fetching the New Commits from the Remote</a></li></ul>
+<a class="nav-link" href="#rejected"><span class="header-section-number">22.2</span> Git has Rejected my Push</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#fetchingr"><span class="header-section-number">22.2.1</span> Fetching the New Commits from the Remote</a></li></ul>
 </li>
-<li><a class="nav-link" href="#integrating-the-new-commits-using-merge"><span class="header-section-number">21.3</span> Integrating the New Commits using Merge</a></li>
+<li><a class="nav-link" href="#integrating-the-new-commits-using-merge"><span class="header-section-number">22.3</span> Integrating the New Commits using Merge</a></li>
 <li>
-<a class="nav-link" href="#rebase"><span class="header-section-number">21.4</span> Integrating the New Commits using Rebase</a><ul class="nav navbar-nav">
-<li><a class="nav-link" href="#rebasingc"><span class="header-section-number">21.4.1</span> Rebasing Commits Made on the Master Branch</a></li>
-<li><a class="nav-link" href="#featureb"><span class="header-section-number">21.4.2</span> Rebasing to Sync Repositories When Working on a Feature Branch</a></li>
-<li><a class="nav-link" href="#rebaseffm"><span class="header-section-number">21.4.3</span> Rebasing to Sync Repositories After a Fast-Forward Merge</a></li>
+<a class="nav-link" href="#rebase"><span class="header-section-number">22.4</span> Integrating the New Commits using Rebase</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#rebasingc"><span class="header-section-number">22.4.1</span> Rebasing Commits Made on the Master Branch</a></li>
+<li><a class="nav-link" href="#featureb"><span class="header-section-number">22.4.2</span> Rebasing to Sync Repositories When Working on a Feature Branch</a></li>
+<li><a class="nav-link" href="#rebaseffm"><span class="header-section-number">22.4.3</span> Rebasing to Sync Repositories After a Fast-Forward Merge</a></li>
 </ul>
 </li>
-<li><a class="nav-link" href="#rFinalWord"><span class="header-section-number">21.5</span> A Final Word</a></li>
+<li><a class="nav-link" href="#rFinalWord"><span class="header-section-number">22.5</span> A Final Word</a></li>
 </ul>
 
       <div class="book-extra">
@@ -418,6 +420,34 @@ Instead, you need to get your repository into a state where it can be pushed, wi
   </div>
 
 </div></div>
-</footer>
+</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+for (let popover of popovers) {
+  const div = document.createElement('div');
+  div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
+  div.innerHTML = popover.getAttribute('data-content');
+
+  var has_math = div.querySelector("span.math");
+  if (has_math) {
+    document.body.appendChild(div);
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
+    MathJax.Hub.Queue(function() {
+      popover.setAttribute('data-content', div.innerHTML);
+      document.body.removeChild(div);
+    })
+  }
+}
+</script>
 </body>
 </html>

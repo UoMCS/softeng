@@ -10,3 +10,6 @@ knitr::include_graphics("images/covid_risk_chart.png")
 ## Course content
 
 See workshop
+
+
+Document version: `r format(Sys.time(), '%d %B, %Y')`
