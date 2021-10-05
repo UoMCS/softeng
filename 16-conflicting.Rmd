@@ -106,7 +106,7 @@ Note that the coursework must be carried out without the use of merge requests. 
 To give you a chance to check your work and make corrections in advance of the deadline, we will run the automated marking code on all student repositories on:
 
 
-(ref:feedbackdateindicwk1)
+(ref:feedbackdateindicwk2)
 
 This will add provisional feedback and a provisional mark to the issue tracker for your repository, covering the part of the work you have completed and pushed to GitLab by that date.  You will then have until the deadline to make corrections.  The automated marking code will mark only your latest commits, and will ignore earlier incorrect commits or merge attempts.  This means you can commit fixes to your feature branch and attempt the merge again, to try to catch up on any marks you may have missed in your first attempt.
 
