@@ -22,7 +22,7 @@ The exercise will test your ability to:
 
 ### Step one {#stepone}
 
-Following the same process covered in the workshops, each team member should acquire their own local copy of the team repository, learn how to build and test it, and run the code as a locally hosted version of the game.  Instructions for doing this are in chapter \@ref(testings).
+Following the same process covered in the workshops, each team member should acquire their own local copy of the team repository, learn how to build and test it, and run the code as a locally hosted version of the game.  Instructions for doing this are in chapter \@ref(guiding).
 
 
 ### Step two {#steptwo}

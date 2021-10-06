@@ -48,8 +48,6 @@ fig:habitat-fig
 fig:composite-fig
 fig:xkcd-risk-fig
 fig:stendhalgame-fig
-fig:createLocalStendhalAccount-fig
-fig:loginToLocalStendhalAccount-fig
 fig:mentoring-fig
 fig:fileStagedForCommit-fig
 fig:localCommitGraphBeforePushNoHistory-fig
@@ -295,18 +293,6 @@ starting
 introduction-2
 replicatingissues
 inspiration
-testings
-introduction-3
-idelike
-acoding
-bcode
-testsuites
-antrunning
-junitplugin
-eclipsej
-coderunning
-saccount
-knowcode
 mentoring
 when
 registration

@@ -63,23 +63,22 @@
 <li><a class="" href="risking.html"><span class="header-section-number">10</span> Risk management</a></li>
 <li><a class="" href="opening.html"><span class="header-section-number">11</span> Open source challenge</a></li>
 <li class="book-part">Team study materials</li>
-<li><a class="" href="starting.html"><span class="header-section-number">12</span> Testing Stendhal</a></li>
-<li><a class="" href="testings.html"><span class="header-section-number">13</span> Building Stendhal</a></li>
-<li><a class="" href="mentoring.html"><span class="header-section-number">14</span> Industrial mentoring</a></li>
-<li><a class="" href="ourmentor.html"><span class="header-section-number">15</span> Your mentor</a></li>
-<li><a class="" href="syncing.html"><span class="header-section-number">16</span> Synchronising</a></li>
+<li><a class="" href="starting.html"><span class="header-section-number">12</span> Starting Stendhal</a></li>
+<li><a class="" href="mentoring.html"><span class="header-section-number">13</span> Industrial mentoring</a></li>
+<li><a class="" href="ourmentor.html"><span class="header-section-number">14</span> Your mentor</a></li>
+<li><a class="" href="syncing.html"><span class="header-section-number">15</span> Synchronising</a></li>
 <li class="book-part">Coursework</li>
-<li><a class="" href="gitting.html"><span class="header-section-number">17</span> Individual Coursework 1</a></li>
-<li><a class="" href="conflicting.html"><span class="header-section-number">18</span> Individual Coursework 2</a></li>
-<li><a class="" href="dealing.html"><span class="header-section-number">19</span> Team Coursework 1</a></li>
-<li><a class="" href="working.html"><span class="header-section-number">20</span> Team Coursework 2</a></li>
+<li><a class="" href="gitting.html"><span class="header-section-number">16</span> Individual Coursework 1</a></li>
+<li><a class="" href="conflicting.html"><span class="header-section-number">17</span> Individual Coursework 2</a></li>
+<li><a class="" href="dealing.html"><span class="header-section-number">18</span> Team Coursework 1</a></li>
+<li><a class="" href="working.html"><span class="header-section-number">19</span> Team Coursework 2</a></li>
 <li class="book-part">Self study materials</li>
-<li><a class="" href="guiding.html"><span class="header-section-number">21</span> Testing Stendhal</a></li>
-<li><a class="" href="committing.html"><span class="header-section-number">22</span> Integrating commits</a></li>
-<li><a class="" href="integrating.html"><span class="header-section-number">23</span> Continuous integration</a></li>
-<li><a class="" href="reviewing.html"><span class="header-section-number">24</span> Code review</a></li>
-<li><a class="" href="automating.html"><span class="header-section-number">25</span> Unit testing</a></li>
-<li><a class="" href="reading.html"><span class="header-section-number">26</span> References</a></li>
+<li><a class="" href="guiding.html"><span class="header-section-number">20</span> Testing Stendhal</a></li>
+<li><a class="" href="committing.html"><span class="header-section-number">21</span> Integrating commits</a></li>
+<li><a class="" href="integrating.html"><span class="header-section-number">22</span> Continuous integration</a></li>
+<li><a class="" href="reviewing.html"><span class="header-section-number">23</span> Code review</a></li>
+<li><a class="" href="automating.html"><span class="header-section-number">24</span> Unit testing</a></li>
+<li><a class="" href="reading.html"><span class="header-section-number">25</span> References</a></li>
 </ul>
 
         <div class="book-extra">
@@ -437,7 +436,7 @@ Figure 2.5: The Class Under Test in this example is Acme
 <h3>
 <span class="header-section-number">2.4.3</span> Exercise 3: Objects are actually added to Zones<a class="anchor" aria-label="anchor" href="#exercise-3-objects-are-actually-added-to-zones"><i class="fas fa-link"></i></a>
 </h3>
-<ul>
+<ol style="list-style-type: decimal">
 <li>Create a <code>Zone</code> and create and <code>Object</code>
 </li>
 <li>Set an identifier to the <code>Object</code>. Tip: the <code>Zones</code> class has a method for that.</li>
@@ -446,17 +445,17 @@ Figure 2.5: The Class Under Test in this example is Acme
 <li>Use a method from the <code>Zone</code> class to check if our <code>Object</code> belongs to the <code>Zone</code>.</li>
 <li>Use a JUnit a statement to check the above<br>
 </li>
-</ul>
+</ol>
 </div>
 <div id="exercise-4-objects-are-destroyed-when-removed-from-zones" class="section level3" number="2.4.4">
 <h3>
 <span class="header-section-number">2.4.4</span> Exercise 4: Objects are destroyed when removed from Zones<a class="anchor" aria-label="anchor" href="#exercise-4-objects-are-destroyed-when-removed-from-zones"><i class="fas fa-link"></i></a>
 </h3>
-<ul>
-<li>Same as in Exercise until step 5.</li>
-<li>Remove object from zone</li>
+<ol style="list-style-type: decimal">
+<li>Same as in Exercise 3 until step 3.</li>
+<li>Remove the object from zone</li>
 <li>Use a method from the <code>Zone</code> class to check if our <code>Object</code> belongs to the <code>Zone</code>. Use a JUnit statement.</li>
-</ul>
+</ol>
 </div>
 <div id="exercise-5-reading-and-refactoring-stendhal-tests" class="section level3" number="2.4.5">
 <h3>
@@ -520,7 +519,7 @@ Figure 2.5: The Class Under Test in this example is Acme
 <p>Checks that both variables refer to the same object.</p>
 <div class="sourceCode" id="cb28"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb28-1"><a href="understanding.html#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">assertNotSame</span>(<span class="bu">String</span> message, expected, actual)</span></code></pre></div>
 <p>Checks that both variables refer to different objects.</p>
-<p>Document version: 05 October, 2021</p>
+<p>Document version: 06 October, 2021</p>
 
 </div>
 </div>

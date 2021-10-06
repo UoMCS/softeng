@@ -4,18 +4,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Chapter 21 Testing Stendhal | Software engineering</title>
+<title>Chapter 20 Testing Stendhal | Software engineering</title>
 <meta name="author" content="Suzanne Embury and team">
-<meta name="description" content="Guidance for Testing Stendhal.  21.1 Introduction In the team study sessions from week 2 onwards, you’ll be working on your team coursework. The focus initially is on writing tests to make the...">
+<meta name="description" content="Guidance for Testing Stendhal.  20.1 Introduction In the team study sessions from week 2 onwards, you’ll be working on your team coursework. The focus initially is on writing tests to make the...">
 <meta name="generator" content="bookdown 0.24 with bs4_book()">
-<meta property="og:title" content="Chapter 21 Testing Stendhal | Software engineering">
+<meta property="og:title" content="Chapter 20 Testing Stendhal | Software engineering">
 <meta property="og:type" content="book">
 <meta property="og:url" content="https://software-eng.netlify.app/guiding.html">
-<meta property="og:description" content="Guidance for Testing Stendhal.  21.1 Introduction In the team study sessions from week 2 onwards, you’ll be working on your team coursework. The focus initially is on writing tests to make the...">
+<meta property="og:description" content="Guidance for Testing Stendhal.  20.1 Introduction In the team study sessions from week 2 onwards, you’ll be working on your team coursework. The focus initially is on writing tests to make the...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Chapter 21 Testing Stendhal | Software engineering">
+<meta name="twitter:title" content="Chapter 20 Testing Stendhal | Software engineering">
 <meta name="twitter:site" content="@csmcr">
-<meta name="twitter:description" content="Guidance for Testing Stendhal.  21.1 Introduction In the team study sessions from week 2 onwards, you’ll be working on your team coursework. The focus initially is on writing tests to make the...">
+<meta name="twitter:description" content="Guidance for Testing Stendhal.  20.1 Introduction In the team study sessions from week 2 onwards, you’ll be working on your team coursework. The focus initially is on writing tests to make the...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.10/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.0/transition.js"></script><script src="libs/bs3compat-0.3.0/tabs.js"></script><script src="libs/bs3compat-0.3.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -63,23 +63,22 @@
 <li><a class="" href="risking.html"><span class="header-section-number">10</span> Risk management</a></li>
 <li><a class="" href="opening.html"><span class="header-section-number">11</span> Open source challenge</a></li>
 <li class="book-part">Team study materials</li>
-<li><a class="" href="starting.html"><span class="header-section-number">12</span> Testing Stendhal</a></li>
-<li><a class="" href="testings.html"><span class="header-section-number">13</span> Building Stendhal</a></li>
-<li><a class="" href="mentoring.html"><span class="header-section-number">14</span> Industrial mentoring</a></li>
-<li><a class="" href="ourmentor.html"><span class="header-section-number">15</span> Your mentor</a></li>
-<li><a class="" href="syncing.html"><span class="header-section-number">16</span> Synchronising</a></li>
+<li><a class="" href="starting.html"><span class="header-section-number">12</span> Starting Stendhal</a></li>
+<li><a class="" href="mentoring.html"><span class="header-section-number">13</span> Industrial mentoring</a></li>
+<li><a class="" href="ourmentor.html"><span class="header-section-number">14</span> Your mentor</a></li>
+<li><a class="" href="syncing.html"><span class="header-section-number">15</span> Synchronising</a></li>
 <li class="book-part">Coursework</li>
-<li><a class="" href="gitting.html"><span class="header-section-number">17</span> Individual Coursework 1</a></li>
-<li><a class="" href="conflicting.html"><span class="header-section-number">18</span> Individual Coursework 2</a></li>
-<li><a class="" href="dealing.html"><span class="header-section-number">19</span> Team Coursework 1</a></li>
-<li><a class="" href="working.html"><span class="header-section-number">20</span> Team Coursework 2</a></li>
+<li><a class="" href="gitting.html"><span class="header-section-number">16</span> Individual Coursework 1</a></li>
+<li><a class="" href="conflicting.html"><span class="header-section-number">17</span> Individual Coursework 2</a></li>
+<li><a class="" href="dealing.html"><span class="header-section-number">18</span> Team Coursework 1</a></li>
+<li><a class="" href="working.html"><span class="header-section-number">19</span> Team Coursework 2</a></li>
 <li class="book-part">Self study materials</li>
-<li><a class="active" href="guiding.html"><span class="header-section-number">21</span> Testing Stendhal</a></li>
-<li><a class="" href="committing.html"><span class="header-section-number">22</span> Integrating commits</a></li>
-<li><a class="" href="integrating.html"><span class="header-section-number">23</span> Continuous integration</a></li>
-<li><a class="" href="reviewing.html"><span class="header-section-number">24</span> Code review</a></li>
-<li><a class="" href="automating.html"><span class="header-section-number">25</span> Unit testing</a></li>
-<li><a class="" href="reading.html"><span class="header-section-number">26</span> References</a></li>
+<li><a class="active" href="guiding.html"><span class="header-section-number">20</span> Testing Stendhal</a></li>
+<li><a class="" href="committing.html"><span class="header-section-number">21</span> Integrating commits</a></li>
+<li><a class="" href="integrating.html"><span class="header-section-number">22</span> Continuous integration</a></li>
+<li><a class="" href="reviewing.html"><span class="header-section-number">23</span> Code review</a></li>
+<li><a class="" href="automating.html"><span class="header-section-number">24</span> Unit testing</a></li>
+<li><a class="" href="reading.html"><span class="header-section-number">25</span> References</a></li>
 </ul>
 
         <div class="book-extra">
@@ -87,14 +86,14 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="guiding" class="section level1" number="21">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="guiding" class="section level1" number="20">
 <h1>
-<span class="header-section-number">21</span> Testing Stendhal<a class="anchor" aria-label="anchor" href="#guiding"><i class="fas fa-link"></i></a>
+<span class="header-section-number">20</span> Testing Stendhal<a class="anchor" aria-label="anchor" href="#guiding"><i class="fas fa-link"></i></a>
 </h1>
 <p>Guidance for Testing Stendhal.</p>
-<div id="intros" class="section level2" number="21.1">
+<div id="intros" class="section level2" number="20.1">
 <h2>
-<span class="header-section-number">21.1</span> Introduction<a class="anchor" aria-label="anchor" href="#intros"><i class="fas fa-link"></i></a>
+<span class="header-section-number">20.1</span> Introduction<a class="anchor" aria-label="anchor" href="#intros"><i class="fas fa-link"></i></a>
 </h2>
 <p>In the team study sessions from week 2 onwards, you’ll be working on your team coursework. The focus initially is on writing tests to make the issues visible: that is, you will write tests that fail when the bug reported by the issue is present in the code base, and pass when it is not present. The process is:</p>
 <ol style="list-style-type: decimal">
@@ -108,9 +107,9 @@
 <p>In this approach, we start off with a green JUnit bar (because although the bug is present, no test reveals it), before moving to a red JUnit bar (because we have added a test that reveals the bug) and then back to a green JUnit bar (because we have a test that reveals the presence of the bug, but the bug is now fixed).</p>
 <p>This document contains some suggestions for carrying out the first few of these steps more efficiently. You’ll look at techniques for carrying out the full process in the workshops in week 3.</p>
 </div>
-<div id="replicating" class="section level2" number="21.2">
+<div id="replicating" class="section level2" number="20.2">
 <h2>
-<span class="header-section-number">21.2</span> Manually Replicating The Issues<a class="anchor" aria-label="anchor" href="#replicating"><i class="fas fa-link"></i></a>
+<span class="header-section-number">20.2</span> Manually Replicating The Issues<a class="anchor" aria-label="anchor" href="#replicating"><i class="fas fa-link"></i></a>
 </h2>
 <p>You will find the code base much easier to navigate, and the code relating to your issue much easier to find and understand, if you first replicate the issue manually. This means running the game on your local server, to see the bug happening in the context of game play. This will give you additional keywords for searching (to add to the keywords you can extract from the issue description itself) and will help you locate the relevant tests and the source of the bug.</p>
 <p>This, however, raises a problem. Some of the issues would require many hours of play to get a player character to the required level to be able to acquire the objects necessary and get to the NPCs involved in the issues. You don’t have that time to spare if you are going to get your fix tested and sorted in the timescales given for the coursework.</p>
@@ -136,9 +135,9 @@
 %
 %Try to avoid the mistake that some teams made in previous years, where several team members made the change in their feature branches, and then experienced conflicts when they merged the work together.  The result was a lot of commits adding and then removing the `@Ignore` annotations, across several branches.  How can you coordinate with your team work so that these annotations are added once, in one clean commit, and then are available for all team members when they begin work on their own issues?-->
 </div>
-<div id="inspirations" class="section level2" number="21.3">
+<div id="inspirations" class="section level2" number="20.3">
 <h2>
-<span class="header-section-number">21.3</span> Getting Inspiration for Writing your Own Test Cases<a class="anchor" aria-label="anchor" href="#inspirations"><i class="fas fa-link"></i></a>
+<span class="header-section-number">20.3</span> Getting Inspiration for Writing your Own Test Cases<a class="anchor" aria-label="anchor" href="#inspirations"><i class="fas fa-link"></i></a>
 </h2>
 <p>Most people find writing test cases for bugs in large unfamiliar code bases very challenging. This is normal and to be expected. Writing test code is quite a different style of coding than most of you will be accustomed to, and you are working blind, since you don’t have much existing experience of working with this particular code. The idea of the first team coursework exercise is for you to get experience in writing fairly simple tests. It will be difficult at first, but remember that we are on hand to give help whenever you need it. Don’t sit stewing in silence because you don’t know what you are doing. Just ask!</p>
 <p>A major source of inspiration for your test cases is the existing test suite. A good starting point for writing your own test case is to look through the code base for test cases that are similar to the one you want to write.</p>
@@ -147,20 +146,20 @@
 <p>Existing test cases will also give you lots of useful tips on where to locate your new test code, whether in an existing test class or whether you need to create a brand new test class for your issue.</p>
 <p>You should not feel embarrassed about copying and pasting existing test code and modifying it to fit your own issue. This is a normal survival technique for software engineers in the wild. Do make sure though that you understand the code you have copied, at least at a high level. Don’t leave bits of code in there when you are not sure what they are for. That will just lead to brittle and slow tests.</p>
 <p>Of course, since this is a coursework exercise, you <em>should</em> feel embarrassed about copying and pasting solutions written by the members of other teams for your issues. That would be plagiarism. Just use your own version of the Stendhal code base, and the work of your team members, to build your own tests on.</p>
-<p>Document version: 05 October, 2021</p>
+<p>Document version: 06 October, 2021</p>
 
 </div>
 </div>
   <div class="chapter-nav">
-<div class="prev"><a href="working.html"><span class="header-section-number">20</span> Team Coursework 2</a></div>
-<div class="next"><a href="committing.html"><span class="header-section-number">22</span> Integrating commits</a></div>
+<div class="prev"><a href="working.html"><span class="header-section-number">19</span> Team Coursework 2</a></div>
+<div class="next"><a href="committing.html"><span class="header-section-number">21</span> Integrating commits</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#guiding"><span class="header-section-number">21</span> Testing Stendhal</a></li>
-<li><a class="nav-link" href="#intros"><span class="header-section-number">21.1</span> Introduction</a></li>
-<li><a class="nav-link" href="#replicating"><span class="header-section-number">21.2</span> Manually Replicating The Issues</a></li>
-<li><a class="nav-link" href="#inspirations"><span class="header-section-number">21.3</span> Getting Inspiration for Writing your Own Test Cases</a></li>
+<li><a class="nav-link" href="#guiding"><span class="header-section-number">20</span> Testing Stendhal</a></li>
+<li><a class="nav-link" href="#intros"><span class="header-section-number">20.1</span> Introduction</a></li>
+<li><a class="nav-link" href="#replicating"><span class="header-section-number">20.2</span> Manually Replicating The Issues</a></li>
+<li><a class="nav-link" href="#inspirations"><span class="header-section-number">20.3</span> Getting Inspiration for Writing your Own Test Cases</a></li>
 </ul>
 
       <div class="book-extra">
