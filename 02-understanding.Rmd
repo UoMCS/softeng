@@ -269,16 +269,16 @@ The strategy here should be to:
 ### Exercise 3: Objects are actually added to Zones
 
 
-* Create a `Zone` and create and `Object`
-* Set an identifier to the `Object`. Tip: the `Zones` class has a method for that.
-* Add the object to `Zone`
-* Use a method from the `Zone` class to check if our `Object` belongs to the `Zone`.
-* Use a JUnit a statement to check the above\
+1. Create a `Zone` and create and `Object`
+1. Set an identifier to the `Object`. Tip: the `Zones` class has a method for that.
+1. Add the object to `Zone`
+1. Use a method from the `Zone` class to check if our `Object` belongs to the `Zone`.
+1. Use a JUnit a statement to check the above\
 
 ### Exercise 4: Objects are destroyed when removed from Zones
-*  Same as in Exercise until step 5.
-* Remove object from zone
-* Use a method from the `Zone` class to check if our `Object` belongs to the `Zone`. Use a JUnit statement.
+1.  Same as in Exercise 3 until step 3.
+1. Remove the object from zone
+1. Use a method from the `Zone` class to check if our `Object` belongs to the `Zone`. Use a JUnit statement.
 
 
 ### Exercise 5: Reading and refactoring Stendhal tests
