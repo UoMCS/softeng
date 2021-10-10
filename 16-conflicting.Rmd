@@ -1,17 +1,17 @@
 # Individual Coursework 2 {#conflicting}
 
-Exercise 2: conflicts in git. Test-First Development and managing conflicts
+Exercise 2: Test-First Development and Managing Conflicts in Git
 
 ## Introduction {#introt}
 
-This second individual coursework exercise for (ref:coursecode) is designed to help you develop two new skills that professional software engineers need, and that will be essential for the remaining team coursework:
+This second individual coursework exercise for (ref:coursecode) is designed to help you develop two new skills that professional software engineers need, and that will be essential for the second team coursework exercise:
 
 *  Test-first development, and
 * Handling conflicts during integration of separate lines of development with Git.
 
-Test-first development (TFD) is an approach to developing software in which we first write the test cases describing the functionality we need to implement, and then write the production code that will cause them to change from failing tests to passing tests.  The tests provide the specification for what needs to be built.  You got a taste of TFD in writing the tests to make your bugs visible in the code base in the first team coursework exercise, but you'll be required to apply it more extensively in the second team coursework exercise.  This individual coursework exercise gives you a chance to practice the basic skills in private, before you have to use them in front of your team and mentor.  It does this by giving you a set of test cases describing the behaviour needed of a new feature for the Sliding Puzzle game you worked on in the first individual coursework exercise.  Your task is to make these failing tests pass, by implementing the feature as the tests (and the issue text) describe it.
+Test-first development (TFD) is an approach to developing software in which we first write the test cases describing the functionality we need to implement, and then write the production code that will cause them to change from failing tests to passing tests.  The tests provide the specification for what needs to be built.  You are getting a taste of TFD in writing the tests to make your bugs visible in the code base in the first team coursework exercise, but you'll be required to apply it more extensively in the second team coursework exercise.  This individual coursework exercise gives you a chance to practice the basic skills in private, before you have to use them in front of your team and mentor.  It does this by giving you a set of test cases describing the behaviour needed of a new feature for the Sliding Puzzle game you worked on in the first individual coursework exercise.  Your task is to make these failing tests pass, by implementing the feature as the tests (and the issue text) describe it.
 
-When you've implemented the feature, you'll need to integrate it with your development branch.  But, another member of the Sliding Puzzle team has also made commits on the development branch since work on your feature began, implementing another feature.  You'll need to merge the two lines of development together.  Since both features touch much the same parts of the code, a number of conflicts will be discovered when you try to merge.  Your task will  be to remove the conflicts from the code base, so that the merge can go ahead.  You'll finish by creating a commit that contains both new features, co-existing together, and passing all the tests.
+When you've implemented the feature, you'll need to integrate it with your development branch (in this repository, the `main` branch).  But, another member of the Sliding Puzzle team has also made commits on the development branch since work on your feature began, implementing another feature.  You'll need to merge the two lines of development together.  Since both features touch much the same parts of the code, a number of conflicts will be discovered when you try to merge.  Your task will  be to remove the conflicts from the code base, so that the merge can go ahead.  You'll finish by creating a commit that contains both new features, co-existing together, and passing all the tests.
 
 You'll practice these skills by carrying out the following steps:
 
@@ -25,7 +25,7 @@ You'll practice these skills by carrying out the following steps:
 1. Push the completed merge to your remote repository for marking.
 1. Update the issue tracker to record the project status, and request marking.
 
-Instructions for carrying these tasks out from within the Eclipse IDE are given in this document.  We focus on Eclipse as that is the IDE used for the team coursework.  You are free to use any IDE that you wish to carry out this individual coursework exercise, but we can currently only provide instructions and technical support for Eclipse, run on the VM provided by the Department.
+Instructions for carrying these tasks out from within the Eclipse IDE are given in this document.  We focus on Eclipse as that is the IDE used for the team coursework.  You are free to use any IDE that you wish to carry out this individual coursework exercise, but we can currently only provide instructions and technical support for Eclipse, run on the VM provided by the Department or the machines in labs in the Kilburn building.
 
 Once the exercise is completed, you should be ready to use the same skills on your team's repository in the remaining team coursework exercises.
 
@@ -58,7 +58,7 @@ Please report any problems you encounter that are not covered in the troubleshoo
 
 ### Key Information {#keyinfo}
 
-The exercise will be marked out of (ref:totalmark), and will count towards (ref:percentage) of your total mark for the course unit.
+The exercise will be marked out of (ref:totalmark), and will count towards (ref:percentage)% of your total mark for the course unit.
 
 The deadline for submitting the exercise is: (ref:deadline2)
 
@@ -82,13 +82,13 @@ mark_table2 <- tibble::tribble(
     ~ "Criterion"                        , ~ "Marks",   
     "The `move-counter` branch passes the tests supplied in commit `e751f062`. ", "2",
     "The `main` branch passes the tests supplied in both feature branches (commits `e751f062` and `1a2923aa`).", "2",
-    "The `main` branch is located at a merge commit, with one parent being commit `1a2923aa` (pointed to by the `game-timer` branch) and the other parent being the commit pointed to by the `move-counter` branch.", "1",
+    "The `main` branch is located at a merge commit, with one parent being commit `1a2923aa` (pointed to by the `game-timer` branch) and the other parent being the commit pointed to by the `move-counter` branch at the time the merge is made.", "1",
     "No other merge commits appear in the commit graph.", "1",
     "The code version represented by the commit on the `move-counter` branch contains conflicting code elements when compared with the code at the original location of the `main` branch (commit `1a2923aa`)", "2",
-    "No conflict markers exist in the merged code.  (If the `move-counter` branch has not been merged with `main` in the submitted repository, the mark for this criterion will be 0","2",
-    "**Total**", "**10**",    
+    "No conflict markers exist in the merged code.  (If the `move-counter` branch has not been merged with `main` in the submitted repository, the mark for this criterion will be 0.)","2",
+    "**Total**", "**10**",
 )
-knitr::kable(mark_table2, caption = "The Mark scheme for the second piece of individual coursework", booktabs = TRUE)
+knitr::kable(mark_table2, caption = "The marking scheme for the 2nd individual coursework exercise", booktabs = TRUE)
 ```
 
 ::: {.rmdcaution}
@@ -103,14 +103,16 @@ Note that the coursework must be carried out without the use of merge requests. 
 ### Pre-Deadline Feedback {#predead}
 
 
-To give you a chance to check your work and make corrections in advance of the deadline, we will run the automated marking code on all student repositories on:
+To give you a chance to check your work and make corrections in advance of the deadline, we will run the automated marking code on all student repositories shortly after:
 
 
 (ref:feedbackdateindicwk2)
 
 This will add provisional feedback and a provisional mark to the issue tracker for your repository, covering the part of the work you have completed and pushed to GitLab by that date.  You will then have until the deadline to make corrections.  The automated marking code will mark only your latest commits, and will ignore earlier incorrect commits or merge attempts.  This means you can commit fixes to your feature branch and attempt the merge again, to try to catch up on any marks you may have missed in your first attempt.
 
-All repositories where any changes have been made by students will be provisionally marked.  You don't need to request it.
+All repositories where any changes have been made by students by the deadline will be provisionally marked.  You don't need to request it.
+
+We guarantee to provide provisional marks for everyone who has started the work by the provisional marking deadline.  Students who start the work after this may receive some provisional marking or they may not, depending on whether their repository is processed by the marking code in time.
 
 
 ### Submission Procedure {#subproc}
@@ -129,11 +131,12 @@ You may delete and re-add the comment as many times as you like up until the for
 
 Any changes to your repository made after the final eligible marking request has been made will be ignored by the marking process.  So make sure you have definitely finished all your work, before you add the comment, especially if you are submitting after the deadline.
 
+When you have added the request for marking comment to the issue, your development access to the repository will be removed, to preserve the state of the repository for marking.
 
 
 ### Late Submissions {#lateness}
 
-This coursework uses the University's standard policy on marking work that has been submitted late.
+This coursework follows the University's standard policy on marking work that has been submitted late.
 
 A penalty of 1 mark will be applied for each 24 hour period following the deadline that the work is late, up a total of 9 such periods.  Note that for the purposes of this calculation, weekends and evenings are counted.  This means that, since this coursework's deadline is on a Friday, a submission on Monday morning will receive a penalty of 3 marks.
 
@@ -153,7 +156,7 @@ This coursework is subject to the University's standard policy on plagiarism:
 
 ### How to Get Help {#gettinghelp}
 
-Help with this exercise will be available in the team study sessions (when your team is not being marked).  Sign up on the live help queue (ref:livehelpqueue) during the sessions, using the `Individual Coursework Ex 2` label and issue template. A member of staff or a GTA will speak to you in person or direct call you on Microsoft Teams when we are ready to provide help.
+Help with this exercise will be available in the team study sessions (when your team is not being marked).  Sign up on the live help queue (ref:livehelpqueue) during the sessions, using the `Individual Coursework Ex 2` label and issue template. A member of staff or a GTA will speak to you in person or call you directly on Microsoft Teams when we are ready to provide help.
 
 
 ## The Coursework Instructions {#indycwk2in}
