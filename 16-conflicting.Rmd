@@ -163,14 +163,14 @@ Help with this exercise will be available in the team study sessions (when your 
 
 ### Step one: Clone and Import the Project into Eclipse {#cloneandimport}
 
-Within Eclipse on the VM (or whatever IDE/platform you have chosen to do the coursework on), import the project for the coursework by cloning from this URI:
+In Eclipse (or whatever IDE you have chosen to do the coursework on), import the project for the coursework by cloning from this URI:
 
 (ref:repo2URI)
 
 
 where `<your-username>` is replaced by your University username.  This is a personal repository that has been set up just for use by yourself, for this activity.  No other students can see its contents (though the course team and GTAs can see it).
 
-This should cause a new Java project to appear in your IDE, ready for use.
+This should cause a new Java project to appear in your IDE, ready for use.  This is a version of the sliding puzzle game we used in individual coursework 1.  Take a look at the History view of the project, to see the commit graph.  You should see the development branch (called `main` in this coursework) and two feature branches.  One of the feature branches has been fast-forward merged into the development branch and the other is still on-going and hasn't yet been merged in.
 
 ::: {.rmdnote}
 
@@ -186,7 +186,7 @@ The branch is called: `move-counter`
 
 You must check out this feature branch, and use the tests to guide the implementation of the new feature.  The first step is to read the test code, to understand what each one is saying about the functionality that you must implement.
 
-You should practice the techniques for test reading that were presented in the workshops, and consider each test case in terms of the “Act, Arrange, Assert” model.
+You should practice the techniques for test reading that were presented in the workshops, and consider each test case in terms of the “Act, Arrange, Assert” model (see chapter \@ref(understanding)).
 
 The next step is to run the tests.  Since the default project classpath is sufficient for this simple project, we can do this by right clicking on the `test` folder and selecting `Run As` > `JUnit Test`.  You'll see that a couple of the new test cases pass, but most of them fail.
 
@@ -206,11 +206,11 @@ When we write the test code first, we are forced to think about the classes we a
 :::
 
 ### Step three: Implement the Feature/Make the Tests Pass {#testsipass}
-When you have a good grasp on what the functionality that the tests describe, you should start work on implementing that functionality and making the tests pass.
+When you have a good grasp on the functionality that the tests describe, you should start implementing that functionality and making the tests pass.
 
 Make sure you have the `move-counter` branch checked out before you make any changes to the code.
 
-The usual approach in TFD is to take each failing test in turn, and to make the changes needed to make the test pass.  In doing so, you should treat each test case as an example of a more general set of tests, and write the code to work for all those tests.
+The usual approach in TFD is to take each failing test in turn, and to make the changes needed to make the test pass.  In doing so, you should treat each test case as an example of a more general set of tests, and write the code to work for all those tests, not just the single test you are starting from.
 
 ::: {.rmdnote}
 (ref:infobox)
@@ -238,13 +238,14 @@ In this, the most modern of the forms of development listed here, the implementa
 TDD is similar to TFD, but has some important differences. In TFD, we grow the implementation of a feature to closely match the requirements described by the test cases.  In TDD, we grow both the implementation *and* the test suite to fit the requirements, aiming to create only the tests and production code needed to deliver value to the client.  It results in code with a high test coverage, strong correctness, and a lean implementation focused on the requirements.  But it can be challenging to apply, requiring (at least when being learnt) both discipline and creativity.
 
 TDD will be covered again briefly in [Software Engineering 2: COMP23412](https://studentnet.cs.manchester.ac.uk/ugt/COMP23412/syllabus/)
-<!--and in more depth in COMP33712 (along with the related technique of Behaviour Driven Development, BDD).-->
+and in more depth in [Agile Software Pipelines: COMP33312](https://studentnet.cs.manchester.ac.uk/ugt/COMP33312/syllabus/) (along with the related technique of Behaviour Driven Development, BDD).
+<!--Add pointer to the Software Testing Landscape MOOC once it goes live-->
 :::
 
 
-The implementation task for this feature is neither large nor complicated.  You should not need to write many lines of code to reach a solution.  You can look at the code written for the Game Timer feature, in the commits on the development branch, to get inspiration for how to handle most of the behaviour required to implement the Move Counter feature.  Just follow the tests, and try to write the smallest amount of code needed to make them pass.  If you don't write enough code, the tests will tell you, by failing.  If you write lots of code that isn't needed, the tests won't tell you that, but you'll have added to the maintenance costs of the system for the remainder of the lifetime of your code.
+The implementation task for this feature is neither large nor complicated.  You should not need to write many lines of code to reach a solution.  You can look at the code written for the Game Timer feature, in the commits on the development branch, to get inspiration for how to handle most of the behaviour required to implement the Move Counter feature.  Just follow the tests, and try to write the smallest amount of code needed to make them pass.  If you don't write enough code, the tests will tell you, by failing.  If you write code that isn't needed, the tests won't tell you that, but you'll have added unnecessarily to the maintenance costs of the system for the remainder of the lifetime of your code.
 
-There are a couple of slightly tricky aspects to the implementation that do not have equivalents in the Game Timer feature.  Since this is not an exercise in general Java coding, some hints are given below to help you with them.  Highlight the text to view the hints. or copy and paste them into an editor, should you want to see them.  You are free to implement the feature in any way that is compatible with the tests as given, and the description in the issue.
+There are a couple of slightly tricky aspects to the implementation that do not have equivalents in the Game Timer feature.  Since this is not an exercise in general Java coding, some hints are given below to help you with them, but you are free to implement the feature in any way that is compatible with the tests as given, and the description in the issue.
 
 ::: {.rmdnote}
 
@@ -270,40 +271,43 @@ There are no marks for how you implement this part of the functionality, provide
 :::
 
 
-When all the tests on the `move-counter` branch pass, this step is completed.
+When all the tests on the `move-counter` branch pass, and you have observed the correct behaviour for several cases when running the game, this step is completed.
 
 ::: {.rmdnote}
 (ref:infobox)
-Please note that the Sliding Puzzle code base we are working from has some limitations.  In particular, the testing of some aspects of the GUI does not follow best practice.  However, providing a more up-to-the-minute style of test would have required the whole system to be much larger, and for us to use advanced Java elements that we have not taught you yet.  We therefore decided to keep the example small and simple, for this exercise.
+The Sliding Puzzle code base we are working from has some limitations.  In particular, the testing of some aspects of the GUI does not follow best practice.  However, providing better quality tests for these aspects would have required the whole system to be much larger, and for us to use advanced Java elements that we have not taught you yet.  We therefore decided to keep the example small and simple, for this exercise, at the expense of strict adherence to good practice.
 :::
 
 ### Step four: Commit and Push the Feature Implementation {#featimp}
 
-You can now make a commit containing the details of your implementation.  If you want to make multiple commits, that's fine, too.  But the commits *must* appear on the `move-counter` branch.
+You can now make a commit containing the details of your implementation.  If you want to make multiple commits, that's fine, too.  But the commits *must* appear on the `move-counter` branch (and, at this stage, *only* on the `move-counter` branch).
 
 When you have finished committing your code changes, push the `move-counter` branch to the remote repository (`origin`).  It is important you push the branch at this stage, so that the automated marking system can pick up your code changes accurately.
 
 Depending on the IDE version you are using, you may need to set up the *push ref specs* for this repository.  Information on how to do that is given in the instructions for the 1st individual coursework, step 7 in section \@ref(pushingchange).
 
-This step is complete when you can see all your changes and commits on GitLab, and when the `move-counter` branch on GitLab is pointing to your latest commit.
+This step is complete when you can see all your changes and commits on GitLab, and when the `move-counter` branch on GitLab is pointing to the same commit as the end point of your local feature branch.
 
 
 ### Step five: Merge your Code into the Development Branch {#mergedev}
 
 Now that the feature implementation is complete, we can merge the changes into the development branch.
 
-Start by checking out the branch that you want to include the new feature: in this case, `master`.
+Start by checking out the branch that you want to include the new feature on: in this case, `main`.
 
-In the `History` view of your project, right click on the commit that the `move-counter` branch is pointing at, and select `Merge`.
+In the `History` view of your project, right click on the commit that the `move-counter` branch is pointing at (that is, the commit that contains the changes you want to merge into the checked out branch), and select `Merge`.
 
-```{r mergeFBtoMasterMenu-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap = "Merge to Master Menu"}
+```{r mergeFBtoMasterMenu-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap = "Merge to Main Menu"}
 knitr::include_graphics("images/mergeFBtoMasterMenu.png")
 ```
 
 ::: {.rmdcaution}
 
 (ref:cautionbox)
-This screenshot is shown for illustration only.  The code changes shown are not part of the solution for the coursework.  This applies to all screen shots in these coursework instructions.
+This screenshot is shown for illustration of the steps needed in Eclipse only.  The code changes shown are not part of the solution for the coursework.  This applies to all screen shots in these coursework instructions.  They don't give away any part of the code solution.
+
+Note also that in the screenshots, the development branch is called `master`, not `main`.  Both branches play the same role.  (Thanks for bearing with us as we work through the removal of problematic terminology from our course materials.)
+
 :::
 
 **Note** This exercise is set up so that the merge you are asked to attempt here will be paused, because conflicts will be found.
@@ -312,17 +316,17 @@ This screenshot is shown for illustration only.  The code changes shown are not 
 knitr::include_graphics("images/mergeResultShowingConflicts.png")
 ```
 
-When you have a conflicting merge result, the step is completed.
+When you see this conflicting merge result, the step is completed.
 
 ::: {.rmdcaution}
 
 (ref:cautionbox)
-The point of this exercise is to walk through the experience of detecting and resolving conflicts between two independent lines of development, and to understand how Git helps us to manage those conflicts.  If you followed the natural conventions and approaches when implementing the Move Counter feature, you will discover conflicts when you try to merge.  If you have found some clever way to implement the feature that avoids conflicts at this merge (e.g. by rebasing the feature branch onto `master` before starting the implementation of the feature), you'll need to think again.  You can't get the bulk of the marks for this exercise unless you implement the feature in a way that causes conflicts.
+The point of this exercise is to walk through the experience of detecting and resolving conflicts between two independent lines of development, and to understand how Git helps us to manage those conflicts.  If you followed the natural conventions and approaches when implementing the Move Counter feature, you will discover conflicts when you try to merge.  If you have found some clever way to implement the feature that avoids conflicts at this merge (e.g. by rebasing the feature branch onto `main` before starting the implementation of the feature), you'll need to think again.  You can't get full marks for this exercise unless you implement the feature in a way that causes conflicts.
 :::
 
 ### Step 6: Resolve the Conflicts and Complete the Merge {#resolveconfcomp}
 
-If you look at the `History` view after the merge attempt of the previous step, you will notice that no merge commit was created, and the `move-counter` branch is still shown as being separate from and unconnected with the `master` branch.
+If you look at the `History` view after the merge attempt of the previous step, you will notice that no merge commit was created, and the `move-counter` branch is still shown as being separate from and unconnected with the `main` branch.
 
 When Git discovers that conflicts are present, it will refuse to make the merge.  But, the merge operation doesn't just fail.  Instead, Git suspends the merge operation, allowing us to resolve the conflicts and then to continue with the merge.  In this step, we'll carry out both these actions.
 
@@ -333,6 +337,10 @@ We'll now walk through an example conflict resolution, to show the procedure you
 
 Our first task is to understand what conflicts are present.  Git does the work of detecting these for us, and annotates the source files with special mark-up, showing the scope of the conflicts.  Modern IDEs can understand this mark-up, and use it to present different visualisations of the conflict to us.  The following screen shot shows both these visualisations in action: the Git conflict mark-up in the editor window and an IDE specific conflict markup in the `Package Explorer` view.
 
+```{r conflictsShownAfterMergePaused-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap = "Conflicts shown after merge paused"}
+knitr::include_graphics("images/conflictsShownAfterMergePaused.png")
+```
+
 
 ::: {.rmdnote}
 (ref:infobox)
@@ -340,7 +348,7 @@ Our first task is to understand what conflicts are present.  Git does the work o
 
 **What Are Integration Conflicts?**
 
-Conflicts occur when the same line of code is changed in different ways in two lines of development that we are trying to integrate.  Git can't work out automatically what the final integrated code should be---that requires a detailed understanding of the purpose of the code that Git cannot have.  A human developer must take the time to work out what the integrated form of the two code versions should be, and to rewrite the code until it takes the desired form.
+Conflicts occur when the same line of code is changed in different ways in the two lines of development that we are trying to integrate.  Git can't work out automatically what the final integrated code should be---that requires a detailed understanding of the purpose of the code that Git cannot have.  A human developer must take the time to work out what the integrated form of the two code versions should be, and to rewrite the code until it takes the desired form.
 
 If a line of code is the same in both versions of the code, then the situation is easy.  Git will adopt that as the form of the line in the integrated version of the code.
 
@@ -351,12 +359,10 @@ If the line of code changes in both versions, but changes in the same way, this 
 The problem arises when both versions of the code have made different changes to the same line of code.  This is when conflicts occur, and when Git needs help from a human developer.
 :::
 
-```{r conflictsShownAfterMergePaused-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap = "Conflicts shown after merge paused"}
-knitr::include_graphics("images/conflictsShownAfterMergePaused.png")
-```
+
 Eclipse marks files that contain conflicts with a special red, double-arrow decorator.  The files also have a “does not compile” decorator on them.  This is because the conflict markers introduced into the files by Git are not part of legal Java syntax.
 
-The editor window shows this Git markup.  It consists of three horizontal lines, separating the different versions of the code.  In this case, the top bars show the code as it is in the currently-checked-out (unmerged) `master` branch.  (You will recall that `HEAD` is a shorthand branch name, referring to the currently checked out branch.)  Below the middle bar is the version of this line of code as it presently is in the `move-counter` branch.
+The editor window shows this Git markup.  It consists of three horizontal lines, separating the different versions of the code.  In this case, between the top and middle bars we see the code as it is in the currently-checked-out (unmerged) `main` branch.  (You will recall that `HEAD` is a shorthand branch name, referring to the currently checked out branch.)  Between the middle bar and the bottom bar we see the version of this line of code as it presently is in the `move-counter` branch in the Git repository.
 
 There are two ways to remove these conflicts. One is to edit the files directly, to remove the conflict markers and replace the separate code versions with a single integrated version.  In the example shown, for example, we might decide that both variables declared in the conflict need to be present in the final merged code version.  In that case, we edit the file to make that happen showin in figure \@ref(fig:manuallyEditOutConflict-fig)
 
@@ -371,20 +377,20 @@ The alternative way to handle the conflicts is to use Eclipse's Merge Tool.  Rig
 ```{r invokingTheMergeTool-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap = "Invoking the merge tool"}
 knitr::include_graphics("images/invokingTheMergeTool.png")
 ```
-The Merge Tool shows both versions of the code, side-by-side, with the changed lines colour coded for easy detection of places where attention is needed.  The left hand window shows the version of the code in `master`, while the right hand window shows the version of the code in `move-counter`.  The coloured bars between the windows show the changes: grey lines are present in `master` but are not in `move-counter`, purple lines are present in `move-counter` but are not in `master`, while red lines are present in both versions and are in conflict.
+The Merge Tool shows both versions of the code, side-by-side, with the changed lines colour coded for easy detection of places where attention is needed.  The left hand window shows the version of the code in `main`, while the right hand window shows the version of the code in `move-counter`.  The coloured bars between the windows show the changes: grey lines are present in `main` but are not in `move-counter`, purple lines are present in `move-counter` but are not in `main`, while red lines are present in both versions and are in conflict.
 
 ```{r mergeToolShowingConflicts-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap = "Merge tool showing conflicts"}
 knitr::include_graphics("images/mergeToolShowingConflicts.png")
 ```
 
 
-Our task is to edit the file in the left hand window, so that it contains the desired integration of the changes in both files.  in this case, it's an easy change: we need to include both lines unchanged, so we copy and paste the line from the `move-counter` window into the `master` window.  Then we save the file.
+Our task is to edit the file in the left hand window, so that it contains the desired integration of the changes in both files.  in this case, it's an easy change: we need to include both lines unchanged, so we copy and paste the line from the `move-counter` window into the `main` window.  Then we save the file.
 
 ```{r editsInMergeTool-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap = "Edits in merge tool"}
 knitr::include_graphics("images/editsInMergeTool.png")
 ```
 
-Both ways of removing the conflict also removed the compilation error from the file, and that decorator has therefore been removed from the file in the `Package Explorer` view.  The conflict marker remains on the file, however, as we have not yet told Git that we believe the conflicts have been removed.
+Both ways of removing the conflict also remove the compilation error from the file.  You should see this decorator being removed from the file in the `Package Explorer` view.  The conflict marker remains on the file, however, as we have not yet told Git that we believe the conflicts have been removed.
 
 To do this, right click anywhere in the Eclipse windows/views, and select `Team` > `Commit`.  This will bring up a special version of the Git Staging view, tailored for resolving commits.
 
@@ -403,13 +409,13 @@ If we repeat the conflict removal process with the `Model` class, and also stage
 knitr::include_graphics("images/commitViewWhenAllConflictsRemoved.png")
 ```
 
-Notice that Git has now provided a commit message and has added in the author and committer details.  This is because Git recognised that we have now dealt with all the files affected by conflicts from the recent merge.
+Notice that Git has now provided a commit message and has added in the author and committer details.  This is because Git recognised that we have now dealt with all the files affected by conflicts from the recent merge and are ready to proceed with it.
 
-We can now edit the merge message.  You should always leave automatically generated merge messages unedited, as they provide useful metadata for understanding the flow of code change that has happened on the repository.  But some people remove the details of the conflicting files; and some people leave them in.  Regardless, if some aspect of the conflict resolution was tricky or complex, it is useful to add a note explaining that to the merge commit.
+We can now edit the merge message if we want to.  You should always leave automatically generated merge messages unedited, as they provide useful metadata for understanding the flow of code change that has happened on the repository.  Some people remove the details of the conflicting files and some people leave them in.  Regardless, if some aspect of the conflict resolution was tricky or complex, it is useful to add a note explaining that to the merge commit.
 
-**For this coursework, we ask that you add some extra information about how you handled the conflicts, but that you leave this automatically generated message unchanged, at the top.**
+**For this coursework, we ask that you add some extra information about how you handled the conflicts to the end of the commit message, but that you leave this automatically generated message unchanged at the start of the message.**
 
-The local history view of the project now shows that the feature branch has been merged into `master`, with a merge commit.  The resulting code version contains both features, integrated together.
+The local history view of the project now shows that the feature branch has been merged into `main`, with a merge commit.  The resulting code version contains both features, integrated together.
 
 ```{r localHistoryAfterMergeCompleted-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap = "Local history after merge completed"}
 knitr::include_graphics("images/localHistoryAfterMergeCompleted.png")
@@ -417,13 +423,13 @@ knitr::include_graphics("images/localHistoryAfterMergeCompleted.png")
 
 #### Now It's Your Turn {#yourturn}
 
-For the coursework, you next task is to find and resolve all the conflicts introduced by the integration of your new Move Counter feature, with the existing game features.  Specifically, you are integrating your work with those features that were added to the code base since the start of your feature branch: the Game Timer feature, in this case.
+For the coursework, you next task is to find and resolve all the conflicts introduced by the integration of your new Move Counter feature with the existing game features.  Specifically, you are integrating your work with those features that were added to the code base since the start of your feature branch: the Game Timer feature, in this case.
 
 You therefore need to use the conflict resolution tools discussed in this document to create a version of the game that has both the Game Timer feature and the Move Counter feature, and that passes the tests for both features (and the existing test suite).  {\bf This is a non-trivial task.}  You will need to think carefully about how you can get the two features to work well together in the single code version.
 
 A good starting point would be to read and understand the Game Timer feature code that you are going to be working with, including (of course) the tests.
 
-Make sure that the tests pass on the version of the code with the conflicts resolved, before you make the merge commit.  And don't forget to test the game manually by running and playing it.  The automated tests won't catch all problems, and should be supplemented by a small amount of carefully targeted manual testing.
+Make sure that the all the tests pass on the version of the code with the conflicts resolved, before you make the merge commit.  And don't forget to test the game manually by running and playing it.  The automated tests won't catch all problems, and should be supplemented by a small amount of carefully targeted manual testing.
 
 ::: {.rmdnote}
 
@@ -435,35 +441,46 @@ View source to see the hint
 
 We could use a fancier layout manager, to help us stack these clocks vertically.  But putting effort into this for this coursework would only be worthwhile if you had personal reasons for wanting to practice Swing GUI construction. \medskip
 
-For everyone who is here for another purpose, you can take the pragmatic approach of adding all the components to the same panel, perhaps with an additional separator `JLabel` containing just `|` in between the game timer and the move counter.
+For everyone who is here to learn about handling conflicts in Git, you can take the pragmatic approach of adding all the components to the same panel, perhaps with an additional separator `JLabel` containing just `|` in between the game timer and the move counter.
 -->
 
 ::: {.rmdnote}
 (ref:infobox)
 **Suzanne's Tips for Conflict Resolution**
 
-* Having to fix conflicts makes us appreciate it when our colleagues keep commits tightly focused on the task in hand, and avoid unnecessary and irrelevant white space or layout changes.  These changes add nothing of value to the code base, and can considerably complicate the task of conflict resolution.
-* I try to run my IDE's automatic formatter over all files before committing them.  I may not like the automated format that comes out in all cases, but it is worth it to be confident that I won't have to deal with spurious formatting changes when I next need to resolve conflicts.
-* I find it helps to decide in advance the `order` in which I'll put code for the two features.  For example, for this coursework exercise, I might decide to put the Move Counter elements before the Game Timer elements.  This makes it quick and easy for me to be consistent about how I incorporate game changes, without requiring much thought.
+* Having to fix conflicts makes us appreciate it when our colleagues keep commits tightly focused on the task in hand, and avoid unnecessary and irrelevant changes to code layout, spurious comments and random reorganisations of the code.  These changes add nothing of value to the code base, and can considerably complicate the task of conflict resolution.  Be a good team member and keep your commits clean and lean.
+* I try to run my IDE's automatic formatter over all files before committing them.  I may not like the automated format that comes out in all cases, but it is worth putting up with a slightly ugly layout if it means I won't have to deal with spurious formatting changes when I next need to resolve conflicts.
+* I find it helps to decide in advance the `order` in which I'll put code for the features being integrated.  For example, for this coursework exercise, I might decide to put the Move Counter elements before the Game Timer elements.  This makes it quick and easy for me to be consistent about how I incorporate game changes across multiple classes, without requiring much thought.
 * It is worth avoiding long and intricate conflict resolution tasks, especially close to the deadline.  Keep the scale of each resolution task low, by syncing frequently with your remote.  When implementing a new feature, I try to find a series of small `mini releases` that I can implement and merge individually, to keep the scale of the conflict resolution task down.
 * I preferred to manually edit out conflict markers when I was first encountering Git, but now prefer to use the Merge Tool when using Eclipse.  Use the approach that's best for your current stage of learning.
 * When using the Merge Tool, I normally expand it to fill the whole Eclipse window, so that I can see as much of the code that I am changing as possible, and can better understand the risks of what I am doing.
-* Make sure you run the tests as soon as you have got back to compiling code.  It's really easy to break things in the code you are merging into, especially if you didn't write it.  With good test coverage, the test suite will insulate you from some of these potential errors.  If you are working on a team project, getting some help with a buddy review of the code before you merge it can also help (though you may need to merge and push to a temporary branch instead of to the development branch if you need to do the buddy review remotely).
-*  When you think you've fixed the conflicts in a file, you may discover you have caused compilation errors due to the changes affecting other classes.  So check all files where Eclipse is reporting compilation errors and fix them, before continuing with the merge commit.
+* *  When you think you've fixed the conflicts in a file, you may discover you have caused compilation errors due to the changes affecting other classes.  So check all files where Eclipse is reporting compilation errors and fix them, looking especially for errors in files you have not changed in your feature branch, before continuing with the merge commit.
+* Make sure you run the tests as soon as you have got back to compiling code.  It's really easy to break things in the code you are merging into, especially if you didn't write it.  With good test coverage, the test suite will insulate you from some of these potential errors.  If you are working on a team project, getting some help with a buddy review of the code before you merge it can also help (though you may need to merge and push to a temporary branch instead of to the development branch if you need to do the buddy review remotely).  Using merge/pull requests can also help with this (though it's important to learn how to carry out merges manually first, so you really understand what these tools are doing behind the scenes on your behalf).
+
 
 :::
 
 ### Step seven: Push the Completed Merge to the Remote Repository {#pushtoremote}
 
-After the complexities of the previous step, this one is very easy.  Just push the new location of the `master` branch, plus the merge commit on it, to the remote, following the same instructions as for individual coursework exercise 1 in chapter \@ref(gitting),
+After the complexities of the previous step, this one is very easy.  Just push the new location of the `main` branch, plus the merge commit on it, to the remote, following the same instructions as for individual coursework exercise 1 in chapter \@ref(gitting).
+
+Before moving on, don't forget to check that you can see the merge commit in your remote repository on GitLab, and that all the branches are pointing to the same commits as in your local commit graph.
 
 
 ### Step eight: Update the Issue Tracker and Request Marking {#requestm}
 
-Finally, your last step is to update the issue tracker with a summary of work done for it.  If you have completed the implementation of the Move Counter, and have successfully integrated it into the main development line, with all tests passing, then you can close the issue.  Otherwise, leave the issue open.
+Finally, your last step is to update the issue tracker with a short summary of work done to resolve it.
 
+If you have completed the implementation of the Move Counter, and have successfully integrated it into the main development line, with all tests passing, then you can close the issue.  Otherwise, leave the issue open.
 
-<!-- Add info for submission - what should students do?-->
+When all this is done, you can add a comment to the issue to tell us that you are submitting your solution for marking.  Please add the text:
+
+``` md
+Project ready for marking.
+```
+
+When we next run the marking code, and it observes this comment, you will lose Developer access to your repository, so make sure you are ready for this before posting this comment.
+
 
 ### Messed Up? {#messi}
 
@@ -473,14 +490,14 @@ If you make a mistake with the coursework, you can request a reset from staff.  
     Please reset repository, @suzanne.m.embury.
 ```
 
-We'll then reset the repository to the state it was at the start of the coursework.
+We'll then reset the repository to the state it was at the start of the coursework.  Obviously, you'll then lose access to any commits you made for the coursework so far.
 
 You can only request one reset for this coursework exercise, so use it wisely.
 
 
 ### Coursework Complete {#cw2fin}
 
-This completes the instructions for the second individual coursework exercise for this course unit.  If you managed to complete it in full, then you'll be all to apply the same skills to the second team coursework exercise.  You'll also be ready to collaborate on team Git projects, and will hopefully have a better understanding of the practical importance of writing focussed commits.
+This completes the instructions for the second individual coursework exercise for this course unit.  If you managed to complete it in full, then you'll be all to apply the same skills to the team coursework.  You will have practiced some basic test first development.  And you'll be ready to collaborate on team Git projects, and to handle the code integration conflicts this so often entails.  You should also have a better understanding of the practical importance of writing clear, focussed commits.
 
 
 Document version: `r format(Sys.time(), '%d %B, %Y')`
