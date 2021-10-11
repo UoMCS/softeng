@@ -26,7 +26,7 @@ The weekly schedule is shown in \@ref(tab:schedtable).
 io_table <- tibble::tribble(
     ~ "Week no."       , ~ "Subject",      ~ "Deadlines",
   "~~**1**: 27th Sept~~"            , "~~Automated build and test, see (ref:weekone)~~",  "~~IndCwk2, Fri 1st Oct, 6pm~~",
-  "**2**: 4th Oct"              , "Reading large codebases, see (ref:weektwo)",  "",
+  "~~**2**: 4th Oct~~"              , "~~Reading large codebases, see (ref:weektwo)~~",  "",
   "**3**: 11th Oct"             , "Debugging, see (ref:weekthree)", "IndCwk2, Fri 15th Oct, 6pm",
   "**4**: 18th Oct"             , "Cost estimation, see (ref:weekfour)",  "Mentoring week 1",
   "**5**: 25th Oct"             , "Test first development, see (ref:weekfive)", "TeamCwk1, 29th Oct, 6pm ",
