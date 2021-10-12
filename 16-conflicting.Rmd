@@ -425,13 +425,12 @@ knitr::include_graphics("images/localHistoryAfterMergeCompleted.png")
 
 For the coursework, you next task is to find and resolve all the conflicts introduced by the integration of your new Move Counter feature with the existing game features.  Specifically, you are integrating your work with those features that were added to the code base since the start of your feature branch: the Game Timer feature, in this case.
 
-You therefore need to use the conflict resolution tools discussed in this document to create a version of the game that has both the Game Timer feature and the Move Counter feature, and that passes the tests for both features (and the existing test suite).  {\bf This is a non-trivial task.}  You will need to think carefully about how you can get the two features to work well together in the single code version.
+You therefore need to use the conflict resolution tools discussed in this document to create a version of the game that has both the Game Timer feature and the Move Counter feature, and that passes the tests for both features (and the existing test suite).  **This is a non-trivial task.**  You will need to think carefully about how you can get the two features to work well together in the single code version.
 
 A good starting point would be to read and understand the Game Timer feature code that you are going to be working with, including (of course) the tests.
 
 Make sure that the all the tests pass on the version of the code with the conflicts resolved, before you make the merge commit.  And don't forget to test the game manually by running and playing it.  The automated tests won't catch all problems, and should be supplemented by a small amount of carefully targeted manual testing.
 
-::: {.rmdnote}
 
 **Hint: Making the Move Counter and Game Timer Appear Below the Main Game Panel**
 

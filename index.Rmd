@@ -126,7 +126,7 @@ Muideen Ajagbe, Mohammed Alhamadi, Aitor Apaolaza, Gerard Capes,  Martina Catizo
 Academic staff on the course for 2021/22 include:
 
 * [Mercedes Argüello Casteleiro](https://scholar.google.com/citations?user=ci1ifBoAAAAJ&hl=en)
-* [Thomas Carroll](https://cgi.csc.liv.ac.uk/~tomc/)
+* [Thomas Carroll](https://personalpages.manchester.ac.uk/staff/thomas.carroll/)
 * [Suzanne Embury](http://www.cs.man.ac.uk/~embury/)
 * [Duncan Hull](http://www.cs.man.ac.uk/~hulld/)
 * [Sandra Sampaio](https://www.research.manchester.ac.uk/portal/s.sampaio.html)

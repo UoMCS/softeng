@@ -463,10 +463,9 @@ Figure 17.11: Local history after merge completed
 <span class="header-section-number">17.3.6.2</span> Now It’s Your Turn<a class="anchor" aria-label="anchor" href="#yourturn"><i class="fas fa-link"></i></a>
 </h4>
 <p>For the coursework, you next task is to find and resolve all the conflicts introduced by the integration of your new Move Counter feature with the existing game features. Specifically, you are integrating your work with those features that were added to the code base since the start of your feature branch: the Game Timer feature, in this case.</p>
-<p>You therefore need to use the conflict resolution tools discussed in this document to create a version of the game that has both the Game Timer feature and the Move Counter feature, and that passes the tests for both features (and the existing test suite). {} You will need to think carefully about how you can get the two features to work well together in the single code version.</p>
+<p>You therefore need to use the conflict resolution tools discussed in this document to create a version of the game that has both the Game Timer feature and the Move Counter feature, and that passes the tests for both features (and the existing test suite). <strong>This is a non-trivial task.</strong> You will need to think carefully about how you can get the two features to work well together in the single code version.</p>
 <p>A good starting point would be to read and understand the Game Timer feature code that you are going to be working with, including (of course) the tests.</p>
 <p>Make sure that the all the tests pass on the version of the code with the conflicts resolved, before you make the merge commit. And don’t forget to test the game manually by running and playing it. The automated tests won’t catch all problems, and should be supplemented by a small amount of carefully targeted manual testing.</p>
-<p>::: {.rmdnote}</p>
 <p><strong>Hint: Making the Move Counter and Game Timer Appear Below the Main Game Panel</strong></p>
 <p>View source to see the hint</p>
 <!--When you integrate the two lines of development, you'll find that both the Move Counter panel and the Game Timer panel are supposed to appear in this location in the GUI.  But, if you add them both with the `.SOUTH` position instructions, the layout manager will just use the one last added.
@@ -524,7 +523,7 @@ For everyone who is here to learn about handling conflicts in Git, you can take 
 <span class="header-section-number">17.3.10</span> Coursework Complete<a class="anchor" aria-label="anchor" href="#cw2fin"><i class="fas fa-link"></i></a>
 </h3>
 <p>This completes the instructions for the second individual coursework exercise for this course unit. If you managed to complete it in full, then you’ll be all to apply the same skills to the team coursework. You will have practiced some basic test first development. And you’ll be ready to collaborate on team Git projects, and to handle the code integration conflicts this so often entails. You should also have a better understanding of the practical importance of writing clear, focussed commits.</p>
-<p>Document version: 11 October, 2021</p>
+<p>Document version: 13 October, 2021</p>
 
 </div>
 </div>

@@ -64,7 +64,7 @@ In the situation we are looking at now, synchronising your work with the work of
 
 ## Integrating the New Commits using Merge
 
-The Git merge operation takes two branches, one pointing to the line of development that needs to be extended with the new changes (the *target*} branch), and the other pointing to the line of development containing the new changes that need to be integrated (the *source*} branch).  There are three possible options for any merge:
+The Git merge operation takes two branches, one pointing to the line of development that needs to be extended with the new changes (the *target* branch), and the other pointing to the line of development containing the new changes that need to be integrated (the *source* branch).  There are three possible options for any merge:
 
 1. The changes are already on the target branch (because the source and target both point to the same commit, or because the source branch points to a commit that is an ancestor of commits on the target branch).  In this case, the merge succeeds without Git having to do anything.
 1. The changes are on the same line of development as the target branch, but ahead of it.  The target branch just needs to be moved forward along the line of commits, to reach the same point as the source branch.  This is the fast-forward merge case.

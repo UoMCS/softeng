@@ -155,7 +155,7 @@ Figure 21.4: Your local commit graph
 <h2>
 <span class="header-section-number">21.3</span> Integrating the New Commits using Merge<a class="anchor" aria-label="anchor" href="#integrating-the-new-commits-using-merge"><i class="fas fa-link"></i></a>
 </h2>
-<p>The Git merge operation takes two branches, one pointing to the line of development that needs to be extended with the new changes (the <em>target</em>} branch), and the other pointing to the line of development containing the new changes that need to be integrated (the <em>source</em>} branch). There are three possible options for any merge:</p>
+<p>The Git merge operation takes two branches, one pointing to the line of development that needs to be extended with the new changes (the <em>target</em> branch), and the other pointing to the line of development containing the new changes that need to be integrated (the <em>source</em> branch). There are three possible options for any merge:</p>
 <ol style="list-style-type: decimal">
 <li>The changes are already on the target branch (because the source and target both point to the same commit, or because the source branch points to a commit that is an ancestor of commits on the target branch). In this case, the merge succeeds without Git having to do anything.</li>
 <li>The changes are on the same line of development as the target branch, but ahead of it. The target branch just needs to be moved forward along the line of commits, to reach the same point as the source branch. This is the fast-forward merge case.</li>
@@ -370,7 +370,7 @@ Instead, you need to get your repository into a state where it can be pushed, wi
 <p>This is by no means the only workflow you could use, and we certainly don’t claim it as the best in all circumstances. But it is an approach that allows you to gain the core Git skills that will enable you to use any workflow that you may be called up on to comply with in future projects.</p>
 <p>One major omission from this document is any discussion of what happens when we encounter conflicts while integrating code or synchronising our repository. We’ve chosen the issues for exercise 1 to try to avoid conflicts, but you will definitely encounter them in the second team coursework exercise, when you start to work on larger features in sub-teams. We’ll cover handling conflicts in another learning resource for the unit.</p>
 <p>Good luck!</p>
-<p>Document version: 11 October, 2021</p>
+<p>Document version: 13 October, 2021</p>
 
 </div>
 </div>
