@@ -63,4 +63,4 @@ Once everything is complete, you'll want to feed your work back to the original 
 
 For Github-hosted projects you do this by making a pull request: [help.github.com/articles/creating-a-pull-request](https://help.github.com/articles/creating-a-pull-request). You may also want to: post to relevant mailing lists/forums, contact the project owner on twitter.
 
-Document version: `r format(Sys.time(), '%d %B, %Y')`
+`Document version:` `r format(Sys.time(), '%d %B, %Y')`

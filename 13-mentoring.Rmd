@@ -74,7 +74,7 @@ As well as learning about the academic discipline of software engineering, stude
 As a mentor, you are asked to meet with your team of students twice, to work with a team of students for around an hour each time using Teams/Zoom. The visits take place in specific weeks, during time when the teams are scheduled to be working on their Software Engineering coursework, see section \@ref(dealing). The dates/times for the visits are described in section \@ref(when). Both sessions are fifty minutes long.
 
 ## Meeting agenda {#agenda}
-We suggest the following questions may be useful for structuring your meeting:
+After a quick round of introductions, we suggest the following questions may be useful for structuring your meeting:
 
 ### Getting to know your team {#teambuilding}
 
@@ -107,15 +107,6 @@ Questions to challenge and guide your team:
 * What do you enjoy about your current role?
 * Was there anything that surprised you about working in industry compared to being a student?
 
-*Questions about employability*:
-
-* What skills do I need to be competitive in job applications?
-* What skills do you look for when you are hiring people?
-* What do you know now you wish you’d known as a student?
-* What are the current trends in software development?
-* What up-and-coming topics do you recommend we should know about?
-* What can I do to make my CV stand out when applying for placements/jobs?
-
 *Questions about team-work*:
 
 * How do you resolve technical disagreements in development teams?
@@ -135,10 +126,19 @@ Questions to challenge and guide your team:
 * How can we avoid getting into a mess when using Git (or other version control systems)?
 * We’re having a lot of trouble fixing this bug/making this change? Do you struggle with this too? How would you go about dealing with this sort of problem?
 
+*Questions about employability*:
+
+* What skills do I need to be competitive in job applications?
+* What skills do you look for when you are hiring people?
+* What do you know now you wish you’d known as a student?
+* What are the current trends in software development?
+* What up-and-coming topics do you recommend we should know about?
+* What can I do to make my CV stand out when applying for placements/jobs?
+
 ## What do mentors get in return? {#payback}
 There are several benefits for you and your employer as a mentor:
 
-1. Increasing visibility of your employer as an organisation that makes good quality software
+1. Increasing visibility of your employer as an organisation that makes high quality software
 1. Share your knowledge and expertise: employers often complain that students could be taught better, this is your chance to improve the quality of teaching and prepare students for the workplace by making them aware of the realities of modern software engineering
 1. Career development: this is an opportunity for junior software engineers to demonstrate leadership and mentoring skills
 1. Digital badge: we're offering signed digital badges as micro-credentials to thank our volunteer mentors
@@ -151,4 +151,4 @@ We would like to thank all of our collaborators, partners and industry club memb
 
 Thanks also to over 1,500 students who have taken the course since its inception in 2016 and given us feedback on how to improve it.
 
-Document version: `r format(Sys.time(), '%d %B, %Y')`
+`Document version:` `r format(Sys.time(), '%d %B, %Y')`

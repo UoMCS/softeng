@@ -286,4 +286,4 @@ One major omission from this document is any discussion of what happens when we 
 
 Good luck!
 
-Document version: `r format(Sys.time(), '%d %B, %Y')`
+`Document version:` `r format(Sys.time(), '%d %B, %Y')`

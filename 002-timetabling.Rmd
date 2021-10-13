@@ -195,4 +195,4 @@ We'll be using the following tools:
 (ref:weektwelve) see section \@ref(week12)  
 
 
-Document version: `r format(Sys.time(), '%d %B, %Y')`
+`Document version:` `r format(Sys.time(), '%d %B, %Y')`

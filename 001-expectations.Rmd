@@ -131,4 +131,4 @@ If other people have decided to turn their cameras on then we ask that you show 
 (Thanks to Giles Reger and Sarah Clinch for the text above)
 
 
-Document version: `r format(Sys.time(), '%d %B, %Y')`
+`Document version:` `r format(Sys.time(), '%d %B, %Y')`

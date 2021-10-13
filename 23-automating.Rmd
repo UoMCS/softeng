@@ -96,4 +96,4 @@ Notice how the whole test case reads quite like an English sentence describing h
 
 There is a lot more to learn about JUnit than the very simple tests we have described so far.  But, this brief introduction should be enough to help you get started on working with tests in the workshops and coursework over the next few weeks.
 
-Document version: `r format(Sys.time(), '%d %B, %Y')`
+`Document version:` `r format(Sys.time(), '%d %B, %Y')`

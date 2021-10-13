@@ -14,6 +14,6 @@ If you're lucky, your mentor from employer $x$ will just happen to be working in
 
 If they're not, you can still learn lots from them. Software engineering is converging on standard practices which means you can learn a huge amount from our mentors, even if you're not especially interseted in the employer they work for.
 
-The way that high quality software is built in different industries is remarkably similar, from banks to technology companies and from e-commerce companies to consumer electronics. 
+The way that high quality software is built in different industries is remarkably similar, from banks to technology companies and from e-commerce companies to consumer electronics.
 
-Document version: `r format(Sys.time(), '%d %B, %Y')`
+`Document version:` `r format(Sys.time(), '%d %B, %Y')`

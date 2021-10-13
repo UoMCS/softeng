@@ -556,4 +556,4 @@ This completes the instructions for the first individual coursework exercise for
 
 In the next individual coursework, we'll look at a more complicated merge case, when Git can't handle the merge by itself and needs help from you to intervene.
 
-Document version: `r format(Sys.time(), '%d %B, %Y')`
+`Document version:` `r format(Sys.time(), '%d %B, %Y')`

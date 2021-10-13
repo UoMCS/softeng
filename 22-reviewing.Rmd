@@ -140,4 +140,4 @@ You can also ask your industry mentor about code reviewing practices used in the
 
 Good luck!
 
-Document version: `r format(Sys.time(), '%d %B, %Y')`
+`Document version:` `r format(Sys.time(), '%d %B, %Y')`

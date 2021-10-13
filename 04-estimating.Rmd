@@ -11,4 +11,4 @@ knitr::include_graphics("images/xkcd-estimation.png")
 ## Course content
 
 
-Document version: `r format(Sys.time(), '%d %B, %Y')`
+`Document version:` `r format(Sys.time(), '%d %B, %Y')`

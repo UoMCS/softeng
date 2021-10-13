@@ -248,4 +248,4 @@ You should now be able to carry out these changes without the more detailed inst
 ### Exercise 3b - The Singleton Pattern {#singleton}
 In this final part of the exercise you should consider if there is a sensible application of the Singleton pattern in any of the application code you have worked with in today's exercises.
 
-Document version: `r format(Sys.time(), '%d %B, %Y')`
+`Document version:` `r format(Sys.time(), '%d %B, %Y')`

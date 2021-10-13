@@ -677,4 +677,4 @@ When you are ready to run, you'll need to create a new Run Configuration. The dr
 Do not hesitate to ask if you are stuck!
 
 
-Document version: `r format(Sys.time(), '%d %B, %Y')`
+`Document version:` `r format(Sys.time(), '%d %B, %Y')`

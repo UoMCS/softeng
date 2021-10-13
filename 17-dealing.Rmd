@@ -264,4 +264,4 @@ This coursework is subject to the University's policies on plagiarism.  Details 
 Note that committing the work of other people from your GitLab account counts as plagiarism, and action will be taken when it is detected.
 
 
-Document version: `r format(Sys.time(), '%d %B, %Y')`
+`Document version:` `r format(Sys.time(), '%d %B, %Y')`

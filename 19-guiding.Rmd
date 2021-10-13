@@ -69,4 +69,4 @@ You should not feel embarrassed about copying and pasting existing test code and
 
 Of course, since this is a coursework exercise, you *should* feel embarrassed about copying and pasting solutions written by the members of other teams for your issues.  That would be plagiarism. Just use your own version of the Stendhal code base, and the work of your team members, to build your own tests on.
 
-Document version: `r format(Sys.time(), '%d %B, %Y')`
+`Document version:` `r format(Sys.time(), '%d %B, %Y')`

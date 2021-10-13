@@ -11,4 +11,4 @@ knitr::include_graphics("images/git.png")
 This workshop will look at different workflows you can use.
 
 
-Document version: `r format(Sys.time(), '%d %B, %Y')`
+`Document version:` `r format(Sys.time(), '%d %B, %Y')`

@@ -206,4 +206,4 @@ Of course, in this activity, we covered only a very simple synchronisation scena
 
 Good luck!
 
-Document version: `r format(Sys.time(), '%d %B, %Y')`
+`Document version:` `r format(Sys.time(), '%d %B, %Y')`
