@@ -8,7 +8,7 @@ While you are studying on this software engineering course, you are part of a te
 Your learning community is supported by a group of graduate teaching assistants (GTAs), mentors and academic staff.
 
 ## Expectation engineering {#agile}
-It's important that you know we expect of you and what you'll get in return. That's what this page describes.
+It's important that you know what we expect of you and what you'll get in return. That's what this page describes.
 
 ```{r xkcd-compiling-fig, echo = FALSE, fig.align = "center", out.width = "75%", fig.cap = "(ref:captionxkcdcompiling)"}
 knitr::include_graphics("images/compiling.png")
@@ -100,7 +100,7 @@ You have been assigned a mentor who will meet with you online for two one hour m
 Our mentors are all professional software engineers, who can give you advice on how to manage the process of making better software. so please treat them with the respect they deserve. They have volunteered to help by sharing their engineering wisdom with you and taken time out of their busy schedules to do so.
 
 ### What you can expect from academic staff {#academics}
-The academic staff on this course include Suzanne Embury, Anas Elhag, Duncan Hull, Thomas Carroll and Sandra Sampaio. We're here to help but please remember, there are 400+ students on this course so we can't reply to every single personal email.
+The academic staff on this course include Suzanne Embury, Anas Elhag, Duncan Hull, Thomas Carroll and Sandra Sampaio. We're here to help but please remember, there are 400+ students on this course so we can't reply to every single personal email immediately.
 
 ::: {.rmdcaution}
 
@@ -108,10 +108,10 @@ The academic staff on this course include Suzanne Embury, Anas Elhag, Duncan Hul
 
 Please **don't email staff or GTAs** directly unless you have good reason too (e.g. personal issues).
 
-Intead, please post issues on the forum at (ref:piazzaforum) where *everyone* can see the response or in the help queue (ref:livehelpqueue) within the workshop / team study sessions.
+Instead, please post issues on the forum at (ref:piazzaforum) where *everyone* can see the response or in the help queue (ref:livehelpqueue) within the workshop / team study sessions.
 :::
 
-we're often very busy and have other teaching commitments too besides this course. We're here to ensure that the course runs smoothly and we aim to give feedback on coursework to you within the two week window.
+Like you, we're often very busy and have other teaching (and research) commitments besides this course. We're here to ensure that the course runs smoothly and we aim to give feedback on coursework to you within the two week window.
 
 ##  Your camera {#cameras}
 We would normally expect participants in small meetings (not large ones like lectures) to turn their cameras on but we understand that there are good reasons why people may not be willing/able to and won’t explicitly ask you to.

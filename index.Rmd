@@ -209,6 +209,6 @@ So now that we've dispensed with the formalities, you can start using this labor
 (ref:livehelpqueue) [gitlab.cs.man.ac.uk/comp23311_2021/COMP23311-Live-Help-Queue](https://gitlab.cs.man.ac.uk/comp23311_2021/COMP23311-Live-Help-Queue/)
 
 
-(ref:mentors) Apadmi, ARM, Auto Trader UK, Barclays, the BBC, Beyond Trust, Blaize, Bloomberg, Booking.com, CDL Software, CodeThink, Code Computer Love, Cubic Motion (now Epic Games), DataCentred, Digital Bridge Ltd, Disney Streaming, EGN Digital, Facebook, Farm Digital, Giant Digital, Goldman Sachs, Google, IBM, Ivanti, Koder.ly, Matillion, Morgan Stanley, NCC Group, On The Beach, Rental Cars, Sainsburys, Sage Group plc, Siemens (Mentor Graphics), SteamaCo, THG, ThoughtWorks and Zuhlke.
+(ref:mentors) AND Digital, Apadmi, ARM, Auto Trader UK, Barclays, the BBC, Beyond Trust, Biorelate, Blaize, Bloomberg, Booking.com, CDL Software, CodeThink, Code Computer Love, Cubic Motion (now Epic Games), DataCentred, Digital Bridge Ltd, Disney Streaming, EGN Digital, Facebook, Farm Digital, Giant Digital, Goldman Sachs, Google, IBM, Ivanti, Koder.ly, Matillion, Morgan Stanley, NCC Group, On The Beach, Rental Cars, Sainsburys, Sage Group plc, Siemens (Mentor Graphics), Slalom, SteamaCo, THG, ThoughtWorks and Zuhlke.
 
 `Document version:` `r format(Sys.time(), '%d %B, %Y')`

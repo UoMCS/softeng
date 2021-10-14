@@ -121,6 +121,7 @@ Questions to challenge and guide your team:
 * What process do you use to release software in your company?
 * What code review practices do you use?
 * What makes a good commit message?
+* What does a good test look like?
 * How big is the software system you are working on now?
 * What techniques do you use when working with code written by other people?
 * How can we avoid getting into a mess when using Git (or other version control systems)?
