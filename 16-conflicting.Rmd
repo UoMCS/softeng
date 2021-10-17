@@ -6,7 +6,7 @@ Exercise 2: Test-First Development and Managing Conflicts in Git
 
 This second individual coursework exercise for (ref:coursecode) is designed to help you develop two new skills that professional software engineers need, and that will be essential for the second team coursework exercise:
 
-*  Test-first development, and
+* Test-first development, and
 * Handling conflicts during integration of separate lines of development with Git.
 
 Test-first development (TFD) is an approach to developing software in which we first write the test cases describing the functionality we need to implement, and then write the production code that will cause them to change from failing tests to passing tests.  The tests provide the specification for what needs to be built.  You are getting a taste of TFD in writing the tests to make your bugs visible in the code base in the first team coursework exercise, but you'll be required to apply it more extensively in the second team coursework exercise.  This individual coursework exercise gives you a chance to practice the basic skills in private, before you have to use them in front of your team and mentor.  It does this by giving you a set of test cases describing the behaviour needed of a new feature for the Sliding Puzzle game you worked on in the first individual coursework exercise.  Your task is to make these failing tests pass, by implementing the feature as the tests (and the issue text) describe it.
@@ -324,7 +324,7 @@ When you see this conflicting merge result, the step is completed.
 The point of this exercise is to walk through the experience of detecting and resolving conflicts between two independent lines of development, and to understand how Git helps us to manage those conflicts.  If you followed the natural conventions and approaches when implementing the Move Counter feature, you will discover conflicts when you try to merge.  If you have found some clever way to implement the feature that avoids conflicts at this merge (e.g. by rebasing the feature branch onto `main` before starting the implementation of the feature), you'll need to think again.  You can't get full marks for this exercise unless you implement the feature in a way that causes conflicts.
 :::
 
-### Step 6: Resolve the Conflicts and Complete the Merge {#resolveconfcomp}
+### Step six: Resolve the Conflicts and Complete the Merge {#resolveconfcomp}
 
 If you look at the `History` view after the merge attempt of the previous step, you will notice that no merge commit was created, and the `move-counter` branch is still shown as being separate from and unconnected with the `main` branch.
 
