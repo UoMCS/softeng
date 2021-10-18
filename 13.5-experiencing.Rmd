@@ -17,7 +17,7 @@ Both you and your mentor will get more out of your meeting if you introduce your
 from: flo.ting-point@student.manchester.ac.uk
 to: $mentors-email
 cc: neil; pen; peter; marge; polly; etc
-subject:  Hello from Team X
+subject:  Hello from Team X at the University of Manchester
 
 
 Dear $mentors-name (or $mentors-names)
