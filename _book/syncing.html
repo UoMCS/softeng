@@ -115,7 +115,7 @@
 </h2>
 <p>Choose one team member who will make and push the commit. That person will share their screen with their team members, who will observe and make notes of the process, giving feedback and suggestions where needed.</p>
 <p>We’re going to make a change to the following file:</p>
-<div class="sourceCode" id="cb45"><pre class="sourceCode md"><code class="sourceCode markdown"><span id="cb45-1"><a href="syncing.html#cb45-1" aria-hidden="true" tabindex="-1"></a>/data/conf/admins.txt</span></code></pre></div>
+<div class="sourceCode" id="cb46"><pre class="sourceCode md"><code class="sourceCode markdown"><span id="cb46-1"><a href="syncing.html#cb46-1" aria-hidden="true" tabindex="-1"></a>/data/conf/admins.txt</span></code></pre></div>
 <p>This file is empty at present, but it has an important function for us as developers of the code base. If the username of a Stendhal player is added to this file, that player becomes an administrator for the game, with access to lots of capabilities that ordinary players don’t have. These capabilities will be very important for replicating issues and testing the changes you need to make to the game, without having to actually play the game for long periods.</p>
 <p>The capabilities available to admin level players are described on the Stendhal wiki at <a href="https://stendhalgame.org/wiki/Stendhal:Administration">stendhalgame.org/wiki/Stendhal:Administration</a></p>
 <p>You should familiarise yourself with the main ones, so you can use them in testing your code changes in game.</p>
@@ -123,7 +123,7 @@
 <p>We begin by checking out the correct branch: the <code>master</code> branch. If you have done this correctly, you should see the name of this branch next to your project name in the <code>Package Explorer</code> view.</p>
 <!--%screen{packageExplorerViewShowingMasterBranchCheckedOut}-->
 <p>Our commit will set up the admin level players that your team wants, by editing the <code>admins.txt</code> file. In the <code>Git Staging View</code><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content="&lt;p&gt;Use menu option &lt;code&gt;Window&lt;/code&gt; &amp;gt; &lt;code&gt;Open View&lt;/code&gt; &amp;gt; &lt;code&gt;Other&lt;/code&gt; &amp;gt; &lt;code&gt;Git&lt;/code&gt; &amp;gt; &lt;code&gt;Git Staging View&lt;/code&gt; to open this view.&lt;/p&gt;"><sup>3</sup></a>, enter a description of the commit we are about to make as the commit message:</p>
-<div class="sourceCode" id="cb46"><pre class="sourceCode md"><code class="sourceCode markdown"><span id="cb46-1"><a href="syncing.html#cb46-1" aria-hidden="true" tabindex="-1"></a>Set up admin player for manual testing by dev team</span></code></pre></div>
+<div class="sourceCode" id="cb47"><pre class="sourceCode md"><code class="sourceCode markdown"><span id="cb47-1"><a href="syncing.html#cb47-1" aria-hidden="true" tabindex="-1"></a>Set up admin player for manual testing by dev team</span></code></pre></div>
 <p>Now we’ll prepare the code change that will become the commit.</p>
 <p>Every team member will need access to an admin level player on their own test server, but you will all need to use the same <code>admins.txt</code> file that is checked into your team repository. So you need to decide your strategy for this now. You can do one of the following:</p>
 <ul>
@@ -258,7 +258,7 @@ Figure 15.8: Your commit graph should look something like this
 <p>You will find the whole process of collaborative coding using Git goes more smoothly if you get into the habit of synchronising your code base with the team remote on a regular basis. That means carrying out steps 3 and 4 described in this document. You should synchronise your code base whenever you start work on the code for the day, whenever you are about to create a new feature branch, whenever you are about to push work to the remote and (most importantly) whenever you are about to integrate work on a feature branch into the development branch.</p>
 <p>Of course, in this activity, we covered only a very simple synchronisation scenario. As your team begins to push more code to your remote, you’ll quickly encounter scenarios where the simple approach described in this document doesn’t work. These more involved scenarios (and how to handle them) are described chapter <a href="committing.html#committing">21</a> on “Integrating Your Commits with your Team’s Commits.”</p>
 <p>Good luck!</p>
-<p><code>Document version:</code> 17 October, 2021</p>
+<p><code>Document version:</code> 18 October, 2021</p>
 
 </div>
 </div>

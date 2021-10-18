@@ -2,13 +2,51 @@
 
 Your mentor is a professional software engineer from one of the employers listed here: (ref:mentors)
 
-Your mentor will meet your team twice on Microsoft Teams during the mentoring sessions on Thursdays. They can help you understand how what you're learning on this course releates to software engineering in the real world.
+Your mentor will meet your team twice on Zoom during the mentoring sessions on Thursdays. They can help you understand how what you're learning on this course relates to software engineering in the real world. They can guide you on the *process* and the *politics* of your software engineering project.
 
 Mentors have volunteered their time to help you, so make sure you ask them lots of questions, some suggested questions are shown in section \@ref(studentqs) if you need some inspiration.
 
 It makes your mentors job a lot easier if you turn your camera on, see section \@ref(cameras)
 
-## But I'm not interested in employer x?
+## Introducing your team {#hellomentor}
+
+Both you and your mentor will get more out of your meeting if you introduce yourselves as a team beforehand. This requires that one of you collates team information and emails the mentor *before* the meeting. We suggest the following as an example and template:
+
+
+```md
+from: flo.ting-point@student.manchester.ac.uk
+to: $mentors-email
+cc: neil; pen; peter; marge; polly; etc
+subject:  Hello from Team X
+
+
+Dear $mentors-name (or $mentors-names)
+
+We'd like to introduce ourselves before our team meeting.
+
+We are team $team-number
+
+Our team members include:
+
+* neil.pointer@student.manchester.ac.uk likes C
+* pen.tester@student.manchester.ac.uk likes cybersecurity
+* peter.byte@student.manchester likes big data
+* marge.conlict@student.manchester.ac.uk likes version control
+* rick.urshion@student.manchester.ac.uk likes functional programming
+* polly.morphism@student.manchester.ac.uk likes O.O.P.
+* etc
+
+We look forward to meeting you on Thursday at 11am on Zoom.
+
+Best wishes
+
+Florence Ting-Point
+(On behalf of team X)
+University of Manchester
+```
+
+
+## But I'm not interested in employer x? {#dontcare}
 
 If you're lucky, your mentor from employer $x$ will just happen to be working in the sector that you are interested.
 
