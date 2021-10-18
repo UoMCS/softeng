@@ -26,7 +26,7 @@ We'd like to introduce ourselves before our team meeting.
 
 We are team $team-number
 
-Our team members include:
+Our team members (modify as needed) include:
 
 * neil.pointer@student.manchester.ac.uk likes C
 * pen.tester@student.manchester.ac.uk likes cybersecurity
