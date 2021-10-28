@@ -8,7 +8,7 @@ knitr::include_graphics("images/git.png")
 
 (ref:captionxkcdgit) Deleting your project and downloading a fresh copy is not the best workflow. [Git (xkcd.com/1597)](https://xkcd.com/1597/) by [Randall Munroe](https://en.wikipedia.org/wiki/Randall_Munroe) is licensed under [CC BY-NC 2.5](https://creativecommons.org/licenses/by-nc/2.5/)
 
-This workshop will look at different workflows you can use.
+This workshop will look at different workflows you can use. Course material for this chapter is on blackboard [online.manchester.ac.uk](https://online.manchester.ac.uk) and delivered by live sessions.
 
 
 `Document version:` `r format(Sys.time(), '%d %B, %Y')`

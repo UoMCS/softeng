@@ -1,6 +1,6 @@
 # Cost estimation {#estimating}
 
-Cost estimation material will go here, see figure \@ref(fig:xkcd-estimation-fig)
+Cost estimation, see figure \@ref(fig:xkcd-estimation-fig). Course material for this chapter is on blackboard [online.manchester.ac.uk](https://online.manchester.ac.uk)
 
 ```{r xkcd-estimation-fig, echo = FALSE, fig.align = "center", out.width = "75%", fig.cap = "(ref:captionxkcdestimation)"}
 knitr::include_graphics("images/xkcd-estimation.png")

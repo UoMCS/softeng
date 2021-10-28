@@ -46,7 +46,7 @@ There are two main sessions:
 1. Team study sessions
 1. Workshops
 
-Team study sessions are for you to get together as a team to work alongside each other. You can also get help from GTAs and staff on coursework.
+Team study sessions are for you to get together as a team to work alongside each other. You can also get help from GTAs and staff on coursework. **Every team member** should be attending **every team study session**, you may also need to arrange to meet outside of the scheduled sessions so that you can collaborate together.
 
 Each workshop has a specific theme that we need you to focus on. This means **we won't discuss coursework with you during the workshops**, otherwise we risk not getting through workshop material.
 
@@ -112,6 +112,19 @@ Instead, please post issues on the forum at (ref:piazzaforum) where *everyone* c
 :::
 
 Like you, we're often very busy and have other teaching (and research) commitments besides this course. We're here to ensure that the course runs smoothly and we aim to give feedback on coursework to you within the two week window.
+
+### How your work gets assessed {#assessment}
+The course is:
+
+* 30% Written exam (in January)
+* 70% Practical skills assessment (coursework)
+
+The coursework is broken down as follows
+
+1. 10%: Individual coursework 1, see chapter \@ref(gitting)
+1. 10%: Individual coursework 2, see chapter \@ref(conflicting)
+1. 40%: Team coursework 1, see chapter \@ref(dealing)
+1. 40%: Team coursework 2, see chapter \@ref(working)
 
 ##  Your camera {#cameras}
 We would normally expect participants in small meetings (not large ones like lectures) to turn their cameras on but we understand that there are good reasons why people may not be willing/able to and won’t explicitly ask you to.
