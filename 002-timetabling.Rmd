@@ -30,7 +30,7 @@ io_table <- tibble::tribble(
   "~~**3**: 11th Oct~~"             , "~~Debugging, see (ref:weekthree)~~", "~~IndCwk2, Fri 15th Oct, 6pm~~",
   "~~**4**: 18th Oct~~"             , "~~Cost estimation, see (ref:weekfour)~~",  "~~Mentoring week 1~~",
   "~~**5**: 25th Oct~~"             , "~~Test first development, see (ref:weekfive)~~", "~~TeamCwk1, 29th Oct, 6pm~~",
-  "**6**: 1st Nov"              , "Reading week see (ref:weeksix)", "",
+  "~~**6**: 1st Nov~~"              , "~~Reading week see (ref:weeksix)~~", "",
   "**7**: 8th Nov"              , "Git workflows, see (ref:weekseven)",  "",
   "**8**: 15th Nov"             , "Software refactoring, see (ref:weekeight)", "Mentoring week 2",
   "**9**: 22nd Nov"            , "Design for testability, see (ref:weeknine)", "",
@@ -96,17 +96,17 @@ Events in the week starting 1st November (reading week). Take a break if you're 
 ## Workflowing {#week7}
 Events in the week starting 8th November:
 
-1. **Team Study Tuesday**: Working on team coursework
+1. **Team Study Tuesday**: Marking interviews part 1 of 3, see \@ref(mint)
 1. **Workshop**: Git workflows with Suzanne Embury
-1. **Team Study Thursday** Working on team coursework
+1. **Team Study Thursday** Marking interviews part 2 of 3, see \@ref(mint)
 
 
 ## Refactoring {#week8}
 Events in the week starting 15th November:
 
-1. **Team Study Tuesday**: Working on team coursework
+1. **Team Study Tuesday**: Marking interviews part 3 of 3, see \@ref(mint)
 1. **Workshop**: Refactoring with Anas Elhag
-1. **Team Study Thursday** Working on team coursework
+1. **Team Study Thursday** Second mentoring session
 
 
 ## Testing {#week9}
@@ -114,7 +114,7 @@ Events in the week starting 22nd November:
 
 1. **Team Study Tuesday**: Working on team coursework
 1. **Workshop**: Design for testability Anas Elhag
-1. **Team Study Thursday** Second mentoring session
+1. **Team Study Thursday** Working on team coursework
 
 
 ## Patterning {#week10}
@@ -143,7 +143,22 @@ Events in the week starting 13th December:
 1. **Team Study Thursday**
 1. **Coursework deadlines**:
 
+## Marking interview schedule {#mint}
 
+The schedule for marking interviews for team coursework 1 is shown below:
+
+| Interviewer | 9 Nov, 10.00am | 9 Nov, 10.30am | 11 Nov, 11.00am | 11 Nov, 11.30am | 16 Nov, 10.00am |  16 Nov, 10.30am
+|-----------------------|--------------------|--------------------|--------------------|--------------------------|--------------------------|--------------------------|
+| Hugo Lefeuvre       | Team01           | Team11            | Team21            | Team31            | Team41  |    Team51 |
+| Dominic Duxbury     | Team02           | Team12            | Team22            | Team32            | Team42  |    Team52 |
+| Dario Panada        | Team03           | Team13            | Team23            | Team33            | Team43  |    Team53 |
+| Muideen             | Team04           | Team14            | Team24            | Team34            | Team44  |    Team54 |
+| Huw Jones           | Team05           | Team15            | Team25            | Team35            | Team45  |    Team55 |
+| Jules Irenge        | Team06           | Team16            | Team26            | Team36            | Team46  |    Team56 |
+| He Yu / David*      | Team07           | Team17            | Team27*           | Team37*           | Team47  |           |
+| Ahmad Bilal         | Team08           | Team18            | Team28            | Team38            | Team48  |           |
+| Zhongyan Chen       | Team09           | Team19            | Team29            | Team39            | Team49  |           |
+| Thomas Carroll      | Team10           | Team20            | Team30            | Team40            | Team50  |           |
 
 
 ## Tools {#tooling}
@@ -162,13 +177,10 @@ We'll be using the following tools:
 
 ### GitLab {#gitlab}
 
-* GitLab issue tracker
+* GitLab issue tracker [gitlab.cs.man.ac.uk](https://gitlab.cs.man.ac.uk/)
 
 
 <!--hacky way to get chapter references in tables-->
-
-
-(ref:weekzero) see section \@ref(week0)  
 
 (ref:weekone) see section \@ref(week1)  
 

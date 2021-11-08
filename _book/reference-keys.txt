@@ -167,6 +167,7 @@ week9
 week10
 week11
 week12
+mint
 tooling
 msfteams
 blackboard
