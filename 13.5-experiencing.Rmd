@@ -28,6 +28,29 @@ We are team $team-number
 
 Our team members (modify as needed) include:
 
+* neil.pointer@student.manchester.ac.uk
+* pen.tester@student.manchester.ac.uk
+* peter.byte@student.manchester
+* marge.conlict@student.manchester.ac.uk
+* rick.urshion@student.manchester.ac.uk
+* polly.morphism@student.manchester.ac.uk
+* etc
+
+We look forward to meeting you on $date at $time on Zoom.
+
+Best wishes
+
+Florence Ting-Point
+(On behalf of team X)
+University of Manchester
+```
+
+You could (optionally) add more information about yourselves to help your mentor get to know you:
+
+```md
+
+Our team members (modify as needed) include:
+
 * neil.pointer@student.manchester.ac.uk likes C
 * pen.tester@student.manchester.ac.uk likes cybersecurity
 * peter.byte@student.manchester likes big data
@@ -35,14 +58,6 @@ Our team members (modify as needed) include:
 * rick.urshion@student.manchester.ac.uk likes functional programming
 * polly.morphism@student.manchester.ac.uk likes O.O.P.
 * etc
-
-We look forward to meeting you on Thursday at 11am on Zoom.
-
-Best wishes
-
-Florence Ting-Point
-(On behalf of team X)
-University of Manchester
 ```
 
 

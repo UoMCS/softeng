@@ -254,7 +254,7 @@
 </h3>
 <p>First we need to run Eclipse (or the IDE you have chosen to use for this activity, if using a different one). If working from home, you should use the VM provided by the department.</p>
 <p>Start <code>2020-03</code>. From the command line, this is done by typing:</p>
-<div class="sourceCode" id="cb48"><pre class="sourceCode md"><code class="sourceCode markdown"><span id="cb48-1"><a href="gitting.html#cb48-1" aria-hidden="true" tabindex="-1"></a>/opt/eclipse-2020-03/eclipse</span></code></pre></div>
+<div class="sourceCode" id="cb49"><pre class="sourceCode md"><code class="sourceCode markdown"><span id="cb49-1"><a href="gitting.html#cb49-1" aria-hidden="true" tabindex="-1"></a>/opt/eclipse-2020-03/eclipse</span></code></pre></div>
 <p>You can also find it in the <code>Applications</code> menu, under <code>Programming</code>.</p>
 <p>If it is the first time you have run this version of Eclipse, you will be prompted to create or select a <em>workspace</em>. This is just a folder where your Eclipse projects will live. Choose the default offered, or use the file browser to choose a location that you prefer and make a folder with an appropriate name (such as <code>EclipseProjects</code>). Or you can make a workspace that will contain only projects relating to COMP23311, such as <code>COMP23311Workspace</code></p>
 <p>Once you have told Eclipse which workspace you want to use, Eclipse will load.</p>
@@ -295,7 +295,7 @@ Figure 16.1: Selecting a branch
 </p>
 </div>
 <p>Eclipse will now ask where you want the clone of the repository to be located (i.e., which folder in your file space you want it to be put in). This can be located anywhere you like in your file space. A common convention is to have a folder in your home directory, called <code>git</code>, in which all your local Git repositories live. If you have such a folder, you’ll need to create a folder inside it, to hold the repository itself. So, you might request the clone to be placed somewhere like this:</p>
-<div class="sourceCode" id="cb49"><pre class="sourceCode md"><code class="sourceCode markdown"><span id="cb49-1"><a href="gitting.html#cb49-1" aria-hidden="true" tabindex="-1"></a>/git/sliding-puzzle-activity</span></code></pre></div>
+<div class="sourceCode" id="cb50"><pre class="sourceCode md"><code class="sourceCode markdown"><span id="cb50-1"><a href="gitting.html#cb50-1" aria-hidden="true" tabindex="-1"></a>/git/sliding-puzzle-activity</span></code></pre></div>
 <p>After choosing or creating a suitable location for the clone, click <code>Next</code>.</p>
 <p>At this point, Eclipse issues the commands to create the local clone of the remote repository in the folder you selected above. (You will need to enter your login details again at this point, if you did not save them earlier, so that Eclipse can send another request to the GitLab system.) Eclipse also checks out the branch you selected, into the folder you selected, so you should also see a <code>src</code> folder, a <code>test</code> folder and some configuration files for Eclipse in the folder you created, when viewed through a file browser or at the command line.</p>
 <p>The next step is for Eclipse to import the checked-out files (and repository) as an Eclipse project that you can work with in the IDE. Ensure ‘Import existing projects’ is selected as shown in figure <a href="gitting.html#fig:importExistingEclipseProjects-fig">16.2</a>, then press <code>Next</code>.</p>
@@ -326,7 +326,7 @@ Figure 16.4: An Eclipse project loaded and visible in package explorer
 </h3>
 <p>In your web browser, open the GitLab page for the repository created for you for this exercise and go to the issue tracker (using the menu on the left). You should see a single open issue. This issue describes a bug within the program which you are going to fix.</p>
 <p>Your first task is to see if you can replicate this issue within the program itself. To launch the puzzle, find the <code>Puzzle</code> class in the <code>Package Explorer</code> view: it is located in the:</p>
-<div class="sourceCode" id="cb50"><pre class="sourceCode md"><code class="sourceCode markdown"><span id="cb50-1"><a href="gitting.html#cb50-1" aria-hidden="true" tabindex="-1"></a>uk.ac.man.cs.puzzle</span></code></pre></div>
+<div class="sourceCode" id="cb51"><pre class="sourceCode md"><code class="sourceCode markdown"><span id="cb51-1"><a href="gitting.html#cb51-1" aria-hidden="true" tabindex="-1"></a>uk.ac.man.cs.puzzle</span></code></pre></div>
 <p>package within the <code>src</code> folder. Right click on it, and choose <code>Run As</code> &gt; <code>Java Application</code>. The game should now appear in a window on your screen.</p>
 <p>The game is a simple 8-tile sliding puzzle where the goal is to get the tiles in ascending order, left to right, top to bottom. Tiles can only be moved if they are adjacent to the free space. Players click on the tiles to move them into the space. The game changes the outlines of the tiles to bright green when the game is finished.</p>
 <p>Play around with the puzzle for a while and see if you can replicate the bug which the issue describes. After you are done, close the program and return to Eclipse to continue the bug fixing process.</p>
@@ -390,7 +390,7 @@ Figure 16.7: After creating branch note the annotation change in the package exp
 <p>Next, we’re going to make a change to one of the files in the project, and commit it to our new branch. Eclipse provides a number of views and commands to help with making commits to a Git repository. One of the most useful of these is the Git Staging view. To open this, select the following option from the menus at the top of the Eclipse window:</p>
 <p><em>Window &gt; Show View &gt; Other &gt; Git &gt; Git Staging</em></p>
 <p>A new view with this name should now appear. Notice that there is a box on the right for the message you will associate with the commit you are about to make. It is good practice to write this commit message before you begin to make any code changes. This helps us think about the change we are about to make, and helps to keep our commits small and focussed. In this case, please add the following text to the <code>Commit Message</code> box in the Git Staging view:</p>
-<div class="sourceCode" id="cb51"><pre class="sourceCode md"><code class="sourceCode markdown"><span id="cb51-1"><a href="gitting.html#cb51-1" aria-hidden="true" tabindex="-1"></a>Fix bug with wrong tiles sliding on mouse click</span></code></pre></div>
+<div class="sourceCode" id="cb52"><pre class="sourceCode md"><code class="sourceCode markdown"><span id="cb52-1"><a href="gitting.html#cb52-1" aria-hidden="true" tabindex="-1"></a>Fix bug with wrong tiles sliding on mouse click</span></code></pre></div>
 <p>Your view should look like figure <a href="gitting.html#fig:gitStagingViewBeforeChangesWithComment-fig">16.8</a>.</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:gitStagingViewBeforeChangesWithComment-fig"></span>
@@ -545,7 +545,7 @@ Figure 16.18: Screenshot showing check gitlab network after feature branch is pu
 </h3>
 <p>Once the bug fix has been merged into the development branch, and the tests all still pass, we can close the issue. Open the <code>Wrong Tiles Sliding</code> issue in the issue tracker and click on the <code>Close issue</code> button. (Of course, if the feature branch hasn’t been merged into the development branch and the tests still fail, then we can’t close the issue, as the bug wouldn’t be properly fixed yet.)</p>
 <p>When you are ready for your work to be marked, add a comment to the issue, to let the automated marking system know. The comment should contain the following text:</p>
-<div class="sourceCode" id="cb52"><pre class="sourceCode md"><code class="sourceCode markdown"><span id="cb52-1"><a href="gitting.html#cb52-1" aria-hidden="true" tabindex="-1"></a>Project ready for marking.</span></code></pre></div>
+<div class="sourceCode" id="cb53"><pre class="sourceCode md"><code class="sourceCode markdown"><span id="cb53-1"><a href="gitting.html#cb53-1" aria-hidden="true" tabindex="-1"></a>Project ready for marking.</span></code></pre></div>
 <p>This comment will be detected by the automated marking code, and your work will be scheduled for marking at the next automated marking point. Because of this, it’s important that you use this exact text string in your issue comment. You can delete and re-add the comment at any time before the coursework deadline, if you want to make further changes. It’s also important that you add the comment to the correct issue. In the past, students have created new issues for this marking-request comment and even, in a few cases, have made dummy commits with this string as the commit message. None of these actions will be picked up by the automated marking system, so it’s important to check that the comment is appearing on the issue we created for you and that all your changes are visible at your remote <em>before</em> the deadline.</p>
 <div class="rmdcaution">
 <p>⚠️ <strong>Caution</strong> ⚠️
@@ -559,7 +559,7 @@ It is your responsibility to check that your work has been successfully pushed t
 </h3>
 <p>This completes the instructions for the first individual coursework exercise for COMP23311. If you managed to complete it in full, then you can be confident that your Git/GitLab set up is as needed on this machine for the workshops and the coursework. Perhaps even more importantly, you have gone through the basic cycle of steps we’ll expect you to follow when carrying out the team coursework for this unit. If you were unfamiliar with this approach to coding, then it might have felt long-winded and complicated. But with a little practice, this pattern of work will become easier and more natural. And, with this experience under your belt, you’ll find it much easier to adapt to variants of it, if you join a software engineering team on placement or in employment outside University.</p>
 <p>In the next individual coursework, we’ll look at a more complicated merge case, when Git can’t handle the merge by itself and needs help from you to intervene.</p>
-<p><code>Document version:</code> 08 November, 2021</p>
+<p><code>Document version:</code> 12 November, 2021</p>
 
 </div>
 </div>
