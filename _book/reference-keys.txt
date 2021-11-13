@@ -123,10 +123,6 @@ fig:master-branch-fig
 fig:FeatureBranchBuilds-fig
 fig:IssueRevealingBuilds-fig
 fig:xkcd-code-quality-fig
-fig:nodejs1-fig
-fig:nodejs2-fig
-fig:nodejs3-fig
-fig:nodejs4-fig
 fig:merge-request-assignee-fig
 fig:comment-commit-fig
 better

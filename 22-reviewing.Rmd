@@ -82,24 +82,12 @@ When performing a code review, the following aspects of the code can be commente
 
 We can see from this list that code review can address more than just defects and errors, covering also code quality, enforcement of conventions, performance issues and code readability aspects. Code reviewers should try not to comment on matters of preference. For example, if the team has not agreed to on a convention for white space in code, reviewers should not criticise team members for using spaces when their own preference is for using tabs, provided the look of the code is the same for both options. The line between preference and best practice is not always clearly defined, so some degree of trial and error is in order. If you find you are continually pointing out that someone is placing their curly brackets differently from the rest of the team, and that person continually ignores your advice, it is probably time to move on to find bigger fish to fry.
 
-To give an indication of the kinds of conversation that can productively take place using code review, figures \@ref(fig:nodejs1-fig), \@ref(fig:nodejs2-fig), \@ref(fig:nodejs3-fig) and \@ref(fig:nodejs4-fig) show examples of commit comments from the NodeJS project from [github.com/nodejs/node](https://github.com/nodejs/node).
+To give an indication of the kinds of conversation that can productively take place using code review, the links below show examples of commit comments.
 
-```{r nodejs1-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap = "Sample conversation from nodejs"}
-knitr::include_graphics("images/nodejs1.png")
-```
-```{r nodejs2-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap = "Sample conversation from nodejs"}
-knitr::include_graphics("images/nodejs2.png")
-```
+* [github.com/nodejs/node/pull/9440/files](https://github.com/nodejs/node/pull/9440/files)
+* [github.com/nodejs/node/commit/2e568d95bdd689494b163f1cfe8bbc38f32e45ed#commitcomment-19306986](https://github.com/nodejs/node/commit/2e568d95bdd689494b163f1cfe8bbc38f32e45ed#commitcomment-19306986)
 
-```{r nodejs3-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap = "Sample conversation from nodejs"}
-knitr::include_graphics("images/nodejs3.png")
-```
-
-```{r nodejs4-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap = "Sample conversation from nodejs"}
-knitr::include_graphics("images/nodejs4.png")
-```
-
-
+These examples are taken from the NodeJS project at [github.com/nodejs/node](https://github.com/nodejs/node).
 
 ## Code Review Facilities in GitLab {#gitlabrev}
 
