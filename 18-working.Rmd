@@ -5,25 +5,25 @@ Working with Features
 
 In this second exercise using the Stendhal code base, you and your team are again presented with a number of issues recorded in your GitLab issue tracker.  This time, however, the issues describe new features rather than bugs.  That is, they describe extensions to the Stendhal game, rather than corrections to the implementation that bring it back into line with the way the game's owners believe it should behave.
 
-This brings into play a number of new software engineering skills.  The first difference is the amount of work to be done.  Unlike the simple bugs we looked at in the last coursework exercise, the features your team has been presented with vary in size, with some simple and straightforward and some more complex, involving the modification of existing classes and the design of new classes.  Taken as a whole, they represent more work than you can sensibly achieve in the time given for the coursework.
+This brings into play a number of new software engineering skills.  The first difference is the amount of work to be done.  Unlike the simple bugs we looked at in the last coursework exercise, the features your team has been presented with are larger in size, involving the modification of existing classes and the design of new classes.  Taken as a whole, they represent more work than you can sensibly achieve in the time given for the coursework.
 
 **You must therefore choose a subset of the issues that your team will commit to deliver by the deadline.**
 
-Another difference is in the scope of the work.  Most bug fixes will be implemented in full, with few decisions to be made about how much of the work described by the issue it is worthwhile to complete.  When adding new features the situation is more complicated: the full implementation may require a great many code changes, all of which may put other parts of the system's behaviour at risk.  In addition, it may not be clear how users will react to the new functionality, or what variants of it they may prefer to use.  It is therefore usual to introduce new features gradually, to manage the risks and to gauge user responses.
+Another difference is in the scope of the work.  Most bug fixes will be implemented in full, with few decisions to be made about how much of the work described by the issue it is worthwhile to complete.  When adding new features the situation is more complicated: the full implementation may require a great many code changes, all of which may put other parts of the system's behaviour at risk.  In addition, it may not be clear how users will react to the new functionality, or what variants of it they may prefer to use.  It is therefore usual to introduce new features gradually, over the course of a series of releases, to manage the risks and to adjust the direction of travel in the light of user reactions to the new functionality.  
 
-** You must therefore create a release plan for each issue, showing how it will be released incrementally into the game.  You will then implement only the first increment of the full feature. **
+**You must therefore create a release plan for each issue, showing how it will be released incrementally into the game.  You will then implement only the first release of the full feature for this coursework.**
 
-This exercise will follow the same broad phases as the first one, with two additional steps:
+This exercise will follow the same broad phases as the first team coursework exercise, but with several additional steps being added:
 
-1. release planning.
-1. planning for the increments that will be implemented.
-1. testing and implementation.
-1. code review.
-1. integration and system testing.
-1. making a new release.
-1. preparing for the face-to-face interviews.
+1. Release planning.
+1. Planning for the releases that will be implemented.
+1. Testing and implementation.
+1. Code review.
+1. Integration and system testing.
+1. Making a new release.
+1. Preparing for the face-to-face interviews.
 
-You can choose how you carry out these steps in your team, perhaps overlapping some of the steps, or carrying out the whole process for individual issues separately.
+You can choose how you carry out these steps in your team, perhaps combining or overlapping some of the steps.
 
 
 The exercise will test your ability to:
@@ -42,7 +42,7 @@ The exercise will test your ability to:
 
 Your first task is to create a release plan for each of the issues in your issue tracker associated with the milestone for this coursework exercise.  We will show you how to do this in the workshops in the second part of the course unit.
 
-The release plan for each issue will describe a sequence of incremental releases that, when complete, will fully implement the feature in the game.  This is done by dividing the work required for the full issue into sub-features, which can be delivered independently of each other.  For example, if an issue requires a new item to be added to the game, that will be received as a reward in a new quest, then adding the item to the game can be delivered independently from adding the new quest.
+The release plan for each issue will describe a sequence of incremental releases that, when complete, will fully implement the feature in the game.  This is done by dividing the work required for the full issue into sub-features, which can be delivered independently of each other.  For example, if an issue requires the addition of a new quest to the game, with a brand new item type as a reward, then we might plan to release the item first in one release, and only release the quest in the next release, once we had had some time to try out the new item in real game play.
 
 For each release, you must describe:
 
@@ -50,59 +50,81 @@ For each release, you must describe:
 1. The target audience for the release (which group of users the new functionality will be released to)
 1. The existing game elements that can potentially be used to support some aspects of the sub-features to be delivered, and how they will need to be adapted.
 
-The release must be numbered and presented in the order in which they should be delivered.  This order should take into account dependencies between the sub-features.  For example, the release containing our new quest should come after the release that delivers the new reward item (for obvious reasons).
+The releases must be numbered and presented in the order in which they should be delivered.  This order should take into account dependencies between the sub-features.  For example, the release containing our new quest should come after the release that delivers the new reward item (for obvious reasons - we can't release the quest if the reward item does not yet exist in the game).
 
-Releases should be designed so that each one delivers a “playable” feature, that can be tested in live play.  You also need to consider the effects on players of the game as they experience the different stages of release of the feature, and make sure that the overall sequence of releases makes for a sensible and pleasant game experience.  Players are normally happy to receive additional game features, more capabilities, better items, as releases progress, but are typically less happy for the game to be made more awkward or annoying than in a previous release.
+Releases should be designed so that each one delivers a “playable” feature, that can be tested in live play.  You also need to consider the effects on players of the game as they experience the different stages of release of the feature, and make sure that the overall sequence of releases makes for a sensible and pleasant game experience.  Players are normally happy to receive additional game features, more capabilities, better items, as releases progress, but are typically less happy for the game to be made more awkward or annoying than in a previous release, or to lose useful capabilities they had in previous releases.
 
-You will document your release plans by placing them in the wiki of your team's GitLab project.  You should create a page in the wiki for each issue, using the page slugs shown on Blackboard (under `Assessment` > `Team Coursework` > `Exercise 2`.  For example, for team S1Team47, if the page slug for one issue is given as `lon-jatham`, then the wiki page for this issue would be reached at the following URL:
+The first release should be designed to be a "canary release" (also sometimes called a "feature rollout").  That is, it should aim to test that the most risky part of the feature is both technically feasible and provides a sensible and enjoyable game play experience.  Therefore, for each first release, you must also give a short rationale for why you chose this part of the full feature to implement and deploy into the game first.  (Only 3-4 sentences of rationale are required.)
 
-[gitlab.cs.man.ac.uk/comp23311_2021/stendhal_S1Team47/wikis/lon-jatham](https://gitlab.cs.man.ac.uk/comp23311_2021/stendhal_S1Team47/wikis/lon-jatham)
+You will document your release plans by placing them in the wiki of your team's GitLab project.  You should create a page in the wiki for each issue, using the page slugs shown on Blackboard (under `Assessment` > `Team Coursework` > `Exercise 2`.  For example, for team S1Team107, if the page slug for one issue is given as `slow-innkeeper`, then the wiki page for this issue would be reached at the following URL:
 
-The release plans for this stage can be quite high level and short.  The aim is only to do enough planning to allow you to make good decisions about which features to commit to deliver, in the next step.  
+[gitlab.cs.man.ac.uk/comp23311_2021/stendhal_S1Team107/wikis/slow-innkeeper](https://gitlab.cs.man.ac.uk/comp23311_2021/stendhal_S1Team107/wikis/slow-innkeeper)
 
-If some of this does not make sense, don't panic.  It will all be explained in the workshops for this part of the course unit.
+The release plans for this stage can be quite high level and short.  The aim is to do just enough planning to allow you to make good decisions about which features to commit to deliver, in the next step. 
 
-<!--Uncomment for next year...
-\warningbox{When justifying your choice to implement or not implement certain features, you should not use your own personal preferences about the value or interest of the feature.  Assume that all the features have been agreed by the owners of the system as being useful additions, that players of the game are expected to receive well and that all will deliver equal value to the Stendhal owners.  Your reasons for selecting features for implementation must be based only on the software engineering challenges and opportunities of the feature.}-->
+Please use the following text for the header for this section of the wiki page, so that we can generate links to your release plans in our instructions to GTAs for marking:
+
+    ## Release Plan
 
 
 ### Step 2: Issue Planning {#issueplan}
 
 ### Step2.1: Choosing your Issues {#ischoose}
 
-In the next step, you must decide which of the issues you are going to commit to including in the next release, given the number of people in your team and the skills they have.  **Bear in mind that you will only need to implement the first of the releases in your release plan for each selected issue.**  You should *not* aim to implement the whole feature.
+In most of the coursework you have been set for your degree, you are told exactly what you need to deliver and the work is set so as to be guaranteed to be achievable in the timescales allowed.  Real software engineering is not like this.  There is always more to be implemented than can realistically be achieved in the time available.  Making decisions about what to build, and how much to commit yourself and your team to deliver, is an essential part of software engineering.  This coursework gives you the opportunity to practice and reflect on this skill, before you have to apply it in real life.
 
-For each selected issue, you should create a work-breakdown structure (WBS) to come up with a defensible estimate for the effort needed to implement the first release.  The work breakdown structure should be documented on the wiki page for the issue (in addition to the release plan for the issue).  WBSs for this stage should contain more detail than for the high level release plans created in the previous stage.
+To allow this, we have given you a selection of issues describing new features for this coursework that, if implemented in full, constitute more work than you can reasonably achieve in the time available.  You must choose a subset of issues to implement, balancing the need to do enough work to achieve your target mark for the exercise with the amount of time it is possible and worthwhile to devote to the exercise.
 
-You should also add a brief justification for your decision to implement this issue, or not, to the wiki page.  Two or three sentences of justification is sufficient.  This must be done for all issues, not only those selected for implementation.
+Each feature you implement is worth 10 marks, if implemented perfectly against the criteria in the marking scheme.  However, we have set a cap on the number of marks you can achieve for the implementation of features.  This means that if you select too many features to implement, you will be wasting your time, as you will not be able to achieve more marks for the additional work done.  Your aim is not to work long hours in order to achieve more than is needed, but instead to think about how you can use your time effectively, to deliver the expected amount of value in the fewest person hours.
 
-Finally, once you have decided which features you will not be delivering in this release, you should remove them from the Coursework 2 Milestone.  Only the issues you are committing to deliver should be associated with this milestone by the deadline for the exercise.
+Since this is a somewhat unsual approach to coursework, we have provided a spreadsheet that will help you in making your choice of features to implement.  The spreadsheet will allow you to see the effects of your choices on the mark you will achieve, based on your predictions for the mark you'll be awarded for each individual component of the work.  The link to this spreadsheet will be released on Blackboard at the same time as the other materials needed to complete the coursework are released.
 
-### Step 2.2: Planning for the Implementation {#plimp}
+**Remember when selecting issues that you will only need to implement the first of the releases in your release plan for each selected issue.**
 
-You must then decide:
+Once you have decided which features you will not be delivering in this release, you should remove them from the Coursework 2 Milestone.  Only the issues you are committing to deliver should be associated with this milestone by the deadline for the exercise.  RoboTA will mark the set of issues associated with the coursework milestone, so it is in your interests to make sure this is accurate before your coursework is marked.
+
+
+### Step2.2: Creating a Work Breakdown Structure for the Selected Issues
+
+For each selected issue, you should create a work-breakdown structure (WBS) to come up with a defensible estimate for the effort needed to implement the first release.  The work breakdown structure should be documented on the wiki page for the issue (in addition to and below the release plan for the issue).  WBSs for this stage should contain more detail than for the high level release plans created in the previous stage.  The level of granularity you should aim for is described in the RoboTA marking scheme for the exercise.
+
+Please use the following text for the header for this section of the wiki page, so that we can generate links to your WBSs in our instructions to GTAs for marking:
+
+    ## Work Breakdown Structure
+    
+
+### Step 2.3: Planning for the Implementation {#plimp}
+
+You must next decide:
 1. which team member will be the lead for each selected issue,
 1. which team members will work on the implementation of each selected issue, and
 1. which team members will act as code reviewers for each selected issue.
 
 All these decisions should be documented in your issue tracker, as described below.
 
-Lead team members should be assigned as the responsible person for the issue in the issue tracker.  This person is responsible for the detailed planning for their issue, for scoping it down, for coordinating the implementation work amongst the sub-group assigned to it, and for documenting the work as needed for marking.  This does not mean that the team leader does all these tasks alone---only that the team leader is the person who will check that they are all done and that it is clear who is doing what task by when.  Apart from that, the way the tasks are shared amongst the sub-team members is up to you.  But it is expected that all sub-team members, including the leader, will do some coding for their issue, to allow them to meet the requirement that at least one meaningful commit be made for the coursework by every team member.
+Since the features we have set are more substantial coding tasks than the bugs you fixed in the first exercise, you will need to work together, in groups of 2 or 3, to implement some of the selected features.  That is, you will break your team down into sub-teams, each of which will be responsible for delivery of the first release for an individual feature.  Such teams are sometimes called "feature teams".
 
-Sub-team members for each issue must be recorded on the issue tracker, using a sentence of the form:
+A common cause of failure in team work is when all members of the team assume that some crucial task will be done by someone else.  To avoid this, it is important to assign a lead member for each sub-team.  This person is responsible for the detailed planning for their issue, for scoping it down, for coordinating the implementation work amongst the 
+members of the sub-team, and for documenting the work as needed for marking.  This does not mean that the team leader does all these tasks alone---it means only that the team lead is the person who will check that these tasks are all done and that everyone is clear about what they need to do and by when.  Apart from that, the way the tasks are shared amongst the sub-team members is up to you.  But it is expected that all sub-team members, including the leader, will do some coding for their issue, to allow them to meet the requirement that at least one meaningful commit be made for the coursework by every team member.
+
+Team leads should be assigned as the responsible person for the issue in the issue tracker.
+
+All other sub-team members for each issue must be recorded on the issue tracker, using a sentence of the form:
 
 
 `Sub-team member: <URL of GitLab profile of team member>`
 
 GitLab profile links have the form: [https://gitlab.cs.man.ac.uk/name](https://gitlab.cs.man.ac.uk/name), where `name` is a GitLab username.  Multiple sub-team members may be recorded in separate comments, or in a single comment with newlines between the sentences.  You do not need to record the team lead as a sub-team member.
 
-Code reviewers for issues must also be recorded on the issue tracker, using a sentence of the form:
+Note that to receive marks for the coursework, every team member must be assigned to a sub-team for the exercise, either as lead or as a sub-team member, and must make a meaningful commit contributing towards the implementation of the feature their sub-team is assigned to implement.  Work allocation must be designed to ensure that all team members are able to meet the criteria for receiving marks.
+
+A further assignment of roles must be completed at this stage before you can proceed to the implementation of the issue.  For this coursework, we ask you to apply the practice of reviewing all code before it is integrated into the mainline of development for your team.  Therefore, you should also decide who will carry out code review for each issue.  Every member of your team must carry out some code review, and the code for every feature must be reviewed before integration.  While you are welcome to carry out buddy reviews within sub-teams, the pre-integration code review step must be carried out by someone from another sub-team.
+
+Code reviewers for issues must be recorded on the issue tracker, using a sentence of the form:
 
 `Code review by: <link to GitLab profile of team member>`
 
 Multiple code reviewers may be recorded for a given issue, if wished.
-
-Every team member must be assigned as part of the team for an issue (called the “feature team”), and as a reviewer on at least one other issue.
 
 You should document your estimate for the **effort** required to implement each feature in the issue tracker.  For this exercise, we are going to use GitLab's Time Tracking facility.  Information about how to do this can be found at:
 
@@ -113,20 +135,20 @@ The results of your planning must be documented in the issue tracker and on the 
 
 ### Step 3: Testing and Implementation {#timp}
 
-Once issues have been allocated a team lead, feature teams can start work on the implementation of their features.  The team lead should begin by expanding the WBS for the work on the issue's wiki page (if necessary), and by allocating parts of the work to the sub-team members.  Care should be taken to find a breakdown of the work that allows sub-team members to work in parallel on different parts of the feature.
+Once issues have been allocated a team lead, feature teams can start work on the implementation of their features.  The team lead should begin by expanding the WBS for the work on the issue's wiki page (if necessary), and by allocating parts of the work to the sub-team members.  Care should be taken to find a breakdown of the work that allows sub-team members to work in parallel on different parts of the feature and to meet the criteria to receive marks for the exercise.
 
-The team lead should set a due date for the delivery of the feature to the team, using the issue tracker's Due Date facility.  Obviously, this due date should be chosen to allow time for code review, corrections and merging of the feature into the development branch, plus making corrections in the event that this breaks the build.
+The team lead should set a due date for the delivery of the feature to the team, using the issue tracker's Due Date facility.  Obviously, this due date should be chosen to allow time for code review, corrections and merging of the feature into the development branch, plus making corrections in the event that this breaks the build.  The due date must be set *before* work on the issue begins (considered to be the time when the first commit for the implementation is made).
 
 The team lead should update the estimate for the issue in the issue tracker if, based on the more detailed planning carried out, the sub-team feel the original estimate was inaccurate.
 
-We ask you to use the same Git workflow as you used in the first exercise, to allow your sub-team to work collaboratively on each issue without interfering with the work of the rest of your team.
+We ask you to use the same Git workflow as you used in the first exercise, to allow your sub-team to work collaboratively on each issue without interfering with the work of the rest of your team by using feature branches.
 
-However, there are some new skills we ask you to demonstrate in this second course unit.  We are asking you to control the size and risk of the work, using feature scoping, and to code in a test-first manner.  We are also asking you to manage the quality of the commit messages your team makes, and to use a test coverage tool to assess whether you have written sufficient tests or not.  Details of all these are given below.
+In addition, there are some new skills we ask you to demonstrate in this second course unit.  We are asking you to code in a test-first manner, to manage the quality of the commit messages your team makes, and to use a test coverage tool to assess whether you have written sufficient tests or not.  Details of all these requirements are given below.
 
 
 #### Choosing a Sensible Starting Commit {.unnumbered #sensible}
 
-It is important that all the team start their feature branches from a clean commit.  Otherwise, problems in earlier commits (such as failing tests) will be carried forward into the new feature branches, and may result in lost marks for exercise 2.
+It is important that all the team start their feature branches from a clean commit.  Otherwise, problems in commits for the 1st exercise (such as failing tests) will be carried forward into the new feature branches, and may result in lost marks for this exercise too.  It is your reponsibility to ensure that this does not happen.
 
 Teams with a clean build for their development branch in Jenkins should be okay to start the work for the next coursework exercise from this point.  Teams with unstable or failed builds on their development branch will need to start by getting the `master` branch to a clean state.  If the problems were caused by merging feature branches with unstable or failed merges into `master`, then you will need to revert those commits^[The use of Git revert as a quick fix for Git errors is never pretty and should be avoided where possible.  However, in this case, it may be the quickest way to get your codebase to a clean starting state for the exercise.].  Please get help in an early team study session if you are unsure about this
 
@@ -139,7 +161,8 @@ We have created a Jenkins build for this tag, to help you choose a good starting
 
 If you place the tag at the wrong commit, and need to change it, you will need to delete it and recreate it.  Instructions for deleting tags can be found at the end of this document.
 
-It is expected that your development branch will start at this commit for exercise 2, so make sure your master branch is located at this commit before you start work on the features.  All feature branches for exercise 2 should begin at this tagged commit or a later commit.
+It is expected that your development branch will start at this commit for exercise 2, so make sure your master branch is located at this commit before you start work on the features.  All named feature branches for exercise 2 should begin at this tagged commit or a later commit on the development branch.
+
 
 #### Git Workflow {.unnumbered #gitworkflow}
 
@@ -152,9 +175,7 @@ Note that the branch names given on Blackboard are expected by the automated mar
 
 #### Best Practice Commit Messages {.unnumbered #bpcm}
 
-For this exercise, we ask you to gradually increase your Git skills by following best practice in terms of the commit messages you use.  We ask you to adopt the style of commit message recommended by GitHub.  Details of this format can be found on Blackboard
-
-<!--\footnote{Under {\tt Course Content\arrow Week 7} and {\tt Assessment\arrow Team Coursework\arrow Exercise 2\arrow Related Documents.}}.-->
+For this exercise, we ask you to gradually increase your Git skills by following best practice in terms of the commit messages you use.  We ask you to adopt the style of commit message recommended by GitHub.  Details of this format can be found on Blackboard under the Course Content for week 6 ("Git Workflows").
 
 An example of a commit message that follows the format we want you to use is:
 
@@ -169,7 +190,7 @@ Please note that all team members must use their own GitLab account to commit an
 [wiki.cs.manchester.ac.uk/index.php/Gitlab/Git_Setup](https://wiki.cs.manchester.ac.uk/index.php/Gitlab/Git_Setup)
 
 
-Please make sure you set the `user.name` and `user.email` variables on all machines you intend to commit from.
+Please make sure you set the `user.name` and `user.email` variables on all machines you intend to commit from.  Commits made from other accounts will not be considered to be part of your team's submission for the exercise.
 
 
 #### Test-First Coding {.unnumbered #tfcode}
@@ -178,33 +199,35 @@ As in exercise 1, you are asked to write tests to describe the behaviour of the 
 
 Each sub-team should begin by writing at least two failing acceptance tests for the feature you plan to implement, following the test-first approach demonstrated in the workshops.  These tests should describe core elements of the features, not trivial side cases.  For example, a test where a quest is undertaken and completed in the quickest way would be considered core, while a test where a quest is refused at first offer is not.
 
-To help us assess and give feedback on your use of test-first development, we ask you to commit these two failing acceptance tests **before** you commit any of the production code changes that will make them pass, in a single commit.  You may make changes to these tests in later commits, as well (of course) as changes to production code.  But the first commit should contain two tests that are sufficiently complete in their implementation to allow the code to compile and run to an unstable build.  (This is not normal practice, but is something we are asking you to do in this exercise, to show that you understand the principle of test-first coding.)
+To help us assess and give feedback on your use of test-first development, we ask you to commit these two failing acceptance tests **before** you commit any of the production code changes that will make them pass.  You may make changes to these tests in later commits, as well (of course) as changes to production code.  But the first commits on the feature branch should contain two tests that are sufficiently complete in their implementation to allow the code to compile and run to an unstable build.  (Note that it is not normal practice to enforce the committing of new tests to a feature branch, although of course when using a test-first approach this tends to be what happens naturally.  We are taking a slightly stricter line on this than would be expected in practice, in order to help you demonstrate that you understand the principle of test-first coding and are able to apply it in practice.)
+
+To tell us when you have committed the test code and are ready to start working on the production code, we ask you to mark the final test code commit with a special tag.  The names of these tags are given on Blackboard.  Jenkins builds have been set up to build the commits marked by these tags, to allow you to heck you have positioned them correctly and to aid us in marking.
+
+
+#### Management of Test Coverage {.unnumbered #testcov}
 
 When writing tests for more extensive functionality changes, you may wonder when you have written enough tests and when you can stop.  This is a critical question for software developers, since writing tests is not free (neither in terms of developer time, nor the time required to run the tests).  For this coursework, we ask you to use test coverage to help you manage your tests, and determine whether you need to write more.
 
-Since this is the first time that most of you have used a test coverage tool, we are setting a fairly low coverage goal for this exercise.  We ask you to ensure that you maintain the overall instruction coverage level for the coursework set by the Stendhal team in the starting commit for the coursework.  So, your coverage goal for this exercise is:
-
-`50% instruction coverage for all classes`
+Since this is the first time that most of you have used a test coverage tool, we are setting a fairly low coverage goal for this exercise.  We ask you to ensure that you maintain the overall instruction coverage level for the coursework set by the Stendhal team in the starting commit for the coursework.  For most teams, this will be either 52% or 53% instruction coverage for all classes.
 
 We will mark your team's coverage using the instruction coverage for all classes, given in the “Overall Coverage Summary” values on your team's development branch build in Jenkins.
 
-If your team's coverage is lower than this value, you will need to use the coverage reports to find areas of the new code you have written that is not well covered by tests.  Looking at the instructions that were not executed during the test suite execution, you'll need to think of tests to add that will cause those instructions to be executed.
-
+If your team's coverage is lower than this value, you will need to use the coverage reports to find areas of the new code you have written that is not well covered by tests.  Looking at the instructions that were not executed during the test suite execution, you'll need to think of extra tests to add that will cause those instructions to be executed.
+(Obviously, these tests will necessarily be added after the main work on the production code has been completed.)
 
 
 #### Documenting Your Work {.unnumbered #docuwork}
 
-You should use the issue tracker and the team wiki to document any problems you encounter while implementing that require you to make changes to your plan or your team structure.  Discussion while implementing using other tools (such as Facebook or Slack) is obviously fine but remember that we can only mark what we can see.  Key decisions regarding who does what work, and changes to the planned scope for features that are running late, must be documented on your GitLab repository if we are to be able to take them into account when marking.
+You should use the issue tracker and the team wiki to document any problems you encounter that require you to make changes to your plan or your team structure.  Discussion while implementing using other tools (such as Facebook or Slack) is obviously fine but remember that we can only mark what we can see.  Key decisions regarding who does what work, and changes to the planned scope for features that are running late, must be documented on your GitLab repository if we are to be able to take them into account when marking.
 
-An important piece of documentation to keep is the record of how long you have spent on the feature so far.  You should record this in your team's issue tracker on GitLab, using the  “time tracking” feature, as you did in exercise 1.  Information on how to use this is available from the side bar of each issue.  Note that you will need to record all the time spent by all sub-team members.  You will probably find it easier to update the time spent as you go along, rather than trying to remember and adding the total in at the end.
+An important piece of documentation to keep is the record of how long you have spent on the feature so far.  You should record this in your team's issue tracker on GitLab, using the  “time tracking” feature, as you did in exercise 1.  Information on how to use this is available from the side bar of each issue.  Note that you will need to record all the time spent by all sub-team members.  You will probably find it easier to update the time spent as you go along, rather than trying to remember and adding the total in at the end but either strategy is acceptable.
 
 For this exercise, there is no need to record the times for the different tasks (writing tests, implementation, merging) though you may wish to do this for your own personal reference.
 
 
-
 ### Step 4: Code Review {#codereview4}
 
-For this exercise, we are asking you to start to make use of an additional code quality management technique: code reviews.  Your goal is to ensure that no code is merged into the development branch without having an independent team member look over it and check for errors or code quality problems.  You will lose marks if unreviewed code is merged into the development branch.
+For this exercise, we ask you to start to make use of an additional code quality management technique: code reviews.  Your goal is to ensure that no code is merged into the development branch without having an independent team member look over it and check for errors or code quality problems.  You will lose marks if unreviewed code is merged into the development branch.
 
 Both test code and production code changes must be reviewed.  You can choose whether to review individual commits as you proceed, or to review the whole code for a branch before merging.
 
@@ -212,12 +235,12 @@ Reviews must be given using the GitLab commit comment feature, or through merge 
 
 Every contributing team member must perform at least one review in GitLab across the exercise.
 
-A guide to performing code review can be found under `Course Content` on Blackboard.
+A guide to performing code review can be found in the online course handbook.
 
 
 ### Step 5: Integrate Completed Features into the Development Branch {#devbranch}
 
-When you are satisfied that a feature branch contains code that is fit to be integrated into the game, you should merge the feature branch into the development branch.  For this exercise, **we ask that you use non-fast-forward merges for all merges of your feature branch into the development branch*^[For this coursework, you are asked not to use rebase when integrating feature branch commits into the development branch.  There are lots of good reasons to use rebase, but it really only makes sense when used in conjunction with Git features for creating a tidy commit history.  Our goal at this stage in your degree is for you to be comfortable with the simpler merge approach.  If you want to get some experience with rebase (a good idea), you can create a separate clone of your team's repository and hack it about to your heart's content, without putting your team's coursework mark at risk by trying to push any of the results.].  To do this in Eclipse, use the `Team` > `Merge` command from the project context menu, and select the option to create a merge commit in the event of a fast-forward merge shown in figuree \@ref(fig:NonFFMergeOption-fig)
+When you are satisfied that a feature branch contains code that is fit to be integrated into the game, you should merge the feature branch into the development branch.  For this exercise, **we ask that you use non-fast-forward merges for all merges of your feature branch into the development branch*^[For this coursework, you are asked not to use rebase when integrating feature branch commits into the development branch.  There are lots of good reasons to use rebase for code integration, but it really only makes sense when used in conjunction with Git features for creating a tidy commit history.  Our goal at this stage in your degree is for you to be comfortable with the simpler merge approach.  If you want to get some experience with rebase (a good idea), you can create a separate clone of your team's repository and hack it about to your heart's content, without putting your team's coursework mark at risk by trying to push any of the results of your experimentation to it.  Note that you can also get practice with using rebase to synchronise with your team repository, as described in the [team study article on that topic](https://software-eng.netlify.app/syncing.html).].  To do this in Eclipse, use the `Team` > `Merge` command from the project context menu, and select the option to create a merge commit in the event of a fast-forward merge shown in figure \@ref(fig:NonFFMergeOption-fig).
 
 ```{r NonFFMergeOption-fig, echo = FALSE, fig.align = "center", out.width = "80%", fig.cap = "Non Fast Forward Merge Option in Eclipse"}
 knitr::include_graphics("images/NonFFMergeOption.png")
@@ -225,14 +248,11 @@ knitr::include_graphics("images/NonFFMergeOption.png")
 
 Unfortunately, the handy merge option accessible through the History View doesn't give the chance to request this option, so should not be used for merges of your feature branch into the development branch.  If you use this version of merge by mistake, don't panic.  Fast forward merges are easily undone just after you make them by resetting master to the commit it was at before the merge was made *provided you have not pushed your merge to your team's remote*.  Please continue to make merges locally, checking them in the History View before carrying out the merge in your team's remote.
 
-
-
-You should use merge requests for this coursework exercise, to provide a  “quality gate” for code, to prevent it from being integrated into the development branch before it has undergone code review.  GitLab will perform the merge itself through merge requests if you request it, but you are advised to use caution with this option.  It is very easy to create an incorrect merge using merge requests unless you really understand how they work.  Worse still is that they create a merge directly into your team's remote repository, making it difficult to fix any merge errors that have been made.  Even if you plan to create the merge through a merge request, we still recommend checking the merge out on a temporary local branch before pressing any GitLab merge buttons.  (We've also set up Jenkins jobs to merge your feature branches into the development branch on each commit, to give you early warning of any problems that might arise---these builds are true “continuous integration” builds.  The merges are carried out on Jenkins and are thrown away once the next build takes place.  The merge will not be pushed to your team's repository.)
-
+You should use merge requests for this coursework exercise, to provide a  “quality gate” for code, to prevent it from being integrated into the development branch before it has undergone code review.  GitLab will perform the merge itself through merge requests if you request it, but you are advised to use caution with this option.  It is very easy to create an incorrect merge using merge requests unless you really understand how they work.  Worse still is that they create a merge directly into your team's remote repository, making it difficult to fix any merge errors that have been made.  Even if you plan to create the merge through a merge request, we still recommend checking the merge out on a temporary local branch before pressing any GitLab merge buttons.  (We've also set up Jenkins jobs to merge your feature branches into the development branch on each commit, to give you early warning of any problems that might arise---these builds are true “continuous integration” builds.  The merges are carried out on Jenkins and are thrown away once the next build takes place.  The merge will not be pushed bck to your team's repository.)
 
 We will assume that new issues will be created for the remaining releases for this feature.  Therefore, once your feature branch has been merged into the development branch, and the resulting commit produces a clean stable build, and you have observed the feature working in game, you can consider the issue to be closed and should update its status in the issue tracker.  Don't forget to add the time required to carry out the merge to the issue's time tracker.
 
-Issues for un-merged features should be left open, even if some commits have been made for them.  The team needs to know that this feature was not completed, so they can return to it in a future release should customer interest in the functionality proposed make the effort worthwhile.
+Issues for un-merged features should be left open, even if some commits have been made for them.  The team needs to know that this feature's canary release was not completed, so they can return to it in future should customer interest in the functionality proposed make the effort worthwhile.
 
 
 ### Step 6: Prepare the Release {#reeleaseprep}
@@ -240,7 +260,7 @@ Issues for un-merged features should be left open, even if some commits have bee
 The final technical step is to prepare the release.  Although several team members may contribute commits for this process, a single team member should take responsibility for making sure the release is created correctly.  This team member should create an issue for this task called:
 
 
-`Prepare release 1.32uom`
+`Prepare release 1.37uom`
 
 This issue should be associated with the coursework 2 milestone, and assigned to whichever team member is taking responsibility for carrying out the release task.
 
@@ -249,7 +269,7 @@ Choose the commit on the development branch which will form the basis for the re
 Once again, you will need to update:
 
 
-1. The version number of the software is updated (to 1.32uom).
+1. The version number of the software is updated (to 1.37uom).
 1. The `doc/AUTHORS.txt` file
 1. The description of the changes included in the release in the `doc/CHANGES.txt` file.
 
@@ -258,17 +278,16 @@ You can make these changes directly on the development branch (or you can use a 
 When you have created a commit that contains all the code and documentation you want to release, you should mark this by adding a *tag* at that commit.  The tag **must** be called:
 
 
-`VERSION_01_RELEASE_32_UOM`
+`VERSION_01_RELEASE_37_UOM`
 
 This is the version of the code that we will consider to be your released code, when we are marking.  So, it is important that you place it at the right place.  You can create the tag locally and push it, or you can use the GitLab web interface to create the tag once the release commits have been pushed.
 
 
-
 ### Step 7: Prepare for the Marking Interview {#interviewprep}
 
-You are done with the technical work at this stage, but there is one more task to do: prepare your team for the marking interview in week 9.  In this interview, your TA will ask you to demonstrate some of your features in the released code, and will discuss with you how you have organised your work to balance load across the team and what monitoring steps you've taken to keep the work of the team on track for the deadline.
+You are done with the technical work at this stage, but there is one more task to do: prepare your team for the marking interview for the exercise.  In this interview, your GTA will ask you to demonstrate some of your features in the released code, and will discuss with you how you have organised your work to balance load across the team and what monitoring steps you've taken to keep the work of the team on track for the deadline.
 
-More information about the timing, location and format of this interview can be found in chapter \@ref(timetabling)
+More information about the timing, location and format of this interview can be found in chapter \@ref(timetabling).
 
 Note that all team members must attend the marking interview, and any team member may be asked to demonstrate and talk about the issue they were responsible for.  **Any team member who fails to attend and who has not registered a legitimate excuse with SSO or a member of the course team will receive an automatic 50% penalty on their mark for the exercise.**  Team members who attend the interview will be unaffected by this penalty.
 
@@ -278,7 +297,7 @@ Note that all team members must attend the marking interview, and any team membe
 
 All submission of work for this coursework exercise is through your team's GitLab repository.  All you have to do is make sure the contents of your issue tracker, wiki, commit comments and Git repository are ready to be marked by the deadline.  There is nothing else you have to submit.
 
-Once the deadline is passed, an automated process will clone your repository and the state of your issue tracker.  The automated process and the TAs will mark based on this clone, so no changes you make to the repository after the deadline will have any affect on your team mark.
+Once the deadline is passed, you will lose developer access to your repository and will no longer be able to push any commits or change any references.  You will still have access to the issue tracker, but since all actions on the issue tracker are time-stamped, any changes you make after the deadline will be ignored for the purposes of marking the work.
 
 
 ## Coursework Extensions {#xtensions}
@@ -290,12 +309,14 @@ If you are not going to be able to carry out the work for your issue by the dead
 
 ## Non-Contributing Team Members {#nctm}
 
-Every team member is expected to contribute some meaningful code to the team's repository.  Commits on feature branches should be made by the members of the sub-team recorded as responsible for the feature in the issue tracker.
+Every team member is expected to contribute some meaningful code to the team's repository.
 
 ::: {.rmdcaution}
 (ref:cautionbox)
 
-Any student who has not made at least one meaningful commit to their team repository, from their School GitLab account, during the period covered by the exercise, will automatically receive a mark of 0 for the whole exercise.
+Any student who has not been assigned to a sub-team for an issue, whether as lead or as sub-team member, by the deadline for the coursework, will automatically received a mark of 0 for the whole exercise.
+
+Any student who has not made at least one meaningful commit to their team repository, from their student account on our GitLab server, during the period covered by the exercise, will automatically receive a mark of 0 for the whole exercise.
 
 This applies even if you decide to work in pairs on the issues.  Sitting and watching someone else make a commit, even if you are telling them what to type, does not count as a commit from you.  The commit must be made and pushed from your own GitLab account.
 
@@ -309,11 +330,11 @@ A meaningful commit is one that contributes code changes to either test or produ
 
 If a team member contributes something, but does much less than others or contributes their work in a way that causes problems for the rest of the team, the team as a whole can choose to reduce the mark of that student.  For this to happen, you must:
 
-1. Send an e-mails to the student as soon as the problem is noticed, pointing out the difficulties they are causing for the team, and asking them to say what they can do to resolve matters.  CC this e-mail to Suzanne, so we have a formal record of the communication.
+1. Send an e-mails to the student as soon as the problem is noticed, pointing out the difficulties they are causing for the team, and asking them to say what they can do to resolve matters.  CC this e-mail to Duncan, so we have a formal record of the communication.
 1. Set a deadline for the team's work that is sufficiently far ahead of the actual deadline, so you have time to chase people who don't deliver.
 1. Before the team interview, send an e-mail to Suzanne *and* the offending team member letting them know that the team will propose a reduced mark for them at the interview.
-1. At the interview, raise the issue with the TA, who will document the circumstances on your marking form, along with details of the proposed mark reduction.  If the affected team member agrees, the proposed reduction will be applied at that point.
-1. If team agreement on the mark reduction cannot be reached, the whole team will need to meet with Suzanne to agree a way forward.
+1. At the interview, raise the issue with your GTA, who will document the circumstances on your marking form, along with details of the proposed mark reduction.  The opinion of the affected team member will also be recorded, if they are present.
+1. If team agreement on the mark reduction cannot be reached, the whole team will need to meet with Duncan to agree a way forward.
 
 
 Note that this process is not necessary for team members who have not made any commits in your team repository, as they will automatically receive a mark of 0 in this case.
@@ -328,7 +349,7 @@ This coursework is subject to the University's policies on plagiarism.  Details 
 [studentnet.cs.manchester.ac.uk/assessment/plagiarism.php?view=ug](http://studentnet.cs.manchester.ac.uk/assessment/plagiarism.php?view=ug)
 
 
-Note that committing the work of other people from your GitLab account counts as plagiarism, and action will be taken when it is detected.  Rebasing commits authored by others does not count as plagiarism, providing the original authorship information is retained in the commit.
+Note that committing the work of other people from your GitLab account counts as plagiarism, and action will be taken when it is detected.  Rebasing commits authored by others does not count as plagiarism, providing the original authorship information is retained in the commit metadata.
 
 
 
@@ -349,8 +370,6 @@ You can check that the tag now refers to the correct commit using the command:
 `% git rev-list -1 <tag name>`
 
 It is recommended that operations on your team repository, such as correcting the location of a tag, are done in a team study session, when all the team is present and able to carry out the necessary commands on their local repositories at the same time.
-
-
 
 
 
