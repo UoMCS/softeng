@@ -60,7 +60,7 @@ You will document your release plans by placing them in the wiki of your team's 
 
 [gitlab.cs.man.ac.uk/comp23311_2021/stendhal_S1Team107/wikis/slow-innkeeper](https://gitlab.cs.man.ac.uk/comp23311_2021/stendhal_S1Team107/wikis/slow-innkeeper)
 
-The release plans for this stage can be quite high level and short.  The aim is to do just enough planning to allow you to make good decisions about which features to commit to deliver, in the next step. 
+The release plans for this stage can be quite high level and short.  The aim is to do just enough planning to allow you to make good decisions about which features to commit to deliver, in the next step.
 
 Please use the following text for the header for this section of the wiki page, so that we can generate links to your release plans in our instructions to GTAs for marking:
 
@@ -91,7 +91,7 @@ For each selected issue, you should create a work-breakdown structure (WBS) to c
 Please use the following text for the header for this section of the wiki page, so that we can generate links to your WBSs in our instructions to GTAs for marking:
 
     ## Work Breakdown Structure
-    
+
 
 ### Step 2.3: Planning for the Implementation {#plimp}
 
@@ -104,7 +104,7 @@ All these decisions should be documented in your issue tracker, as described bel
 
 Since the features we have set are more substantial coding tasks than the bugs you fixed in the first exercise, you will need to work together, in groups of 2 or 3, to implement some of the selected features.  That is, you will break your team down into sub-teams, each of which will be responsible for delivery of the first release for an individual feature.  Such teams are sometimes called "feature teams".
 
-A common cause of failure in team work is when all members of the team assume that some crucial task will be done by someone else.  To avoid this, it is important to assign a lead member for each sub-team.  This person is responsible for the detailed planning for their issue, for scoping it down, for coordinating the implementation work amongst the 
+A common cause of failure in team work is when all members of the team assume that some crucial task will be done by someone else.  To avoid this, it is important to assign a lead member for each sub-team.  This person is responsible for the detailed planning for their issue, for scoping it down, for coordinating the implementation work amongst the
 members of the sub-team, and for documenting the work as needed for marking.  This does not mean that the team leader does all these tasks alone---it means only that the team lead is the person who will check that these tasks are all done and that everyone is clear about what they need to do and by when.  Apart from that, the way the tasks are shared amongst the sub-team members is up to you.  But it is expected that all sub-team members, including the leader, will do some coding for their issue, to allow them to meet the requirement that at least one meaningful commit be made for the coursework by every team member.
 
 Team leads should be assigned as the responsible person for the issue in the issue tracker.
@@ -287,7 +287,7 @@ This is the version of the code that we will consider to be your released code, 
 
 You are done with the technical work at this stage, but there is one more task to do: prepare your team for the marking interview for the exercise.  In this interview, your GTA will ask you to demonstrate some of your features in the released code, and will discuss with you how you have organised your work to balance load across the team and what monitoring steps you've taken to keep the work of the team on track for the deadline.
 
-More information about the timing, location and format of this interview can be found in chapter \@ref(timetabling).
+More information about the timing, location and format of this interview can be found in section \@ref(mint).
 
 Note that all team members must attend the marking interview, and any team member may be asked to demonstrate and talk about the issue they were responsible for.  **Any team member who fails to attend and who has not registered a legitimate excuse with SSO or a member of the course team will receive an automatic 50% penalty on their mark for the exercise.**  Team members who attend the interview will be unaffected by this penalty.
 

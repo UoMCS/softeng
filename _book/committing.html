@@ -239,7 +239,7 @@ Figure 21.11: Our team remote graph
 Figure 21.12: A simple commit made by the Stendhal development team
 </p>
 </div>
-<p>This shows the change introduced by the commit. The red coloured lines (starting with <code><a href="https://rdrr.io/r/base/Arithmetic.html">-</a></code>) are lines that have been deleted, and the green coloured lines (starting with <code><a href="https://rdrr.io/r/base/Arithmetic.html">+</a></code>) are lines that have been added in the commit. Git stores the 3 lines before the change and the three lines after the change, to allow it to work out where the change should be applied. (Line numbers are also shown, but can’t be relied upon entirely - if lines are added or removed to the part of the file before this, then the line numbers will be completely inaccurate.)</p>
+<p>This shows the change introduced by the commit. The red coloured lines (starting with <code>-</code>) are lines that have been deleted, and the green coloured lines (starting with <code>+</code>) are lines that have been added in the commit. Git stores the 3 lines before the change and the three lines after the change, to allow it to work out where the change should be applied. (Line numbers are also shown, but can’t be relied upon entirely - if lines are added or removed to the part of the file before this, then the line numbers will be completely inaccurate.)</p>
 <p>Although this change was made to a specific version of the code, the same change can be made to <em>any</em> version that includes this file, in a version that contains the lines that are modified by the commit and the preceding and following lines that identify them. In other words, the commit can be taken and replayed in some other part of the commit graph. Provided the affected parts of the files are the same, the commit makes just as much sense when replayed as it does when originally applied. This is rebasing.</p>
 <p>We can use this notion to integrate our work, with the work of the team.
 Before we show how to use rebase in the case of our merged feature branch, we’ll first illustrate the idea through some simpler scenarios.</p>
@@ -370,7 +370,7 @@ Instead, you need to get your repository into a state where it can be pushed, wi
 <p>This is by no means the only workflow you could use, and we certainly don’t claim it as the best in all circumstances. But it is an approach that allows you to gain the core Git skills that will enable you to use any workflow that you may be called up on to comply with in future projects.</p>
 <p>One major omission from this document is any discussion of what happens when we encounter conflicts while integrating code or synchronising our repository. We’ve chosen the issues for exercise 1 to try to avoid conflicts, but you will definitely encounter them in the second team coursework exercise, when you start to work on larger features in sub-teams. We’ll cover handling conflicts in another learning resource for the unit.</p>
 <p>Good luck!</p>
-<p><code>Document version:</code> 14 November, 2021</p>
+<p><code>Document version:</code> 15 November, 2021</p>
 
 </div>
 </div>
