@@ -3,7 +3,10 @@
 The weekly schedule for autumn 2021 is shown in table \@ref(tab:schedtable), based on [timetables.manchester.ac.uk](https://timetables.manchester.ac.uk/), see also [manchester.ac.uk/discover/key-dates](https://www.manchester.ac.uk/discover/key-dates/) key dates.
 
 * Other than the introductory lecture in week 1, there are no lectures. Instead we have workshops which are more like labs and may contain mini-lectures
-* Workshops are on Tuesday or Friday afternoon depending on your lab group,
+* Workshops are on Tuesday or Friday afternoon depending on your lab group
+    * [bit.ly/Tuesday-3pm-workshop](http://bit.ly/Tuesday-3pm-workshop)
+    * [bit.ly/Tuesday-4pm-workshop](http://bit.ly/Tuesday-4pm-workshop)
+    * [bit.ly/friday-1pm-workshop](http://bit.ly/friday-1pm-workshop)
 * Team study sessions are on Tuesdays at 10am and Thursday at 11am.
 
 For online activities, everything is on Microsoft Teams. Because of constraints on the number of private channels in Teams, the year is arbitrarily split into two spaces:
