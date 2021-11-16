@@ -155,7 +155,7 @@ Teams with a clean build for their development branch in Jenkins should be okay 
 **Once a suitable starting commit has been identified or created, one member of your team should create a tag pointing to that commit.  The tag should be called:**
 
 
-`COMP23311/EX2/starting_point`
+`EX2_START`
 
 We have created a Jenkins build for this tag, to help you choose a good starting point for your work for this exercise.  Push the tag to your candidate starting commit and then manually request that the job be built (You'll need to build this job manually if you push this tag without code changes.)
 
