@@ -77,11 +77,11 @@ To allow this, we have given you a selection of issues describing new features f
 
 Each feature you implement is worth 10 marks, if implemented perfectly against the criteria in the marking scheme.  However, we have set a cap on the number of marks you can achieve for the implementation of features.  This means that if you select too many features to implement, you will be wasting your time, as you will not be able to achieve more marks for the additional work done.  Your aim is not to work long hours in order to achieve more than is needed, but instead to think about how you can use your time effectively, to deliver the expected amount of value in the fewest person hours.
 
-Since this is a somewhat unsual approach to coursework, we have provided a spreadsheet that will help you in making your choice of features to implement.  The spreadsheet will allow you to see the effects of your choices on the mark you will achieve, based on your predictions for the mark you'll be awarded for each individual component of the work.  The link to this spreadsheet will be released on Blackboard at the same time as the other materials needed to complete the coursework are released.
+Since this is a somewhat unsual approach to coursework, we have provided a spreadsheet that will help you in making your choice of features to implement. The spreadsheet will allow you to see the effects of your choices on the mark you will achieve, based on your predictions for the mark you'll be awarded for each individual component of the work. The spreadsheet can be found at [bit.ly/coursework-2-mark-scheme](https://bit.ly/coursework-2-mark-scheme)
 
 **Remember when selecting issues that you will only need to implement the first of the releases in your release plan for each selected issue.**
 
-Once you have decided which features you will not be delivering in this release, you should remove them from the Coursework 2 Milestone.  Only the issues you are committing to deliver should be associated with this milestone by the deadline for the exercise.  RoboTA will mark the set of issues associated with the coursework milestone, so it is in your interests to make sure this is accurate before your coursework is marked.
+Once you have decided which features you will not be delivering in this release, you should remove them from the Coursework 2 Milestone. Only the issues you are committing to deliver should be associated with this milestone by the deadline for the exercise.  RoboTA will mark the set of issues associated with the coursework milestone, so it is in your interests to make sure this is accurate before your coursework is marked.
 
 
 ### Step2.2: Creating a Work Breakdown Structure for the Selected Issues
@@ -114,7 +114,7 @@ All other sub-team members for each issue must be recorded on the issue tracker,
 
 `Sub-team member: <URL of GitLab profile of team member>`
 
-GitLab profile links have the form: [https://gitlab.cs.man.ac.uk/name](https://gitlab.cs.man.ac.uk/name), where `name` is a GitLab username.  Multiple sub-team members may be recorded in separate comments, or in a single comment with newlines between the sentences.  You do not need to record the team lead as a sub-team member.
+GitLab profile links have the form: [gitlab.cs.man.ac.uk/name](https://gitlab.cs.man.ac.uk/name), where `name` is a GitLab username.  Multiple sub-team members may be recorded in separate comments, or in a single comment with newlines between the sentences.  You do not need to record the team lead as a sub-team member.
 
 Note that to receive marks for the coursework, every team member must be assigned to a sub-team for the exercise, either as lead or as a sub-team member, and must make a meaningful commit contributing towards the implementation of the feature their sub-team is assigned to implement.  Work allocation must be designed to ensure that all team members are able to meet the criteria for receiving marks.
 
