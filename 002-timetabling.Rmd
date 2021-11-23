@@ -35,7 +35,7 @@ io_table <- tibble::tribble(
   "~~**5**: 25th Oct~~"             , "~~Test first development, see (ref:weekfive)~~", "~~TeamCwk1, 29th Oct, 6pm~~",
   "~~**6**: 1st Nov~~"              , "~~Reading week see (ref:weeksix)~~", "",
   "~~**7**: 8th Nov~~"              , "~~Git workflows, see (ref:weekseven)~~",  "",
-  "**8**: 15th Nov"             , "Software refactoring, see (ref:weekeight)", "Mentoring week 2",
+  "~~**8**: 15th Nov~~"             , "~~Software refactoring, see (ref:weekeight)~~", "~~Mentoring week 2~~",
   "**9**: 22nd Nov"            , "Design for testability, see (ref:weeknine)", "",
   "**10**: 29th Nov"            , "Design patterns, see (ref:weekten)", "TeamCwk2, Fri 3rd Dec, 6pm",
   "**11**: 6th Dec"             , "Risk management and practice exam, see (ref:weekeleven)", "",

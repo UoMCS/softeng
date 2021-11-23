@@ -56,11 +56,13 @@ Releases should be designed so that each one delivers a “playable” feature, 
 
 The first release should be designed to be a "canary release" (also sometimes called a "feature rollout").  That is, it should aim to test that the most risky part of the feature is both technically feasible and provides a sensible and enjoyable game play experience.  Therefore, for each first release, you must also give a short rationale for why you chose this part of the full feature to implement and deploy into the game first.  (Only 3-4 sentences of rationale are required.)
 
-You will document your release plans by placing them in the wiki of your team's GitLab project.  You should create a page in the wiki for each issue, using the page slugs shown on Blackboard (under `Assessment` > `Team Coursework` > `Exercise 2`.  For example, for team S1Team107, if the page slug for one issue is given as `slow-innkeeper`, then the wiki page for this issue would be reached at the following URL:
+You will document your release plans by placing them in the wiki of your team's GitLab project.  You should create a page in the wiki for each issue, using the page slugs shown on Blackboard (under `Assessment` > `Team Coursework` > `Exercise 2`.  For example, **for team S1Team107**, if the page slug for one issue is given as `slow-innkeeper`, then the wiki page for this issue would be reached at the following URL:
 
 [gitlab.cs.man.ac.uk/comp23311_2021/stendhal_S1Team107/wikis/slow-innkeeper](https://gitlab.cs.man.ac.uk/comp23311_2021/stendhal_S1Team107/wikis/slow-innkeeper)
 
-The release plans for this stage can be quite high level and short.  The aim is to do just enough planning to allow you to make good decisions about which features to commit to deliver, in the next step.
+`NOTE: YOU'LL NEED TO SUBSTITUTE YOUR TEAM NUMBER INTO THE URL ABOVE`
+
+The release plans for this stage can be quite high level and short. The aim is to do just enough planning to allow you to make good decisions about which features to commit to deliver, in the next step.
 
 Please use the following text for the header for this section of the wiki page, so that we can generate links to your release plans in our instructions to GTAs for marking:
 
