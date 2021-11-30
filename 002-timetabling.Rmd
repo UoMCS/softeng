@@ -148,9 +148,9 @@ Events in the week starting 13th December:
 
 ## Marking interview schedule {#mint}
 
-The schedule for marking interviews for team coursework 1 is shown below:
+The schedule for marking interviews for team coursework 2 is shown below:
 
-| Interviewer | 9 Nov, 10.00am | 9 Nov, 10.30am | 11 Nov, 11.00am | 11 Nov, 11.30am | 16 Nov, 10.00am |  16 Nov, 10.30am
+| Interviewer | 7 Dec, 10.00am | 7 Dec, 10.30am | 9 Dec, 11.00am |9 Dec, 11.30am | 14 Dec, 10.00am |  14 Dec, 10.30am
 |-----------------------|--------------------|--------------------|--------------------|--------------------------|--------------------------|--------------------------|
 | Hugo Lefeuvre       | Team01           | Team11            | Team21            | Team31            | Team41  |    Team51 |
 | Dominic Duxbury     | Team02           | Team12            | Team22            | Team32            | Team42  |    Team52 |
