@@ -182,151 +182,151 @@
 \contentsline {chapter}{\numberline {13}Industrial mentoring}{159}{chapter.13}%
 \contentsline {section}{\numberline {13.1}When are the mentoring sessions?}{160}{section.13.1}%
 \contentsline {section}{\numberline {13.2}I'm interested, how can I register?}{160}{section.13.2}%
-\contentsline {section}{\numberline {13.3}About us}{161}{section.13.3}%
+\contentsline {section}{\numberline {13.3}About us}{160}{section.13.3}%
 \contentsline {section}{\numberline {13.4}About the course}{161}{section.13.4}%
 \contentsline {section}{\numberline {13.5}About the Mentoring Scheme}{162}{section.13.5}%
 \contentsline {section}{\numberline {13.6}Meeting agenda}{162}{section.13.6}%
 \contentsline {subsection}{\numberline {13.6.1}Getting to know your team}{162}{subsection.13.6.1}%
-\contentsline {subsection}{\numberline {13.6.2}Challenging and guiding the team}{163}{subsection.13.6.2}%
+\contentsline {subsection}{\numberline {13.6.2}Challenging and guiding the team}{162}{subsection.13.6.2}%
 \contentsline {subsection}{\numberline {13.6.3}Questions the Students Might Ask Mentors}{163}{subsection.13.6.3}%
 \contentsline {section}{\numberline {13.7}What do mentors get in return?}{164}{section.13.7}%
 \contentsline {section}{\numberline {13.8}Who are the mentors?}{164}{section.13.8}%
-\contentsline {chapter}{\numberline {14}Your mentor}{167}{chapter.14}%
-\contentsline {section}{\numberline {14.1}Introducing your team}{167}{section.14.1}%
-\contentsline {section}{\numberline {14.2}But I'm not interested in employer x?}{169}{section.14.2}%
-\contentsline {chapter}{\numberline {15}Synchronising}{171}{chapter.15}%
-\contentsline {section}{\numberline {15.1}Introduction}{171}{section.15.1}%
-\contentsline {section}{\numberline {15.2}Making a Local Commit}{172}{section.15.2}%
-\contentsline {section}{\numberline {15.3}Step 2: Pushing the Commit to the Team Repository}{174}{section.15.3}%
-\contentsline {section}{\numberline {15.4}Step 3: Fetching the New Commit from the Team Repository}{177}{section.15.4}%
-\contentsline {section}{\numberline {15.5}Step 4: Incorporating the Commit into Your Local Branch}{180}{section.15.5}%
-\contentsline {section}{\numberline {15.6}A Final Word}{182}{section.15.6}%
-\contentsline {part}{III\hspace {1em}Coursework}{183}{part.3}%
-\contentsline {chapter}{\numberline {16}Individual Coursework 1}{185}{chapter.16}%
-\contentsline {section}{\numberline {16.1}Introduction}{185}{section.16.1}%
-\contentsline {section}{\numberline {16.2}About the Coursework}{186}{section.16.2}%
-\contentsline {subsection}{\numberline {16.2.1}Key Information}{186}{subsection.16.2.1}%
-\contentsline {subsection}{\numberline {16.2.2}Submission Procedure}{186}{subsection.16.2.2}%
-\contentsline {subsection}{\numberline {16.2.3}Marking Scheme}{187}{subsection.16.2.3}%
-\contentsline {subsection}{\numberline {16.2.4}Pre-Deadline Feedback}{188}{subsection.16.2.4}%
-\contentsline {subsection}{\numberline {16.2.5}Late Submissions}{188}{subsection.16.2.5}%
-\contentsline {subsection}{\numberline {16.2.6}Plagiarism}{189}{subsection.16.2.6}%
-\contentsline {subsection}{\numberline {16.2.7}How to Get Help}{189}{subsection.16.2.7}%
-\contentsline {section}{\numberline {16.3}The Coursework Instructions}{189}{section.16.3}%
-\contentsline {subsection}{\numberline {16.3.1}Step One: Start Eclipse}{189}{subsection.16.3.1}%
-\contentsline {subsection}{\numberline {16.3.2}Step Two: Clone a GitLab Repository in Eclipse}{190}{subsection.16.3.2}%
-\contentsline {subsection}{\numberline {16.3.3}Step Three: Identify the Bug}{196}{subsection.16.3.3}%
-\contentsline {subsection}{\numberline {16.3.4}Step four: Create a Branch for Your Own Changes}{199}{subsection.16.3.4}%
-\contentsline {subsection}{\numberline {16.3.5}Step five: Commit a Change to the New Branch}{201}{subsection.16.3.5}%
-\contentsline {subsection}{\numberline {16.3.6}Step six: Merge your Changes}{209}{subsection.16.3.6}%
-\contentsline {subsection}{\numberline {16.3.7}Step seven: Push the Changes to the Remote Repository}{212}{subsection.16.3.7}%
-\contentsline {subsection}{\numberline {16.3.8}Step 8: Record the Project Status in the Issue Tracker}{214}{subsection.16.3.8}%
-\contentsline {subsection}{\numberline {16.3.9}Coursework Complete}{214}{subsection.16.3.9}%
-\contentsline {chapter}{\numberline {17}Individual Coursework 2}{217}{chapter.17}%
-\contentsline {section}{\numberline {17.1}Introduction}{217}{section.17.1}%
-\contentsline {section}{\numberline {17.2}About the Coursework}{219}{section.17.2}%
-\contentsline {subsection}{\numberline {17.2.1}Key Information}{219}{subsection.17.2.1}%
-\contentsline {subsection}{\numberline {17.2.2}Marking Scheme}{219}{subsection.17.2.2}%
-\contentsline {subsection}{\numberline {17.2.3}Pre-Deadline Feedback}{220}{subsection.17.2.3}%
-\contentsline {subsection}{\numberline {17.2.4}Submission Procedure}{221}{subsection.17.2.4}%
-\contentsline {subsection}{\numberline {17.2.5}Late Submissions}{221}{subsection.17.2.5}%
-\contentsline {subsection}{\numberline {17.2.6}Plagiarism}{222}{subsection.17.2.6}%
-\contentsline {subsection}{\numberline {17.2.7}How to Get Help}{222}{subsection.17.2.7}%
-\contentsline {section}{\numberline {17.3}The Coursework Instructions}{222}{section.17.3}%
-\contentsline {subsection}{\numberline {17.3.1}Step one: Clone and Import the Project into Eclipse}{222}{subsection.17.3.1}%
-\contentsline {subsection}{\numberline {17.3.2}Step two: Run and Understand the Test Cases for the Feature}{223}{subsection.17.3.2}%
-\contentsline {subsection}{\numberline {17.3.3}Step three: Implement the Feature/Make the Tests Pass}{224}{subsection.17.3.3}%
-\contentsline {subsection}{\numberline {17.3.4}Step four: Commit and Push the Feature Implementation}{226}{subsection.17.3.4}%
-\contentsline {subsection}{\numberline {17.3.5}Step five: Merge your Code into the Development Branch}{226}{subsection.17.3.5}%
-\contentsline {subsection}{\numberline {17.3.6}Step six: Resolve the Conflicts and Complete the Merge}{228}{subsection.17.3.6}%
-\contentsline {subsubsection}{\numberline {17.3.6.1}Walkthrough of the Conflict Resolution Process}{228}{subsubsection.17.3.6.1}%
-\contentsline {subsubsection}{\numberline {17.3.6.2}Now It's Your Turn}{234}{subsubsection.17.3.6.2}%
-\contentsline {subsection}{\numberline {17.3.7}Step seven: Push the Completed Merge to the Remote Repository}{235}{subsection.17.3.7}%
-\contentsline {subsection}{\numberline {17.3.8}Step eight: Update the Issue Tracker and Request Marking}{236}{subsection.17.3.8}%
-\contentsline {subsection}{\numberline {17.3.9}Messed Up?}{236}{subsection.17.3.9}%
-\contentsline {subsection}{\numberline {17.3.10}Coursework Complete}{236}{subsection.17.3.10}%
-\contentsline {chapter}{\numberline {18}Team Coursework 1}{237}{chapter.18}%
-\contentsline {section}{\numberline {18.1}Overview}{237}{section.18.1}%
-\contentsline {section}{\numberline {18.2}What You Have to Do}{238}{section.18.2}%
-\contentsline {subsection}{\numberline {18.2.1}Step one}{238}{subsection.18.2.1}%
-\contentsline {subsection}{\numberline {18.2.2}Step two}{238}{subsection.18.2.2}%
-\contentsline {subsection}{\numberline {18.2.3}Step three}{239}{subsection.18.2.3}%
-\contentsline {subsection}{\numberline {18.2.4}Step four}{240}{subsection.18.2.4}%
-\contentsline {subsection}{\numberline {18.2.5}Step five}{240}{subsection.18.2.5}%
-\contentsline {subsection}{\numberline {18.2.6}Step six}{241}{subsection.18.2.6}%
-\contentsline {subsection}{\numberline {18.2.7}Step seven}{241}{subsection.18.2.7}%
-\contentsline {subsection}{\numberline {18.2.8}Step eight}{242}{subsection.18.2.8}%
-\contentsline {subsection}{\numberline {18.2.9}Step nine}{243}{subsection.18.2.9}%
-\contentsline {subsection}{\numberline {18.2.10}Step ten}{244}{subsection.18.2.10}%
-\contentsline {section}{\numberline {18.3}Submission of Your Team's Work}{245}{section.18.3}%
-\contentsline {section}{\numberline {18.4}Coursework Extensions}{245}{section.18.4}%
-\contentsline {section}{\numberline {18.5}Non-Contributing Team Members}{246}{section.18.5}%
-\contentsline {section}{\numberline {18.6}Partially Contributing Team Members}{247}{section.18.6}%
-\contentsline {section}{\numberline {18.7}Plagiarism}{247}{section.18.7}%
-\contentsline {chapter}{\numberline {19}Team Coursework 2}{249}{chapter.19}%
-\contentsline {section}{\numberline {19.1}Overview}{249}{section.19.1}%
-\contentsline {section}{\numberline {19.2}What You Have to Do}{250}{section.19.2}%
-\contentsline {subsection}{\numberline {19.2.1}Step 1: Release Planning}{250}{subsection.19.2.1}%
-\contentsline {subsection}{\numberline {19.2.2}Step 2: Issue Planning}{252}{subsection.19.2.2}%
-\contentsline {subsection}{\numberline {19.2.3}Step2.1: Choosing your Issues}{252}{subsection.19.2.3}%
-\contentsline {subsection}{\numberline {19.2.4}Step2.2: Creating a Work Breakdown Structure for the Selected Issues}{253}{subsection.19.2.4}%
-\contentsline {subsection}{\numberline {19.2.5}Step 2.3: Planning for the Implementation}{253}{subsection.19.2.5}%
-\contentsline {subsection}{\numberline {19.2.6}Step 3: Testing and Implementation}{255}{subsection.19.2.6}%
-\contentsline {subsubsection}{Choosing a Sensible Starting Commit}{255}{section*.5}%
-\contentsline {subsubsection}{Git Workflow}{256}{section*.6}%
-\contentsline {subsubsection}{Best Practice Commit Messages}{257}{section*.7}%
-\contentsline {subsubsection}{Test-First Coding}{257}{section*.8}%
-\contentsline {subsubsection}{Management of Test Coverage}{258}{section*.9}%
-\contentsline {subsubsection}{Documenting Your Work}{258}{section*.10}%
-\contentsline {subsection}{\numberline {19.2.7}Step 4: Code Review}{259}{subsection.19.2.7}%
-\contentsline {subsection}{\numberline {19.2.8}Step 5: Integrate Completed Features into the Development Branch}{259}{subsection.19.2.8}%
-\contentsline {subsection}{\numberline {19.2.9}Step 6: Prepare the Release}{261}{subsection.19.2.9}%
-\contentsline {subsection}{\numberline {19.2.10}Step 7: Prepare for the Marking Interview}{262}{subsection.19.2.10}%
-\contentsline {section}{\numberline {19.3}Submission of Your Team's Work}{262}{section.19.3}%
-\contentsline {section}{\numberline {19.4}Coursework Extensions}{263}{section.19.4}%
-\contentsline {section}{\numberline {19.5}Non-Contributing Team Members}{263}{section.19.5}%
-\contentsline {section}{\numberline {19.6}Partially Contributing Team Members}{264}{section.19.6}%
-\contentsline {section}{\numberline {19.7}Plagiarism}{264}{section.19.7}%
-\contentsline {section}{\numberline {19.8}Technical Appendix}{265}{section.19.8}%
-\contentsline {subsection}{\numberline {19.8.1}Deleting a Tag on GitLab}{265}{subsection.19.8.1}%
-\contentsline {part}{IV\hspace {1em}Self study materials}{267}{part.4}%
-\contentsline {chapter}{\numberline {20}Testing Stendhal}{269}{chapter.20}%
-\contentsline {section}{\numberline {20.1}Introduction}{269}{section.20.1}%
-\contentsline {section}{\numberline {20.2}Manually Replicating The Issues}{270}{section.20.2}%
-\contentsline {section}{\numberline {20.3}Getting Inspiration for Writing your Own Test Cases}{270}{section.20.3}%
-\contentsline {chapter}{\numberline {21}Integrating commits}{273}{chapter.21}%
-\contentsline {section}{\numberline {21.1}Introduction}{273}{section.21.1}%
-\contentsline {section}{\numberline {21.2}Git has Rejected my Push}{273}{section.21.2}%
-\contentsline {subsection}{\numberline {21.2.1}Fetching the New Commits from the Remote}{275}{subsection.21.2.1}%
-\contentsline {section}{\numberline {21.3}Integrating the New Commits using Merge}{276}{section.21.3}%
-\contentsline {section}{\numberline {21.4}Integrating the New Commits using Rebase}{280}{section.21.4}%
-\contentsline {subsection}{\numberline {21.4.1}Rebasing Commits Made on the Master Branch}{282}{subsection.21.4.1}%
-\contentsline {subsection}{\numberline {21.4.2}Rebasing to Sync Repositories When Working on a Feature Branch}{284}{subsection.21.4.2}%
-\contentsline {subsection}{\numberline {21.4.3}Rebasing to Sync Repositories After a Fast-Forward Merge}{285}{subsection.21.4.3}%
-\contentsline {section}{\numberline {21.5}A Final Word}{288}{section.21.5}%
-\contentsline {chapter}{\numberline {22}Continuous integration}{289}{chapter.22}%
-\contentsline {section}{\numberline {22.1}Introduction to Continuous Integration}{289}{section.22.1}%
-\contentsline {section}{\numberline {22.2}Logging onto Jenkins CI Server:}{291}{section.22.2}%
-\contentsline {section}{\numberline {22.3}Accessing your Coursework Builds}{293}{section.22.3}%
-\contentsline {section}{\numberline {22.4}Drilling Down on the Development Branch Build}{296}{section.22.4}%
-\contentsline {section}{\numberline {22.5}What Happens When Jenkins Builds a Job}{298}{section.22.5}%
-\contentsline {subsection}{\numberline {22.5.1}What Triggers the Build?}{298}{subsection.22.5.1}%
-\contentsline {subsection}{\numberline {22.5.2}The Jenkins Workspace}{299}{subsection.22.5.2}%
-\contentsline {subsection}{\numberline {22.5.3}Jenkins Runs the Ant Build}{300}{subsection.22.5.3}%
-\contentsline {subsection}{\numberline {22.5.4}The Results are Published}{300}{subsection.22.5.4}%
-\contentsline {section}{\numberline {22.6}A Look at Feature Branch Builds}{300}{section.22.6}%
-\contentsline {section}{\numberline {22.7}Confused? Stuck? Need Help?}{302}{section.22.7}%
-\contentsline {chapter}{\numberline {23}Code review}{305}{chapter.23}%
-\contentsline {section}{\numberline {23.1}Why Review Code?}{305}{section.23.1}%
-\contentsline {section}{\numberline {23.2}Types of Code Review}{307}{section.23.2}%
-\contentsline {subsection}{\numberline {23.2.1}Buddy Review}{307}{subsection.23.2.1}%
-\contentsline {subsection}{\numberline {23.2.2}Team-Based Review}{308}{subsection.23.2.2}%
-\contentsline {subsection}{\numberline {23.2.3}Formal Review}{308}{subsection.23.2.3}%
-\contentsline {section}{\numberline {23.3}Good Practice for Code Reviewers}{309}{section.23.3}%
-\contentsline {section}{\numberline {23.4}Code Review Facilities in GitLab}{311}{section.23.4}%
-\contentsline {section}{\numberline {23.5}Code Review in COMP23311}{312}{section.23.5}%
-\contentsline {chapter}{\numberline {24}Unit testing}{315}{chapter.24}%
-\contentsline {section}{\numberline {24.1}Introduction}{315}{section.24.1}%
-\contentsline {section}{\numberline {24.2}What is Automated Testing and Why Do We Need It?}{316}{section.24.2}%
-\contentsline {section}{\numberline {24.3}Automated Testing in JUnit: a Simple Example}{318}{section.24.3}%
-\contentsline {chapter}{\numberline {25}References}{321}{chapter.25}%
+\contentsline {chapter}{\numberline {14}Your mentor}{165}{chapter.14}%
+\contentsline {section}{\numberline {14.1}Introducing your team}{165}{section.14.1}%
+\contentsline {section}{\numberline {14.2}But I'm not interested in employer x?}{167}{section.14.2}%
+\contentsline {chapter}{\numberline {15}Synchronising}{169}{chapter.15}%
+\contentsline {section}{\numberline {15.1}Introduction}{169}{section.15.1}%
+\contentsline {section}{\numberline {15.2}Making a Local Commit}{170}{section.15.2}%
+\contentsline {section}{\numberline {15.3}Step 2: Pushing the Commit to the Team Repository}{172}{section.15.3}%
+\contentsline {section}{\numberline {15.4}Step 3: Fetching the New Commit from the Team Repository}{175}{section.15.4}%
+\contentsline {section}{\numberline {15.5}Step 4: Incorporating the Commit into Your Local Branch}{178}{section.15.5}%
+\contentsline {section}{\numberline {15.6}A Final Word}{180}{section.15.6}%
+\contentsline {part}{III\hspace {1em}Coursework}{181}{part.3}%
+\contentsline {chapter}{\numberline {16}Individual Coursework 1}{183}{chapter.16}%
+\contentsline {section}{\numberline {16.1}Introduction}{183}{section.16.1}%
+\contentsline {section}{\numberline {16.2}About the Coursework}{184}{section.16.2}%
+\contentsline {subsection}{\numberline {16.2.1}Key Information}{184}{subsection.16.2.1}%
+\contentsline {subsection}{\numberline {16.2.2}Submission Procedure}{184}{subsection.16.2.2}%
+\contentsline {subsection}{\numberline {16.2.3}Marking Scheme}{185}{subsection.16.2.3}%
+\contentsline {subsection}{\numberline {16.2.4}Pre-Deadline Feedback}{186}{subsection.16.2.4}%
+\contentsline {subsection}{\numberline {16.2.5}Late Submissions}{186}{subsection.16.2.5}%
+\contentsline {subsection}{\numberline {16.2.6}Plagiarism}{187}{subsection.16.2.6}%
+\contentsline {subsection}{\numberline {16.2.7}How to Get Help}{187}{subsection.16.2.7}%
+\contentsline {section}{\numberline {16.3}The Coursework Instructions}{187}{section.16.3}%
+\contentsline {subsection}{\numberline {16.3.1}Step One: Start Eclipse}{187}{subsection.16.3.1}%
+\contentsline {subsection}{\numberline {16.3.2}Step Two: Clone a GitLab Repository in Eclipse}{188}{subsection.16.3.2}%
+\contentsline {subsection}{\numberline {16.3.3}Step Three: Identify the Bug}{194}{subsection.16.3.3}%
+\contentsline {subsection}{\numberline {16.3.4}Step four: Create a Branch for Your Own Changes}{197}{subsection.16.3.4}%
+\contentsline {subsection}{\numberline {16.3.5}Step five: Commit a Change to the New Branch}{199}{subsection.16.3.5}%
+\contentsline {subsection}{\numberline {16.3.6}Step six: Merge your Changes}{207}{subsection.16.3.6}%
+\contentsline {subsection}{\numberline {16.3.7}Step seven: Push the Changes to the Remote Repository}{210}{subsection.16.3.7}%
+\contentsline {subsection}{\numberline {16.3.8}Step 8: Record the Project Status in the Issue Tracker}{212}{subsection.16.3.8}%
+\contentsline {subsection}{\numberline {16.3.9}Coursework Complete}{212}{subsection.16.3.9}%
+\contentsline {chapter}{\numberline {17}Individual Coursework 2}{215}{chapter.17}%
+\contentsline {section}{\numberline {17.1}Introduction}{215}{section.17.1}%
+\contentsline {section}{\numberline {17.2}About the Coursework}{217}{section.17.2}%
+\contentsline {subsection}{\numberline {17.2.1}Key Information}{217}{subsection.17.2.1}%
+\contentsline {subsection}{\numberline {17.2.2}Marking Scheme}{217}{subsection.17.2.2}%
+\contentsline {subsection}{\numberline {17.2.3}Pre-Deadline Feedback}{218}{subsection.17.2.3}%
+\contentsline {subsection}{\numberline {17.2.4}Submission Procedure}{219}{subsection.17.2.4}%
+\contentsline {subsection}{\numberline {17.2.5}Late Submissions}{219}{subsection.17.2.5}%
+\contentsline {subsection}{\numberline {17.2.6}Plagiarism}{220}{subsection.17.2.6}%
+\contentsline {subsection}{\numberline {17.2.7}How to Get Help}{220}{subsection.17.2.7}%
+\contentsline {section}{\numberline {17.3}The Coursework Instructions}{220}{section.17.3}%
+\contentsline {subsection}{\numberline {17.3.1}Step one: Clone and Import the Project into Eclipse}{220}{subsection.17.3.1}%
+\contentsline {subsection}{\numberline {17.3.2}Step two: Run and Understand the Test Cases for the Feature}{221}{subsection.17.3.2}%
+\contentsline {subsection}{\numberline {17.3.3}Step three: Implement the Feature/Make the Tests Pass}{222}{subsection.17.3.3}%
+\contentsline {subsection}{\numberline {17.3.4}Step four: Commit and Push the Feature Implementation}{224}{subsection.17.3.4}%
+\contentsline {subsection}{\numberline {17.3.5}Step five: Merge your Code into the Development Branch}{224}{subsection.17.3.5}%
+\contentsline {subsection}{\numberline {17.3.6}Step six: Resolve the Conflicts and Complete the Merge}{226}{subsection.17.3.6}%
+\contentsline {subsubsection}{\numberline {17.3.6.1}Walkthrough of the Conflict Resolution Process}{226}{subsubsection.17.3.6.1}%
+\contentsline {subsubsection}{\numberline {17.3.6.2}Now It's Your Turn}{232}{subsubsection.17.3.6.2}%
+\contentsline {subsection}{\numberline {17.3.7}Step seven: Push the Completed Merge to the Remote Repository}{233}{subsection.17.3.7}%
+\contentsline {subsection}{\numberline {17.3.8}Step eight: Update the Issue Tracker and Request Marking}{234}{subsection.17.3.8}%
+\contentsline {subsection}{\numberline {17.3.9}Messed Up?}{234}{subsection.17.3.9}%
+\contentsline {subsection}{\numberline {17.3.10}Coursework Complete}{234}{subsection.17.3.10}%
+\contentsline {chapter}{\numberline {18}Team Coursework 1}{235}{chapter.18}%
+\contentsline {section}{\numberline {18.1}Overview}{235}{section.18.1}%
+\contentsline {section}{\numberline {18.2}What You Have to Do}{236}{section.18.2}%
+\contentsline {subsection}{\numberline {18.2.1}Step one}{236}{subsection.18.2.1}%
+\contentsline {subsection}{\numberline {18.2.2}Step two}{236}{subsection.18.2.2}%
+\contentsline {subsection}{\numberline {18.2.3}Step three}{237}{subsection.18.2.3}%
+\contentsline {subsection}{\numberline {18.2.4}Step four}{238}{subsection.18.2.4}%
+\contentsline {subsection}{\numberline {18.2.5}Step five}{238}{subsection.18.2.5}%
+\contentsline {subsection}{\numberline {18.2.6}Step six}{239}{subsection.18.2.6}%
+\contentsline {subsection}{\numberline {18.2.7}Step seven}{239}{subsection.18.2.7}%
+\contentsline {subsection}{\numberline {18.2.8}Step eight}{240}{subsection.18.2.8}%
+\contentsline {subsection}{\numberline {18.2.9}Step nine}{241}{subsection.18.2.9}%
+\contentsline {subsection}{\numberline {18.2.10}Step ten}{242}{subsection.18.2.10}%
+\contentsline {section}{\numberline {18.3}Submission of Your Team's Work}{243}{section.18.3}%
+\contentsline {section}{\numberline {18.4}Coursework Extensions}{243}{section.18.4}%
+\contentsline {section}{\numberline {18.5}Non-Contributing Team Members}{244}{section.18.5}%
+\contentsline {section}{\numberline {18.6}Partially Contributing Team Members}{245}{section.18.6}%
+\contentsline {section}{\numberline {18.7}Plagiarism}{245}{section.18.7}%
+\contentsline {chapter}{\numberline {19}Team Coursework 2}{247}{chapter.19}%
+\contentsline {section}{\numberline {19.1}Overview}{247}{section.19.1}%
+\contentsline {section}{\numberline {19.2}What You Have to Do}{248}{section.19.2}%
+\contentsline {subsection}{\numberline {19.2.1}Step 1: Release Planning}{248}{subsection.19.2.1}%
+\contentsline {subsection}{\numberline {19.2.2}Step 2: Issue Planning}{250}{subsection.19.2.2}%
+\contentsline {subsection}{\numberline {19.2.3}Step2.1: Choosing your Issues}{250}{subsection.19.2.3}%
+\contentsline {subsection}{\numberline {19.2.4}Step2.2: Creating a Work Breakdown Structure for the Selected Issues}{251}{subsection.19.2.4}%
+\contentsline {subsection}{\numberline {19.2.5}Step 2.3: Planning for the Implementation}{251}{subsection.19.2.5}%
+\contentsline {subsection}{\numberline {19.2.6}Step 3: Testing and Implementation}{253}{subsection.19.2.6}%
+\contentsline {subsubsection}{Choosing a Sensible Starting Commit}{253}{section*.5}%
+\contentsline {subsubsection}{Git Workflow}{254}{section*.6}%
+\contentsline {subsubsection}{Best Practice Commit Messages}{255}{section*.7}%
+\contentsline {subsubsection}{Test-First Coding}{255}{section*.8}%
+\contentsline {subsubsection}{Management of Test Coverage}{256}{section*.9}%
+\contentsline {subsubsection}{Documenting Your Work}{256}{section*.10}%
+\contentsline {subsection}{\numberline {19.2.7}Step 4: Code Review}{257}{subsection.19.2.7}%
+\contentsline {subsection}{\numberline {19.2.8}Step 5: Integrate Completed Features into the Development Branch}{257}{subsection.19.2.8}%
+\contentsline {subsection}{\numberline {19.2.9}Step 6: Prepare the Release}{259}{subsection.19.2.9}%
+\contentsline {subsection}{\numberline {19.2.10}Step 7: Prepare for the Marking Interview}{260}{subsection.19.2.10}%
+\contentsline {section}{\numberline {19.3}Submission of Your Team's Work}{260}{section.19.3}%
+\contentsline {section}{\numberline {19.4}Coursework Extensions}{261}{section.19.4}%
+\contentsline {section}{\numberline {19.5}Non-Contributing Team Members}{261}{section.19.5}%
+\contentsline {section}{\numberline {19.6}Partially Contributing Team Members}{262}{section.19.6}%
+\contentsline {section}{\numberline {19.7}Plagiarism}{262}{section.19.7}%
+\contentsline {section}{\numberline {19.8}Technical Appendix}{263}{section.19.8}%
+\contentsline {subsection}{\numberline {19.8.1}Deleting a Tag on GitLab}{263}{subsection.19.8.1}%
+\contentsline {part}{IV\hspace {1em}Self study materials}{265}{part.4}%
+\contentsline {chapter}{\numberline {20}Testing Stendhal}{267}{chapter.20}%
+\contentsline {section}{\numberline {20.1}Introduction}{267}{section.20.1}%
+\contentsline {section}{\numberline {20.2}Manually Replicating The Issues}{268}{section.20.2}%
+\contentsline {section}{\numberline {20.3}Getting Inspiration for Writing your Own Test Cases}{268}{section.20.3}%
+\contentsline {chapter}{\numberline {21}Integrating commits}{271}{chapter.21}%
+\contentsline {section}{\numberline {21.1}Introduction}{271}{section.21.1}%
+\contentsline {section}{\numberline {21.2}Git has Rejected my Push}{271}{section.21.2}%
+\contentsline {subsection}{\numberline {21.2.1}Fetching the New Commits from the Remote}{273}{subsection.21.2.1}%
+\contentsline {section}{\numberline {21.3}Integrating the New Commits using Merge}{274}{section.21.3}%
+\contentsline {section}{\numberline {21.4}Integrating the New Commits using Rebase}{278}{section.21.4}%
+\contentsline {subsection}{\numberline {21.4.1}Rebasing Commits Made on the Master Branch}{280}{subsection.21.4.1}%
+\contentsline {subsection}{\numberline {21.4.2}Rebasing to Sync Repositories When Working on a Feature Branch}{282}{subsection.21.4.2}%
+\contentsline {subsection}{\numberline {21.4.3}Rebasing to Sync Repositories After a Fast-Forward Merge}{283}{subsection.21.4.3}%
+\contentsline {section}{\numberline {21.5}A Final Word}{286}{section.21.5}%
+\contentsline {chapter}{\numberline {22}Continuous integration}{287}{chapter.22}%
+\contentsline {section}{\numberline {22.1}Introduction to Continuous Integration}{287}{section.22.1}%
+\contentsline {section}{\numberline {22.2}Logging onto Jenkins CI Server:}{289}{section.22.2}%
+\contentsline {section}{\numberline {22.3}Accessing your Coursework Builds}{291}{section.22.3}%
+\contentsline {section}{\numberline {22.4}Drilling Down on the Development Branch Build}{294}{section.22.4}%
+\contentsline {section}{\numberline {22.5}What Happens When Jenkins Builds a Job}{296}{section.22.5}%
+\contentsline {subsection}{\numberline {22.5.1}What Triggers the Build?}{296}{subsection.22.5.1}%
+\contentsline {subsection}{\numberline {22.5.2}The Jenkins Workspace}{297}{subsection.22.5.2}%
+\contentsline {subsection}{\numberline {22.5.3}Jenkins Runs the Ant Build}{298}{subsection.22.5.3}%
+\contentsline {subsection}{\numberline {22.5.4}The Results are Published}{298}{subsection.22.5.4}%
+\contentsline {section}{\numberline {22.6}A Look at Feature Branch Builds}{298}{section.22.6}%
+\contentsline {section}{\numberline {22.7}Confused? Stuck? Need Help?}{300}{section.22.7}%
+\contentsline {chapter}{\numberline {23}Code review}{303}{chapter.23}%
+\contentsline {section}{\numberline {23.1}Why Review Code?}{303}{section.23.1}%
+\contentsline {section}{\numberline {23.2}Types of Code Review}{305}{section.23.2}%
+\contentsline {subsection}{\numberline {23.2.1}Buddy Review}{305}{subsection.23.2.1}%
+\contentsline {subsection}{\numberline {23.2.2}Team-Based Review}{306}{subsection.23.2.2}%
+\contentsline {subsection}{\numberline {23.2.3}Formal Review}{306}{subsection.23.2.3}%
+\contentsline {section}{\numberline {23.3}Good Practice for Code Reviewers}{307}{section.23.3}%
+\contentsline {section}{\numberline {23.4}Code Review Facilities in GitLab}{309}{section.23.4}%
+\contentsline {section}{\numberline {23.5}Code Review in COMP23311}{310}{section.23.5}%
+\contentsline {chapter}{\numberline {24}Unit testing}{313}{chapter.24}%
+\contentsline {section}{\numberline {24.1}Introduction}{313}{section.24.1}%
+\contentsline {section}{\numberline {24.2}What is Automated Testing and Why Do We Need It?}{314}{section.24.2}%
+\contentsline {section}{\numberline {24.3}Automated Testing in JUnit: a Simple Example}{316}{section.24.3}%
+\contentsline {chapter}{\numberline {25}References}{319}{chapter.25}%
