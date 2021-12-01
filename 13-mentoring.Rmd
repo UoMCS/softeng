@@ -29,17 +29,18 @@ These are the only times when we can guarantee that everyone in a given software
 
 ## I'm interested, how can I register? {#registration}
 
-Register your interest via the zoom link below:
-
-* [zoom.us/meeting/register/tJUrdO-rqDgiGtcKDTP_Zj_d_oWTPznHYl8t](https://zoom.us/meeting/register/tJUrdO-rqDgiGtcKDTP_Zj_d_oWTPznHYl8t)
-
-We are looking for around 60 mentors in 2021, when we are oversubscribed we will give higher priority to:
+We are looking for around 60 mentors in September 2022, a registration link will appear here closer to the time. When we are oversubscribed we will give higher priority to:
 
 * returning mentors, those employers who have already supported the scheme (see section \@ref(thanks))
 * female mentors, because women are under-represented in our community
 * BAME and other minority group mentors
 * alumni, especially former students who have done this course since 2016
 * local employers, as part of the University's commitment to [civic engagement and social responsibility](https://www.manchester.ac.uk/discover/vision/#panel-civic-engagement)
+
+<!--
+registration link was
+* [zoom.us/meeting/register/tJUrdO-rqDgiGtcKDTP_Zj_d_oWTPznHYl8t](https://zoom.us/meeting/register/tJUrdO-rqDgiGtcKDTP_Zj_d_oWTPznHYl8t)-->
+
 
 ## About us {#aboutus}
 The Department of Computer Science at the University of Manchester [www.cs.manchester.ac.uk](https://www.cs.manchester.ac.uk) is one of the oldest and biggest in the UK. The [world's first stored-program computer](http://www.computinghistory.org.uk/det/6013/The-Manchester-Baby-the-world-s-first-stored-program-computer-ran-its-first-program) (the “[Manchester Baby](https://en.wikipedia.org/wiki/Manchester_Baby)”) was developed here in 1948, by the engineers and scientists who would go on to found the Department. This was followed by:
