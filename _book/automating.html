@@ -161,7 +161,7 @@
 <p><strong><code>assertThat()</code></strong> is a matcher method that is provided as part of the Hamcrest matching library. It comes in several forms (some of which are quite complicated), but all you need to understand at the moment is that it takes the value given as its first parameter, and matches it with the expression in its second. If the values match, then the assertion exits quietly. If there is a mismatch then the assertion flags this up as a failing test, along with some information about the exact form of the mismatch detected. The assertions in the test class in the code listing above all use the pre-provided matcher <strong><code>is(value)</code></strong>, that checks whether the provided value is equal to <strong><code>value</code></strong> or not. So, the <strong><code>assertThat()</code></strong> statement in the code listing checks that <strong><code>LargestSquare.lessThanOrEq(0)</code></strong> returns a value that is equal to 0, and lets the programmer know about it if it doesn’t.</p>
 <p>Notice how the whole test case reads quite like an English sentence describing how we want the code to behave. We want to “assert that the largest square less than or equal to 0 is 0.” Well-written test cases should have this property. They should (as far as practicable) read like natural, readable statements of the behaviour we are trying to implement.</p>
 <p>There is a lot more to learn about JUnit than the very simple tests we have described so far. But, this brief introduction should be enough to help you get started on working with tests in the workshops and coursework over the next few weeks.</p>
-<p><code>Document version:</code> 01 December, 2021</p>
+<p><code>Document version:</code> 06 December, 2021</p>
 
 </div>
 </div>
