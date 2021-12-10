@@ -161,7 +161,7 @@ The schedule for marking interviews for team coursework 2 is shown below:
 | He Yu / David*      | Team07           | Team17            | Team27*           | Team37*           | Team47  |           |
 | Ahmad Bilal         | Team08           | Team18            | Team28            | Team38            | Team48  |           |
 | Zhongyan Chen       | Team09           | Team19            | Team29            | Team39            | Team49  |           |
-| Thomas Carroll      | Team10           | Team20            | Team30            | Team40            | Team50  |           |
+| Thomas Carroll      | Team10           | Team20            | Team30            | ~~Team40~~            | Team50  |    Team40 |
 
 
 ## Tools {#tooling}
