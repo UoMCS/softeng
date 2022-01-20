@@ -98,11 +98,41 @@ Figure 4.1: Accurately estimating how long things will take can be hard. The aut
 </p>
 </div>
 
-<div id="course-content" class="section level2" number="4.1">
+<div id="wbs" class="section level2" number="4.1">
 <h2>
-<span class="header-section-number">4.1</span> Course content<a class="anchor" aria-label="anchor" href="#course-content"><i class="fas fa-link"></i></a>
+<span class="header-section-number">4.1</span> Work Breakdown Structures<a class="anchor" aria-label="anchor" href="#wbs"><i class="fas fa-link"></i></a>
 </h2>
-<p><code>Document version:</code> 06 December, 2021</p>
+<p>Estimating how long something will take is often a challenging task and why many estimates like the one in figure <a href="estimating.html#fig:xkcd-estimation-fig">4.1</a> are not accurate. Its important to be able to justify any estimates you make, rather than just making a vague guess.</p>
+<p>One technique for improving the accuracy (and justifiably) of your estimates is called Work Breakdown Structures (WBS) which is explained in the video in figure <a href="estimating.html#fig:wbs-video-fig">4.2</a>.</p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:wbs-video-fig"></span>
+<img src="images/cost-estimation-video.png" alt="Work Breakdown Structures (WBS) will help to improve the accuracy and justifiability of your cost estimations in software engineering. The image in the picture is a screenshot, to watch the full seven minute video at youtu.be/tKCfnF-z2hY" width="100%"><p class="caption">
+Figure 4.2: Work Breakdown Structures (WBS) will help to improve the accuracy and justifiability of your cost estimations in software engineering. The image in the picture is a screenshot, to watch the full seven minute video at <a href="https://youtu.be/tKCfnF-z2hY">youtu.be/tKCfnF-z2hY</a>
+</p>
+</div>
+
+<p>For example, in stendhal, lets say you needed to estimate the cost if fixing a bug about players losing health points between 5.00am and 7.00am in the morning. This is <code>100%</code> of your task that you could break this down into several sub-tasks follows:</p>
+<ol style="list-style-type: decimal">
+<li>Replicate the bug (<code>20%</code>)</li>
+<li>Fix the bug (<code>20%</code>)</li>
+<li>Check that the bug is really fixed (<code>20%</code>)</li>
+<li>Push the bug fix to the repository (<code>20%</code>)</li>
+<li>Make sure the same bug doesn’t exist elsewhere (<code>20%</code>)</li>
+</ol>
+<p>You could break each step down further into sub-sub-tasks</p>
+<ol style="list-style-type: decimal">
+<li>Replicate the bug (<code>20%</code>)
+<ol style="list-style-type: decimal">
+<li>Replicate the bug manually (<code>5%</code>)</li>
+<li>Gather missing info from reporter (<code>5%</code>)</li>
+<li>Find tests for this or similar functionality (<code>5%</code>)</li>
+<li>Write test that reveals the bug (<code>5%</code>)</li>
+</ol>
+</li>
+</ol>
+<p>We’ve split the tasks evenly here, though in practice you would probably give them different percentages depending on the size and difficulty of the tasks.</p>
+<!--### Breaking things down {#btd} -->
+<p><code>Document version:</code> 20 January, 2022</p>
 
 </div>
 </div>
@@ -113,7 +143,7 @@ Figure 4.1: Accurately estimating how long things will take can be hard. The aut
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
 <li><a class="nav-link" href="#estimating"><span class="header-section-number">4</span> Cost estimation</a></li>
-<li><a class="nav-link" href="#course-content"><span class="header-section-number">4.1</span> Course content</a></li>
+<li><a class="nav-link" href="#wbs"><span class="header-section-number">4.1</span> Work Breakdown Structures</a></li>
 </ul>
 
       <div class="book-extra">
