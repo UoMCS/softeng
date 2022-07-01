@@ -7,7 +7,7 @@
 <title>Chapter 8 Design for Testability | Software engineering</title>
 <meta name="author" content="Suzanne Embury and the software engineering team">
 <meta name="description" content="Software refactoring and migration  8.1 Preparing for the Workshop Welcome to the COMP23311 workshop on design for testability. Today, after a short lecture introducing the core concepts, we’ll be...">
-<meta name="generator" content="bookdown 0.24 with bs4_book()">
+<meta name="generator" content="bookdown 0.26 with bs4_book()">
 <meta property="og:title" content="Chapter 8 Design for Testability | Software engineering">
 <meta property="og:type" content="book">
 <meta property="og:url" content="https://software-eng.netlify.app/designing.html">
@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Chapter 8 Design for Testability | Software engineering">
 <meta name="twitter:site" content="@csmcr">
 <meta name="twitter:description" content="Software refactoring and migration  8.1 Preparing for the Workshop Welcome to the COMP23311 workshop on design for testability. Today, after a short lecture introducing the core concepts, we’ll be...">
-<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.13/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.1/transition.js"></script><script src="libs/bs3compat-0.3.1/tabs.js"></script><script src="libs/bs3compat-0.3.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
 <script src="libs/bs4_book-1.0.0/bs4_book.js"></script><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-GJ4FGSK01L"></script><script>
@@ -25,7 +25,32 @@
       gtag('js', new Date());
 
       gtag('config', 'G-GJ4FGSK01L');
-    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS -->
+    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<style type="text/css">
+    /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+        }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -112,7 +137,7 @@
 <span class="header-section-number">8.2.0.1</span> Example Dummy No. 1<a class="anchor" aria-label="anchor" href="#dummy1"><i class="fas fa-link"></i></a>
 </h4>
 <p>In your IDE, find the code for the following method:</p>
-<div class="sourceCode" id="cb39"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb39-1"><a href="designing.html#cb39-1" aria-hidden="true" tabindex="-1"></a>games.<span class="fu">stendhal</span>.<span class="fu">server</span>.<span class="fu">core</span>.<span class="fu">config</span>.<span class="fu">zone</span>.<span class="fu">NoTeleportInTest</span>.<span class="fu">testConfigureZone</span>()}</span></code></pre></div>
+<div class="sourceCode" id="cb39"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb39-1"><a href="designing.html#cb39-1" aria-hidden="true" tabindex="-1"></a>games<span class="op">.</span><span class="fu">stendhal</span><span class="op">.</span><span class="fu">server</span><span class="op">.</span><span class="fu">core</span><span class="op">.</span><span class="fu">config</span><span class="op">.</span><span class="fu">zone</span><span class="op">.</span><span class="fu">NoTeleportInTest</span><span class="op">.</span><span class="fu">testConfigureZone</span><span class="op">()}</span></span></code></pre></div>
 <p>The test class and method name and the comments make it clear that this test case is checking that whole zones can be correctly configured to disallow teleporting in. The test checks that teleporting in is not allowed at two locations in the zone (top left and bottom right edge squares) but that teleporting out is still allowed.</p>
 <p>The fixture for this test is a zone that is configured to disallow inwards teleports. We don’t care about the other attributes of the zone. But the signature of the method for adding a configuration to a zone requires two arguments: the zone to be configured <em>and</em> a map containing attributes to be used in guiding the configuration. (Hover over the call to the <code>configureZone()</code> method to see it’s JavaDoc.) The <code>NoTeleportIn</code> configuration does not need any special attributes to be set, but the method signature is inherited and the attributes must be provided whether they are needed or not.</p>
 <p>There’s no point wasting time and resources (and lines of code) setting up some fake attributes for this configuration if the test isn’t going to use them. So, the coder of this test has sensibly chosen the simplest possible object compatible with the method signature: a <code>null</code> value.</p>
@@ -123,7 +148,7 @@
 <span class="header-section-number">8.2.1</span> Example Dummy No. 2<a class="anchor" aria-label="anchor" href="#dummy2"><i class="fas fa-link"></i></a>
 </h3>
 <p>Let’s look at another example, this time in the client code. Search for the method:</p>
-<div class="sourceCode" id="cb40"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb40-1"><a href="designing.html#cb40-1" aria-hidden="true" tabindex="-1"></a>games.<span class="fu">stendhal</span>.<span class="fu">client</span>.<span class="fu">gui</span>.<span class="fu">ItemPanelTest</span>.<span class="fu">testCursors</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb40"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb40-1"><a href="designing.html#cb40-1" aria-hidden="true" tabindex="-1"></a>games<span class="op">.</span><span class="fu">stendhal</span><span class="op">.</span><span class="fu">client</span><span class="op">.</span><span class="fu">gui</span><span class="op">.</span><span class="fu">ItemPanelTest</span><span class="op">.</span><span class="fu">testCursors</span><span class="op">()</span></span></code></pre></div>
 <p>The very first line of this method contains an example of a <code>null</code> value being used as a dummy. The <code>itemPanel()</code> constructor takes two arguments: a slot name and a placeholder sprite. We don’t care much about either value in this test, but need the <code>ItemPanel</code> instance as part of the fixture. The name is easy enough, we can give any value. (Note the carefully chosen value used in the test, which clearly indicates to the reader of the code that the name is not important.) But we also don’t care about the sprite. So the coder has used the simplest possible <code>Sprite</code> instance to fulfil the fixture requirements: a <code>null</code> value.</p>
 </div>
 <div id="dummy3" class="section level3" number="8.2.2">
@@ -147,7 +172,7 @@
 <span class="header-section-number">8.3.1</span> Example Stub No. 1<a class="anchor" aria-label="anchor" href="#stubby1"><i class="fas fa-link"></i></a>
 </h3>
 <p>Look at the test case methods in:</p>
-<div class="sourceCode" id="cb41"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb41-1"><a href="designing.html#cb41-1" aria-hidden="true" tabindex="-1"></a>games.<span class="fu">stendhal</span>.<span class="fu">client</span>.<span class="fu">entity</span>.<span class="fu">EntityTest</span></span></code></pre></div>
+<div class="sourceCode" id="cb41"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb41-1"><a href="designing.html#cb41-1" aria-hidden="true" tabindex="-1"></a>games<span class="op">.</span><span class="fu">stendhal</span><span class="op">.</span><span class="fu">client</span><span class="op">.</span><span class="fu">entity</span><span class="op">.</span><span class="fu">EntityTest</span></span></code></pre></div>
 <p>The methods create an instance of a class called <code>MockEntity</code>. But if you look for this class in the code base, you will not find it, and no import pulls a class with this name into the class we are defining.</p>
 <p>Instead, this class is defined at the end of the <code>EntityTest</code> class, as a private class (lines 156–176).</p>
 <p>This new class inherits from the <code>Entity</code> class, and so has all the same behaviour as this production code class, apart from where the behaviour is overridden and added to in this definition. The changes define the extra control we need over <code>Entity</code> instances in order to write this test effectively.</p>
@@ -167,7 +192,7 @@
 </h3>
 <p>Another useful Java mechanism for creating stub classes is the anonymous sub-class. This is used widely throughout the Stendhal test suite for creating test doubles, and is a popular technique in general for getting code under test.</p>
 <p>To see an example of this in the Stendhal code base, find the method:</p>
-<div class="sourceCode" id="cb42"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb42-1"><a href="designing.html#cb42-1" aria-hidden="true" tabindex="-1"></a>games.<span class="fu">stendhal</span>.<span class="fu">server</span>.<span class="fu">actions</span>.<span class="fu">admin</span>.<span class="fu">SummonActionTest</span>.<span class="fu">setUP</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb42"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb42-1"><a href="designing.html#cb42-1" aria-hidden="true" tabindex="-1"></a>games<span class="op">.</span><span class="fu">stendhal</span><span class="op">.</span><span class="fu">server</span><span class="op">.</span><span class="fu">actions</span><span class="op">.</span><span class="fu">admin</span><span class="op">.</span><span class="fu">SummonActionTest</span><span class="op">.</span><span class="fu">setUP</span><span class="op">()</span></span></code></pre></div>
 <p>Make sure you find the server version of this test class. There is another class with the same name in the client code, which does not contain an obvious stub.</p>
 <p>Take a look at this simple method and see if you can work out what it does. (Anonymous sub-classes are a feature of Java that you were not taught in our first year programming course units. You can either ask a member of staff or a GTA to explain, or you can research for yourself how this Java feature works. But don’t leave the workshop without understanding this language construct and how it can be used to create test doubles.)</p>
 <p>The <code>SummonActionTest.setUP()</code> method creates an anonymous sub-class of the <code>StendhalRPZone</code> class, and overrides one of the methods on that class: the <code>collides()</code> method that we have met in previous workshops. Instead of using the collision layer to decide whether the player or objects can be placed at the location given, this over-ridden version of the method just always returns <code>false</code>. It does not matter which location in this zone you give as parameters, this method will always say there is no collision at that point, and the object can be placed there.</p>
@@ -211,7 +236,7 @@
 <span class="header-section-number">8.5</span> Understanding Test Doubles: First Experiments with Mock Objects<a class="anchor" aria-label="anchor" href="#mockobjects"><i class="fas fa-link"></i></a>
 </h2>
 <p>For this short activity, you are asked to look through the test code for the HandToHand class:</p>
-<div class="sourceCode" id="cb43"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb43-1"><a href="designing.html#cb43-1" aria-hidden="true" tabindex="-1"></a>games.<span class="fu">stendhal</span>.<span class="fu">server</span>.<span class="fu">entity</span>.<span class="fu">creature</span>.<span class="fu">impl</span>.<span class="fu">attack</span>.<span class="fu">HandToHandTest</span>.<span class="fu">java</span></span></code></pre></div>
+<div class="sourceCode" id="cb43"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb43-1"><a href="designing.html#cb43-1" aria-hidden="true" tabindex="-1"></a>games<span class="op">.</span><span class="fu">stendhal</span><span class="op">.</span><span class="fu">server</span><span class="op">.</span><span class="fu">entity</span><span class="op">.</span><span class="fu">creature</span><span class="op">.</span><span class="fu">impl</span><span class="op">.</span><span class="fu">attack</span><span class="op">.</span><span class="fu">HandToHandTest</span><span class="op">.</span><span class="fu">java</span></span></code></pre></div>
 <p>Below is a list of the names of each of the test case methods in this class. Take a sheet of paper and draw a line down the middle. On one side, write the names of the methods that are using mocks, and on the other side write the names of the test methods not using the mock objects framework.</p>
 <ul>
 <li><code>testAttack()</code></li>
@@ -229,11 +254,11 @@
 <p>Next, we’re going to look at what happens when tests using mock objects fail.</p>
 <p>Starting from the first test method, testAttack(), use your IDE’s navigation facilities to jump to the definition for the method that that test case is checking. (Hint: double click on the method name and press Function key 3 (F3) in Eclipse, or right click on the method name and select <code>Open Declaration</code>.)</p>
 <p>Comment out line 26, like this:</p>
-<div class="sourceCode" id="cb44"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb44-1"><a href="designing.html#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="dt">void</span> <span class="fu">attack</span>(<span class="dt">final</span> Creature creature) {</span>
-<span id="cb44-2"><a href="designing.html#cb44-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">if</span> (creature.<span class="fu">isAttackTurn</span>(SingletonRepository.<span class="fu">getRuleProcessor</span>().<span class="fu">getTurn</span>())){</span>
+<div class="sourceCode" id="cb44"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb44-1"><a href="designing.html#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="dt">void</span> <span class="fu">attack</span><span class="op">(</span><span class="dt">final</span> Creature creature<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb44-2"><a href="designing.html#cb44-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="op">(</span>creature<span class="op">.</span><span class="fu">isAttackTurn</span><span class="op">(</span>SingletonRepository<span class="op">.</span><span class="fu">getRuleProcessor</span><span class="op">().</span><span class="fu">getTurn</span><span class="op">())){</span></span>
 <span id="cb44-3"><a href="designing.html#cb44-3" aria-hidden="true" tabindex="-1"></a>        <span class="co">//creature.attack();</span></span>
-<span id="cb44-4"><a href="designing.html#cb44-4" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb44-5"><a href="designing.html#cb44-5" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<span id="cb44-4"><a href="designing.html#cb44-4" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb44-5"><a href="designing.html#cb44-5" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
 <p>Now run the tests.</p>
 <p>Take a look at the error message you get. Can you tell what it means?</p>
 </div>
@@ -246,7 +271,7 @@
 <p>Work in pairs or small groups to make the Daily Item Quest functionality testable, using the test double techniques we have covered in the class, so that this bug can be made visible.</p>
 <p>You do not have to create a complete implementation. Just sketch out the changes you would make, in sufficient detail to understand the costs and benefits.</p>
 <p>There is no single right answer to this. Several approaches could work. If you are unsure, just try one and see how it looks when it is sketched out. Discuss your answer with staff if unsure.</p>
-<p><code>Document version:</code> 04 April, 2022</p>
+<p><code>Document version:</code> 01 July, 2022</p>
 
 </div>
 </div>

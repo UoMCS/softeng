@@ -7,7 +7,7 @@
 <title>Chapter 19 Team Coursework 2 | Software engineering</title>
 <meta name="author" content="Suzanne Embury and the software engineering team">
 <meta name="description" content="Working with Features  19.1 Overview In this second exercise using the Stendhal code base, you and your team are again presented with a number of issues recorded in your GitLab issue tracker. This...">
-<meta name="generator" content="bookdown 0.24 with bs4_book()">
+<meta name="generator" content="bookdown 0.26 with bs4_book()">
 <meta property="og:title" content="Chapter 19 Team Coursework 2 | Software engineering">
 <meta property="og:type" content="book">
 <meta property="og:url" content="https://software-eng.netlify.app/working.html">
@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Chapter 19 Team Coursework 2 | Software engineering">
 <meta name="twitter:site" content="@csmcr">
 <meta name="twitter:description" content="Working with Features  19.1 Overview In this second exercise using the Stendhal code base, you and your team are again presented with a number of issues recorded in your GitLab issue tracker. This...">
-<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.13/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.1/transition.js"></script><script src="libs/bs3compat-0.3.1/tabs.js"></script><script src="libs/bs3compat-0.3.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
 <script src="libs/bs4_book-1.0.0/bs4_book.js"></script><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-GJ4FGSK01L"></script><script>
@@ -25,7 +25,32 @@
       gtag('js', new Date());
 
       gtag('config', 'G-GJ4FGSK01L');
-    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS -->
+    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<style type="text/css">
+    /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+        }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -181,7 +206,7 @@
 1. which team members will work on the implementation of each selected issue, and
 1. which team members will act as code reviewers for each selected issue.</p>
 <p>All these decisions should be documented in your issue tracker, as described below.</p>
-<p>Since the features we have set are more substantial coding tasks than the bugs you fixed in the first exercise, you will need to work together, in groups of 2 or 3, to implement some of the selected features. That is, you will break your team down into sub-teams, each of which will be responsible for delivery of the first release for an individual feature. Such teams are sometimes called “feature teams.”</p>
+<p>Since the features we have set are more substantial coding tasks than the bugs you fixed in the first exercise, you will need to work together, in groups of 2 or 3, to implement some of the selected features. That is, you will break your team down into sub-teams, each of which will be responsible for delivery of the first release for an individual feature. Such teams are sometimes called “feature teams”.</p>
 <p>A common cause of failure in team work is when all members of the team assume that some crucial task will be done by someone else. To avoid this, it is important to assign a lead member for each sub-team. This person is responsible for the detailed planning for their issue, for scoping it down, for coordinating the implementation work amongst the
 members of the sub-team, and for documenting the work as needed for marking. This does not mean that the team leader does all these tasks alone—it means only that the team lead is the person who will check that these tasks are all done and that everyone is clear about what they need to do and by when. Apart from that, the way the tasks are shared amongst the sub-team members is up to you. But it is expected that all sub-team members, including the leader, will do some coding for their issue, to allow them to meet the requirement that at least one meaningful commit be made for the coursework by every team member.</p>
 <p>Team leads should be assigned as the responsible person for the issue in the issue tracker.</p>
@@ -231,10 +256,11 @@ members of the sub-team, and for documenting the work as needed for marking. Thi
 <p>An example of a commit message that follows the format we want you to use is:</p>
 <p><code>Allow Joshua to list ingredients for spy glass</code></p>
 <p><code>When asked, Joshua will now list the ingredients he needs for making the new spy glass item.  This was trickier than it looked, because Joshua was already using all the available conversation states.  I added a new state (QUESTION_4) to make it work.</code></p>
-<p>Note the phrasing of the first line, as a sentence in the imperative that completes the sentence “When applied, this commit will….”</p>
+<p>Note the phrasing of the first line, as a sentence in the imperative that completes the sentence “When applied, this commit will…”.</p>
 <p>Please note that all team members must use their own GitLab account to commit and push their work, and that commits must have your University e-mail address as the e-mail of the commit author. This is set using <code>git config</code>, as described on the School wiki:</p>
 <p><a href="https://wiki.cs.manchester.ac.uk/index.php/Gitlab/Git_Setup">wiki.cs.manchester.ac.uk/index.php/Gitlab/Git_Setup</a></p>
-<p>Please make sure you set the <code>user.name</code> and <code>user.email</code> variables on all machines you intend to commit from. Commits made from other accounts will not be considered to be part of your team’s submission for the exercise.</p>
+<p>Please make sure you set the <code>user.name</code> and <code>user.email</code> variables on all machines you intend to commit from.</p>
+<p><strong>Commits made from other accounts will NOT be considered to be part of your team’s submission for the exercise!</strong></p>
 </div>
 <div id="tfcode" class="section level4 unnumbered">
 <h4>Test-First Coding<a class="anchor" aria-label="anchor" href="#tfcode"><i class="fas fa-link"></i></a>
@@ -381,7 +407,7 @@ Figure 19.1: Non Fast Forward Merge Option in Eclipse
 <p><code>% git rev-list -1 &lt;tag name&gt;</code></p>
 <p>It is recommended that operations on your team repository, such as correcting the location of a tag, are done in a team study session, when all the team is present and able to carry out the necessary commands on their local repositories at the same time.</p>
 <!--Team coursework 3: Migrating a Family of Features removed-->
-<p><code>Document version:</code> 04 April, 2022</p>
+<p><code>Document version:</code> 01 July, 2022</p>
 
 </div>
 </div>

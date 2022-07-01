@@ -192,7 +192,9 @@ Please note that all team members must use their own GitLab account to commit an
 [wiki.cs.manchester.ac.uk/index.php/Gitlab/Git_Setup](https://wiki.cs.manchester.ac.uk/index.php/Gitlab/Git_Setup)
 
 
-Please make sure you set the `user.name` and `user.email` variables on all machines you intend to commit from.  Commits made from other accounts will not be considered to be part of your team's submission for the exercise.
+Please make sure you set the `user.name` and `user.email` variables on all machines you intend to commit from.  
+
+**Commits made from other accounts will NOT be considered to be part of your team's submission for the exercise!**
 
 
 #### Test-First Coding {.unnumbered #tfcode}

@@ -7,7 +7,7 @@
 <title>Chapter 1 Building and testing | Software engineering</title>
 <meta name="author" content="Suzanne Embury and the software engineering team">
 <meta name="description" content="1.1 Introduction In this workshop, we will be building and testing a system called Marauroa. We will look at some essential processes for working on an existing team-developed software system....">
-<meta name="generator" content="bookdown 0.24 with bs4_book()">
+<meta name="generator" content="bookdown 0.26 with bs4_book()">
 <meta property="og:title" content="Chapter 1 Building and testing | Software engineering">
 <meta property="og:type" content="book">
 <meta property="og:url" content="https://software-eng.netlify.app/building.html">
@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Chapter 1 Building and testing | Software engineering">
 <meta name="twitter:site" content="@csmcr">
 <meta name="twitter:description" content="1.1 Introduction In this workshop, we will be building and testing a system called Marauroa. We will look at some essential processes for working on an existing team-developed software system....">
-<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.13/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.1/transition.js"></script><script src="libs/bs3compat-0.3.1/tabs.js"></script><script src="libs/bs3compat-0.3.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
 <script src="libs/bs4_book-1.0.0/bs4_book.js"></script><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-GJ4FGSK01L"></script><script>
@@ -25,7 +25,32 @@
       gtag('js', new Date());
 
       gtag('config', 'G-GJ4FGSK01L');
-    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS -->
+    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<style type="text/css">
+    /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+        }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -201,7 +226,7 @@ Figure 1.5: Take a look at the list of branches contained in the project, by scr
 <div class="rmdcaution">
 <p>⚠️ <strong>Caution</strong> ⚠️
 <strong>Master or Main?</strong></p>
-<p>Historically, the default name for initial branch in a git repository was <code>master</code>. The initial branch was called “master repository” with other copies serving as “slave repositories.”</p>
+<p>Historically, the default name for initial branch in a git repository was <code>master</code>. The initial branch was called “master repository” with other copies serving as “slave repositories”.</p>
 <p>Note that as of 2021, the use of <code>master</code> has now been deprecated. We’re using it in this course unit, but by default, new projects using git will call the initial branch <code>main</code> not <code>master</code> to avoid problemantic <a href="https://en.wikipedia.org/wiki/Master/slave_(technology)">master/slave terminology</a>.</p>
 <p>See <a href="https://about.gitlab.com/blog/2021/03/10/new-git-default-branch-name/">about.gitlab.com/blog/2021/03/10/new-git-default-branch-name/</a> for more details on the switch.</p>
 </div>
@@ -519,7 +544,7 @@ Don’t try to open the jacoco.xml file in Eclipse! It is huge and Eclipse will 
 </div>
 <p>It’s not clear what use the Marauroa team make of these results, but we would normally prefer to have the results of the code coverage in a more human-friendly format than a giant XML file. Jacoco provides the facility to create a report as a web page, as well as in XML form. So, we’re going to modify the build.xml file, to create this more useful form for us.</p>
 <p>All we need to do is add one extra line to the test target in the build file, just after line 320:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode md"><code class="sourceCode markdown"><span id="cb5-1"><a href="building.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;html</span><span class="ot"> destdir=</span><span class="st">"${build-coverage}"</span> <span class="kw">/&gt;</span></span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode md"><code class="sourceCode markdown"><span id="cb5-1"><a href="building.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;html</span> <span class="er">destdir</span><span class="ot">=</span><span class="st">"${build-coverage}"</span> <span class="kw">/&gt;</span></span></code></pre></div>
 <p>Note that the parameter is <code>destdir</code>, not <code>destfile</code>, like in the line that follows. Figure <a href="building.html#fig:addHTMLreportRequestToBuildFile-fig">1.23</a> below shows how the edited build file should look, with the new line highlighted.</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:addHTMLreportRequestToBuildFile-fig"></span>
@@ -541,13 +566,13 @@ Figure 1.24: A test report
 <div class="rmdnote">
 <p><strong>Aside: Coverage by Instrumentation</strong></p>
 <p>Code coverage tools like JaCoCo need to find out which source code statements were executed when a test (or suite of tests) are run. They typically do that by “instrumenting” the code. That is, they convert the code of the system so that every statement is accompanied by a second statement that logs the occurrence of the first statement in some file somewhere. For example, the code fragment:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb6-1"><a href="building.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> x = <span class="bu">Math</span>.<span class="fu">random</span>();</span>
-<span id="cb6-2"><a href="building.html#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="bu">System</span>.<span class="fu">out</span>.<span class="fu">println</span>(x);</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb6-1"><a href="building.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> x <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">random</span><span class="op">();</span></span>
+<span id="cb6-2"><a href="building.html#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="bu">System</span><span class="op">.</span><span class="fu">out</span><span class="op">.</span><span class="fu">println</span><span class="op">(</span>x<span class="op">);</span></span></code></pre></div>
 <p>would be converted into:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb7-1"><a href="building.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> x = <span class="bu">Math</span>.<span class="fu">random</span>();</span>
-<span id="cb7-2"><a href="building.html#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">coverage_log</span>(<span class="st">"int x = Math.random();"</span>);</span>
-<span id="cb7-3"><a href="building.html#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="bu">System</span>.<span class="fu">out</span>.<span class="fu">println</span>(x);</span>
-<span id="cb7-4"><a href="building.html#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="fu">coverage_log</span>(<span class="st">"System.out.println(x);"</span>);</span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb7-1"><a href="building.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> x <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">random</span><span class="op">();</span></span>
+<span id="cb7-2"><a href="building.html#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">coverage_log</span><span class="op">(</span><span class="st">"int x = Math.random();"</span><span class="op">);</span></span>
+<span id="cb7-3"><a href="building.html#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="bu">System</span><span class="op">.</span><span class="fu">out</span><span class="op">.</span><span class="fu">println</span><span class="op">(</span>x<span class="op">);</span></span>
+<span id="cb7-4"><a href="building.html#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="fu">coverage_log</span><span class="op">(</span><span class="st">"System.out.println(x);"</span><span class="op">);</span></span></code></pre></div>
 <p>(Obviously, this is a simplified picture of what is actually going on.) When the instrumented code is run, as well as executing the main code, a log is gradually built up of which statements were executed and when.</p>
 </div>
 <p>You can drill down further by clicking on the package names to see code coverage reports for each class. If you click on the classes, you’ll get a breakdown of the coverage per method. You can even get reports on the coverage of individual lines of code (by clicking on the methods in the coverage report). For example, figure <a href="building.html#fig:showDetailedMethodCoverageReportMac-fig">1.25</a> shows the detailed coverage report for the method <code>marauroa.common.game.RPObject.size()</code>.</p>
@@ -569,7 +594,7 @@ Figure 1.25: A more detailed coverage report
 <span class="header-section-number">1.4.5</span> Using the Test Suite to Find Bugs<a class="anchor" aria-label="anchor" href="#using-the-test-suite-to-find-bugs"><i class="fas fa-link"></i></a>
 </h3>
 <p>We’re going to end the workshop by making a quick experiment to show the power of this kind of automated test suite. We’re going to make a change to the code, and then we’ll see if the tests can indicate that something has been broken. For example, let’s make a small change to the method:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb8-1"><a href="building.html#cb8-1" aria-hidden="true" tabindex="-1"></a>marauroa.<span class="fu">common</span>.<span class="fu">game</span>.<span class="fu">RPSlot</span>.<span class="fu">setDeletedRPObject</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb8-1"><a href="building.html#cb8-1" aria-hidden="true" tabindex="-1"></a>marauroa<span class="op">.</span><span class="fu">common</span><span class="op">.</span><span class="fu">game</span><span class="op">.</span><span class="fu">RPSlot</span><span class="op">.</span><span class="fu">setDeletedRPObject</span><span class="op">()</span></span></code></pre></div>
 <p>First, we need to get the source of this method loaded into the Editor view. You can do that by expanding the src folder tree in the Package Explorer, or by using the Search facility from the main menu bar. (File search is the easiest to use, but Java search would be a sensible way to run this search, too.)</p>
 <p>Double click on the class or method to load it into the Editor window. You can use the Outline View to locate the method quickly once you have the class loaded into the Editor. Now we can make the change. Comment out line 649, as shown in figure <a href="building.html#fig:commentOutALineOfCode-fig">1.26</a></p>
 <div class="figure" style="text-align: center">
@@ -602,22 +627,22 @@ Figure 1.28: Tests FAILED
 <p>You may be thinking at this point that I must have spent ages looking for a line of code that I could comment out and that would cause a test to fail. In fact, this line was the first one I tried — honest! I did cheat a little bit, as I made sure to look for a line to change that was in code that was well covered by the test suite. If I’d made a change in code that was less well covered, then I’d probably have had to look harder to find a change that the tests could spot.</p>
 <div class="rmdnote">
 <p><strong>Aside: Writing Tests to Trap Bugs</strong></p>
-<p>You may notice that the name of the test that failed here contains the word “bug.” Even with a fairly comprehensive test suite, it is still possible for bugs to slip through. When this happens, it is good practice to write a new test that fails due to the bug. That is, the test describes what the correct behaviour of the system should be, and its failure tells the developers that the bug is still in the system. Then, when the developer thinks she has fixed the bug, she can run the bug test and find out whether she has or not.</p>
+<p>You may notice that the name of the test that failed here contains the word “bug”. Even with a fairly comprehensive test suite, it is still possible for bugs to slip through. When this happens, it is good practice to write a new test that fails due to the bug. That is, the test describes what the correct behaviour of the system should be, and its failure tells the developers that the bug is still in the system. Then, when the developer thinks she has fixed the bug, she can run the bug test and find out whether she has or not.</p>
 <p>When the bug is fixed, the test we wrote to make it visible can enter the normal pool of tests that we run regularly over the system. That way, if any future code change causes the bug to reappear, we’ll have a test that will catch it.</p>
 </div>
 <p>In whatever time is left, try making your own changes to the code. Run the tests, and see if they were able to detect the error you had introduced. Try making changes in code that is well covered by the tests and in code that is less well covered. How did the test suite do?</p>
 <p>You won’t have to try this for long before you start to want a better way of looking at the test results than scanning through the build output on the console. It is usual to set up the build script so that it creates a summary report of all the test results for the project, so that you can see at a glance which tests are failing. The Marauroa team have not done this (perhaps because they prefer to look at test results through their continuous integration and test system—we will look at these tools, and use them for the coursework, later in the course unit).</p>
 <p>If you want to get a summary of all the test failures, you can add the following target to the end of the build script (before the closing “project” tab):</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb10-1"><a href="building.html#cb10-1" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;target</span><span class="ot"> name=</span><span class="st">"all-tests-report"</span><span class="ot"> depends=</span><span class="st">"test"</span><span class="kw">&gt;</span></span>
-<span id="cb10-2"><a href="building.html#cb10-2" aria-hidden="true" tabindex="-1"></a>        <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">"test-summary-report"</span><span class="ot"> value=</span><span class="st">"${build-tests-report}/summary"</span><span class="kw">/&gt;</span></span>
-<span id="cb10-3"><a href="building.html#cb10-3" aria-hidden="true" tabindex="-1"></a>        <span class="kw">&lt;mkdir</span><span class="ot"> dir=</span><span class="st">"${test-summary-report}"</span><span class="kw">/&gt;</span></span>
-<span id="cb10-4"><a href="building.html#cb10-4" aria-hidden="true" tabindex="-1"></a>        <span class="kw">&lt;junitreport</span><span class="ot"> todir=</span><span class="st">"${test-summary-report}"</span><span class="kw">&gt;</span></span>
-<span id="cb10-5"><a href="building.html#cb10-5" aria-hidden="true" tabindex="-1"></a>            <span class="kw">&lt;fileset</span><span class="ot"> dir=</span><span class="st">"${build-tests-report}"</span><span class="kw">&gt;</span></span>
-<span id="cb10-6"><a href="building.html#cb10-6" aria-hidden="true" tabindex="-1"></a>                <span class="kw">&lt;include</span><span class="ot"> name=</span><span class="st">"TEST-*.xml"</span><span class="kw">/&gt;</span></span>
-<span id="cb10-7"><a href="building.html#cb10-7" aria-hidden="true" tabindex="-1"></a>            <span class="kw">&lt;/fileset&gt;</span></span>
-<span id="cb10-8"><a href="building.html#cb10-8" aria-hidden="true" tabindex="-1"></a>            <span class="kw">&lt;report</span><span class="ot"> format=</span><span class="st">"frames"</span><span class="ot"> todir=</span><span class="st">"${test-summary-report}"</span><span class="kw">/&gt;</span></span>
-<span id="cb10-9"><a href="building.html#cb10-9" aria-hidden="true" tabindex="-1"></a>        <span class="kw">&lt;/junitreport&gt;</span></span>
-<span id="cb10-10"><a href="building.html#cb10-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/target&gt;</span></span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb10-1"><a href="building.html#cb10-1" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">target</span><span class="ot"> name=</span><span class="st">"all-tests-report"</span><span class="ot"> depends=</span><span class="st">"test"</span>&gt;</span>
+<span id="cb10-2"><a href="building.html#cb10-2" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">property</span><span class="ot"> name=</span><span class="st">"test-summary-report"</span><span class="ot"> value=</span><span class="st">"${build-tests-report}/summary"</span>/&gt;</span>
+<span id="cb10-3"><a href="building.html#cb10-3" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">mkdir</span><span class="ot"> dir=</span><span class="st">"${test-summary-report}"</span>/&gt;</span>
+<span id="cb10-4"><a href="building.html#cb10-4" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">junitreport</span><span class="ot"> todir=</span><span class="st">"${test-summary-report}"</span>&gt;</span>
+<span id="cb10-5"><a href="building.html#cb10-5" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">fileset</span><span class="ot"> dir=</span><span class="st">"${build-tests-report}"</span>&gt;</span>
+<span id="cb10-6"><a href="building.html#cb10-6" aria-hidden="true" tabindex="-1"></a>                &lt;<span class="kw">include</span><span class="ot"> name=</span><span class="st">"TEST-*.xml"</span>/&gt;</span>
+<span id="cb10-7"><a href="building.html#cb10-7" aria-hidden="true" tabindex="-1"></a>            &lt;/<span class="kw">fileset</span>&gt;</span>
+<span id="cb10-8"><a href="building.html#cb10-8" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">report</span><span class="ot"> format=</span><span class="st">"frames"</span><span class="ot"> todir=</span><span class="st">"${test-summary-report}"</span>/&gt;</span>
+<span id="cb10-9"><a href="building.html#cb10-9" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">junitreport</span>&gt;</span>
+<span id="cb10-10"><a href="building.html#cb10-10" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">target</span>&gt;</span></code></pre></div>
 <p>You’ll now see a new target appearing in the Ant View for the <code>build.xml</code> file. Run this target to generate the summary report in your test reports folder. Once built, the file to look at is: <code>build/testreport/summary/index.html</code>.</p>
 <p>When you have injected some bugs that your test suite catches, why not challenge your colleagues to see if they can use the information provided by the failed tests to work out which line you changed. (Don’t forget to make a note of the class file and line you changed.)</p>
 <p><strong>STEP 4 of 4 COMPLETED</strong></p>
@@ -628,7 +653,7 @@ Figure 1.28: Tests FAILED
 <p>You’ll need to add a couple of other libraries to the <code>lib</code> folder as you progress. They can all be imported/copied from the <code>newmarauroa</code> project.</p>
 <p>When you are ready to run, you’ll need to create a new Run Configuration. The drop down menu associated with the small green circle and white triangle in the task bar (i.e. the run button) will take you to the screen for this.</p>
 <p>Do not hesitate to ask if you are stuck!</p>
-<p><code>Document version:</code> 04 April, 2022</p>
+<p><code>Document version:</code> 01 July, 2022</p>
 
 </div>
 </div>
