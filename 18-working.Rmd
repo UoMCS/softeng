@@ -192,10 +192,13 @@ Please note that all team members must use their own GitLab account to commit an
 [wiki.cs.manchester.ac.uk/index.php/Gitlab/Git_Setup](https://wiki.cs.manchester.ac.uk/index.php/Gitlab/Git_Setup)
 
 
+::: {.rmdcaution}
+
+(ref:cautionbox)
 Please make sure you set the `user.name` and `user.email` variables on all machines you intend to commit from.  
 
 **Commits made from other accounts will NOT be considered to be part of your team's submission for the exercise!**
-
+:::
 
 #### Test-First Coding {.unnumbered #tfcode}
 
@@ -252,7 +255,7 @@ knitr::include_graphics("images/NonFFMergeOption.png")
 
 Unfortunately, the handy merge option accessible through the History View doesn't give the chance to request this option, so should not be used for merges of your feature branch into the development branch.  If you use this version of merge by mistake, don't panic.  Fast forward merges are easily undone just after you make them by resetting master to the commit it was at before the merge was made *provided you have not pushed your merge to your team's remote*.  Please continue to make merges locally, checking them in the History View before carrying out the merge in your team's remote.
 
-You should use merge requests for this coursework exercise, to provide a  “quality gate” for code, to prevent it from being integrated into the development branch before it has undergone code review.  GitLab will perform the merge itself through merge requests if you request it, but you are advised to use caution with this option.  It is very easy to create an incorrect merge using merge requests unless you really understand how they work.  Worse still is that they create a merge directly into your team's remote repository, making it difficult to fix any merge errors that have been made.  Even if you plan to create the merge through a merge request, we still recommend checking the merge out on a temporary local branch before pressing any GitLab merge buttons.  (We've also set up Jenkins jobs to merge your feature branches into the development branch on each commit, to give you early warning of any problems that might arise---these builds are true “continuous integration” builds.  The merges are carried out on Jenkins and are thrown away once the next build takes place.  The merge will not be pushed bck to your team's repository.)
+You should use merge requests for this coursework exercise, to provide a  “quality gate” for code, to prevent it from being integrated into the development branch before it has undergone code review.  GitLab will perform the merge itself through merge requests if you request it, but you are advised to use caution with this option.  It is very easy to create an incorrect merge using merge requests unless you really understand how they work.  Worse still is that they create a merge directly into your team's remote repository, making it difficult to fix any merge errors that have been made.  Even if you plan to create the merge through a merge request, we still recommend checking the merge out on a temporary local branch before pressing any GitLab merge buttons.  (We've also set up Jenkins jobs to merge your feature branches into the development branch on each commit, to give you early warning of any problems that might arise---these builds are true “continuous integration” builds.  The merges are carried out on Jenkins and are thrown away once the next build takes place.  The merge will not be pushed back to your team's repository.)
 
 We will assume that new issues will be created for the remaining releases for this feature.  Therefore, once your feature branch has been merged into the development branch, and the resulting commit produces a clean stable build, and you have observed the feature working in game, you can consider the issue to be closed and should update its status in the issue tracker.  Don't forget to add the time required to carry out the merge to the issue's time tracker.
 

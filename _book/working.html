@@ -259,8 +259,11 @@ members of the sub-team, and for documenting the work as needed for marking. Thi
 <p>Note the phrasing of the first line, as a sentence in the imperative that completes the sentence “When applied, this commit will…”.</p>
 <p>Please note that all team members must use their own GitLab account to commit and push their work, and that commits must have your University e-mail address as the e-mail of the commit author. This is set using <code>git config</code>, as described on the School wiki:</p>
 <p><a href="https://wiki.cs.manchester.ac.uk/index.php/Gitlab/Git_Setup">wiki.cs.manchester.ac.uk/index.php/Gitlab/Git_Setup</a></p>
-<p>Please make sure you set the <code>user.name</code> and <code>user.email</code> variables on all machines you intend to commit from.</p>
+<div class="rmdcaution">
+<p>⚠️ <strong>Caution</strong> ⚠️
+Please make sure you set the <code>user.name</code> and <code>user.email</code> variables on all machines you intend to commit from.</p>
 <p><strong>Commits made from other accounts will NOT be considered to be part of your team’s submission for the exercise!</strong></p>
+</div>
 </div>
 <div id="tfcode" class="section level4 unnumbered">
 <h4>Test-First Coding<a class="anchor" aria-label="anchor" href="#tfcode"><i class="fas fa-link"></i></a>
@@ -309,7 +312,7 @@ Figure 19.1: Non Fast Forward Merge Option in Eclipse
 </p>
 </div>
 <p>Unfortunately, the handy merge option accessible through the History View doesn’t give the chance to request this option, so should not be used for merges of your feature branch into the development branch. If you use this version of merge by mistake, don’t panic. Fast forward merges are easily undone just after you make them by resetting master to the commit it was at before the merge was made <em>provided you have not pushed your merge to your team’s remote</em>. Please continue to make merges locally, checking them in the History View before carrying out the merge in your team’s remote.</p>
-<p>You should use merge requests for this coursework exercise, to provide a “quality gate” for code, to prevent it from being integrated into the development branch before it has undergone code review. GitLab will perform the merge itself through merge requests if you request it, but you are advised to use caution with this option. It is very easy to create an incorrect merge using merge requests unless you really understand how they work. Worse still is that they create a merge directly into your team’s remote repository, making it difficult to fix any merge errors that have been made. Even if you plan to create the merge through a merge request, we still recommend checking the merge out on a temporary local branch before pressing any GitLab merge buttons. (We’ve also set up Jenkins jobs to merge your feature branches into the development branch on each commit, to give you early warning of any problems that might arise—these builds are true “continuous integration” builds. The merges are carried out on Jenkins and are thrown away once the next build takes place. The merge will not be pushed bck to your team’s repository.)</p>
+<p>You should use merge requests for this coursework exercise, to provide a “quality gate” for code, to prevent it from being integrated into the development branch before it has undergone code review. GitLab will perform the merge itself through merge requests if you request it, but you are advised to use caution with this option. It is very easy to create an incorrect merge using merge requests unless you really understand how they work. Worse still is that they create a merge directly into your team’s remote repository, making it difficult to fix any merge errors that have been made. Even if you plan to create the merge through a merge request, we still recommend checking the merge out on a temporary local branch before pressing any GitLab merge buttons. (We’ve also set up Jenkins jobs to merge your feature branches into the development branch on each commit, to give you early warning of any problems that might arise—these builds are true “continuous integration” builds. The merges are carried out on Jenkins and are thrown away once the next build takes place. The merge will not be pushed back to your team’s repository.)</p>
 <p>We will assume that new issues will be created for the remaining releases for this feature. Therefore, once your feature branch has been merged into the development branch, and the resulting commit produces a clean stable build, and you have observed the feature working in game, you can consider the issue to be closed and should update its status in the issue tracker. Don’t forget to add the time required to carry out the merge to the issue’s time tracker.</p>
 <p>Issues for un-merged features should be left open, even if some commits have been made for them. The team needs to know that this feature’s canary release was not completed, so they can return to it in future should customer interest in the functionality proposed make the effort worthwhile.</p>
 </div>
@@ -407,7 +410,7 @@ Figure 19.1: Non Fast Forward Merge Option in Eclipse
 <p><code>% git rev-list -1 &lt;tag name&gt;</code></p>
 <p>It is recommended that operations on your team repository, such as correcting the location of a tag, are done in a team study session, when all the team is present and able to carry out the necessary commands on their local repositories at the same time.</p>
 <!--Team coursework 3: Migrating a Family of Features removed-->
-<p><code>Document version:</code> 01 July, 2022</p>
+<p><code>Document version:</code> 04 July, 2022</p>
 
 </div>
 </div>
