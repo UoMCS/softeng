@@ -1,332 +1,332 @@
-\contentsline {chapter}{Welcome}{11}{chapter*.2}%
-\contentsline {section}{\numberline {0.1}Making better software}{11}{section.0.1}%
-\contentsline {section}{\numberline {0.2}Aims}{13}{section.0.2}%
-\contentsline {subsection}{\numberline {0.2.1}Learning outcomes}{13}{subsection.0.2.1}%
-\contentsline {section}{\numberline {0.3}Recommended reading}{14}{section.0.3}%
-\contentsline {subsection}{\numberline {0.3.1}Requirements}{14}{subsection.0.3.1}%
-\contentsline {subsection}{\numberline {0.3.2}Overview of course}{14}{subsection.0.3.2}%
-\contentsline {section}{\numberline {0.4}Using the lab manual}{15}{section.0.4}%
-\contentsline {section}{\numberline {0.5}Contributing to this manual}{15}{section.0.5}%
-\contentsline {section}{\numberline {0.6}Acknowledgements}{15}{section.0.6}%
-\contentsline {section}{\numberline {0.7}Licensing}{16}{section.0.7}%
-\contentsline {subsection}{\numberline {0.7.1}Your privacy}{17}{subsection.0.7.1}%
-\contentsline {chapter}{Expectations}{19}{chapter*.3}%
-\contentsline {section}{\numberline {0.8}Expectation engineering}{19}{section.0.8}%
-\contentsline {subsection}{\numberline {0.8.1}Our expectations of you}{19}{subsection.0.8.1}%
-\contentsline {subsubsection}{\numberline {0.8.1.1}Getting help}{19}{subsubsection.0.8.1.1}%
-\contentsline {subsubsection}{\numberline {0.8.1.2}Workshops vs.\nobreakspace {}Team study}{21}{subsubsection.0.8.1.2}%
-\contentsline {subsubsection}{\numberline {0.8.1.3}Physical vs online sessions}{21}{subsubsection.0.8.1.3}%
-\contentsline {subsection}{\numberline {0.8.2}What your team expects of you}{22}{subsection.0.8.2}%
-\contentsline {subsection}{\numberline {0.8.3}What to expect of GTAs}{22}{subsection.0.8.3}%
-\contentsline {subsection}{\numberline {0.8.4}What to expect from mentors}{24}{subsection.0.8.4}%
-\contentsline {subsection}{\numberline {0.8.5}What you can expect from academic staff}{24}{subsection.0.8.5}%
-\contentsline {subsection}{\numberline {0.8.6}How your work gets assessed}{24}{subsection.0.8.6}%
-\contentsline {section}{\numberline {0.9}Your camera}{25}{section.0.9}%
-\contentsline {subsection}{\numberline {0.9.1}Camera on?}{25}{subsection.0.9.1}%
-\contentsline {subsection}{\numberline {0.9.2}Camera off?}{25}{subsection.0.9.2}%
-\contentsline {subsection}{\numberline {0.9.3}Being appropriate}{25}{subsection.0.9.3}%
-\contentsline {subsection}{\numberline {0.9.4}Respecting others}{26}{subsection.0.9.4}%
-\contentsline {chapter}{Weekly timetable}{27}{chapter*.4}%
-\contentsline {section}{\numberline {0.10}Where should I go if I'm on campus?}{27}{section.0.10}%
-\contentsline {section}{\numberline {0.11}Automating}{28}{section.0.11}%
-\contentsline {section}{\numberline {0.12}Reading}{28}{section.0.12}%
-\contentsline {section}{\numberline {0.13}Debugging}{29}{section.0.13}%
-\contentsline {section}{\numberline {0.14}Estimating}{29}{section.0.14}%
-\contentsline {section}{\numberline {0.15}Testing}{29}{section.0.15}%
-\contentsline {section}{\numberline {0.16}Pausing}{29}{section.0.16}%
-\contentsline {section}{\numberline {0.17}Workflowing}{30}{section.0.17}%
-\contentsline {section}{\numberline {0.18}Refactoring}{30}{section.0.18}%
-\contentsline {section}{\numberline {0.19}Testing}{30}{section.0.19}%
-\contentsline {section}{\numberline {0.20}Patterning}{30}{section.0.20}%
-\contentsline {section}{\numberline {0.21}Managing}{30}{section.0.21}%
-\contentsline {section}{\numberline {0.22}Challenging}{31}{section.0.22}%
-\contentsline {section}{\numberline {0.23}Marking interview schedule}{31}{section.0.23}%
-\contentsline {section}{\numberline {0.24}Tools}{31}{section.0.24}%
-\contentsline {subsection}{\numberline {0.24.1}Microsoft Teams}{32}{subsection.0.24.1}%
-\contentsline {subsection}{\numberline {0.24.2}Blackboard}{32}{subsection.0.24.2}%
-\contentsline {subsection}{\numberline {0.24.3}GitLab}{32}{subsection.0.24.3}%
-\contentsline {part}{I\hspace {1em}Weekly Workshops}{33}{part.1}%
-\contentsline {chapter}{\numberline {1}Building and testing}{35}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Introduction}{35}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Acquiring Marauroa}{36}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Run the IDE}{36}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Select the Workspace}{36}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}Organise Workspace}{37}{subsection.1.2.3}%
-\contentsline {subsection}{\numberline {1.2.4}Create a New Project by Cloning}{38}{subsection.1.2.4}%
-\contentsline {subsection}{\numberline {1.2.5}Checkout a Specific Commit}{45}{subsection.1.2.5}%
+\contentsline {chapter}{Welcome}{9}{chapter*.2}%
+\contentsline {section}{\numberline {0.1}Making better software}{9}{section.0.1}%
+\contentsline {section}{\numberline {0.2}Aims}{11}{section.0.2}%
+\contentsline {subsection}{\numberline {0.2.1}Learning outcomes}{11}{subsection.0.2.1}%
+\contentsline {section}{\numberline {0.3}Recommended reading}{11}{section.0.3}%
+\contentsline {subsection}{\numberline {0.3.1}Requirements}{12}{subsection.0.3.1}%
+\contentsline {subsection}{\numberline {0.3.2}Overview of course}{12}{subsection.0.3.2}%
+\contentsline {section}{\numberline {0.4}Using the lab manual}{12}{section.0.4}%
+\contentsline {section}{\numberline {0.5}Contributing to this manual}{13}{section.0.5}%
+\contentsline {section}{\numberline {0.6}Acknowledgements}{13}{section.0.6}%
+\contentsline {section}{\numberline {0.7}Licensing}{14}{section.0.7}%
+\contentsline {subsection}{\numberline {0.7.1}Your privacy}{14}{subsection.0.7.1}%
+\contentsline {chapter}{Expectations}{17}{chapter*.3}%
+\contentsline {section}{\numberline {0.8}Expectation engineering}{17}{section.0.8}%
+\contentsline {subsection}{\numberline {0.8.1}Our expectations of you}{17}{subsection.0.8.1}%
+\contentsline {subsubsection}{\numberline {0.8.1.1}Getting help}{17}{subsubsection.0.8.1.1}%
+\contentsline {subsubsection}{\numberline {0.8.1.2}Workshops vs.\nobreakspace {}Team study}{19}{subsubsection.0.8.1.2}%
+\contentsline {subsubsection}{\numberline {0.8.1.3}Physical vs online sessions}{19}{subsubsection.0.8.1.3}%
+\contentsline {subsection}{\numberline {0.8.2}What your team expects of you}{19}{subsection.0.8.2}%
+\contentsline {subsection}{\numberline {0.8.3}What to expect of GTAs}{21}{subsection.0.8.3}%
+\contentsline {subsection}{\numberline {0.8.4}What to expect from mentors}{21}{subsection.0.8.4}%
+\contentsline {subsection}{\numberline {0.8.5}What you can expect from academic staff}{21}{subsection.0.8.5}%
+\contentsline {subsection}{\numberline {0.8.6}How your work gets assessed}{22}{subsection.0.8.6}%
+\contentsline {section}{\numberline {0.9}Your camera}{22}{section.0.9}%
+\contentsline {subsection}{\numberline {0.9.1}Camera on?}{22}{subsection.0.9.1}%
+\contentsline {subsection}{\numberline {0.9.2}Camera off?}{22}{subsection.0.9.2}%
+\contentsline {subsection}{\numberline {0.9.3}Being appropriate}{22}{subsection.0.9.3}%
+\contentsline {subsection}{\numberline {0.9.4}Respecting others}{23}{subsection.0.9.4}%
+\contentsline {chapter}{Weekly timetable}{25}{chapter*.4}%
+\contentsline {section}{\numberline {0.10}Where should I go if I'm on campus?}{25}{section.0.10}%
+\contentsline {section}{\numberline {0.11}Automating}{26}{section.0.11}%
+\contentsline {section}{\numberline {0.12}Reading}{26}{section.0.12}%
+\contentsline {section}{\numberline {0.13}Debugging}{27}{section.0.13}%
+\contentsline {section}{\numberline {0.14}Estimating}{27}{section.0.14}%
+\contentsline {section}{\numberline {0.15}Testing}{27}{section.0.15}%
+\contentsline {section}{\numberline {0.16}Pausing}{27}{section.0.16}%
+\contentsline {section}{\numberline {0.17}Workflowing}{27}{section.0.17}%
+\contentsline {section}{\numberline {0.18}Refactoring}{27}{section.0.18}%
+\contentsline {section}{\numberline {0.19}Testing}{28}{section.0.19}%
+\contentsline {section}{\numberline {0.20}Patterning}{28}{section.0.20}%
+\contentsline {section}{\numberline {0.21}Managing}{28}{section.0.21}%
+\contentsline {section}{\numberline {0.22}Challenging}{28}{section.0.22}%
+\contentsline {section}{\numberline {0.23}Marking interview schedule}{28}{section.0.23}%
+\contentsline {section}{\numberline {0.24}Tools}{29}{section.0.24}%
+\contentsline {subsection}{\numberline {0.24.1}Microsoft Teams}{29}{subsection.0.24.1}%
+\contentsline {subsection}{\numberline {0.24.2}Blackboard}{29}{subsection.0.24.2}%
+\contentsline {subsection}{\numberline {0.24.3}GitLab}{29}{subsection.0.24.3}%
+\contentsline {part}{I\hspace {1em}Weekly Workshops}{31}{part.1}%
+\contentsline {chapter}{\numberline {1}Building and testing}{33}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introduction}{33}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Acquiring Marauroa}{34}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Run the IDE}{34}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Select the Workspace}{34}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Organise Workspace}{35}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}Create a New Project by Cloning}{36}{subsection.1.2.4}%
+\contentsline {subsection}{\numberline {1.2.5}Checkout a Specific Commit}{43}{subsection.1.2.5}%
 \contentsline {subsection}{\numberline {1.2.6}Explore your Project}{49}{subsection.1.2.6}%
-\contentsline {section}{\numberline {1.3}Building the Marauroa Engine}{52}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Locate and Examine the Build Script}{53}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Build the System Using the Build Script}{59}{subsection.1.3.2}%
-\contentsline {subsection}{\numberline {1.3.3}Examining the Results of the Build}{62}{subsection.1.3.3}%
-\contentsline {section}{\numberline {1.4}Testing the Marauroa Engine}{63}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}Finding Out What Tests There Are to Run}{63}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.4.2}Run the Tests}{66}{subsection.1.4.2}%
-\contentsline {subsection}{\numberline {1.4.3}Examining the Test Results}{66}{subsection.1.4.3}%
-\contentsline {subsection}{\numberline {1.4.4}Examining the Test Coverage Results}{70}{subsection.1.4.4}%
-\contentsline {subsection}{\numberline {1.4.5}Using the Test Suite to Find Bugs}{74}{subsection.1.4.5}%
-\contentsline {chapter}{\numberline {2}Large systems}{81}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Purposes of the workshop}{82}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Learning Large Codebases}{82}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}What activity takes most of a maintenance programmer's time?}{82}{subsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.1.1}Tips for learning large codebases}{82}{subsubsection.2.2.1.1}%
-\contentsline {paragraph}{\numberline {2.2.1.1.1}Tip 1: Develop general knowledge}{83}{paragraph.2.2.1.1.1}%
-\contentsline {paragraph}{\numberline {2.2.1.1.2}Tip 2: Develop domain knowledge}{83}{paragraph.2.2.1.1.2}%
-\contentsline {paragraph}{\numberline {2.2.1.1.3}Tip 3: Be systematic}{83}{paragraph.2.2.1.1.3}%
-\contentsline {paragraph}{\numberline {2.2.1.1.4}Tip 4: use your IDE}{83}{paragraph.2.2.1.1.4}%
-\contentsline {paragraph}{\numberline {2.2.1.1.5}Tip 5}{84}{paragraph.2.2.1.1.5}%
-\contentsline {paragraph}{\numberline {2.2.1.1.6}Tip 6: read the tests}{84}{paragraph.2.2.1.1.6}%
-\contentsline {paragraph}{\numberline {2.2.1.1.7}Tip 7: Take your time}{84}{paragraph.2.2.1.1.7}%
-\contentsline {subsubsection}{\numberline {2.2.1.2}Comprehending Marauroa}{84}{subsubsection.2.2.1.2}%
-\contentsline {section}{\numberline {2.3}Unit Testing Overview}{85}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Definition}{85}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}The AAA pattern: Arrange-Act-Assert}{86}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}A simple example}{86}{subsection.2.3.3}%
-\contentsline {subsection}{\numberline {2.3.4}Tips and tricks}{87}{subsection.2.3.4}%
-\contentsline {subsubsection}{\numberline {2.3.4.1}Tip 1: Arrange section is largest}{87}{subsubsection.2.3.4.1}%
-\contentsline {subsubsection}{\numberline {2.3.4.2}Tip 2: Act is usually a single line}{88}{subsubsection.2.3.4.2}%
-\contentsline {subsubsection}{\numberline {2.3.4.3}Tip 3: Order is important}{88}{subsubsection.2.3.4.3}%
-\contentsline {subsubsection}{\numberline {2.3.4.4}Tip 4: Avoid multiple AAA}{88}{subsubsection.2.3.4.4}%
-\contentsline {subsubsection}{\numberline {2.3.4.5}Tip 5: Avoid if statements in tests}{89}{subsubsection.2.3.4.5}%
-\contentsline {subsubsection}{\numberline {2.3.4.6}Tip 6: Annotate}{89}{subsubsection.2.3.4.6}%
-\contentsline {subsection}{\numberline {2.3.5}Building a simple application with simple tests}{89}{subsection.2.3.5}%
-\contentsline {section}{\numberline {2.4}Unit Testing Reading and Writing in Marauroa and Stendhal}{90}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Exercise 1: There is only one instance of World}{93}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Exercise 2: Zones are actually added to Worlds}{93}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Exercise 3: Objects are actually added to Zones}{93}{subsection.2.4.3}%
-\contentsline {subsection}{\numberline {2.4.4}Exercise 4: Objects are destroyed when removed from Zones}{93}{subsection.2.4.4}%
-\contentsline {subsection}{\numberline {2.4.5}Exercise 5: Reading and refactoring Stendhal tests}{94}{subsection.2.4.5}%
-\contentsline {section}{\numberline {2.5}JUnit Cheatsheet}{94}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}JUnit annotations}{94}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}JUnit statements}{95}{subsection.2.5.2}%
-\contentsline {chapter}{\numberline {3}Debugging}{97}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Preparing for the workshop}{97}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Introduction to the Workshop Activity}{98}{subsection.3.1.1}%
-\contentsline {section}{\numberline {3.2}Workshop Activity: Working Through a Bug Report}{99}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Start With a Problem}{100}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Stabilise the Problem}{101}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Isolate the Source of the Problem}{102}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Fix the Problem}{102}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.2.5}Test the Fix}{103}{subsection.3.2.5}%
-\contentsline {subsection}{\numberline {3.2.6}Look for Similar Errors}{103}{subsection.3.2.6}%
-\contentsline {subsection}{\numberline {3.2.7}The 11 Truths of Debugging}{103}{subsection.3.2.7}%
-\contentsline {chapter}{\numberline {4}Cost estimation}{105}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Course content}{105}{section.4.1}%
-\contentsline {chapter}{\numberline {5}Test first development}{107}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Course content}{107}{section.5.1}%
-\contentsline {chapter}{\numberline {6}Git workflows}{109}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Software Refactoring}{111}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Preparing for the workshop}{111}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}Prepare your IDE}{111}{subsection.7.1.1}%
-\contentsline {subsection}{\numberline {7.1.2}Run the Regression Test Suite}{111}{subsection.7.1.2}%
-\contentsline {section}{\numberline {7.2}Activity: Literals and Magic Numbers}{112}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Activity: Long Methods}{113}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Activity: Excessive Comments}{115}{section.7.4}%
-\contentsline {section}{\numberline {7.5}Activity: Applying the Refactorings Together}{116}{section.7.5}%
-\contentsline {chapter}{\numberline {8}Design for Testability}{119}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Preparing for the Workshop}{119}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Understanding Test Doubles: Dummies}{119}{section.8.2}%
-\contentsline {subsubsection}{\numberline {8.2.0.1}Example Dummy No.\nobreakspace {}1}{120}{subsubsection.8.2.0.1}%
-\contentsline {subsection}{\numberline {8.2.1}Example Dummy No.\nobreakspace {}2}{120}{subsection.8.2.1}%
-\contentsline {subsection}{\numberline {8.2.2}Example Dummy No.\nobreakspace {}3}{121}{subsection.8.2.2}%
-\contentsline {section}{\numberline {8.3}Understanding Test Doubles: Stubs}{121}{section.8.3}%
-\contentsline {subsection}{\numberline {8.3.1}Example Stub No.\nobreakspace {}1}{121}{subsection.8.3.1}%
-\contentsline {subsection}{\numberline {8.3.2}Example Stub No.\nobreakspace {}2}{122}{subsection.8.3.2}%
-\contentsline {section}{\numberline {8.4}Test Doubles Scavenger Hunt}{123}{section.8.4}%
-\contentsline {subsection}{\numberline {8.4.1}Finding Dummies}{123}{subsection.8.4.1}%
-\contentsline {subsection}{\numberline {8.4.2}Finding Stubs}{124}{subsection.8.4.2}%
-\contentsline {section}{\numberline {8.5}Understanding Test Doubles: First Experiments with Mock Objects}{124}{section.8.5}%
-\contentsline {section}{\numberline {8.6}All Finished and Nowhere to Go?}{125}{section.8.6}%
-\contentsline {chapter}{\numberline {9}Software design patterns}{127}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Introduction}{127}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Workshop Exercise 1 - Behavioural Patterns}{128}{section.9.2}%
-\contentsline {subsection}{\numberline {9.2.1}Exercise 1a - The Strategy Pattern}{129}{subsection.9.2.1}%
-\contentsline {subsubsection}{\numberline {9.2.1.1}Stage 1 - Add a new Pet class}{129}{subsubsection.9.2.1.1}%
-\contentsline {subsubsection}{\numberline {9.2.1.2}Stage 2 - Design sub-class/super-class relationships to avoid duplicated code}{129}{subsubsection.9.2.1.2}%
-\contentsline {subsubsection}{\numberline {9.2.1.3}Stage 3 - Introduce a GrowthStrategy}{131}{subsubsection.9.2.1.3}%
-\contentsline {subsubsection}{\numberline {9.2.1.4}Stage 4 - Implement concrete growth strategies}{131}{subsubsection.9.2.1.4}%
-\contentsline {subsubsection}{\numberline {9.2.1.5}Stage 5 - Modify the codebase to use our GrowthStrategy}{131}{subsubsection.9.2.1.5}%
-\contentsline {subsection}{\numberline {9.2.2}Exercise 1b - The State Pattern}{132}{subsection.9.2.2}%
-\contentsline {section}{\numberline {9.3}Workshop Exercise 2 - Structural Patterns}{133}{section.9.3}%
-\contentsline {subsection}{\numberline {9.3.1}Exercise 2a - The Composite Pattern}{133}{subsection.9.3.1}%
-\contentsline {subsubsection}{\numberline {9.3.1.1}Stage 1 - Add new Habitat classes}{134}{subsubsection.9.3.1.1}%
-\contentsline {subsubsection}{\numberline {9.3.1.2}Stage 2 - Modify Habitat to contain child Habitat objects}{134}{subsubsection.9.3.1.2}%
-\contentsline {subsubsection}{\numberline {9.3.1.3}Stage 3 - Modify Habitat to call child methods}{134}{subsubsection.9.3.1.3}%
-\contentsline {subsection}{\numberline {9.3.2}Exercise 2b - The Adapter Pattern}{135}{subsection.9.3.2}%
-\contentsline {section}{\numberline {9.4}Workshop Exercise 3 - Creational Patterns}{137}{section.9.4}%
-\contentsline {subsection}{\numberline {9.4.1}Exercise 3a - The Factory Method}{137}{subsection.9.4.1}%
-\contentsline {subsection}{\numberline {9.4.2}Exercise 3b - The Singleton Pattern}{138}{subsection.9.4.2}%
-\contentsline {chapter}{\numberline {10}Risk management}{139}{chapter.10}%
-\contentsline {section}{\numberline {10.1}Course content}{139}{section.10.1}%
-\contentsline {chapter}{\numberline {11}Open source challenge}{141}{chapter.11}%
-\contentsline {section}{\numberline {11.1}Introduction}{141}{section.11.1}%
-\contentsline {section}{\numberline {11.2}The challenge}{141}{section.11.2}%
-\contentsline {section}{\numberline {11.3}Identify an appropriate project}{141}{section.11.3}%
-\contentsline {subsection}{\numberline {11.3.1}Find an interesting issue to work on}{142}{subsection.11.3.1}%
-\contentsline {subsection}{\numberline {11.3.2}Fork and clone the repository}{143}{subsection.11.3.2}%
-\contentsline {subsection}{\numberline {11.3.3}Branch, change and push}{143}{subsection.11.3.3}%
-\contentsline {subsection}{\numberline {11.3.4}Notify the repository creator (make a pull request)}{143}{subsection.11.3.4}%
-\contentsline {part}{II\hspace {1em}Team study materials}{145}{part.2}%
-\contentsline {chapter}{\numberline {12}Starting Stendhal}{147}{chapter.12}%
-\contentsline {section}{\numberline {12.1}Introduction}{147}{section.12.1}%
-\contentsline {section}{\numberline {12.2}Choosing an IDE}{149}{section.12.2}%
-\contentsline {section}{\numberline {12.3}Acquiring the Code}{149}{section.12.3}%
-\contentsline {section}{\numberline {12.4}Building the Code}{150}{section.12.4}%
-\contentsline {section}{\numberline {12.5}Running the Test Suite}{151}{section.12.5}%
-\contentsline {subsection}{\numberline {12.5.1}Running the Test Suite Through Ant}{151}{subsection.12.5.1}%
-\contentsline {subsection}{\numberline {12.5.2}Run the Tests Using the Eclipse JUnit Plugin}{151}{subsection.12.5.2}%
-\contentsline {subsection}{\numberline {12.5.3}Running Individual Tests Using the Eclipse JUnit Plugin}{153}{subsection.12.5.3}%
-\contentsline {section}{\numberline {12.6}Running the Code}{153}{section.12.6}%
-\contentsline {section}{\numberline {12.7}Creating a Local Stendhal Account}{154}{section.12.7}%
-\contentsline {section}{\numberline {12.8}Getting to Know the Code}{156}{section.12.8}%
-\contentsline {chapter}{\numberline {13}Industrial mentoring}{159}{chapter.13}%
-\contentsline {section}{\numberline {13.1}When are the mentoring sessions?}{160}{section.13.1}%
-\contentsline {section}{\numberline {13.2}I'm interested, how can I register?}{160}{section.13.2}%
-\contentsline {section}{\numberline {13.3}About us}{160}{section.13.3}%
-\contentsline {section}{\numberline {13.4}About the course}{161}{section.13.4}%
-\contentsline {section}{\numberline {13.5}About the Mentoring Scheme}{162}{section.13.5}%
-\contentsline {section}{\numberline {13.6}Meeting agenda}{162}{section.13.6}%
-\contentsline {subsection}{\numberline {13.6.1}Getting to know your team}{162}{subsection.13.6.1}%
-\contentsline {subsection}{\numberline {13.6.2}Challenging and guiding the team}{162}{subsection.13.6.2}%
-\contentsline {subsection}{\numberline {13.6.3}Questions the Students Might Ask Mentors}{163}{subsection.13.6.3}%
-\contentsline {section}{\numberline {13.7}What do mentors get in return?}{164}{section.13.7}%
-\contentsline {section}{\numberline {13.8}Who are the mentors?}{164}{section.13.8}%
-\contentsline {chapter}{\numberline {14}Your mentor}{165}{chapter.14}%
-\contentsline {section}{\numberline {14.1}Introducing your team}{165}{section.14.1}%
-\contentsline {section}{\numberline {14.2}But I'm not interested in employer x?}{167}{section.14.2}%
-\contentsline {chapter}{\numberline {15}Synchronising}{169}{chapter.15}%
-\contentsline {section}{\numberline {15.1}Introduction}{169}{section.15.1}%
-\contentsline {section}{\numberline {15.2}Making a Local Commit}{170}{section.15.2}%
-\contentsline {section}{\numberline {15.3}Step 2: Pushing the Commit to the Team Repository}{172}{section.15.3}%
-\contentsline {section}{\numberline {15.4}Step 3: Fetching the New Commit from the Team Repository}{175}{section.15.4}%
-\contentsline {section}{\numberline {15.5}Step 4: Incorporating the Commit into Your Local Branch}{178}{section.15.5}%
-\contentsline {section}{\numberline {15.6}A Final Word}{180}{section.15.6}%
-\contentsline {part}{III\hspace {1em}Coursework}{181}{part.3}%
-\contentsline {chapter}{\numberline {16}Individual Coursework 1}{183}{chapter.16}%
-\contentsline {section}{\numberline {16.1}Introduction}{183}{section.16.1}%
-\contentsline {section}{\numberline {16.2}About the Coursework}{184}{section.16.2}%
-\contentsline {subsection}{\numberline {16.2.1}Key Information}{184}{subsection.16.2.1}%
-\contentsline {subsection}{\numberline {16.2.2}Submission Procedure}{184}{subsection.16.2.2}%
-\contentsline {subsection}{\numberline {16.2.3}Marking Scheme}{185}{subsection.16.2.3}%
-\contentsline {subsection}{\numberline {16.2.4}Pre-Deadline Feedback}{186}{subsection.16.2.4}%
-\contentsline {subsection}{\numberline {16.2.5}Late Submissions}{186}{subsection.16.2.5}%
-\contentsline {subsection}{\numberline {16.2.6}Plagiarism}{187}{subsection.16.2.6}%
-\contentsline {subsection}{\numberline {16.2.7}How to Get Help}{187}{subsection.16.2.7}%
-\contentsline {section}{\numberline {16.3}The Coursework Instructions}{187}{section.16.3}%
-\contentsline {subsection}{\numberline {16.3.1}Step One: Start Eclipse}{187}{subsection.16.3.1}%
-\contentsline {subsection}{\numberline {16.3.2}Step Two: Clone a GitLab Repository in Eclipse}{188}{subsection.16.3.2}%
-\contentsline {subsection}{\numberline {16.3.3}Step Three: Identify the Bug}{194}{subsection.16.3.3}%
-\contentsline {subsection}{\numberline {16.3.4}Step four: Create a Branch for Your Own Changes}{197}{subsection.16.3.4}%
-\contentsline {subsection}{\numberline {16.3.5}Step five: Commit a Change to the New Branch}{199}{subsection.16.3.5}%
-\contentsline {subsection}{\numberline {16.3.6}Step six: Merge your Changes}{207}{subsection.16.3.6}%
-\contentsline {subsection}{\numberline {16.3.7}Step seven: Push the Changes to the Remote Repository}{210}{subsection.16.3.7}%
-\contentsline {subsection}{\numberline {16.3.8}Step 8: Record the Project Status in the Issue Tracker}{212}{subsection.16.3.8}%
-\contentsline {subsection}{\numberline {16.3.9}Coursework Complete}{212}{subsection.16.3.9}%
-\contentsline {chapter}{\numberline {17}Individual Coursework 2}{215}{chapter.17}%
-\contentsline {section}{\numberline {17.1}Introduction}{215}{section.17.1}%
-\contentsline {section}{\numberline {17.2}About the Coursework}{217}{section.17.2}%
-\contentsline {subsection}{\numberline {17.2.1}Key Information}{217}{subsection.17.2.1}%
-\contentsline {subsection}{\numberline {17.2.2}Marking Scheme}{217}{subsection.17.2.2}%
-\contentsline {subsection}{\numberline {17.2.3}Pre-Deadline Feedback}{218}{subsection.17.2.3}%
-\contentsline {subsection}{\numberline {17.2.4}Submission Procedure}{219}{subsection.17.2.4}%
-\contentsline {subsection}{\numberline {17.2.5}Late Submissions}{219}{subsection.17.2.5}%
-\contentsline {subsection}{\numberline {17.2.6}Plagiarism}{220}{subsection.17.2.6}%
-\contentsline {subsection}{\numberline {17.2.7}How to Get Help}{220}{subsection.17.2.7}%
-\contentsline {section}{\numberline {17.3}The Coursework Instructions}{220}{section.17.3}%
-\contentsline {subsection}{\numberline {17.3.1}Step one: Clone and Import the Project into Eclipse}{220}{subsection.17.3.1}%
-\contentsline {subsection}{\numberline {17.3.2}Step two: Run and Understand the Test Cases for the Feature}{221}{subsection.17.3.2}%
-\contentsline {subsection}{\numberline {17.3.3}Step three: Implement the Feature/Make the Tests Pass}{222}{subsection.17.3.3}%
-\contentsline {subsection}{\numberline {17.3.4}Step four: Commit and Push the Feature Implementation}{224}{subsection.17.3.4}%
-\contentsline {subsection}{\numberline {17.3.5}Step five: Merge your Code into the Development Branch}{224}{subsection.17.3.5}%
-\contentsline {subsection}{\numberline {17.3.6}Step six: Resolve the Conflicts and Complete the Merge}{226}{subsection.17.3.6}%
-\contentsline {subsubsection}{\numberline {17.3.6.1}Walkthrough of the Conflict Resolution Process}{226}{subsubsection.17.3.6.1}%
-\contentsline {subsubsection}{\numberline {17.3.6.2}Now It's Your Turn}{232}{subsubsection.17.3.6.2}%
-\contentsline {subsection}{\numberline {17.3.7}Step seven: Push the Completed Merge to the Remote Repository}{233}{subsection.17.3.7}%
-\contentsline {subsection}{\numberline {17.3.8}Step eight: Update the Issue Tracker and Request Marking}{234}{subsection.17.3.8}%
-\contentsline {subsection}{\numberline {17.3.9}Messed Up?}{234}{subsection.17.3.9}%
-\contentsline {subsection}{\numberline {17.3.10}Coursework Complete}{234}{subsection.17.3.10}%
-\contentsline {chapter}{\numberline {18}Team Coursework 1}{235}{chapter.18}%
-\contentsline {section}{\numberline {18.1}Overview}{235}{section.18.1}%
-\contentsline {section}{\numberline {18.2}What You Have to Do}{236}{section.18.2}%
-\contentsline {subsection}{\numberline {18.2.1}Step one}{236}{subsection.18.2.1}%
-\contentsline {subsection}{\numberline {18.2.2}Step two}{236}{subsection.18.2.2}%
-\contentsline {subsection}{\numberline {18.2.3}Step three}{237}{subsection.18.2.3}%
-\contentsline {subsection}{\numberline {18.2.4}Step four}{238}{subsection.18.2.4}%
-\contentsline {subsection}{\numberline {18.2.5}Step five}{238}{subsection.18.2.5}%
-\contentsline {subsection}{\numberline {18.2.6}Step six}{239}{subsection.18.2.6}%
-\contentsline {subsection}{\numberline {18.2.7}Step seven}{239}{subsection.18.2.7}%
-\contentsline {subsection}{\numberline {18.2.8}Step eight}{240}{subsection.18.2.8}%
-\contentsline {subsection}{\numberline {18.2.9}Step nine}{241}{subsection.18.2.9}%
-\contentsline {subsection}{\numberline {18.2.10}Step ten}{242}{subsection.18.2.10}%
-\contentsline {section}{\numberline {18.3}Submission of Your Team's Work}{243}{section.18.3}%
-\contentsline {section}{\numberline {18.4}Coursework Extensions}{243}{section.18.4}%
-\contentsline {section}{\numberline {18.5}Non-Contributing Team Members}{244}{section.18.5}%
-\contentsline {section}{\numberline {18.6}Partially Contributing Team Members}{245}{section.18.6}%
-\contentsline {section}{\numberline {18.7}Plagiarism}{245}{section.18.7}%
-\contentsline {chapter}{\numberline {19}Team Coursework 2}{247}{chapter.19}%
-\contentsline {section}{\numberline {19.1}Overview}{247}{section.19.1}%
-\contentsline {section}{\numberline {19.2}What You Have to Do}{248}{section.19.2}%
-\contentsline {subsection}{\numberline {19.2.1}Step 1: Release Planning}{248}{subsection.19.2.1}%
-\contentsline {subsection}{\numberline {19.2.2}Step 2: Issue Planning}{250}{subsection.19.2.2}%
-\contentsline {subsection}{\numberline {19.2.3}Step2.1: Choosing your Issues}{250}{subsection.19.2.3}%
-\contentsline {subsection}{\numberline {19.2.4}Step2.2: Creating a Work Breakdown Structure for the Selected Issues}{251}{subsection.19.2.4}%
-\contentsline {subsection}{\numberline {19.2.5}Step 2.3: Planning for the Implementation}{251}{subsection.19.2.5}%
-\contentsline {subsection}{\numberline {19.2.6}Step 3: Testing and Implementation}{253}{subsection.19.2.6}%
-\contentsline {subsubsection}{Choosing a Sensible Starting Commit}{253}{section*.5}%
-\contentsline {subsubsection}{Git Workflow}{254}{section*.6}%
-\contentsline {subsubsection}{Best Practice Commit Messages}{255}{section*.7}%
-\contentsline {subsubsection}{Test-First Coding}{255}{section*.8}%
-\contentsline {subsubsection}{Management of Test Coverage}{256}{section*.9}%
-\contentsline {subsubsection}{Documenting Your Work}{256}{section*.10}%
-\contentsline {subsection}{\numberline {19.2.7}Step 4: Code Review}{257}{subsection.19.2.7}%
-\contentsline {subsection}{\numberline {19.2.8}Step 5: Integrate Completed Features into the Development Branch}{257}{subsection.19.2.8}%
-\contentsline {subsection}{\numberline {19.2.9}Step 6: Prepare the Release}{259}{subsection.19.2.9}%
-\contentsline {subsection}{\numberline {19.2.10}Step 7: Prepare for the Marking Interview}{260}{subsection.19.2.10}%
-\contentsline {section}{\numberline {19.3}Submission of Your Team's Work}{260}{section.19.3}%
-\contentsline {section}{\numberline {19.4}Coursework Extensions}{261}{section.19.4}%
-\contentsline {section}{\numberline {19.5}Non-Contributing Team Members}{261}{section.19.5}%
-\contentsline {section}{\numberline {19.6}Partially Contributing Team Members}{262}{section.19.6}%
-\contentsline {section}{\numberline {19.7}Plagiarism}{262}{section.19.7}%
-\contentsline {section}{\numberline {19.8}Technical Appendix}{263}{section.19.8}%
-\contentsline {subsection}{\numberline {19.8.1}Deleting a Tag on GitLab}{263}{subsection.19.8.1}%
-\contentsline {part}{IV\hspace {1em}Self study materials}{265}{part.4}%
-\contentsline {chapter}{\numberline {20}Testing Stendhal}{267}{chapter.20}%
-\contentsline {section}{\numberline {20.1}Introduction}{267}{section.20.1}%
-\contentsline {section}{\numberline {20.2}Manually Replicating The Issues}{268}{section.20.2}%
-\contentsline {section}{\numberline {20.3}Getting Inspiration for Writing your Own Test Cases}{268}{section.20.3}%
-\contentsline {chapter}{\numberline {21}Integrating commits}{271}{chapter.21}%
-\contentsline {section}{\numberline {21.1}Introduction}{271}{section.21.1}%
-\contentsline {section}{\numberline {21.2}Git has Rejected my Push}{271}{section.21.2}%
-\contentsline {subsection}{\numberline {21.2.1}Fetching the New Commits from the Remote}{273}{subsection.21.2.1}%
-\contentsline {section}{\numberline {21.3}Integrating the New Commits using Merge}{274}{section.21.3}%
-\contentsline {section}{\numberline {21.4}Integrating the New Commits using Rebase}{278}{section.21.4}%
-\contentsline {subsection}{\numberline {21.4.1}Rebasing Commits Made on the Master Branch}{280}{subsection.21.4.1}%
-\contentsline {subsection}{\numberline {21.4.2}Rebasing to Sync Repositories When Working on a Feature Branch}{282}{subsection.21.4.2}%
-\contentsline {subsection}{\numberline {21.4.3}Rebasing to Sync Repositories After a Fast-Forward Merge}{283}{subsection.21.4.3}%
-\contentsline {section}{\numberline {21.5}A Final Word}{286}{section.21.5}%
-\contentsline {chapter}{\numberline {22}Continuous integration}{287}{chapter.22}%
-\contentsline {section}{\numberline {22.1}Introduction to Continuous Integration}{287}{section.22.1}%
-\contentsline {section}{\numberline {22.2}Logging onto Jenkins CI Server:}{289}{section.22.2}%
-\contentsline {section}{\numberline {22.3}Accessing your Coursework Builds}{291}{section.22.3}%
-\contentsline {section}{\numberline {22.4}Drilling Down on the Development Branch Build}{294}{section.22.4}%
-\contentsline {section}{\numberline {22.5}What Happens When Jenkins Builds a Job}{296}{section.22.5}%
-\contentsline {subsection}{\numberline {22.5.1}What Triggers the Build?}{296}{subsection.22.5.1}%
-\contentsline {subsection}{\numberline {22.5.2}The Jenkins Workspace}{297}{subsection.22.5.2}%
-\contentsline {subsection}{\numberline {22.5.3}Jenkins Runs the Ant Build}{298}{subsection.22.5.3}%
-\contentsline {subsection}{\numberline {22.5.4}The Results are Published}{298}{subsection.22.5.4}%
-\contentsline {section}{\numberline {22.6}A Look at Feature Branch Builds}{298}{section.22.6}%
-\contentsline {section}{\numberline {22.7}Confused? Stuck? Need Help?}{300}{section.22.7}%
-\contentsline {chapter}{\numberline {23}Code review}{303}{chapter.23}%
-\contentsline {section}{\numberline {23.1}Why Review Code?}{303}{section.23.1}%
-\contentsline {section}{\numberline {23.2}Types of Code Review}{305}{section.23.2}%
-\contentsline {subsection}{\numberline {23.2.1}Buddy Review}{305}{subsection.23.2.1}%
-\contentsline {subsection}{\numberline {23.2.2}Team-Based Review}{306}{subsection.23.2.2}%
-\contentsline {subsection}{\numberline {23.2.3}Formal Review}{306}{subsection.23.2.3}%
-\contentsline {section}{\numberline {23.3}Good Practice for Code Reviewers}{307}{section.23.3}%
-\contentsline {section}{\numberline {23.4}Code Review Facilities in GitLab}{309}{section.23.4}%
-\contentsline {section}{\numberline {23.5}Code Review in COMP23311}{310}{section.23.5}%
-\contentsline {chapter}{\numberline {24}Unit testing}{313}{chapter.24}%
-\contentsline {section}{\numberline {24.1}Introduction}{313}{section.24.1}%
-\contentsline {section}{\numberline {24.2}What is Automated Testing and Why Do We Need It?}{314}{section.24.2}%
-\contentsline {section}{\numberline {24.3}Automated Testing in JUnit: a Simple Example}{316}{section.24.3}%
-\contentsline {chapter}{\numberline {25}References}{319}{chapter.25}%
+\contentsline {section}{\numberline {1.3}Building the Marauroa Engine}{50}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Locate and Examine the Build Script}{51}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Build the System Using the Build Script}{55}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Examining the Results of the Build}{58}{subsection.1.3.3}%
+\contentsline {section}{\numberline {1.4}Testing the Marauroa Engine}{58}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Finding Out What Tests There Are to Run}{59}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Run the Tests}{61}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Examining the Test Results}{62}{subsection.1.4.3}%
+\contentsline {subsection}{\numberline {1.4.4}Examining the Test Coverage Results}{65}{subsection.1.4.4}%
+\contentsline {subsection}{\numberline {1.4.5}Using the Test Suite to Find Bugs}{69}{subsection.1.4.5}%
+\contentsline {chapter}{\numberline {2}Large systems}{75}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Purposes of the workshop}{76}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Learning Large Codebases}{76}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}What activity takes most of a maintenance programmer's time?}{76}{subsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.1.1}Tips for learning large codebases}{76}{subsubsection.2.2.1.1}%
+\contentsline {paragraph}{\numberline {2.2.1.1.1}Tip 1: Develop general knowledge}{76}{paragraph.2.2.1.1.1}%
+\contentsline {paragraph}{\numberline {2.2.1.1.2}Tip 2: Develop domain knowledge}{77}{paragraph.2.2.1.1.2}%
+\contentsline {paragraph}{\numberline {2.2.1.1.3}Tip 3: Be systematic}{77}{paragraph.2.2.1.1.3}%
+\contentsline {paragraph}{\numberline {2.2.1.1.4}Tip 4: use your IDE}{77}{paragraph.2.2.1.1.4}%
+\contentsline {paragraph}{\numberline {2.2.1.1.5}Tip 5}{78}{paragraph.2.2.1.1.5}%
+\contentsline {paragraph}{\numberline {2.2.1.1.6}Tip 6: read the tests}{78}{paragraph.2.2.1.1.6}%
+\contentsline {paragraph}{\numberline {2.2.1.1.7}Tip 7: Take your time}{78}{paragraph.2.2.1.1.7}%
+\contentsline {subsubsection}{\numberline {2.2.1.2}Comprehending Marauroa}{78}{subsubsection.2.2.1.2}%
+\contentsline {section}{\numberline {2.3}Unit Testing Overview}{79}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Definition}{79}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}The AAA pattern: Arrange-Act-Assert}{80}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}A simple example}{80}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Tips and tricks}{81}{subsection.2.3.4}%
+\contentsline {subsubsection}{\numberline {2.3.4.1}Tip 1: Arrange section is largest}{81}{subsubsection.2.3.4.1}%
+\contentsline {subsubsection}{\numberline {2.3.4.2}Tip 2: Act is usually a single line}{82}{subsubsection.2.3.4.2}%
+\contentsline {subsubsection}{\numberline {2.3.4.3}Tip 3: Order is important}{82}{subsubsection.2.3.4.3}%
+\contentsline {subsubsection}{\numberline {2.3.4.4}Tip 4: Avoid multiple AAA}{82}{subsubsection.2.3.4.4}%
+\contentsline {subsubsection}{\numberline {2.3.4.5}Tip 5: Avoid if statements in tests}{82}{subsubsection.2.3.4.5}%
+\contentsline {subsubsection}{\numberline {2.3.4.6}Tip 6: Annotate}{83}{subsubsection.2.3.4.6}%
+\contentsline {subsection}{\numberline {2.3.5}Building a simple application with simple tests}{83}{subsection.2.3.5}%
+\contentsline {section}{\numberline {2.4}Unit Testing Reading and Writing in Marauroa and Stendhal}{86}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Exercise 1: There is only one instance of World}{86}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Exercise 2: Zones are actually added to Worlds}{86}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Exercise 3: Objects are actually added to Zones}{86}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Exercise 4: Objects are destroyed when removed from Zones}{87}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.4.5}Exercise 5: Reading and refactoring Stendhal tests}{87}{subsection.2.4.5}%
+\contentsline {section}{\numberline {2.5}JUnit Cheatsheet}{87}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}JUnit annotations}{87}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}JUnit statements}{88}{subsection.2.5.2}%
+\contentsline {chapter}{\numberline {3}Debugging}{91}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Preparing for the workshop}{91}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Introduction to the Workshop Activity}{92}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.2}Workshop Activity: Working Through a Bug Report}{93}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Start With a Problem}{94}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Stabilise the Problem}{95}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Isolate the Source of the Problem}{95}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Fix the Problem}{96}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Test the Fix}{96}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}Look for Similar Errors}{97}{subsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.2.7}The 11 Truths of Debugging}{97}{subsection.3.2.7}%
+\contentsline {chapter}{\numberline {4}Cost estimation}{99}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Work Breakdown Structures}{99}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Test first development}{103}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Course content}{103}{section.5.1}%
+\contentsline {chapter}{\numberline {6}Git workflows}{105}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Software Refactoring}{107}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Preparing for the workshop}{107}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Prepare your IDE}{107}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Run the Regression Test Suite}{107}{subsection.7.1.2}%
+\contentsline {section}{\numberline {7.2}Activity: Literals and Magic Numbers}{108}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Activity: Long Methods}{109}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Activity: Excessive Comments}{111}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Activity: Applying the Refactorings Together}{112}{section.7.5}%
+\contentsline {chapter}{\numberline {8}Design for Testability}{115}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Preparing for the Workshop}{115}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Understanding Test Doubles: Dummies}{115}{section.8.2}%
+\contentsline {subsubsection}{\numberline {8.2.0.1}Example Dummy No.\nobreakspace {}1}{116}{subsubsection.8.2.0.1}%
+\contentsline {subsection}{\numberline {8.2.1}Example Dummy No.\nobreakspace {}2}{116}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Example Dummy No.\nobreakspace {}3}{117}{subsection.8.2.2}%
+\contentsline {section}{\numberline {8.3}Understanding Test Doubles: Stubs}{117}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Example Stub No.\nobreakspace {}1}{117}{subsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.3.2}Example Stub No.\nobreakspace {}2}{118}{subsection.8.3.2}%
+\contentsline {section}{\numberline {8.4}Test Doubles Scavenger Hunt}{119}{section.8.4}%
+\contentsline {subsection}{\numberline {8.4.1}Finding Dummies}{119}{subsection.8.4.1}%
+\contentsline {subsection}{\numberline {8.4.2}Finding Stubs}{120}{subsection.8.4.2}%
+\contentsline {section}{\numberline {8.5}Understanding Test Doubles: First Experiments with Mock Objects}{120}{section.8.5}%
+\contentsline {section}{\numberline {8.6}All Finished and Nowhere to Go?}{121}{section.8.6}%
+\contentsline {chapter}{\numberline {9}Software design patterns}{123}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Introduction}{123}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Workshop Exercise 1 - Behavioural Patterns}{124}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}Exercise 1a - The Strategy Pattern}{124}{subsection.9.2.1}%
+\contentsline {subsubsection}{\numberline {9.2.1.1}Stage 1 - Add a new Pet class}{125}{subsubsection.9.2.1.1}%
+\contentsline {subsubsection}{\numberline {9.2.1.2}Stage 2 - Design sub-class/super-class relationships to avoid duplicated code}{125}{subsubsection.9.2.1.2}%
+\contentsline {subsubsection}{\numberline {9.2.1.3}Stage 3 - Introduce a GrowthStrategy}{125}{subsubsection.9.2.1.3}%
+\contentsline {subsubsection}{\numberline {9.2.1.4}Stage 4 - Implement concrete growth strategies}{127}{subsubsection.9.2.1.4}%
+\contentsline {subsubsection}{\numberline {9.2.1.5}Stage 5 - Modify the codebase to use our GrowthStrategy}{127}{subsubsection.9.2.1.5}%
+\contentsline {subsection}{\numberline {9.2.2}Exercise 1b - The State Pattern}{127}{subsection.9.2.2}%
+\contentsline {section}{\numberline {9.3}Workshop Exercise 2 - Structural Patterns}{128}{section.9.3}%
+\contentsline {subsection}{\numberline {9.3.1}Exercise 2a - The Composite Pattern}{129}{subsection.9.3.1}%
+\contentsline {subsubsection}{\numberline {9.3.1.1}Stage 1 - Add new Habitat classes}{129}{subsubsection.9.3.1.1}%
+\contentsline {subsubsection}{\numberline {9.3.1.2}Stage 2 - Modify Habitat to contain child Habitat objects}{130}{subsubsection.9.3.1.2}%
+\contentsline {subsubsection}{\numberline {9.3.1.3}Stage 3 - Modify Habitat to call child methods}{130}{subsubsection.9.3.1.3}%
+\contentsline {subsection}{\numberline {9.3.2}Exercise 2b - The Adapter Pattern}{131}{subsection.9.3.2}%
+\contentsline {section}{\numberline {9.4}Workshop Exercise 3 - Creational Patterns}{132}{section.9.4}%
+\contentsline {subsection}{\numberline {9.4.1}Exercise 3a - The Factory Method}{132}{subsection.9.4.1}%
+\contentsline {subsection}{\numberline {9.4.2}Exercise 3b - The Singleton Pattern}{133}{subsection.9.4.2}%
+\contentsline {chapter}{\numberline {10}Risk management}{135}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Course content}{135}{section.10.1}%
+\contentsline {chapter}{\numberline {11}Open source challenge}{137}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Introduction}{137}{section.11.1}%
+\contentsline {section}{\numberline {11.2}The challenge}{137}{section.11.2}%
+\contentsline {section}{\numberline {11.3}Identify an appropriate project}{137}{section.11.3}%
+\contentsline {subsection}{\numberline {11.3.1}Find an interesting issue to work on}{138}{subsection.11.3.1}%
+\contentsline {subsection}{\numberline {11.3.2}Fork and clone the repository}{138}{subsection.11.3.2}%
+\contentsline {subsection}{\numberline {11.3.3}Branch, change and push}{138}{subsection.11.3.3}%
+\contentsline {subsection}{\numberline {11.3.4}Notify the repository creator (make a pull request)}{139}{subsection.11.3.4}%
+\contentsline {part}{II\hspace {1em}Team study materials}{141}{part.2}%
+\contentsline {chapter}{\numberline {12}Starting Stendhal}{143}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Introduction}{143}{section.12.1}%
+\contentsline {section}{\numberline {12.2}Choosing an IDE}{145}{section.12.2}%
+\contentsline {section}{\numberline {12.3}Acquiring the Code}{145}{section.12.3}%
+\contentsline {section}{\numberline {12.4}Building the Code}{146}{section.12.4}%
+\contentsline {section}{\numberline {12.5}Running the Test Suite}{147}{section.12.5}%
+\contentsline {subsection}{\numberline {12.5.1}Running the Test Suite Through Ant}{147}{subsection.12.5.1}%
+\contentsline {subsection}{\numberline {12.5.2}Run the Tests Using the Eclipse JUnit Plugin}{147}{subsection.12.5.2}%
+\contentsline {subsection}{\numberline {12.5.3}Running Individual Tests Using the Eclipse JUnit Plugin}{148}{subsection.12.5.3}%
+\contentsline {section}{\numberline {12.6}Running the Code}{149}{section.12.6}%
+\contentsline {section}{\numberline {12.7}Creating a Local Stendhal Account}{150}{section.12.7}%
+\contentsline {section}{\numberline {12.8}Getting to Know the Code}{151}{section.12.8}%
+\contentsline {chapter}{\numberline {13}Industrial mentoring}{155}{chapter.13}%
+\contentsline {section}{\numberline {13.1}When are the mentoring sessions?}{156}{section.13.1}%
+\contentsline {section}{\numberline {13.2}I'm interested, how can I register?}{156}{section.13.2}%
+\contentsline {section}{\numberline {13.3}About us}{156}{section.13.3}%
+\contentsline {section}{\numberline {13.4}About the course}{157}{section.13.4}%
+\contentsline {section}{\numberline {13.5}About the Mentoring Scheme}{158}{section.13.5}%
+\contentsline {section}{\numberline {13.6}Meeting agenda}{158}{section.13.6}%
+\contentsline {subsection}{\numberline {13.6.1}Getting to know your team}{158}{subsection.13.6.1}%
+\contentsline {subsection}{\numberline {13.6.2}Challenging and guiding the team}{158}{subsection.13.6.2}%
+\contentsline {subsection}{\numberline {13.6.3}Questions the Students Might Ask Mentors}{158}{subsection.13.6.3}%
+\contentsline {section}{\numberline {13.7}What do mentors get in return?}{159}{section.13.7}%
+\contentsline {section}{\numberline {13.8}Who are the mentors?}{160}{section.13.8}%
+\contentsline {chapter}{\numberline {14}Your mentor}{161}{chapter.14}%
+\contentsline {section}{\numberline {14.1}Introducing your team}{161}{section.14.1}%
+\contentsline {section}{\numberline {14.2}But I'm not interested in employer x?}{163}{section.14.2}%
+\contentsline {chapter}{\numberline {15}Synchronising}{165}{chapter.15}%
+\contentsline {section}{\numberline {15.1}Introduction}{165}{section.15.1}%
+\contentsline {section}{\numberline {15.2}Making a Local Commit}{166}{section.15.2}%
+\contentsline {section}{\numberline {15.3}Step 2: Pushing the Commit to the Team Repository}{168}{section.15.3}%
+\contentsline {section}{\numberline {15.4}Step 3: Fetching the New Commit from the Team Repository}{171}{section.15.4}%
+\contentsline {section}{\numberline {15.5}Step 4: Incorporating the Commit into Your Local Branch}{174}{section.15.5}%
+\contentsline {section}{\numberline {15.6}A Final Word}{176}{section.15.6}%
+\contentsline {part}{III\hspace {1em}Coursework}{177}{part.3}%
+\contentsline {chapter}{\numberline {16}Individual Coursework 1}{179}{chapter.16}%
+\contentsline {section}{\numberline {16.1}Introduction}{179}{section.16.1}%
+\contentsline {section}{\numberline {16.2}About the Coursework}{180}{section.16.2}%
+\contentsline {subsection}{\numberline {16.2.1}Key Information}{180}{subsection.16.2.1}%
+\contentsline {subsection}{\numberline {16.2.2}Submission Procedure}{180}{subsection.16.2.2}%
+\contentsline {subsection}{\numberline {16.2.3}Marking Scheme}{181}{subsection.16.2.3}%
+\contentsline {subsection}{\numberline {16.2.4}Pre-Deadline Feedback}{182}{subsection.16.2.4}%
+\contentsline {subsection}{\numberline {16.2.5}Late Submissions}{182}{subsection.16.2.5}%
+\contentsline {subsection}{\numberline {16.2.6}Plagiarism}{183}{subsection.16.2.6}%
+\contentsline {subsection}{\numberline {16.2.7}How to Get Help}{183}{subsection.16.2.7}%
+\contentsline {section}{\numberline {16.3}The Coursework Instructions}{183}{section.16.3}%
+\contentsline {subsection}{\numberline {16.3.1}Step One: Start Eclipse}{183}{subsection.16.3.1}%
+\contentsline {subsection}{\numberline {16.3.2}Step Two: Clone a GitLab Repository in Eclipse}{184}{subsection.16.3.2}%
+\contentsline {subsection}{\numberline {16.3.3}Step Three: Identify the Bug}{188}{subsection.16.3.3}%
+\contentsline {subsection}{\numberline {16.3.4}Step four: Create a Branch for Your Own Changes}{192}{subsection.16.3.4}%
+\contentsline {subsection}{\numberline {16.3.5}Step five: Commit a Change to the New Branch}{193}{subsection.16.3.5}%
+\contentsline {subsection}{\numberline {16.3.6}Step six: Merge your Changes}{202}{subsection.16.3.6}%
+\contentsline {subsection}{\numberline {16.3.7}Step seven: Push the Changes to the Remote Repository}{206}{subsection.16.3.7}%
+\contentsline {subsection}{\numberline {16.3.8}Step 8: Record the Project Status in the Issue Tracker}{206}{subsection.16.3.8}%
+\contentsline {subsection}{\numberline {16.3.9}Coursework Complete}{208}{subsection.16.3.9}%
+\contentsline {chapter}{\numberline {17}Individual Coursework 2}{209}{chapter.17}%
+\contentsline {section}{\numberline {17.1}Introduction}{209}{section.17.1}%
+\contentsline {section}{\numberline {17.2}About the Coursework}{211}{section.17.2}%
+\contentsline {subsection}{\numberline {17.2.1}Key Information}{211}{subsection.17.2.1}%
+\contentsline {subsection}{\numberline {17.2.2}Marking Scheme}{211}{subsection.17.2.2}%
+\contentsline {subsection}{\numberline {17.2.3}Pre-Deadline Feedback}{212}{subsection.17.2.3}%
+\contentsline {subsection}{\numberline {17.2.4}Submission Procedure}{212}{subsection.17.2.4}%
+\contentsline {subsection}{\numberline {17.2.5}Late Submissions}{213}{subsection.17.2.5}%
+\contentsline {subsection}{\numberline {17.2.6}Plagiarism}{213}{subsection.17.2.6}%
+\contentsline {subsection}{\numberline {17.2.7}How to Get Help}{214}{subsection.17.2.7}%
+\contentsline {section}{\numberline {17.3}The Coursework Instructions}{214}{section.17.3}%
+\contentsline {subsection}{\numberline {17.3.1}Step one: Clone and Import the Project into Eclipse}{214}{subsection.17.3.1}%
+\contentsline {subsection}{\numberline {17.3.2}Step two: Run and Understand the Test Cases for the Feature}{214}{subsection.17.3.2}%
+\contentsline {subsection}{\numberline {17.3.3}Step three: Implement the Feature/Make the Tests Pass}{216}{subsection.17.3.3}%
+\contentsline {subsection}{\numberline {17.3.4}Step four: Commit and Push the Feature Implementation}{218}{subsection.17.3.4}%
+\contentsline {subsection}{\numberline {17.3.5}Step five: Merge your Code into the Development Branch}{218}{subsection.17.3.5}%
+\contentsline {subsection}{\numberline {17.3.6}Step six: Resolve the Conflicts and Complete the Merge}{220}{subsection.17.3.6}%
+\contentsline {subsubsection}{\numberline {17.3.6.1}Walkthrough of the Conflict Resolution Process}{220}{subsubsection.17.3.6.1}%
+\contentsline {subsubsection}{\numberline {17.3.6.2}Now It's Your Turn}{225}{subsubsection.17.3.6.2}%
+\contentsline {subsection}{\numberline {17.3.7}Step seven: Push the Completed Merge to the Remote Repository}{227}{subsection.17.3.7}%
+\contentsline {subsection}{\numberline {17.3.8}Step eight: Update the Issue Tracker and Request Marking}{228}{subsection.17.3.8}%
+\contentsline {subsection}{\numberline {17.3.9}Messed Up?}{228}{subsection.17.3.9}%
+\contentsline {subsection}{\numberline {17.3.10}Coursework Complete}{228}{subsection.17.3.10}%
+\contentsline {chapter}{\numberline {18}Team Coursework 1}{229}{chapter.18}%
+\contentsline {section}{\numberline {18.1}Overview}{229}{section.18.1}%
+\contentsline {section}{\numberline {18.2}What You Have to Do}{230}{section.18.2}%
+\contentsline {subsection}{\numberline {18.2.1}Step one}{230}{subsection.18.2.1}%
+\contentsline {subsection}{\numberline {18.2.2}Step two}{230}{subsection.18.2.2}%
+\contentsline {subsection}{\numberline {18.2.3}Step three}{231}{subsection.18.2.3}%
+\contentsline {subsection}{\numberline {18.2.4}Step four}{231}{subsection.18.2.4}%
+\contentsline {subsection}{\numberline {18.2.5}Step five}{232}{subsection.18.2.5}%
+\contentsline {subsection}{\numberline {18.2.6}Step six}{232}{subsection.18.2.6}%
+\contentsline {subsection}{\numberline {18.2.7}Step seven}{233}{subsection.18.2.7}%
+\contentsline {subsection}{\numberline {18.2.8}Step eight}{234}{subsection.18.2.8}%
+\contentsline {subsection}{\numberline {18.2.9}Step nine}{235}{subsection.18.2.9}%
+\contentsline {subsection}{\numberline {18.2.10}Step ten}{236}{subsection.18.2.10}%
+\contentsline {section}{\numberline {18.3}Submission of Your Team's Work}{236}{section.18.3}%
+\contentsline {section}{\numberline {18.4}Coursework Extensions}{237}{section.18.4}%
+\contentsline {section}{\numberline {18.5}Non-Contributing Team Members}{237}{section.18.5}%
+\contentsline {section}{\numberline {18.6}Partially Contributing Team Members}{238}{section.18.6}%
+\contentsline {section}{\numberline {18.7}Plagiarism}{239}{section.18.7}%
+\contentsline {chapter}{\numberline {19}Team Coursework 2}{241}{chapter.19}%
+\contentsline {section}{\numberline {19.1}Overview}{241}{section.19.1}%
+\contentsline {section}{\numberline {19.2}What You Have to Do}{242}{section.19.2}%
+\contentsline {subsection}{\numberline {19.2.1}Step 1: Release Planning}{242}{subsection.19.2.1}%
+\contentsline {subsection}{\numberline {19.2.2}Step 2: Issue Planning}{244}{subsection.19.2.2}%
+\contentsline {subsection}{\numberline {19.2.3}Step2.1: Choosing your Issues}{244}{subsection.19.2.3}%
+\contentsline {subsection}{\numberline {19.2.4}Step2.2: Creating a Work Breakdown Structure for the Selected Issues}{245}{subsection.19.2.4}%
+\contentsline {subsection}{\numberline {19.2.5}Step 2.3: Planning for the Implementation}{245}{subsection.19.2.5}%
+\contentsline {subsection}{\numberline {19.2.6}Step 3: Testing and Implementation}{247}{subsection.19.2.6}%
+\contentsline {subsubsection}{Choosing a Sensible Starting Commit}{247}{section*.5}%
+\contentsline {subsubsection}{Git Workflow}{248}{section*.6}%
+\contentsline {subsubsection}{Best Practice Commit Messages}{248}{section*.7}%
+\contentsline {subsubsection}{Test-First Coding}{249}{section*.8}%
+\contentsline {subsubsection}{Management of Test Coverage}{250}{section*.9}%
+\contentsline {subsubsection}{Documenting Your Work}{250}{section*.10}%
+\contentsline {subsection}{\numberline {19.2.7}Step 4: Code Review}{251}{subsection.19.2.7}%
+\contentsline {subsection}{\numberline {19.2.8}Step 5: Integrate Completed Features into the Development Branch}{251}{subsection.19.2.8}%
+\contentsline {subsection}{\numberline {19.2.9}Step 6: Prepare the Release}{253}{subsection.19.2.9}%
+\contentsline {subsection}{\numberline {19.2.10}Step 7: Prepare for the Marking Interview}{254}{subsection.19.2.10}%
+\contentsline {section}{\numberline {19.3}Submission of Your Team's Work}{254}{section.19.3}%
+\contentsline {section}{\numberline {19.4}Coursework Extensions}{255}{section.19.4}%
+\contentsline {section}{\numberline {19.5}Non-Contributing Team Members}{255}{section.19.5}%
+\contentsline {section}{\numberline {19.6}Partially Contributing Team Members}{256}{section.19.6}%
+\contentsline {section}{\numberline {19.7}Plagiarism}{256}{section.19.7}%
+\contentsline {section}{\numberline {19.8}Technical Appendix}{257}{section.19.8}%
+\contentsline {subsection}{\numberline {19.8.1}Deleting a Tag on GitLab}{257}{subsection.19.8.1}%
+\contentsline {part}{IV\hspace {1em}Self study materials}{259}{part.4}%
+\contentsline {chapter}{\numberline {20}Testing Stendhal}{261}{chapter.20}%
+\contentsline {section}{\numberline {20.1}Introduction}{261}{section.20.1}%
+\contentsline {section}{\numberline {20.2}Manually Replicating The Issues}{262}{section.20.2}%
+\contentsline {section}{\numberline {20.3}Getting Inspiration for Writing your Own Test Cases}{262}{section.20.3}%
+\contentsline {chapter}{\numberline {21}Integrating commits}{265}{chapter.21}%
+\contentsline {section}{\numberline {21.1}Introduction}{265}{section.21.1}%
+\contentsline {section}{\numberline {21.2}Git has Rejected my Push}{265}{section.21.2}%
+\contentsline {subsection}{\numberline {21.2.1}Fetching the New Commits from the Remote}{268}{subsection.21.2.1}%
+\contentsline {section}{\numberline {21.3}Integrating the New Commits using Merge}{268}{section.21.3}%
+\contentsline {section}{\numberline {21.4}Integrating the New Commits using Rebase}{272}{section.21.4}%
+\contentsline {subsection}{\numberline {21.4.1}Rebasing Commits Made on the Master Branch}{274}{subsection.21.4.1}%
+\contentsline {subsection}{\numberline {21.4.2}Rebasing to Sync Repositories When Working on a Feature Branch}{275}{subsection.21.4.2}%
+\contentsline {subsection}{\numberline {21.4.3}Rebasing to Sync Repositories After a Fast-Forward Merge}{277}{subsection.21.4.3}%
+\contentsline {section}{\numberline {21.5}A Final Word}{280}{section.21.5}%
+\contentsline {chapter}{\numberline {22}Continuous integration}{281}{chapter.22}%
+\contentsline {section}{\numberline {22.1}Introduction to Continuous Integration}{281}{section.22.1}%
+\contentsline {section}{\numberline {22.2}Logging onto Jenkins CI Server:}{283}{section.22.2}%
+\contentsline {section}{\numberline {22.3}Accessing your Coursework Builds}{285}{section.22.3}%
+\contentsline {section}{\numberline {22.4}Drilling Down on the Development Branch Build}{288}{section.22.4}%
+\contentsline {section}{\numberline {22.5}What Happens When Jenkins Builds a Job}{290}{section.22.5}%
+\contentsline {subsection}{\numberline {22.5.1}What Triggers the Build?}{290}{subsection.22.5.1}%
+\contentsline {subsection}{\numberline {22.5.2}The Jenkins Workspace}{291}{subsection.22.5.2}%
+\contentsline {subsection}{\numberline {22.5.3}Jenkins Runs the Ant Build}{292}{subsection.22.5.3}%
+\contentsline {subsection}{\numberline {22.5.4}The Results are Published}{292}{subsection.22.5.4}%
+\contentsline {section}{\numberline {22.6}A Look at Feature Branch Builds}{292}{section.22.6}%
+\contentsline {section}{\numberline {22.7}Confused? Stuck? Need Help?}{294}{section.22.7}%
+\contentsline {chapter}{\numberline {23}Code review}{297}{chapter.23}%
+\contentsline {section}{\numberline {23.1}Why Review Code?}{297}{section.23.1}%
+\contentsline {section}{\numberline {23.2}Types of Code Review}{299}{section.23.2}%
+\contentsline {subsection}{\numberline {23.2.1}Buddy Review}{299}{subsection.23.2.1}%
+\contentsline {subsection}{\numberline {23.2.2}Team-Based Review}{300}{subsection.23.2.2}%
+\contentsline {subsection}{\numberline {23.2.3}Formal Review}{300}{subsection.23.2.3}%
+\contentsline {section}{\numberline {23.3}Good Practice for Code Reviewers}{301}{section.23.3}%
+\contentsline {section}{\numberline {23.4}Code Review Facilities in GitLab}{303}{section.23.4}%
+\contentsline {section}{\numberline {23.5}Code Review in COMP23311}{304}{section.23.5}%
+\contentsline {chapter}{\numberline {24}Unit testing}{307}{chapter.24}%
+\contentsline {section}{\numberline {24.1}Introduction}{307}{section.24.1}%
+\contentsline {section}{\numberline {24.2}What is Automated Testing and Why Do We Need It?}{308}{section.24.2}%
+\contentsline {section}{\numberline {24.3}Automated Testing in JUnit: a Simple Example}{310}{section.24.3}%
+\contentsline {chapter}{\numberline {25}References}{313}{chapter.25}%

@@ -5,9 +5,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Chapter 2 Large systems | Software engineering</title>
-<meta name="author" content="Suzanne Embury and team">
+<meta name="author" content="Suzanne Embury and the software engineering team">
 <meta name="description" content="During your summer internship, year-long placement or after you leave University, chances are you will work on LARGE software systems. So it is crucial to be able to understand large software...">
-<meta name="generator" content="bookdown 0.24 with bs4_book()">
+<meta name="generator" content="bookdown 0.26 with bs4_book()">
 <meta property="og:title" content="Chapter 2 Large systems | Software engineering">
 <meta property="og:type" content="book">
 <meta property="og:url" content="https://software-eng.netlify.app/understanding.html">
@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Chapter 2 Large systems | Software engineering">
 <meta name="twitter:site" content="@csmcr">
 <meta name="twitter:description" content="During your summer internship, year-long placement or after you leave University, chances are you will work on LARGE software systems. So it is crucial to be able to understand large software...">
-<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.11/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.1/transition.js"></script><script src="libs/bs3compat-0.3.1/tabs.js"></script><script src="libs/bs3compat-0.3.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
 <script src="libs/bs4_book-1.0.0/bs4_book.js"></script><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-GJ4FGSK01L"></script><script>
@@ -25,7 +25,32 @@
       gtag('js', new Date());
 
       gtag('config', 'G-GJ4FGSK01L');
-    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><link rel="stylesheet" href="libs/custom/duncan.css">
+    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<style type="text/css">
+    /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+        }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -243,18 +268,18 @@ Figure 2.3: A screenshot from marauroa
 </h3>
 <p>Assume that we have a class called <code>StringUtils</code> which includes a method called <code>reverse</code> that return the reverse of an input string. For instance, if this method receives a string <code>xyz</code>, it should return a string <code>zyx</code>. Now, without knowing the exact implementation of that method, we can write the following unit test using the AAA pattern:</p>
 <div class="sourceCode" id="cb11"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb11-1"><a href="understanding.html#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="at">@Test</span></span>
-<span id="cb11-2"><a href="understanding.html#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="dt">void</span> <span class="fu">testReverse</span> () {</span>
+<span id="cb11-2"><a href="understanding.html#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="dt">void</span> <span class="fu">testReverse</span> <span class="op">()</span> <span class="op">{</span></span>
 <span id="cb11-3"><a href="understanding.html#cb11-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Arrange</span></span>
-<span id="cb11-4"><a href="understanding.html#cb11-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">String</span> input = <span class="st">"abc"</span>;</span>
-<span id="cb11-5"><a href="understanding.html#cb11-5" aria-hidden="true" tabindex="-1"></a>    StringUtils sut = <span class="kw">new</span> <span class="fu">StringUtils</span>(); <span class="co">// sut = system under test</span></span>
+<span id="cb11-4"><a href="understanding.html#cb11-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">String</span> input <span class="op">=</span> <span class="st">"abc"</span><span class="op">;</span></span>
+<span id="cb11-5"><a href="understanding.html#cb11-5" aria-hidden="true" tabindex="-1"></a>    StringUtils sut <span class="op">=</span> <span class="kw">new</span> <span class="fu">StringUtils</span><span class="op">();</span> <span class="co">// sut = system under test</span></span>
 <span id="cb11-6"><a href="understanding.html#cb11-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb11-7"><a href="understanding.html#cb11-7" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Act</span></span>
-<span id="cb11-8"><a href="understanding.html#cb11-8" aria-hidden="true" tabindex="-1"></a>    <span class="bu">String</span> result = sut.<span class="fu">reverse</span>(input);</span>
+<span id="cb11-8"><a href="understanding.html#cb11-8" aria-hidden="true" tabindex="-1"></a>    <span class="bu">String</span> result <span class="op">=</span> sut<span class="op">.</span><span class="fu">reverse</span><span class="op">(</span>input<span class="op">);</span></span>
 <span id="cb11-9"><a href="understanding.html#cb11-9" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb11-10"><a href="understanding.html#cb11-10" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Assert</span></span>
-<span id="cb11-11"><a href="understanding.html#cb11-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">assertEquals</span>(<span class="st">"cba"</span>, result);</span>
+<span id="cb11-11"><a href="understanding.html#cb11-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">assertEquals</span><span class="op">(</span><span class="st">"cba"</span><span class="op">,</span> result<span class="op">);</span></span>
 <span id="cb11-12"><a href="understanding.html#cb11-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-13"><a href="understanding.html#cb11-13" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<span id="cb11-13"><a href="understanding.html#cb11-13" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
 <p>It is important to note that you do not need to know the implementation of the method being tested in order to write the required unit tests. As in the example above, all you need to know is the signature (inputs and outputs) of the method and what it is expected to do. In fact, it is encouraged that you write unit tests for methods before you implement them. This way, your tests will not be written for a specific implementation, but rather they will be written based on what the method is supposed to do. This is a common practice referred to as Test-Driven-Development (TDD). <span class="citation">(<a href="reading.html#ref-unittesting" role="doc-biblioref">Koskela 2013</a>)</span></p>
 </div>
 <div id="tricks" class="section level3" number="2.3.4">
@@ -267,29 +292,29 @@ Figure 2.3: A screenshot from marauroa
 <span class="header-section-number">2.3.4.1</span> Tip 1: Arrange section is largest<a class="anchor" aria-label="anchor" href="#tip-1-arrange-section-is-largest"><i class="fas fa-link"></i></a>
 </h4>
 <p>The <code>Arrange</code> section should always be the largest of the 3. In this section, all the required variables and objects are created and given the desired state required for the test. Sometimes multiple tests require the same <code>Arrange</code> section. Hence, it’s a common practice to extract the arrange section into a private method(s) inside the test class and then simply call these methods from the arrange section of any test that require them.</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb12-1"><a href="understanding.html#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="bu">String</span> input;</span>
-<span id="cb12-2"><a href="understanding.html#cb12-2" aria-hidden="true" tabindex="-1"></a>StringUtils sut; <span class="co">// sut = system under test</span></span>
+<div class="sourceCode" id="cb12"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb12-1"><a href="understanding.html#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="bu">String</span> input<span class="op">;</span></span>
+<span id="cb12-2"><a href="understanding.html#cb12-2" aria-hidden="true" tabindex="-1"></a>StringUtils sut<span class="op">;</span> <span class="co">// sut = system under test</span></span>
 <span id="cb12-3"><a href="understanding.html#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb12-4"><a href="understanding.html#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="co">// this method will be used in the arrange section of the tests</span></span>
-<span id="cb12-5"><a href="understanding.html#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="kw">private</span> <span class="dt">void</span> <span class="fu">initialize</span>(){</span>
-<span id="cb12-6"><a href="understanding.html#cb12-6" aria-hidden="true" tabindex="-1"></a>    input = <span class="st">"abc"</span>;</span>
-<span id="cb12-7"><a href="understanding.html#cb12-7" aria-hidden="true" tabindex="-1"></a>    sut = <span class="kw">new</span> <span class="fu">StringUtils</span>();</span>
+<span id="cb12-5"><a href="understanding.html#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="kw">private</span> <span class="dt">void</span> <span class="fu">initialize</span><span class="op">(){</span></span>
+<span id="cb12-6"><a href="understanding.html#cb12-6" aria-hidden="true" tabindex="-1"></a>    input <span class="op">=</span> <span class="st">"abc"</span><span class="op">;</span></span>
+<span id="cb12-7"><a href="understanding.html#cb12-7" aria-hidden="true" tabindex="-1"></a>    sut <span class="op">=</span> <span class="kw">new</span> <span class="fu">StringUtils</span><span class="op">();</span></span>
 <span id="cb12-8"><a href="understanding.html#cb12-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-9"><a href="understanding.html#cb12-9" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb12-9"><a href="understanding.html#cb12-9" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
 <span id="cb12-10"><a href="understanding.html#cb12-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb12-11"><a href="understanding.html#cb12-11" aria-hidden="true" tabindex="-1"></a><span class="at">@Test</span></span>
-<span id="cb12-12"><a href="understanding.html#cb12-12" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="dt">void</span> <span class="fu">testReverse</span> () {</span>
+<span id="cb12-12"><a href="understanding.html#cb12-12" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="dt">void</span> <span class="fu">testReverse</span> <span class="op">()</span> <span class="op">{</span></span>
 <span id="cb12-13"><a href="understanding.html#cb12-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb12-14"><a href="understanding.html#cb12-14" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Arrange</span></span>
-<span id="cb12-15"><a href="understanding.html#cb12-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">initialize</span>(); <span class="co">// everything we need is arranged using this single line</span></span>
+<span id="cb12-15"><a href="understanding.html#cb12-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">initialize</span><span class="op">();</span> <span class="co">// everything we need is arranged using this single line</span></span>
 <span id="cb12-16"><a href="understanding.html#cb12-16" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb12-17"><a href="understanding.html#cb12-17" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Act</span></span>
-<span id="cb12-18"><a href="understanding.html#cb12-18" aria-hidden="true" tabindex="-1"></a>    <span class="bu">String</span> result = sut.<span class="fu">reverse</span>(input);</span>
+<span id="cb12-18"><a href="understanding.html#cb12-18" aria-hidden="true" tabindex="-1"></a>    <span class="bu">String</span> result <span class="op">=</span> sut<span class="op">.</span><span class="fu">reverse</span><span class="op">(</span>input<span class="op">);</span></span>
 <span id="cb12-19"><a href="understanding.html#cb12-19" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb12-20"><a href="understanding.html#cb12-20" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Assert</span></span>
-<span id="cb12-21"><a href="understanding.html#cb12-21" aria-hidden="true" tabindex="-1"></a>    <span class="fu">assertEquals</span>(<span class="st">"cba"</span>, result);</span>
+<span id="cb12-21"><a href="understanding.html#cb12-21" aria-hidden="true" tabindex="-1"></a>    <span class="fu">assertEquals</span><span class="op">(</span><span class="st">"cba"</span><span class="op">,</span> result<span class="op">);</span></span>
 <span id="cb12-22"><a href="understanding.html#cb12-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-23"><a href="understanding.html#cb12-23" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<span id="cb12-23"><a href="understanding.html#cb12-23" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
 </div>
 <div id="singleline" class="section level4" number="2.3.4.2">
 <h4>
@@ -484,9 +509,9 @@ Figure 2.5: The Class Under Test in this example is Acme
 </h3>
 <div class="sourceCode" id="cb13"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb13-1"><a href="understanding.html#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="at">@Test</span></span></code></pre></div>
 <p>Identifies a method as a test method.</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb14-1"><a href="understanding.html#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="at">@Test</span>(expected = <span class="bu">Exception</span>.<span class="fu">class</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb14-1"><a href="understanding.html#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="at">@Test</span><span class="op">(</span>expected <span class="op">=</span> <span class="bu">Exception</span><span class="op">.</span><span class="fu">class</span><span class="op">)</span></span></code></pre></div>
 <p>Fails if the method does not throw the named exception.</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb15-1"><a href="understanding.html#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="at">@Test</span>(timeout=<span class="dv">100</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb15-1"><a href="understanding.html#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="at">@Test</span><span class="op">(</span>timeout<span class="op">=</span><span class="dv">100</span><span class="op">)</span></span></code></pre></div>
 <p>Fails if the method takes longer than 100 milliseconds.</p>
 <div class="sourceCode" id="cb16"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb16-1"><a href="understanding.html#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="at">@Before</span></span></code></pre></div>
 <p>This method is executed before each test. It is used to prepare the test environment (e.g., read input data, initialize the class).</p>
@@ -501,25 +526,25 @@ Figure 2.5: The Class Under Test in this example is Acme
 <h3>
 <span class="header-section-number">2.5.2</span> JUnit statements<a class="anchor" aria-label="anchor" href="#junit-statements"><i class="fas fa-link"></i></a>
 </h3>
-<div class="sourceCode" id="cb20"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb20-1"><a href="understanding.html#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">fail</span>(<span class="bu">String</span> message)</span></code></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb20-1"><a href="understanding.html#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">fail</span><span class="op">(</span><span class="bu">String</span> message<span class="op">)</span></span></code></pre></div>
 <p>Let the method fail. Might be used to check that a certain part of the code is not reached or to have a failing test before the test code is implemented.</p>
-<div class="sourceCode" id="cb21"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb21-1"><a href="understanding.html#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">assertTrue</span>(<span class="bu">String</span> message, <span class="dt">boolean</span> condition)</span></code></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb21-1"><a href="understanding.html#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">assertTrue</span><span class="op">(</span><span class="bu">String</span> message<span class="op">,</span> <span class="dt">boolean</span> condition<span class="op">)</span></span></code></pre></div>
 <p>Checks that the boolean condition is true.</p>
-<div class="sourceCode" id="cb22"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb22-1"><a href="understanding.html#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">assertFalse</span>(<span class="bu">String</span> message, <span class="dt">boolean</span> condition)</span></code></pre></div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb22-1"><a href="understanding.html#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">assertFalse</span><span class="op">(</span><span class="bu">String</span> message<span class="op">,</span> <span class="dt">boolean</span> condition<span class="op">)</span></span></code></pre></div>
 <p>Checks that the boolean condition is false.</p>
-<div class="sourceCode" id="cb23"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb23-1"><a href="understanding.html#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">assertEquals</span>(<span class="bu">String</span> message, expected, actual)</span></code></pre></div>
+<div class="sourceCode" id="cb23"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb23-1"><a href="understanding.html#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">assertEquals</span><span class="op">(</span><span class="bu">String</span> message<span class="op">,</span> expected<span class="op">,</span> actual<span class="op">)</span></span></code></pre></div>
 <p>Tests that two values are the same. Note: for arrays the reference is checked not the content of the arrays.</p>
-<div class="sourceCode" id="cb24"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb24-1"><a href="understanding.html#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">assertEquals</span>(<span class="bu">String</span> message, expected, actual, tolerance)</span></code></pre></div>
+<div class="sourceCode" id="cb24"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb24-1"><a href="understanding.html#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">assertEquals</span><span class="op">(</span><span class="bu">String</span> message<span class="op">,</span> expected<span class="op">,</span> actual<span class="op">,</span> tolerance<span class="op">)</span></span></code></pre></div>
 <p>Test that float or double values match. The tolerance is the number of decimals that must be the same.</p>
-<div class="sourceCode" id="cb25"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb25-1"><a href="understanding.html#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">assertNull</span>(<span class="bu">String</span> message, object)</span></code></pre></div>
+<div class="sourceCode" id="cb25"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb25-1"><a href="understanding.html#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">assertNull</span><span class="op">(</span><span class="bu">String</span> message<span class="op">,</span> object<span class="op">)</span></span></code></pre></div>
 <p>Checks that the object is null.</p>
-<div class="sourceCode" id="cb26"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb26-1"><a href="understanding.html#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">assertNotNull</span>(<span class="bu">String</span> message, object)</span></code></pre></div>
+<div class="sourceCode" id="cb26"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb26-1"><a href="understanding.html#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">assertNotNull</span><span class="op">(</span><span class="bu">String</span> message<span class="op">,</span> object<span class="op">)</span></span></code></pre></div>
 <p>Checks that the object is not null.</p>
-<div class="sourceCode" id="cb27"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb27-1"><a href="understanding.html#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">assertSame</span>(<span class="bu">String</span> message, expected, actual)</span></code></pre></div>
+<div class="sourceCode" id="cb27"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb27-1"><a href="understanding.html#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">assertSame</span><span class="op">(</span><span class="bu">String</span> message<span class="op">,</span> expected<span class="op">,</span> actual<span class="op">)</span></span></code></pre></div>
 <p>Checks that both variables refer to the same object.</p>
-<div class="sourceCode" id="cb28"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb28-1"><a href="understanding.html#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">assertNotSame</span>(<span class="bu">String</span> message, expected, actual)</span></code></pre></div>
+<div class="sourceCode" id="cb28"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb28-1"><a href="understanding.html#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">assertNotSame</span><span class="op">(</span><span class="bu">String</span> message<span class="op">,</span> expected<span class="op">,</span> actual<span class="op">)</span></span></code></pre></div>
 <p>Checks that both variables refer to different objects.</p>
-<p><code>Document version:</code> 06 December, 2021</p>
+<p><code>Document version:</code> 04 July, 2022</p>
 
 </div>
 </div>
@@ -576,7 +601,7 @@ Figure 2.5: The Class Under Test in this example is Acme
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Software engineering</strong>" was written by Suzanne Embury and team. </p>
+    <p>"<strong>Software engineering</strong>" was written by Suzanne Embury and the software engineering team. </p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

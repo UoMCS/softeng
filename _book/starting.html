@@ -5,9 +5,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Chapter 12 Starting Stendhal | Software engineering</title>
-<meta name="author" content="Suzanne Embury and team">
+<meta name="author" content="Suzanne Embury and the software engineering team">
 <meta name="description" content="12.1 Introduction At the start of the first team coursework exercise, a GitLab repository will have been created for your team, containing the code base that you will work with across the...">
-<meta name="generator" content="bookdown 0.24 with bs4_book()">
+<meta name="generator" content="bookdown 0.26 with bs4_book()">
 <meta property="og:title" content="Chapter 12 Starting Stendhal | Software engineering">
 <meta property="og:type" content="book">
 <meta property="og:url" content="https://software-eng.netlify.app/starting.html">
@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Chapter 12 Starting Stendhal | Software engineering">
 <meta name="twitter:site" content="@csmcr">
 <meta name="twitter:description" content="12.1 Introduction At the start of the first team coursework exercise, a GitLab repository will have been created for your team, containing the code base that you will work with across the...">
-<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.11/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.1/transition.js"></script><script src="libs/bs3compat-0.3.1/tabs.js"></script><script src="libs/bs3compat-0.3.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
 <script src="libs/bs4_book-1.0.0/bs4_book.js"></script><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-GJ4FGSK01L"></script><script>
@@ -25,7 +25,32 @@
       gtag('js', new Date());
 
       gtag('config', 'G-GJ4FGSK01L');
-    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><link rel="stylesheet" href="libs/custom/duncan.css">
+    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<style type="text/css">
+    /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+        }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -184,7 +209,7 @@ You are welcome to use any Java IDE for your team, but you must use a proper IDE
 <div class="rmdnote">
 <p>ℹ️ <strong>Note</strong> ℹ️</p>
 <p>The version of Eclipse we are using already puts all the Jars on the classpath for your JUnit configuration. You can skip that step.</p>
-<p>However, you still need to add the root folder, as described. On some operating systems, you won’t find a tab labelled “Classpath” in your Eclipse run configuration wizard. Instead, it is called “Dependencies.”</p>
+<p>However, you still need to add the root folder, as described. On some operating systems, you won’t find a tab labelled “Classpath” in your Eclipse run configuration wizard. Instead, it is called “Dependencies”.</p>
 <p>On these same platforms, you should click on “Classpath Entries” instead of “User Entries” to add the root folder.</p>
 </div>
 <p>Be sure to follow the instructions carefully, or you may find that the test suite does not run. It is especially important that you set the class path correctly, and include the project root folder on the class path. As well as allowing classes to be found and run, this allows the Stendhal server to locate the XML configuration files that contain important details of the game world, including items, creatures, zones and locations.</p>
@@ -218,7 +243,7 @@ You are welcome to use any Java IDE for your team, but you must use a proper IDE
 <span class="header-section-number">12.5.3</span> Running Individual Tests Using the Eclipse JUnit Plugin<a class="anchor" aria-label="anchor" href="#eclipsej"><i class="fas fa-link"></i></a>
 </h3>
 <p>The run configuration we’ve just set up allows us to execute the complete Stendhal test suite. Often, when developing, we want to execute the tests within a single Java test class, to avoid the delay involved in waiting for the whole test suite to execute.</p>
-<p>As mentioned, with a larger, more complex software system, we can’t just right click on individual tests in Stendhal and expect to be able to run them “As JUnit Tests,” as we did in the individual coursework. Any test case that needs access to the game data that is configured through the XML files, or that is stored in the game database, needs to have the class path set up with the root folder of the project on the path, for example.</p>
+<p>As mentioned, with a larger, more complex software system, we can’t just right click on individual tests in Stendhal and expect to be able to run them “As JUnit Tests”, as we did in the individual coursework. Any test case that needs access to the game data that is configured through the XML files, or that is stored in the game database, needs to have the class path set up with the root folder of the project on the path, for example.</p>
 <p>Therefore, if you want to run the tests in an individual Java test class, you have to create a run configuration for that class, just as you did for the whole test suite. Remember to add the Jar files to the class path (if your IDE doesn’t already do that), and the project root, to allow the test cases access to the data they need to do their job.</p>
 </div>
 </div>
@@ -293,7 +318,7 @@ Figure 12.2: Login to local Stendhal account
 <p>The Stendhal dev team are very welcoming, and say they will be very happy to receive contributions from any student taking COMP23311. Information about how to contribute can be found on the Stendhal Game website.</p>
 </div>
 <p>Good luck!</p>
-<p><code>Document version:</code> 06 December, 2021</p>
+<p><code>Document version:</code> 04 July, 2022</p>
 
 </div>
 </div>
@@ -336,7 +361,7 @@ Figure 12.2: Login to local Stendhal account
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Software engineering</strong>" was written by Suzanne Embury and team. </p>
+    <p>"<strong>Software engineering</strong>" was written by Suzanne Embury and the software engineering team. </p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

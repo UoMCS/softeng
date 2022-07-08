@@ -1,6 +1,6 @@
 ---
 title: "Software engineering"
-author: Suzanne Embury and team
+author: Suzanne Embury and the software engineering team
 # date: "last updated `r format(Sys.time(), '%d %B, %Y')`"
 site: bookdown::bookdown_site
 documentclass: book

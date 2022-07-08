@@ -8,7 +8,37 @@ knitr::include_graphics("images/xkcd-estimation.png")
 
 (ref:captionxkcdestimation) Accurately estimating how long things will take can be hard. The author of the windows file copy dialog visits some friends: “I'm just outside town, so I should be there in fifteen minutes” ... “Actually, it's looking more like six days” ... “No Wait, thirty seconds”. [Estimation (xkcd.com/612)](https://xkcd.com/612/) by [Randall Munroe](https://en.wikipedia.org/wiki/Randall_Munroe) is licensed under [CC BY-NC 2.5](https://creativecommons.org/licenses/by-nc/2.5/)
 
-## Course content
+## Work Breakdown Structures {#wbs}
+
+Estimating how long something will take is often a challenging task and why many estimates like the one in figure \@ref(fig:xkcd-estimation-fig) are not accurate. Its important to be able to justify any estimates you make, rather than just making a vague guess.
+
+One technique for improving the accuracy (and justifiably) of your estimates is called Work Breakdown Structures (WBS) which is explained in the video in figure \@ref(fig:wbs-video-fig).
+
+```{r wbs-video-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap = "(ref:captionestimationvid)"}
+knitr::include_graphics("images/cost-estimation-video.png")
+```
+
+(ref:captionestimationvid) Work Breakdown Structures (WBS) will help to improve the accuracy and justifiability of your cost estimations in software engineering. The image in the picture is a screenshot, to watch the full seven minute video at [youtu.be/tKCfnF-z2hY](https://youtu.be/tKCfnF-z2hY)
+
+For example, in stendhal, lets say you needed to estimate the cost if fixing a bug about players losing health points between 5.00am and 7.00am in the morning. This is `100%` of your task that you could break this down into several sub-tasks follows:
+
+1. Replicate the bug (`20%`)
+1. Fix the bug (`20%`)
+1. Check that the bug is really fixed (`20%`)
+1. Push the bug fix to the repository (`20%`)
+1. Make sure the same bug doesn’t exist elsewhere (`20%`)
+
+You could break each step down further into sub-sub-tasks
+
+1. Replicate the bug  (`20%`)
+    1. Replicate the bug manually (`5%`)
+    1. Gather missing info from reporter (`5%`)
+    1. Find tests for this or similar functionality  (`5%`)
+    1. Write test that reveals the bug (`5%`)
+
+We've split the tasks evenly here, though in practice you would probably give them different percentages depending on the size and difficulty of the tasks.
+
+<!--### Breaking things down {#btd} -->
 
 
 `Document version:` `r format(Sys.time(), '%d %B, %Y')`

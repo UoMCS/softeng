@@ -39,6 +39,7 @@ fig:junit-classundertest-fig
 fig:xkcd-debugging-fig
 fig:issue5-fig
 fig:xkcd-estimation-fig
+fig:wbs-video-fig
 fig:xkcd-git-fig
 fig:basicpets-fig
 fig:petsubclasses-fig
@@ -234,9 +235,9 @@ testfix
 similarity
 truths
 estimating
-course-content
+wbs
 testing
-course-content-1
+course-content
 flowing
 refactoring
 gitprep
@@ -280,7 +281,7 @@ creational
 factory
 singleton
 risking
-course-content-2
+course-content-1
 opening
 introduction-1
 challenge

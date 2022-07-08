@@ -3,9 +3,9 @@ bookdown::bs4_book:
   includes:
     in_header: [header.html]
   theme:
-    primary: "#637238"
+    primary: "#4183C4"
   repo: https://github.com/dullhunk/softeng
-  css: "libs/custom/duncan.css"
+#  css: "libs/custom/duncan.css"
 
 # PDF version
 bookdown::pdf_book:
@@ -17,5 +17,5 @@ bookdown::pdf_book:
 # EPUB version at
 bookdown::epub_book: default
 
-# Pagination is horrible but good for editing sometimes
-# bookdown::word_document2: default
+# Pagination is horrible but good for editing and word count sometimes
+bookdown::word_document2: default
