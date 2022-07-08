@@ -11,7 +11,7 @@ knitr::include_graphics("images/telescope_names.png")
 
 
 ## Purposes of the workshop  {#purposes}
-In this workshop, we will look at strategies to better comprehend unfamiliar large codebases. These strategies are supported by code reading techniques [@codereading] and the functionalities offered by your Integrated Development Environment (IDE). We'll be assuming that, after this workshop, you will be capable of carrying out the following tasks for yourself, without needing much guidance:
+In this workshop, we will look at strategies you can use to better comprehend unfamiliar large codebases. These strategies are supported by code reading techniques [@codereading] and the functionalities offered by your Integrated Development Environment (IDE). We'll be assuming that, after this workshop, you will be capable of carrying out the following tasks for yourself, without needing much guidance:
 
 * Navigate large codebases using the most effective strategy for comprehending the code.
 * Use the views and functionalities provided by the Eclipse IDE to acquire a better understanding of the code.   
