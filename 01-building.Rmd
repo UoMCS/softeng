@@ -56,7 +56,7 @@ If you choose to create a new workspace, Eclipse will show the Welcome View when
 You'll need to organise your main Eclipse workspace window and you should now see a window that looks something like figure \@ref(fig:firstview-fig).
 
 ```{r firstview-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap = "Your main eclipse window should look something like this"}
-knitr::include_graphics("images/1.3.2firstView.jpg")
+knitr::include_graphics("images/1.3.2firstView.png")
 ```
 
 If you used the same workspace you created for the individual coursework exercises, you'll see the project for that in the Package Explorer view.  If you used a new workspace, it will be empty like the one shown above.
@@ -535,7 +535,7 @@ Eclipse has a Web browser plug-in that you can use to look at this report (by do
 knitr::include_graphics("images/3.3.7showCoverageReport.png")
 ```
 
-The report in figure \@ref(fig:showCoverageReport-fig) shows, for each package, the degree to which the test suite exercised the source code.  For now, we'll just focus on the first four result columns.  For the second package, `marauroa.common.game`, we can see from the report that the test suite executed 68% of the instructions in the package.  (An instruction, here, is a single Java byte code instruction.)  But, 32% (around a third) were not executed at all by the test suite.  Any bugs in instructions not covered by the test suite will not be caught by it.
+The report in figure \@ref(fig:showCoverageReport-fig) shows, for each package, the degree to which the test suite exercised the source code.  For now, we'll just focus on the first four result columns.  For the second package, `marauroa.common.game`, we can see from the report that the test suite executed 67% of the instructions in the package.  (An instruction, here, is a single Java byte code instruction.)  But, 33% (around a third) were not executed at all by the test suite.  Any bugs in instructions not covered by the test suite will not be caught by it.
 
 The next two columns show how many “branches” in the code were covered by the test suite.  A “branch” in this context means a conditional point in the code, where execution could follow one of two paths based on the value of the condition.  JaCoCo currently computes branch coverage only for `if` and `switch` statements, though theoretically loops also introduce branches into code.  We would like our test suite to exercise all exits from all branches.  That is, if there is an if-statement, we would like our test suite to execute the if-statement with a true condition (so that the then-body is executed) and with a false condition (so that the else-body is executed).  These columns assess how far the test suite has met this goal.  In the case of our example, just 60% of the branches in this package are exercised by the test.
 

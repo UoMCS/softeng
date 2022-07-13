@@ -7,7 +7,7 @@
 <title>Chapter 23 Code review | Software engineering</title>
 <meta name="author" content="Suzanne Embury and the software engineering team">
 <meta name="description" content="In addition to the time spent debugging code (see chapter 3), software engineers spend lots of time reviewing other people’s code. Its a crucial part of building better quality software, see...">
-<meta name="generator" content="bookdown 0.24 with bs4_book()">
+<meta name="generator" content="bookdown 0.27 with bs4_book()">
 <meta property="og:title" content="Chapter 23 Code review | Software engineering">
 <meta property="og:type" content="book">
 <meta property="og:url" content="https://software-eng.netlify.app/reviewing.html">
@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Chapter 23 Code review | Software engineering">
 <meta name="twitter:site" content="@csmcr">
 <meta name="twitter:description" content="In addition to the time spent debugging code (see chapter 3), software engineers spend lots of time reviewing other people’s code. Its a crucial part of building better quality software, see...">
-<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.13/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.1/transition.js"></script><script src="libs/bs3compat-0.3.1/tabs.js"></script><script src="libs/bs3compat-0.3.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
 <script src="libs/bs4_book-1.0.0/bs4_book.js"></script><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-GJ4FGSK01L"></script><script>
@@ -25,7 +25,32 @@
       gtag('js', new Date());
 
       gtag('config', 'G-GJ4FGSK01L');
-    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS -->
+    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<style type="text/css">
+    /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+        }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -119,7 +144,7 @@ Figure 23.1: Does your code look like song lyrics written using only the stuff t
 <h3>
 <span class="header-section-number">23.2.1</span> Buddy Review<a class="anchor" aria-label="anchor" href="#buddy"><i class="fas fa-link"></i></a>
 </h3>
-<p>Starting with small and simple, there are several informal kinds of code review. These normally come under the heading of “buddy review.” As the name suggests, this kind of review is done informally, between coders with more or less equal status within the team, on an as-needed basis. This could be as simple as asking someone else in your team to look over a particularly tricky piece of code before you commit it (“over the shoulder” review). Or, in some teams, developers have an assigned “buddy” who they talk code through with, when it is ready to be pushed.</p>
+<p>Starting with small and simple, there are several informal kinds of code review. These normally come under the heading of “buddy review”. As the name suggests, this kind of review is done informally, between coders with more or less equal status within the team, on an as-needed basis. This could be as simple as asking someone else in your team to look over a particularly tricky piece of code before you commit it (“over the shoulder” review). Or, in some teams, developers have an assigned “buddy” who they talk code through with, when it is ready to be pushed.</p>
 <p>In teams that use the agile practice of pair programming, code review will be happening all the time, as the pair takes it in turns to act in the “driver” and “navigator” roles. The navigator looks over the code written by the driver, performing what is essentially a code review function, on a continuous basis with a very short feedback time.</p>
 </div>
 <div id="goteam" class="section level3" number="23.2.2">
@@ -128,13 +153,13 @@ Figure 23.1: Does your code look like song lyrics written using only the stuff t
 </h3>
 <p>Many teams have more formal structures for reviewing code, to ensure that quality is managed evenly across the team, regardless of individual team members’ preferences for or against code review.</p>
 <p>The rise of source code repositories like GitHub and GitLab, and the coding workflows that have developed around them give a perfect framework into which to insert code review into the normal day-to-day work of the team. For example, many teams will require the code in a feature branch to be reviewed by another team member before it can be merged with the development branch. This can even be enforced by the use of tools such as Gerrit, which allows code to be held in a “staging area” for code review, and which blocks the integration of code into the main development branch until an authorised user has agreed that it meets the team’s quality standards.</p>
-<p>However, other forms of team-based code review are possible, and have been in use for many years. One common team-based review technique is the “walkthrough.” This involves a meeting of affected team members (typically more than 2) in which one team member gives a verbal presentation of some artefact, taking the rest of the team through the way it works and what it is intended to achieve. Walkthroughs can take place early in a development, to sanity check a planned design, for example, or later in a release cycle, to check that correctness of the implementation of some key algorithm or section of the code, by working through it together line-by-line.</p>
+<p>However, other forms of team-based code review are possible, and have been in use for many years. One common team-based review technique is the “walkthrough”. This involves a meeting of affected team members (typically more than 2) in which one team member gives a verbal presentation of some artefact, taking the rest of the team through the way it works and what it is intended to achieve. Walkthroughs can take place early in a development, to sanity check a planned design, for example, or later in a release cycle, to check that correctness of the implementation of some key algorithm or section of the code, by working through it together line-by-line.</p>
 </div>
 <div id="formal" class="section level3" number="23.2.3">
 <h3>
 <span class="header-section-number">23.2.3</span> Formal Review<a class="anchor" aria-label="anchor" href="#formal"><i class="fas fa-link"></i></a>
 </h3>
-<p>The most formal type of code review involves the work of a team being inspected by an external team. This kind of review is usually only performed in large organisations with very tightly-defined processes for managing software quality across the organisation. They sometimes go by the name of “inspections,” “formal technical reviews” and “formal management reviews.” A formal technical review will involve the work of the team being assessed by an external team of technical experts. Formal management review, on the other hand, is an assessment of the quality of a team’s processes, and will normally involve the work of the team being inspected by more senior (possibly non-technical) staff within the organisation.</p>
+<p>The most formal type of code review involves the work of a team being inspected by an external team. This kind of review is usually only performed in large organisations with very tightly-defined processes for managing software quality across the organisation. They sometimes go by the name of “inspections”, “formal technical reviews” and “formal management reviews”. A formal technical review will involve the work of the team being assessed by an external team of technical experts. Formal management review, on the other hand, is an assessment of the quality of a team’s processes, and will normally involve the work of the team being inspected by more senior (possibly non-technical) staff within the organisation.</p>
 <p>These reviews are often linked to the long term future of a team or project. Continued funding may be dependent on successfully passing through a series of formal review processes.</p>
 <p>Unsurprisingly, the most formal type of code review is also the most expensive, with extensive documentation and presentations having to be prepared in advance, as well as hotel and meeting rooms needing to be booked for the participants, sometimes for 2 or 3 days.</p>
 <p>Now that teams are taking on responsibility for their own code reviews, using more informal techniques, these large scale formal reviews are less common. (There were always doubts about their cost-effectiveness, and the effects on staff of these stressful reviews was often seen as being counter-productive in the long term.) While funding reviews and presentations to senior management or customers are still a normal part of life as a software engineer, code quality is typically managed through more informal, team-based routes in modern organisations.</p>
@@ -147,7 +172,7 @@ Figure 23.1: Does your code look like song lyrics written using only the stuff t
 <p>If code review is to be an effective means of discovering and removing defects from software, then it is important that everyone involved (reviewers and reviewees) see the process as a positive one, rather than as a chore to be endured. It is important that criticisms are worded constructively, and that questions of blame are regarded as being of less importance than finding and fixing the errors. Code reviewers should be seen as allies against a common enemy (bugs that reach the customer), but at the same time few people enjoy having their flaws publicly pointed out.</p>
 <p>It is therefore important that code reviewers adopt a neutral tone, and balance negative points out with positive comments about aspects of the code that are done well. This is particularly important when performing code review in a new team. Later, when trust and mutual respect have been built up, code reviews can be less carefully worded. But in the early days, it is important to think about how comments can be worded, to ensure that they will be received in a positive way. But regardless of the diplomacy with which the reviewer carries out their work, for the reviewee, code reviews are a powerful mechanism for learning to be challenged, to cope with constructive criticism and to defend your own ideas where you feel the reviewer has overlooked something of importance.</p>
 <p>The learning effect of code reviews can be helped by making all reviews accessible to the whole team (as they are in a GitLab repository). That way, the code reviewer is held accountable for their reviews, just as the coder is being held accountable for their code.</p>
-<p>Another technique that can help is the practice of “promiscuous reviewing,” in which all team members review the work of all other team members, over time, rather than sticking with rigid and unchanging buddy review pairings. This avoids the risk of “revenge reviews,” and helps to foster an “all-in-it-together” team mentality. The person reviewing your code will be conscious that, not too far in the future, the roles will be reversed. This can help to keep the review process constructive and considerate.</p>
+<p>Another technique that can help is the practice of “promiscuous reviewing”, in which all team members review the work of all other team members, over time, rather than sticking with rigid and unchanging buddy review pairings. This avoids the risk of “revenge reviews”, and helps to foster an “all-in-it-together” team mentality. The person reviewing your code will be conscious that, not too far in the future, the roles will be reversed. This can help to keep the review process constructive and considerate.</p>
 <p>When performing a code review, the following aspects of the code can be commented on:</p>
 <ul>
 <li>Possible defects: for example, pointing out an off-by-one error in a loop, or improper handling of negative numbers.</li>
@@ -205,7 +230,7 @@ Figure 23.3: Sample conversation from nodejs
 <p>In COMP23311, we ask you to carry out some basic buddy reviewing. Through the coursework, you can practice commenting on others code, and responding to comments on your own. This will be useful interviewing material, and will also prepare you to join a software team using modern software quality management techniques.</p>
 <p>You can also ask your industry mentor about code reviewing practices used in their organisation, and how they help the work of the team.</p>
 <p>Good luck!</p>
-<p><code>Document version:</code> 04 April, 2022</p>
+<p><code>Document version:</code> 08 July, 2022</p>
 
 </div>
 </div>

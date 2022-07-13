@@ -7,7 +7,7 @@
 <title>Chapter 7 Software Refactoring | Software engineering</title>
 <meta name="author" content="Suzanne Embury and the software engineering team">
 <meta name="description" content="Software refactoring and migration  7.1 Preparing for the workshop Welcome to the COMP23311 workshop on software refactoring and migration. Today, after a short lecture introducing the core...">
-<meta name="generator" content="bookdown 0.24 with bs4_book()">
+<meta name="generator" content="bookdown 0.27 with bs4_book()">
 <meta property="og:title" content="Chapter 7 Software Refactoring | Software engineering">
 <meta property="og:type" content="book">
 <meta property="og:url" content="https://software-eng.netlify.app/refactoring.html">
@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Chapter 7 Software Refactoring | Software engineering">
 <meta name="twitter:site" content="@csmcr">
 <meta name="twitter:description" content="Software refactoring and migration  7.1 Preparing for the workshop Welcome to the COMP23311 workshop on software refactoring and migration. Today, after a short lecture introducing the core...">
-<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.13/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.1/transition.js"></script><script src="libs/bs3compat-0.3.1/tabs.js"></script><script src="libs/bs3compat-0.3.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
 <script src="libs/bs4_book-1.0.0/bs4_book.js"></script><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-GJ4FGSK01L"></script><script>
@@ -25,7 +25,32 @@
       gtag('js', new Date());
 
       gtag('config', 'G-GJ4FGSK01L');
-    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS -->
+    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<style type="text/css">
+    /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+        }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -131,10 +156,10 @@
 <p>Use the undo option in your IDE and run the refactoring again, this time requesting that duplicate literals all be replaced by the new constant.</p>
 <p>Hopefully, you can see how this refactoring has improved the design of the code, and so removed some technical debt (if you chose your literal well). Can you see how making this change could mean that some future changes will be easier because of it?</p>
 <p><strong>Don’t forget to run the test suite after making the change, to make sure you haven’t caused more problems than you have fixed by it.</strong></p>
-<p>A variant on this smell is the “magic number.” This is a number that has a meaning that is important for the code, which which is hard to infer just by looking at the number itself. You can find several examples of the magic number code smell in the following class:</p>
-<div class="sourceCode" id="cb32"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb32-1"><a href="refactoring.html#cb32-1" aria-hidden="true" tabindex="-1"></a>tests/games/stendhal/client/sound/system/ToneGeneratorTest.<span class="fu">java</span></span></code></pre></div>
+<p>A variant on this smell is the “magic number”. This is a number that has a meaning that is important for the code, which which is hard to infer just by looking at the number itself. You can find several examples of the magic number code smell in the following class:</p>
+<div class="sourceCode" id="cb32"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb32-1"><a href="refactoring.html#cb32-1" aria-hidden="true" tabindex="-1"></a>tests<span class="op">/</span>games<span class="op">/</span>stendhal<span class="op">/</span>client<span class="op">/</span>sound<span class="op">/</span>system<span class="op">/</span>ToneGeneratorTest<span class="op">.</span><span class="fu">java</span></span></code></pre></div>
 <p>On the other hand, this next class has an example of a magic number that has been neatly turned into a constant, greatly improving the readability of the code it is involved in. Can you find the magic number:</p>
-<div class="sourceCode" id="cb33"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb33-1"><a href="refactoring.html#cb33-1" aria-hidden="true" tabindex="-1"></a>src/games/stendhal/client/sound/system/processors/ToneGenerator.<span class="fu">java</span></span></code></pre></div>
+<div class="sourceCode" id="cb33"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb33-1"><a href="refactoring.html#cb33-1" aria-hidden="true" tabindex="-1"></a>src<span class="op">/</span>games<span class="op">/</span>stendhal<span class="op">/</span>client<span class="op">/</span>sound<span class="op">/</span>system<span class="op">/</span>processors<span class="op">/</span>ToneGenerator<span class="op">.</span><span class="fu">java</span></span></code></pre></div>
 <p>Can you find any other magic numbers in the Stendhal code? Or magic strings?</p>
 </div>
 <div id="longmethods" class="section level2" number="7.3">
@@ -143,9 +168,9 @@
 </h2>
 <p>This code smell is based around a simple but surprisingly powerful idea: short methods are easier to understand than long ones. Take a look at the following classes to see this point in action.</p>
 <p>First, look at:</p>
-<div class="sourceCode" id="cb34"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb34-1"><a href="refactoring.html#cb34-1" aria-hidden="true" tabindex="-1"></a>src/games/stendhal/server/actions/pet/OwnAction.<span class="fu">java</span></span></code></pre></div>
+<div class="sourceCode" id="cb34"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb34-1"><a href="refactoring.html#cb34-1" aria-hidden="true" tabindex="-1"></a>src<span class="op">/</span>games<span class="op">/</span>stendhal<span class="op">/</span>server<span class="op">/</span>actions<span class="op">/</span>pet<span class="op">/</span>OwnAction<span class="op">.</span><span class="fu">java</span></span></code></pre></div>
 <p>See if you can figure out what the methods here do. By contrast, look at:</p>
-<div class="sourceCode" id="cb35"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb35-1"><a href="refactoring.html#cb35-1" aria-hidden="true" tabindex="-1"></a>src/games/stendhal/server/actions/pet/NameAction.<span class="fu">java</span></span></code></pre></div>
+<div class="sourceCode" id="cb35"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb35-1"><a href="refactoring.html#cb35-1" aria-hidden="true" tabindex="-1"></a>src<span class="op">/</span>games<span class="op">/</span>stendhal<span class="op">/</span>server<span class="op">/</span>actions<span class="op">/</span>pet<span class="op">/</span>NameAction<span class="op">.</span><span class="fu">java</span></span></code></pre></div>
 <p>How did the experience of trying to figure out what the <code>NameAction.onAction()</code> method does compare with the experience of reading the much shorter methods in <code>OwnAction</code>?</p>
 <p>A good rule of thumb is that your method bodies should be no longer than a single screen’s worth of text. If you can keep your methods that short, then you should be able to easily digest them. It is also a good discipline for the developer, as it forces us to think in terms of small, self-contained chunks of logic, rather than long rambling sequences of code.</p>
 <p>So how can we shorten the <code>NameAction.onAction()</code> method? We can’t take any of the functionality out. It is all needed. So what are our options?</p>
@@ -170,7 +195,7 @@
 </h2>
 <p>Another code quality issue that can be effectively dealt with by <code>Extract Method</code> is the smell of excessive comments. While a few judicious comments, well placed, can be extremely useful in helping developers to read code accurately and quickly, anything more than this is now viewed as an indication that the code itself may not be of the highest quality. Rather than fixing the quality problems, and making the code self-documenting, the developer has felt it necessary to include lots of explanatory comments. This is a quicker solution for the developer in the short term, but leads to technical debt in the long term, as the comments age and grow out of step with the changing code.</p>
 <p>You can see an example of this code smell in the <code>execute()</code> method of the following class:</p>
-<div class="sourceCode" id="cb36"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb36-1"><a href="refactoring.html#cb36-1" aria-hidden="true" tabindex="-1"></a>src/games/stendhal/server/actions/equip/EquipAction.<span class="fu">java</span></span></code></pre></div>
+<div class="sourceCode" id="cb36"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb36-1"><a href="refactoring.html#cb36-1" aria-hidden="true" tabindex="-1"></a>src<span class="op">/</span>games<span class="op">/</span>stendhal<span class="op">/</span>server<span class="op">/</span>actions<span class="op">/</span>equip<span class="op">/</span>EquipAction<span class="op">.</span><span class="fu">java</span></span></code></pre></div>
 <p>There are comments spread throughout this method, and they don’t always seem to add very much value. Some of them seem to be duplicated by the calls to the logger. Others seem like they could be conveyed more effectively through extracted methods (which would also deal with the fact that this method is too long).</p>
 <p>Can you see any chances to extract methods from this class?</p>
 <p>The comments here help us see where we might add in helper methods, but the situation is complication by the structure of the code. We have a number of if statements, which look like they could make good methods, but they have a <code>return</code> statement in their body, which only makes sense when executed in the current method. We can’t pull that statement into a helper method, and expect it to work.</p>
@@ -189,10 +214,10 @@ Create a local boolean variable which will store the result of evaluating the co
 <p>If you finish all the other activities before we move on to the topic of migration, you can have a try at this last activity.</p>
 <p>In this activity, you are asked to refactor some test code. People who are learning to refactor often forget to apply it to their test code as well as their production code. But readability and ease of modification are just as important for test code as for production code - maybe even more important, because the test code is an essential tool that guides us in changing the production code. We don’t have that safety net for the test code, so it is vitally important that it is clear and simple and can be seen to be correct.</p>
 <p>Take a look at the code that tests the Ice Cream for Annie test:</p>
-<div class="sourceCode" id="cb37"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb37-1"><a href="refactoring.html#cb37-1" aria-hidden="true" tabindex="-1"></a>tests/games/stendhal/server/maps/quests/IcecreamForAnnieTest.<span class="fu">java</span></span></code></pre></div>
+<div class="sourceCode" id="cb37"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb37-1"><a href="refactoring.html#cb37-1" aria-hidden="true" tabindex="-1"></a>tests<span class="op">/</span>games<span class="op">/</span>stendhal<span class="op">/</span>server<span class="op">/</span>maps<span class="op">/</span>quests<span class="op">/</span>IcecreamForAnnieTest<span class="op">.</span><span class="fu">java</span></span></code></pre></div>
 <p>You should see a couple of the code smells we have been looking at in this code. And should hopefully have some idea of the refactorings you can use to help you improve it.</p>
 <p>By way of contrast, take a look at this test code:</p>
-<div class="sourceCode" id="cb38"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb38-1"><a href="refactoring.html#cb38-1" aria-hidden="true" tabindex="-1"></a>/stendhal/tests/games/stendhal/server/maps/quests/FindRatChildrenTest.<span class="fu">java</span></span></code></pre></div>
+<div class="sourceCode" id="cb38"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb38-1"><a href="refactoring.html#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="op">/</span>stendhal<span class="op">/</span>tests<span class="op">/</span>games<span class="op">/</span>stendhal<span class="op">/</span>server<span class="op">/</span>maps<span class="op">/</span>quests<span class="op">/</span>FindRatChildrenTest<span class="op">.</span><span class="fu">java</span></span></code></pre></div>
 <p>This shows the kind of organisation we want to get the <code>IceCreamForAnnie</code> tests to follow. In the <code>RatChildren</code> test, each part of the quest is tested in a separate test case method. This means that if one fails, the other tests will still be run, and we’ll get to see which parts of the whole quest are working and which are not.</p>
 <p>In the <code>IceCreamForAnnie</code> test, on the other hand, everything is written in one long test case. JUnit will stop at the first failing assertion in each test case, so if an assertion fails in this test somewhere near the beginning, the rest of the assertions won’t get run, and we won’t get the diagnostic information we need from them.</p>
 <p>See if you can use the three refactorings we have used in this workshop to improve the diagnostic capabilities of the <code>IceCreamForAnnie</code> test, without changing its meaning.</p>
@@ -200,7 +225,7 @@ Create a local boolean variable which will store the result of evaluating the co
 <p><strong>Question</strong> if we refactor test code, what tells us when we have made a mistake and changed the behaviour of the system?</p>
 </div>
 <p>Good luck!</p>
-<p><code>Document version:</code> 04 April, 2022</p>
+<p><code>Document version:</code> 08 July, 2022</p>
 
 </div>
 </div>
