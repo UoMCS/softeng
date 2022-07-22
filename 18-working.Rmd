@@ -195,7 +195,7 @@ Please note that all team members must use their own GitLab account to commit an
 ::: {.rmdcaution}
 
 (ref:cautionbox)
-Please make sure you set the `user.name` and `user.email` variables on all machines you intend to commit from.  
+Please make sure you set the `user.name` and `user.email` variables on all machines you intend to commit from.  Your email needs to you `firstname.lastname@student.manchester.ac.uk` address.
 
 **Commits made from other accounts will NOT be considered to be part of your team's submission for the exercise!**
 :::
