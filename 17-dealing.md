@@ -1,6 +1,19 @@
-# Team Coursework 1 {#dealing}
+# Team Coursework 1: Dealing with Small Scale Code Changes {#dealing}
+## Coursework Lead: Tom Carroll
 
-Team coursework exercise 1: Dealing with Small Scale Code Changes
+## Key Information
+
+Date of Release: xx/yy/2022
+
+Submission Deadline: xx/yy/2022
+
+Marks to be released on or before: xx/yy/2022 (15 working days after the deadline) 
+
+ILOs Assessed:
+- make use of industry standard tools for version management, issue tracking, automated build, unit testing, code quality management, code review and continuous integration.
+- write unit tests to reveal a bug or describe a new feature to be added to a system, using a test-first coding approach.
+- explain the value of code reviews, and to write constructive and helpful reviews of code written by others.
+- make use of basic Git workflows to coordinate parallel development on a code base and to maintain the quality of code scheduled for release.
 
 ## Overview
 
@@ -218,6 +231,8 @@ You'll get developer access back once the next coursework exercise begins.
 Since this coursework is a team exercise, no extensions will be given, and there is no option to submit your work late.  Team members who experience substantial difficulties in completing their work due to illness or other legitimate reasons will need to complete a Mitigating Circumstances form so that this can be taken into account later.  The marking process is sufficiently flexible to take into account non-contributing team members without significantly affecting the team mark for other members.
 
 If you are not going to be able to carry out the work for your issue by the deadline set for your team, you **must** inform the other team members in plenty of time.  This will allow them to make decisions about what to include in the release, so as not to be penalised for the work you have not been able to do.
+Team coursework exercise 1: Dealing with Small Scale Code Changes
+
 
 
 ## Non-Contributing Team Members {#passengers}
