@@ -1,7 +1,7 @@
 # Team Coursework 1: Dealing with Small Scale Code Changes {#dealing}
 ## Coursework Lead: Tom Carroll
 
-## Key Dates
+## Key Dates {#key_dates}
 
 Date of Release: xx/yy/2022
 
@@ -10,14 +10,14 @@ Submission Deadline: xx/yy/2022
 Marks to be released on or before: xx/yy/2022 (15 working days after the deadline) 
 
 
-## Deliverables
+## Deliverables {#deliverables}
 
 We will assess your team's work based on information from two sources:
 
 - **Your teams GitLab respository**, hosted on the Departmental Gitlab server, is where you will host your teams coding work. You will lose developer access to your repository on **xx/yy/2022**. 
 - **Screencast** which demonstrates your team's work. This is to be submitted via _Blackboard_. 
 
-## ILOs Assessed
+## ILOs Assessed {#ilo}
 The following ILOs, [taken from the course unit description](https://studentnet.cs.manchester.ac.uk/syllabus/?code=COMP23311), are assessed in this coursework: 
 - make use of industry standard tools for version management, issue tracking, automated build, unit testing, code quality management, code review and continuous integration.
 - write unit tests to reveal a bug or describe a new feature to be added to a system, using a test-first coding approach.
@@ -26,7 +26,7 @@ The following ILOs, [taken from the course unit description](https://studentnet.
 
 
 
-## Overview
+## Overview {#overview}
 
 Your team has been provided with a Git repository hosted on the Departmental GitLab server.  
 This repository contains a modified version version of the Stendhal code base, along with several posts in the Issue Tracker which describe “bugs” in the code that your team must fix.
@@ -46,9 +46,9 @@ The exercise will test your ability to:
 - present a professional demonstration of the work you have done, and reflect upon your team processes and how hey can be improved.
 
 
-## What You Have to Do
+## What You Have to Do {#brief}
 
-### Step 1: Acquire, Build and Test {#stepone}
+### Step 1: Acquire, Build and Test {#1}
 
 Following the same process covered in the workshops, each team member should:
 - acquire their own local copy of the team repository
@@ -56,7 +56,7 @@ Following the same process covered in the workshops, each team member should:
 - run the code as a locally hosted version of the game. 
 
 
-### Step 2: Assignment of Issues {#steptwo}
+### Step 2: Assignment of Issues {#2}
 
 For each issue in this list:
 
@@ -89,7 +89,7 @@ Unfortunately, many of the bugs reported on the Stendhal issue tracker are too c
 :::
 
 
-### Step 3: Time Estimation {#stepthree}
+### Step 3: Time Estimation {#3}
 
 Each team member should make an estimate of how long it will take to fix the bug they are responsible for.  This estimate should be recorded using GitLab's Time Tracking facility.  Information about how to do this can be found at:
 
@@ -100,7 +100,7 @@ At this stage, it is not important that your estimate is correct.  What is most 
 You should also set a Due Date for each issue in the issue tracker.  This should be the date when the work on this individual issue should be completed by.  Note that this *should not* be the deadline for the coursework.  You need to complete your individual work on the issue in time to merge the work into the development branch and for the new release to be created.
 
 
-### Step 4: Create your Feature Branch {#stepfour}
+### Step 4: Create your Feature Branch {#4}
 
 You must use separate feature branches for each issue, to protect your team mates from being affected by your changes until they are complete, quality checked and ready for use.  The next step, therefore, is to set up the branch for the issue you are responsible for fixing.
 
@@ -109,7 +109,7 @@ The branch names we ask you to use will be given on Blackboard, under `Assessmen
 You must create each feature branch starting from the development branch of your team repository.  You must not create it as a branch off some other feature branch, for example.
 
 
-### Step 5: Make your Bug Visible in the Test Suite {#stepfive}
+### Step 5: Make your Bug Visible in the Test Suite {#5}
 
 Before getting started on the fixes, each team member must ensure that the bug they are responsible for is visible in the test suite.  That means that the presence of the bug must be flagged up by at least one failing test.  To do this, you may need to modify an existing test to make the unwanted game behaviour visible or (if the behaviour containing the bug is not currently tested at all) you'll need to create a new test class from scratch.  It is important that you locate any new test cases sensibly in the Stendhal code base, so that other developers familiar with the organisation of the code will be able to find it easily.  You'll also need to work out how to use the test objects that the Stendhal team have provided, to set up the a game (or partial game) in the state needed to make the issue visible.
 
@@ -125,7 +125,7 @@ where `<time spent>` is replaced with the amount of time you spent on this task,
 Capturing this fine-grained level of time tracking data is not a usual part of a software process.  We ask you to do it for this exercise so that you can gain an idea of how long these kinds of tasks take you personally.  This will help you in the future in creating defensible and realistic estimates for your work.
 
 
-### Step 6: Fix your Bug {#stepsix}
+### Step 6: Fix your Bug {#6}
 
 Once you have one or more tests that fail because of the presence of the bug, you can make changes to the production code (the code under the `src` folder) to fix it.  This step can be considered complete when the changes you have made in steps five and six are committed to your feature branch, and when the following conditions are all true when the feature branch is checked out:
 
@@ -146,7 +146,7 @@ You may push your feature branch to your team repository at any point during ste
 Once you have pushed your feature branch to your team's remote, the continuous integration server will run the automated build and test processes, to determine the health of the code on your branch.
 
 
-### Step 7: Merge with Development Branch {#stepseven}
+### Step 7: Merge with Development Branch {#7}
 
 The next step is to merge your work with the development branch.  The Stendhal team use the `master` branch as their development branch, and we ask you to continue to follow this convention in this coursework^[If you are familiar with the popular GitFlow workflow for collaborative coding with Git, you may be surprised at this, because in that workflow `master` is used as the branch that records the stable, integration version of the code for release (sometimes called the *production branch*), while development is done on a branch called `develop`.  In fact, in many common workflows, including Github Flow and Trunk-Based Development, `master` is used as the name of the development branch.  So the Stendhal team are in good company here.] For this coursework exercise, we ask you to perform merges in your local repository and push them to the team repository.  In later exercises, we will make use of Merge Requests on GitLab to help you manage the merging process, but for this exercise you should **not** create any merge requests (there is a mark penalty for doing so).  Your goal for this coursework exercise is to demonstrate that you understand the basics of merging, by carrying out the steps yourself.  When you have demonstrated that, we will move on to using merge requests.
 
@@ -167,7 +167,7 @@ Once you are confident you have a clean merge, you can push the changes to the `
 If, at this point, you get a clean development branch build from the continuous integration server **and** the bug cannot be replicated when the game is run from the development branch, you can close the issue in the issue tracker.
 
 
-### Step 8: Log your Time {#stepeight}
+### Step 8: Log your Time {#8}
 
 As in steps 5 and 6, you should keep track of how long you spend on this step, to the nearest hour.  When the step is completed, add a comment to your issue telling us this.  Please use the following phrase, which will be searched for by the automated marking system:
 
@@ -195,7 +195,7 @@ Leave issues for unmerged feature branches open.  The team needs to know that th
 Note that it is your team's collective responsibility to ensure that the status of issues in your issue tracker accurately reflects the state of the code base.  If a team mate has marked an issue as completed, but you notice that the tests are failing for the merge, you should reopen the issue, giving a description of the problem as a comment in the issue.  Similarly, if a team mate has fixed a bug but forgotten to close the issue, you can check with them and close the issue for them.
 
 
-### Step 9: Prepare the Release {#stepnine}
+### Step 9: Prepare the Release {#9}
 
 The final technical step is to prepare the release.  Although several team members may contribute commits for this process, a single team member should take responsibility for carrying it out.  This team member should create an issue for this task called:
 
@@ -224,7 +224,7 @@ When you have created a commit that contains all the code and documentation you 
 This is the version of the code that we will consider to be your released code, when we are marking.  So, it is important that you place it at the right place.  You can create the tag locally and push it, or you can use the GitLab web interface to create the tag once the final release commit has been pushed.
 
 
-### Step 10: Prepare for the Marking Interview {#stepten}
+### Step 10: Prepare for the Marking Interview {#10}
 
 You are done with the technical work at this stage, but there is one more task to do: prepare for the marking interview that follows the deadline for the coursework.  In this interview, your TA will ask you to demonstrate some of your bug fixes in the released code, and will discuss with you how you have organised your work to balance load across the team and what monitoring steps you've taken to keep the work of the team on track for the deadline.
 
@@ -233,7 +233,7 @@ More information about the timing, location and format of this interview will be
 Note that all team members must attend the marking interview, and any team member may be asked to demonstrate and talk about the issue they were responsible for.  **Any team member who fails to attend and who has not registered a legitimate excuse with SSO or a member of the course team will receive an automatic 50% penalty on their mark for the exercise.**  Team members who attend the interview will be unaffected by this penalty.
 
 
-## Submission of Your Team's Work {#imdone}
+## Submission of Your Team's Work {#submission}
 
 All submission of work for this coursework exercise is through your team's GitLab repository.  All you have to do is make sure the contents of your issue tracker and Git repository are ready to be marked by the deadline.  There is nothing else you have to submit.
 
