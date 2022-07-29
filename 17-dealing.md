@@ -224,13 +224,20 @@ When you have created a commit that contains all the code and documentation you 
 This is the version of the code that we will consider to be your released code, when we are marking.  So, it is important that you place it at the right place.  You can create the tag locally and push it, or you can use the GitLab web interface to create the tag once the final release commit has been pushed.
 
 
-### Step 10: Prepare for the Marking Interview {#10}
+### Step 10: Create your Screencase {#10}
 
-You are done with the technical work at this stage, but there is one more task to do: prepare for the marking interview that follows the deadline for the coursework.  In this interview, your TA will ask you to demonstrate some of your bug fixes in the released code, and will discuss with you how you have organised your work to balance load across the team and what monitoring steps you've taken to keep the work of the team on track for the deadline.
+You must now, as a team, create your screencast to demonstrate your work.
 
-More information about the timing, location and format of this interview will be posted on Blackboard.
+Your screencast:
+- Must last be **no longer** than 10:00 __(10 minutes)__ long. 
+Any longer may have marks reduced.
+- Demonstrate 2 of your bug fixes in the following ways:
+- Show narrated in-game footage of the bug fix
+- Explain the tests you used to make the bug visible, with footage of the test code.
+- Explain how you fixed the bug, with footage of the relevant code.
+- and will discuss with you how you have organised your work to balance load across the team and 
+- what monitoring steps you've taken to keep the work of the team on track for the deadline.
 
-Note that all team members must attend the marking interview, and any team member may be asked to demonstrate and talk about the issue they were responsible for.  **Any team member who fails to attend and who has not registered a legitimate excuse with SSO or a member of the course team will receive an automatic 50% penalty on their mark for the exercise.**  Team members who attend the interview will be unaffected by this penalty.
 
 
 ## Submission of Your Team's Work {#submission}
