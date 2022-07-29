@@ -1,7 +1,7 @@
 # Team Coursework 1: Dealing with Small Scale Code Changes {#dealing}
 ## Coursework Lead: Tom Carroll
 
-## Key Information
+## Key Dates
 
 Date of Release: xx/yy/2022
 
@@ -9,26 +9,40 @@ Submission Deadline: xx/yy/2022
 
 Marks to be released on or before: xx/yy/2022 (15 working days after the deadline) 
 
-ILOs Assessed:
+
+## Deliverables
+
+We will assess your team's work based on information from two sources:
+
+- **Your teams GitLab respository**, hosted on the Departmental Gitlab server, is where you will host your teams coding work. You will lose developer access to your repository on **xx/yy/2022**. 
+- **Screencast** which demonstrates your team's work. This is to be submitted via _Blackboard_. 
+
+## ILOs Assessed
 - make use of industry standard tools for version management, issue tracking, automated build, unit testing, code quality management, code review and continuous integration.
 - write unit tests to reveal a bug or describe a new feature to be added to a system, using a test-first coding approach.
 - explain the value of code reviews, and to write constructive and helpful reviews of code written by others.
 - make use of basic Git workflows to coordinate parallel development on a code base and to maintain the quality of code scheduled for release.
 
+
+
 ## Overview
 
-For this first team coursework exercise, your team has been provided with a Git repository hosted on the School's GitLab server.  This repository contains a modified version version of the Stendhal code base.  Once the coursework begins, the issue tracker of this repository will be populated with a number of issues describing “bugs” in the code that your team must fix by the coursework deadline.
+Your team has been provided with a Git repository hosted on the Departmental GitLab server.  
+This repository contains a modified version version of the Stendhal code base, along with several posts in the Issue Tracker which describe “bugs” in the code that your team must fix.
 
-But we're not just asking you to fix the bugs.  We are asking you to work like a professional software development team.  You must ensure that all the issues you are fixing are covered by unit tests before you fix them, and you must use feature branches to protect the work of other team members from any mistakes you might introduce with.  We're also asking you to keep a close eye on the quality of your development and release branches (with the help of a continuous integration server), and to use basic Git techniques to ensure that, whatever happens to the code on your feature branches, only code changes that compile and pass the unit tests reach the released code.
+This exercise will not only test your ability to fix bugs.  
+You are required to also work like a professional software development team.  
+You must ensure that all the issues you are fixing are covered by unit tests before you fix them, and you must use feature branches to protect the work of other team members from any mistakes you might introduce.  
+You must also monitor the quality of your development and release branches (with the help of a continuous integration server), and use basic Git techniques to ensure that, whatever happens to the code on your feature branches, only code changes that compile and pass the unit tests reach the released code.
 
 The exercise will test your ability to:
 
-* make use of a simple Git workflow, based on feature branches, to allow multiple coders to work safely on a code base at the same time,
-* use an automated test suite to make code changes to a large body of code without causing regression,
-* write new tests to make bugs visible before you fix them,
-* use code reading techniques to locate the parts of a large software system that are relevant to a particular ug,
-* prepare a good quality release incorporating the work of multiple developers, and  
-* present a professional demonstration of the work you have done, and reflect upon your team processes and how hey can be improved.
+- make use of a simple Git workflow, based on feature branches, to allow multiple coders to work safely on a code base at the same time,
+- use an automated test suite to make code changes to a large body of code without causing regression,
+- write new tests to make bugs visible before you fix them,
+- use code reading techniques to locate the parts of a large software system that are relevant to a particular bug,
+- prepare a good quality release incorporating the work of multiple developers, and  
+- present a professional demonstration of the work you have done, and reflect upon your team processes and how hey can be improved.
 
 
 ## What You Have to Do
