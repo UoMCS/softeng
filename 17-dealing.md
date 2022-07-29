@@ -226,23 +226,31 @@ This is the version of the code that we will consider to be your released code, 
 
 ### Step 10: Create your Screencase {#10}
 
-You must now, as a team, create your screencast to demonstrate your work.
+You must now work together as a team in creating your screencast to demonstrate your work.
 
-Your screencast:
-- Must last be **no longer** than 10:00 __(10 minutes)__ long. 
+Your screencast must do the following:
+- Must **not exceed** 10:00 *(10 minutes)* length. 
 Any longer may have marks reduced.
 - Demonstrate 2 of your bug fixes in the following ways:
-- Show narrated in-game footage of the bug fix
+- Show narrated in-game footage of the bug fix, describing what happened before the bug fix, and demonstrating and explaining what now happens because of the bug fix.
 - Explain the tests you used to make the bug visible, with footage of the test code.
 - Explain how you fixed the bug, with footage of the relevant code.
-- and will discuss with you how you have organised your work to balance load across the team and 
-- what monitoring steps you've taken to keep the work of the team on track for the deadline.
+- Using slides, discuss how you organised your workload across the team 
+- using slides, discuss what monitoring steps you've taken to keep the work of the team on track for the deadline.
+- Reflect on the team exerise; what went well? What will you take forwards into the next team exercise? What will you do better next time?
 
+To create your screencase, you might find the following software useful:
+- OBS 
+- Powerpoint
+- Libre Office Impress
 
+You must save the screencast as an MP4 file, and upload it to the submission point on Blackboard.
+Please see the Submission section for more details of the submission process.
 
 ## Submission of Your Team's Work {#submission}
 
-All submission of work for this coursework exercise is through your team's GitLab repository.  All you have to do is make sure the contents of your issue tracker and Git repository are ready to be marked by the deadline.  There is nothing else you have to submit.
+### Submission of Code {#submission_code}
+Submission of coding work for this coursework exercise is through your team's GitLab repository.  All you have to do is make sure the contents of your issue tracker and Git repository are ready to be marked by the deadline.  There is nothing else you have to submit.
 
 A “live” marking scheme for the exercise can be found on the CI server used for this course unit.  (You will get information about this some days after the coursework is released to you.)  The marking scheme gives details of how the marks will be awarded, but also gives an interim mark for your team based on the work completed so far.  Of course, only some parts of the marking can be automated.  Others will need to be done by GTAs.  The GTA marking takes three forms:
 
@@ -253,6 +261,8 @@ A “live” marking scheme for the exercise can be found on the CI server used 
 Once the deadline is passed, you will temporarily lose developer role access to the repository and won't be able to make further changes to the code or commit graph.  At this point, we will clone your team repository and the automated marking process will finalise as many of the marks as it can.  When the GTAs have completed the remaining marking process, the marks will be uploaded to Jenkins and your final mark plus feedback will be visible in your team's RoboTA build.
 
 You'll get developer access back once the next coursework exercise begins.
+
+### Submission of Screencast {#submission_screencast}
 
 
 ## Coursework Extensions {#cwkex}
