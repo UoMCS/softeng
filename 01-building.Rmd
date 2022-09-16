@@ -2,7 +2,7 @@
 
 # Building and testing {#building}
 
-## Introduction {#Introduction}
+## Introduction write some stuff {#Introduction}
 
 In this workshop, we will be building and testing a system called Marauroa. We will look at some essential processes for working on an existing team-developed software system. We'll be assuming that, after this workshop, you are capable of carrying out the following tasks for yourself, without needing much guidance:
 
@@ -13,12 +13,12 @@ In this workshop, we will be building and testing a system called Marauroa. We w
 * Use a test suite to find functional regression in the system.    
 * Run a piece of software consisting of multiple distributed subsystems.
 
-In this, and some later workshops, we'll be working with the code of the *Marauroa games engine* for constructing on-line multi-player games.
+In this, and some later workshops, we'll be working with the code of the *Marauroa games engine* for constructing online multi-player games.
 
-Marauroa is an open source *framework* and engine to develop games. It provides a simple way of creating games on a portable and robust server architecture. Marauroa manages the client server communication and provides an object orientated view of the world for game developers. It further handles database access in a transparent way to store player accounts, character progress and the state of the world.
+Marauroa is an open-source *framework* and engine for developing games. It provides a simple way of creating games on a portable and robust server architecture. Marauroa manages client-server communication and provides an object-orientated view of the world for game developers. It further handles database access in a transparent way to store player accounts, character progress and the state of the world.
 
 You should already have begun to practice some of these skills, through the GitLab Access Check activity.
-In this workshop, we will build on that activity to carry out these basic skills on a large open source software system.  During the workshop, you will:
+In this workshop, we will build on that activity to carry out these basic skills on a large open-source software system.  During the workshop, you will:
 
 1. Use an IDE to clone a local copy of the Marauroa repository.
 1. Build executable versions of the client and server components, using the Ant build tool.
@@ -30,15 +30,15 @@ You may work at your own pace, but you should try to complete step 4 by the end 
 
 ## Acquiring Marauroa {#acquiring}
 
-First, you'll need to acquiring a local copy of the Marauroa Project.
+First, you'll need to acquire a local copy of the Marauroa Project.
 
 ### Run the IDE {#runide}
 
-The Department provides a range of Integrated Development Environments (IDEs) for use by students. You are welcome to use any of these IDEs to carry out the work for this workshop. However, we are only able to provide technical support for Eclipse, specifically (ref:ideversion). If you do want to use one of the other IDEs, we will do our best to help should you get stuck, but we can't guarantee to be able to fix all problems.  At the bare minimum, you should feel confident that you can do all the tasks listed in the introduction in your chosen IDE, before you finalise the decision.
+The Department provides a range of Integrated Development Environments (IDEs) for use by students. You are welcome to use any of these IDEs to carry out the work for this workshop. However, we are only able to provide technical support for Eclipse, specifically (ref:ideversion). If you do want to use one of the other IDEs, we will do our best to help should you get stuck, but we can't guarantee to be able to fix all problems.  At the bare minimum, you should feel confident that you can do all the tasks listed in the introduction in your chosen IDE before you finalise the decision.
 
-The instructions that follow assume you are using (ref:ideversion) on the Department of Computer Science Linux image or on the Linux Mint VM provided by the Department.
+The instructions that follow assume you are using (ref:ideversion)  the Department of Computer Science Linux image or the Linux Mint VM provided by the Department.
 
-You can start Eclipse from the Applications menu (under Programming) or from the command line, by issuing the command:
+You can start Eclipse from the Applications menu (under Programming) or the command line, by issuing the command:
 
 ````md
 /opt/eclipse-2020-03/eclipse &
@@ -47,7 +47,7 @@ You can start Eclipse from the Applications menu (under Programming) or from the
 
 ### Select the Workspace {#selectw}
 
-Eclipse calls a folder containing one or more Eclipse projects a `workspace`.  On start-up, Eclipse will ask you which workspace you want to use for the session.  You can either accept the default location or use the File Browser to locate or create a different one.  (Depending on when you do this workshop, you may already have created a workspace for the GitLab Access Check activity.  You can either choose to use the same workspace for this activity, or create a new one.
+Eclipse calls a folder containing one or more Eclipse projects a `workspace`.  At start-up, Eclipse will ask you which workspace you want to use for the session.  You can either accept the default location or use the File Browser to locate or create a different one.  (Depending on when you do this workshop, you may already have created a workspace for the GitLab Access Check activity.  You can either choose to use the same workspace for this activity or create a new one.)
 
 If you choose to create a new workspace, Eclipse will show the Welcome View when it loads.  Uncheck the box at the bottom right of the window (labelled `Always show Welcome on start up`) and close it down, as we do not need this view for this workshop.  (You can get it back whenever you want by selecting the `Welcome` option from the `Help` menu.)
 
@@ -56,7 +56,7 @@ If you choose to create a new workspace, Eclipse will show the Welcome View when
 You'll need to organise your main Eclipse workspace window and you should now see a window that looks something like figure \@ref(fig:firstview-fig).
 
 ```{r firstview-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap = "Your main eclipse window should look something like this"}
-knitr::include_graphics("images/1.3.2firstView.jpg")
+knitr::include_graphics("images/1.3.2firstView.png")
 ```
 
 If you used the same workspace you created for the individual coursework exercises, you'll see the project for that in the Package Explorer view.  If you used a new workspace, it will be empty like the one shown above.
@@ -70,7 +70,7 @@ Note that you can always get any views you delete back again, using the `Window`
 
 ### Create a New Project by Cloning {#newproj}
 
-Next, we're going to pull down (git clone) the public Marauroa source code into a local repository where we can work on it.  You've already had experience of working with Git from the command line.  In this course unit, we ask you to use your IDE for (at least) your basic interactions with Git and GitLab.  This will help you to understand the strengths and weaknesses of both approaches, if you are not already familiar with them.
+Next, we're going to pull down (git clone) the public Marauroa source code into a local repository where we can work on it.  You've already had experience working with Git from the command line.  In this course unit, we ask you to use your IDE for (at least) your basic interactions with Git and GitLab.  This will help you to understand the strengths and weaknesses of both approaches if you are not already familiar with them.
 
 The first step is to ask Eclipse to import the Marauroa project for us, from a public Git repository.
 
@@ -127,7 +127,7 @@ Make sure that the `master` branch is selected, and press `Next`.
 
 Historically, the default name for initial branch in a git repository was `master`. The initial branch was called "master repository" with other copies serving as "slave repositories".
 
-Note that as of 2021, the use of `master` has now been deprecated. We're using it in this course unit, but by default, new projects using git will call the initial branch `main` not `master` to avoid problemantic [master/slave terminology](https://en.wikipedia.org/wiki/Master/slave_(technology)).
+Note that as of 2021, the use of `master` has now been deprecated. We're using it in this course unit, but by default, new projects using git will call the initial branch `main` not `master` to avoid problematic [master/slave terminology](https://en.wikipedia.org/wiki/Master/slave_(technology)).
 
 See [about.gitlab.com/blog/2021/03/10/new-git-default-branch-name/](https://about.gitlab.com/blog/2021/03/10/new-git-default-branch-name/) for more details on the switch.
 :::
@@ -149,7 +149,7 @@ The next step is to import the Marauroa project from your local Git repository i
 ::: {.rmdnote}
 **What is a project in this context?**
 
-One of the confusing things about IDEs when we first start to use them is the notion of a `project`.  When we code from the command line, we tend to organise our work in directories.  Sometimes these directories relate to specific tasks we are carrying out (like coding up the solution to a lab exercise) and sometimes they relate to the structure of the code we are creating (like different directories for source code and object code, or for libraries or documentation).
+One of the confusing things about IDEs when we first start to use them is the notion of a `project`.  When we code from the command line, we tend to organise our work in directories.  Sometimes these directories relate to specific tasks we are carrying out (like coding up the solution to a lab exercise) and sometimes they relate to the structure of the code we are creating (like different directories for source code and object code, or libraries or documentation).
 
 We use directories for all these purposes when we code in an IDE as well, but in order to be able to support us well, the IDE needs to know the *root* directory of a piece of software that we are building.  That way, it can perform useful tasks for us, like automatically setting the `classpath` for us, and automatically compiling code and reporting on errors while we type.  This root directory is typically referred to as a *project*. IDEs use the concept of a project as a means of recording metadata about the project.  For example, Eclipse will remember that a specific project is a Java project, and will then know to apply the set of tools appropriate to Java projects, and not (for example) tools relating to Ruby or Python.
 :::
@@ -185,13 +185,13 @@ Although we asked for the `master` branch to be checked out locally when we clon
 
 For this activity, we are going to work with the commit with the short SHA of (ref:commit-were-using).
 
-The easiest way to check out a commit, branch or tag from within Eclipse is to use the History View.  To open it, right click on the `newmarauroa` project name in the Package Explorer view.  Select `Team` > `Show in History` from the menu that appears.  The History View shown in figure \@ref(fig:historyTab-fig), should now be visible in the bottom panel of your Eclipse window.  You may wish to double click on the view tab to expand it, so that the contents are more easily seen.
+The easiest way to check out a commit, branch or tag from within Eclipse is to use the History View.  To open it, right-click on the `newmarauroa` project name in the Package Explorer view.  Select `Team` > `Show in History` from the menu that appears.  The History View shown in figure \@ref(fig:historyTab-fig), should now be visible in the bottom panel of your Eclipse window.  You may wish to double-click on the view tab to expand it, so that the contents are more easily seen.
 
-```{r historyTab-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap = "In this view, you should now see the most recent part of the network of the Marauroa project repository. You can scroll down to see the full commit log. As you can see, the history is significantly more complex than the simple repository we looked at in the GitLab Access Check. Marauroa has been under development since 2003, and its history reflects its age.  Note that your view of the repository may be a little different than that shown in the screen shot.  We are working with a live repository, and new commits are being made on a regular basis."}
+```{r historyTab-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap = "In this view, you should now see the most recent part of the network of the Marauroa project repository. You can scroll down to see the full commit log. As you can see, the history is significantly more complex than the simple repository we looked at in the GitLab Access Check. Marauroa has been under development since 2003, and its history reflects its age.  Note that your view of the repository may be a little different than that shown in the screenshot.  We are working with a live repository, and new commits are being made on a regular basis."}
 knitr::include_graphics("images/1.4historyTab.png")
 ```
 
-Look for the commit with SHA (ref:commit-were-using).  It should have the (not terribly helpful) commit message `code cleanup`.  Right click on it, and select `Checkout` from the menu that appears.
+Look for the commit with SHA (ref:commit-were-using).  It should have the (not terribly helpful) commit message `code cleanup`.  Right-click on it, and select `Checkout` from the menu that appears.
 
 At this point, Eclipse will warn you that you are in a `detached HEAD` state shown in figure \@ref(fig:detachedHEAD-fig)
 
@@ -202,7 +202,7 @@ knitr::include_graphics("images/1.4historyTab.png")
 (ref:captiondetach)  A warning of the detached HEAD state which reads:  “You are in the `detached HEAD` state. This means you don't have a local branch checked out. You can look around but it's not recommended to commit changes. The reason is that these commits would not be on any branch and would not be visible after checking out another branch.”
 
 
-This just means that we have checked out a commit that is not pointed to by any current branch or tag.  The `HEAD` in Git is the currently checked out commit.  Eclipse (and Git) are warning us about this because any changes we make and commit from this point will also not be pointed to by any branch or tag (unless we create one specifically).  In fact, they will be unreachable from any branch or tag, and so will be treated by Git as if they had been deleted. They will be scheduled for garbage collection, the next time that takes place. We're not going to commit any changes for this exercise, so we don't care whether the `HEAD` commit is detached or not. We can safely ignore this warning for now.
+This just means that we have checked out a commit that is not pointed to by any current branch or tag.  The `HEAD` in Git is the currently checked-out commit.  Eclipse (and Git) are warning us about this because any changes we make and commit from this point will also not be pointed to by any branch or tag (unless we create one specifically).  In fact, they will be unreachable from any branch or tag, and so will be treated by Git as if they had been deleted. They will be scheduled for garbage collection, the next time that takes place. We're not going to commit any changes for this exercise, so we don't care whether the `HEAD` commit is detached or not. We can safely ignore this warning for now.
 
 ::: {.rmdnote}
 **Checkout and Detached Heads**
@@ -216,17 +216,17 @@ Press `OK` and double-click on the History View tab, to shrink the view back to 
 
 ### Explore your Project {#explore}
 
-You now have your own copy of the Marauroa project source to play with and look around a little. Take a few minutes to look around and explore what is inside it before moving on to the next step.  Look at the way the contents of the project are organised into folders.  Can you guess at the contents of each folder from its name?
+You now have your own copy of the Marauroa project source to play with and look around a little. Take a few minutes to look around and explore what is inside it before moving on to the next step.  Look at the way the contents of the project are organised into folders.  Can you guess the contents of each folder from its name?
 
-Explore around some of the folders.  Can you find some Java class files?  What clues did you use to track them down?
+Explore some of the folders.  Can you find some Java class files?  What clues did you use to track them down?
 
-Notice the icon that Eclipse has placed next to the project name. Quite a lot of information is packed into this small symbol. The folder symbol indicates that this is a project.  The small J just above it indicates that this is a Java project.  The small orange drum under the J indicates that this project is under version control.  Eclipse also tells us the name of the Git repository the project is stored under, and which branch or commit of the project we current have checked out, in the text following the project name: `[marauroa f30e098]` (or similar).  Finally, the small yellow road sign with the exclamation mark in the middle tells us that when Eclipse used its internal builder on the Java code in the project, it encountered some compiler warnings.
+Notice the icon that Eclipse has placed next to the project name. Quite a lot of information is packed into this small symbol. The folder symbol indicates that this is a project.  The small J just above it indicates that this is a Java project.  The small orange drum under the J indicates that this project is under version control.  Eclipse also tells us the name of the Git repository the project is stored under, and which branch or commit of the project we current have checked out, in the text following the project name: `[marauroa (ref:commit-were-using)]` (or similar).  Finally, the small yellow road sign with the exclamation mark in the middle tells us that when Eclipse used its internal builder on the Java code in the project, it encountered some compiler warnings.
 
 You might be surprised to see that the Marauroa team have released code that produces compiler warnings.  Let's take a look at what the warnings are, using the Problems view.  You'll notice that this view has already been populated with some information about the project, without us having to ask for it to be generated.  IDEs will commonly provide services like this, performing key analyses of the project source and letting you know about problems without you having to explicitly request it.  After all, if we have introduced a compilation error, we want to know about it as soon as it happens, and not much later when we finally remember to ask Eclipse to compile the code.
 
 Because the Marauroa team have configured this project as a Java project, Eclipse already knows how to find the Java source files, and it uses its internal Java build tool to compile them.  In fact, it will recompile every time we make even a small change to the code, as well as when we import new code. From the Problems view, we can see that this automatic compilation produced no compiler errors (good!) but 158 compiler warnings (eek!).
 
-If you have time, you can take a few minutes to explore the compiler warnings generated, by clicking on the small triangle beside the warn `Warnings` in the Problem view.   Take a look and see if you think these are serious problems or whether the Marauroa creators were making a reasonable decision not to fix them.
+If you have time, you can take a few minutes to explore the compiler warnings generated, by clicking on the small triangle beside the warning `Warnings` in the Problem view.   Take a look and see if you think these are serious problems or whether the Marauroa creators were making a reasonable decision not to fix them.
 
 **STEP 1 of 4 COMPLETED**
 
@@ -248,17 +248,17 @@ For our purposes today, you just need to know how to run an Ant script to create
 
 ### Locate and Examine the Build Script
 
-Open up the `newmarauroa` project in the Package Explorer (if you have not already done so), and scroll down until you see a file called `build.xml`. This is the default name for Ant build scripts.  Double click on it, to get Eclipse to load the file into an Editor view, so that we can see its contents shown in figure \@ref(fig:buildfile-fig)
+Open up the `newmarauroa` project in the Package Explorer (if you have not already done so), and scroll down until you see a file called `build.xml`. This is the default name for Ant build scripts.  Double-click on it, to get Eclipse to load the file into an Editor view, so that we can see its contents shown in figure \@ref(fig:buildfile-fig)
 
 ```{r buildfile-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap = "An XML build file"}
 knitr::include_graphics("images/2.1buildFile.png")
 ```
 
-If the filename wasn't already enough of a clue, you'll see from this that Ant build scripts are XML files.  XML tags are used to define the things that the file knows how to build, and the steps involved in building them, as well as key configuration information, such as class paths (show in the screen shot above).
+If the filename wasn't already enough of a clue, you'll see from this that Ant build scripts are XML files.  XML tags are used to define the things that the file knows how to build, and the steps involved in building them, as well as key configuration information, such as class paths (shown in the screenshot above).
 
 Notice that the Outline view has also now been populated.  This very useful view gives a high-level summary of the contents of a file, by listing its main components as a tree view.  In the case of a Java file, the Outline view shows the classes defined by the file, and their members (fields and methods).  In the case of XML files, like our build file, the Outline view shows the hierarchy of tags defined by the files.
 
-We can use the Outline view to run Ant builds, by right clicking on the XML tags that represent descriptions of how to build things.  But an even more useful view is the **Ant View**.  This is a view that has been created with knowledge of how the Ant build tool works, and added in to Eclipse as a plugin.  Open it by selecting `Window` > `Show View` > `Ant` from the top level menus.
+We can use the Outline view to run Ant builds, by right-clicking on the XML tags that represent descriptions of how to build things.  But an even more useful view is the **Ant View**.  This is a view that has been created with knowledge of how the Ant build tool works, and added into Eclipse as a plugin.  Open it by selecting `Window` > `Show View` > `Ant` from the top-level menus.
 
 Now open `build.xml` from the view by clicking on the `Add Buildfiles` icon in the view toolbar.  It looks like an ant with a green plus on its left shown in figure \@ref(fig:antAddBuildfile-fig)
 
@@ -276,7 +276,7 @@ Notice that the Ant view has been populated.  Instead of listing all the top-lev
 
 Scan down the targets and see if you can guess from the name what each one builds. Hint: `dist` here stands for `distribution`.
 
-Let's take a look at the definitions of some of the targets.  Right click on the name of any of the targets, and select `Open In` > `Ant Editor` from the context menu that appears.  You will see that the contents of the `build.xml` editor window are changed, so that the definition of the target we have clicked on is displayed.  For example, in figure \@ref(fig:jarallTarget-fig), we've clicked look at the `jar-all` target and take a look.
+Let's take a look at the definitions of some of the targets.  Right-click on the name of any of the targets, and select `Open In` > `Ant Editor` from the context menu that appears.  You will see that the contents of the `build.xml` editor window are changed, so that the definition of the target we have clicked on is displayed.  For example, in figure \@ref(fig:jarallTarget-fig), we've clicked look at the `jar-all` target and take a look.
 
 <!--Redo in Ant View-->
 ```{r jarallTarget-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap = "The jar-all target"}
@@ -299,7 +299,7 @@ The answer is that there is typically more to turning source code for a non-triv
 
 Quite what *deployment* means differs from application to application. Simple Java applications may simply be wrapped up into a jar file, but even then we often need to supply a shell script for setting the class path and executing the main method of the entry point class.  If we are building a Web application then deployment typically means packaging up the components of the application in a `*.war` file (web archive file) and copying it into a particular directory (the one used by the container manager our web server provides).  Or, we might need to prepare a zip archive of files, or to package up the files ready for use by an install tool.
 
-As these examples show, the steps needed to deploy a system are often very simple, but they are also quite fiddly and fussy.  One wrong key stroke and we end up with something unusable.  Explicitly documenting the deployment steps in an automated build script make the deployment process quick, easy and reliable for anyone on the development team to carry out, even the newest team member.  That is very important, as it means that tests can be run on the deployable form of the system (even if it is not, at that point, deployed in the live environment).  As we have seen, the closer our test environment can be to the live environment, the more chance there is that we'll find errors before they reach the customer rather than afterwards.
+As these examples show, the steps needed to deploy a system are often very simple, but they are also quite fiddly and fussy.  One wrong keystroke and we end up with something unusable.  Explicitly documenting the deployment steps in an automated build script make the deployment process quick, easy and reliable for anyone on the development team to carry out, even the newest team member.  That is very important, as it means that tests can be run on the deployable form of the system (even if it is not, at that point, deployed in the live environment).  As we have seen, the closer our test environment can be to the live environment, the more chance there is that we'll find errors before they reach the customer rather than afterwards.
 :::
 
 
@@ -307,7 +307,7 @@ As these examples show, the steps needed to deploy a system are often very simpl
 
 Now that we have seen something of the build script, we are going to use it to build the whole Marauroa distribution.  That is, **we are going to ask Ant to build the "dist" target**.
 
-Right click on the target we want to build and select *RunAs* from the menu.  You'll see that the IDE recognises the file we have clicked on as an Ant Build target and offers the option of running it as an Ant build.
+Right-click on the target we want to build and select *RunAs* from the menu.  You'll see that the IDE recognises the file we have clicked on as an Ant Build target and offers the option of running it as an Ant build.
 
 ::: {.rmdnote}
 
@@ -335,7 +335,7 @@ The most important part of the output, of course, is shown at the end, when the 
 knitr::include_graphics("images/2.2endConsoleOut.png")
 ```
 
-We can see here that the build was successful.  We have built the executable version of the code, just by right clicking on a target!  Building Marauroa would be a lot more work if we had to carry out all these steps ourselves, manually, every time the code changes, and the chances of getting a step wrong would have been much higher.  This shows one of the strengths of automated build tools.  The Marauroa team have encapsulated their expertise in building their games engine into this build script file.  It now becomes possible for anyone, with or without expertise in Ant, or Marauroa, to build the system in the same way.
+We can see here that the build was successful.  We have built the executable version of the code, just by right-clicking on a target!  Building Marauroa would be a lot more work if we had to carry out all these steps ourselves, manually, every time the code changes, and the chances of getting a step wrong would have been much higher.  This shows one of the strengths of automated build tools.  The Marauroa team have encapsulated their expertise in building their games engine into this build script file.  It now becomes possible for anyone, with or without expertise in Ant, or Marauroa, to build the system in the same way.
 
 In other words, the build tool has made the build process *repeatable*.  A source of potential error in working with the code (and in deploying to the user) has been removed.
 
@@ -346,7 +346,7 @@ Take a moment to look through the full console output from the build command we 
 
 We'll finish this step by taking a brief look at what the build process has achieved.
 
-Right click on the `newmarauroa` project name and select Refresh from the drop-down menu.  Eclipse know about any file changes you make using Eclipse tools (such as the Java editor or the internal Java builder) and can update the view of the project you see through its GUI automatically for you.  But Ant is not part of Eclipse.  It is a separate tool that Eclipse is running for us.  When an Ant script creates new files and folders, or moves things about, Eclipse doesn't know anything about it, and so the view of the project it shows to us can get out of date.  The Refresh menu option tells Eclipse to go and look at the directory structure and files in the project directory, and to update the GUI to show the effects of any changes.
+Right-click on the `newmarauroa` project name and select Refresh from the drop-down menu.  Eclipse knows about any file changes you make using Eclipse tools (such as the Java editor or the internal Java builder) and can update the view of the project you see through its GUI automatically for you.  But Ant is not part of Eclipse.  It is a separate tool that Eclipse is running for us.  When an Ant script creates new files and folders, or moves things about, Eclipse doesn't know anything about it, and so the view of the project it shows to us can get out of date.  The Refresh menu option tells Eclipse to go and look at the directory structure and files in the project directory, and to update the GUI to show the effects of any changes.
 
 When you refresh, several new folders should appear: build, build-archive, dist and javadocs.
 
@@ -366,9 +366,9 @@ We'll take a first look at how these suites are organised and implemented in thi
 
 ### Finding Out What Tests There Are to Run
 
-Before we run the tests, it is helpful first to take a high level look at the test suites provided by the developers of the system we are working with.  One way to do this is to look at the source folders in the project.  The source code for any large project, nowadays, is typically split into two halves: the production code (the part that the user will use and the customer will pay for) and the test code (the part that the development team use to work out whether they are delivering the right thing).  It's important not to get these two parts of the code mixed up, and therefore it is common practice to split test code off into its own folders (and sometimes its own packages).
+Before we run the tests, it is helpful first to take a high-level look at the test suites provided by the developers of the system we are working with.  One way to do this is to look at the source folders in the project.  The source code for any large project, nowadays, is typically split into two halves: the production code (the part that the user will use and the customer will pay for) and the test code (the part that the development team use to work out whether they are delivering the right thing).  It's important not to get these two parts of the code mixed up, and therefore it is common practice to split test code off into its own folders (and sometimes its own packages).
 
-Another source of useful information about the test suites is the Ant build script.  Although called a ``build`` script, we have seen that these scripts do a lot more than just compiling code.  Their task is not just to create an executable version of the system, but to create a verified executable that is ready for the user to take away and use.  Therefore, these scripts more normally follow a three step process:
+Another source of useful information about the test suites is the Ant build script.  Although called a ``build`` script, we have seen that these scripts do a lot more than just compiling code.  Their task is not just to create an executable version of the system, but to create a verified executable that is ready for the user to take away and use.  Therefore, these scripts more normally follow a three-step process:
 
 1. build
 1. test
@@ -394,9 +394,9 @@ The target in figure \@ref(fig:compileTestsTargetJustCode-fig) depends on the `c
 
 In the description of the `compile-tests` target, we can see two calls to `javac`, and a couple of file copy commands.  The `javac` commands are compiling code in the folder specified by the ``$\{src-test\}`` property and the ``functional_tests`` folder.
 
-A string of the form ``\$\{something\}`` in an Ant script is a reference to the value the property called ``something``.  They can be defined in the Ant script itself (using the `property tag`), but the `src-test` property has its value set in the ``build.ant.properties`` file, which the build script imports.  If we look in that file, we can see that this property is set to the path to the ``tests`` folder.
+A string of the form ``\$\{something\}`` in an Ant script is a reference to the value of the property called ``something``.  They can be defined in the Ant script itself (using the `property tag`), but the `src-test` property has its value set in the ``build.ant.properties`` file, which the build script imports.  If we look in that file, we can see that this property is set to the path to the ``tests`` folder.
 
-So, we can see from this small section of the build file (without bothering to look any further) that there are two kinds of test in the Marauroa system: functional tests and another kind of test.  It is a fairly safe bet that this other kind of test are unit tests.
+So, we can see from this small section of the build file (without bothering to look any further) that there are two kinds of tests in the Marauroa system: functional tests and another kind of test.  It is a fairly safe bet that this other kind of test are unit tests.
 
 ::: {.rmdnote}
 **Forgotten what unit tests and functional tests are?**
@@ -418,13 +418,13 @@ The other target is called `jacoco:report`. The name suggests that it has the jo
 
 ### Run the Tests
 
-Now that we know a little about what is happening inside the test-related targets, we'll run them.  Just as we did with the `dist` target when building the code, we're going to right click on the `test` target, and select `Run As` > `Ant Build`.
+Now that we know a little about what is happening inside the test-related targets, we'll run them.  Just as we did with the `dist` target when building the code, we're going to right-click on the `test` target, and select `Run As` > `Ant Build`.
 
 Please try that now.
 
 <!--image but with ANT VIEW-->
 
-As before, you should see a log of what Ant is doing appearing in the Console view.(Note that this time, the compile target and its predecessor targets are run but seem to do nothing.  This is because Ant knows that the production code source hasn't changed since these targets were last built.  So, there is no point wasting any time recompiling them, when we can just use the object files that were created the last time.)
+As before, you should see a log of what Ant is doing appearing in the Console view. (Note that this time, the compile target and its predecessor targets are run but seem to do nothing.  This is because Ant knows that the production code source hasn't changed since these targets were last built.  So, there is no point wasting any time recompiling them, when we can just use the object files that were created the last time.)
 
 <!--The final part of the console output should look like this:
 
@@ -434,7 +434,7 @@ From the output, the target seems to have run to completion.  The build was succ
 
 The build should succeed as before, indicating that all tests pass successfully.
 
-<!--This time, you should see a failed build.  This is because one of the tests has failed.  A little later, we'll look at some tools for working with test results, so we can examine just why the build failed.  For now, we note only that the failing test caused the process of executing the test suite to come to a full stop.  This is because the Marauroa build script tells JUnit to stop as soon as a failing test is encountered.  In some situations this is useful (it leaves the details of the failing test clearly visible in the console window), but in other situations we want to see the results of the whole test suite, whether there are failures or not.-->
+<!--This time, you should see a failed build.  This is because one of the tests has failed.  A little later, we'll look at some tools for working with test results, so we can examine just why the build failed.  For now, we note only that the failing test caused the process of executing the test suite to come to a full stop.  This is because the Marauroa build script tells JUnit to stop as soon as a failing test is encountered.  In some situations, this is useful (it leaves the details of the failing test clearly visible in the console window), but in other situations, we want to see the results of the whole test suite, whether there are failures or not.-->
 
 <!--To allow this, open up the `build.xml` file, and go to line 292.  On this line, change the values of the `haltonerror` and `haltonfailure` parameters to both be `false`.  Then run the tests again, from the Ant View.  You should now see a much larger number of test results scrolling by in the Console View.-->
 
@@ -461,7 +461,7 @@ This is an excellent example of a *brittle* test.  Ideally, we want our tests to
 
 It's useful to find out more details about the results of running the test suite, but the summary output we get on the console from the build is not very helpful. We need a better way to get more details about the results of running the test suite. But where are the results stored?
 
-Line 37 of the `build.ant.properties` file tells us that the `build-test-reports` are in the `build/testreport` folder.  We'll need to refresh the project to allow Eclipse to show us these new folders and files, so right click on the project name in the Package Explorer View and select `Refresh`.
+Line 37 of the `build.ant.properties` file tells us that the `build-test-reports` are in the `build/testreport` folder.  We'll need to refresh the project to allow Eclipse to show us these new folders and files, so right-click on the project name in the Package Explorer View and select `Refresh`.
 
 You should now be able to examine the contents of the `build/testreport` folder shown in figure \@ref(fig:showJUnitTestResultsInXMLFormat-fig)
 
@@ -490,13 +490,13 @@ All are shown with a small green tick next to them, indicating that they passed.
 
 The green bar at the top of the JUnit view also indicates that all the tests in this test class passed.
 
-We can double click on any of the tests to find out more about them.  Try this with the first test: `clientconnectTest`.  You should see the source of the test case, loaded in the Editor view shown in figure \@ref(fig:showSourceOfTestFromTestReport-fig)
+We can double-click on any of the tests to find out more about them.  Try this with the first test: `clientconnectTest`.  You should see the source of the test case, loaded in the Editor view shown in figure \@ref(fig:showSourceOfTestFromTestReport-fig)
 
 ```{r showSourceOfTestFromTestReport-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap = "The Editor view"}
 knitr::include_graphics("images/3.3.4showSourceOfTestFromTestReport.png")
 ```
 
-You can see that the test in \@ref(fig:showSourceOfTestFromTestReport-fig) is short, and quite descriptive. This is typical of unit test code. Did you also notice that this is the first time we have looked at Java code in our exploration of the Marauroa system.  Test cases make a great starting point for understanding what an unfamiliar code base does, as we shall see in another (ref:coursecode) workshop.
+You can see that the test in \@ref(fig:showSourceOfTestFromTestReport-fig) is short, and quite descriptive. This is typical of unit test code. Did you also notice that this is the first time we have looked at Java code in our exploration of the Marauroa system?  Test cases make a great starting point for understanding what an unfamiliar code base does, as we shall see in another (ref:coursecode) workshop.
 
 If you have time, you can explore some of the other test results, and the test cases associated with them.  Try not to get too bogged down in the details, though.  We're just trying to get an overview of what the system is doing here, rather than drilling down into the details of any one feature.
 
@@ -525,7 +525,7 @@ Note that the parameter is `destdir`, not `destfile`, like in the line that foll
 knitr::include_graphics("images/3.3.5addHTMLreportRequestToBuildFile.png")
 ```
 
-The line to add has been highlighted in the editor window in figure \@ref(fig:addHTMLreportRequestToBuildFile-fig).  When you have added it and saved the file (Control-S is the keyboard short cut, or you can click on the small floppy disk in the tool bar), run the Ant test target again. When this completes, **refresh** the project to pull in the extra report files we have asked JaCoCo to create.
+The line to add has been highlighted in the editor window in figure \@ref(fig:addHTMLreportRequestToBuildFile-fig).  When you have added it and saved the file (Control-S is the keyboard shortcut, or you can click on the small floppy disk in the toolbar), run the Ant test target again. When this completes, **refresh** the project to pull in the extra report files we have asked JaCoCo to create.
 
 Expand the `build/coveragereport` folder. You should see lots of extra folders inside it, with names that look like they could be Java packages.  You should also find a file called `index.html` down towards the bottom.  This is the root file of the HTML report that JaCoCo has created for us.
 
@@ -535,7 +535,7 @@ Eclipse has a Web browser plug-in that you can use to look at this report (by do
 knitr::include_graphics("images/3.3.7showCoverageReport.png")
 ```
 
-The report in figure \@ref(fig:showCoverageReport-fig) shows, for each package, the degree to which the test suite exercised the source code.  For now, we'll just focus on the first four result columns.  For the second package, `marauroa.common.game`, we can see from the report that the test suite executed 68% of the instructions in the package.  (An instruction, here, is a single Java byte code instruction.)  But, 32% (around a third) were not executed at all by the test suite.  Any bugs in instructions not covered by the test suite will not be caught by it.
+The report in figure \@ref(fig:showCoverageReport-fig) shows, for each package, the degree to which the test suite exercised the source code.  For now, we'll just focus on the first four result columns.  For the second package, `marauroa.common.game`, we can see from the report that the test suite executed 67% of the instructions in the package.  (An instruction, here, is a single Java byte code instruction.)  But, 33% (around a third) were not executed at all by the test suite.  Any bugs in instructions not covered by the test suite will not be caught by it.
 
 The next two columns show how many “branches” in the code were covered by the test suite.  A “branch” in this context means a conditional point in the code, where execution could follow one of two paths based on the value of the condition.  JaCoCo currently computes branch coverage only for `if` and `switch` statements, though theoretically loops also introduce branches into code.  We would like our test suite to exercise all exits from all branches.  That is, if there is an if-statement, we would like our test suite to execute the if-statement with a true condition (so that the then-body is executed) and with a false condition (so that the else-body is executed).  These columns assess how far the test suite has met this goal.  In the case of our example, just 60% of the branches in this package are exercised by the test.
 
@@ -543,7 +543,7 @@ The next two columns show how many “branches” in the code were covered by th
 ::: {.rmdnote}
 **Aside: Coverage by Instrumentation**
 
-Code coverage tools like JaCoCo need to find out which source code statements were executed when a test (or suite of tests) are run.  They typically do that by “instrumenting” the code.  That is, they convert the code of the system so that every statement is accompanied by a second statement that logs the occurrence of the first statement in some file somewhere.  For example, the code fragment:
+Code coverage tools like JaCoCo need to find out which source code statements were executed when a test (or suite of tests) is run.  They typically do that by “instrumenting” the code.  That is, they convert the code of the system so that every statement is accompanied by a second statement that logs the occurrence of the first statement in some file somewhere.  For example, the code fragment:
 
 ```java
 int x = Math.random();
@@ -590,7 +590,7 @@ We're going to end the workshop by making a quick experiment to show the power o
 ````java
 marauroa.common.game.RPSlot.setDeletedRPObject()
 ````
-First, we need to get the source of this method loaded into the Editor view. You can do that by expanding the src folder tree in the Package Explorer, or by using the Search facility from the main menu bar. (File search is the easiest to use, but Java search would be a sensible way to run this search, too.)
+First, we need to get the source of this method loaded into the Editor view. You can do that by expanding the src folder tree in the Package Explorer, or by using the search facility from the main menu bar. (File search is the easiest to use, but Java search would be a sensible way to run this search, too.)
 
 Double click on the class or method to load it into the Editor window.  You can use the Outline View to locate the method quickly once you have the class loaded into the Editor. Now we can make the change. Comment out line 649, as shown in figure \@ref(fig:commentOutALineOfCode-fig)
 
@@ -600,13 +600,13 @@ knitr::include_graphics("images/3.4.1commentOutALineOfCode.png")
 
 Save the file and run the build test target.
 
-This time, you should see a failed build like the one shown in figure \@ref(fig:resultsOfRunningTheTestsOnTheModifiedCode-fig). This is because one (or more) of the tests has failed, because of the change we introduced. The failing test(s) caused the process of executing the test suite to come to a full stop.  This is because the Marauroa build script tells JUnit to stop as soon as a failing test is encountered.  
+This time, you should see a failed build like the one shown in figure \@ref(fig:resultsOfRunningTheTestsOnTheModifiedCode-fig). This is because one (or more) of the tests have failed, because of the change we introduced. The failing test(s) caused the process of executing the test suite to come to a full stop.  This is because the Marauroa build script tells JUnit to stop as soon as a failing test is encountered.  
 
 ```{r resultsOfRunningTheTestsOnTheModifiedCode-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap = "A more detailed coverage report"}
 knitr::include_graphics("images/3.4.2resultsOfRunningTheTestsOnTheModifiedCode.png")
 ```
 
-In some situations this is useful (it leaves the details of the failing test clearly visible in the console window), but in other situations we want to see the results of the whole test suite, whether there are failures or not. In other words, we want the build process to carry on despite the failing tests.
+In some situations, this is useful (it leaves the details of the failing test clearly visible in the console window), but in other situations, we want to see the results of the whole test suite, whether there are failures or not. In other words, we want the build process to carry on despite the failing tests.
 
 To allow this, open up the `build.xml` file, and go to line 292.  On this line, change the values of the `haltonerror` and `haltonfailure` parameters to both be `false`.  Then run the tests again, from the Ant View.  You should now see a much larger number of test results scrolling by in the Console View.
 
@@ -623,9 +623,9 @@ Notice the important line at the bottom in red. One or more of the tests failed.
 build/testreport/TEST-marauroa.common.game.RPObjectDelta2Test.xml
 ````
 
-Double click on the names of the test cases that failed in the JUnit View.  You will see that the test class is automatically loaded into the Editor window, with the cursor placed at the assertion that failed.
+Double click on the names of the test cases that failed in the JUnit view.  You will see that the test class is automatically loaded into the Editor window, with the cursor placed at the assertion that failed.
 
-This shows that the error we introduced in this case was spotted by the tests.
+This shows that the error we introduced, in this case, was spotted by the tests.
 
 You may be thinking at this point that I must have spent ages looking for a line of code that I could comment out and that would cause a test to fail. In fact, this line was the first one I tried --- honest! I did cheat a little bit, as I made sure to look for a line to change that was in code that was well covered by the test suite. If I'd made a change in code that was less well covered, then I'd probably have had to look harder to find a change that the tests could spot.
 
@@ -637,7 +637,7 @@ You may notice that the name of the test that failed here contains the word “b
 When the bug is fixed, the test we wrote to make it visible can enter the normal pool of tests that we run regularly over the system. That way, if any future code change causes the bug to reappear, we'll have a test that will catch it.
 :::
 
-In whatever time is left, try making your own changes to the code. Run the tests, and see if they were able to detect the error you had introduced. Try making changes in code that is well covered by the tests and in code that is less well covered. How did the test suite do?
+In whatever time is left, try making your own changes to the code. Run the tests, and see if they were able to detect the error you had introduced. Try making changes in code that are well covered by the tests and in code that is less well covered. How did the test suite do?
 
 You won't have to try this for long before you start to want a better way of looking at the test results than scanning through the build output on the console.  It is usual to set up the build script so that it creates a summary report of all the test results for the project, so that you can see at a glance which tests are failing. The Marauroa team have not done this (perhaps because they prefer to look at test results through their continuous integration and test system---we will look at these tools, and use them for the coursework, later in the course unit).
 
@@ -668,11 +668,11 @@ If you have raced through all the above, and still have time left in the worksho
 
 The Marauroa team provide a tutorial describing how to use Marauroa to create a simple “chat” game using the engine, which does allow us to run the engine we have built. Head over to the Marauroa wiki and follow the tutorial instructions if you want to try this out (it's an optional exercise, and is not important for the coursework or the remainder of the workshops).  It is very short, and just involves the creation of 5 classes in total.  All code for the classes is provided, but there are a couple of tricky elements to making it all fit together in Eclipse.
 
-You should start by making a new Java project in Eclipse, with a `lib` folder (an ordinary folder, not a source folder). Import the Marauroa jar file that you built in the previous steps into this directory, and add it to the build path for your project. This is done by right clicking on the imported jar, and selecting `Build Path` > `Add to Build Path`. You can then add the files from the tutorial to the `src` folder.
+You should start by making a new Java project in Eclipse, with a `lib` folder (an ordinary folder, not a source folder). Import the Marauroa jar file that you built in the previous steps into this directory, and add it to the build path for your project. This is done by right-clicking on the imported jar, and selecting `Build Path` > `Add to Build Path`. You can then add the files from the tutorial to the `src` folder.
 
 You'll need to add a couple of other libraries to the `lib` folder as you progress. They can all be imported/copied from the `newmarauroa` project.
 
-When you are ready to run, you'll need to create a new Run Configuration. The drop down menu associated with the small green circle and white triangle in the task bar (i.e. the run button) will take you to the screen for this.
+When you are ready to run, you'll need to create a new Run Configuration. The drop-down menu associated with the small green circle and white triangle in the taskbar (i.e. the run button) will take you to the screen for this.
 
 Do not hesitate to ask if you are stuck!
 
