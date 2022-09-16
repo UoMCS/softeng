@@ -2,7 +2,7 @@
 
 # Building and testing {#building}
 
-## Introduction write some stuff {#Introduction}
+## Introduction {#Introduction}
 
 In this workshop, we will be building and testing a system called Marauroa. We will look at some essential processes for working on an existing team-developed software system. We'll be assuming that, after this workshop, you are capable of carrying out the following tasks for yourself, without needing much guidance:
 
