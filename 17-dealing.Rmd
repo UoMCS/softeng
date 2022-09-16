@@ -17,10 +17,11 @@ Most deliverables for this exercise are held within your team's GitLab repositor
 - Correct use of Git Tags for the Test First Development
 - Tests which make your selected bugs visible
 - Source code of your bug fixes
-- URL of Screencast, which is uploaded to the University Video server.
+- URL of Video Demonstration. You will upload actual video to the University Video server.
 
 You must familiarise yourself with the submission instructions, in order to submit your work in the proper way. 
-Work which is not submitted in the correct way will receive a mark of 0. 
+
+**Work which is not submitted in the correct way will receive a mark of 0.** 
 
 ### Penalty Details
 
@@ -237,16 +238,56 @@ This is the version of the code that we will consider to be your released code, 
 
 ### Step 10: Prepare Your Video {#stepten}
 
-You are done with the technical work at this stage, but there is one more task to do: prepare for the marking interview that follows the deadline for the coursework.  In this interview, your TA will ask you to demonstrate some of your bug fixes in the released code, and will discuss with you how you have organised your work to balance load across the team and what monitoring steps you've taken to keep the work of the team on track for the deadline.
+You are now done with the technical work. Now you must create your video demonstration.  
 
-More information about the timing, location and format of this interview will be posted on Blackboard.
+In your video, you must demonstrate **two issues**, with **at least one issue being from Category B**:
 
-Note that all team members must attend the marking interview, and any team member may be asked to demonstrate and talk about the issue they were responsible for.  **Any team member who fails to attend and who has not registered a legitimate excuse with SSO or a member of the course team will receive an automatic 50% penalty on their mark for the exercise.**  Team members who attend the interview will be unaffected by this penalty.
+| **Categoty A**                                   | **Category B**                                   |
+|--------------------------------------------------|--------------------------------------------------|
+| - Issue 1<br>- Issue 2<br>- Issue 3<br>- Issue 4 | - Issue 5<br>- Issue 6<br>- Issue 7<br>- Issue 8 |
 
+
+**If there is no issue present from Category B, then you will only receive credit for one of the issue demonstrations**.
+
+You must also reflect on your work as a team, looking forwards to tasks such as Team Coursework 2.
+
+The video must follow the format given below:
+
+- The video must begin with video footage of each team member introducing themself and describing, briefly, their role in the team. 
+-  For each issue selected, the person who had responsibility for this issue must:
+    - Explain the issue
+    - Show in-game footage, with an explaination of the footage, confirming that the issue is fixed
+    - Show and explain test code used to expose the issue in the test suite
+    - Show and explain code used to fix the issue
+- Discuss how you organised your workload across the team
+- Discuss what monitoring steps you've taken to keep the work of the team on track for the deadline.
+- Reflect on the team exerise; what went well? What will you take forwards into the next team exercise? What will you do better next time?
+
+To create your video, you might find the following software useful (these are only suggestions and shold not be taken as a requirement or endorsement to use them):
+- OBS  (For screen recording)
+- Shotcut (For very basic video editing)
+- Powerpoint / Libre Office Impress / Keynote (for creating slides)
+- Zoom (for creating a video meeting and recording to allow all team members to speak)
+
+
+Note that **all team members must make a non-trivial appearance in the video**. 
+
+**Any team member who does not appear in the video, and has not registered a legitimate reason with SSO or a member of the course team, will receive an automatic 50% penalty on their mark for the exercise.**  Team members who appear in the video will be unaffected by this penalty.
+
+
+Your video **must not exceed 15 mins in length**. In cases where a video is longer than 15 minutes, the video will be stopped at 15 minutes; any content after this point will not be considered for your mark.
 
 ## Submission of Your Team's Work {#imdone}
+Your submission is in two parts: your video file and the GitLab repository.
 
-All submission of work for this coursework exercise is through your team's GitLab repository.  All you have to do is make sure the contents of your issue tracker and Git repository are ready to be marked by the deadline.  There is nothing else you have to submit.
+### Submission of Video
+Once you have prepared your video, one of your team should upload it to the University's Video Server: https://video.manchester.ac.uk/ .
+
+The URL of your uploaded video must be placed in the follwing text file (which you must also create) on your GitLab repository: `doc/VIDEO_URL_1.txt`
+
+### Submission of GitLab Repository
+
+The remaining submission of work for this coursework exercise is through your team's GitLab repository.  All you have to do is make sure the contents of your issue tracker and Git repository are ready to be marked by the deadline.  There is nothing else you have to submit.
 
 A “live” marking scheme for the exercise can be found on the CI server used for this course unit.  (You will get information about this some days after the coursework is released to you.)  The marking scheme gives details of how the marks will be awarded, but also gives an interim mark for your team based on the work completed so far.  Of course, only some parts of the marking can be automated.  Others will need to be done by GTAs.  The GTA marking takes three forms:
 
