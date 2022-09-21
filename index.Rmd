@@ -20,7 +20,7 @@ always_allow_html: true
 
 # Welcome {.unnumbered #welcome}
 
-Welcome to (ref:coursecode): [software engineering at the University of Manchester](https://studentnet.cs.manchester.ac.uk/ugt/COMP23311/syllabus/).
+Welcome to dev branch (ref:coursecode): [software engineering at the University of Manchester](https://studentnet.cs.manchester.ac.uk/ugt/COMP23311/syllabus/).
 
 ## Making better software {#better}
 
