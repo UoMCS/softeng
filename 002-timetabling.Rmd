@@ -19,7 +19,7 @@ For online activities, everything is on Microsoft Teams.
 Microsoft Teams is, as the name suggests, where you'll meet your team, details will appear here once teams have been assigned.
 
 ## Which lab should I go to {#campus}
-You need to meet with your team in the team study sessions, these are assigned in week 1. 
+You need to meet with your team in the team study sessions, these are assigned in week 1.
 <!--
 * **Teams 1-30**: 1.8 & 1.10
 * **Teams 31-44**: LF31
@@ -51,7 +51,7 @@ knitr::kable(io_table, caption = "The weekly schedule for this twelve week cours
 
 ## Automating {#week1}
 
-Events in the week starting 27th September:
+Events in the week starting 26th September:
 
 1. **Team Study Tuesday**: Work on individual coursework 1 described in chapter \@ref(gitting)
 1. **One off lecture** to introduce the course unit at 9am on Wednesday 29th September, Simon Engineering building check [timetables.manchester.ac.uk](https://timetables.manchester.ac.uk/)
@@ -61,14 +61,14 @@ Events in the week starting 27th September:
 
 
 ## Reading {#week2}
-Events in the week starting 4th October:
+Events in the week starting 3rd October:
 
 1. **Team Study Tuesday**: Individual coursework 2 starts, see chapter \@ref(conflicting). Meet your team on Teams
 1. **Workshop**: Reading large code bases with Anas Elhag
 1. **Team Study Thursday** Working on coursework
 
 ## Debugging {#week3}
-Events in the week starting 11th October:
+Events in the week starting 10th October:
 
 1. **Team Study Tuesday**: Working on team coursework
 1. **Workshop**: Debugging codebases with Anas Elhag
@@ -77,7 +77,7 @@ Events in the week starting 11th October:
 
 
 ## Estimating {#week4}
-Events in the week starting 18th October:
+Events in the week starting 17th October:
 
 1. **Team Study Tuesday**: Working on team coursework
 1. **Workshop**: Cost estimation with Duncan Hull
@@ -85,12 +85,12 @@ Events in the week starting 18th October:
 
 
 ## Testing {#week5}
-Events in the week starting 25th October:
+Events in the week starting 24th October:
 
 1. **Team Study Tuesday**: Working on team coursework
 1. **Workshop**: Test first development with Anas Elhag
 1. **Team Study Thursday** Working on team coursework
-1. **Coursework deadlines**: TeamCwk1 due, 29th October at 6pm
+1. **Coursework deadlines**: TeamCwk1 due
 
 
 ## Pausing {#week6}
@@ -99,7 +99,7 @@ Events in the week starting 1st November (reading week). Take a break if you're 
 1. There are no activities in reading week
 
 ## Workflowing {#week7}
-Events in the week starting 8th November:
+Events in the week starting 7th November:
 
 1. **Team Study Tuesday**: Marking interviews part 1 of 3, see \@ref(mint)
 1. **Workshop**: Git workflows with Suzanne Embury
@@ -107,7 +107,7 @@ Events in the week starting 8th November:
 
 
 ## Refactoring {#week8}
-Events in the week starting 15th November:
+Events in the week starting 14th November:
 
 1. **Team Study Tuesday**: Marking interviews part 3 of 3, see \@ref(mint)
 1. **Workshop**: Refactoring with Anas Elhag
@@ -115,7 +115,7 @@ Events in the week starting 15th November:
 
 
 ## Testing {#week9}
-Events in the week starting 22nd November:
+Events in the week starting 21st November:
 
 1. **Team Study Tuesday**: Working on team coursework
 1. **Workshop**: Design for testability Anas Elhag
@@ -123,7 +123,7 @@ Events in the week starting 22nd November:
 
 
 ## Patterning {#week10}
-Events in the week starting 29th November:
+Events in the week starting 28th November:
 
 1. **Team Study Tuesday**: Working on team coursework
 1. **Workshop**: Design patterns with Sandra Sampaio
@@ -132,7 +132,7 @@ Events in the week starting 29th November:
 
 
 ## Managing {#week11}
-Events in the week starting 6th December:
+Events in the week starting 5th December:
 
 1. **Team Study Tuesday**:  Marking sessions
 1. **Workshop**: Risk management and practice exam with Sandra Sampaio
@@ -141,7 +141,7 @@ Events in the week starting 6th December:
 
 
 ## Challenging {#week12}
-Events in the week starting 13th December:
+Events in the week starting 12th December:
 
 1. **Team Study Tuesday**: Marking sessions
 1. **Workshop**: Open source challenge with Sandra Sampaio
