@@ -1,20 +1,22 @@
 # Weekly timetable {.unnumbered #timetabling}
 
-The weekly schedule for autumn 2021 is shown in table \@ref(tab:schedtable), based on [timetables.manchester.ac.uk](https://timetables.manchester.ac.uk/), see also [manchester.ac.uk/discover/key-dates](https://www.manchester.ac.uk/discover/key-dates/) key dates.
+The weekly schedule for autumn 2022 is shown in table \@ref(tab:schedtable), based on [timetables.manchester.ac.uk](https://timetables.manchester.ac.uk/), see also [manchester.ac.uk/discover/key-dates](https://www.manchester.ac.uk/discover/key-dates/) key dates.
 
 * Other than the introductory lecture in week 1, there are no lectures. Instead we have workshops which are more like labs and may contain mini-lectures
-* Workshops are on Tuesday or Friday afternoon depending on your lab group
-    * [bit.ly/Tuesday-3pm-workshop](http://bit.ly/Tuesday-3pm-workshop)
+* Workshops are on Wednesdays at 9am and Thursdays at 2pm / 3pm depending on your lab group
+    <!--* [bit.ly/Tuesday-3pm-workshop](http://bit.ly/Tuesday-3pm-workshop)
     * [bit.ly/Tuesday-4pm-workshop](http://bit.ly/Tuesday-4pm-workshop)
-    * [bit.ly/friday-1pm-workshop](http://bit.ly/friday-1pm-workshop)
-* Team study sessions are on Tuesdays at 10am and Thursday at 11am.
+    * [bit.ly/friday-1pm-workshop](http://bit.ly/friday-1pm-workshop)-->
+* Team study sessions are on Tuesdays and Thursdays at 10am.
 
-For online activities, everything is on Microsoft Teams. Because of constraints on the number of private channels in Teams, the year is arbitrarily split into two spaces:
+For online activities, everything is on Microsoft Teams.
+
+<!--Because of constraints on the number of private channels in Teams, the year is arbitrarily split into two spaces:
 
 1. [bit.ly/software-engineering-A](https://bit.ly/software-engineering-A)
-1. [bit.ly/software-engineering-b](https://bit.ly/software-engineering-b)
+1. [bit.ly/software-engineering-b](https://bit.ly/software-engineering-b)-->
 
-Microsoft Teams is, as the name suggests, where you'll meet your team.
+Microsoft Teams is, as the name suggests, where you'll meet your team, details will appear here once teams have been assigned.
 
 ## Where should I go if I'm on campus? {#campus}
 Most teams will have a mixture of online and on campus students. If you're on campus go to the rooms below and contact any remote members of our team via Teams:
