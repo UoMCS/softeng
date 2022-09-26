@@ -18,7 +18,7 @@ For online activities, everything is on Microsoft Teams.
 
 Microsoft Teams is, as the name suggests, where you'll meet your team, details will appear here once teams have been assigned.
 
-## Where should I go if I'm on campus? {#campus}
+## Which lab should I go to {#campus}
 Most teams will have a mixture of online and on campus students. If you're on campus go to the rooms below and contact any remote members of our team via Teams:
 
 * **Teams 1-30**: 1.8 & 1.10
@@ -30,18 +30,18 @@ The weekly schedule is shown in \@ref(tab:schedtable).
 ```{r schedtable, echo = FALSE}
 io_table <- tibble::tribble(
     ~ "Week no."       , ~ "Subject",      ~ "Deadlines",
-  "~~**1**: 27th Sept~~"            , "~~Automated build and test, see (ref:weekone)~~",  "~~IndCwk2, Fri 1st Oct, 6pm~~",
-  "~~**2**: 4th Oct~~"              , "~~Reading large codebases, see (ref:weektwo)~~",  "",
-  "~~**3**: 11th Oct~~"             , "~~Debugging, see (ref:weekthree)~~", "~~IndCwk2, Fri 15th Oct, 6pm~~",
-  "~~**4**: 18th Oct~~"             , "~~Cost estimation, see (ref:weekfour)~~",  "~~Mentoring week 1~~",
-  "~~**5**: 25th Oct~~"             , "~~Test first development, see (ref:weekfive)~~", "~~TeamCwk1, 29th Oct, 6pm~~",
-  "~~**6**: 1st Nov~~"              , "~~Reading week see (ref:weeksix)~~", "",
-  "~~**7**: 8th Nov~~"              , "~~Git workflows, see (ref:weekseven)~~",  "",
-  "~~**8**: 15th Nov~~"             , "~~Software refactoring, see (ref:weekeight)~~", "~~Mentoring week 2~~",
-  "~~**9**: 22nd Nov~~"            , "~~Design for testability, see (ref:weeknine)~~  ", "",
-  "~~**10**: 29th Nov~~"            , "~~Design patterns, see (ref:weekten)~~", "~~TeamCwk2, Fri 3rd Dec, 6pm~~",
-  "~~**11**: 6th Dec~~"             , "~~Risk management and practice exam, see (ref:weekeleven)~~", "",
-  "~~**12**: 13th Dec~~"            , "~~Open source challenge, see (ref:weektwelve)~~", "",
+  "**1**: 26th Sept"            , "Automated build and test, see (ref:weekone)",  "IndCwk2, Fri 1st Oct, 6pm",
+  "**2**: 3rd Oct"              , "Reading large codebases, see (ref:weektwo)",  "",
+  "**3**: 10th Oct"             , "Debugging, see (ref:weekthree)", "IndCwk2, Fri 15th Oct, 6pm",
+  "**4**: 17th Oct"             , "Cost estimation, see (ref:weekfour)",  "Mentoring week 1",
+  "**5**: 24th Oct"             , "Test first development, see (ref:weekfive)", "TeamCwk1, 29th Oct, 6pm",
+  "**6**: 31st Oct"              , "Reading week see (ref:weeksix)", "",
+  "**7**: 7th Nov"              , "Git workflows, see (ref:weekseven)",  "",
+  "**8**: 14th Nov"             , "Software refactoring, see (ref:weekeight)", "Mentoring week 2",
+  "**9**: 21st Nov"            , "Design for testability, see (ref:weeknine)", "",
+  "**10**: 28th Nov"            , "Design patterns, see (ref:weekten)", "TeamCwk2, Fri 3rd Dec, 6pm",
+  "**11**: 5th Dec"             , "Risk management and practice exam, see (ref:weekeleven)", "",
+  "**12**: 12th Dec"            , "Open source challenge, see (ref:weektwelve)", "",
 
 )
 knitr::kable(io_table, caption = "The weekly schedule for this twelve week course, please note we are using the week numbering from the [timetables.manchester.ac.uk](https://timetables.manchester.ac.uk/) where week zero is welcome week, and week one is the first teaching week", booktabs = TRUE)
