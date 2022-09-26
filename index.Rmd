@@ -121,7 +121,7 @@ Most of the guidebook is generated from [RMarkdown](https://en.wikipedia.org/wik
 ## Acknowledgements {#teambury}
 This course has been designed, built and written by [Suzanne Embury](http://www.cs.man.ac.uk/~embury/) at the University of Manchester with support from a team of academics, industry club members, support staff, graduate teaching assistants (GTAs) and summer students including (in alphabetical order):
 
-Muideen Ajagbe, Mohammed Alhamadi, Aitor Apaolaza, Gerard Capes,  Martina Catizone, Sarah Clinch, Peter Crowther,  Sukru Eraslan, Gareth Henshall, Duncan Hull, Caroline Jay, Nikolaos Konstantinou, Kamilla Kopec-Harding, Kaspar Matas, Chris Page, Dario Panada, Steve Pettifer, Liam Pringle, Julio Cesar Cortes Rios, Sara Padilla Romero, Viktor Schlegel, Stefan Strat, Jake Saunders, Federico Tavella, Mokanarangan Thayaparan, David Toluhi, Karl Tye and Markel Vigo.
+Muideen Ajagbe, Mohammed Alhamadi, Aitor Apaolaza, Gerard Capes,  Martina Catizone, Sarah Clinch, Peter Crowther,  Sukru Eraslan, Gareth Henshall, Duncan Hull, Caroline Jay, Nikolaos Konstantinou, Kamilla Kopec-Harding, Kaspar Matas, Chris Page, Dario Panada, Steve Pettifer, Liam Pringle, Julio Cesar Cortes Rios, Sara Padilla Romero, Viktor Schlegel, Stefan Strat, Jake Saunders, Federico Tavella, Mokanarangan Thayaparan, David Toluhi, Karl Tye, Jonas Verbickas and Markel Vigo.
 
 Academic staff on the course for 2021/22 include:
 
