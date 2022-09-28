@@ -38,9 +38,9 @@ Please note:
 * During Team study sessions: we can discuss and help with coursework
 * During Workshops: we will support workshop content only, **NO COURSEWORK** questions
 
-Use the issue tracker in gitlab, rather than email, to manage communication in your team about your repository. 
+Use the issue tracker in gitlab, rather than email, to manage communication in your team about your repository.
 
-You can use whatever combination of OS and IDE you like but we can **only provide support** for students using Eclipse (ref:ideversion) and the [CSImage Virtual Machine](https://wiki.cs.manchester.ac.uk/index.php/CSImage_VM) (or a Linux machine in the Kilburn building). We do not have the resources to test and support the myriad combinations of OS and IDE. Sorry!
+You can use whatever combination of OS and IDE you like but we can **only provide support** for students using Eclipse (ref:ideversion) on an Ubuntu Linux machine in the Kilburn building. We do not have the resources to test and support the myriad combinations of OS and IDE. Sorry!
 
 #### Workshops vs. Team study {#workshops}
 There are two main sessions:
