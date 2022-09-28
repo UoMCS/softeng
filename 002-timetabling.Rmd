@@ -54,26 +54,27 @@ knitr::kable(io_table, caption = "The weekly schedule for this twelve week cours
 Events in the week starting 26th September:
 
 1. **Team Study Tuesday**: Work on individual coursework 1 described in chapter \@ref(gitting)
-1. **One off lecture** to introduce the course unit at 9am on Wednesday 29th September, Simon Engineering building check [timetables.manchester.ac.uk](https://timetables.manchester.ac.uk/)
+1. **One off lecture** to introduce the course unit at 3pm on Friday 30th September, Lecture Theatre A, Engineering Building A [timetables.manchester.ac.uk](https://timetables.manchester.ac.uk/)
 1. **Workshop**: Automated build and test with Duncan Hull
 1. **Team Study Thursday** Work on individual coursework 1 described in chapter \@ref(gitting)
-1. **Coursework deadlines**: Individual individual coursework 1 can be pre-marked (automatically) if you submit by **6pm Tuesday 28th September** and finally marked when submitted by **6pm on Friday 1st October**
+<!--1. **Coursework deadlines**: Individual individual coursework 1 can be pre-marked (automatically) if you submit by **6pm Tuesday 28th September** and finally marked when submitted by **6pm on Friday 1st October**-->
 
 
 ## Reading {#week2}
 Events in the week starting 3rd October:
 
 1. **Team Study Tuesday**: Individual coursework 2 starts, see chapter \@ref(conflicting). Meet your team on Teams
-1. **Workshop**: Reading large code bases with Anas Elhag
+1. **Workshop**: Reading large code bases with Thomas Carroll
 1. **Team Study Thursday** Working on coursework
+1. **Coursework deadlines**: Individual coursework 1
 
 ## Debugging {#week3}
 Events in the week starting 10th October:
 
 1. **Team Study Tuesday**: Working on team coursework
-1. **Workshop**: Debugging codebases with Anas Elhag
+1. **Workshop**: Debugging codebases with Thomas Caroll
 1. **Team Study Thursday** Working on team coursework
-1. **Coursework deadlines**: Individual individual coursework 2 can be pre-marked (automatically) if you submit by **6pm Tuesday 13th October** and finally marked when submitted by **6pm on Friday 15th October**
+1. **Coursework deadlines**: see blackboard
 
 
 ## Estimating {#week4}
@@ -128,7 +129,7 @@ Events in the week starting 28th November:
 1. **Team Study Tuesday**: Working on team coursework
 1. **Workshop**: Design patterns with Sandra Sampaio
 1. **Team Study Thursday** Working on team coursework
-1. **Coursework deadlines**: TeamCwk2 due, Friday 3rd December at 6pm
+1. **Coursework deadlines**: TeamCwk2 due end of the week
 
 
 ## Managing {#week11}
@@ -147,24 +148,6 @@ Events in the week starting 12th December:
 1. **Workshop**: Open source challenge with Sandra Sampaio
 1. **Team Study Thursday**
 1. **Coursework deadlines**:
-
-## Marking interview schedule {#mint}
-
-The schedule for marking interviews for team coursework 2 is shown below:
-
-| Interviewer | 7 Dec, 10.00am | 7 Dec, 10.30am | 9 Dec, 11.00am |9 Dec, 11.30am | 14 Dec, 10.00am |  14 Dec, 10.30am
-|-----------------------|--------------------|--------------------|--------------------|--------------------------|--------------------------|--------------------------|
-| Hugo Lefeuvre       | Team01           | Team11            | Team21            | Team31            | Team41  |    Team51 |
-| Dominic Duxbury     | Team02           | Team12            | Team22            | Team32            | Team42  |    Team52 |
-| Dario Panada        | Team03           | Team13            | Team23            | Team33            | Team43  |    Team53 |
-| Muideen             | Team04           | Team14            | Team24            | Team34            | Team44  |    Team54 |
-| Huw Jones           | Team05           | Team15            | Team25            | Team35            | Team45  |    Team55 |
-| Jules Irenge        | Team06           | Team16            | Team26            | Team36            | Team46  |    Team56 |
-| He Yu / David*      | Team07           | Team17            | Team27*           | Team37*           | Team47  |           |
-| Ahmad Bilal         | Team08           | Team18            | Team28            | Team38            | Team48  |           |
-| Zhongyan Chen       | Team09           | Team19            | Team29            | Team39            | Team49  |           |
-| Thomas Carroll      | Team10           | Team20            | Team30            | Team40            | Team50  |           |
-
 
 ## Tools {#tooling}
 
@@ -213,3 +196,8 @@ We'll be using the following tools:
 
 
 `Document version:` `r format(Sys.time(), '%d %B, %Y')`
+
+
+Dennis Hilman
+
+Yuxuan Zheng
