@@ -1,15 +1,13 @@
 # Team Coursework 1: Dealing with Small Scale Code Changes {#dealing}
 ## Coursework Lead: Tom Carroll
 
-## Key  Dates
+## Key  Information
 * Date of Release: 2022-10-03
 * Submission Deadline:  <span style="color:red">**2022-10-28 18:00**</span> 
-* Final Grades and Feedback to be released on or before: 2022-11-18 *(within 15 University working days of the submission deadline)* 
+* Final Grades and Feedback to be released on or before: 2022-11-18 *(within 15 University working days of the submission deadline)*
+* You can obtain [pre-deadline feedback](#feedback) throughout the coursework exercise.
+* A summary of penalties can be [found here](#penalties)
 
-::: {.rmdnote}
-
-    You can obtain feedback throughout the coursework exercise by [visiting the CI server](#feedback).
-:::
 
 ## Overview
 
@@ -185,9 +183,14 @@ Cheating on Zekiel's Practical Test | `zekiels_test`
 
 You must create each feature branch starting from the development branch of your team repository, and **not** from some other feature branch.
 
+::: {.rmdcaution}
 
-**Failure to use the exact branch names specified will mean that the marking system is unable to find and award marks for your work.**
+(ref:cautionbox)
 
+
+Failure to use the exact branch names specified will mean that the marking system is unable to find your branch. **You would receive a mark of 0 for the incorrectly named branches.**
+
+:::
 
 
 ## Step 5: Write Tests to Make Your Bug Visible {#stepfive}
@@ -326,7 +329,14 @@ In your video, you must demonstrate **two issues**, with **at least one issue be
 | Haunchy doesn't accept charcoal <br/> Lieutenant Drilenun suggests that a better weapon that 'rod of the GM' exists <br/> Sheep pet prevents travel between zones <br/> Typo in Fish soup for Hughie <br/> Why does he ignore "horse hair"? |Allow players to choose what masks they get from Fidorea <br/> Coralia should have option to accept everything <br/> Cheating on Zekiel's Practical Test |
 
 
-**If there is no issue present from Category B, then you will only receive credit for one of the issue demonstrations**.
+::: {.rmdcaution}
+
+(ref:cautionbox)
+
+If there is no issue present from Category B, then you will only receive credit for one of the issue demonstrations**.
+
+
+::: 
 
 You must also reflect on your work as a team, looking forwards to tasks such as Team Coursework 2.
 
@@ -353,13 +363,21 @@ To create your video, you might find the following software useful (these are on
 * Zoom (for creating a video meeting and recording to allow all team members to speak)
 
 
-Note that **all team members must make a non-trivial appearance in the video**. 
-
-Any team member who does not appear in the video, and has not registered a legitimate reason with SSO or a member of the course team, **will receive an automatic 50% penalty on their mark for the exercise.**  Team members who appear in the video will be unaffected by this penalty.
+Note that all team members must make a **non-trivial appearance in the video**. 
 
 
 Your video **must not exceed 15 mins in length**. In cases where a video is longer than 15 minutes, the video will be **stopped** at 15 minutes; any content after this point will not be considered for your mark.
 
+
+::: {.rmdcaution}
+
+(ref:cautionbox)
+
+Any team member who does not appear in the video, and has not registered a legitimate reason with SSO or a member of the course team, **will receive an automatic 50% penalty on their mark for the exercise.**  
+
+Team members who appear in the video will be unaffected by this penalty.
+
+:::
 
 
 ## Submission of Your Team's Work {#imdone}
@@ -441,6 +459,30 @@ This coursework is subject to the University's policies on plagiarism.  Details 
 [studentnet.cs.manchester.ac.uk/assessment/plagiarism.php?view=ug](http://studentnet.cs.manchester.ac.uk/assessment/plagiarism.php?view=ug)
 
 Note that committing the work of other people from your GitLab account counts as plagiarism, and action will be taken when it is detected.
+
+
+
+## Summary of Penalties {#penalties}
+
+Throughout this document, there are detailed several circumstances where a penality will be applied to a student's or teams mark.
+For ease of reference, a list of these is presented:
+
+|*Description*|*Penalty*|*Link*|
+|----|----|----|
+|Individual uses incorrect email address on *all* of their commits|Student receives mark of 0|[Link](#gitsetup)|
+|----|----|----|
+|Individual does not contribute a meaningful commit to project|Student receives mark of 0|[Link](#passengers)|
+|----|----|----|
+|Individual is not assigned an issue in the proper way| Student receives mark of 0|[Link](#steptwo)|
+|----|----|----|
+|No issue from Category B is demonstrated in video|Team receives marks for only one issue|[Link](#stepten)|
+|----|----|----|
+|Individual does not appear in video|Student receives mark at 50% that of the team's mark|[Link](#stepten)|
+|----|----|----|
+
+
+
+
 
 
 `Document version:` `r format(Sys.time(), '%d %B, %Y')`
