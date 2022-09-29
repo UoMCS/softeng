@@ -469,15 +469,11 @@ For ease of reference, a list of these is presented:
 
 |*Description*|*Penalty*|*Link*|
 |----|----|----|
-|Individual uses incorrect email address on *all* of their commits|Student receives mark of 0|[Link](#gitsetup)|
-
-|Individual does not contribute a meaningful commit to project|Student receives mark of 0|[Link](#passengers)|
-
-|Individual is not assigned an issue in the proper way| Student receives mark of 0|[Link](#steptwo)|
-
-|No issue from Category B is demonstrated in video|Team receives marks for only one issue|[Link](#stepten)|
-
-|Individual does not appear in video|Student receives mark at 50% that of the team's mark|[Link](#stepten)|
+|Individual uses incorrect email address on *all* of their commits | Student receives mark of 0 | [Link](#gitsetup) | <br/>
+|Individual does not contribute a meaningful commit to project | Student receives mark of 0 | [Link](#passengers) | <br/>
+|Individual is not assigned an issue in the proper way| Student receives mark of 0 | [Link](#steptwo) | <br/>
+|No issue from Category B is demonstrated in video | Team receives marks for only one issue | [Link](#stepten) | <br/>
+|Individual does not appear in video | Student receives mark at 50% that of the team's mark | [Link](#stepten) | <br/>
 
 
 
