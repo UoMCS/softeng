@@ -191,7 +191,7 @@ The easiest way to check out a commit, branch or tag from within Eclipse is to u
 knitr::include_graphics("images/1.4historyTab.png")
 ```
 
-Look for the commit with SHA (ref:commit-were-using).  It should have the (not terribly helpful) commit message `code cleanup`.  Right-click on it, and select `Checkout` from the menu that appears.
+Look for the commit with SHA (ref:commit-were-using).  It should have the (not terribly helpful) commit message (ref:commit-message).  Right-click on it, and select `Checkout` from the menu that appears.
 
 At this point, Eclipse will warn you that you are in a `detached HEAD` state shown in figure \@ref(fig:detachedHEAD-fig)
 
