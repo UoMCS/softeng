@@ -1,5 +1,5 @@
 # Team Coursework 1: Dealing with Small Scale Code Changes {#dealing}
-## Coursework Lead: Tom Carroll
+<strong>Coursework Lead: Tom Carroll</strong>
 
 ## Key  Information
 * Date of Release: 2022-10-03
@@ -93,7 +93,7 @@ Issues are broken into two categories; Category A and Category B:
 
 
 
-| **Categoty A**                                   | **Category B**                                   |
+| **Category A**                                   | **Category B**                                   |
 |--------------------------------------------------|--------------------------------------------------|
 | - Haunchy doesn't accept charcoal <br/> - Lieutenant Drilenun suggests that a better weapon that 'rod of the GM' exists <br/> - Sheep pet prevents travel between zones <br/> - Typo in Fish soup for Hughie <br/> - Why does he ignore "horse hair"? |- Allow players to choose what masks they get from Fidorea <br/> - Coralia should have option to accept everything <br/> - Cheating on Zekiel's Practical Test |
 
@@ -324,9 +324,9 @@ You are now done with the technical work. Now you must create your video demonst
 
 In your video, you must demonstrate **two issues**, with **at least one issue being from Category B**:
 
-| **Categoty A**                                   | **Category B**                                   |
+| **Category A**                                   | **Category B**                                   |
 |--------------------------------------------------|--------------------------------------------------|
-| Haunchy doesn't accept charcoal <br/> Lieutenant Drilenun suggests that a better weapon that 'rod of the GM' exists <br/> Sheep pet prevents travel between zones <br/> Typo in Fish soup for Hughie <br/> Why does he ignore "horse hair"? |Allow players to choose what masks they get from Fidorea <br/> Coralia should have option to accept everything <br/> Cheating on Zekiel's Practical Test |
+| - Haunchy doesn't accept charcoal <br/> - Lieutenant Drilenun suggests that a better weapon that 'rod of the GM' exists <br/> - Sheep pet prevents travel between zones <br/> - Typo in Fish soup for Hughie <br/> - Why does he ignore "horse hair"? |- Allow players to choose what masks they get from Fidorea <br/> - Coralia should have option to accept everything <br/> - Cheating on Zekiel's Practical Test |
 
 
 ::: {.rmdcaution}
@@ -363,7 +363,7 @@ To create your video, you might find the following software useful (these are on
 * Zoom (for creating a video meeting and recording to allow all team members to speak)
 
 
-Note that all team members must make a **non-trivial appearance in the video**. 
+Note that all team members must **make an appearance in the video, showing their face and their voice**. 
 
 
 Your video **must not exceed 15 mins in length**. In cases where a video is longer than 15 minutes, the video will be **stopped** at 15 minutes; any content after this point will not be considered for your mark.
@@ -393,7 +393,7 @@ Once the deadline is passed, you will temporarily lose developer role access to 
 
 
 
-## Getting Feedback{#feeeback}
+## Getting Feedback{#feedback}
 
 A “live” marking scheme for the exercise can be found on the CI server used for this course unit.  (You will get information about this some days after the coursework is released to you.)  The marking scheme gives details of how the marks will be awarded, but also gives an interim mark for your team based on the work completed so far.  Of course, only some parts of the marking can be automated.  Others will need to be done by GTAs.  The GTA marking takes three forms:
 
@@ -470,16 +470,14 @@ For ease of reference, a list of these is presented:
 |*Description*|*Penalty*|*Link*|
 |----|----|----|
 |Individual uses incorrect email address on *all* of their commits|Student receives mark of 0|[Link](#gitsetup)|
-|----|----|----|
-|Individual does not contribute a meaningful commit to project|Student receives mark of 0|[Link](#passengers)|
-|----|----|----|
-|Individual is not assigned an issue in the proper way| Student receives mark of 0|[Link](#steptwo)|
-|----|----|----|
-|No issue from Category B is demonstrated in video|Team receives marks for only one issue|[Link](#stepten)|
-|----|----|----|
-|Individual does not appear in video|Student receives mark at 50% that of the team's mark|[Link](#stepten)|
-|----|----|----|
 
+|Individual does not contribute a meaningful commit to project|Student receives mark of 0|[Link](#passengers)|
+
+|Individual is not assigned an issue in the proper way| Student receives mark of 0|[Link](#steptwo)|
+
+|No issue from Category B is demonstrated in video|Team receives marks for only one issue|[Link](#stepten)|
+
+|Individual does not appear in video|Student receives mark at 50% that of the team's mark|[Link](#stepten)|
 
 
 
