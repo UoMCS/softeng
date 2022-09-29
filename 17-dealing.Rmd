@@ -19,7 +19,7 @@ Most deliverables for this exercise are held within your team's GitLab repositor
 - Source code of your bug fixes
 - URL of Video Demonstration. You will upload actual video to the University Video server.
 
-You must familiarise yourself with the submission instructions, in order to submit your work in the proper way. 
+You *must* familiarise yourself with the submission instructions, in order to submit your work in the proper way. 
 
 **Work which is not submitted in the correct way will receive a mark of 0.** 
 
@@ -68,7 +68,7 @@ Issues are broken into two categories; Category A and Category B:
 
 | **Categoty A**                                   | **Category B**                                   |
 |--------------------------------------------------|--------------------------------------------------|
-| - Issue 1<br>- Issue 2<br>- Issue 3<br>- Issue 4 | - Issue 5<br>- Issue 6<br>- Issue 7<br>- Issue 8 |
+| - Haunchy doesn't accept charcoal <br/> - Lieutenant Drilenun suggests that a better weapon that 'rod of the GM' exists <br/> - Sheep pet prevents travel between zones <br/> - Typo in Fish soup for Hughie <br/> - Why does he ignore "horse hair"? |- Allow players to choose what masks they get from Fidorea <br/> - Coralia should have option to accept everything <br/> - Cheating on Zekiel's Practical Test |
 
 
 For each issue in this list, perform a minimal examination of the code base and decide as a team who will be responsible for fixing each bug.  The issues should be assigned to the responsible person in the issue tracker.
@@ -244,7 +244,7 @@ In your video, you must demonstrate **two issues**, with **at least one issue be
 
 | **Categoty A**                                   | **Category B**                                   |
 |--------------------------------------------------|--------------------------------------------------|
-| - Issue 1<br>- Issue 2<br>- Issue 3<br>- Issue 4 | - Issue 5<br>- Issue 6<br>- Issue 7<br>- Issue 8 |
+| - Haunchy doesn't accept charcoal <br/> - Lieutenant Drilenun suggests that a better weapon that 'rod of the GM' exists <br/> - Sheep pet prevents travel between zones <br/> - Typo in Fish soup for Hughie <br/> - Why does he ignore "horse hair"? |- Allow players to choose what masks they get from Fidorea <br/> - Coralia should have option to accept everything <br/> - Cheating on Zekiel's Practical Test |
 
 
 **If there is no issue present from Category B, then you will only receive credit for one of the issue demonstrations**.
