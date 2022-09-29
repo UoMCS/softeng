@@ -472,7 +472,7 @@ For ease of reference, a list of these is presented:
 |Individual uses incorrect email address on *all* of their commits | Student receives mark of 0 | [Link](#gitsetup) | <br/>
 |Individual does not contribute a meaningful commit to project | Student receives mark of 0 | [Link](#passengers) | <br/>
 |Individual is not assigned an issue in the proper way| Student receives mark of 0 | [Link](#steptwo) | <br/>
-|Individual does not appear in video | Student receives mark at 50% that of the team's mark | [Link](#stepten) | <br/>
+|Individual does not appear in video | Student receives a 50% penalty | [Link](#stepten) | <br/>
 
 
 
