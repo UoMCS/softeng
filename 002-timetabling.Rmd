@@ -1,45 +1,47 @@
 # Weekly timetable {.unnumbered #timetabling}
 
-The weekly schedule for autumn 2021 is shown in table \@ref(tab:schedtable), based on [timetables.manchester.ac.uk](https://timetables.manchester.ac.uk/), see also [manchester.ac.uk/discover/key-dates](https://www.manchester.ac.uk/discover/key-dates/) key dates.
+The weekly schedule for autumn 2022 is shown in table \@ref(tab:schedtable), based on [timetables.manchester.ac.uk](https://timetables.manchester.ac.uk/), see also [manchester.ac.uk/discover/key-dates](https://www.manchester.ac.uk/discover/key-dates/) key dates.
 
 * Other than the introductory lecture in week 1, there are no lectures. Instead we have workshops which are more like labs and may contain mini-lectures
-* Workshops are on Tuesday or Friday afternoon depending on your lab group
-    * [bit.ly/Tuesday-3pm-workshop](http://bit.ly/Tuesday-3pm-workshop)
+* Workshops are on Wednesdays at 9am and Thursdays at 2pm / 3pm depending on your lab group
+    <!--* [bit.ly/Tuesday-3pm-workshop](http://bit.ly/Tuesday-3pm-workshop)
     * [bit.ly/Tuesday-4pm-workshop](http://bit.ly/Tuesday-4pm-workshop)
-    * [bit.ly/friday-1pm-workshop](http://bit.ly/friday-1pm-workshop)
-* Team study sessions are on Tuesdays at 10am and Thursday at 11am.
+    * [bit.ly/friday-1pm-workshop](http://bit.ly/friday-1pm-workshop)-->
+* Team study sessions are on Tuesdays and Thursdays at 10am.
 
-For online activities, everything is on Microsoft Teams. Because of constraints on the number of private channels in Teams, the year is arbitrarily split into two spaces:
+For online activities, everything is on Microsoft Teams.
+
+<!--Because of constraints on the number of private channels in Teams, the year is arbitrarily split into two spaces:
 
 1. [bit.ly/software-engineering-A](https://bit.ly/software-engineering-A)
-1. [bit.ly/software-engineering-b](https://bit.ly/software-engineering-b)
+1. [bit.ly/software-engineering-b](https://bit.ly/software-engineering-b)-->
 
-Microsoft Teams is, as the name suggests, where you'll meet your team.
+Microsoft Teams is, as the name suggests, where you'll meet your team, details will appear here once teams have been assigned.
 
-## Where should I go if I'm on campus? {#campus}
-Most teams will have a mixture of online and on campus students. If you're on campus go to the rooms below and contact any remote members of our team via Teams:
-
+## Which lab should I go to {#campus}
+You need to meet with your team in the team study sessions, these are assigned in week 1.
+<!--
 * **Teams 1-30**: 1.8 & 1.10
 * **Teams 31-44**: LF31
-* **Teams 44-56**: Tootill
+* **Teams 44-56**: Tootill-->
 
 The weekly schedule is shown in \@ref(tab:schedtable).
 
 ```{r schedtable, echo = FALSE}
 io_table <- tibble::tribble(
     ~ "Week no."       , ~ "Subject",      ~ "Deadlines",
-  "~~**1**: 27th Sept~~"            , "~~Automated build and test, see (ref:weekone)~~",  "~~IndCwk2, Fri 1st Oct, 6pm~~",
-  "~~**2**: 4th Oct~~"              , "~~Reading large codebases, see (ref:weektwo)~~",  "",
-  "~~**3**: 11th Oct~~"             , "~~Debugging, see (ref:weekthree)~~", "~~IndCwk2, Fri 15th Oct, 6pm~~",
-  "~~**4**: 18th Oct~~"             , "~~Cost estimation, see (ref:weekfour)~~",  "~~Mentoring week 1~~",
-  "~~**5**: 25th Oct~~"             , "~~Test first development, see (ref:weekfive)~~", "~~TeamCwk1, 29th Oct, 6pm~~",
-  "~~**6**: 1st Nov~~"              , "~~Reading week see (ref:weeksix)~~", "",
-  "~~**7**: 8th Nov~~"              , "~~Git workflows, see (ref:weekseven)~~",  "",
-  "~~**8**: 15th Nov~~"             , "~~Software refactoring, see (ref:weekeight)~~", "~~Mentoring week 2~~",
-  "~~**9**: 22nd Nov~~"            , "~~Design for testability, see (ref:weeknine)~~  ", "",
-  "~~**10**: 29th Nov~~"            , "~~Design patterns, see (ref:weekten)~~", "~~TeamCwk2, Fri 3rd Dec, 6pm~~",
-  "~~**11**: 6th Dec~~"             , "~~Risk management and practice exam, see (ref:weekeleven)~~", "",
-  "~~**12**: 13th Dec~~"            , "~~Open source challenge, see (ref:weektwelve)~~", "",
+  "**1**: 26th Sept"            , "Automated build and test, see (ref:weekone)",  "",
+  "**2**: 3rd Oct"              , "Reading large codebases, see (ref:weektwo)",  "IndCwk1, Fri 7th Oct, 6pm",
+  "**3**: 10th Oct"             , "Debugging, see (ref:weekthree)", "",
+  "**4**: 17th Oct"             , "Cost estimation, see (ref:weekfour)",  "Mentoring week 1, IndCwk2, Fri 21st Oct, 6pm",
+  "**5**: 24th Oct"             , "Test first development, see (ref:weekfive)", "TeamCwk1, 28th Oct, 6pm",
+  "**6**: 31st Oct"              , "Reading week see (ref:weeksix)", "",
+  "**7**: 7th Nov"              , "Git workflows, see (ref:weekseven)",  "",
+  "**8**: 14th Nov"             , "Software refactoring, see (ref:weekeight)", "Mentoring week 2",
+  "**9**: 21st Nov"            , "Design for testability, see (ref:weeknine)", "",
+  "**10**: 28th Nov"            , "Design patterns, see (ref:weekten)", "TeamCwk2, 5th Dec, 6pm",
+  "**11**: 5th Dec"             , "Risk management and practice exam, see (ref:weekeleven)", "",
+  "**12**: 12th Dec"            , "Open source challenge, see (ref:weektwelve)", "",
 
 )
 knitr::kable(io_table, caption = "The weekly schedule for this twelve week course, please note we are using the week numbering from the [timetables.manchester.ac.uk](https://timetables.manchester.ac.uk/) where week zero is welcome week, and week one is the first teaching week", booktabs = TRUE)
@@ -49,33 +51,34 @@ knitr::kable(io_table, caption = "The weekly schedule for this twelve week cours
 
 ## Automating {#week1}
 
-Events in the week starting 27th September:
+Events in the week starting 26th September:
 
 1. **Team Study Tuesday**: Work on individual coursework 1 described in chapter \@ref(gitting)
-1. **One off lecture** to introduce the course unit at 9am on Wednesday 29th September, Simon Engineering building check [timetables.manchester.ac.uk](https://timetables.manchester.ac.uk/)
+1. **One off lecture** to introduce the course unit at 3pm on Friday 30th September, Lecture Theatre A, Engineering Building A [timetables.manchester.ac.uk](https://timetables.manchester.ac.uk/)
 1. **Workshop**: Automated build and test with Duncan Hull
 1. **Team Study Thursday** Work on individual coursework 1 described in chapter \@ref(gitting)
-1. **Coursework deadlines**: Individual individual coursework 1 can be pre-marked (automatically) if you submit by **6pm Tuesday 28th September** and finally marked when submitted by **6pm on Friday 1st October**
+<!--1. **Coursework deadlines**: Individual individual coursework 1 can be pre-marked (automatically) if you submit by **6pm Tuesday 28th September** and finally marked when submitted by **6pm on Friday 1st October**-->
 
 
 ## Reading {#week2}
-Events in the week starting 4th October:
+Events in the week starting 3rd October:
 
 1. **Team Study Tuesday**: Individual coursework 2 starts, see chapter \@ref(conflicting). Meet your team on Teams
-1. **Workshop**: Reading large code bases with Anas Elhag
+1. **Workshop**: Reading large code bases with Thomas Carroll
 1. **Team Study Thursday** Working on coursework
+1. **Coursework deadlines**: Individual coursework 1
 
 ## Debugging {#week3}
-Events in the week starting 11th October:
+Events in the week starting 10th October:
 
 1. **Team Study Tuesday**: Working on team coursework
-1. **Workshop**: Debugging codebases with Anas Elhag
+1. **Workshop**: Debugging codebases with Thomas Caroll
 1. **Team Study Thursday** Working on team coursework
-1. **Coursework deadlines**: Individual individual coursework 2 can be pre-marked (automatically) if you submit by **6pm Tuesday 13th October** and finally marked when submitted by **6pm on Friday 15th October**
+1. **Coursework deadlines**: see blackboard
 
 
 ## Estimating {#week4}
-Events in the week starting 18th October:
+Events in the week starting 17th October:
 
 1. **Team Study Tuesday**: Working on team coursework
 1. **Workshop**: Cost estimation with Duncan Hull
@@ -83,12 +86,12 @@ Events in the week starting 18th October:
 
 
 ## Testing {#week5}
-Events in the week starting 25th October:
+Events in the week starting 24th October:
 
 1. **Team Study Tuesday**: Working on team coursework
 1. **Workshop**: Test first development with Anas Elhag
 1. **Team Study Thursday** Working on team coursework
-1. **Coursework deadlines**: TeamCwk1 due, 29th October at 6pm
+1. **Coursework deadlines**: TeamCwk1 due
 
 
 ## Pausing {#week6}
@@ -97,7 +100,7 @@ Events in the week starting 1st November (reading week). Take a break if you're 
 1. There are no activities in reading week
 
 ## Workflowing {#week7}
-Events in the week starting 8th November:
+Events in the week starting 7th November:
 
 1. **Team Study Tuesday**: Marking interviews part 1 of 3, see \@ref(mint)
 1. **Workshop**: Git workflows with Suzanne Embury
@@ -105,7 +108,7 @@ Events in the week starting 8th November:
 
 
 ## Refactoring {#week8}
-Events in the week starting 15th November:
+Events in the week starting 14th November:
 
 1. **Team Study Tuesday**: Marking interviews part 3 of 3, see \@ref(mint)
 1. **Workshop**: Refactoring with Anas Elhag
@@ -113,7 +116,7 @@ Events in the week starting 15th November:
 
 
 ## Testing {#week9}
-Events in the week starting 22nd November:
+Events in the week starting 21st November:
 
 1. **Team Study Tuesday**: Working on team coursework
 1. **Workshop**: Design for testability Anas Elhag
@@ -121,16 +124,16 @@ Events in the week starting 22nd November:
 
 
 ## Patterning {#week10}
-Events in the week starting 29th November:
+Events in the week starting 28th November:
 
 1. **Team Study Tuesday**: Working on team coursework
 1. **Workshop**: Design patterns with Sandra Sampaio
 1. **Team Study Thursday** Working on team coursework
-1. **Coursework deadlines**: TeamCwk2 due, Friday 3rd December at 6pm
+1. **Coursework deadlines**: TeamCwk2 due end of the week
 
 
 ## Managing {#week11}
-Events in the week starting 6th December:
+Events in the week starting 5th December:
 
 1. **Team Study Tuesday**:  Marking sessions
 1. **Workshop**: Risk management and practice exam with Sandra Sampaio
@@ -139,30 +142,12 @@ Events in the week starting 6th December:
 
 
 ## Challenging {#week12}
-Events in the week starting 13th December:
+Events in the week starting 12th December:
 
 1. **Team Study Tuesday**: Marking sessions
 1. **Workshop**: Open source challenge with Sandra Sampaio
 1. **Team Study Thursday**
 1. **Coursework deadlines**:
-
-## Marking interview schedule {#mint}
-
-The schedule for marking interviews for team coursework 2 is shown below:
-
-| Interviewer | 7 Dec, 10.00am | 7 Dec, 10.30am | 9 Dec, 11.00am |9 Dec, 11.30am | 14 Dec, 10.00am |  14 Dec, 10.30am
-|-----------------------|--------------------|--------------------|--------------------|--------------------------|--------------------------|--------------------------|
-| Hugo Lefeuvre       | Team01           | Team11            | Team21            | Team31            | Team41  |    Team51 |
-| Dominic Duxbury     | Team02           | Team12            | Team22            | Team32            | Team42  |    Team52 |
-| Dario Panada        | Team03           | Team13            | Team23            | Team33            | Team43  |    Team53 |
-| Muideen             | Team04           | Team14            | Team24            | Team34            | Team44  |    Team54 |
-| Huw Jones           | Team05           | Team15            | Team25            | Team35            | Team45  |    Team55 |
-| Jules Irenge        | Team06           | Team16            | Team26            | Team36            | Team46  |    Team56 |
-| He Yu / David*      | Team07           | Team17            | Team27*           | Team37*           | Team47  |           |
-| Ahmad Bilal         | Team08           | Team18            | Team28            | Team38            | Team48  |           |
-| Zhongyan Chen       | Team09           | Team19            | Team29            | Team39            | Team49  |           |
-| Thomas Carroll      | Team10           | Team20            | Team30            | Team40            | Team50  |           |
-
 
 ## Tools {#tooling}
 
@@ -211,3 +196,8 @@ We'll be using the following tools:
 
 
 `Document version:` `r format(Sys.time(), '%d %B, %Y')`
+
+
+Dennis Hilman
+
+Yuxuan Zheng

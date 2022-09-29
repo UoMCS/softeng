@@ -2,7 +2,7 @@
 
 # Building and testing {#building}
 
-## Introduction write some stuff {#Introduction}
+## Introduction {#Introduction}
 
 In this workshop, we will be building and testing a system called Marauroa. We will look at some essential processes for working on an existing team-developed software system. We'll be assuming that, after this workshop, you are capable of carrying out the following tasks for yourself, without needing much guidance:
 
@@ -191,7 +191,7 @@ The easiest way to check out a commit, branch or tag from within Eclipse is to u
 knitr::include_graphics("images/1.4historyTab.png")
 ```
 
-Look for the commit with SHA (ref:commit-were-using).  It should have the (not terribly helpful) commit message `code cleanup`.  Right-click on it, and select `Checkout` from the menu that appears.
+Look for the commit with SHA (ref:commit-were-using).  It should have the (not terribly helpful) commit message (ref:commit-message).  Right-click on it, and select `Checkout` from the menu that appears.
 
 At this point, Eclipse will warn you that you are in a `detached HEAD` state shown in figure \@ref(fig:detachedHEAD-fig)
 

@@ -22,6 +22,8 @@ always_allow_html: true
 
 Welcome to (ref:coursecode): [software engineering at the University of Manchester](https://studentnet.cs.manchester.ac.uk/ugt/COMP23311/syllabus/).
 
+<!-- this is the main branch-->
+
 ## Making better software {#better}
 
 The development of software systems is a challenging process. Customers expect reliable and easy to use software to be developed within a set budget and to a tight deadline. As we come to depend upon software in so many aspects of our lives, its increasing size and complexity, together with more demanding users, means the consequences of failure are increasingly severe. The stakes for today’s software engineers are high!
@@ -103,36 +105,34 @@ The following is an outline of the topics covered in COMP23111.
 ## Using the lab manual {#usingit}
 We expect that the web-based version of this manual will be the one you'll use most at [software-eng.netlify.app](https://software-eng.netlify.app/). You can search, browse and link to anything in the manual. It was last updated on `r format(Sys.time(), '%d %B, %Y')`.
 
-However, if you'd prefer, the manual is also available as a single pdf file [softeng.pdf](https://software-eng.netlify.app/softeng.pdf) and an epub as well [softeng.epub](https://software-eng.netlify.app/softeng.epub). Having said that, the content is optimised for viewing in a web browser, so while the pdf and epub are OK, the web version is the best.
+<!--However, if you'd prefer, the manual is also available as a single pdf file [softeng.pdf](https://software-eng.netlify.app/softeng.pdf) and an epub as well [softeng.epub](https://software-eng.netlify.app/softeng.epub). Having said that, the content is optimised for viewing in a web browser, so while the pdf and epub are OK, the web version is the best.-->
 
 ## Contributing to this manual {#contributing}
 If you'd like to contribute this laboratory manual, we welcome constructive feedback. Once you're familiar with git and markdown you can [github.com/join](https://github.com/join) and:
 
-* Raise new issues at [github.com/dullhunk/softeng/issues/new](https://github.com/dullhunk/softeng/issues/new)
+* Raise new issues at [github.com/UoMCS/softeng/issues/new](https://github.com/UoMCS/softeng/issues/new)
 * Click on the `Edit this page` link, which appears on the bottom right hand side of every page published at [software-eng.netlify.app](https://software-eng.netlify.app) when viewed with a reasonably large screen (not a phone)
-* Contribute at [github.com/dullhunk/softeng/contribute](https://github.com/dullhunk/softeng/contribute) and help with existing issues at [github.com/dullhunk/softeng/issues](https://github.com/dullhunk/softeng/issues)
-* Fork the repository, make changes and submit a pull request [github.com/dullhunk/softeng/pulls](https://github.com/dullhunk/softeng/pulls). If you need to brush-up on your pulling skills see [makeapullrequest.com](http://makeapullrequest.com/)
+* Contribute at [github.com/UoMCS/softeng/contribute](https://github.com/UoMCS/softeng/contribute) and help with existing issues at [github.com/UoMCS/softeng/issues](https://github.com/UoMCS/softeng/issues)
+* Fork the repository, make changes and submit a pull request [github.com/UoMCS/softeng/pulls](https://github.com/UoMCS/softeng/pulls). If you need to brush-up on your pulling skills see [makeapullrequest.com](http://makeapullrequest.com/)
 * From the command line, clone the repository and submit pull requests from your own setup:
 ````md
-git clone https://github.com/dullhunk/softeng.git
+git clone https://github.com/UoMCS/softeng.git
 ````
-Most of the guidebook is generated from [RMarkdown](https://en.wikipedia.org/wiki/Markdown), that's [all the `*.Rmd` files](https://github.com/dullhunk/softeng/search?l=RMarkdown). So markdown files are the only ones you should need to edit because everything else is generated from them including the `*.html`, `*.tex`, `*.pdf` and `*.epub` files.
+Most of the guidebook is generated from [RMarkdown](https://en.wikipedia.org/wiki/Markdown), that's [all the `*.Rmd` files](https://github.com/UoMCS/softeng/search?l=RMarkdown). So markdown files are the only ones you should need to edit because everything else is generated from them including the `*.html` <!--`*.tex`, `*.pdf` and `*.epub`--> files.
 
 ## Acknowledgements {#teambury}
 This course has been designed, built and written by [Suzanne Embury](http://www.cs.man.ac.uk/~embury/) at the University of Manchester with support from a team of academics, industry club members, support staff, graduate teaching assistants (GTAs) and summer students including (in alphabetical order):
 
-Muideen Ajagbe, Mohammed Alhamadi, Aitor Apaolaza, Gerard Capes,  Martina Catizone, Sarah Clinch, Peter Crowther,  Sukru Eraslan, Gareth Henshall, Duncan Hull, Caroline Jay, Nikolaos Konstantinou, Kamilla Kopec-Harding, Kaspar Matas, Chris Page, Dario Panada, Steve Pettifer, Liam Pringle, Julio Cesar Cortes Rios, Sara Padilla Romero, Viktor Schlegel, Stefan Strat, Jake Saunders, Federico Tavella, Mokanarangan Thayaparan, David Toluhi, Karl Tye and Markel Vigo.
+Muideen Ajagbe, Mohammed Alhamadi, Aitor Apaolaza, Mercedes Argüello Casteleiro, Gerard Capes,  Martina Catizone, Sarah Clinch, Peter Crowther, Anas Elhag Sukru Eraslan, Gareth Henshall, Duncan Hull, Caroline Jay, Nikolaos Konstantinou, Kamilla Kopec-Harding, Kaspar Matas, Chris Page, Dario Panada, Steve Pettifer, Liam Pringle, Julio Cesar Cortes Rios, Sara Padilla Romero, Viktor Schlegel, Stefan Strat, Sandra Sampaio, Jake Saunders, Federico Tavella, Mokanarangan Thayaparan, David Toluhi, Karl Tye, Jonas Verbickas and Markel Vigo.
 
-Academic staff on the course for 2021/22 include:
+Academic staff on the course for 2022/23 include:
 
-* [Mercedes Argüello Casteleiro](https://scholar.google.com/citations?user=ci1ifBoAAAAJ&hl=en)
 * [Thomas Carroll](https://personalpages.manchester.ac.uk/staff/thomas.carroll/)
 * [Suzanne Embury](http://www.cs.man.ac.uk/~embury/)
-* [Duncan Hull](http://www.cs.man.ac.uk/~hulld/)
-* [Sandra Sampaio](https://www.research.manchester.ac.uk/portal/s.sampaio.html)
-* [Anas Elhag](https://scholar.google.co.uk/citations?user=eY8KtX4AAAAJ&hl=en)
+* [Duncan Hull](https://personalpages.manchester.ac.uk/staff/duncan.hull/)
+* [Liping Zhao](https://www.research.manchester.ac.uk/portal/liping.zhao.html)
 
-We'd also like to thank all the 1,500+ students who have done the course since its first iteration in 2016 and given us feedback on how to improve.
+We'd also like to thank all the 2,000+ students who have done the course since its first iteration in 2016 and given us feedback on how to improve.
 
 <!--2016, two cohorts of 250 = 500 plus 250 cohorts in 2017, 2018, 2019 and 2020-->
 
@@ -167,9 +167,11 @@ So now that we've dispensed with the formalities, you can start using this labor
 
 (ref:commit-were-using) `5450a33`  
 
-(ref:repoURI) [https://gitlab.cs.man.ac.uk/COMP23311_2021/sliding_puzzle_&lt;your-username&gt;.git](https://gitlab.cs.man.ac.uk/COMP23311_2021/sliding_puzzle-your-username.git)
+(ref:commit-message) `Organize imports`
 
-(ref:repo2URI) [https://gitlab.cs.man.ac.uk/COMP23311_2021/sliding_puzzle2_&lt;your-username&gt;.git](https://gitlab.cs.man.ac.uk/COMP23311_2021/sliding_puzzle2-your-username.git)
+(ref:repoURI) [https://gitlab.cs.man.ac.uk/COMP23311_2022/sliding_puzzle_&lt;your-username&gt;.git](https://gitlab.cs.man.ac.uk/COMP23311_2022/sliding_puzzle-your-username.git)
+
+(ref:repo2URI) [https://gitlab.cs.man.ac.uk/COMP23311_2022/sliding_puzzle2_&lt;your-username&gt;.git](https://gitlab.cs.man.ac.uk/COMP23311_2022/sliding_puzzle2-your-username.git)
 
 (ref:coursecode) COMP23311  
 
@@ -204,9 +206,9 @@ So now that we've dispensed with the formalities, you can start using this labor
 (ref:numsteps) 9  
 
 
-(ref:piazzaforum) [piazza.com/class/ku382xdryxd644](https://piazza.com/class/ku382xdryxd644)
+(ref:piazzaforum) [piazza.com/class/l7j4na2gfwn2q8](https://piazza.com/class/l7j4na2gfwn2q8)
 
-(ref:livehelpqueue) [gitlab.cs.man.ac.uk/comp23311_2021/COMP23311-Live-Help-Queue](https://gitlab.cs.man.ac.uk/comp23311_2021/COMP23311-Live-Help-Queue/)
+(ref:livehelpqueue) [gitlab.cs.man.ac.uk/comp23311_2022/COMP23311-Live-Help-Queue](https://gitlab.cs.man.ac.uk/comp23311_2022/COMP23311-Live-Help-Queue/)
 
 
 (ref:mentors) Airbus, AND Digital, Apadmi, ARM, Auto Trader UK, Barclays, the BBC, Bet365, Beyond Trust, Biorelate, Blaize, Bloomberg, Booking.com, Brightec, CERN, CDL Software, CodeThink, Code Computer Love, Cubic Motion (now Epic Games), DAI, DataCentred, Digital Bridge Ltd, Disney Streaming, EGN Digital, Facebook, Farm Digital, Giant Digital, Goldman Sachs, Google, IBM, Interact Software, Ivanti, Koder.ly, Matillion, Microsoft, Morgan Stanley, NCC Group, On The Beach, Peak.ai, Rental Cars, Sainsburys, Sage Group plc, Shout Platform Limited, Siemens (Mentor Graphics), SKY, Slalom, Spotify, SteamaCo, The Startup Factory, THG, ThoughtWorks, Tranzfar, UK Parliament, UL, Unipart Digital and Zuhlke.

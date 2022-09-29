@@ -4,3 +4,6 @@ language:
   ui:
     chapter_name: "Chapter "
     appendix_name: "Appendix "
+
+edit: https://github.com/UoMCS/softeng/edit/main/%s
+view: https://github.com/UoMCS/softeng/edit/main/%s
