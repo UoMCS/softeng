@@ -34,17 +34,18 @@ The exercise will test your ability to:
 ## Deliverables
 Deliverables are contained in 2 parts: 
 
-*GitLab repository:*
-- Selected Bugs
-- Correct use of Git (including Branching and Tags)
-- Correct use of time estimation and other planning tools
-- Tests which make your selected bugs visible
-- Source code of your bug fixes
+*GitLab repository*:
+
+* Selected Bugs
+* Correct use of Git (including Branching and Tags)
+* Correct use of time estimation and other planning tools
+* Tests which make your selected bugs visible
+* Source code of your bug fixes
 
 *Blackboard Submission:*
-- Video demonstration
+* Video demonstration
 
-You *must* familiarise yourself with the [submission instructions](#submission-of-your-teams-work-imdone), in order to submit your work in the proper way. 
+You *must* familiarise yourself with the [submission instructions][#imdone], in order to submit your work in the proper way. 
 
 **Work which is not submitted in the correct way will receive a mark of 0.** 
 
@@ -124,14 +125,23 @@ Unfortunately, many of the bugs reported on the Stendhal issue tracker are too c
 
 ## Step 3: Time Estimation {#stepthree}
 
-Each team member should make an estimate of how long it will take to fix the bug they are responsible for.  This estimate should be recorded using GitLab's Time Tracking facility.  Information about how to do this can be found at:
+Each team member should make an estimate of how long it will take to fix the bug they are responsible for.  
 
+This estimate should be recorded using GitLab's Time Tracking functionality:
 [gitlab.cs.man.ac.uk/help/workflow/time_tracking.md](https://gitlab.cs.man.ac.uk/help/workflow/time_tracking.md)
+
 
 At this stage, it is not important that your estimate is correct.  What is most important is that you make an attempt at estimating before starting to write code for the fix.
 
 You should also set a Due Date for each issue in the issue tracker.  This should be the date when the work on this individual issue should be completed by.  Note that this *should not* be the deadline for the coursework.  You need to complete your individual work on the issue in time to merge the work into the development branch and for the new release to be created.
 
+You should now enter a comment to your issue in the issue tracker.
+Please use the following phrase, which will be searched for by RoboTA 🤖 the automated marking system:
+
+```md
+    /estimate <time estimated>
+    /due <due date>
+`
 
 
 ## Step 4: Set Up Branches {#stepfour}
@@ -142,22 +152,22 @@ The branch names to use are as follows:
 
 | **Bug**                                   | **Branch Name**                                   |
 |--------------------------------------------------|--------------------------------------------------|
-|Haunchy doesn't accept charcoal| haunchys_charcoal <br/>
-Lieutenant Drilenun suggests that a better weapon that 'rod of the GM' exists| lieutenant_drilenum<br/> 
-Sheep pet prevents travel between zones | pets_prevent_movement<br/>
-Typo in Fish soup for Hughie | fish_soup<br/> 
-Why does he ignore "horse hair"? | bows_for_ouchit<br/> 
-Allow players to choose what masks they get from Fidorea| not_random_masks <br/>
-Coralia should have option to accept everything | everything_for_coralia<br/> 
-Cheating on Zekiel's Practical Test | zekiels_test
+|Haunchy doesn't accept charcoal| `haunchys_charcoal` <br/>
+Lieutenant Drilenun suggests that a better weapon that 'rod of the GM' exists| `lieutenant_drilenum`<br/> 
+Sheep pet prevents travel between zones | `pets_prevent_movement`<br/>
+Typo in Fish soup for Hughie | `fish_soup`<br/> 
+Why does he ignore "horse hair"? | `horse_hair`<br/> 
+Allow players to choose what masks they get from Fidorea| `not_random_masks` <br/>
+Coralia should have option to accept everything | `everything_for_coralia`<br/> 
+Cheating on Zekiel's Practical Test | `zekiels_test`
 
 
  
 
-You must create each feature branch starting from the development branch of your team repository.  You must not create it as a branch off some other feature branch, for example.
+You must create each feature branch starting from the development branch of your team repository, and **not** from some other feature branch.
 
 
-**Failure to use the exact names specified will mean that the marking system is unable to find and award marks for your work.**
+**Failure to use the exact branch names specified will mean that the marking system is unable to find and award marks for your work.**
 
 
 
@@ -167,7 +177,8 @@ Before getting started on the fixes, each team member must ensure that the bug t
 
 **You should keep track of how long you spend on this step, to the nearest hour.**  (Note this is the actual number of hours spent on the task, not the elapsed time between when you started on it and when you finished it.)  
 
-When the step is completed, add a **comment to your issue** telling us how long this was.  Please use the following phrase, which will be searched for by RoboTA 🤖 the automated marking system:
+When the step is completed, add a **comment to your issue** in the issue tracker, telling us how long this was.  
+Please use the following phrase, which will be searched for by RoboTA 🤖 the automated marking system:
 
 ```md
     Issue now visible in the test suite.
