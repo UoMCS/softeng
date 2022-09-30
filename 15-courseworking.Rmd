@@ -280,7 +280,7 @@ Double-click on the `MouseInteractionTest` class to open it in the Editor.  You 
 knitr::include_graphics("images/viewingtheTestCode.png")
 ```
 
-This class contains 5 JUnit test case methods, each testing a slightly different aspect of the program. A separate document, available on Blackboard, explains how test cases are written in JUnit.  You should work through that document before starting your team coursework, but for now, we are just going to see how to run these tests in Eclipse.
+This class contains 5 JUnit test case methods, each testing a slightly different aspect of the program. Chapter \@ref(automating) explains how test cases are written in JUnit.  You should work through that chapter before starting your team coursework, but for now, we are just going to see how to run these tests in Eclipse.
 
 There are several ways to run a JUnit test suite in Eclipse, depending on the complexity of the program you are working with.  This is a very simple project, so we can just right click on the name of the test class in the Package Explorer view, and choose `Run As` > `JUnit Test` from the menu that appears.  A new view containing the test results should appear, alongside your Package Explorer.  It's a bit cramped there, and we can't see much of what it is telling us.  Double-click on the tab of the JUnit view to expand it to fill the Eclipse window.  You should see something like figure \@ref(fig:runTheTestsAndSeeSomeFail-fig)
 
