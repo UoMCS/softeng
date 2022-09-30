@@ -1,9 +1,12 @@
-# Team Coursework 1: Dealing with Small Scale Code Changes {#dealing}
-<strong>Coursework Lead: Tom Carroll</strong>
+# Team Coursework 1 {#dealing}
+
+Team Coursework 1: Dealing with Small Scale Code Changes
+
+**Coursework Lead: Tom Carroll**
 
 ## Key  Information
 * Date of Release: 2022-10-03
-* Submission Deadline:  <span style="color:red">**2022-10-28 18:00**</span> 
+* Submission Deadline:  <span style="color:red">**2022-10-28 18:00**</span>
 * Final Grades and Feedback to be released on or before: 2022-11-18 *(within 15 University working days of the submission deadline)*
 * You can obtain [pre-deadline feedback](#feedback) throughout the coursework exercise.
 * A summary of penalties can be [found here](#penalties)
@@ -30,7 +33,7 @@ The exercise will test your ability to:
 
 
 ## Deliverables
-Deliverables are contained in 2 parts: 
+Deliverables are contained in 2 parts:
 
 *GitLab repository*:
 
@@ -45,9 +48,9 @@ Deliverables are contained in 2 parts:
 
 * Video demonstration
 
-You *must* familiarise yourself with the [submission instructions](#imdone), in order to submit your work in the proper way. 
+You *must* familiarise yourself with the [submission instructions](#imdone), in order to submit your work in the proper way.
 
-**Work which is not submitted in the correct way will receive a mark of 0.** 
+**Work which is not submitted in the correct way will receive a mark of 0.**
 
 ## Step 0: Set up Git Config {#gitsetup}
 
@@ -70,7 +73,7 @@ It is very important that you use the correct email address to attribute your au
 
 Please make sure you set the `user.name` and `user.email` variables on all machines you intend to commit from.  Your email needs to be your `firstname.lastname@student.manchester.ac.uk` address. No aliases will work - it has to follow that format.
 
-It is your responsibility to ensure the correct email address is used, though the RoboTA report (viewable throughout the exercise) will attempt to inform you of such an issue. 
+It is your responsibility to ensure the correct email address is used, though the RoboTA report (viewable throughout the exercise) will attempt to inform you of such an issue.
 
 **Commits made from other accounts (or aliases of your university account) will NOT be considered to be part of your team's submission for the exercise.<br/>Any individual who does not use their correct email address for any of their commits will be deemed a [non-contributing member](#passengers) and will be given a mark of 0**
 
@@ -87,7 +90,7 @@ Following the same process covered in the workshops, each team member should acq
 
 
 ## Step 2: Assign the Issues {#steptwo}
-There are a number of issues to the project's issue tracker, each of which will describe a bug or problem with the code base that you are asked to fix. 
+There are a number of issues to the project's issue tracker, each of which will describe a bug or problem with the code base that you are asked to fix.
 
 Issues are broken into two categories; Category A and Category B:
 
@@ -170,16 +173,16 @@ The branch names to use are as follows:
 | **Bug**                                   | **Branch Name**                                   |
 |--------------------------------------------------|--------------------------------------------------|
 |Haunchy doesn't accept charcoal| `haunchys_charcoal` <br/>
-Lieutenant Drilenun suggests that a better weapon that 'rod of the GM' exists| `lieutenant_drilenum`<br/> 
+Lieutenant Drilenun suggests that a better weapon that 'rod of the GM' exists| `lieutenant_drilenum`<br/>
 Sheep pet prevents travel between zones | `pets_prevent_movement`<br/>
-Typo in Fish soup for Hughie | `fish_soup`<br/> 
-Why does he ignore "horse hair"? | `horse_hair`<br/> 
+Typo in Fish soup for Hughie | `fish_soup`<br/>
+Why does he ignore "horse hair"? | `horse_hair`<br/>
 Allow players to choose what masks they get from Fidorea| `not_random_masks` <br/>
-Coralia should have option to accept everything | `everything_for_coralia`<br/> 
+Coralia should have option to accept everything | `everything_for_coralia`<br/>
 Cheating on Zekiel's Practical Test | `zekiels_test`
 
 
- 
+
 
 You must create each feature branch starting from the development branch of your team repository, and **not** from some other feature branch.
 
@@ -336,13 +339,13 @@ In your video, you must demonstrate **two issues**, with **at least one issue be
 If there is no issue present from Category B, then you will only receive credit for one of the issue demonstrations**.
 
 
-::: 
+:::
 
 You must also reflect on your work as a team, looking forwards to tasks such as Team Coursework 2.
 
 The video must follow the format given below:
 
-1. The video must begin with video footage of each team member introducing themself and describing, very briefly, their role in the team. 
+1. The video must begin with video footage of each team member introducing themself and describing, very briefly, their role in the team.
 1.  For each of the two issues selected, the person who had responsibility for this issue must:
     * Explain the issue
     * Show in-game footage, with narrated explanations, confirming that the issue is fixed
@@ -351,8 +354,8 @@ The video must follow the format given below:
 1. Discuss how you organised your workload across the team
 1. Discuss what monitoring steps you've taken to keep the work of the team on track for the deadline.
 1. Reflect on the team exerise:
-    * what went well? 
-    * What will you take forwards into the next team exercise? 
+    * what went well?
+    * What will you take forwards into the next team exercise?
     * What will you do better next time?
 
 To create your video, you might find the following software useful (these are only suggestions and shold not be taken as a requirement or endorsement to use them):
@@ -363,7 +366,7 @@ To create your video, you might find the following software useful (these are on
 * Zoom (for creating a video meeting and recording to allow all team members to speak)
 
 
-Note that all team members must **make an appearance in the video, showing their face and their voice**. 
+Note that all team members must **make an appearance in the video, showing their face and their voice**.
 
 
 Your video **must not exceed 15 mins in length**. In cases where a video is longer than 15 minutes, the video will be **stopped** at 15 minutes; any content after this point will not be considered for your mark.
@@ -389,7 +392,7 @@ Once you have prepared your video, one of your team should upload it to the Subm
 ### Submission of GitLab Repository
 
 The remaining submission of work for this coursework exercise is through your team's GitLab repository.  All you have to do is make sure the contents of your issue tracker and Git repository are ready to be marked by the deadline.  There is nothing else you have to submit.
-Once the deadline is passed, you will temporarily lose developer role access to the repository and won't be able to make further changes to the code or commit graph. 
+Once the deadline is passed, you will temporarily lose developer role access to the repository and won't be able to make further changes to the code or commit graph.
 
 
 
@@ -467,12 +470,12 @@ Note that committing the work of other people from your GitLab account counts as
 Throughout this document, there are detailed several circumstances where a penality will be applied to a student's or teams mark.
 For ease of reference, a list of these is presented:
 
-|*Description*|*Penalty*|*Link*|
+|*Description*|*Penalty*|*Section*|
 |----|----|----|
-|Individual uses incorrect email address on *all* of their commits | Student receives mark of 0 | [Link](#gitsetup) | <br/>
-|Individual does not contribute a meaningful commit to project | Student receives mark of 0 | [Link](#passengers) | <br/>
-|Individual is not assigned an issue in the proper way| Student receives mark of 0 | [Link](#steptwo) | <br/>
-|Individual does not appear in video | Student receives a 50% penalty | [Link](#stepten) | <br/>
+|Individual uses incorrect email address on *all* of their commits | Student receives mark of 0 | Section \@ref(gitsetup) | <br/>
+|Individual does not contribute a meaningful commit to project | Student receives mark of 0 | Section \@ref(passengers) | <br/>
+|Individual is not assigned an issue in the proper way| Student receives mark of 0 | Section \@ref(steptwo) | <br/>
+|Individual does not appear in video | Student receives a 50% penalty | section \@ref(stepten) | <br/>
 
 
 
