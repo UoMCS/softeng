@@ -98,7 +98,7 @@ Issues are broken into two categories; Category A and Category B:
 
 | **Category A**                                   | **Category B**                                   |
 |--------------------------------------------------|--------------------------------------------------|
-| - Haunchy doesn't accept charcoal <br/> - Lieutenant Drilenun suggests that a better weapon that 'rod of the GM' exists <br/> - Sheep pet prevents travel between zones <br/> - Typo in Fish soup for Hughie <br/> - Why does he ignore "horse hair"? |- Allow players to choose what masks they get from Fidorea <br/> - Coralia should have option to accept everything <br/> - Cheating on Zekiel's Practical Test |
+| - Haunchy doesn't accept charcoal <br/> - Lieutenant Drilenun suggests that a better weapon exists <br/> - Sheep pet prevents travel between zones <br/> - Fish soup for Hughie <br/> - Why does he ignore "horse hair"? |- Players can't choose what masks they get from Fidorea <br/> - Coralia should have option to accept everything <br/> - Cheating on Zekiel's Practical Test |
 
 
 For each issue in this list, perform a minimal examination of the code base and decide as a team who will be responsible for fixing each bug.  
@@ -173,11 +173,11 @@ The branch names to use are as follows:
 | **Bug**                                   | **Branch Name**                                   |
 |--------------------------------------------------|--------------------------------------------------|
 |Haunchy doesn't accept charcoal| `haunchys_charcoal` <br/>
-Lieutenant Drilenun suggests that a better weapon that 'rod of the GM' exists| `lieutenant_drilenum`<br/>
+Lieutenant Drilenun suggests that a better weapon exists| `lieutenant_drilenum`<br/>
 Sheep pet prevents travel between zones | `pets_prevent_movement`<br/>
-Typo in Fish soup for Hughie | `fish_soup`<br/>
+Fish soup for Hughie | `fish_soup`<br/>
 Why does he ignore "horse hair"? | `horse_hair`<br/>
-Allow players to choose what masks they get from Fidorea| `not_random_masks` <br/>
+Players can't choose what masks they get from Fidorea| `not_random_masks` <br/>
 Coralia should have option to accept everything | `everything_for_coralia`<br/>
 Cheating on Zekiel's Practical Test | `zekiels_test`
 
