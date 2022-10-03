@@ -58,7 +58,7 @@ It is important that you ensure your work is attributed to you in the proper man
 
 ::: {.rmdnote}
 
-*Brain* is a Tech Lead at *Acme Solutions*, leading the development of the *Taking Over The World Project*. He wanted to find all commits authored by his Junior Dev, *Pinky*.
+*Brian* is a Tech Lead at *Acme Solutions*, leading the development of the *Taking Over The World Project*. He wanted to find all commits authored by his Junior Dev, *Pinky*.
 He searches for all commits with the associated email address of `pinky@acme.com`, as per the company protocol on Git usage.
 
 Last night, Pinky used his personal laptop to push some commits, and forgot to change the email address in his git configuration, meaning his commits were associated with `_xX_pinky_the_lab_mouse_Xx_@free-email-address.com`. Pinky's boss (rightfully) did not trust that these commits were authored by Pinky, who then faced disciplinary action.
