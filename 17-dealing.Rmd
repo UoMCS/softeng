@@ -5,7 +5,6 @@ Team Coursework 1: Dealing with Small Scale Code Changes
 **Coursework Lead: Tom Carroll**
 
 ## Key  Information
-* Date of Release: 2022-10-03
 * Submission Deadline:  <span style="color:red">**2022-10-28 18:00**</span>
 * Final Grades and Feedback to be released on or before: 2022-11-18 *(within 15 University working days of the submission deadline)*
 * You can obtain [pre-deadline feedback](#feedback) throughout the coursework exercise.
@@ -58,7 +57,7 @@ It is important that you ensure your work is attributed to you in the proper man
 
 ::: {.rmdnote}
 
-*Brain* is a Tech Lead at *Acme Solutions*, leading the development of the *Taking Over The World Project*. He wanted to find all commits authored by his Junior Dev, *Pinky*.
+*Brain* is a Tech Lead at *Acme Solutions*, leading the development of the [*Taking Over The World Project*](https://en.wikipedia.org/wiki/Pinky_and_the_Brain). He wanted to find all commits authored by his Junior Dev, *Pinky*.
 He searches for all commits with the associated email address of `pinky@acme.com`, as per the company protocol on Git usage.
 
 Last night, Pinky used his personal laptop to push some commits, and forgot to change the email address in his git configuration, meaning his commits were associated with `_xX_pinky_the_lab_mouse_Xx_@free-email-address.com`. Pinky's boss (rightfully) did not trust that these commits were authored by Pinky, who then faced disciplinary action.
