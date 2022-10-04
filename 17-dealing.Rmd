@@ -172,7 +172,7 @@ The branch names to use are as follows:
 | **Bug**                                   | **Branch Name**                                   |
 |--------------------------------------------------|--------------------------------------------------|
 |Haunchy doesn't accept charcoal| `haunchys_charcoal` <br/>
-Lieutenant Drilenun suggests that a better weapon exists| `lieutenant_drilenum`<br/>
+Lieutenant Drilenun suggests that a better weapon exists| **`lieutenant_drilenun`**<br/>
 Sheep pet prevents travel between zones | `pets_prevent_movement`<br/>
 Fish soup for Hughie | `fish_soup`<br/>
 Why does he ignore "horse hair"? | `horse_hair`<br/>
