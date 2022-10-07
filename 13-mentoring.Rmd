@@ -2,17 +2,13 @@
 
 Hello, welcome and thanks for your interest in our software engineering mentoring program. This chapter is aimed primarily at **mentors not students** so if you're a student on this course you can go ignore this bit and go straight to chapter \@ref(ourmentor) to find out more about how mentoring works.
 
-If you're a mentor (or a potential mentor) read on...
+If you're a mentor (or a potential mentor) read on and register in section \@ref(register)
 
 ```{r mentoring-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap = "(ref:captionmentoring)"}
 knitr::include_url('https://youtube.com/embed/H3rnYhd5hx8')
 ```
 
 (ref:captionmentoring) An outline of software engineering mentoring at the University of Manchester. You can also watch the 13 minute introductory video for mentors at [youtu.be/H3rnYhd5hx8](https://youtu.be/H3rnYhd5hx8)
-
-## Register {#joinus}
-
-You can register your interest at [zoom.us/meeting/register/tJMsce-srzsqEtHAGEEpFfje1EOb50L3CLCr ](https://zoom.us/meeting/register/tJMsce-srzsqEtHAGEEpFfje1EOb50L3CLCr )
 
 
 A short video explaining our software engineering scheme is shown in figure \@ref(fig:mentoring-fig) which describes:
@@ -27,10 +23,13 @@ A short video explaining our software engineering scheme is shown in figure \@re
 
 There are two one hour sessions timetabled, where you will meet with the same team. Please only register if you can make BOTH of the sessions in the Allotted time:
 
-1. **Thursday 21st October 2021 at 11am** BST (GMT+1) London (on Zoom)
-1. **Thursday 18th November 2021 at 11am** GMT London (on Zoom)
+1. **Thursday 20th October 2022 at 10am** BST (GMT+1) London (on Zoom)
+1. **Thursday 17th November 2022 at 10am** GMT London (on Zoom)
 
-These are the only times when we can guarantee that everyone in a given software engineering team will be available. Timetabling 400+ students is complicated as they are all on different degree programs with different options selected. This is why the mentoring sessions are rigidly fixed.
+These are the only times when we can guarantee that everyone in a given software engineering team will be available. Timetabling 400+ students is complicated as they are all on different degree programs with different options selected. This is why the mentoring sessions are rigidly fixed. Register your interest at: 
+
+*  [zoom.us/meeting/register/tJMsce-srzsqEtHAGEEpFfje1EOb50L3CLCr](https://zoom.us/meeting/register/tJMsce-srzsqEtHAGEEpFfje1EOb50L3CLCr)
+
 
 ## I'm interested, how can I register? {#registration}
 
@@ -41,10 +40,6 @@ We are looking for around 60 mentors in September 2022, a registration link will
 * BAME and other minority group mentors
 * alumni, especially former students who have done this course since 2016
 * local employers, as part of the University's commitment to [civic engagement and social responsibility](https://www.manchester.ac.uk/discover/vision/#panel-civic-engagement)
-
-<!--
-registration link was
-* [zoom.us/meeting/register/tJUrdO-rqDgiGtcKDTP_Zj_d_oWTPznHYl8t](https://zoom.us/meeting/register/tJUrdO-rqDgiGtcKDTP_Zj_d_oWTPznHYl8t)-->
 
 
 ## About us {#aboutus}
