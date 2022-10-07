@@ -2,7 +2,7 @@
 
 Hello, welcome and thanks for your interest in our software engineering mentoring program. If you are:
 
-* a mentor, or a potential mentor, read on and register in section \@ref(register)
+* a mentor, or a potential mentor, read on and register in section \@ref(registration)
 * a student, this chapter is for **mentors** so you can ignore bit and go straight to chapter \@ref(ourmentor) to find out more about how mentoring works
 
 ```{r mentoring-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap = "(ref:captionmentoring)"}
@@ -22,19 +22,19 @@ A short video explaining our software engineering scheme is shown in figure \@re
 
 ## When are the mentoring sessions? {#when}
 
-There are two one hour sessions timetabled, where you will meet with the same team. Please only register if you can make BOTH of the sessions in the Allotted time:
+There are two one hour sessions timetabled, where you will meet with the same team. Please only register if you can make BOTH of the sessions in the allotted time:
 
 1. **Thursday 20th October 2022 at 10am** BST (GMT+1) London (on Zoom)
 1. **Thursday 17th November 2022 at 10am** GMT London (on Zoom)
 
-These are the only times when we can guarantee that everyone in a given software engineering team will be available. Timetabling 400+ students is complicated as they are all on different degree programs with different options selected. This is why the mentoring sessions are rigidly fixed. Register your interest at:
+These are the only times when we can guarantee that everyone in a given software engineering team will be available. Timetabling 500+ students is complicated as they are all on different degree programs with different options selected. This is why the mentoring sessions are rigidly fixed. Register your interest at:
 
 *  [zoom.us/meeting/register/tJMsce-srzsqEtHAGEEpFfje1EOb50L3CLCr](https://zoom.us/meeting/register/tJMsce-srzsqEtHAGEEpFfje1EOb50L3CLCr)
 
 
 ## I'm interested, how can I register? {#registration}
 
-We are looking for around 60 mentors in September 2022, a registration link will appear here closer to the time. When we are oversubscribed we will give higher priority to:
+We are looking for 66 mentors in October 2022. When we are oversubscribed we will give higher priority to:
 
 * returning mentors, those employers who have already supported the scheme (see section \@ref(thanks))
 * female mentors, because women are under-represented in our community
