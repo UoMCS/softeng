@@ -2,15 +2,14 @@
 
 Hello, welcome and thanks for your interest in our software engineering mentoring program. If you are:
 
-* a mentor, or a potential mentor, read on and register in section \@ref(registration)
-* a student, this chapter is for **mentors** so you can ignore bit and go straight to chapter \@ref(ourmentor) to find out more about how mentoring works
+* a mentor, or a potential mentor, read on and register your interest in section \@ref(registration)
+* a student, you skip this and go straight to chapter \@ref(ourmentor) to find out more about how mentoring works
 
 ```{r mentoring-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap = "(ref:captionmentoring)"}
 knitr::include_url('https://youtube.com/embed/H3rnYhd5hx8')
 ```
 
 (ref:captionmentoring) An outline of software engineering mentoring at the University of Manchester. You can also watch the 13 minute introductory video for mentors at [youtu.be/H3rnYhd5hx8](https://youtu.be/H3rnYhd5hx8)
-
 
 A short video explaining our software engineering scheme is shown in figure \@ref(fig:mentoring-fig) which describes:
 
@@ -68,7 +67,7 @@ If you volunteer, the course unit you will support is our second year compulsory
 
  ...all while keeping the system up and running for its users.
 
-For the 2021/22 academic year, we have a cohort of more than 400 students taking Software Engineering. They will be working in small teams of around 7 students to undertake team-based coursework assignments across the semester, and a final examination in the summer.
+For the 2022/23 academic year, we have a cohort of more than 500 students taking Software Engineering. They will be working in small teams of around 8 students to undertake team-based coursework assignments across the semester, and a final examination in the summer.
 
 As well as learning about the academic discipline of software engineering, students take this course unit to gain key employability skills, to prepare them for interviews for industrial placements and graduate positions, and to allow them to hit the ground running when they do start work.
 
