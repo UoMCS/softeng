@@ -21,7 +21,7 @@ A short video explaining our software engineering scheme is shown in figure \@re
 
 ## When are the mentoring sessions? {#when}
 
-There are two one hour sessions timetabled, where you will meet with the same team on Zoom. Please only register if you can make BOTH of the sessions in the allotted time:
+There are two one hour sessions timetabled, where you will meet with the same team on Zoom. Please only register (before Friday 14th October) if you can make BOTH of the sessions in the allotted time:
 
 1. **Thursday 20th October 2022 at 10am** BST (GMT+1) London (on Zoom)
 1. **Thursday 17th November 2022 at 10am** GMT London (on Zoom)
