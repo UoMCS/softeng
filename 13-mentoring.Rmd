@@ -10,6 +10,11 @@ knitr::include_url('https://youtube.com/embed/H3rnYhd5hx8')
 
 (ref:captionmentoring) An outline of software engineering mentoring at the University of Manchester. You can also watch the 13 minute introductory video for mentors at [youtu.be/H3rnYhd5hx8](https://youtu.be/H3rnYhd5hx8)
 
+## Register {#joinus}
+
+You can register your interest at [zoom.us/meeting/register/tJMsce-srzsqEtHAGEEpFfje1EOb50L3CLCr ](https://zoom.us/meeting/register/tJMsce-srzsqEtHAGEEpFfje1EOb50L3CLCr )
+
+
 A short video explaining our software engineering scheme is shown in figure \@ref(fig:mentoring-fig) which describes:
 
 * the course and our students, see sections \@ref(thecourse) and \@ref(aboutus)
