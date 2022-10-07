@@ -1,8 +1,9 @@
 # Industrial mentoring {#mentoring}
 
-Hello, welcome and thanks for your interest in our software engineering mentoring program. This chapter is aimed primarily at **mentors not students** so if you're a student on this course you can go ignore this bit and go straight to chapter \@ref(ourmentor) to find out more about how mentoring works.
+Hello, welcome and thanks for your interest in our software engineering mentoring program. If you are:
 
-If you're a mentor (or a potential mentor) read on and register in section \@ref(register)
+* a mentor, or a potential mentor, read on and register in section \@ref(register)
+* a student, this chapter is for **mentors** so you can ignore bit and go straight to chapter \@ref(ourmentor) to find out more about how mentoring works
 
 ```{r mentoring-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap = "(ref:captionmentoring)"}
 knitr::include_url('https://youtube.com/embed/H3rnYhd5hx8')
@@ -26,7 +27,7 @@ There are two one hour sessions timetabled, where you will meet with the same te
 1. **Thursday 20th October 2022 at 10am** BST (GMT+1) London (on Zoom)
 1. **Thursday 17th November 2022 at 10am** GMT London (on Zoom)
 
-These are the only times when we can guarantee that everyone in a given software engineering team will be available. Timetabling 400+ students is complicated as they are all on different degree programs with different options selected. This is why the mentoring sessions are rigidly fixed. Register your interest at: 
+These are the only times when we can guarantee that everyone in a given software engineering team will be available. Timetabling 400+ students is complicated as they are all on different degree programs with different options selected. This is why the mentoring sessions are rigidly fixed. Register your interest at:
 
 *  [zoom.us/meeting/register/tJMsce-srzsqEtHAGEEpFfje1EOb50L3CLCr](https://zoom.us/meeting/register/tJMsce-srzsqEtHAGEEpFfje1EOb50L3CLCr)
 
