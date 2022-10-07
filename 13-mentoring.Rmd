@@ -1,6 +1,6 @@
 # Industrial mentoring {#mentoring}
 
-Hello, welcome and thanks for your interest in our software engineering mentoring program. This is an event where software engineers can share their experience with undergraduate students as they fix bugs and add features to a large open source software project called [stendhalgame.org](https://stendhalgame.org/). If you are:
+Hello, welcome and thanks for your interest in our software engineering mentoring program. This is an online event where software engineers can share their experience with undergraduate students as they fix bugs and add features to a large open source software project called [stendhalgame.org](https://stendhalgame.org/). If you are:
 
 * a mentor, or a potential mentor, read on and register your interest in section \@ref(registration)
 * a student, you skip this and go straight to chapter \@ref(ourmentor) to find out more about how mentoring works
@@ -21,7 +21,7 @@ A short video explaining our software engineering scheme is shown in figure \@re
 
 ## When are the mentoring sessions? {#when}
 
-There are two one hour sessions timetabled, where you will meet with the same team. Please only register if you can make BOTH of the sessions in the allotted time:
+There are two one hour sessions timetabled, where you will meet with the same team on Zoom. Please only register if you can make BOTH of the sessions in the allotted time:
 
 1. **Thursday 20th October 2022 at 10am** BST (GMT+1) London (on Zoom)
 1. **Thursday 17th November 2022 at 10am** GMT London (on Zoom)
