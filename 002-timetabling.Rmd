@@ -89,7 +89,7 @@ Events in the week starting 17th October:
 Events in the week starting 24th October:
 
 1. **Team Study Tuesday**: Working on team coursework
-1. **Workshop**: Test first development with Anas Elhag
+1. **Workshop**: Test first development with Thomas Carroll
 1. **Team Study Thursday** Working on team coursework
 1. **Coursework deadlines**: TeamCwk1 due
 
@@ -111,7 +111,7 @@ Events in the week starting 7th November:
 Events in the week starting 14th November:
 
 1. **Team Study Tuesday**: Marking interviews part 3 of 3, see \@ref(mint)
-1. **Workshop**: Refactoring with Anas Elhag
+1. **Workshop**: Refactoring with Thomas Carroll
 1. **Team Study Thursday** Second mentoring session
 
 
@@ -119,7 +119,7 @@ Events in the week starting 14th November:
 Events in the week starting 21st November:
 
 1. **Team Study Tuesday**: Working on team coursework
-1. **Workshop**: Design for testability Anas Elhag
+1. **Workshop**: Design for testability Thomas Carroll
 1. **Team Study Thursday** Working on team coursework
 
 
@@ -127,7 +127,7 @@ Events in the week starting 21st November:
 Events in the week starting 28th November:
 
 1. **Team Study Tuesday**: Working on team coursework
-1. **Workshop**: Design patterns with Sandra Sampaio
+1. **Workshop**: Design patterns with Liping Zhao
 1. **Team Study Thursday** Working on team coursework
 1. **Coursework deadlines**: TeamCwk2 due end of the week
 
@@ -136,7 +136,7 @@ Events in the week starting 28th November:
 Events in the week starting 5th December:
 
 1. **Team Study Tuesday**:  Marking sessions
-1. **Workshop**: Risk management and practice exam with Sandra Sampaio
+1. **Workshop**: Risk management and practice exam with Liping Zhao
 1. **Team Study Thursday**  Marking sessions
 
 
@@ -145,7 +145,7 @@ Events in the week starting 5th December:
 Events in the week starting 12th December:
 
 1. **Team Study Tuesday**: Marking sessions
-1. **Workshop**: Open source challenge with Sandra Sampaio
+1. **Workshop**: Open source challenge with Liping Zhao
 1. **Team Study Thursday**
 1. **Coursework deadlines**:
 
@@ -196,8 +196,3 @@ We'll be using the following tools:
 
 
 `Document version:` `r format(Sys.time(), '%d %B, %Y')`
-
-
-Dennis Hilman
-
-Yuxuan Zheng
