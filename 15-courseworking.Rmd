@@ -548,6 +548,17 @@ It is your responsibility to check that your work has been successfully pushed t
 
 If you submit your work late for whatever reason, add this comment to your issue to let us know that you are ready for the work to be marked.  Late marking will be rerun every couple of weeks, so you won't receive feedback immediately.
 
+### Messed Up? {#reset}
+
+If you make a mistake with the coursework, you can request a reset from staff.  To do this, post the following line on the coursework issue in the issue tracker:
+
+```md
+    Please reset repository, @suzanne.m.embury.
+```
+
+We'll then reset the repository manually to the state it was at the start of the coursework.  Obviously, you'll then lose access to any commits you made for the coursework so far.
+
+You can only request one reset for this coursework exercise, so use it wisely.
 
 
 ### Coursework Complete {#gameover}
