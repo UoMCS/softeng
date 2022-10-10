@@ -54,7 +54,7 @@ This history of innovation continues today with cutting-edge research projects l
 
 In the most recent government ranking of all research across the UK, the School was ranked 4th in the UK (based on GPA), and was assessed as having the best environment in the UK for computer science and informatics research. Since awarding the first undergraduate degrees in Computer Science in 1965, the school has awarded 10,000 degrees in Computer Science at Bachelors, Masters and Doctoral level. Our students are sought after by employees, and are active (and successful) in taking part in major coding competitions and hackathons.
 
-As of 2022, our [entry tariff is A* A* A*](https://www.manchester.ac.uk/study/undergraduate/courses/2022/00560/bsc-computer-science/) with an A* in Maths, and a minimum of one Science subject at A*. As this is a second year course, students already have some experience of programming in Python and Java from their first year undergraduate study, see section \@ref(prereq).
+As of 2022, our [entry tariff is A* A* A*](https://www.manchester.ac.uk/study/undergraduate/courses/2022/00560/bsc-computer-science/) including Mathematics and one science subject. As this is a second year course, students already have some experience of programming in Python and Java from their first year undergraduate study, see section \@ref(prereq).
 
 You can find out more about mentoring and other business engagement activities at [www.cs.manchester.ac.uk/connect/business-engagement/industrial-mentoring/](https://www.cs.manchester.ac.uk/connect/business-engagement/industrial-mentoring/)
 
