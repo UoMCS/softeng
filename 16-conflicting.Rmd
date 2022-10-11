@@ -9,9 +9,9 @@ This second individual coursework exercise for (ref:coursecode) is designed to h
 * Test-first development, and
 * Handling conflicts during integration of separate lines of development with Git.
 
-Test-first development (TFD) is an approach to developing software in which we first write the test cases describing the functionality we need to implement, and then write the production code that will cause them to change from failing tests to passing tests.  The tests provide the specification for what needs to be built.  You are getting a taste of TFD in writing the tests to make your bugs visible in the code base in the first team coursework exercise, but you'll be required to apply it more extensively in the second team coursework exercise.  This individual coursework exercise gives you a chance to practice the basic skills in private, before you have to use them in front of your team and mentor.  It does this by giving you a set of test cases describing the behaviour needed of a new feature for the Sliding Puzzle game you worked on in the first individual coursework exercise.  Your task is to make these failing tests pass, by implementing the feature as the tests (and the issue text) describe it.
+Test-first development (TFD) is an approach to developing software in which we first write the test cases describing the functionality we need to implement, and then write the production code that will cause them to change from failing tests to passing tests.  The tests provide the specification for what needs to be built.  You are getting a taste of TFD in writing the tests to make your bugs visible in the first team coursework exercise, but you'll be required to apply it more extensively in the second team coursework exercise.  This individual coursework exercise gives you a chance to practice the basic skills in private, before you have to use them in front of your team and industry mentor.  It does this by giving you a set of test cases describing the behaviour needed of a new feature for the Sliding Puzzle game you worked on in the first individual coursework exercise.  Your task is to make these failing tests pass, by implementing the feature as the tests (and the issue text) describe it.
 
-When you've implemented the feature, you'll need to integrate it with your development branch (in this repository, the `main` branch).  But, another member of the Sliding Puzzle team has also made commits on the development branch since work on your feature began, implementing another feature.  You'll need to merge the two lines of development together.  Since both features touch much the same parts of the code, a number of conflicts will be discovered when you try to merge.  Your task will  be to remove the conflicts from the code base, so that the merge can go ahead.  You'll finish by creating a commit that contains both new features, co-existing together, and passing all the tests.
+When you've implemented the feature, you'll need to integrate it with your development branch (in this repository, the `main` branch).  But, another member of the Sliding Puzzle team has also made commits on the development branch since work on your feature began, implementing another feature.  You'll need to merge the two lines of development together.  Since both features touch much the same parts of the code, a number of conflicts will be discovered when you try to merge.  Your task is to remove the conflicts from the code base, so that the merge can go ahead.  You'll finish by creating a commit that contains both new features, co-existing together, and passing both sets of tests.
 
 You'll practice these skills by carrying out the following steps:
 
@@ -25,7 +25,7 @@ You'll practice these skills by carrying out the following steps:
 1. Push the completed merge to your remote repository for marking.
 1. Update the issue tracker to record the project status, and request marking.
 
-Instructions for carrying these tasks out from within the Eclipse IDE are given in this document.  We focus on Eclipse as that is the IDE used for the team coursework.  You are free to use any IDE that you wish to carry out this individual coursework exercise, but we can currently only provide instructions and technical support for Eclipse, run on the VM provided by the Department or the machines in labs in the Kilburn building.
+Instructions for carrying these tasks out from within the Eclipse IDE are given in this document.  We focus on Eclipse as that is the IDE used for the team coursework.  You are free to use any IDE to carry out this individual coursework exercise, but we can currently only provide instructions and technical support for Eclipse, run on the machines in labs in the Kilburn building.
 
 Once the exercise is completed, you should be ready to use the same skills on your team's repository in the remaining team coursework exercises.
 
@@ -95,16 +95,15 @@ knitr::kable(mark_table2, caption = "The marking scheme for the 2nd individual c
 
 (ref:cautionbox)
 
-Note that the coursework must be carried out without the use of merge requests.  The point of the exercise is to carry out these operations for yourself, in your local repository, and to gain an understanding of exactly what Git is doing when tools such as pull/merge requests are used.
+Note that the coursework must be carried out without the use of merge requests - to ensure this, we have disabled the merge request facility on your coursework repository.  The point of the exercise is to carry out these operations for yourself, in your local repository, and to gain an understanding of exactly what Git is doing when tools such as pull/merge requests are used.  It is important to learn how to use merge requests correctly (as a code quality tool) and not to use them as a short-cut for making merge commits.
 
-**Any use of merge requests, even if they are subsequently deleted, will incur a 50% mark penalty.**
+<!-- **Any use of merge requests, even if they are subsequently deleted, will incur a 50% mark penalty.** -->
 :::
+
 
 ### Pre-Deadline Feedback {#predead}
 
-
 To give you a chance to check your work and make corrections in advance of the deadline, we will run the automated marking code on all student repositories shortly after:
-
 
 (ref:feedbackdateindicwk2)
 
@@ -117,7 +116,7 @@ We guarantee to provide provisional marks for everyone who has started the work 
 
 ### Submission Procedure {#subproc}
 
-To submit your work for marking, you must add a comment to the coursework issue in the issue tracker of your project, saying:
+To submit your work for final marking, you must add a comment to the coursework issue in the issue tracker of your project, saying:
 
 ``` md
 Project ready for marking.
@@ -131,7 +130,7 @@ You may delete and re-add the comment as many times as you like up until the for
 
 Any changes to your repository made after the final eligible marking request has been made will be ignored by the marking process.  So make sure you have definitely finished all your work, before you add the comment, especially if you are submitting after the deadline.
 
-When you have added the request for marking comment to the issue, your development access to the repository will be removed, to preserve the state of the repository for marking.
+When you have added the request for marking comment to the issue, your development access to the repository will be removed, to preserve the state of the repository for marking.  At this point, you will not be able to see some parts of your submission, due to your restricted role on the project.  This is nothing to worry about - the work is still there, it is just not visible to you.
 
 
 ### Late Submissions {#lateness}
@@ -157,6 +156,10 @@ This coursework is subject to the University's standard policy on plagiarism:
 ### How to Get Help {#gettinghelp}
 
 Help with this exercise will be available in the team study sessions (when your team is not being marked).  Sign up on the live help queue (ref:livehelpqueue) during the sessions, using the `Individual Coursework Ex 2` label and issue template. A member of staff or a GTA will speak to you in person or call you directly on Microsoft Teams when we are ready to provide help.
+
+Outside of team study sessions, you can post a query on our Piazza discussion forum.  We aim to respond to queries raised on Piazza within 3 working days.
+
+Please try to keep the workload manageable for the course team by checking through past posts on Piazza before raising a new query.  That allows us to help as many students as possible in the time we have available.
 
 
 ## The Coursework Instructions {#indycwk2in}
@@ -186,7 +189,7 @@ The branch is called: `move-counter`
 
 You must check out this feature branch, and use the tests to guide the implementation of the new feature.  The first step is to read the test code, to understand what each one is saying about the functionality that you must implement.
 
-You should practice the techniques for test reading that were presented in the workshops, and consider each test case in terms of the “Act, Arrange, Assert” model (see chapter \@ref(understanding)).
+You should practice the techniques for test reading that were presented in the workshops (see chapter \@ref(understanding)).
 
 The next step is to run the tests.  Since the default project classpath is sufficient for this simple project, we can do this by right clicking on the `test` folder and selecting `Run As` > `JUnit Test`.  You'll see that a couple of the new test cases pass, but most of them fail.
 
@@ -197,7 +200,7 @@ The next step is to run the tests.  Since the default project classpath is suffi
 
 Test-first development (TFD) is a style of software development in which we begin by writing a collection of tests that describe the new functionality to be added to the system.  When we run these tests, they will (mostly) fail, because the feature they describe is not yet implemented.  The next step is to make changes to the production code to implement the required feature, and thus make the test cases pass.
 
-In this approach to development, the tests change their function.  Instead of aiming to detect errors *after* they have been introduced into the code base, the tests take on the role of the specification: an executable specification that we can run repeatedly, as the feature implementation moves forward.  The tests also therefore function as a kind of progress report, telling us how much work remains to be done before we can consider the feature finished.
+In this approach to development, the tests change their role.  Instead of aiming to detect errors *after* they have been introduced into the code base, the tests take on the job of the specification: an executable specification that we can run repeatedly, as the feature implementation moves forward.  The tests also therefore function as a kind of progress report, telling us how much work remains to be done before we can consider the feature finished.
 
 But writing the test code before the production code also has a profound effect on how we design our code.  When we write the production code before the tests, we often make design errors, because we are thinking too much about the code from the point of view of the implementer of the class we are working on.  This makes it hard to make good decisions about what parts of the behaviour should be exposed through the class's interface, and what should be hidden behind it.
 
@@ -206,6 +209,7 @@ When we write the test code first, we are forced to think about the classes we a
 :::
 
 ### Step three: Implement the Feature/Make the Tests Pass {#testsipass}
+
 When you have a good grasp on the functionality that the tests describe, you should start implementing that functionality and making the tests pass.
 
 Make sure you have the `move-counter` branch checked out before you make any changes to the code.
@@ -216,9 +220,10 @@ The usual approach in TFD is to take each failing test in turn, and to make the 
 (ref:infobox)
 
 **Alternative Approaches to Testing and Development**
+
 Broadly speaking, there are three main alternatives to TFD in common use.  They are described below.
 
-*Manual-Test Development (MTD)*
+*Manual Testing (MT)*
 
 In this, the oldest form of development, no (or very little) automated test code is written for the system, and any testing that is performed is done manually.  This form of development is still common in open source projects, and in code written by smaller consultancies.  And even projects with excellent automated test coverage may have some tests that need to be run manually, if they depend on complex fixture set-up steps (such as hardware configuration) or have complex outcomes.
 
@@ -227,8 +232,7 @@ In this, the oldest form of development, no (or very little) automated test code
 
 *Test-After Development (TAD)*
 
-In this form of development, features are implemented in the production code, and once they are finished a number of test cases are written to check the correctness of the implementation.  The tests are sometimes written by the same people who implemented the feature, sometimes by an independent development team, and sometimes (though now more rarely) by a dedicated independent test team who write test cases from the specification document.  We've included this last case under TAD, because in practice the test cases aren't fully implemented or run until after the implementation has reached a certain level of maturity.
-
+In this form of development, features are implemented in the production code, and once they are finished a number of test cases are written to check the correctness of the implementation.  The tests are sometimes written by the same people who implemented the feature, sometimes by an independent development team, and sometimes (though now more rarely) by a dedicated independent test team who write test cases from the specification document.  We've included this last case under TAD, even though the independent test team may be writing the test cases in parallel with the development, because in practice the test cases aren't fully implemented or run until after the implementation has reached a certain level of maturity.  They are rarely used by developers to inform the software design in this approach.
 
 
 *Test-Driven Development (TDD)*
@@ -237,8 +241,7 @@ In this, the most modern of the forms of development listed here, the implementa
 
 TDD is similar to TFD, but has some important differences. In TFD, we grow the implementation of a feature to closely match the requirements described by the test cases.  In TDD, we grow both the implementation *and* the test suite to fit the requirements, aiming to create only the tests and production code needed to deliver value to the client.  It results in code with a high test coverage, strong correctness, and a lean implementation focused on the requirements.  But it can be challenging to apply, requiring (at least when being learnt) both discipline and creativity.
 
-TDD will be covered again briefly in [Software Engineering 2: COMP23412](https://studentnet.cs.manchester.ac.uk/ugt/COMP23412/syllabus/)
-and in more depth in [Agile Software Pipelines: COMP33312](https://studentnet.cs.manchester.ac.uk/ugt/COMP33312/syllabus/) (along with the related technique of Behaviour Driven Development, BDD).
+TDD will be covered in more depth in [Agile Software Pipelines: COMP33312](https://studentnet.cs.manchester.ac.uk/ugt/COMP33312/syllabus/) (along with the related technique of Behaviour Driven Development, BDD).
 <!--Add pointer to the Software Testing Landscape MOOC once it goes live-->
 :::
 
@@ -251,7 +254,8 @@ There are a couple of slightly tricky aspects to the implementation that do not 
 
 **Hint: Switching off move counting while shuffling the puzzle**
 
-View source of this page if you want to see the hint  
+View the source of this page if you want to see the hint.  
+
 <!--A simple solution is to record the value of the move counter at the start of the shuffle in a variable, and to use this to replace the move counter's value at the end of the shuffle routine.-->
 :::
 
@@ -259,7 +263,7 @@ View source of this page if you want to see the hint
 
 **Hint: Refreshing the Move Counter from GraphicsPanel**
 
-View source of this page if you want to see the hint
+View the source of this page if you want to see the hint.
 
 <!--Since the `GraphicsPanel` handles the processing of user moves in the GUI, this instance also needs to be able to trigger a refresh of the displayed move counter in the game.  The `GUI` instance controls the display of the move counter. It knows about the `GraphicsPanel` instance, but the `GraphicsPanel` instance doesn't know about the `GUI` instance, and so can't request a refresh.
 
@@ -277,6 +281,7 @@ When all the tests on the `move-counter` branch pass, and you have observed the 
 (ref:infobox)
 The Sliding Puzzle code base we are working from has some limitations.  In particular, the testing of some aspects of the GUI does not follow best practice.  However, providing better quality tests for these aspects would have required the whole system to be much larger, and for us to use advanced Java elements that we have not taught you yet.  We therefore decided to keep the example small and simple, for this exercise, at the expense of strict adherence to good practice.
 :::
+
 
 ### Step four: Commit and Push the Feature Implementation {#featimp}
 
@@ -306,7 +311,7 @@ knitr::include_graphics("images/mergeFBtoMasterMenu.png")
 (ref:cautionbox)
 This screenshot is shown for illustration of the steps needed in Eclipse only.  The code changes shown are not part of the solution for the coursework.  This applies to all screen shots in these coursework instructions.  They don't give away any part of the code solution.
 
-Note also that in the screenshots, the development branch is called `master`, not `main`.  Both branches play the same role.  (Thanks for bearing with us as we work through the removal of problematic terminology from our course materials.)
+Note also that in the screenshots, the development branch is called `master`, not `main`.  Formerly, it was common to use the name `master` for the development branch, but more recently the name `main` is preferred.  You should see the same results as in the screenshots except that you will see `main` where `master` is shown.  (Thanks for bearing with us as we work through the removal of problematic terminology from our course materials.)
 
 :::
 
@@ -390,9 +395,9 @@ Our task is to edit the file in the left hand window, so that it contains the de
 knitr::include_graphics("images/editsInMergeTool.png")
 ```
 
-Both ways of removing the conflict also remove the compilation error from the file.  You should see this decorator being removed from the file in the `Package Explorer` view.  The conflict marker remains on the file, however, as we have not yet told Git that we believe the conflicts have been removed.
+Both ways of removing the conflict also remove the compilation error from the file.  You should see this decorator being removed from the file in the `Package Explorer` view.  The conflict marker remains on the file, however, as we have not yet told Git that we believe the conflicts have been removed.  We do this by committing the changes that resolve the conflicts.  This will not result in a normal commit, but flags the changes to Git to be included in the merge.
 
-To do this, right click anywhere in the Eclipse windows/views, and select `Team` > `Commit`.  This will bring up a special version of the Git Staging view, tailored for resolving commits.
+To let Git know that the conflicts have been resolved and the merge should continue, right click anywhere in the Eclipse windows/views, and select `Team` > `Commit`.  This will bring up a special version of the Git Staging view, tailored for recording resolved conflicts.
 
 ```{r specialCommitView-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap = "Special commit view"}
 knitr::include_graphics("images/specialCommitView.png")
@@ -411,7 +416,7 @@ knitr::include_graphics("images/commitViewWhenAllConflictsRemoved.png")
 
 Notice that Git has now provided a commit message and has added in the author and committer details.  This is because Git recognised that we have now dealt with all the files affected by conflicts from the recent merge and are ready to proceed with it.
 
-We can now edit the merge message if we want to.  You should always leave automatically generated merge messages unedited, as they provide useful metadata for understanding the flow of code change that has happened on the repository.  Some people remove the details of the conflicting files and some people leave them in.  Regardless, if some aspect of the conflict resolution was tricky or complex, it is useful to add a note explaining that to the merge commit.
+We can now edit the merge message if we want to.  You should always leave automatically generated merge messages unchanged, as they provide useful metadata for understanding the flow of code change that has happened on the repository, though it is always possible to add extra information if needed.  For example, if some aspect of the conflict resolution was tricky or complex, it is useful to add a note explaining that to the merge commit.
 
 **For this coursework, we ask that you add some extra information about how you handled the conflicts to the end of the commit message, but that you leave this automatically generated message unchanged at the start of the message.**
 
@@ -434,9 +439,9 @@ Make sure that the all the tests pass on the version of the code with the confli
 
 **Hint: Making the Move Counter and Game Timer Appear Below the Main Game Panel**
 
-View source to see the hint
+View the source to see the hint.
 
-<!--When you integrate the two lines of development, you'll find that both the Move Counter panel and the Game Timer panel are supposed to appear in this location in the GUI.  But, if you add them both with the `.SOUTH` position instructions, the layout manager will just use the one last added.
+<!--When you integrate the two lines of development, you'll find that both the Move Counter panel and the Game Timer panel are supposed to appear in the same location in the GUI.  But, if you add them both with the `.SOUTH` position instructions, the layout manager will just use the one last added.
 
 We could use a fancier layout manager, to help us stack these clocks vertically.  But putting effort into this for this coursework would only be worthwhile if you had personal reasons for wanting to practice Swing GUI construction. \medskip
 
@@ -444,6 +449,7 @@ For everyone who is here to learn about handling conflicts in Git, you can take 
 -->
 
 ::: {.rmdnote}
+
 (ref:infobox)
 **Suzanne's Tips for Conflict Resolution**
 
@@ -452,12 +458,12 @@ For everyone who is here to learn about handling conflicts in Git, you can take 
 * I find it helps to decide in advance the `order` in which I'll put code for the features being integrated.  For example, for this coursework exercise, I might decide to put the Move Counter elements before the Game Timer elements.  This makes it quick and easy for me to be consistent about how I incorporate game changes across multiple classes, without requiring much thought.
 * It is worth avoiding long and intricate conflict resolution tasks, especially close to the deadline.  Keep the scale of each resolution task low, by syncing frequently with your remote.  When implementing a new feature, I try to find a series of small `mini releases` that I can implement and merge individually, to keep the scale of the conflict resolution task down.
 * I preferred to manually edit out conflict markers when I was first encountering Git, but now prefer to use the Merge Tool when using Eclipse.  Use the approach that's best for your current stage of learning.
-* When using the Merge Tool, I normally expand it to fill the whole Eclipse window, so that I can see as much of the code that I am changing as possible, and can better understand the risks of what I am doing.
-* *  When you think you've fixed the conflicts in a file, you may discover you have caused compilation errors due to the changes affecting other classes.  So check all files where Eclipse is reporting compilation errors and fix them, looking especially for errors in files you have not changed in your feature branch, before continuing with the merge commit.
+* When using the Merge Tool, I normally expand it to fill the whole Eclipse window, so that I can see as much of the code that I am changing as possible, and can better understand the risks of what I am doing.  Sometimes the implications of a particular conflict resolution affect lines of code some way away from where the conflict itself is located.
+* When you think you've fixed the conflicts in a file, you may discover you have caused compilation errors due to the changes affecting other classes.  So check all files where Eclipse is reporting compilation errors and fix them, looking especially for errors in files you have not changed in your feature branch, before continuing with the merge commit.
 * Make sure you run the tests as soon as you have got back to compiling code.  It's really easy to break things in the code you are merging into, especially if you didn't write it.  With good test coverage, the test suite will insulate you from some of these potential errors.  If you are working on a team project, getting some help with a buddy review of the code before you merge it can also help (though you may need to merge and push to a temporary branch instead of to the development branch if you need to do the buddy review remotely).  Using merge/pull requests can also help with this (though it's important to learn how to carry out merges manually first, so you really understand what these tools are doing behind the scenes on your behalf).
 
-
 :::
+
 
 ### Step seven: Push the Completed Merge to the Remote Repository {#pushtoremote}
 
@@ -493,10 +499,12 @@ We'll then reset the repository to the state it was at the start of the coursewo
 
 You can only request one reset for this coursework exercise, so use it wisely.
 
+The code that executes the repository reset requests will be run every couple of days while the coursework is active.  The last time that resets will be run will be at lunchtime on the day of the deadline.
+
 
 ### Coursework Complete {#cw2fin}
 
-This completes the instructions for the second individual coursework exercise for this course unit.  If you managed to complete it in full, then you'll be all to apply the same skills to the team coursework.  You will have practiced some basic test first development.  And you'll be ready to collaborate on team Git projects, and to handle the code integration conflicts this so often entails.  You should also have a better understanding of the practical importance of writing clear, focussed commits.
+This completes the instructions for the second individual coursework exercise for this course unit.  If you managed to complete it in full, then you'll be all set to apply the same skills to the team coursework.  You will have practiced some basic test first development.  And you'll be ready to collaborate on team Git projects, and to handle the code integration conflicts this so often entails.  You should also have a better understanding of the practical importance of writing clear, focussed commits.
 
 
 `Document version:` `r format(Sys.time(), '%d %B, %Y')`
