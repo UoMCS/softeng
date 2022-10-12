@@ -47,7 +47,9 @@ You can start Eclipse from the Applications menu (under Programming) or the comm
 
 ### Select the Workspace {#selectw}
 
-Eclipse calls a folder containing one or more Eclipse projects a `workspace`.  At start-up, Eclipse will ask you which workspace you want to use for the session.  You can either accept the default location or use the File Browser to locate or create a different one.  (Depending on when you do this workshop, you may already have created a workspace for the GitLab Access Check activity.  You can either choose to use the same workspace for this activity or create a new one.)
+Eclipse calls a folder containing one or more Eclipse projects a `workspace`.  At start-up, Eclipse will ask you which workspace you want to use for the session.  You can either accept the default location or use the File Browser to locate or create a different one.  A sensible standard location is something like:
+
+    ~/EclipseWorkspace
 
 If you choose to create a new workspace, Eclipse will show the Welcome View when it loads.  Uncheck the box at the bottom right of the window (labelled `Always show Welcome on start up`) and close it down, as we do not need this view for this workshop.  (You can get it back whenever you want by selecting the `Welcome` option from the `Help` menu.)
 
