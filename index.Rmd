@@ -195,13 +195,13 @@ So now that we've dispensed with the formalities, you can start using this labor
 <!-- Configuration for the exercise -->
 (ref:totalmark) 10  
 
-(ref:percentage) 10  
+(ref:percentage) 7  
 
-(ref:deadline) 6.00pm, Friday 1st October 2021  
+(ref:deadline) 6.00pm, Friday 7th October 2022  
 
-(ref:deadline2) 6.00pm, Friday 15th October 2021  
+(ref:deadline2) 6.00pm, Friday 21st October 2022  
 
-(ref:feedbackdateindicwk2) 6.00pm, Tuesday 12th October 2021
+(ref:feedbackdateindicwk2) 6.00pm, Friday 14th October 2022
 
 (ref:numsteps) 9  
 
