@@ -28,7 +28,10 @@ Today, after a short lecture introducing the core concepts, we'll be working thr
 
 We are going to use the Stendhal code base to illustrate the topics under discussion.  This will involve you reading the Stendhal code, and making some small changes.  In order not to put your coursework at risk, we're going to use a slimmed down version of the Stendhal code repository containing the Stendhal code but without the extensive revision history.
 
-To prepare for the workshop, you need to clone the repository and import it into your preferred IDE.
+
+First, you should create a new Eclipse Workspace, because  Eclipse doesn't allow two projects with the same name in a single workspace.        
+Once you have created your new workspace, then ensure you are in that workspace.
+You now need to clone the repository and import it into your preferred IDE.
 
 The HTTPS protocol URI of the repository is:
 
@@ -38,10 +41,6 @@ https://gitlab.cs.man.ac.uk/suzanne.m.embury/stendhal-playground-2019.git
 ````
 
 If you are using Eclipse and need a reminder of what to do, you can follow the steps we took in the Week 1 workshops, when we cloned and imported the Marauroa code base.  The instructions are on Blackboard, under `course content` > `Week 1`.
-
-::: {.rmdnote}
-Eclipse users will need to create a new workspace to import this project into.  This is because Eclipse doesn't allow two projects with the same name in a single workspace.
-:::
 
 
 
