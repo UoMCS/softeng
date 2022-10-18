@@ -397,7 +397,7 @@ Once the deadline is passed, you will temporarily lose developer role access to 
 
 ## Getting Feedback{#feedback}
 
-A “live” marking scheme for the exercise can be found on the CI server used for this course unit.  **(You will get information about this some days after the coursework is released to you.)**  The marking scheme gives details of how the marks will be awarded, but also gives an interim mark for your team based on the work completed so far.  Of course, only some parts of the marking can be automated.  Others will need to be done by GTAs.  The GTA marking takes three forms:
+A “live” marking scheme for the exercise can be found on the CI server used for this course unit. You can obtain this by visiting the CI server: [https://ci.cs.manchester.ac.uk/jenkins/](https://ci.cs.manchester.ac.uk/jenkins/)   The marking scheme gives details of how the marks will be awarded, but also gives an interim mark for your team based on the work completed so far.  Of course, only some parts of the marking can be automated.  Others will need to be done by GTAs.  The GTA marking takes three forms:
 
 1. Pre-deadline annotation of commits.  Each week, your assigned GTA will look at your commits and add annotations to tell the automated marking code which parts of the exercise each commit contributes to.  You should take note of these annotations and let your GTA know if you believe the annotation is incorrect.
 1. Post-deadline marking of your team process and the changes you have made to the code base.
