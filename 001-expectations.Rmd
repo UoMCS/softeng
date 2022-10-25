@@ -22,7 +22,7 @@ We need you to read ALL of the messages we send you via GitLab, Jenkins, Microso
 
 #### Getting help {#helpme}
 
-Regardless of if you are attending live (in person) or remotely (online, login to Teams) the mechanism for getting help is the same:
+Regardless of if you are attending live (in person) or remotely (online, login to Teams) the mechanism for getting help is the same, please don't send academic staff personal email or private messages on teams. Instead:
 
 For live sessions (timetabled), team study and workshops you need to use the issue tracker:
 
