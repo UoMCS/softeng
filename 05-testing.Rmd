@@ -1,8 +1,38 @@
-# Test first development {#testing}
+# Test Driven development {#testing}
+Slides for this chapter are on blackboard [online.manchester.ac.uk](https://online.manchester.ac.uk)
 
-Course material for this chapter is on blackboard [online.manchester.ac.uk](https://online.manchester.ac.uk)
+# The Workshop
 
-## Course content
+Welcome to the COMP23311 Test Driven Development Workshop.
 
+First, you will enjoy a mini lecture from Tom Carroll, before proceeding with the following task:
+
+
+In a small group of those around you (possibly in your coursework teams), consider the following scenario:
+
+You have been approached to create a new peice of software. This new peice of software will enable the company to manage their customer sales and warehouse stock.
+The final version of the software should be able to do the following:
+1. Enable a Customer to view in-stock items
+1. Enable a Customer to place an order
+1. Enable a customer to leave a review for a product
+1. Enable a staff member to view the current stock within the warehouse, including stock levels
+1. Enable a staff member to place an order to the wholesaler
+1. Enable a staff member to fulfil an order by telling them where in the warehouse the items are located, and to automatically update stock levels
+1. Allow the tracking of order status by staff
+
+## Step 1: Minimal Viable Product and Release Plan
+In your group, read the above scenario and consider the requirements
+Now, you should decide minimal viable product that can be delivered - you should not include all the functionality here, just a small subset. Which do you think is the easiest to deliver? What do you think would add the most value for the user?
+
+## Step 2: Feature Scoping
+When we introduce a new feature in software, we always start off small. We dont go all-in; consider Stendhal's technique for introducing pets: They started with Sheep (small, dumb pets), and scaled upwards over time to more advanced pets.
+
+Think about your MVP from Step 1. What is the smallest version of these functions that could be delivered?
+
+## Step 3: Test Driven Development
+Following from what Tom demonstrated to you, you should now use Eclipse to create a set of compiling (but initially failing) tests that give the behaviour of your application. You shoudl aim to have at least 5 tests here. Maybe you can also start to code some tests? Remember, you need to make the bar go green quickly - so it can be quick and dirty... we have time for making clean code later.
+
+## Extension
+This should now have taken you until the end of the hour workshop. Tom will soon post an extension exercise, which looks at Test Driven Development in Stendhal, and will apply the techniques in an environment that is very useful for your second team coursework.
 
 `Document version:` `r format(Sys.time(), '%d %B, %Y')`
