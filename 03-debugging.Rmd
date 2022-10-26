@@ -7,7 +7,7 @@
 If you require help in this workshop, please dont go up to the staff in the room - please use the [**live help queue**](https://gitlab.cs.man.ac.uk/comp23311_2022/COMP23311-Live-Help-Queue/issues) and wait for either:
 
 * someone to come to you
-* help to be given on [teams.microsoft.com](https:://teams.microsoft.com)
+* help to be given on [teams.microsoft.com](https://teams.microsoft.com)
 
 The live help queue will be culled at the end of the session, and questions should then be put on Piazza. Please remember we can't offer coursework help during a workshop.
 :::
