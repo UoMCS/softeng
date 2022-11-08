@@ -21,7 +21,7 @@ This exercise will follow the same broad phases as the first team coursework exe
 1. Code review.
 1. Integration and system testing.
 1. Making a new release.
-1. Preparing for the face-to-face interviews.
+1. Preparing a video presentation demoing your new features.
 
 You can choose how you carry out these steps in your team, perhaps combining or overlapping some of the steps.
 
@@ -40,7 +40,7 @@ The exercise will test your ability to:
 
 ### Step 1: Release Planning {#releaseplan}
 
-Your first task is to create a release plan for each of the issues in your issue tracker associated with the milestone for this coursework exercise.  We will show you how to do this in the workshops in the second part of the course unit.
+Your first task is to create **a release plan for each of the issues in your issue tracker associated with the milestone for this coursework exercise**.  We showed you how to do this in the [workshops in week 5 the course unit](https://software-eng.netlify.app/testing.html).
 
 The release plan for each issue will describe a sequence of incremental releases that, when complete, will fully implement the feature in the game.  This is done by dividing the work required for the full issue into sub-features, which can be delivered independently of each other.  For example, if an issue requires the addition of a new quest to the game, with a brand new item type as a reward, then we might plan to release the item first in one release, and only release the quest in the next release, once we had had some time to try out the new item in real game play.
 
@@ -58,7 +58,7 @@ The first release should be designed to be a "canary release" (also sometimes ca
 
 You will document your release plans by placing them in the wiki of your team's GitLab project.  You should create a page in the wiki for each issue, using the page slugs shown on Blackboard (under `Assessment` > `Team Coursework` > `Exercise 2`.  For example, **for team S1Team107**, if the page slug for one issue is given as `slow-innkeeper`, then the wiki page for this issue would be reached at the following URL:
 
-[gitlab.cs.man.ac.uk/comp23311_2021/stendhal_S1Team107/wikis/slow-innkeeper](https://gitlab.cs.man.ac.uk/comp23311_2021/stendhal_S1Team107/wikis/slow-innkeeper)
+[gitlab.cs.man.ac.uk/comp23311_2022/stendhal_S1Team107/wikis/slow-innkeeper](https://gitlab.cs.man.ac.uk/comp23311_2022/stendhal_S1Team107/wikis/slow-innkeeper)
 
 `NOTE: YOU'LL NEED TO SUBSTITUTE YOUR TEAM NUMBER INTO THE URL ABOVE`
 
@@ -71,9 +71,9 @@ Please use the following text for the header for this section of the wiki page, 
 
 ### Step 2: Issue Planning {#issueplan}
 
-### Step2.1: Choosing your Issues {#ischoose}
+### Step2.1: Choosing What you will Commit to Deliver {#ischoose}
 
-In most of the coursework you have been set for your degree, you are told exactly what you need to deliver and the work is set so as to be guaranteed to be achievable in the timescales allowed.  Real software engineering is not like this.  There is always more to be implemented than can realistically be achieved in the time available.  Making decisions about what to build, and how much to commit yourself and your team to deliver, is an essential part of software engineering.  This coursework gives you the opportunity to practice and reflect on this skill, before you have to apply it in real life.
+In most of the coursework you have been set for your degree, you are told exactly what you need to deliver and the work is set so as to be guaranteed to be achievable in the timescales allowed.  Real software engineering is not like this.  There is always more to be implemented than can realistically be achieved in the time available.  Making decisions about what is most useful to build first, and how much to commit yourself and your team to deliver, is an essential part of software engineering.  This coursework gives you the opportunity to practice and reflect on this skill, before you have to apply it in real life.
 
 To allow this, we have given you a selection of issues describing new features for this coursework that, if implemented in full, constitute more work than you can reasonably achieve in the time available.  You must choose a subset of issues to implement, balancing the need to do enough work to achieve your target mark for the exercise with the amount of time it is possible and worthwhile to devote to the exercise.
 
@@ -83,7 +83,7 @@ Since this is a somewhat unsual approach to coursework, we have provided a sprea
 
 **Remember when selecting issues that you will only need to implement the first of the releases in your release plan for each selected issue.**
 
-Once you have decided which features you will not be delivering in this release, you should remove them from the Coursework 2 Milestone. Only the issues you are committing to deliver should be associated with this milestone by the deadline for the exercise.  RoboTA will mark the set of issues associated with the coursework milestone, so it is in your interests to make sure this is accurate before your coursework is marked.
+Once you have decided which features you will **not** be delivering in this release, you should remove them from the Coursework 2 Milestone. Only the issues you are committing to deliver should be associated with this milestone by the deadline for the exercise.  RoboTA will mark the set of issues associated with the coursework milestone, so it is in your interests to make sure this is accurate before your coursework is marked.
 
 
 ### Step2.2: Creating a Work Breakdown Structure for the Selected Issues
@@ -106,21 +106,19 @@ All these decisions should be documented in your issue tracker, as described bel
 
 Since the features we have set are more substantial coding tasks than the bugs you fixed in the first exercise, you will need to work together, in groups of 2 or 3, to implement some of the selected features.  That is, you will break your team down into sub-teams, each of which will be responsible for delivery of the first release for an individual feature.  Such teams are sometimes called "feature teams".
 
-A common cause of failure in team work is when all members of the team assume that some crucial task will be done by someone else.  To avoid this, it is important to assign a lead member for each sub-team.  This person is responsible for the detailed planning for their issue, for scoping it down, for coordinating the implementation work amongst the
-members of the sub-team, and for documenting the work as needed for marking.  This does not mean that the team leader does all these tasks alone---it means only that the team lead is the person who will check that these tasks are all done and that everyone is clear about what they need to do and by when.  Apart from that, the way the tasks are shared amongst the sub-team members is up to you.  But it is expected that all sub-team members, including the leader, will do some coding for their issue, to allow them to meet the requirement that at least one meaningful commit be made for the coursework by every team member.
+A common cause of failure in team work is when all members of the team assume that some crucial task will be done by someone else.  To avoid this, it is important to assign a lead member for each sub-team.  This person is responsible for the detailed planning for their issue, for scoping it down, for coordinating the implementation work amongst the members of the sub-team, and for documenting the work as needed for marking.  This does not mean that the team leader does all these tasks alone---it means only that the team lead is the person who will check that these tasks are all done and that everyone is clear about what they need to do and by when.  Apart from that, the way the tasks are shared amongst the sub-team members is up to you.  But it is expected that all sub-team members, including the leader, will do some coding for their issue, to allow them to meet the requirement that at least one meaningful commit be made for the coursework by every team member.
 
 Team leads should be assigned as the responsible person for the issue in the issue tracker.
 
 All other sub-team members for each issue must be recorded on the issue tracker, using a sentence of the form:
 
-
 `Sub-team member: <URL of GitLab profile of team member>`
 
-GitLab profile links have the form: [gitlab.cs.man.ac.uk/name](https://gitlab.cs.man.ac.uk/name), where `name` is a GitLab username.  Multiple sub-team members may be recorded in separate comments, or in a single comment with newlines between the sentences.  You do not need to record the team lead as a sub-team member.
+GitLab profile links have the form: `https://gitlab.cs.man.ac.uk/name` or `@name`, where `name` is a GitLab username.  Multiple sub-team members may be recorded in separate comments, or in a single comment with newlines between the sentences.  You do not need to record the team lead as a sub-team member.
 
 Note that to receive marks for the coursework, every team member must be assigned to a sub-team for the exercise, either as lead or as a sub-team member, and must make a meaningful commit contributing towards the implementation of the feature their sub-team is assigned to implement.  Work allocation must be designed to ensure that all team members are able to meet the criteria for receiving marks.
 
-A further assignment of roles must be completed at this stage before you can proceed to the implementation of the issue.  For this coursework, we ask you to apply the practice of reviewing all code before it is integrated into the mainline of development for your team.  Therefore, you should also decide who will carry out code review for each issue.  Every member of your team must carry out some code review, and the code for every feature must be reviewed before integration.  While you are welcome to carry out buddy reviews within sub-teams, the pre-integration code review step must be carried out by someone from another sub-team.
+A further assignment of roles must be completed at this stage before you can proceed to the implementation of the issue.  For this coursework, we ask you to apply the practice of reviewing all code before it is integrated into the main line of development for your team.  Therefore, you should also decide who will carry out code review for each issue.  Every member of your team must carry out some code review, and the code for every feature must be reviewed before integration.  While you are welcome to carry out buddy reviews within sub-teams, the pre-integration code review step must be carried out by someone from another sub-team.
 
 Code reviewers for issues must be recorded on the issue tracker, using a sentence of the form:
 
@@ -132,8 +130,8 @@ You should document your estimate for the **effort** required to implement each 
 
 [gitlab.cs.man.ac.uk/help/workflow/time_tracking.md](https://gitlab.cs.man.ac.uk/help/workflow/time_tracking.md)
 
+The results of your planning must be documented in the issue tracker and on the wiki *before* you begin work on each selected issue.  We count the start of work on an issue as the commit date of the first commit made by the team that your GTA annotates as being part of the solution or test code for that issue.
 
-The results of your planning must be documented in the issue tracker and on the wiki *before* you begin work on each selected issue.
 
 ### Step 3: Testing and Implementation {#timp}
 
@@ -143,7 +141,7 @@ The team lead should set a due date for the delivery of the feature to the team,
 
 The team lead should update the estimate for the issue in the issue tracker if, based on the more detailed planning carried out, the sub-team feel the original estimate was inaccurate.
 
-We ask you to use the same Git workflow as you used in the first exercise, to allow your sub-team to work collaboratively on each issue without interfering with the work of the rest of your team by using feature branches.
+We ask you to use the feature branches with code review Git workflow, similar to the plain features branches workflow you used in the first exercise.  The main difference from the exercise 1 workflow is that you will use merge requests to ensure that all feature branch commits are reviewed and high quality before merging into the main line.
 
 In addition, there are some new skills we ask you to demonstrate in this second course unit.  We are asking you to code in a test-first manner, to manage the quality of the commit messages your team makes, and to use a test coverage tool to assess whether you have written sufficient tests or not.  Details of all these requirements are given below.
 
@@ -152,25 +150,26 @@ In addition, there are some new skills we ask you to demonstrate in this second 
 
 It is important that all the team start their feature branches from a clean commit.  Otherwise, problems in commits for the 1st exercise (such as failing tests) will be carried forward into the new feature branches, and may result in lost marks for this exercise too.  It is your reponsibility to ensure that this does not happen.
 
-Teams with a clean build for their development branch in Jenkins should be okay to start the work for the next coursework exercise from this point.  Teams with unstable or failed builds on their development branch will need to start by getting the `master` branch to a clean state.  If the problems were caused by merging feature branches with unstable or failed merges into `master`, then you will need to revert those commits^[The use of Git revert as a quick fix for Git errors is never pretty and should be avoided where possible.  However, in this case, it may be the quickest way to get your codebase to a clean starting state for the exercise.].  Please get help in an early team study session if you are unsure about this
+Teams with a clean build for their development branch in Jenkins should be okay to start the work for the next coursework exercise from the latest commit on `main`.  Teams with unstable or failed builds on their development branch will need to start by getting the `main` branch to a clean state.  You can do this by adding commits on `main` that fix the errors, or you can choose another commit in your code history to start from.  A common choice for teams who have messed up their code quality severely in exercise 1 is to start this exercise at the `EX1_START` commit.
 
 **Once a suitable starting commit has been identified or created, one member of your team should create a tag pointing to that commit.  The tag should be called:**
 
-
 `EX2_START`
 
-We have created a Jenkins build for this tag, to help you choose a good starting point for your work for this exercise.  Push the tag to your candidate starting commit and then manually request that the job be built (You'll need to build this job manually if you push this tag without code changes.)
+We have created a Jenkins build for this tag, to help you choose a good starting point for your work for this exercise.  Push the tag to your candidate starting commit and then manually request that the job be built, if Jenkins does not build it automatically.
 
 If you place the tag at the wrong commit, and need to change it, you will need to delete it and recreate it.  Instructions for deleting tags can be found at the end of this document.
 
-It is expected that your development branch will start at this commit for exercise 2, so make sure your master branch is located at this commit before you start work on the features.  All named feature branches for exercise 2 should begin at this tagged commit or a later commit on the development branch.
+It is expected that your development branch will start at this commit for exercise 2, so make sure your `main` branch is located at this commit before you start work on the features.  You may need to request the help of the course team to achieve this, if your desired starting commit is behind the current commit on `main`.
+
+All named feature branches for exercise 2 should begin at this tagged commit or a later commit on the development branch.
 
 
 #### Git Workflow {.unnumbered #gitworkflow}
 
-As before, you should use feature branches to keep the work on each feature separate from the main development branch, until you are satisfied that the code is ready to be integrated into the main game code.  Please continue to follow the Stendhal team's practice of using the `master` branch as the development branch.
+As before, you should use feature branches to keep the work on each feature separate from the main development branch, until you are satisfied that the code is ready to be integrated into the main game code.  Please continue to follow the Stendhal team's practice of using the `main` branch as the development branch.
 
-Please use the feature branch names given on Blackboard for this exercise.  A change from the previous exercise is that you are likely to have more than one person working together for some issues, and therefore will have more than one person committing to your feature branch.  You are free to create sub-branches off this, if individual team members want to work in isolation for part of the work.  These sub-branches would then be merged into the feature branch; they should *not* be merged directly into the `master` branch.
+Please use the feature branch names given on Blackboard for this exercise.  A change from the previous exercise is that you are likely to have more than one person working together for some issues, and therefore will have more than one person committing to your feature branch.  You are free to create sub-branches off this, if individual team members want to work in isolation for part of the work.  These sub-branches would then be merged into the feature branch; they should *not* be merged directly into the `main` branch.
 
 Note that the branch names given on Blackboard are expected by the automated marking system.  Failure to use these exact names will mean that the marking system is unable to find and award marks for your work.
 
