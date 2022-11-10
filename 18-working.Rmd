@@ -321,7 +321,7 @@ All submission of work for this coursework exercise is through your team's GitLa
 
 Once the deadline is passed, you will lose developer access to your repository and will no longer be able to push any commits or change any references.  You will still have access to the issue tracker, but since all actions on the issue tracker are time-stamped, any changes you make after the deadline will be ignored for the purposes of marking the work.
 
-Your demo video should be uploaded to Blackboard.  Only one member of the team should upload the video.  We do not want to see multiple uploads of the same video on Blackboard.
+Your demo video should be uploaded to Blackboard, with a file name that includes your team name.  Only one member of the team should upload the video.  We do not want to see multiple uploads of the same video on Blackboard.
 
 
 ## Coursework Extensions {#xtensions}
@@ -366,12 +366,14 @@ Mark reductions apply to individual team members only.  There is no effect on th
 
 ## Messed up with your Git Repository?
 
-Each team can request the following repository reset actions **at most once** for this coursework exercise, should they need help starting again.
+Each team can request the following repository reset actions **at most once each** for this coursework exercise, should they need help starting again.
 
 * You can request that branch protection be removed from your repository.  This will allow you and all team members to be able to delete their feature branches, and to recreate them at a different location if wished.  Once branch protection has been removed, it will not be put back again.
 * You can request that your `main` branch be reset to the same commit as the `EX2_START` tag if pointing to.  This will remove any merges of feature branches into the repository since the start of the exercise.
 
 To request either or both of these options, please create an issue in your issue tracker called "Repository Reset Request".  The issue description must describe the request and must include a mention of Suzanne (so she knows you have requested it).  You can use @suzanne.embury@gmail.com for these mentions.
+
+Please note that the course team aim to respond to requests to reset your development branch or remove branch protection within 3 working days.  You should not expect the change to happen immediately, and should factor a delay of this long into your planning.  This also means that we will not accept any branch protection or reset requests after the end of the Tuesday team study session in the week of the deadline.
 
 
 ## Plagiarism
@@ -379,7 +381,6 @@ To request either or both of these options, please create an issue in your issue
 This coursework is subject to the University's policies on plagiarism.  Details can be found on the School web pages at:
 
 [studentnet.cs.manchester.ac.uk/assessment/plagiarism.php?view=ug](http://studentnet.cs.manchester.ac.uk/assessment/plagiarism.php?view=ug)
-
 
 Note that committing the work of other people from your GitLab account counts as plagiarism, and action will be taken when it is detected.  Rebasing commits authored by others does not count as plagiarism, providing the original authorship information is retained in the commit metadata.
 
