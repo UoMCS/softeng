@@ -102,15 +102,15 @@ Events in the week starting 1st November (reading week). Take a break if you're 
 ## Workflowing {#week7}
 Events in the week starting 7th November:
 
-1. **Team Study Tuesday**: Marking interviews part 1 of 3, see \@ref(mint)
+1. **Team Study Tuesday**: Team study
 1. **Workshop**: Git workflows with Suzanne Embury
-1. **Team Study Thursday** Marking interviews part 2 of 3, see \@ref(mint)
+1. **Team Study Thursday** Team study
 
 
 ## Refactoring {#week8}
 Events in the week starting 14th November:
 
-1. **Team Study Tuesday**: Marking interviews part 3 of 3, see \@ref(mint)
+1. **Team Study Tuesday**: Team study
 1. **Workshop**: Refactoring with Thomas Carroll
 1. **Team Study Thursday** Second mentoring session
 
