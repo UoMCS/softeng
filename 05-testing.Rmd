@@ -35,4 +35,3 @@ Following from what Tom demonstrated to you, you should now use Eclipse to creat
 ## Extension
 This should now have taken you until the end of the hour workshop. Tom will soon post an extension exercise, which looks at Test Driven Development in Stendhal, and will apply the techniques in an environment that is very useful for your second team coursework.
 
-`Document version:` `r format(Sys.time(), '%d %B, %Y')`

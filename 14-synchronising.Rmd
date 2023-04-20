@@ -205,5 +205,3 @@ You will find the whole process of collaborative coding using Git goes more smoo
 Of course, in this activity, we covered only a very simple synchronisation scenario.  As your team begins to push more code to your remote, you'll quickly encounter scenarios where the simple approach described in this document doesn't work.  These more involved scenarios (and how to handle them) are described chapter \@ref(committing) on "Integrating Your Commits with your Team's Commits".
 
 Good luck!
-
-`Document version:` `r format(Sys.time(), '%d %B, %Y')`

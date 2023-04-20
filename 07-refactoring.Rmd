@@ -187,5 +187,3 @@ See if you can use the three refactorings we have used in this workshop to impro
 :::
 
 Good luck!
-
-`Document version:` `r format(Sys.time(), '%d %B, %Y')`

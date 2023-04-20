@@ -214,4 +214,3 @@ You do not have to create a complete implementation.  Just sketch out the change
 
 There is no single right answer to this.  Several approaches could work.  If you are unsure, just try one and see how it looks when it is sketched out.  Discuss your answer with staff if unsure.
 
-`Document version:` `r format(Sys.time(), '%d %B, %Y')`

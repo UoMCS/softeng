@@ -1,7 +1,6 @@
 ---
 title: "Software engineering"
-author: Suzanne Embury and the software engineering team
-# date: "last updated `r format(Sys.time(), '%d %B, %Y')`"
+author: Suzanne Embury and the software engineering team. The text of this guidebook is licensed CC-BY-NC-ND and was last updated on `r format(Sys.time(), '%d %B, %Y')`
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [software-engineering.bib]
@@ -155,9 +154,7 @@ This license means you can copy and redistribute the written material provided t
 See the [full license](https://creativecommons.org/licenses/by-nc-nd/3.0/) (CC-BY-NC-ND) for details.
 
 ### Your privacy {#privacy}
-This site is hosted on [netlify.com](https://www.netlify.com/), see the [netlify privacy policy](https://www.netlify.com/privacy/). This site also uses [Google Analytics](https://en.wikipedia.org/wiki/Google_Analytics) to understand our audience better which is compliant with the General Data Protection Regulation (GDPR). If you want to, you can opt out using the [Google Analytics Opt-out Browser Add-on](https://tools.google.com/dlpage/gaoptout/).
-
-Some of these services use cookies. These can be disabled in your browser, see [allaboutcookies.org/manage-cookies](https://www.allaboutcookies.org/manage-cookies/)
+This site is hosted on [netlify.com](https://www.netlify.com/), see the [netlify privacy policy](https://www.netlify.com/privacy/). This site also uses [Plausible Analytics](https://plausible.io/) to understand our audience better which is compliant with the General Data Protection Regulation (GDPR). 
 
 So now that we've dispensed with the formalities, you can start using this laboratory manual.
 
@@ -212,5 +209,3 @@ So now that we've dispensed with the formalities, you can start using this labor
 
 
 (ref:mentors) Airbus, Airnode, Alphabet (Google), AND Digital, Apadmi, Apple, ARM, Auto Trader UK, Barclays, the BBC, Bet365, Beyond Trust, Biorelate, BJSS, Blaize, Bloomberg, Booking.com, Brightec, CERN, CDL Software, Codat, CodeThink, Code Computer Love, Cognizant, Couchbase, Cubic Motion (now Epic Games), DAI, DataCentred, Digital Bridge Ltd, Disney Streaming, EGN Digital, Farm Digital, Giant Digital, Goldman Sachs, IBM, Interact Software, Ivanti, Koder.ly, Matillion, MediaTek, Meta (Facebook), Microsoft, Moonpig, Morgan Stanley, Nandos, NCC Group, On The Beach, Peak.ai, Rental Cars, Sainsburys, Sage Group plc, Shout Platform Limited, Siemens (Mentor Graphics), SKY, Slalom, Spotify, SteamaCo, The Startup Factory, THG, ThoughtWorks, Tranzfar, UK Parliament, UL, Unipart Digital and Zuhlke.
-
-`Document version:` `r format(Sys.time(), '%d %B, %Y')`

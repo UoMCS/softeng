@@ -506,5 +506,3 @@ The code that executes the repository reset requests will be run every couple of
 
 This completes the instructions for the second individual coursework exercise for this course unit.  If you managed to complete it in full, then you'll be all set to apply the same skills to the team coursework.  You will have practiced some basic test first development.  And you'll be ready to collaborate on team Git projects, and to handle the code integration conflicts this so often entails.  You should also have a better understanding of the practical importance of writing clear, focussed commits.
 
-
-`Document version:` `r format(Sys.time(), '%d %B, %Y')`

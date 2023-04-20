@@ -11,4 +11,3 @@ knitr::include_graphics("images/git.png")
 This workshop will look at different workflows you can use. Course material for this chapter is on blackboard [online.manchester.ac.uk](https://online.manchester.ac.uk) and delivered by live sessions.
 
 
-`Document version:` `r format(Sys.time(), '%d %B, %Y')`

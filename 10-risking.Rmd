@@ -11,5 +11,3 @@ knitr::include_graphics("images/covid_risk_chart.png")
 
 Course material for this chapter is on blackboard [online.manchester.ac.uk](https://online.manchester.ac.uk)
 
-
-`Document version:` `r format(Sys.time(), '%d %B, %Y')`

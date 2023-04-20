@@ -40,5 +40,3 @@ We've split the tasks evenly here, though in practice you would probably give th
 
 <!--### Breaking things down {#btd} -->
 
-
-`Document version:` `r format(Sys.time(), '%d %B, %Y')`

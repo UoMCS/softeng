@@ -479,5 +479,3 @@ For ease of reference, a list of these is presented:
 
 
 
-
-`Document version:` `r format(Sys.time(), '%d %B, %Y')`

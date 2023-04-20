@@ -261,5 +261,3 @@ The School's CI server is administered by Chris Page.  Technical faults and outa
 
 Bugs or feature requests for the RoboTA system should be reported through the project issue tracker at [gitlab.cs.man.ac.uk/institute-of-coding/robota-issue-tracker](https://gitlab.cs.man.ac.uk/institute-of-coding/robota-issue-tracker)
 
-
-`Document version:` `r format(Sys.time(), '%d %B, %Y')`

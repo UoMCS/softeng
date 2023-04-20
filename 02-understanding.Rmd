@@ -387,4 +387,3 @@ assertNotSame(String message, expected, actual)
 Checks that both variables refer to different objects.
 
 
-`Document version:` `r format(Sys.time(), '%d %B, %Y')`

@@ -407,5 +407,3 @@ It is recommended that operations on your team repository, such as correcting th
 
 <!--Team coursework 3: Migrating a Family of Features removed-->
 
-
-`Document version:` `r format(Sys.time(), '%d %B, %Y')`

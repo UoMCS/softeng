@@ -62,5 +62,3 @@ Work on the issue as a team. Once you're happy that you've addressed the issue, 
 Once everything is complete, you'll want to feed your work back to the original codebase.
 
 For Github-hosted projects you do this by making a pull request: [help.github.com/articles/creating-a-pull-request](https://help.github.com/articles/creating-a-pull-request). You may also want to: post to relevant mailing lists/forums, contact the project owner on twitter.
-
-`Document version:` `r format(Sys.time(), '%d %B, %Y')`

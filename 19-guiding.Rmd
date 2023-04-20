@@ -68,5 +68,3 @@ Existing test cases will also give you lots of useful tips on where to locate yo
 You should not feel embarrassed about copying and pasting existing test code and modifying it to fit your own issue.  This is a normal survival technique for software engineers in the wild.  Do make sure though that you understand the code you have copied, at least at a high level.  Don't leave bits of code in there when you are not sure what they are for.  That will just lead to brittle and slow tests.
 
 Of course, since this is a coursework exercise, you *should* feel embarrassed about copying and pasting solutions written by the members of other teams for your issues.  That would be plagiarism. Just use your own version of the Stendhal code base, and the work of your team members, to build your own tests on.
-
-`Document version:` `r format(Sys.time(), '%d %B, %Y')`

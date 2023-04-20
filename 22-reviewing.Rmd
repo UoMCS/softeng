@@ -127,5 +127,3 @@ In (ref:coursecode), we ask you to carry out some basic buddy reviewing. Through
 You can also ask your industry mentor about code reviewing practices used in their organisation, and how they help the work of the team.
 
 Good luck!
-
-`Document version:` `r format(Sys.time(), '%d %B, %Y')`
