@@ -165,9 +165,9 @@ This estimate should be recorded using GitLab's Time Tracking functionality:
 
 At this stage, it is not important that your estimate is correct.  What is most important is that you make an attempt at estimating before starting to write code for the fix.
 
-You should also set a Due Date for each issue in the issue tracker.  This should be the date when the work on this individual issue should be completed by.  Note that this *should not* be the deadline for the coursework.  You need to complete your individual work on the issue in time to merge the work into the development branch and for the new release to be created.
+You must also set a Due Date for each issue in the issue tracker.  This should be the date when the work on this individual issue should be completed by.  Note that this *should not* be the deadline for the coursework.  You need to complete your individual work on the issue in time to merge the work into the development branch and for the new release to be created.
 
-You should now enter a comment to your issue in the issue tracker.
+You must now enter a comment to your issue in the issue tracker.
 Please use the following phrase, which will be searched for by RoboTA 🤖 the automated marking system:
 
 ```md
@@ -210,7 +210,9 @@ Failure to use the exact branch names specified will mean that the marking syste
 
 ## Step 5: Write Tests to Make Your Bug Visible {#stepfive}
 
-Before getting started on the fixes, each team member must ensure that the bug they are responsible for is visible in the test suite (the code under the `test` folder).  That means that the presence of the bug must be flagged up by at least one failing test.  To do this, you may need to modify an existing test to make the unwanted game behaviour visible or (if the behaviour containing the bug is not currently tested at all) you'll need to create a new test class from scratch.  It is important that you locate any new test cases sensibly in the Stendhal code base, so that other developers familiar with the organisation of the code will be able to find it easily.  You'll also need to work out how to use the test objects that the Stendhal team have provided, to set up the a game (or partial game) in the state needed to make the issue visible.
+Before getting started on the fixes, each team member must ensure that the bug they are responsible for is visible in the test suite (the code under the `test` folder).  That means that the presence of the bug must be flagged up by *at least one* failing test.  To do this, you may need to modify an existing test to make the unwanted game behaviour visible or (if the behaviour containing the bug is not currently tested at all) you'll need to create a new test class from scratch.  It is important that you locate any new test cases sensibly in the Stendhal code base, so that other developers familiar with the organisation of the code will be able to find it easily.  You'll also need to work out how to use the test objects that the Stendhal team have provided, to set up the a game (or partial game) in the state needed to make the issue visible.
+
+Once your test(s) make the bug visible, you must commit your changes, with a suitable commit message.
 
 **You should keep track of how long you spend on this step, to the nearest hour.**  (Note this is the actual number of hours spent on the task, not the elapsed time between when you started on it and when you finished it.)  
 
@@ -308,7 +310,7 @@ Note that it is your team's collective responsibility to ensure that the status 
 The final technical step is to prepare the release.  Although several team members may contribute commits for this process, a single team member should take responsibility for carrying it out.  This team member should create an issue for this task called:
 
 ```md
-    Prepare release 1.40uom
+    Prepare release 1.43uom
 ```
 
 This issue should be associated with the coursework 1 milestone, and assigned to whichever team member is taking responsibility for carrying out the release task.
@@ -326,7 +328,7 @@ You will need to make these changes for your release too.  You can add them dire
 When you have created a commit that contains all the code and documentation you want to release, you should mark this by adding a *tag* at that commit.  The tag **must** be called:
 
 ```md
-    VERSION_01_RELEASE_40_UOM
+    VERSION_01_RELEASE_43_UOM
 ```
 
 This is the version of the code that we will consider to be your released code, when we are marking.  So, it is important that you place it at the right place.  You can create the tag locally and push it, or you can use the GitLab web interface to create the tag once the final release commit has been pushed.
@@ -337,38 +339,17 @@ This is the version of the code that we will consider to be your released code, 
 
 You are now done with the technical work. Now you must create your video demonstration.  
 
-In your video, you must demonstrate **two issues**, with **at least one issue being from Category B**:
-
-| **Category A**                                   | **Category B**                                   |
-|--------------------------------------------------|--------------------------------------------------|
-| - Haunchy doesn't accept charcoal <br/> - Lieutenant Drilenun suggests that a better weapon that 'rod of the GM' exists <br/> - Sheep pet prevents travel between zones <br/> - Typo in Fish soup for Hughie <br/> - Why does he ignore "horse hair"? |- Allow players to choose what masks they get from Fidorea <br/> - Coralia should have option to accept everything <br/> - Cheating on Zekiel's Practical Test |
-
-
-::: {.rmdcaution}
-
-(ref:cautionbox)
-
-If there is no issue present from Category B, then you will only receive credit for one of the issue demonstrations**.
-
-
-:::
-
-You must also reflect on your work as a team, looking forwards to tasks such as Team Coursework 2.
+In your video, you must demonstrate every issue that has been selected.
 
 The video must follow the format given below:
 
 1. The video must begin with video footage of each team member introducing themself and describing, very briefly, their role in the team.
-1.  For each of the two issues selected, the person who had responsibility for this issue must:
+1.  For each issue selected, the person who had responsibility for this issue must:
     * Explain the issue
+    * Show in-game footage demonstrating the issue
     * Show in-game footage, with narrated explanations, confirming that the issue is fixed
     * Show and explain test code used to expose the issue in the test suite
     * Show and explain code used to fix the issue
-1. Discuss how you organised your workload across the team
-1. Discuss what monitoring steps you've taken to keep the work of the team on track for the deadline.
-1. Reflect on the team exerise:
-    * what went well?
-    * What will you take forwards into the next team exercise?
-    * What will you do better next time?
 
 To create your video, you might find the following software useful (these are only suggestions and shold not be taken as a requirement or endorsement to use them):
 
@@ -381,7 +362,7 @@ To create your video, you might find the following software useful (these are on
 Note that all team members must **make an appearance in the video, showing their face and their voice**.
 
 
-Your video **must not exceed 15 mins in length**. In cases where a video is longer than 15 minutes, the video will be **stopped** at 15 minutes; any content after this point will not be considered for your mark.
+Your video **must not exceed 20 mins in length**. In cases where a video is longer than 20 minutes, the video will be **stopped** at 20 minutes; any content after this point will not be considered for your mark.
 
 
 ::: {.rmdcaution}
@@ -407,18 +388,47 @@ The remaining submission of work for this coursework exercise is through your te
 Once the deadline is passed, you will temporarily lose developer role access to the repository and won't be able to make further changes to the code or commit graph.
 
 
+## Interview
+In weeks commencing 2023-11-06 and 2023-11-13, your team will be assigned an interview slot, to take place some time within a timetabled lab session. 
 
-## Getting Feedback{#feedback}
+In this interview, your team will meet with a GTA marker, and you will have a disussion about your teamwork during the task.
 
-A “live” marking scheme for the exercise can be found on the CI server used for this course unit. You can obtain this by visiting the CI server: [https://ci.cs.manchester.ac.uk/jenkins/](https://ci.cs.manchester.ac.uk/jenkins/)   The marking scheme gives details of how the marks will be awarded, but also gives an interim mark for your team based on the work completed so far.  Of course, only some parts of the marking can be automated.  Others will need to be done by GTAs.  The GTA marking takes three forms:
+The structure will be as follows:
+
+1. Discuss how you organised your workload across the team
+1. Discuss what monitoring steps you've taken to keep the work of the team on track for the deadline.
+1. Reflect on the team exerise:
+    * what went well?
+    * What will you take forwards into the next team exercise?
+    * What will you do better next time?
+
+Please note that this is a discussion and *not* a presentation - you will not be allowed to use slides, and the discussion will be lead by the GTA marker.
+
+You will receive verbal feedback at the end of the interview.
+
+## Marking {#marking}
+
+Assessment takes four forms:
 
 1. Pre-deadline annotation of commits.  Each week, your assigned GTA will look at your commits and add annotations to tell the automated marking code which parts of the exercise each commit contributes to.  You should take note of these annotations and let your GTA know if you believe the annotation is incorrect.
 1. Post-deadline marking of your team process and the changes you have made to the code base.
-1. Marking based on your video demonstration and reflection.
+1. Marking based on your video demonstration
+1. Marking base on your interview
 
 Once the deadline is passed, you will temporarily lose developer role access to the repository and won't be able to make further changes to the code or commit graph.  At this point, we will clone your team repository and the automated marking process will finalise as many of the marks as it can.  When the GTAs have completed the remaining marking process, the marks will be uploaded to Jenkins and your final mark plus feedback will be visible in your team's RoboTA build.
 
 You'll get developer access back once the next coursework exercise begins.
+
+
+
+## Getting Feedback{#feedback}
+
+There are several ways that you will receive feedback on this assignment:
+
+
+1. ** BEFORE SUBMISSION: ** A “live” marking scheme for the exercise can be found on the CI server used for this course unit. You can obtain this by visiting the CI server: [https://ci.cs.manchester.ac.uk/jenkins/](https://ci.cs.manchester.ac.uk/jenkins/)   The marking scheme gives details of how the marks will be awarded, but also gives an interim mark for your team based on the work completed so far.  Of course, only some parts of the marking can be automated. 
+1. ** DIRECTLY AFTER YOUR INTERVIEW: ** You will receive verbal feedback from your GTA Marker on your teamwork
+1. ** AFTERWARDS: ** The complete marking report will be released, incorporating marks from your code, the video, and the interview.
 
 
 
