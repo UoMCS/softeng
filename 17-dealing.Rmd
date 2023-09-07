@@ -5,9 +5,10 @@ Team Coursework 1: Dealing with Small Scale Code Changes
 **Coursework Lead: Tom Carroll**
 
 ## Key  Information
-* Submission Deadline:  <span style="color:red">**2022-10-28 18:00**</span>
-* Final Grades and Feedback to be released on or before: 2022-11-25 *(within 15 University working days of the submission deadline; Days within Reading week are not counted as working days)*
-* You can obtain [pre-deadline feedback](#feedback) throughout the coursework exercise.
+* Submission Deadline:  <span style="color:red">**2023-10-27 18:00**</span>
+* You can obtain [pre-deadline feedback](#feedback) throughout the coursework exercise, via the RoboTA Report.
+* You can receive verbal feedback after your Teamwork Interview.
+* Final Grades and Feedback to be released on or before: 2022-11-24 *(within 15 University working days of the submission deadline; Days within Reading week are not counted as working days)*
 * A summary of penalties can be [found here](#penalties)
 
 
