@@ -20,20 +20,22 @@ We are not just asking you to fix the bugs.  We are asking you to work like a pr
 
 Your team must then prepare a new release of the Stendhal code, correctly documenting all the changes you have implemented.
 
-Finally, your team is required to produce a video which demonstrates your work and reflects on the exercise.
+Your team is required to produce a video which demonstrates your work.
+
+Your team will be interviewed face-to-face, giving you an opportunity to reflect on your teamwork.
 
 The exercise will test your ability to:
 
 * make use of a simple Git workflow, based on feature branches, to allow multiple coders to work safely on a code base at the same time,
 * use an automated test suite to make code changes to a large body of code without causing regression,
 * write new tests to make bugs visible before you fix them,
-* use code reading techniques to locate the parts of a large software system that are relevant to a particular ug,
+* use code reading techniques to locate the parts of a large software system that are relevant to a particular bug,
 * prepare a good quality release incorporating the work of multiple developers, and  
 * present a professional demonstration of the work you have done, and reflect upon your team processes and how they can be improved.
 
 
 ## Deliverables
-Deliverables are contained in 2 parts:
+Deliverables are contained in 3 parts:
 
 *GitLab repository*:
 
@@ -46,9 +48,16 @@ Deliverables are contained in 2 parts:
 
 *Blackboard Submission*:
 
-* Video demonstration
+* Video demonstration of work
 
 You *must* familiarise yourself with the [submission instructions](#imdone), in order to submit your work in the proper way.
+
+*Interview*:
+
+* Discussion with marker about your teamwork
+* Reflection on process
+
+Please see [the information about the interview](#interviewInfo) for more information.
 
 **Work which is not submitted in the correct way will receive a mark of 0.**
 
@@ -61,7 +70,7 @@ It is important that you ensure your work is attributed to you in the proper man
 *Brain* is a Tech Lead at *Acme Solutions*, leading the development of the [*Taking Over The World Project*](https://en.wikipedia.org/wiki/Pinky_and_the_Brain). He wanted to find all commits authored by his Junior Dev, *Pinky*.
 He searches for all commits with the associated email address of `pinky@acme.com`, as per the company protocol on Git usage.
 
-Last night, Pinky used his personal laptop to push some commits, and forgot to change the email address in his git configuration, meaning his commits were associated with `_xX_pinky_the_lab_mouse_Xx_@free-email-address.com`. Pinky's boss (rightfully) did not trust that these commits were authored by Pinky, who then faced disciplinary action.
+Last night, Pinky used his personal laptop to push some commits, and forgot to change the email address in his git configuration, meaning his commits were associated with `_xX_pinky_the_lab_mouse_Xx_@.com`. Pinky's boss (rightfully) did not trust that these commits were authored by Pinky, who then faced disciplinary action.
 
 :::
 
@@ -74,6 +83,8 @@ It is very important that you use the correct email address to attribute your au
 Please make sure you set the `user.name` and `user.email` variables on all machines you intend to commit from.  Your email needs to be your `firstname.lastname@student.manchester.ac.uk` address. No aliases will work - it has to follow that format.
 
 It is your responsibility to ensure the correct email address is used, though the RoboTA report (viewable throughout the exercise) will attempt to inform you of such an issue.
+
+The RoboTA report (which is available for pre-deadline feedback) will flag up to you if it detects an unexpected email address, but this should not be relied upon to determine that you have used the correct email address - that is your responsibility.
 
 **Commits made from other accounts (or aliases of your university account) will NOT be considered to be part of your team's submission for the exercise.<br/>Any individual who does not use their correct email address for any of their commits will be deemed a [non-contributing member](#passengers) and will be given a mark of 0**
 
@@ -92,13 +103,15 @@ Following the same process covered in the workshops, each team member should acq
 ## Step 2: Assign the Issues {#steptwo}
 There are a number of issues to the project's issue tracker, each of which will describe a bug or problem with the code base that you are asked to fix.
 
-Issues are broken into two categories; Category A and Category B:
 
-
-
-| **Category A**                                   | **Category B**                                   |
-|--------------------------------------------------|--------------------------------------------------|
-| - Haunchy doesn't accept charcoal <br/> - Lieutenant Drilenun suggests that a better weapon exists <br/> - Sheep pet prevents travel between zones <br/> - Fish soup for Hughie <br/> - Why does he ignore "horse hair"? |- Players can't choose what masks they get from Fidorea <br/> - Coralia should have option to accept everything <br/> - Cheating on Zekiel's Practical Test |
+1. Haunchy doesn't accept charcoal
+1. Lieutenant Drilenun suggests that a better weapon exists
+1. Sheep pet prevents travel between zones
+1. Fish soup for Hughie 
+1. Why does he ignore "horse hair"?
+1. Players can't choose what masks they get from Fidorea
+1. Coralia should have option to accept everything 
+1. Cheating on Zekiel's Practical Test
 
 
 For each issue in this list, perform a minimal examination of the code base and decide as a team who will be responsible for fixing each bug.  
@@ -109,8 +122,7 @@ If your team has the same number of members as there are issues, then you should
 
 If your team has fewer members than issues:
 
-* you must select which issues to fix, with  **at least one issue from Category B** (not selecting an issue from Category B will cause problems with making your video reflection)
-
+* you must select which issues to fix
 * leave any unselected issues unassigned, and remove them from the Coursework 1 Release milestone in your issue tracker.  The automated marking system will mark only those issues that are associated with the milestone at the deadline.
 
 
