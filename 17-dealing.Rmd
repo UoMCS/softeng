@@ -347,7 +347,7 @@ The video must follow the format given below:
 1.  For each issue selected, the person who had responsibility for this issue must:
     * Explain the issue
     * Show in-game footage demonstrating the issue
-    * Show in-game footage, with narrated explanations, confirming that the issue is fixed
+    * Show in-game footage, demonstrating that the issue is fixed
     * Show and explain test code used to expose the issue in the test suite
     * Show and explain code used to fix the issue
 
@@ -393,8 +393,9 @@ In weeks commencing 2023-11-06 and 2023-11-13, your team will be assigned an int
 
 In this interview, your team will meet with a GTA marker, and you will have a disussion about your teamwork during the task.
 
-The structure will be as follows:
+The general topics will be as follows:
 
+1. Discuss how you used the toolset during the task
 1. Discuss how you organised your workload across the team
 1. Discuss what monitoring steps you've taken to keep the work of the team on track for the deadline.
 1. Reflect on the team exerise:
@@ -403,6 +404,8 @@ The structure will be as follows:
     * What will you do better next time?
 
 Please note that this is a discussion and *not* a presentation - you will not be allowed to use slides, and the discussion will be lead by the GTA marker.
+Please be prepared to demonstrate the running of Stendhal, as well as to display and discuss your Git graph.
+
 
 You will receive verbal feedback at the end of the interview.
 
@@ -426,9 +429,9 @@ You'll get developer access back once the next coursework exercise begins.
 There are several ways that you will receive feedback on this assignment:
 
 
-1. ** BEFORE SUBMISSION: ** A “live” marking scheme for the exercise can be found on the CI server used for this course unit. You can obtain this by visiting the CI server: [https://ci.cs.manchester.ac.uk/jenkins/](https://ci.cs.manchester.ac.uk/jenkins/)   The marking scheme gives details of how the marks will be awarded, but also gives an interim mark for your team based on the work completed so far.  Of course, only some parts of the marking can be automated. 
-1. ** DIRECTLY AFTER YOUR INTERVIEW: ** You will receive verbal feedback from your GTA Marker on your teamwork
-1. ** AFTERWARDS: ** The complete marking report will be released, incorporating marks from your code, the video, and the interview.
+* BEFORE SUBMISSION: A “live” marking scheme for the exercise can be found on the CI server used for this course unit. You can obtain this by visiting the CI server: [https://ci.cs.manchester.ac.uk/jenkins/](https://ci.cs.manchester.ac.uk/jenkins/)   The marking scheme gives details of how the marks will be awarded, but also gives an interim mark for your team based on the work completed so far.  Of course, only some parts of the marking can be automated. 
+* DIRECTLY AFTER YOUR INTERVIEW:You will receive verbal feedback from your GTA Marker on your teamwork
+* AFTERWARDS: The complete marking report will be released, incorporating marks from your code, the video, and the interview.
 
 
 
