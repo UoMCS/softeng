@@ -14,11 +14,14 @@ Estimating how long something will take is often a challenging task and why many
 
 One technique for improving the accuracy (and justifiably) of your estimates is called Work Breakdown Structures (WBS) which is explained in the video in figure \@ref(fig:wbs-video-fig).
 
-```{r wbs-video-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap = "(ref:captionestimationvid)"}
+
+
+```{r wbs-video-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap = "(ref:captionestimationvid)
+
+knitr::include_url('https://youtube.com/embed/tKCfnF-z2hY')
+}
 ```
 
-<!--knitr::include_url('https://youtube.com/embed/tKCfnF-z2hY')
--->
 
 (ref:captionestimationvid) Work Breakdown Structures (WBS) will help to improve the accuracy and justifiability of your cost estimations in software engineering. You can also watch the full seven minute video embedded in this figure at [youtu.be/tKCfnF-z2hY](https://youtu.be/tKCfnF-z2hY)
 

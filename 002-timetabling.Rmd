@@ -51,17 +51,17 @@ knitr::kable(io_table, caption = "The weekly schedule for this twelve week cours
 
 ## Automating {#week1}
 
-Events in the week starting 26th September:
+Events in the week starting 24th September:
 
 1. **Team Study Tuesday**: Work on individual coursework 1 described in chapter \@ref(gitting)
-1. **One off lecture** to introduce the course unit at 3pm on Friday 30th September, Lecture Theatre A, Engineering Building A [timetables.manchester.ac.uk](https://timetables.manchester.ac.uk/)
+1. **One off lecture** to introduce the course unit see  [timetables.manchester.ac.uk](https://timetables.manchester.ac.uk/)
 1. **Workshop**: Automated build and test with Duncan Hull
 1. **Team Study Thursday** Work on individual coursework 1 described in chapter \@ref(gitting)
 <!--1. **Coursework deadlines**: Individual individual coursework 1 can be pre-marked (automatically) if you submit by **6pm Tuesday 28th September** and finally marked when submitted by **6pm on Friday 1st October**-->
 
 
 ## Reading {#week2}
-Events in the week starting 3rd October:
+Events in the week starting 2nd October:
 
 1. **Team Study Tuesday**: Individual coursework 2 starts, see chapter \@ref(conflicting). Meet your team on Teams
 1. **Workshop**: Reading large code bases with Thomas Carroll
@@ -69,7 +69,7 @@ Events in the week starting 3rd October:
 1. **Coursework deadlines**: Individual coursework 1
 
 ## Debugging {#week3}
-Events in the week starting 10th October:
+Events in the week starting 9th October:
 
 1. **Team Study Tuesday**: Working on team coursework
 1. **Workshop**: Debugging codebases with Thomas Caroll
@@ -78,7 +78,7 @@ Events in the week starting 10th October:
 
 
 ## Estimating {#week4}
-Events in the week starting 17th October:
+Events in the week starting 16th October:
 
 1. **Team Study Tuesday**: Working on team coursework
 1. **Workshop**: Cost estimation with Duncan Hull
@@ -86,7 +86,7 @@ Events in the week starting 17th October:
 
 
 ## Testing {#week5}
-Events in the week starting 24th October:
+Events in the week starting 23rd October:
 
 1. **Team Study Tuesday**: Working on team coursework
 1. **Workshop**: Test first development with Thomas Carroll
@@ -95,12 +95,12 @@ Events in the week starting 24th October:
 
 
 ## Pausing {#week6}
-Events in the week starting 1st November (reading week). Take a break if you're ahead, or catchup if you've fallen behind.
+Events in the week starting 30th October (reading week). Take a break if you're ahead, or catchup if you've fallen behind.
 
 1. There are no activities in reading week
 
 ## Workflowing {#week7}
-Events in the week starting 7th November:
+Events in the week starting 6th November:
 
 1. **Team Study Tuesday**: Team study
 1. **Workshop**: Git workflows with Suzanne Embury
@@ -108,7 +108,7 @@ Events in the week starting 7th November:
 
 
 ## Refactoring {#week8}
-Events in the week starting 14th November:
+Events in the week starting 13th November:
 
 1. **Team Study Tuesday**: Team study
 1. **Workshop**: Refactoring with Thomas Carroll
@@ -116,7 +116,7 @@ Events in the week starting 14th November:
 
 
 ## Testing {#week9}
-Events in the week starting 21st November:
+Events in the week starting 20th November:
 
 1. **Team Study Tuesday**: Working on team coursework
 1. **Workshop**: Design for testability Thomas Carroll
@@ -124,7 +124,7 @@ Events in the week starting 21st November:
 
 
 ## Patterning {#week10}
-Events in the week starting 28th November:
+Events in the week starting 27th November:
 
 1. **Team Study Tuesday**: Working on team coursework
 1. **Workshop**: Design patterns with Liping Zhao
@@ -133,7 +133,7 @@ Events in the week starting 28th November:
 
 
 ## Managing {#week11}
-Events in the week starting 5th December:
+Events in the week starting 4th December:
 
 1. **Team Study Tuesday**:  Marking sessions
 1. **Workshop**: Risk management and practice exam with Liping Zhao
@@ -142,7 +142,7 @@ Events in the week starting 5th December:
 
 
 ## Challenging {#week12}
-Events in the week starting 12th December:
+Events in the week starting 11th December:
 
 1. **Team Study Tuesday**: Marking sessions
 1. **Workshop**: Open source challenge with Liping Zhao
