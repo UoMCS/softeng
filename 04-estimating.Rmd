@@ -16,10 +16,11 @@ One technique for improving the accuracy (and justifiably) of your estimates is 
 
 
 
-```{r wbs-video-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap = "(ref:captionestimationvid)
+
+```{r wbs-video-fig, echo = FALSE, fig.align = "center", out.width = "100%", fig.cap = "(ref:captionestimationvid)"}
 
 knitr::include_url('https://youtube.com/embed/tKCfnF-z2hY')
-}
+
 ```
 
 
