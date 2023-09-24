@@ -30,18 +30,18 @@ The weekly schedule is shown in \@ref(tab:schedtable).
 ```{r schedtable, echo = FALSE}
 io_table <- tibble::tribble(
     ~ "Week no."       , ~ "Subject",      ~ "Deadlines",
-  "**1**: 26th Sept"            , "Automated build and test, see (ref:weekone)",  "",
-  "**2**: 3rd Oct"              , "Reading large codebases, see (ref:weektwo)",  "IndCwk1, Fri 7th Oct, 6pm",
-  "**3**: 10th Oct"             , "Debugging, see (ref:weekthree)", "",
-  "**4**: 17th Oct"             , "Cost estimation, see (ref:weekfour)",  "Mentoring week 1, IndCwk2, Fri 21st Oct, 6pm",
-  "**5**: 24th Oct"             , "Test first development, see (ref:weekfive)", "TeamCwk1, 28th Oct, 6pm",
-  "**6**: 31st Oct"              , "Reading week see (ref:weeksix)", "",
-  "**7**: 7th Nov"              , "Git workflows, see (ref:weekseven)",  "",
-  "**8**: 14th Nov"             , "Software refactoring, see (ref:weekeight)", "Mentoring week 2",
-  "**9**: 21st Nov"            , "Design for testability, see (ref:weeknine)", "",
-  "**10**: 28th Nov"            , "Design patterns, see (ref:weekten)", "TeamCwk2, 5th Dec, 6pm",
-  "**11**: 5th Dec"             , "Risk management and practice exam, see (ref:weekeleven)", "",
-  "**12**: 12th Dec"            , "Open source challenge, see (ref:weektwelve)", "",
+  "**1**: 25th Sept"            , "Automated build and test, see (ref:weekone)",  "",
+  "**2**: 2nd Oct"              , "Reading large codebases, see (ref:weektwo)",  "IndCwk1, Fri 6th Oct, 6pm",
+  "**3**: 9th Oct"             , "Debugging, see (ref:weekthree)", "",
+  "**4**: 16th Oct"             , "Cost estimation, see (ref:weekfour)",  "Mentoring week 1, IndCwk2, Fri 20th Oct, 6pm",
+  "**5**: 23rd Oct"             , "Test first development, see (ref:weekfive)", "TeamCwk1, 27th Oct, 6pm",
+  "**6**: 30th Oct"              , "Reading week see (ref:weeksix)", "",
+  "**7**: 6th Nov"              , "Git workflows, see (ref:weekseven)",  "",
+  "**8**: 13th Nov"             , "Software refactoring, see (ref:weekeight)", "Mentoring week 2",
+  "**9**: 20th Nov"            , "Design for testability, see (ref:weeknine)", "",
+  "**10**: 27th Nov"            , "Design patterns, see (ref:weekten)", "TeamCwk2, 1st Dec, 6pm",
+  "**11**: 4th Dec"             , "Risk management and practice exam, see (ref:weekeleven)", "",
+  "**12**: 11th Dec"            , "Open source challenge, see (ref:weektwelve)", "",
 
 )
 knitr::kable(io_table, caption = "The weekly schedule for this twelve week course, please note we are using the week numbering from the [timetables.manchester.ac.uk](https://timetables.manchester.ac.uk/) where week zero is welcome week, and week one is the first teaching week", booktabs = TRUE)
