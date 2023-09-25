@@ -154,12 +154,12 @@ Help is also available through the Piazza discussion forum (ref:piazzaforum)
 
 ### Step One: Start Eclipse {#starteclipse}
 
-First we need to run Eclipse (or the IDE you have chosen to use for this activity, if using a different one).  If working from home, you should use the VM provided by the department.
+First we need to run Eclipse (or the IDE you have chosen to use for this activity, if using a different one). 
 
 Start (ref:ideversion).  From the command line, this is done by typing:
 
 ````md
-/opt/eclipse-2020-03/eclipse
+/opt/eclipse-2022-12/eclipse
 ````
 
 You can also find it in the `Applications` menu, under `Programming`.
