@@ -160,15 +160,15 @@ So now that we've dispensed with the formalities, you can start using this labor
 
 
 <!--boilerplate text and constants that gets re-used throughout-->
-(ref:ideversion) `2020-03`  
+(ref:ideversion) `2022-12`  
 
 (ref:commit-were-using) `5450a33`  
 
 (ref:commit-message) `Organize imports`
 
-(ref:repoURI) [https://gitlab.cs.man.ac.uk/COMP23311_2022/sliding_puzzle_&lt;your-username&gt;.git](https://gitlab.cs.man.ac.uk/COMP23311_2022/sliding_puzzle-your-username.git)
+(ref:repoURI) [https://gitlab.cs.man.ac.uk/COMP23311_2023/sliding_puzzle_&lt;your-username&gt;.git](https://gitlab.cs.man.ac.uk/COMP23311_2023/sliding_puzzle-your-username.git)
 
-(ref:repo2URI) [https://gitlab.cs.man.ac.uk/COMP23311_2022/sliding_puzzle2_&lt;your-username&gt;.git](https://gitlab.cs.man.ac.uk/COMP23311_2022/sliding_puzzle2-your-username.git)
+(ref:repo2URI) [https://gitlab.cs.man.ac.uk/COMP23311_2023/sliding_puzzle2_&lt;your-username&gt;.git](https://gitlab.cs.man.ac.uk/COMP23311_2023/sliding_puzzle2-your-username.git)
 
 (ref:coursecode) COMP23311  
 
@@ -194,18 +194,18 @@ So now that we've dispensed with the formalities, you can start using this labor
 
 (ref:percentage) 7  
 
-(ref:deadline) 6.00pm, Friday 7th October 2022  
+(ref:deadline) 6.00pm, Friday 6th October 2023  
 
-(ref:deadline2) 6.00pm, Friday 21st October 2022  
+(ref:deadline2) 6.00pm, Friday 20th October 2023  
 
-(ref:feedbackdateindicwk2) 6.00pm, Friday 14th October 2022
+(ref:feedbackdateindicwk2) 6.00pm, Friday 13th October 2023
 
 (ref:numsteps) 9  
 
 
-(ref:piazzaforum) [piazza.com/class/l7j4na2gfwn2q8](https://piazza.com/class/l7j4na2gfwn2q8)
+(ref:piazzaforum) [piazza.com/class/lm0s5lzly5q41i](https://piazza.com/class/lm0s5lzly5q41i)
 
-(ref:livehelpqueue) [gitlab.cs.man.ac.uk/comp23311_2022/COMP23311-Live-Help-Queue](https://gitlab.cs.man.ac.uk/comp23311_2022/COMP23311-Live-Help-Queue/)
+(ref:livehelpqueue) [gitlab.cs.man.ac.uk/comp23311_2023/COMP23311-Live-Help-Queue](https://gitlab.cs.man.ac.uk/comp23311_2023/COMP23311-Live-Help-Queue/)
 
 
 (ref:mentors) Airbus, Airnode, Alphabet (Google), AND Digital, Apadmi, Apple, ARM, Auto Trader UK, Barclays, the BBC, Bet365, Beyond Trust, Biorelate, BJSS, Blaize, Bloomberg, Booking.com, Brightec, CERN, CDL Software, Codat, CodeThink, Code Computer Love, Cognizant, Couchbase, Cubic Motion (now Epic Games), DAI, DataCentred, Digital Bridge Ltd, Disney Streaming, EGN Digital, Farm Digital, Giant Digital, Goldman Sachs, IBM, Interact Software, Ivanti, Koder.ly, Matillion, MediaTek, Meta (Facebook), Microsoft, Moonpig, Morgan Stanley, Nandos, NCC Group, On The Beach, Peak.ai, Rental Cars, Sainsburys, Sage Group plc, Shout Platform Limited, Siemens (Mentor Graphics), SKY, Slalom, Spotify, SteamaCo, The Startup Factory, THG, ThoughtWorks, Tranzfar, UK Parliament, UL, Unipart Digital and Zuhlke.

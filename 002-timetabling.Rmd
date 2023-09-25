@@ -53,7 +53,7 @@ knitr::kable(io_table, caption = "The weekly schedule for this twelve week cours
 
 Events in the week starting 24th September:
 
-1. **Team Study Tuesday**: Work on individual coursework 1 described in chapter \@ref(gitting)
+1. **Team Study Wednesday**: Work on individual coursework 1 described in chapter \@ref(gitting)
 1. **One off lecture** to introduce the course unit see  [timetables.manchester.ac.uk](https://timetables.manchester.ac.uk/)
 1. **Workshop**: Automated build and test with Duncan Hull
 1. **Team Study Thursday** Work on individual coursework 1 described in chapter \@ref(gitting)
@@ -63,7 +63,7 @@ Events in the week starting 24th September:
 ## Reading {#week2}
 Events in the week starting 2nd October:
 
-1. **Team Study Tuesday**: Individual coursework 2 starts, see chapter \@ref(conflicting). Meet your team on Teams
+1. **Team Study Wednesday**: Individual coursework 2 starts, see chapter \@ref(conflicting). Meet your team on Teams
 1. **Workshop**: Reading large code bases with Thomas Carroll
 1. **Team Study Thursday** Working on coursework
 1. **Coursework deadlines**: Individual coursework 1
@@ -71,7 +71,7 @@ Events in the week starting 2nd October:
 ## Debugging {#week3}
 Events in the week starting 9th October:
 
-1. **Team Study Tuesday**: Working on team coursework
+1. **Team Study Wednesday**: Working on team coursework
 1. **Workshop**: Debugging codebases with Thomas Caroll
 1. **Team Study Thursday** Working on team coursework
 1. **Coursework deadlines**: see blackboard
@@ -80,7 +80,7 @@ Events in the week starting 9th October:
 ## Estimating {#week4}
 Events in the week starting 16th October:
 
-1. **Team Study Tuesday**: Working on team coursework
+1. **Team Study Wednesday**: Working on team coursework
 1. **Workshop**: Cost estimation with Duncan Hull
 1. **Team Study Thursday** Meet your team mentor on Teams
 
@@ -88,7 +88,7 @@ Events in the week starting 16th October:
 ## Testing {#week5}
 Events in the week starting 23rd October:
 
-1. **Team Study Tuesday**: Working on team coursework
+1. **Team Study Wednesday**: Working on team coursework
 1. **Workshop**: Test first development with Thomas Carroll
 1. **Team Study Thursday** Working on team coursework
 1. **Coursework deadlines**: TeamCwk1 due
@@ -102,7 +102,7 @@ Events in the week starting 30th October (reading week). Take a break if you're 
 ## Workflowing {#week7}
 Events in the week starting 6th November:
 
-1. **Team Study Tuesday**: Team study
+1. **Team Study Wednesday**: Team study
 1. **Workshop**: Git workflows with Suzanne Embury
 1. **Team Study Thursday** Team study
 
@@ -110,7 +110,7 @@ Events in the week starting 6th November:
 ## Refactoring {#week8}
 Events in the week starting 13th November:
 
-1. **Team Study Tuesday**: Team study
+1. **Team Study Wednesday**: Team study
 1. **Workshop**: Refactoring with Thomas Carroll
 1. **Team Study Thursday** Second mentoring session
 
@@ -118,7 +118,7 @@ Events in the week starting 13th November:
 ## Testing {#week9}
 Events in the week starting 20th November:
 
-1. **Team Study Tuesday**: Working on team coursework
+1. **Team Study Wednesday**: Working on team coursework
 1. **Workshop**: Design for testability Thomas Carroll
 1. **Team Study Thursday** Working on team coursework
 
@@ -126,7 +126,7 @@ Events in the week starting 20th November:
 ## Patterning {#week10}
 Events in the week starting 27th November:
 
-1. **Team Study Tuesday**: Working on team coursework
+1. **Team Study Wednesday**: Working on team coursework
 1. **Workshop**: Design patterns with Liping Zhao
 1. **Team Study Thursday** Working on team coursework
 1. **Coursework deadlines**: TeamCwk2 due end of the week
@@ -135,7 +135,7 @@ Events in the week starting 27th November:
 ## Managing {#week11}
 Events in the week starting 4th December:
 
-1. **Team Study Tuesday**:  Marking sessions
+1. **Team Study Wednesday**:  Marking sessions
 1. **Workshop**: Risk management and practice exam with Liping Zhao
 1. **Team Study Thursday**  Marking sessions
 
@@ -144,7 +144,7 @@ Events in the week starting 4th December:
 ## Challenging {#week12}
 Events in the week starting 11th December:
 
-1. **Team Study Tuesday**: Marking sessions
+1. **Team Study Wednesday**: Marking sessions
 1. **Workshop**: Open source challenge with Liping Zhao
 1. **Team Study Thursday**
 1. **Coursework deadlines**:
@@ -155,7 +155,7 @@ We'll be using the following tools:
 
 ### Microsoft Teams {#msfteams}
 
-* Team study sessions take place on Microsoft Teams, login using your `@student.manchester.ac.uk` email address at [teams.microsoft.com](https://teams.microsoft.com/) or [download a native teams client](https://www.microsoft.com/en-gb/microsoft-teams/download-app) everthing else is in the guidebook at [software-eng.netlify.app/](https://software-eng.netlify.app/)
+* Team study sessions take place on Microsoft Teams, login using your `@student.manchester.ac.uk` email address at [teams.microsoft.com](https://teams.microsoft.com/) or [download a native teams client](https://www.microsoft.com/en-gb/microsoft-teams/download-app) everthing else is in the guidebook at [software-eng.netlify.app](https://software-eng.netlify.app/)
 * Teams is also the place to go for livestream if you're following the workshops online
 
 
