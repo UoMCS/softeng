@@ -36,7 +36,7 @@ First, you'll need to acquire a local copy of the Marauroa Project.
 
 The Department provides a range of Integrated Development Environments (IDEs) for use by students. You are welcome to use any of these IDEs to carry out the work for this workshop. However, we are only able to provide technical support for Eclipse, specifically (ref:ideversion). If you do want to use one of the other IDEs, we will do our best to help should you get stuck, but we can't guarantee to be able to fix all problems.  At the bare minimum, you should feel confident that you can do all the tasks listed in the introduction in your chosen IDE before you finalise the decision.
 
-The instructions that follow assume you are using (ref:ideversion) on a lab machine in the Kilburn building running Linux (not Windows). You can use Windows or Mac if you like, but we can't support multiple combinations of IDE's and operating systems.
+The instructions that follow assume you are using (ref:ideversion) on a lab machine in the Kilburn building running Linux (not Windows). You can use Windows or Mac if you like, but we (academic staff and graduate teaching assistants) can't support multiple combinations of operating systems, IDE's and software.
 
 You can start Eclipse from the Applications menu (under Programming) or the command line, by issuing the command:
 
