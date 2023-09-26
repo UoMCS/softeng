@@ -38,12 +38,7 @@ The Department provides a range of Integrated Development Environments (IDEs) fo
 
 The instructions that follow assume you are using (ref:ideversion) on a lab machine in the Kilburn building running Linux (not Windows). You can use Windows or Mac if you like, but we (academic staff and graduate teaching assistants) can't support multiple combinations of operating systems, IDE's and software.
 
-You can start Eclipse from the Applications menu (under Programming) or the command line, by issuing the command:
-
-````md
-/opt/eclipse-2022-12/eclipse &
-````
-
+You can start Eclipse from the Applications menu.
 
 ### Select the Workspace {#selectw}
 
@@ -193,7 +188,7 @@ The easiest way to check out a commit, branch or tag from within Eclipse is to u
 knitr::include_graphics("images/1.4historyTab.png")
 ```
 
-Look for the commit with SHA (ref:commit-were-using).  It should have the (not terribly helpful) commit message (ref:commit-message).  Right-click on it, and select `Checkout` from the menu that appears.
+Look for the commit with SHA (ref:commit-were-using).  It should have the (not terribly helpful) commit message (ref:commit-message). As of September 2023, this commit will show as being from "1 Year 6 Months ago".  Right-click on it, and select `Checkout` from the menu that appears.
 
 At this point, Eclipse will warn you that you are in a `detached HEAD` state shown in figure \@ref(fig:detachedHEAD-fig)
 
@@ -313,7 +308,7 @@ Right-click on the target we want to build and select *RunAs* from the menu.  Yo
 
 ::: {.rmdnote}
 
-**Note**: you can build a target from both the Outline view and the Ant view in the same way
+**Note**: you can build a target from both the Outline view and the Ant view in the same way. You can also do this via the terminal by navigating to the "git/marauroa" directory, and issueing the command "ant dist".
 
 :::
 
@@ -423,6 +418,12 @@ The other target is called `jacoco:report`. The name suggests that it has the jo
 Now that we know a little about what is happening inside the test-related targets, we'll run them.  Just as we did with the `dist` target when building the code, we're going to right-click on the `test` target, and select `Run As` > `Ant Build`.
 
 Please try that now.
+
+::: {.rmdnote}
+
+**Note**: Due to various updates in Eclipse and other software, sometimes we lose compatibility with bundled libraries. This may make your tests fail to run. If this is the case, you should run the tests via the terminal by navigating to the "git/marauroa" directory, and issueing the command "ant test".
+
+:::
 
 <!--image but with ANT VIEW-->
 
