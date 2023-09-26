@@ -145,8 +145,8 @@ There are several benefits for you and your employer as a mentor:
 
 1. Increasing visibility of your employer as an organisation that makes high quality software
 1. Share your knowledge and expertise: employers often complain that students could be taught better, this is your chance to improve the quality of teaching and prepare students for the workplace by making them aware of the realities of modern software engineering
-1. Career development: this is an opportunity for junior software engineers to demonstrate leadership and mentoring skills
-1. Digital badge: we're offering signed digital badges as micro-credentials to thank our volunteer mentors
+1. Career development: this is an opportunity for junior software engineers to demonstrate leadership and mentoring skills that might be difficult to get in their workplace
+<!--1. Digital badge: we're offering signed digital badges as micro-credentials to thank our volunteer mentors-->
 1. Fun: Many of our mentors enjoy the experience of working with young people as they take on a big software engineering project, often for the first time
 
 ## Who are the mentors? {#thanks}
