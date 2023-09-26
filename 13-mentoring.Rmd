@@ -152,6 +152,6 @@ There are several benefits for you and your employer as a mentor:
 ## Who are the mentors? {#thanks}
 We would like to thank all of our collaborators, partners and industry club members who have helped us to date including:
 
-(ref:mentors)
+(ref:mentors) 
 
 Thanks also to over 2,000 students who have taken the course since its inception in 2016 and given us feedback on how to improve it.
