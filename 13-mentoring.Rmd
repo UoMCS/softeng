@@ -41,7 +41,7 @@ When we are oversubscribed we will give higher priority to:
 * returning mentors, those employers who have already supported the scheme (see section \@ref(thanks))
 * female mentors, because women are under-represented in our community
 * BAME and other minority group mentors
-* alumni, especially former students who have done this course since 2016
+* alumni, especially former students who have done this course since 2016, all 2000 of them!
 * local employers, as part of the University's commitment to [civic engagement and social responsibility](https://www.manchester.ac.uk/discover/vision/#panel-civic-engagement)
 
 
