@@ -104,14 +104,10 @@ Following the same process covered in the workshops, each team member should acq
 There are a number of issues to the project's issue tracker, each of which will describe a bug or problem with the code base that you are asked to fix.
 
 
-1. Haunchy doesn't accept charcoal
-1. Lieutenant Drilenun suggests that a better weapon exists
-1. Sheep pet prevents travel between zones
-1. Fish soup for Hughie 
-1. Why does he ignore "horse hair"?
-1. Players can't choose what masks they get from Fidorea
-1. Coralia should have option to accept everything 
-1. Cheating on Zekiel's Practical Test
+1. Fisherman's License Quiz is not Fair
+1. Lying about Orbs
+1. Ketteh Wehoh Has No Manners
+1. Sheep Seller is not Helpful
 
 
 For each issue in this list, perform a minimal examination of the code base and decide as a team who will be responsible for fixing each bug.  
@@ -184,10 +180,10 @@ The branch names to use are as follows:
 
 | **Bug**                                   | **Branch Name**                                   |
 |--------------------------------------------------|--------------------------------------------------|
-|Haunchy doesn't accept charcoal| `haunchys_charcoal` <br/>
-Lieutenant Drilenun suggests that a better weapon exists| **`lieutenant_drilenun`**<br/>
-Sheep pet prevents travel between zones | `pets_prevent_movement`<br/>
-Fish soup for Hughie | `fish_soup`<br/>
+|Fisherman's License Quiz is not Fair| `FISHERMAN_QUIZ` <br/>
+Lying about Orbs| `LYING_ABOUT_ORBS`<br/>
+Ketteh Wehoh Has No Manners | `MEET_KETTEH`<br/>
+Sheep Seller is not Helpful | `SHEEP_SELLER`<br/>
 Why does he ignore "horse hair"? | `horse_hair`<br/>
 Players can't choose what masks they get from Fidorea| `not_random_masks` <br/>
 Coralia should have option to accept everything | `everything_for_coralia`<br/>
