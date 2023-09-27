@@ -108,6 +108,7 @@ There are a number of issues to the project's issue tracker, each of which will 
 1. Lying about Orbs
 1. Ketteh Wehoh Has No Manners
 1. Sheep Seller is not Helpful
+1. Baelin is a bit Quiet
 
 
 For each issue in this list, perform a minimal examination of the code base and decide as a team who will be responsible for fixing each bug.  
@@ -184,7 +185,7 @@ The branch names to use are as follows:
 Lying about Orbs| `LYING_ABOUT_ORBS`<br/>
 Ketteh Wehoh Has No Manners | `MEET_KETTEH`<br/>
 Sheep Seller is not Helpful | `SHEEP_SELLER`<br/>
-Why does he ignore "horse hair"? | `horse_hair`<br/>
+Baelin is a bit Quiet | `BAELIN_QUIET`<br/>
 Players can't choose what masks they get from Fidorea| `not_random_masks` <br/>
 Coralia should have option to accept everything | `everything_for_coralia`<br/>
 Cheating on Zekiel's Practical Test | `zekiels_test`
