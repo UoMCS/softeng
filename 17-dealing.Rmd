@@ -112,7 +112,7 @@ There are a number of issues to the project's issue tracker, each of which will 
 
 For each issue in this list, perform a minimal examination of the code base and decide as a team who will be responsible for fixing each bug.  
 
-You  now need to use the issue tracker to assign each bug to the decided responsible person;  **every member of the team must be assigned as the responsible person for one issue.**
+You  now need to use the issue tracker to assign each bug to the decided responsible person;  **every member of the team must be assigned as the responsible person for one issue.** Whilst the coding (and commits) should be done by one person per issue, it is encouraged to discuss your work with your team mates.
 
 If your team has the same number of members as there are issues, then you should plan to fix all the issues.  
 
