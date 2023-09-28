@@ -46,11 +46,11 @@ When we are oversubscribed we will give higher priority to:
 
 
 ## About us {#aboutus}
-The Department of Computer Science at the University of Manchester [www.cs.manchester.ac.uk](https://www.cs.manchester.ac.uk) is one of the oldest and biggest in the UK. The [world's first stored-program computer](http://www.computinghistory.org.uk/det/6013/The-Manchester-Baby-the-world-s-first-stored-program-computer-ran-its-first-program) (the “[Manchester Baby](https://en.wikipedia.org/wiki/Manchester_Baby)”) was developed here in 1948, by the engineers and scientists who would go on to found the Department. This was followed by:
+The Department of Computer Science at the University of Manchester [www.cs.manchester.ac.uk](https://www.cs.manchester.ac.uk) is one of the oldest and biggest in the UK. The [world's first stored-program computer](http://www.computinghistory.org.uk/det/6013/The-Manchester-Baby-the-world-s-first-stored-program-computer-ran-its-first-program) (the “[Manchester Baby](https://en.wikipedia.org/wiki/Manchester_Baby)”) was developed here in 1948, by the engineers and scientists who would go on to found the Department. [@KILBURN1949] This was followed by:
 
 * the first floating point machine
 * the first transistor computer
-* the first computer to use virtual memory
+* the first computer to use virtual memory [@Denning2022]
 
 This history of innovation continues today with cutting-edge research projects like SpiNNaker (part of the Billion Euro [Human Brain Project](https://www.humanbrainproject.eu/)) which has built a [million core ARM-powered neural High Performance Computer (HPC)](https://apt.cs.manchester.ac.uk/projects/SpiNNaker/project/). This is the world’s largest neuromorphic supercomputer.
 
