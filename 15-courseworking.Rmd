@@ -2,14 +2,6 @@
 
 # Individual Coursework 1 {#gitting}
 
-<!-- Changes for 2021/2022 -->
-
-<!-- Get students to push the feature branch before they do the merge.  I know it's a bit pointless, because the CI system isn't linked up to this project, but it fits the workflow we want them to use for the team coursework better.  This change will prevent some errors from students in the team coursework.-->
-
-<!-- Strengthen the explanation of how to request marking, and make sure it is clear that work won't get marked (and 0 marks will be awarded) if this is not done.  Make it clear that the time of submission is taken from when this is done.  (Some people this year created a separate issue with "Project ready for marking" as the issue title, and one person even created a commit with this as the commit message, adding this text to a CHANGES.txt file.) -->
-
-<!-- Make it clear that students cannot request remarking once their work has been marked, even if their personal deadline has not yet passed.  Copy ex 2 wording for this.-->
-
 ## Introduction {#introcw1}
 
 The first piece of coursework for (ref:coursecode) is an individual exercise designed to help you warm up your Git and Java skills after the long summer holidays, so that you are ready to collaborate with your team on the team-based coursework.  It takes you through the simple Git workflow we'll be using in the team coursework later in the semester and introduces some basic Java testing and debugging concepts.  You'll carry out the following steps:
@@ -45,7 +37,7 @@ The second index contains descriptions of more general symptoms:
 
 Use this index when something is going wrong but you do not have a specific error message to help you track down the cause of the problem.  
 
-Please report any problems you encounter that are not covered in the troubleshooter, giving details of specific error messages and screenshots where appropriate. You can report problems on the course unit forum (Piazza) or through the [Live Help Queue](https://gitlab.cs.man.ac.uk/comp23311_2021/COMP23311-Live-Help-Queue) in Team Study Sessions. We'll do our best to help!  
+Please report any problems you encounter that are not covered in the troubleshooter, giving details of specific error messages and screenshots where appropriate. You can report problems on the course unit forum (Piazza) or through the Live Help Queue in Team Study Sessions. We'll do our best to help!  
 
 :::
 
@@ -55,7 +47,7 @@ Please report any problems you encounter that are not covered in the troubleshoo
 
 The exercise will be marked out of (ref:totalmark), and will count towards (ref:percentage) percent of your total mark for the course unit.
 
-The deadline for the exercise is (ref:deadline)
+The deadline for the exercise can be found on Blackboard.
 
 You'll submit your work through your own private GitLab repository.  This is created for you, and should be visible in your personal project list through the GitLab web interface at
 
@@ -78,7 +70,7 @@ The time of submission will be the time at which this comment was added to the r
 
 If this exact phrase is not present as a comment on the coursework issue at the deadline, we will assume that you were not ready to submit the work and you'll get a mark of 0.
 
-You may delete and re-add the comment as many times as you like up until the formal deadline for the coursework.  Once your work has been marked, we will ignore any further changes to your issue tracker; it will not be possible to request marking for a second time once marking for your project is complete and the feedback has been uploaded to your issue tracker, even if the deadline has not yet passed.
+You may delete and re-add the comment as many times as you like up until the formal deadline for the coursework.  Once your work has been marked, we will ignore any further changes to your issue tracker; it will not be possible to request marking for a second time once marking for your project is complete and the feedback has been uploaded to your issue tracker, even you have been granted an extension and your extended deadline has not yet passed.
 
 Any changes to your repository made after the final eligible marking request comment will be ignored by the marking process.  So make sure you have definitely finished all your work, before you add the comment, especially if you are submitting after the deadline.
 
@@ -110,9 +102,9 @@ Note that we can only mark work that is present in your GitLab repository, while
 
 To give you a chance to see how well you have understood and applied the principles underlying this coursework exercise, we will run the marking code a little ahead of the deadline, to generate provisional marks and feedback on the work completed by that time.  The feedback and a provisional mark will appear on the GitLab issue tracker for the coursework repository.
 
-The provisional marking will take place on **Tuesday 28th September 2021, after 6.00pm**
+The provisional marking deadline is usually set for the end of week 1.  The exact deadline can be found on the Blackboard site for the course unit.
 
-You will then have 3 days to make corrections before the final marking process takes place, shortly after the coursework deadline on the Friday.
+You will then have several days to make corrections before the final marking process takes place, shortly after the final coursework deadline in week 2.
 
 You don't have to do anything specific to request this provisional marking.  We will mark all the repositories at this time, and provide what feedback we can based on whatever work you have done at that point.
 
@@ -143,11 +135,9 @@ This coursework is subject to the University's standard policy on plagiarism:
 
 ### How to Get Help {#help}
 
-Help with this exercise will be available in the two team study sessions in the week before the deadline for submission.  Team study sessions are scheduled on Tuesdays at 10.00am and on Thursdays at 11.00am.  Since the team coursework has not yet started, these sessions are run on a clinic basis: you only need to turn up if you need help with the individual coursework.  GTAs and academic staff will be available to provide help and advice.
+Help with this exercise will be available in the team study sessions before the deadline for submission.  See Blackboard [online.manchester.ac.uk](https://online.manchester.ac.uk) for details of when and where these sessions will run.
 
-See Blackboard [online.manchester.ac.uk](https://online.manchester.ac.uk) for details of how to access these sessions if you are joining them online.
-
-Help is also available through the Piazza discussion forum (ref:piazzaforum)
+Help is also available through the Piazza discussion forum (ref:piazzaforum).
 
 
 ## The Coursework Instructions {#instructions}
