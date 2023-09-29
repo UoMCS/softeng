@@ -546,9 +546,11 @@ If you make a mistake with the coursework, you can request a reset from staff.  
     Please reset repository, @suzanne.m.embury.
 ```
 
-We'll then reset the repository manually to the state it was at the start of the coursework.  Obviously, you'll then lose access to any commits you made for the coursework so far.
+Every few days, while the coursework is active, we will run an automated process that will detect this request and reset the repository to the state it was at the start of the coursework.
 
-You can only request one reset for this coursework exercise, so use it wisely.
+Obviously, you'll then lose access to any commits you made for the coursework so far, so use this mechanism with care.  If you decide you have made the reset request by mistake, you can avoid the reset by deleting the reset request comment on your issue before the reset code is next run.
+
+Note that you can only request one reset for this coursework exercise, so use it wisely.
 
 
 ### Coursework Complete {#gameover}
