@@ -6,7 +6,7 @@ Cost estimation, see figure \@ref(fig:xkcd-estimation-fig). Course material for 
 knitr::include_graphics("images/xkcd-estimation.png")
 ```
 
-(ref:captionxkcdestimation) Accurately estimating how long things will take can be hard. The author of the windows file copy dialog visits some friends: “I'm just outside town, so I should be there in fifteen minutes” ... “Actually, it's looking more like six days” ... “No Wait, thirty seconds”. [Estimation (xkcd.com/612)](https://xkcd.com/612/) by [Randall Munroe](https://en.wikipedia.org/wiki/Randall_Munroe) is licensed under [CC BY-NC 2.5](https://creativecommons.org/licenses/by-nc/2.5/)
+(ref:captionxkcdestimation) Accurately estimating how long things will take can be hard. The author of the windows file copy [dialog box](https://en.wikipedia.org/wiki/Dialog_box) visits some friends: “I'm just outside town, so I should be there in fifteen minutes” ... “Actually, it's looking more like six days” ... “No Wait, thirty seconds”. [Estimation (xkcd.com/612)](https://xkcd.com/612/) by [Randall Munroe](https://en.wikipedia.org/wiki/Randall_Munroe) is licensed under [CC BY-NC 2.5](https://creativecommons.org/licenses/by-nc/2.5/)
 
 ## Work Breakdown Structures {#wbs}
 
