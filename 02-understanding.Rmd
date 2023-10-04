@@ -269,7 +269,7 @@ The strategy here should be to:
 ### Exercise 3: Objects are actually added to Zones
 
 
-1. Create a `Zone` and create and `Object`
+1. Create a `Zone` and create an `Object`
 1. Set an identifier to the `Object`. Tip: the `Zones` class has a method for that.
 1. Add the object to `Zone`
 1. Use a method from the `Zone` class to check if our `Object` belongs to the `Zone`.
