@@ -4,10 +4,7 @@
 
 (ref:cautionbox)
 
-If you require help in this workshop, please dont go up to the staff in the room - please use the [**live help queue**](https://gitlab.cs.man.ac.uk/comp23311_2022/COMP23311-Live-Help-Queue/issues) and wait for either:
-
-* someone to come to you
-* help to be given on [teams.microsoft.com](https://teams.microsoft.com)
+If you require help in this workshop, please dont go up to the staff in the room - please use the [**live help queue**](https://gitlab.cs.man.ac.uk/comp23311_2023/COMP23311-Live-Help-Queue/issues) and wait for  someone to come to you.
 
 The live help queue will be culled at the end of the session, and questions should then be put on Piazza. Please remember we can't offer coursework help during a workshop.
 :::
@@ -38,7 +35,7 @@ The HTTPS protocol URI of the repository is:
 
 
 ```` md
-https://gitlab.cs.man.ac.uk/suzanne.m.embury/stendhal-playground-2019.git
+https://gitlab.cs.man.ac.uk/z84115tc/stendhal-playground-23.git
 ````
 
 If you are using Eclipse and need a reminder of what to do, you can follow the steps we took in the Week 1 workshops, when we cloned and imported the Marauroa code base.  The instructions are on Blackboard, under `course content` > `Week 1`.
