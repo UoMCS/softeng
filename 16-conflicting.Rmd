@@ -25,7 +25,7 @@ You'll practice these skills by carrying out the following steps:
 1. Push the completed merge to your remote repository for marking.
 1. Update the issue tracker to record the project status, and request marking.
 
-Instructions for carrying these tasks out from within the Eclipse IDE are given in this document.  We focus on Eclipse as that is the IDE used for the team coursework.  You are free to use any IDE to carry out this individual coursework exercise, but we can currently only provide instructions and technical support for Eclipse, run on the machines in labs in the Kilburn building.
+Instructions for carrying these tasks out from within the Eclipse IDE are given in this document.  We focus on Eclipse as that is the IDE used for the team coursework.  You are free to use any IDE to carry out this individual coursework exercise, but we can currently only provide instructions and technical support for Eclipse, run on Linux on the machines in labs in the Kilburn building.
 
 Once the exercise is completed, you should be ready to use the same skills on your team's repository in the remaining team coursework exercises.
 
@@ -66,9 +66,11 @@ You'll submit your work through a GitLab repository that will be created for you
 
 [gitlab.cs.man.ac.uk](https://gitlab.cs.man.ac.uk)
 
-At the deadline, we'll make a clone of your repository and run the automated marking code.  You just have to make sure you have pushed your Git branches and commits to your GitLab repository by then, and make a comment in your issue tracker to let us know the work is ready to mark.  There are no additional submission steps.
+At the deadline, for everyone who has submitted their work, we'll remove your developer-level access to the repository so that you cannot make any further commits or changes to the code base make a clone of your repository.  You should make sure you have pushed your Git branches and commits to your GitLab repository by then, and make a comment in your issue tracker to let us know the work is ready to mark.  There are no additional submission steps.
 
-Feedback on your work will be uploaded to the issue tracker of the GitLab project, when the marking code is run.
+Your work will then be scheduled for marking in the next batch.  Marking the work normally takes 2-3 working days, followed by a period for manual checking of a sample of solutions.
+
+Feedback on your work will be uploaded to the issue tracker of the GitLab project, once the marking process is completed.
 
 
 ### Marking Scheme {#markingscheme2}
@@ -80,12 +82,13 @@ This coursework exercise consists of 8 steps.  If you complete them all correctl
 ```{r marktable2, echo = FALSE}
 mark_table2 <- tibble::tribble(
     ~ "Criterion"                        , ~ "Marks",   
-    "The `move-counter` branch passes the tests supplied in commit `e751f062`. ", "2",
-    "The `main` branch passes the tests supplied in both feature branches (commits `e751f062` and `1a2923aa`).", "2",
-    "The `main` branch is located at a merge commit, with one parent being commit `1a2923aa` (pointed to by the `game-timer` branch) and the other parent being the commit pointed to by the `move-counter` branch at the time the merge is made.", "1",
+    "The `move-counter` branch passes the tests supplied in commit `7f9bff8b`. ", "2",
+    "The `main` branch passes the tests supplied in both feature branches (commits `7f9bff8b` and `2a3a0934`).", "2",
+    "The `main` branch is located at a merge commit, with one parent being commit `2a3a0934` (pointed to by the `game-timer` branch) and the other parent being the commit pointed to by the `move-counter` branch at the time the merge is made.", "1",
     "No other merge commits appear in the commit graph.", "1",
-    "The code version represented by the commit on the `move-counter` branch contains conflicting code elements when compared with the code at the original location of the `main` branch (commit `1a2923aa`)", "2",
-    "No conflict markers exist in the merged code.  (If the `move-counter` branch has not been merged with `main` in the submitted repository, the mark for this criterion will be 0.)","2",
+    "The code version represented by the commit on the `move-counter` branch contains conflicting code elements when compared with the code at the original location of the `main` branch (commit `2a3a0934`)", "2",
+    "No conflict markers exist in the merged code.  (If the `move-counter` branch has not been merged with `main` in the submitted repository, the mark for this criterion will be 0.)", "2",
+    "Penalty: changes to files that are not part of the source of the solution (such as class files or test result files) have been committed.", "-2",
     "**Total**", "**10**",
 )
 knitr::kable(mark_table2, caption = "The marking scheme for the 2nd individual coursework exercise", booktabs = TRUE)
@@ -95,7 +98,7 @@ knitr::kable(mark_table2, caption = "The marking scheme for the 2nd individual c
 
 (ref:cautionbox)
 
-Note that the coursework must be carried out without the use of merge requests - to ensure this, we have disabled the merge request facility on your coursework repository.  The point of the exercise is to carry out these operations for yourself, in your local repository, and to gain an understanding of exactly what Git is doing when tools such as pull/merge requests are used.  It is important to learn how to use merge requests correctly (as a code quality tool) and not to use them as a short-cut for making merge commits.
+Note that the coursework must be carried out without the use of merge requests - to ensure this, we have disabled the merge request facility on your coursework repository.  The point of the exercise is to carry out these operations for yourself, in your local repository, and to gain an understanding of exactly what Git is doing when tools such as pull/merge requests are used.  It is important to learn how to use merge requests correctly (as a code quality tool) and not to use them as a short-cut for making merge commits.  You'll get practice at working with them in the later team coursework, but need to demonstrate your ability to merge without them first.
 
 <!-- **Any use of merge requests, even if they are subsequently deleted, will incur a 50% mark penalty.** -->
 :::
@@ -122,15 +125,13 @@ To submit your work for final marking, you must add a comment to the coursework 
 Project ready for marking.
 ```
 
-The time of submission will be the time at which this comment was added to the repository.
-
 If this comment is not present on the coursework issue, we will assume that you are not ready to submit the work.
 
 You may delete and re-add the comment as many times as you like up until the formal deadline for the coursework.  Once your work has been marked, we will ignore any further changes to your issue tracker; it will not be possible to request marking for a second time once marking for your project is complete and the feedback has been uploaded to your issue tracker.
 
-Any changes to your repository made after the final eligible marking request has been made will be ignored by the marking process.  So make sure you have definitely finished all your work, before you add the comment, especially if you are submitting after the deadline.
+The time of submission will be the time at which this comment was last added to the repository.  This means you should only add it once all other activity required for the coursework (pushing of commits, etc) is finished.  Any changes to your repository made after the final eligible marking request has been made will be ignored by the marking process.  So make sure you have definitely finished all your work, before you add the comment, especially if you are submitting after the deadline.
 
-When you have added the request for marking comment to the issue, your development access to the repository will be removed, to preserve the state of the repository for marking.  At this point, you will not be able to see some parts of your submission, due to your restricted role on the project.  This is nothing to worry about - the work is still there, it is just not visible to you.
+After the deadline or after you have added the request for marking comment to the issue if you submit late), your development access to the repository will be removed, to preserve the state of the repository for marking.  At this point, you will not be able to see some parts of your submission, due to your restricted role on the project.  This is nothing to worry about - the work is still there, it is just not visible to you.
 
 
 ### Late Submissions {#lateness}
@@ -155,7 +156,7 @@ This coursework is subject to the University's standard policy on plagiarism:
 
 ### How to Get Help {#gettinghelp}
 
-Help with this exercise will be available in the team study sessions (when your team is not being marked).  Sign up on the live help queue (ref:livehelpqueue) during the sessions, using the `Individual Coursework Ex 2` label and issue template. A member of staff or a GTA will speak to you in person or call you directly on Microsoft Teams when we are ready to provide help.
+Help with this exercise will be available in the team study sessions (when your team is not being marked).  Sign up on the live help queue (ref:livehelpqueue) during the sessions, using the `Individual Coursework Ex 2` label and issue template. A member of staff or a GTA will come and find you when it is your turn to get help.
 
 Outside of team study sessions, you can post a query on our Piazza discussion forum.  We aim to respond to queries raised on Piazza within 3 working days.
 
@@ -187,7 +188,7 @@ An issue has been placed in the issue tracker for the project, describing the ne
 
 The branch is called: `move-counter`
 
-You must check out this feature branch, and use the tests to guide the implementation of the new feature.  The first step is to read the test code, to understand what each one is saying about the functionality that you must implement.
+You must check out this feature branch as a "New Local Branch", and use the tests to guide the implementation of the new feature.  The first step is to read the test code, to understand what each one is saying about the functionality that you must implement.
 
 You should practice the techniques for test reading that were presented in the workshops (see chapter \@ref(understanding)).
 
@@ -291,14 +292,14 @@ When you have finished committing your code changes, push the `move-counter` bra
 
 Depending on the IDE version you are using, you may need to set up the *push ref specs* for this repository.  Information on how to do that is given in the instructions for the 1st individual coursework, step 7 in section \@ref(pushingchange).
 
-This step is complete when you can see all your changes and commits on GitLab, and when the `move-counter` branch on GitLab is pointing to the same commit as the end point of your local feature branch.
+This step is complete when you can see all your changes and commits on GitLab, and when the `move-counter` branch on GitLab is pointing to the same commit as the end point of your local `move-counter` branch.
 
 
 ### Step five: Merge your Code into the Development Branch {#mergedev}
 
 Now that the feature implementation is complete, we can merge the changes into the development branch.
 
-Start by checking out the branch that you want to include the new feature on: in this case, `main`.
+Start by checking out the branch that you want to include the new feature on: in this case, `main`.  (Make sure to check out `main` as a local branch if you have not already done so.  A common error for Git beginners is to check out the remote tracking branch instead of making a new local branch.  This will lead to an incorrect merge.  As a handy rule of thumb, for the purposes of this course unit, you never need to check out a remote tracking branch.  Stick to checking out local branches only.)
 
 In the `History` view of your project, right click on the commit that the `move-counter` branch is pointing at (that is, the commit that contains the changes you want to merge into the checked out branch), and select `Merge`.
 
@@ -326,7 +327,7 @@ When you see this conflicting merge result, the step is completed.
 ::: {.rmdcaution}
 
 (ref:cautionbox)
-The point of this exercise is to walk through the experience of detecting and resolving conflicts between two independent lines of development, and to understand how Git helps us to manage those conflicts.  If you followed the natural conventions and approaches when implementing the Move Counter feature, you will discover conflicts when you try to merge.  If you have found some clever way to implement the feature that avoids conflicts at this merge (e.g. by rebasing the feature branch onto `main` before starting the implementation of the feature), you'll need to think again.  You can't get full marks for this exercise unless you implement the feature in a way that causes conflicts.
+Part of the point of this exercise is to walk through the experience of detecting and resolving conflicts between two independent lines of development, and to understand how Git helps us to manage those conflicts.  If you followed the natural conventions and approaches when implementing the Move Counter feature, you will discover conflicts when you try to merge.  If you have found some clever way to implement the feature that avoids conflicts at this merge (e.g. by rebasing the feature branch onto `main` before starting the implementation of the feature), you'll need to think again.  You can't get full marks for this exercise unless you implement the feature in a way that causes conflicts.
 :::
 
 ### Step six: Resolve the Conflicts and Complete the Merge {#resolveconfcomp}
@@ -434,7 +435,7 @@ You therefore need to use the conflict resolution tools discussed in this docume
 
 A good starting point would be to read and understand the Game Timer feature code that you are going to be working with, including (of course) the tests.
 
-Make sure that the all the tests pass on the version of the code with the conflicts resolved, before you make the merge commit.  And don't forget to test the game manually by running and playing it.  The automated tests won't catch all problems, and should be supplemented by a small amount of carefully targeted manual testing.
+Make sure that the all the tests pass on the version of the code with the conflicts resolved, before you ask Git to continue making the merge commit.  And don't forget to test the game manually by running and playing it.  The automated tests won't catch all problems, and should be supplemented by a small amount of carefully targeted manual testing.
 
 
 **Hint: Making the Move Counter and Game Timer Appear Below the Main Game Panel**
@@ -489,17 +490,19 @@ When we next run the marking code, and it observes this comment, you will lose D
 
 ### Messed Up? {#messi}
 
-If you make a mistake with the coursework, you can request a reset from staff.  To do this, post the following line on the coursework issue in the issue tracker:
+If you make a mistake with the coursework, you can request a reset of your repository.  To do this, post the following line on the coursework issue (that is, issue \# 1) in the issue tracker of your personal coursework repository:
 
 ```md
     Please reset repository, @suzanne.m.embury.
 ```
 
-We'll then reset the repository to the state it was at the start of the coursework.  Obviously, you'll then lose access to any commits you made for the coursework so far.
+This request will be picked up by code, and the reset executed to bring the repository back to the same state it was in at the start of the coursework.  Obviously, you'll then lose access to any commits you made for the coursework so far, so only request a reset if you are sure it is what you want.
 
 You can only request one reset for this coursework exercise, so use it wisely.
 
-The code that executes the repository reset requests will be run every couple of days while the coursework is active.  The last time that resets will be run will be at lunchtime on the day of the deadline.
+The code that executes the repository reset requests will be run every couple of days while the coursework is active.  This means that resets don't happen instantaneously.  You may need to wait for a whole.
+
+We'll notify you when the final resets will be run through a Blackboard announcement.
 
 
 ### Coursework Complete {#cw2fin}
