@@ -12,6 +12,19 @@ Team Coursework 1: Dealing with Small Scale Code Changes
 * A summary of penalties can be [found here](#penalties)
 
 
+::: {.rmdcaution}
+
+(ref:cautionbox)
+
+Please ensure that you synchronise your local repository properly, in order to use the patched codebase.
+
+If you do not synchronise properly, you can create some serious problems for yourself, but also for your team. Please refer to the following [Piazza post](https://piazza.com/class/lm0s5lzly5q41i/post/69).
+
+If you do not synchronise your local repository properly, and you push changes with the non-patched codebase, **then your access to the repository may be removed** in order to prevent further damage. You will need to contact Suzanne or Tom in order to restore access.
+
+:::
+
+
 ## Overview
 
 For this first team coursework exercise, your team has been provided with a Git repository hosted on the Department's GitLab server.  This repository contains a modified version version of the Stendhal code base.  Once the coursework begins, the issue tracker of this repository will be populated with a number of issues describing “bugs” in the code that your team must fix by the coursework deadline.
@@ -98,6 +111,17 @@ The RoboTA report (which is available for pre-deadline feedback) will flag up to
 
 Following the same process covered in the workshops, each team member should acquire their own local copy of the team repository, learn how to build and test it, and run the code as a locally hosted version of the game.  Instructions for doing this are in chapter \@ref(guiding).
 
+::: {.rmdcaution}
+
+(ref:cautionbox)
+
+Please ensure that you synchronise your local repository properly, in order to use the patched codebase.
+
+If you do not synchronise properly, you can create some serious problems for yourself, but also for your team. Please refer to the following [Piazza post](https://piazza.com/class/lm0s5lzly5q41i/post/69).
+
+If you do not synchronise your local repository properly, and you push changes with the non-patched codebase, **then your access to the repository may be removed** in order to prevent further damage. You will need to contact Suzanne or Tom in order to restore access.
+
+:::
 
 
 ## Step 2: Assign the Issues {#steptwo}
@@ -256,6 +280,18 @@ Once you have pushed your feature branch to your team's remote, the continuous i
 
 
 ## Step 7: Merge with Your Team's Development Branch {#stepseven}
+
+::: {.rmdcaution}
+
+(ref:cautionbox)
+
+Please ensure that you synchronise your local repository properly, in order to use the patched codebase.
+
+If you do not synchronise properly, you can create some serious problems for yourself, but also for your team. Please refer to the following [Piazza post](https://piazza.com/class/lm0s5lzly5q41i/post/69).
+
+If you do not synchronise your local repository properly, and you push changes with the non-patched codebase, **then your access to the repository may be removed** in order to prevent further damage. You will need to contact Suzanne or Tom in order to restore access.
+
+:::
 
 The next step is to merge your work with the development branch.  The Stendhal team use the `master` branch as their development branch, and we ask you to continue to follow this convention in this coursework^[If you are familiar with the popular GitFlow workflow for collaborative coding with Git, you may be surprised at this, because in that workflow `master` is used as the branch that records the stable, integration version of the code for release (sometimes called the *production branch*), while development is done on a branch called `develop`.  In fact, in many common workflows, including Github Flow and Trunk-Based Development, `master` is used as the name of the development branch.  So the Stendhal team are in good company here.] For this coursework exercise, we ask you to perform merges in your local repository and push them to the team repository.  In later exercises, we will make use of Merge Requests on GitLab to help you manage the merging process, but for this exercise you should **not** create any merge requests (there is a mark penalty for doing so).  Your goal for this coursework exercise is to demonstrate that you understand the basics of merging, by carrying out the steps yourself.  When you have demonstrated that, we will move on to using merge requests.
 
