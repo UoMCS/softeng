@@ -3,7 +3,7 @@ bookdown::bs4_book:
   includes:
     in_header: [header.html]
   theme:
-    primary: "#4183C4"
+    primary: "#8B0000"
   repo: https://github.com/dullhunk/softeng
 #  css: "libs/custom/duncan.css"
 
